@@ -82,13 +82,7 @@
           >{{ sources.length }} 个来源</span
         >
       </div>
-      <div class="sea-source-grid">
-        <IndustrySource
-          v-for="source in sources"
-          :key="source.id"
-          :item="{ name: source.name, source }"
-        />
-      </div>
+      <SourceList :sources="sources" :selected-id="selectedId" />
       <p v-if="!sources.length" class="empty-inline" role="status">
         该国家暂未收录来源。
       </p>
@@ -98,14 +92,17 @@
 <script setup>
 import { computed, ref } from "vue";
 import ReportEntry from "./ReportEntry.vue";
-import IndustrySource from "./services/IndustrySource.vue";
+import SourceList from "./SourceList.vue";
 import {
   SEA_REGIONS,
   filterSeaSources,
   filterSeaReports,
 } from "../domain/catalog.js";
 
-const props = defineProps({ catalog: { type: Object, required: true } });
+const props = defineProps({
+  catalog: { type: Object, required: true },
+  selectedId: { type: String, default: null },
+});
 const tab = ref("updates");
 const region = ref("");
 const sources = computed(() =>
