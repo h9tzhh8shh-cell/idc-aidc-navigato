@@ -1,0 +1,111 @@
+{
+  "date": "2026-10-04",
+  "browser": "Codex in-app Chromium",
+  "desktop": {
+    "width": 1440,
+    "height": 1000
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844
+  },
+  "checks": [
+    {
+      "test": "SMM trims/case",
+      "count": 2
+    },
+    {
+      "test": "H100",
+      "count": 5
+    },
+    {
+      "test": "上架率",
+      "names": [
+        "万国数据季度业绩 ↗",
+        "世纪互联季度业绩 ↗"
+      ]
+    },
+    {
+      "test": "dialog reverse tab stays inside",
+      "result": true
+    },
+    {
+      "test": "Escape returns focus",
+      "focus": "查看万国数据季度业绩详情"
+    },
+    {
+      "test": "China AND monthly",
+      "names": [
+        "国家能源局用电数据 ↗"
+      ]
+    },
+    {
+      "test": "AND paid empty",
+      "message": "没有找到匹配的来源\n\n试试更短的关键词，或减少地区、频率和获取条件限制。\n\n清空筛选，查看全部来源"
+    },
+    {
+      "test": "reset restores",
+      "count": 15
+    },
+    {
+      "test": "secondary-category sources included",
+      "count": 6
+    },
+    {
+      "test": "all five dimensions",
+      "names": [
+        "万国数据季度业绩 ↗",
+        "世纪互联季度业绩 ↗"
+      ]
+    },
+    {
+      "test": "reports independent of source filters",
+      "count": 16,
+      "unknown": "发布日期未知"
+    },
+    {
+      "test": "verified reports filter",
+      "count": 11
+    },
+    {
+      "test": "mobile overflow",
+      "result": {
+        "cards": 15,
+        "scroll": 375,
+        "width": 375
+      }
+    },
+    {
+      "test": "mobile dialog overflow",
+      "result": {
+        "client": 320,
+        "open": true,
+        "scroll": 320
+      }
+    },
+    {
+      "test": "mobile reports overflow",
+      "result": {
+        "client": 375,
+        "scroll": 375
+      }
+    },
+    {
+      "test": "dark theme",
+      "className": "industry-app theme-default dark"
+    },
+    {
+      "test": "console",
+      "logs": []
+    },
+    {
+      "test": "unmatched keyword",
+      "message": "没有找到匹配的来源"
+    },
+    {
+      "test": "final standalone HTTP build",
+      "cards": 15,
+      "console": []
+    }
+  ]
+}

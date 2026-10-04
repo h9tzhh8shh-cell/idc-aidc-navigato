@@ -1,0 +1,15 @@
+IDC/AIDC Research Navigator — local adaptation, 2026-10-04
+
+Based on Homer by Bastien Wirtz and contributors.
+Upstream: https://github.com/bastienwirtz/homer
+Release: v26.08.3
+Commit: daa017dfe1ea8d0875697aede091319b6134bb4b
+License: Apache License, Version 2.0 (see LICENSE).
+
+This distribution modifies the application entry view, search keyboard handling,
+theme button accessibility, page metadata and service-worker behavior; it adds
+industry cards, source/report data, filters, details, validation and documentation.
+See docs/UPSTREAM.md for the exact reused modules and changed files.
+This is not an official Homer release or an official product of the data sources.
+No upstream NOTICE file was present at the pinned commit. This notice is added
+by the adaptation and does not replace the upstream LICENSE.

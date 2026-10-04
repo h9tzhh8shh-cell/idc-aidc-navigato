@@ -1,0 +1,203 @@
+{
+  "performedAt": "2026-10-04T12:18:15.419Z",
+  "dateBaseline": "2026-10-04",
+  "scope": "本地 JSON 与纯函数校验；未进行浏览器或远端链接检查。",
+  "commands": [
+    {
+      "command": "pnpm validate",
+      "exitCode": 0
+    },
+    {
+      "command": "pnpm test",
+      "exitCode": 0,
+      "passed": 10,
+      "failed": 0
+    },
+    {
+      "command": "pnpm exec eslint src/domain/catalog.js scripts/validate-data.mjs tests/catalog.test.mjs",
+      "exitCode": 1,
+      "result": "未执行校验：当前包管理器环境未找到 eslint 可执行入口"
+    }
+  ],
+  "counts": {
+    "categories": 6,
+    "sources": 15,
+    "reports": 16
+  },
+  "validationErrors": [],
+  "duplicateIds": {
+    "categories": [],
+    "sources": [],
+    "reports": []
+  },
+  "orphanReports": [],
+  "sourcesWithoutReports": [],
+  "searchResults": [
+    {
+      "query": "SMM",
+      "count": 2,
+      "ids": [
+        "smm-rental",
+        "smm-weekly"
+      ]
+    },
+    {
+      "query": "H100",
+      "count": 5,
+      "ids": [
+        "smm-rental",
+        "smm-weekly",
+        "mysteel-computing",
+        "ornn-gpu",
+        "semianalysis-gpu"
+      ]
+    },
+    {
+      "query": "上架率",
+      "count": 2,
+      "ids": [
+        "gds-quarterly",
+        "vnet-quarterly"
+      ]
+    },
+    {
+      "query": "GPU租赁",
+      "count": 5,
+      "ids": [
+        "smm-rental",
+        "smm-weekly",
+        "mysteel-computing",
+        "ornn-gpu",
+        "semianalysis-gpu"
+      ]
+    },
+    {
+      "query": "算力租赁",
+      "count": 7,
+      "ids": [
+        "smm-rental",
+        "smm-weekly",
+        "mysteel-computing",
+        "ornn-gpu",
+        "semianalysis-gpu",
+        "synergy-cloud",
+        "kz-market"
+      ]
+    }
+  ],
+  "combinedFilter": {
+    "filters": {
+      "region": "中国",
+      "frequency": "monthly"
+    },
+    "ids": [
+      "nea-electricity"
+    ]
+  },
+  "grouping": {
+    "displayed": 15,
+    "unique": 15,
+    "groups": [
+      {
+        "id": "rental-prices",
+        "count": 5
+      },
+      {
+        "id": "capacity-construction",
+        "count": 2
+      },
+      {
+        "id": "operating-demand",
+        "count": 2
+      },
+      {
+        "id": "activity-demand",
+        "count": 2
+      },
+      {
+        "id": "servers-hardware",
+        "count": 1
+      },
+      {
+        "id": "market-technology",
+        "count": 3
+      }
+    ],
+    "noDuplicates": true
+  },
+  "reportSorting": {
+    "knownDatesDescending": true,
+    "unknownDatesLast": true,
+    "unknownCount": 6,
+    "order": [
+      {
+        "id": "nea-2026-08-electricity",
+        "publishedAt": "2026-09-20"
+      },
+      {
+        "id": "idc-2026-q2-servers",
+        "publishedAt": "2026-09-10"
+      },
+      {
+        "id": "vnet-2026-q2",
+        "publishedAt": "2026-08-18"
+      },
+      {
+        "id": "gds-2026-q2",
+        "publishedAt": "2026-08-13"
+      },
+      {
+        "id": "synergy-2026-q2-cloud",
+        "publishedAt": "2026-07-30"
+      },
+      {
+        "id": "ornn-ocpi-methodology",
+        "publishedAt": "2026-07-24"
+      },
+      {
+        "id": "cbre-global-trends-2026",
+        "publishedAt": "2026-06-17"
+      },
+      {
+        "id": "kz-2025-idc-market",
+        "publishedAt": "2026-06-15"
+      },
+      {
+        "id": "nda-digital-china-2025",
+        "publishedAt": "2026-06-08"
+      },
+      {
+        "id": "nda-capacity-20260430",
+        "publishedAt": "2026-04-30"
+      },
+      {
+        "id": "smm-spot-method-2026",
+        "publishedAt": null
+      },
+      {
+        "id": "smm-composite-method-2026",
+        "publishedAt": null
+      },
+      {
+        "id": "smm-weekly-public-commentary-104134387",
+        "publishedAt": null
+      },
+      {
+        "id": "mysteel-price-launch-2026",
+        "publishedAt": null
+      },
+      {
+        "id": "semianalysis-composite-methodology",
+        "publishedAt": null
+      },
+      {
+        "id": "caict-ai-node-2026",
+        "publishedAt": null
+      }
+    ]
+  },
+  "notes": [
+    "算力租赁全文检索共 7 条，包含 Synergy 和科智的口径限制说明；这是任务要求的 caveats 全文覆盖，不表示二者为 GPU 租赁价格来源。按 rental-prices 分类可收窄到 5 条价格来源。",
+    "维护校验使用 Asia/Shanghai 当前日；固定未来日期风险测试显式使用 2026-10-04，保持测试可复现。"
+  ]
+}

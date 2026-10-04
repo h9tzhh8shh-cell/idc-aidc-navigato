@@ -1,0 +1,200 @@
+{
+  "attemptedAt": "2026-10-04",
+  "checks": [
+    {
+      "url": "https://aidc.smm.cn/",
+      "status": "unreachable",
+      "note": "初始入口 web.open 超时；未据此判断网站永久失效。"
+    },
+    {
+      "url": "https://aidc.smm.cn/price",
+      "status": "verified",
+      "note": "读取到完整公开行情栏目，采用为来源入口。"
+    },
+    {
+      "url": "https://www.smm.cn/celue/computing-power-weekly-reports-255",
+      "status": "partial",
+      "note": "web.open 两次超时；独立 HTTPS 请求失败；搜索索引可见产品说明和试读目录。"
+    },
+    {
+      "url": "https://news.smm.cn/gonggao/103970493",
+      "status": "partial",
+      "note": "web.open 两次空正文；搜索收录可见方法说明；独立 HTTPS 请求失败。"
+    },
+    {
+      "url": "https://news.smm.cn/news/104123430",
+      "status": "partial",
+      "note": "web.open 两次空正文；搜索收录可见方法说明；独立 HTTPS 请求失败。"
+    },
+    {
+      "url": "https://news.smm.cn/news/104134387",
+      "status": "partial",
+      "note": "原文为空；仅搜索摘要可见公开周评，不当作完整订阅周报。"
+    },
+    {
+      "url": "https://news.smm.cn/news/104023952",
+      "status": "unreachable",
+      "note": "尝试打开公开周评，返回抓取错误；未收录为报告。"
+    },
+    {
+      "url": "https://suanli.mysteel.com/",
+      "status": "partial",
+      "note": "web.open 返回 HTTP 411，独立 HTTPS 请求失败；正式上线说明的搜索收录确认此入口。"
+    },
+    {
+      "url": "https://news.mysteel.com/a/26090910/81150FD737D13EC4.html",
+      "status": "partial",
+      "note": "多次打开返回 HTTP 411；搜索收录可见发布说明，未视为直接读取原文。"
+    },
+    {
+      "url": "https://data.ornn.com/preview",
+      "status": "verified",
+      "note": "已读取公开日结预览、单位和免费/订阅范围。"
+    },
+    {
+      "url": "https://data.ornn.com/methodology",
+      "status": "verified",
+      "note": "已读取方法全文及 2026-07-24 初版变更记录。"
+    },
+    {
+      "url": "https://gpu-index.semianalysis.com/",
+      "status": "verified",
+      "note": "读取方法摘要和历史静态表；动态刷新未验证。"
+    },
+    {
+      "url": "https://semianalysis.com/semianalysis-data-products/",
+      "status": "verified",
+      "note": "读取官方 GPU Rental Pricing 产品介绍，确认完整产品需联系销售/登录。"
+    },
+    {
+      "url": "https://www.nda.gov.cn/",
+      "status": "partial",
+      "note": "首页返回无可提取正文，已改用可读新闻动态栏目。"
+    },
+    {
+      "url": "https://www.nda.gov.cn/sjj/swdt/list/index_pc_1.html",
+      "status": "verified",
+      "note": "已读取持续更新新闻动态栏目。"
+    },
+    {
+      "url": "https://www.nda.gov.cn/sjj/swdt/mtsy/list/index_pc_1.html",
+      "status": "partial",
+      "note": "读取到栏目标题但列表正文不足，不采用作主入口。"
+    },
+    {
+      "url": "https://www.nda.gov.cn/sjj/swdt/mtsy/0430/20260430114558848516126_pc.html",
+      "status": "verified",
+      "note": "读取官网转载报道全文，确认 2026-04-30 发表和截至 2026 年 3 月底的统计口径。"
+    },
+    {
+      "url": "https://www.cbre.com/insights/data-center",
+      "status": "verified",
+      "note": "已读取栏目，含年度全球、北美半年及欧洲季度资料。"
+    },
+    {
+      "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026",
+      "status": "verified",
+      "note": "已读取官网报告，2026-06-17 发布，主体数据为 2026 年第一季度。"
+    },
+    {
+      "url": "https://investors.gds-services.com/financial-information/quarterly-results",
+      "status": "verified",
+      "note": "已读取季度栏目及从栏目进入的 2026 年第二季度业绩 PDF，核对发布日期与利用率定义。"
+    },
+    {
+      "url": "https://ir.vnet.com/financial-information/quarterly-results",
+      "status": "verified",
+      "note": "已读取季度栏目及 2026 年第二季度业绩 PDF，并核对批发/零售单位和分母脚注。"
+    },
+    {
+      "url": "https://www.nea.gov.cn/",
+      "status": "verified",
+      "note": "已读取机构首页及 2026 年 8 月用电原文；尝试新闻发布栏目仅返回标题，故保留并标识机构首页。"
+    },
+    {
+      "url": "https://www.srgresearch.com/articles",
+      "status": "verified",
+      "note": "已读取机构首页、新闻列表和 2026 年第二季度云市场新闻稿；以可持续浏览的新闻栏目替换机构首页。"
+    },
+    {
+      "url": "https://www.idc.com/promo/servers/",
+      "status": "verified",
+      "note": "已读取服务器市场栏目及 2026 年第二季度新闻稿，核对发布时间和原文分类说明；栏目展示季度与新闻稿并不总是同步。"
+    },
+    {
+      "url": "https://www.kzconsulting.cn/insights/index.html",
+      "status": "verified",
+      "note": "已读取科智洞察栏目和 2026 年 6 月 15 日文章，确认其讨论 2025 年传统 IDC 市场；完整研究未验证。"
+    },
+    {
+      "url": "https://www.caict.ac.cn/kxyj/qwfb/ztbg/",
+      "status": "unreachable",
+      "note": "2026-10-04 打开官方专题目录返回 Internal Error；官方 PDF 亦重复失败。搜索结果可确认报告题名及部分摘要，不能视为成功读取原文。"
+    },
+    {
+      "url": "https://www.nda.gov.cn/sjj/zhuanti/sjzgzxd/szzgbg/list/index_pc_1.html",
+      "status": "verified",
+      "note": "已读取年度报告专栏、2026 年 6 月 8 日全文发布页及其 52 页 PDF；以年度报告专栏替换机构首页。"
+    },
+    {
+      "url": "https://investors.gds-services.com/system/files-encrypted/nasdaq_kms/assets/2026/08/13/7-36-49/GDS%202Q26%20Earnings%20Release_0813%201200.pdf",
+      "status": "verified",
+      "note": "从官方季度栏目进入 PDF；正文第 2 页载明发布日期、所属季度及利用率定义。"
+    },
+    {
+      "url": "https://ir.vnet.com/static-files/bd1c3fd8-22f7-4ee2-a84a-7140445a4d8e",
+      "status": "verified",
+      "note": "从官方季度栏目进入 PDF，核对第 1 页日期及第 3—4 页容量脚注。"
+    },
+    {
+      "url": "https://www.nea.gov.cn/20260920/bd277235282140f4b43e9e0f5f0af3d9/c.html",
+      "status": "verified",
+      "note": "官网原文可读，页内载明发布日期及两种统计期。"
+    },
+    {
+      "url": "https://www.srgresearch.com/articles/q2-cloud-market-passes-143-billion-highest-growth-rate-in-eight-years",
+      "status": "verified",
+      "note": "已读新闻稿原文；只验证公开内容，未访问订阅数据库。"
+    },
+    {
+      "url": "https://www.idc.com/resource-center/press-releases/2q2026-wwserver-tracker/",
+      "status": "verified",
+      "note": "已读官方正文和分类脚注；标题数值来自原题，不代表本站独立测算。"
+    },
+    {
+      "url": "https://www.kzconsulting.cn/insights/1251114323795771392.html",
+      "status": "verified",
+      "note": "已读科智官网公开文章及日期；未取得完整系列报告和底层样本。"
+    },
+    {
+      "url": "https://www.caict.ac.cn/kxyj/qwfb/ztbg/202603/P020260326543562359406.pdf",
+      "status": "partial",
+      "note": "官方 PDF 多次打开返回 Internal Error，仅取得搜索摘要。未据文件名推定发布日期；报告年份不当作数据统计期。"
+    },
+    {
+      "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/0608/20260608193210077440494_pc.html",
+      "status": "verified",
+      "note": "已读取发布页及其 PDF。此日期为所收录的全文发布页日期；栏目另有 4 月 29 日首发消息，PDF 封面标 2026 年 5 月，三者未混用。"
+    },
+    {
+      "url": "https://www.nea.gov.cn/xwfb/index.htm",
+      "status": "partial",
+      "note": "来自首页新闻发布链接，打开只返回栏目标题，无可核对列表正文；没有据此替换已核查的首页。"
+    },
+    {
+      "url": "https://www.srgresearch.com/",
+      "status": "verified",
+      "note": "已读取机构首页，沿其 Press 链接确认新闻列表。首页出现标为 2026-10-05 的条目，未将晚于本次核查日的条目收录为报告。"
+    },
+    {
+      "url": "https://www.nda.gov.cn/",
+      "status": "partial",
+      "note": "初始首页打开成功但未提取正文；通过官网搜索找到年度报告专栏及全文发布页，已核查替代入口。"
+    },
+    {
+      "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/0608/ff808081-9e81e648-019e-a78ceae4-00c3.pdf",
+      "status": "verified",
+      "note": "52 页 PDF 原文已读，报告正文含 2025 年统计数据及来源脚注；封面月份为 2026 年 5 月，不推定具体发布日期。"
+    }
+  ]
+}

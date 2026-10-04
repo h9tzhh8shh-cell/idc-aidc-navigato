@@ -1,0 +1,135 @@
+$ vite build
+(!) Your Vite config uses features that are unsupported by `configLoader: 'native'`, which is planned to become the default in a future major version of Vite:
+  - JSON import "./package.json" without import attributes (vite.config.js:11:25). Add `with { type: 'json' }`
+Set `VITE_CONFIG_NATIVE_IGNORE_WARNING=true` to suppress this warning.
+vite v8.2.2 building client environment for production...
+transforming...
+✓ 140 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/assets/manifest.json                           0.41 kB │ gzip:  0.30 kB
+dist/index.html                                     1.01 kB │ gzip:  0.64 kB
+dist/resources/fa-v4compatibility-CErXDOsT.woff2    4.16 kB
+dist/resources/fa-regular-400-DRN8N0d1.woff2       19.51 kB
+dist/resources/noto-latin-normal-GUnxZaaT.woff2    39.41 kB
+dist/resources/fa-brands-400-Bs6tcqqs.woff2       115.42 kB
+dist/resources/fa-solid-900-IAB4Droh.woff2        119.48 kB
+dist/resources/ThemeChooser-hvi4t8Gp.css            0.10 kB │ gzip:  0.09 kB
+dist/resources/OctoPrint-BcOwLylZ.css               0.11 kB │ gzip:  0.11 kB
+dist/resources/Rtorrent-CBDY504o.css                0.14 kB │ gzip:  0.12 kB
+dist/resources/Transmission-DXePSR3H.css            0.21 kB │ gzip:  0.15 kB
+dist/resources/qBittorrent-BXe5K5ug.css             0.21 kB │ gzip:  0.15 kB
+dist/resources/Proxmox-BTzgMKFk.css                 0.22 kB │ gzip:  0.14 kB
+dist/resources/CopyToClipboard-DGkn9ntA.css         0.26 kB │ gzip:  0.17 kB
+dist/resources/Seerr-CkOpbB6m.css                   0.34 kB │ gzip:  0.22 kB
+dist/resources/HyperHDR-BJLGz3no.css                0.37 kB │ gzip:  0.22 kB
+dist/resources/Prowlarr-DuGH_EUp.css                0.37 kB │ gzip:  0.22 kB
+dist/resources/WUD-zbvLS--S.css                     0.37 kB │ gzip:  0.22 kB
+dist/resources/FreshRSS-CeohBGr7.css                0.37 kB │ gzip:  0.22 kB
+dist/resources/Jellystat-DEu4xIlN.css               0.40 kB │ gzip:  0.24 kB
+dist/resources/Tautulli-Dhzgs5K9.css                0.40 kB │ gzip:  0.24 kB
+dist/resources/OpenWeather-DWEJ5IDp.css             0.40 kB │ gzip:  0.18 kB
+dist/resources/Medusa-OX7TALrA.css                  0.40 kB │ gzip:  0.22 kB
+dist/resources/Healthchecks-D6idtaTy.css            0.42 kB │ gzip:  0.23 kB
+dist/resources/Scrutiny-BCdfFLuP.css                0.43 kB │ gzip:  0.23 kB
+dist/resources/DockerSocketProxy-YxtSDodp.css       0.43 kB │ gzip:  0.24 kB
+dist/resources/LibrisLog-FCCmaUNw.css               0.43 kB │ gzip:  0.24 kB
+dist/resources/Emby-B_vidQUS.css                    0.44 kB │ gzip:  0.25 kB
+dist/resources/HomeAssistant-CeTv74fG.css           0.44 kB │ gzip:  0.25 kB
+dist/resources/OpenHAB-DCPKVOwf.css                 0.44 kB │ gzip:  0.25 kB
+dist/resources/Tdarr-BAJzyDfl.css                   0.46 kB │ gzip:  0.24 kB
+dist/resources/Readarr-kb-JpGXu.css                 0.46 kB │ gzip:  0.23 kB
+dist/resources/Docuseal-CaRQfidd.css                0.48 kB │ gzip:  0.27 kB
+dist/resources/Gitea-BOHyfYmD.css                   0.48 kB │ gzip:  0.27 kB
+dist/resources/Matrix-ph-hbPyg.css                  0.48 kB │ gzip:  0.27 kB
+dist/resources/Olivetin-D1Vdn02K.css                0.48 kB │ gzip:  0.27 kB
+dist/resources/Ping-Cn1sasFs.css                    0.48 kB │ gzip:  0.27 kB
+dist/resources/Traefik-Dg32WF_b.css                 0.48 kB │ gzip:  0.27 kB
+dist/resources/TruenasScale-BDG8TSa1.css            0.48 kB │ gzip:  0.27 kB
+dist/resources/Vaultwarden-xR6HWLjp.css             0.48 kB │ gzip:  0.27 kB
+dist/resources/Wallabag-BxRr0iST.css                0.48 kB │ gzip:  0.27 kB
+dist/resources/Immich-s18Scyz1.css                  0.49 kB │ gzip:  0.24 kB
+dist/resources/Mylar-DVKw7cTB.css                   0.50 kB │ gzip:  0.25 kB
+dist/resources/Lidarr-Cyu9C7JT.css                  0.50 kB │ gzip:  0.25 kB
+dist/resources/NetAlertx-7C8HIbLU.css               0.50 kB │ gzip:  0.25 kB
+dist/resources/PiAlert-GE1_2Cpv.css                 0.50 kB │ gzip:  0.25 kB
+dist/resources/Radarr-DV6PDQWW.css                  0.50 kB │ gzip:  0.25 kB
+dist/resources/Sonarr-D8XO27GY.css                  0.50 kB │ gzip:  0.25 kB
+dist/resources/Gatus-BqucVUfV.css                   0.55 kB │ gzip:  0.27 kB
+dist/resources/UptimeKuma-DpE7y-Is.css              0.55 kB │ gzip:  0.27 kB
+dist/resources/Gotify-akRDZtEH.css                  0.55 kB │ gzip:  0.27 kB
+dist/resources/SABnzbd-Bbo5kUr7.css                 0.55 kB │ gzip:  0.28 kB
+dist/resources/PiHole-CS7W7Mkh.css                  0.56 kB │ gzip:  0.27 kB
+dist/resources/Plex-BiPCuN50.css                    0.56 kB │ gzip:  0.26 kB
+dist/resources/AdGuardHome-CPiadIJC.css             0.56 kB │ gzip:  0.27 kB
+dist/resources/Nextcloud--IEePX19.css               0.60 kB │ gzip:  0.29 kB
+dist/resources/Prometheus-CrQ3bQwk.css              0.67 kB │ gzip:  0.31 kB
+dist/resources/Portainer-BX0TsJTo.css               0.90 kB │ gzip:  0.40 kB
+dist/resources/Miniflux-YaANZ-b8.css                0.92 kB │ gzip:  0.39 kB
+dist/resources/index-CuR4RqyN.css                 800.35 kB │ gzip: 95.86 kB
+dist/resources/CopyToClipboard-Bycy2Q6E.js          0.61 kB │ gzip:  0.43 kB
+dist/resources/PaperlessNG-CGFP5ciA.js              0.91 kB │ gzip:  0.56 kB
+dist/resources/Wallabag-DJQCOATL.js                 0.94 kB │ gzip:  0.54 kB
+dist/resources/Docuseal-DsN1Es2y.js                 0.96 kB │ gzip:  0.55 kB
+dist/resources/Olivetin-Cpp_gwuB.js                 0.96 kB │ gzip:  0.56 kB
+dist/resources/Vaultwarden-DoTXCyEX.js              1.00 kB │ gzip:  0.57 kB
+dist/resources/Gitea-WbCcPxNO.js                    1.01 kB │ gzip:  0.58 kB
+dist/resources/Linkding-CFGOLyiq.js                 1.01 kB │ gzip:  0.62 kB
+dist/resources/Nextcloud-BJQKx3nH.js                1.03 kB │ gzip:  0.58 kB
+dist/resources/Matrix-CtTs6-GS.js                   1.03 kB │ gzip:  0.58 kB
+dist/resources/Tautulli-C8nbpIGB.js                 1.04 kB │ gzip:  0.63 kB
+dist/resources/WUD-Bbtzs9Bj.js                      1.06 kB │ gzip:  0.61 kB
+dist/resources/Jellystat-DjqVl5DR.js                1.11 kB │ gzip:  0.68 kB
+dist/resources/Traefik-oWQ43YKp.js                  1.11 kB │ gzip:  0.63 kB
+dist/resources/Prowlarr-DfmcGMij.js                 1.14 kB │ gzip:  0.64 kB
+dist/resources/SpeedtestTracker-St0IFLXd.js         1.15 kB │ gzip:  0.60 kB
+dist/resources/ThemeChooser-Cgyulucp.js             1.15 kB │ gzip:  0.67 kB
+dist/resources/Mealie-BR3TWpSl.js                   1.19 kB │ gzip:  0.65 kB
+dist/resources/Mylar-DDeQYHKc.js                    1.20 kB │ gzip:  0.64 kB
+dist/resources/PiAlert-DfnmaK0q.js                  1.21 kB │ gzip:  0.66 kB
+dist/resources/DockerSocketProxy-DxZzNGUP.js        1.23 kB │ gzip:  0.64 kB
+dist/resources/TruenasScale-86vvuIlJ.js             1.24 kB │ gzip:  0.69 kB
+dist/resources/AdGuardHome-DU4w8LsD.js              1.24 kB │ gzip:  0.66 kB
+dist/resources/Medusa-D0-csnGI.js                   1.29 kB │ gzip:  0.65 kB
+dist/resources/NetAlertx-CxVnnJZn.js                1.31 kB │ gzip:  0.69 kB
+dist/resources/Healthchecks-u1RE_Qaq.js             1.33 kB │ gzip:  0.68 kB
+dist/resources/Glances-DNU3YaC-.js                  1.34 kB │ gzip:  0.73 kB
+dist/resources/PeaNUT-DT8ivOUL.js                   1.34 kB │ gzip:  0.68 kB
+dist/resources/Ping-CnjrNW9P.js                     1.35 kB │ gzip:  0.77 kB
+dist/resources/Gotify-9Mg4SY6o.js                   1.39 kB │ gzip:  0.71 kB
+dist/resources/Scrutiny-CCi9kBWv.js                 1.39 kB │ gzip:  0.71 kB
+dist/resources/Tdarr-tWu_4Hcr.js                    1.39 kB │ gzip:  0.76 kB
+dist/resources/LibrisLog-7_ZOXO4i.js                1.47 kB │ gzip:  0.76 kB
+dist/resources/Prometheus-BdR1rMal.js               1.52 kB │ gzip:  0.71 kB
+dist/resources/Immich-Db2MS6lf.js                   1.58 kB │ gzip:  0.83 kB
+dist/resources/Readarr-B91xz_ht.js                  1.58 kB │ gzip:  0.74 kB
+dist/resources/FreshRSS-DW1CAu75.js                 1.60 kB │ gzip:  0.81 kB
+dist/resources/Lidarr-BQdc3jzo.js                   1.60 kB │ gzip:  0.76 kB
+dist/resources/SABnzbd-Cu3DQwm3.js                  1.70 kB │ gzip:  0.95 kB
+dist/resources/HyperHDR-D9vmc1Dk.js                 1.71 kB │ gzip:  0.84 kB
+dist/resources/qBittorrent-DmqojD9n.js              1.72 kB │ gzip:  0.87 kB
+dist/resources/OpenHAB-Cuv-pUl2.js                  1.72 kB │ gzip:  0.83 kB
+dist/resources/Sonarr-BgisD7Gk.js                   1.77 kB │ gzip:  0.82 kB
+dist/resources/Gatus-DxcfgGO2.js                    1.79 kB │ gzip:  0.97 kB
+dist/resources/IndustrySource-CT3xwomx.js           1.80 kB │ gzip:  0.93 kB
+dist/resources/Miniflux-B_-WZ7cQ.js                 1.86 kB │ gzip:  0.94 kB
+dist/resources/Emby-BbZFdHpP.js                     1.95 kB │ gzip:  0.98 kB
+dist/resources/HomeAssistant-C4U0A1cj.js            2.03 kB │ gzip:  0.91 kB
+dist/resources/UptimeKuma-L80mGx8C.js               2.13 kB │ gzip:  0.97 kB
+dist/resources/Radarr-fPdkH_A6.js                   2.23 kB │ gzip:  0.93 kB
+dist/resources/Portainer-CZzNHwSw.js                2.30 kB │ gzip:  0.98 kB
+dist/resources/Plex-BJvCDlUV.js                     2.36 kB │ gzip:  0.98 kB
+dist/resources/Rtorrent-BKBB_jd8.js                 2.36 kB │ gzip:  1.16 kB
+dist/resources/OpenWeather-CyFYlyjZ.js              2.47 kB │ gzip:  1.21 kB
+dist/resources/Transmission-BOuBoQhq.js             2.61 kB │ gzip:  1.24 kB
+dist/resources/Seerr-B0mB_6zU.js                    2.84 kB │ gzip:  1.33 kB
+dist/resources/OctoPrint-Brva4hi_.js                3.29 kB │ gzip:  1.28 kB
+dist/resources/PiHole-CHB3KIZ0.js                   3.48 kB │ gzip:  1.44 kB
+dist/resources/Proxmox-sHOrhDAe.js                  3.48 kB │ gzip:  1.38 kB
+dist/resources/index-BrCVdh4G.js                  110.52 kB │ gzip: 41.86 kB
+
+[INEFFECTIVE_DYNAMIC_IMPORT] src/components/services/_error.vue is dynamically imported by src/components/Service.vue but also statically imported by src/components/Service.vue, dynamic import will not move module into another chunk.
+
+[INEFFECTIVE_DYNAMIC_IMPORT] src/components/services/Generic.vue is dynamically imported by src/components/Service.vue but also statically imported by src/components/services/IndustrySource.vue, src/components/services/Linkding.vue, src/main.js, dynamic import will not move module into another chunk.
+
+✓ built in 918ms

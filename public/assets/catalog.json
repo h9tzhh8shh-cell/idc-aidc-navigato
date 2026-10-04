@@ -1,0 +1,1089 @@
+{
+  "schemaVersion": 1,
+  "title": "IDC/AIDC 与算力租赁数据导航",
+  "maintainedAt": "2026-10-04",
+  "categories": [
+    {
+      "id": "rental-prices",
+      "name": "算力租赁价格",
+      "question": "什么卡型、地区和租期的租金发生变化？",
+      "icon": "fas fa-chart-line"
+    },
+    {
+      "id": "capacity-construction",
+      "name": "机房供给与建设",
+      "question": "算力和机房供给增加多少，区域供需如何？",
+      "icon": "fas fa-building"
+    },
+    {
+      "id": "operating-demand",
+      "name": "运营与需求兑现",
+      "question": "上架、利用、签约和收入情况如何？",
+      "icon": "fas fa-chart-pie"
+    },
+    {
+      "id": "activity-demand",
+      "name": "用电与运行活动",
+      "question": "运行活动和云需求发生了什么变化？",
+      "icon": "fas fa-bolt"
+    },
+    {
+      "id": "servers-hardware",
+      "name": "服务器与硬件",
+      "question": "服务器收入、出货和加速硬件供给如何？",
+      "icon": "fas fa-server"
+    },
+    {
+      "id": "market-technology",
+      "name": "市场与技术报告",
+      "question": "市场格局、统计体系和技术趋势是什么？",
+      "icon": "fas fa-book-open"
+    }
+  ],
+  "sources": [
+    {
+      "id": "smm-rental",
+      "name": "SMM 算力行情",
+      "organization": "上海有色网（SMM）",
+      "sourceType": "commercial",
+      "categoryIds": [
+        "rental-prices"
+      ],
+      "purpose": "按卡型、地区与租期查找国内 GPU 租赁价格及价格类型。",
+      "questions": [
+        "不同地区的 H100、A100 等卡型租金如何变化？",
+        "基准价、零售价、现货成交指数与综合指数分别代表什么？"
+      ],
+      "metrics": [
+        "GPU 型号与显存",
+        "地区与租期",
+        "基准价与零售价",
+        "价格区间与均价",
+        "涨跌幅",
+        "元/卡·时"
+      ],
+      "aliases": [
+        "GPU 租赁",
+        "算力租赁",
+        "H100",
+        "A100",
+        "A800",
+        "H800",
+        "H20",
+        "4090",
+        "910B",
+        "GPU租赁"
+      ],
+      "tags": [
+        "GPU",
+        "租赁价格",
+        "价格口径"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "frequency": "daily",
+      "frequencyNote": "行情栏目明确标注每工作日 11:30 前更新；各价格点仍应核对原站日期。",
+      "access": "free",
+      "accessNote": "本次可直接读取公开行情表。历史序列、专业终端和下载权限未作确认，需到原站查看。",
+      "entryUrl": "https://aidc.smm.cn/price",
+      "entryType": "栏目",
+      "methodologyUrl": "https://news.smm.cn/gonggao/103970493",
+      "caveats": [
+        "整机包月折算卡时价与单卡短租价格的交付条件不同，不能只比较数值。",
+        "现货成交指数、平台挂牌价和跨型号标准当量综合指数不能混用；两篇方法公告本次仅检索收录可见，仍待直接核实正文。",
+        "综合指数不应理解为任一具体 GPU 的实际成交价；原文链接保留在相关方法说明中。"
+      ],
+      "featured": true,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取 /price 公开栏目正文，确认卡型、地区、周期、价格单位及更新说明；初始首页超时，改用同站可读行情栏目。方法公告未能提取正文。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "smm-weekly",
+      "name": "SMM 算力租赁市场周报",
+      "organization": "上海有色网（SMM）",
+      "sourceType": "commercial",
+      "categoryIds": [
+        "rental-prices"
+      ],
+      "purpose": "查找中国算力租赁市场的周度价格与分区域供需观察。",
+      "questions": [
+        "本周主要卡型与区域的租金、供需有哪些变化？",
+        "周报包含哪些指标，哪些内容需要订阅？"
+      ],
+      "metrics": [
+        "周度报价区间与均价",
+        "卡时价格与周环比",
+        "分区域租赁供需",
+        "整机现货与长协价格"
+      ],
+      "aliases": [
+        "SMM 周报",
+        "算力周报",
+        "GPU 租赁",
+        "H100",
+        "A100",
+        "A800",
+        "910B",
+        "4090",
+        "GPU租赁",
+        "算力租赁"
+      ],
+      "tags": [
+        "GPU",
+        "租赁价格",
+        "周报"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "frequency": "weekly",
+      "frequencyNote": "产品名称及检索收录说明为周度跟踪；本次未直接读取栏目正文。",
+      "access": "mixed",
+      "accessNote": "搜索收录可见产品介绍、历史试读与订阅提示；完整周报需登录及订阅，实际权限以原站为准。",
+      "entryUrl": "https://www.smm.cn/celue/computing-power-weekly-reports-255",
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "caveats": [
+        "公开周评与订阅版周报不是同一份文件；本次仅收录一篇公开周评线索。",
+        "地区、卡型、整机/单卡和短租/长协条件不同，不能将周度均价直接合并。",
+        "检索缓存可能滞后，不能把列表中的最后一期宣称为目前最新。"
+      ],
+      "featured": false,
+      "verifiedAt": null,
+      "verificationStatus": "partial",
+      "verificationNote": "两次打开栏目均超时，独立 HTTPS 请求也失败；搜索收录可见产品介绍、试读目录及 W35/W36 列表，未读到订阅周报原文。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "mysteel-computing",
+      "name": "Mysteel 算力",
+      "organization": "上海钢联（Mysteel）",
+      "sourceType": "commercial",
+      "categoryIds": [
+        "rental-prices"
+      ],
+      "purpose": "定位按区域、卡型与租期发布的国内及北美算力租赁价格。",
+      "questions": [
+        "国内八大枢纽和北美市场的算力租赁价格如何比较？",
+        "指数样本包含成交、挂牌还是询报盘？"
+      ],
+      "metrics": [
+        "国内算力租赁价格指数",
+        "国际算力租赁价格指数",
+        "国内算力租赁市场价格",
+        "地区、型号、规格与租期"
+      ],
+      "aliases": [
+        "我的钢铁",
+        "钢联数据",
+        "GPU 租赁",
+        "算力租赁",
+        "H100",
+        "H200",
+        "A100",
+        "MI300X",
+        "RTX 4090",
+        "昇腾910",
+        "GPU租赁"
+      ],
+      "tags": [
+        "GPU",
+        "租赁价格",
+        "价格口径"
+      ],
+      "regions": [
+        "中国",
+        "北美"
+      ],
+      "frequency": "daily",
+      "frequencyNote": "发布说明的搜索收录称每个工作日更新；栏目及公告原文请求受限。",
+      "access": "registration",
+      "accessNote": "发布说明的搜索收录称可登录查询与历史回溯；付费范围本次未核实。",
+      "entryUrl": "https://suanli.mysteel.com/",
+      "entryType": "栏目",
+      "methodologyUrl": "https://news.mysteel.com/a/26090910/81150FD737D13EC4.html",
+      "caveats": [
+        "搜索收录中的发布说明显示样本混合成交、挂牌、询报盘和意向报价，不能理解为纯成交指数。",
+        "现货、包月与一年以上协议受期限、保底用量和付款方式影响。",
+        "中国与北美价格币种和交付规格不同；未在本导航内换汇或统一口径。"
+      ],
+      "featured": true,
+      "verifiedAt": null,
+      "verificationStatus": "partial",
+      "verificationNote": "栏目与发布公告均返回 HTTP 411；独立 HTTPS 请求失败。搜索收录可见完整发布说明线索，但不将其视为已读原文。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "ornn-gpu",
+      "name": "Ornn GPU 价格预览（OCPI）",
+      "organization": "Ornn Data",
+      "sourceType": "commercial",
+      "categoryIds": [
+        "rental-prices"
+      ],
+      "purpose": "参考按实际按需交易形成的 GPU 美元卡时价格基准。",
+      "questions": [
+        "H100、H200、B200 与 A100 按需 GPU 租赁价格如何变化？",
+        "OCPI 的交易样本和长期预留报价有什么区别？"
+      ],
+      "metrics": [
+        "H100 SXM、H200、B200、A100 SXM4 价格",
+        "美元/GPU 小时",
+        "日结价格",
+        "公开历史序列"
+      ],
+      "aliases": [
+        "OCPI",
+        "H100",
+        "H200",
+        "B200",
+        "A100",
+        "GPU rental",
+        "GPU 租赁",
+        "GPU租赁",
+        "算力租赁"
+      ],
+      "tags": [
+        "GPU",
+        "租赁价格",
+        "方法说明"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "frequency": "daily",
+      "frequencyNote": "预览页提供日结价；方法说明以一小时交易窗口计算，完整历史及小时粒度按产品权限提供。",
+      "access": "mixed",
+      "accessNote": "预览页说明最新值及四类 GPU 三个月日度历史可免账户读取；全历史、小时粒度和 CSV 导出等需订阅。",
+      "entryUrl": "https://data.ornn.com/preview",
+      "entryType": "栏目",
+      "methodologyUrl": "https://data.ornn.com/methodology",
+      "caveats": [
+        "仅覆盖贡献者网络中的按需实际租赁，排除预留容量、长期和远期合同。",
+        "方法采用按交易量加权并缩尾处理；贡献者名单和缩尾参数未全部公开。",
+        "公开预览日结值与小时粒度数据的发布时间不同，使用时核对时间戳。"
+      ],
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取预览页和方法说明全文；确认按需成交口径、币种单位、免费范围与订阅限制。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "semianalysis-gpu",
+      "name": "SemiAnalysis GPU Pricing Index",
+      "organization": "SemiAnalysis",
+      "sourceType": "commercial",
+      "categoryIds": [
+        "rental-prices"
+      ],
+      "purpose": "比较海外 GPU 市场价格、不同合约期限与公开指数方法。",
+      "questions": [
+        "按需与不同期限的 GPU 合约价格有何差异？",
+        "综合指数如何组合云平台价格与合同调查数据？"
+      ],
+      "metrics": [
+        "GPU Spot-Contract Composite Index",
+        "美元/GPU 小时",
+        "按需与合约期限价格",
+        "价格分位区间"
+      ],
+      "aliases": [
+        "SemiAnalysis",
+        "H100",
+        "A100",
+        "B200",
+        "GPU Pricing Index",
+        "GPU 租赁",
+        "GPU租赁",
+        "算力租赁"
+      ],
+      "tags": [
+        "GPU",
+        "租赁价格",
+        "长协"
+      ],
+      "regions": [
+        "全球"
+      ],
+      "frequency": "daily",
+      "frequencyNote": "公开方法说明称综合指数按小时发布，数据产品页称租赁时间序列每日更新；公开静态表的所属期另行标注。",
+      "access": "mixed",
+      "accessNote": "公开页面可读部分价格表与方法摘要；完整数据和机构访问需联系销售或登录。",
+      "entryUrl": "https://gpu-index.semianalysis.com/",
+      "entryType": "栏目",
+      "methodologyUrl": "https://gpu-index.semianalysis.com/",
+      "caveats": [
+        "本次读取的静态表包含 2026 年 4 月等历史所属期，不能当作 2026 年 10 月现价。",
+        "综合指数结合市场价格采集与合同调查，不是全部市场成交价；公开说明称目前只有 H100 融合调查数据。",
+        "公开合同价格为第 25—75 百分位区间；三个月以上条款含预付款假设，不能与无预付款报价直接比较。"
+      ],
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取指数页的方法摘要、历史表和官方数据产品页；未验证动态图表实际刷新或付费底层序列。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "nda-capacity",
+      "name": "国家数据局：算力建设与阶段性披露",
+      "organization": "国家数据局",
+      "sourceType": "government",
+      "categoryIds": [
+        "capacity-construction"
+      ],
+      "purpose": "查找全国智能算力、枢纽节点及算力网建设的阶段性公开信息。",
+      "questions": [
+        "全国智能算力和枢纽节点建设进展有哪些官方披露？",
+        "数据对应哪个统计时点、精度及接入口径？"
+      ],
+      "metrics": [
+        "智能算力规模（PFLOPS，须注明精度）",
+        "枢纽节点算力占比",
+        "监测调度平台接入规模"
+      ],
+      "aliases": [
+        "东数西算",
+        "全国一体化算力网",
+        "国家枢纽节点",
+        "FP16"
+      ],
+      "tags": [
+        "算力规模",
+        "基础设施",
+        "官方发布"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "通过新闻发布、领导活动及媒体报道阶段性披露，不是固定周期统计数据库。",
+      "access": "free",
+      "accessNote": "公开网页可读；不同文章可能为部门原发或媒体转载，需查看来源署名。",
+      "entryUrl": "https://www.nda.gov.cn/sjj/swdt/list/index_pc_1.html",
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "caveats": [
+        "本次收录材料在官网媒体声音栏目转载自上海证券报·中国证券网，不是独立统计公报。",
+        "算力规模必须保留 FP16 等精度和统计时点；不同精度或平台接入量不能直接相加。",
+        "全国总规模、枢纽节点占比与监测平台接入量是不同分母和范围。"
+      ],
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取新闻动态栏目和 2026-04-30 阶段性披露文章；初始机构首页无可提取正文，改用可读持续栏目。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "cbre-datacenter",
+      "name": "CBRE 数据中心研究",
+      "organization": "CBRE Research",
+      "sourceType": "commercial",
+      "categoryIds": [
+        "capacity-construction",
+        "operating-demand"
+      ],
+      "purpose": "研究主要数据中心市场的容量、空置、吸纳与机房租金。",
+      "questions": [
+        "哪些主要市场容量增长，哪里受电力和土地约束？",
+        "机房空置率、净吸纳和批发托管租金如何变化？"
+      ],
+      "metrics": [
+        "数据中心容量（MW）",
+        "空置率",
+        "净吸纳量（MW）",
+        "机房租金（美元/kW/月）",
+        "可用容量"
+      ],
+      "aliases": [
+        "世邦魏理仕",
+        "Data Center Trends",
+        "colocation",
+        "机房供给"
+      ],
+      "tags": [
+        "数据中心",
+        "供需",
+        "机房租金"
+      ],
+      "regions": [
+        "全球",
+        "北美",
+        "欧洲",
+        "亚太",
+        "拉丁美洲"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "总栏目混合年度全球报告、北美半年报告、欧洲季度数据及专题研究；按具体报告查看周期。",
+      "access": "free",
+      "accessNote": "本次可直接读取栏目和 2026 全球报告正文；其他下载或订阅服务的权限以各页面为准。",
+      "entryUrl": "https://www.cbre.com/insights/data-center",
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "caveats": [
+        "覆盖所列重点市场，不等同于所有国家或全球数据中心总量。",
+        "美元/kW/月是机房容量租金，不是美元/GPU 小时的 GPU 租金。",
+        "全球报告的价格图比较 250—500 kW 容量需求；地区、交付条件与样本市场会影响可比性。"
+      ],
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取数据中心研究栏目和 Global Data Center Trends 2026 正文，确认发布日期及主要数据所属期为 2026 年第一季度。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "gds-quarterly",
+      "name": "万国数据季度业绩",
+      "organization": "万国数据（GDS Holdings Limited）",
+      "sourceType": "company",
+      "categoryIds": [
+        "operating-demand",
+        "capacity-construction"
+      ],
+      "purpose": "跟踪公司运营面积、签约与收入，观察项目交付如何转为实际利用。",
+      "questions": [
+        "投运与使用面积增长是否匹配？",
+        "签约、利用率和收入怎样变化？"
+      ],
+      "metrics": [
+        "投运面积（平方米）",
+        "已使用面积（平方米）",
+        "签约及预签约面积",
+        "面积利用率",
+        "净收入",
+        "调整后 EBITDA"
+      ],
+      "aliases": [
+        "GDS",
+        "万国数据",
+        "上架率",
+        "利用率",
+        "utilization"
+      ],
+      "tags": [
+        "公司披露",
+        "容量",
+        "需求兑现"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "frequency": "quarterly",
+      "frequencyNote": "按季度披露财务和期末运营指标；业绩会材料随季度更新。",
+      "access": "free",
+      "accessNote": "投资者关系网站公开提供业绩公告、演示文稿和会议文字稿。",
+      "entryUrl": "https://investors.gds-services.com/financial-information/quarterly-results",
+      "entryType": "栏目",
+      "methodologyUrl": "https://investors.gds-services.com/system/files-encrypted/nasdaq_kms/assets/2026/08/13/7-36-49/GDS%202Q26%20Earnings%20Release_0813%201200.pdf",
+      "caveats": [
+        "利用率按已使用面积除以投运面积计算；上架率仅为检索别名，不能直接等同机柜上架率或 GPU 利用率。",
+        "签约及预签约面积不等于已经开始计费的使用面积。",
+        "不能与 VNET 的 MW 或机柜分母直接横向比较；调整后 EBITDA 属非 GAAP 指标。"
+      ],
+      "featured": true,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取季度栏目及从栏目进入的 2026 年第二季度业绩 PDF，核对发布日期与利用率定义。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "vnet-quarterly",
+      "name": "世纪互联季度业绩",
+      "organization": "世纪互联（VNET Group, Inc.）",
+      "sourceType": "company",
+      "categoryIds": [
+        "operating-demand",
+        "capacity-construction"
+      ],
+      "purpose": "分别跟踪批发与零售 IDC 的容量、利用和收入兑现。",
+      "questions": [
+        "批发项目新增 MW 如何转为客户使用？",
+        "零售机柜利用率与单柜收入怎样变化？"
+      ],
+      "metrics": [
+        "批发投运容量（MW）",
+        "批发客户使用容量（MW）",
+        "批发签约率与利用率",
+        "零售投运机柜数",
+        "零售机柜利用率",
+        "单零售机柜月经常性收入",
+        "净收入"
+      ],
+      "aliases": [
+        "VNET",
+        "世纪互联",
+        "21Vianet",
+        "上架率",
+        "利用率",
+        "MRR"
+      ],
+      "tags": [
+        "公司披露",
+        "容量",
+        "需求兑现"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "frequency": "quarterly",
+      "frequencyNote": "按季度披露；同时提供中英文业绩演示材料。",
+      "access": "free",
+      "accessNote": "业绩公告和季度演示材料公开可读。",
+      "entryUrl": "https://ir.vnet.com/financial-information/quarterly-results",
+      "entryType": "栏目",
+      "methodologyUrl": "https://ir.vnet.com/static-files/bd1c3fd8-22f7-4ee2-a84a-7140445a4d8e",
+      "caveats": [
+        "批发业务采用 MW，零售业务采用机柜；不可合并成统一利用率。",
+        "批发利用率以客户使用容量除以投运容量；成熟与爬坡业务另有各自划分。",
+        "零售利用率自 2024 年第一季度起剔除部分预留机柜；历史可比性应阅读每期脚注。",
+        "与 GDS 的面积口径不同，上架率仅作为检索别名。"
+      ],
+      "featured": true,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取季度栏目及 2026 年第二季度业绩 PDF，并核对批发/零售单位和分母脚注。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "nea-electricity",
+      "name": "国家能源局用电数据",
+      "organization": "国家能源局",
+      "sourceType": "government",
+      "categoryIds": [
+        "activity-demand"
+      ],
+      "purpose": "用月度全社会及相关行业用电数据观察宏观运行活动。",
+      "questions": [
+        "全社会与第三产业用电如何变化？",
+        "在公开披露时，互联网数据服务用电增长如何？"
+      ],
+      "metrics": [
+        "全社会用电量",
+        "分产业用电量",
+        "互联网数据服务用电量（披露时）",
+        "同比增速",
+        "累计用电量"
+      ],
+      "aliases": [
+        "国家能源局",
+        "NEA",
+        "电耗",
+        "用电",
+        "互联网数据服务"
+      ],
+      "tags": [
+        "用电",
+        "运行活动",
+        "月度统计"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "frequency": "monthly",
+      "frequencyNote": "全社会用电按月发布，常同时披露年内累计；细分行业项目以当期原文为准，不保证每月齐备。",
+      "access": "free",
+      "accessNote": "官网公开新闻稿可直接阅读。",
+      "entryUrl": "https://www.nea.gov.cn/",
+      "entryType": "机构首页",
+      "methodologyUrl": null,
+      "caveats": [
+        "互联网数据服务用电不能直接等同 GPU 利用率；设备结构、制冷、能效和投产容量都会影响用电。",
+        "全社会、第三产业、互联网数据服务属于不同统计层级，不得混用。",
+        "注意单月与累计及亿千瓦时单位；首页新闻发布栏目在本次工具中未返回可核对的列表正文，暂保留机构首页。"
+      ],
+      "featured": true,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取机构首页及 2026 年 8 月用电原文；尝试新闻发布栏目仅返回标题，故保留并标识机构首页。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "synergy-cloud",
+      "name": "Synergy 云基础设施市场",
+      "organization": "Synergy Research Group",
+      "sourceType": "commercial",
+      "categoryIds": [
+        "activity-demand",
+        "market-technology"
+      ],
+      "purpose": "跟踪全球云基础设施服务收入、增长和厂商份额。",
+      "questions": [
+        "云基础设施需求增长是否加快？",
+        "主要云服务商收入份额如何变化？"
+      ],
+      "metrics": [
+        "云基础设施服务收入",
+        "同比增速",
+        "厂商市场份额",
+        "地区增长"
+      ],
+      "aliases": [
+        "Synergy",
+        "SRG",
+        "云需求",
+        "IaaS",
+        "PaaS",
+        "cloud infrastructure"
+      ],
+      "tags": [
+        "云服务",
+        "市场规模",
+        "竞争格局"
+      ],
+      "regions": [
+        "全球",
+        "北美",
+        "亚太",
+        "欧洲"
+      ],
+      "frequency": "quarterly",
+      "frequencyNote": "云市场数据按季度分析；新闻列表另有不定期的专题和预测。",
+      "access": "mixed",
+      "accessNote": "新闻稿和部分图表公开；细分数据及交互数据库属于客户订阅服务。",
+      "entryUrl": "https://www.srgresearch.com/articles",
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "caveats": [
+        "云基础设施口径包括 IaaS、PaaS 和托管私有云，不等于 GPU 算力租赁市场。",
+        "市场份额和地区增速必须保持同一范围、币种及统计期；预测不作已实现数据。",
+        "栏目还包含其他云与数据中心专题，需按标题筛选研究范围。"
+      ],
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取机构首页、新闻列表和 2026 年第二季度云市场新闻稿；以可持续浏览的新闻栏目替换机构首页。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "idc-server",
+      "name": "IDC 全球服务器市场研究",
+      "organization": "IDC（International Data Corporation）",
+      "sourceType": "commercial",
+      "categoryIds": [
+        "servers-hardware",
+        "market-technology"
+      ],
+      "purpose": "观察服务器厂商收入、出货与加速服务器结构变化。",
+      "questions": [
+        "服务器增长来自出货量还是价格及结构？",
+        "GPU 加速与其他服务器收入结构如何？"
+      ],
+      "metrics": [
+        "服务器厂商收入",
+        "服务器出货量与增速",
+        "GPU 加速服务器收入",
+        "x86 / 非 x86 收入",
+        "厂商份额",
+        "地区收入"
+      ],
+      "aliases": [
+        "IDC",
+        "Worldwide Quarterly Server Tracker",
+        "服务器",
+        "GPU server",
+        "加速服务器"
+      ],
+      "tags": [
+        "服务器",
+        "硬件供给",
+        "市场规模"
+      ],
+      "regions": [
+        "全球",
+        "中国",
+        "北美",
+        "亚太",
+        "欧洲"
+      ],
+      "frequency": "quarterly",
+      "frequencyNote": "Worldwide Quarterly Server Tracker 按季；展示栏目可能更新滞后于具体季度新闻稿。",
+      "access": "mixed",
+      "accessNote": "市场概览和新闻稿公开；详细 Tracker 产品面向客户，完整数据获取条件需向机构确认。",
+      "entryUrl": "https://www.idc.com/promo/servers/",
+      "entryType": "栏目",
+      "methodologyUrl": "https://www.idc.com/resource-center/press-releases/2q2026-wwserver-tracker/",
+      "caveats": [
+        "硬件厂商收入与出货不等于数据中心租赁收入或 GPU 租赁收入。",
+        "收入变化同时受数量、平均价格与配置结构影响；年度预测表不能当作实际值。",
+        "原文的加速器分类按出厂嵌入等规则划分，用户后加加速器的服务器可能归为非加速。"
+      ],
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取服务器市场栏目及 2026 年第二季度新闻稿，核对发布时间和原文分类说明；栏目展示季度与新闻稿并不总是同步。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "kz-market",
+      "name": "科智咨询 IDC 与算力市场研究",
+      "organization": "北京科智咨询有限公司",
+      "sourceType": "commercial",
+      "categoryIds": [
+        "market-technology",
+        "capacity-construction"
+      ],
+      "purpose": "研究中国传统 IDC 规模、区域需求与算力产业结构。",
+      "questions": [
+        "中国传统 IDC 市场规模和区域需求如何变化？",
+        "研究报告覆盖传统托管还是更广的算力服务？"
+      ],
+      "metrics": [
+        "传统 IDC 业务市场规模",
+        "市场规模同比增速",
+        "区域供需分析",
+        "市场规模预测"
+      ],
+      "aliases": [
+        "科智",
+        "科智咨询",
+        "KZ Consulting",
+        "传统IDC",
+        "第三方算力中心"
+      ],
+      "tags": [
+        "市场规模",
+        "区域市场",
+        "行业研究"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "洞察栏目不定期更新，包含年度系列报告；各报告统计年度需单独查看。",
+      "access": "mixed",
+      "accessNote": "洞察文章与报告介绍可公开阅读；完整研究及咨询的交付和收费条件需联系机构，本次未购买或验证付费全文。",
+      "entryUrl": "https://www.kzconsulting.cn/insights/index.html",
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "caveats": [
+        "已收录的市场数据明确为传统 IDC 业务，不能扩展为全部 AIDC 或算力租赁市场。",
+        "报告介绍与完整研究不同；未取得完整样本及方法时，横向比较需保留限制。",
+        "未来市场规模为预测，应与历史实际值分开。"
+      ],
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取科智洞察栏目和 2026 年 6 月 15 日文章，确认其讨论 2025 年传统 IDC 市场；完整研究未验证。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "caict-computing",
+      "name": "中国信通院算力专题报告",
+      "organization": "中国信息通信研究院",
+      "sourceType": "research",
+      "categoryIds": [
+        "market-technology",
+        "servers-hardware"
+      ],
+      "purpose": "查找计算节点、互联架构及算力技术体系的专题研究。",
+      "questions": [
+        "AI 计算节点怎样通过互联和集成提升系统能力？",
+        "相关术语、技术路径和产业生态如何界定？"
+      ],
+      "metrics": [
+        "AI 计算节点技术架构（待原文复核）",
+        "互联与集成技术（待原文复核）",
+        "产业生态与发展趋势（待原文复核）"
+      ],
+      "aliases": [
+        "中国信通院",
+        "CAICT",
+        "AI计算节点",
+        "超节点",
+        "算力报告"
+      ],
+      "tags": [
+        "技术报告",
+        "计算节点",
+        "行业研究"
+      ],
+      "regions": [
+        "中国",
+        "全球"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "专题报告按项目发布；年份为报告版本，不代表固定年度统计序列。",
+      "access": "unknown",
+      "accessNote": "检索可发现官方 PDF，但本次官方目录和 PDF 均未成功读取，完整获取条件待复核。",
+      "entryUrl": "https://www.caict.ac.cn/kxyj/qwfb/ztbg/",
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "caveats": [
+        "当前技术主题由官方 PDF 搜索摘要确认，未完整读取原文，不据此录入具体市场数据。",
+        "技术研究不是租金、利用率或出货量的连续行情序列。",
+        "工具访问失败不能证明链接永久失效；保留原始栏目与报告线索待后续核查。"
+      ],
+      "featured": false,
+      "verifiedAt": null,
+      "verificationStatus": "unreachable",
+      "verificationNote": "2026-10-04 打开官方专题目录返回 Internal Error；官方 PDF 亦重复失败。搜索结果可确认报告题名及部分摘要，不能视为成功读取原文。",
+      "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "id": "nda-digital-china",
+      "name": "数字中国发展报告",
+      "organization": "国家数据局",
+      "sourceType": "government",
+      "categoryIds": [
+        "market-technology",
+        "capacity-construction"
+      ],
+      "purpose": "以年度全国报告建立数字基础设施和数字经济的基准口径。",
+      "questions": [
+        "年度算力设施、智能算力与绿色化指标如何变化？",
+        "全国数字经济和基础设施指标采用什么统计范围？"
+      ],
+      "metrics": [
+        "全国在用算力设施标准机架数",
+        "智能算力规模（FP16）",
+        "超大型算力设施平均 PUE",
+        "数字经济核心产业增加值占 GDP 比重"
+      ],
+      "aliases": [
+        "数字中国",
+        "国家数据局",
+        "NDA",
+        "数字中国发展报告",
+        "年度算力"
+      ],
+      "tags": [
+        "年度基准",
+        "算力设施",
+        "数字经济"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "frequency": "annual",
+      "frequencyNote": "报告总结上一统计年度；首发活动、新闻发布页与全文附件上线时间可能不同。",
+      "access": "free",
+      "accessNote": "专题目录、发布页和报告 PDF 公开可读。",
+      "entryUrl": "https://www.nda.gov.cn/sjj/zhuanti/sjzgzxd/szzgbg/list/index_pc_1.html",
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "caveats": [
+        "标准机架、算力精度和 PUE 分别有独立口径；不能与某企业机柜或不注明精度的算力直接相加比较。",
+        "全国总量与试验验证平台监测覆盖量不是同一总体。",
+        "报告含历史事实和未来展望；统计年度不等于网页发布日期。"
+      ],
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取年度报告专栏、2026 年 6 月 8 日全文发布页及其 52 页 PDF；以年度报告专栏替换机构首页。",
+      "lastCheckAttemptAt": "2026-10-04"
+    }
+  ],
+  "reports": [
+    {
+      "id": "smm-spot-method-2026",
+      "sourceId": "smm-rental",
+      "title": "【SMM公告】新增“SMM算力租赁现货价格指数”及“SMM算力租赁现货挂牌价”公告",
+      "url": "https://news.smm.cn/gonggao/103970493",
+      "kind": "methodology",
+      "publishedAt": null,
+      "dataPeriod": null,
+      "summary": "检索收录说明将成交价格指数与平台挂牌价分为不同系列；用于核对价格类型。正文尚待直接复核。",
+      "verifiedAt": null,
+      "verificationStatus": "partial",
+      "verificationNote": "打开原文返回空正文，仅搜索收录可见标题与说明。检索显示 2026-06-25，但未将未直接确认的日期填为发布日期。"
+    },
+    {
+      "id": "smm-composite-method-2026",
+      "sourceId": "smm-rental",
+      "title": "【SMM公告】新增“SMM算力租赁综合价格指数”公告",
+      "url": "https://news.smm.cn/news/104123430",
+      "kind": "methodology",
+      "publishedAt": null,
+      "dataPeriod": null,
+      "summary": "检索收录介绍以标准计算单元当量形成跨卡型综合价格；不能作为某一具体卡型的成交报价。",
+      "verifiedAt": null,
+      "verificationStatus": "partial",
+      "verificationNote": "原文打开为空，只有搜索收录说明可读；日期和生效时间仍待原文核对。"
+    },
+    {
+      "id": "smm-weekly-public-commentary-104134387",
+      "sourceId": "smm-weekly",
+      "title": "【SMM算力周评】指数全周横盘 H200长协破10万",
+      "url": "https://news.smm.cn/news/104134387",
+      "kind": "report",
+      "publishedAt": null,
+      "dataPeriod": null,
+      "summary": "公开周评线索，涉及分区域指数与长协行情。该文不是付费订阅周报全文。",
+      "verifiedAt": null,
+      "verificationStatus": "partial",
+      "verificationNote": "搜索可见标题及部分摘要，原文打开为空；未据此确认日期或全文结论。订阅版具体周报暂未收录。"
+    },
+    {
+      "id": "mysteel-price-launch-2026",
+      "sourceId": "mysteel-computing",
+      "title": "Mysteel算力租赁价格指数及市场价格正式上线",
+      "url": "https://news.mysteel.com/a/26090910/81150FD737D13EC4.html",
+      "kind": "methodology",
+      "publishedAt": null,
+      "dataPeriod": null,
+      "summary": "发布说明线索涉及国内、北美样本与成交、挂牌、询报盘的混合价格来源；正文待直接核实。",
+      "verifiedAt": null,
+      "verificationStatus": "partial",
+      "verificationNote": "直接访问返回 HTTP 411，搜索收录可见说明。检索显示 2026-09-09，发布日期留空待原文确认。"
+    },
+    {
+      "id": "ornn-ocpi-methodology",
+      "sourceId": "ornn-gpu",
+      "title": "Ornn Compute Price Indices (OCPI): Methodology",
+      "url": "https://data.ornn.com/methodology",
+      "kind": "methodology",
+      "publishedAt": "2026-07-24",
+      "dataPeriod": null,
+      "summary": "说明按需成交样本、按量加权缩尾计算及治理规则；预留与长期合约不纳入 OCPI。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取全文；发布日期取自页面变更记录所列方法首次发布日。"
+    },
+    {
+      "id": "semianalysis-composite-methodology",
+      "sourceId": "semianalysis-gpu",
+      "title": "GPU Spot-Contract Composite Index methodology",
+      "url": "https://gpu-index.semianalysis.com/",
+      "kind": "methodology",
+      "publishedAt": null,
+      "dataPeriod": null,
+      "summary": "指数页内的方法摘要说明价格采集、加权合成与合同调查整合。公开静态表另有历史所属期，不能据此声称当日现价。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取页面内方法摘要；未见明确方法发布日期，留空。该方法与价格预览共用官方页面。"
+    },
+    {
+      "id": "nda-capacity-20260430",
+      "sourceId": "nda-capacity",
+      "title": "媒体报道 | 国家数据局明确算力基建四大方向",
+      "url": "https://www.nda.gov.cn/sjj/swdt/mtsy/0430/20260430114558848516126_pc.html",
+      "kind": "data-release",
+      "publishedAt": "2026-04-30",
+      "dataPeriod": "截至 2026 年 3 月底（智能算力与接入规模）",
+      "summary": "国家数据局官网转载媒体报道，披露全国智能算力、枢纽占比和监测平台接入规模，并介绍算力网建设方向。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取正文和页面日期；原始署名来源为上海证券报·中国证券网，统计规模注明 FP16。"
+    },
+    {
+      "id": "cbre-global-trends-2026",
+      "sourceId": "cbre-datacenter",
+      "title": "Global Data Center Trends 2026",
+      "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026",
+      "kind": "report",
+      "publishedAt": "2026-06-17",
+      "dataPeriod": "2026 年第一季度；部分章节含未来展望",
+      "summary": "比较四大区域主要市场的容量、空置、净吸纳、机房租金与可用供给；租金指标为机房功率容量口径。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取官网报告正文与发布日期；图表引用 CBRE Research, Q1 2026。"
+    },
+    {
+      "id": "gds-2026-q2",
+      "sourceId": "gds-quarterly",
+      "title": "GDS Holdings Limited Reports Second Quarter 2026 Results",
+      "url": "https://investors.gds-services.com/system/files-encrypted/nasdaq_kms/assets/2026/08/13/7-36-49/GDS%202Q26%20Earnings%20Release_0813%201200.pdf",
+      "kind": "report",
+      "publishedAt": "2026-08-13",
+      "dataPeriod": "2026 年第二季度；运营指标截至 2026-06-30",
+      "summary": "公司季度财务及运营披露，包含投运、签约和使用面积及利用率定义。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "从官方季度栏目进入 PDF；正文第 2 页载明发布日期、所属季度及利用率定义。"
+    },
+    {
+      "id": "vnet-2026-q2",
+      "sourceId": "vnet-quarterly",
+      "title": "VNET Reports Unaudited Second Quarter 2026 Financial Results",
+      "url": "https://ir.vnet.com/static-files/bd1c3fd8-22f7-4ee2-a84a-7140445a4d8e",
+      "kind": "report",
+      "publishedAt": "2026-08-18",
+      "dataPeriod": "2026 年第二季度；运营指标截至 2026-06-30",
+      "summary": "公司季度业绩，批发按 MW、零售按机柜分别披露容量及利用率，含预留机柜剔除说明。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "从官方季度栏目进入 PDF，核对第 1 页日期及第 3—4 页容量脚注。"
+    },
+    {
+      "id": "nea-2026-08-electricity",
+      "sourceId": "nea-electricity",
+      "title": "8月份全社会用电量再破万亿，负荷创历史新高",
+      "url": "https://www.nea.gov.cn/20260920/bd277235282140f4b43e9e0f5f0af3d9/c.html",
+      "kind": "data-release",
+      "publishedAt": "2026-09-20",
+      "dataPeriod": "2026 年 8 月；2026 年 1—8 月累计",
+      "summary": "披露全社会、分产业及互联网数据服务等用电量和增速，单月与累计分列。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "官网原文可读，页内载明发布日期及两种统计期。"
+    },
+    {
+      "id": "synergy-2026-q2-cloud",
+      "sourceId": "synergy-cloud",
+      "title": "Q2 Cloud Market Passes $143 Billion; Highest Growth Rate in Eight Years",
+      "url": "https://www.srgresearch.com/articles/q2-cloud-market-passes-143-billion-highest-growth-rate-in-eight-years",
+      "kind": "data-release",
+      "publishedAt": "2026-07-30",
+      "dataPeriod": "2026 年第二季度",
+      "summary": "公开季度云市场新闻稿，包含规模、份额和地区增长，说明 IaaS、PaaS 与托管私有云范围。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读新闻稿原文；只验证公开内容，未访问订阅数据库。"
+    },
+    {
+      "id": "idc-2026-q2-servers",
+      "sourceId": "idc-server",
+      "title": "Worldwide Server Market Revenue Hits Record $166.3 Billion in the Second Quarter of 2026 as AI Infrastructure Investment Continues to Broaden, according to IDC",
+      "url": "https://www.idc.com/resource-center/press-releases/2q2026-wwserver-tracker/",
+      "kind": "data-release",
+      "publishedAt": "2026-09-10",
+      "dataPeriod": "2026 年第二季度",
+      "summary": "服务器季度市场新闻稿，含厂商收入、出货增速、地区与加速器结构，以及分类定义。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读官方正文和分类脚注；标题数值来自原题，不代表本站独立测算。"
+    },
+    {
+      "id": "kz-2025-idc-market",
+      "sourceId": "kz-market",
+      "title": "科智咨询：2025年中国IDC市场规模达1847.5亿元，AI驱动市场增速显著回升",
+      "url": "https://www.kzconsulting.cn/insights/1251114323795771392.html",
+      "kind": "data-release",
+      "publishedAt": "2026-06-15",
+      "dataPeriod": "2025 年；另含至 2030 年预测",
+      "summary": "2025—2026 年系列研究的公开介绍，明确传统 IDC 业务规模，并讨论区域变化和未来预测。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读科智官网公开文章及日期；未取得完整系列报告和底层样本。"
+    },
+    {
+      "id": "caict-ai-node-2026",
+      "sourceId": "caict-computing",
+      "title": "AI计算节点发展研究报告（2026年）",
+      "url": "https://www.caict.ac.cn/kxyj/qwfb/ztbg/202603/P020260326543562359406.pdf",
+      "kind": "report",
+      "publishedAt": null,
+      "dataPeriod": null,
+      "summary": "待复核的官方 PDF 线索；搜索摘要涉及计算节点架构、互联与产业生态。",
+      "verifiedAt": null,
+      "verificationStatus": "partial",
+      "verificationNote": "官方 PDF 多次打开返回 Internal Error，仅取得搜索摘要。未据文件名推定发布日期；报告年份不当作数据统计期。"
+    },
+    {
+      "id": "nda-digital-china-2025",
+      "sourceId": "nda-digital-china",
+      "title": "国家数据局发布《数字中国发展报告（2025年）》",
+      "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/0608/20260608193210077440494_pc.html",
+      "kind": "report",
+      "publishedAt": "2026-06-08",
+      "dataPeriod": "2025 年；包含 2026 年展望",
+      "summary": "全文发布页附官方 PDF，覆盖数字基础设施、数字经济和发展环境，可查年度机架、智能算力及能效口径。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取发布页及其 PDF。此日期为所收录的全文发布页日期；栏目另有 4 月 29 日首发消息，PDF 封面标 2026 年 5 月，三者未混用。"
+    }
+  ]
+}
