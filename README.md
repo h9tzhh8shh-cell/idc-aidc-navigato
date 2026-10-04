@@ -2,7 +2,7 @@
 
 基于 Homer v26.08.3 的本地静态改版（2026-10-04），包含 6 个研究分类、15 个来源与 16 条报告/方法资料。具备关键词检索、地区/频率/获取条件组合筛选、来源详情和报告核查状态筛选。资料由人工维护；没有自动采集、后台、数据库、账号或价格历史图表。
 
-源码可托管在 GitHub，通过 Cloudflare Pages 构建发布；本地预览方式见下文。资料内容仍需人工核查和维护。
+线上访问：[IDC/AIDC 与算力租赁数据导航](https://idc-aidc-navigator.pages.dev/)。源码已托管在 GitHub，通过 Cloudflare Pages 构建发布；本地预览方式见下文。资料内容仍需人工核查和维护。
 
 项目仓库：[h9tzhh8shh-cell/idc-aidc-navigato](https://github.com/h9tzhh8shh-cell/idc-aidc-navigato)。公开源码保留 Homer 组件和许可证，排除了本站未使用的上游 `dummy-data/` 模拟接口数据；本地上游副本不受影响。
 
