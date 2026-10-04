@@ -2,9 +2,15 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import {
+  SEA_REGIONS,
+  filterSeaReports,
+  filterSeaSources,
   filterSources,
+  frequencyLabels,
   groupSources,
+  kindLabels,
   sortReports,
+  sourceTypeLabels,
   validateCatalog,
 } from "../src/domain/catalog.js";
 
@@ -130,6 +136,7 @@ test("搜索忽略首尾空格和英文大小写，使用已录入别名并覆�
     1,
   );
   assert.equal(filterSources(sources, { query: "工作日" }).length, 1);
+  assert.equal(filterSources(sources, { query: "中国" }).length, 1);
   assert.equal(filterSources(sources, { query: "GPU 利用率" }).length, 0);
 });
 
@@ -185,6 +192,164 @@ test("报告按发布日期倒序、未知日期末置，不修改数据原数�
   assert.deepEqual(
     reports.map((item) => item.id),
     ["unknown", "old", "new", "unknown-two"],
+  );
+});
+
+test("东南亚来源只收录专题标签，国家筛选按来源覆盖范围生效", () => {
+  const sources = [
+    source({
+      id: "regional",
+      tags: ["东南亚专题"],
+      regions: ["新加坡", "马来西亚"],
+    }),
+    source({ id: "untagged", regions: ["马来西亚"] }),
+    source({
+      id: "thailand",
+      tags: ["东南亚专题"],
+      regions: ["泰国"],
+    }),
+  ];
+  assert.deepEqual(
+    filterSeaSources(sources).map((item) => item.id),
+    ["regional", "thailand"],
+  );
+  assert.deepEqual(
+    filterSeaSources(sources, "马来西亚").map((item) => item.id),
+    ["regional"],
+  );
+  assert.deepEqual(filterSeaSources(sources, "越南"), []);
+});
+
+test("东南亚动态按文章国家筛选，不继承跨国来源覆盖范围，未知日期后置", () => {
+  const sources = [
+    source({
+      id: "regional",
+      tags: ["东南亚专题"],
+      regions: [...SEA_REGIONS],
+    }),
+    source({ id: "untagged", regions: ["马来西亚"] }),
+  ];
+  const reports = [
+    report({
+      id: "unknown-date",
+      sourceId: "regional",
+      regions: ["马来西亚"],
+      publishedAt: null,
+    }),
+    report({
+      id: "singapore",
+      sourceId: "regional",
+      regions: ["新加坡"],
+      publishedAt: "2026-10-02",
+    }),
+    report({ id: "legacy-no-regions", sourceId: "regional" }),
+    report({ id: "outside-sea", sourceId: "regional", regions: ["美国"] }),
+    report({
+      id: "malaysia",
+      sourceId: "regional",
+      regions: ["马来西亚"],
+      publishedAt: "2026-10-01",
+    }),
+    report({ id: "untracked", sourceId: "untagged", regions: ["马来西亚"] }),
+  ];
+  assert.deepEqual(
+    filterSeaReports(reports, sources).map((item) => item.id),
+    ["singapore", "malaysia", "unknown-date"],
+  );
+  assert.deepEqual(
+    filterSeaReports(reports, sources, "马来西亚").map((item) => item.id),
+    ["malaysia", "unknown-date"],
+  );
+  assert.deepEqual(filterSeaReports(reports, sources, "越南"), []);
+  assert.equal(reports[0].id, "unknown-date");
+});
+
+test("版本 1 兼容旧记录，支持媒体、半年频率、订阅说明和带国家阶段的新闻", () => {
+  assert.deepEqual(validateCatalog(catalog()), []);
+  assert.deepEqual(SEA_REGIONS, [
+    "新加坡",
+    "马来西亚",
+    "泰国",
+    "印尼",
+    "越南",
+    "菲律宾",
+  ]);
+  assert.ok(Object.isFrozen(SEA_REGIONS));
+  assert.equal(frequencyLabels.semiannual, "半年");
+  assert.equal(kindLabels.news, "新闻动态");
+  assert.equal(sourceTypeLabels.media, "行业媒体");
+  for (const subscriptionUrl of [null, "https://example.com/subscribe"]) {
+    assert.deepEqual(
+      validateCatalog(
+        catalog({
+          sources: [
+            source({
+              sourceType: "media",
+              frequency: "semiannual",
+              subscriptionUrl,
+              trackingNote: "建议每周查看",
+              subscriptionNote: "提供公开邮件订阅入口",
+            }),
+          ],
+          reports: [
+            report({ kind: "news", regions: ["越南"], stage: "可研阶段" }),
+          ],
+        }),
+      ),
+      [],
+    );
+  }
+});
+
+test("新闻缺少国家或阶段不能通过校验，新增可选字段仍约束类型与链接", () => {
+  for (const overrides of [
+    {},
+    { regions: [] },
+    { regions: "越南" },
+    { regions: ["越南", "越南"] },
+  ]) {
+    const errors = validateCatalog(
+      catalog({
+        reports: [report({ kind: "news", stage: "可研", ...overrides })],
+      }),
+    );
+    assert.ok(errors.some((error) => error.includes("regions")));
+  }
+  for (const stage of [undefined, "", null, 42]) {
+    const errors = validateCatalog(
+      catalog({
+        reports: [report({ kind: "news", regions: ["越南"], stage })],
+      }),
+    );
+    assert.ok(errors.some((error) => error.includes("stage")));
+  }
+  const errors = validateCatalog(
+    catalog({
+      sources: [
+        source({
+          subscriptionUrl: "http://example.com/subscribe",
+          trackingNote: [],
+          subscriptionNote: null,
+        }),
+      ],
+      reports: [report({ regions: "越南", stage: 42 })],
+    }),
+  );
+  for (const field of [
+    "subscriptionUrl",
+    "trackingNote",
+    "subscriptionNote",
+    "regions",
+    "stage",
+  ])
+    assert.ok(
+      errors.some((error) => error.includes(field)),
+      field,
+    );
+  assert.ok(
+    validateCatalog(
+      catalog({ sources: [source({ subscriptionUrl: "" })] }),
+    ).some((error) => error.includes("subscriptionUrl")),
   );
 });
 
@@ -341,11 +506,29 @@ test("正式资料保持验收关键词、来源关联、唯一计数与未知�
   );
   assert.equal(displayedIds.length, data.sources.length);
   assert.equal(new Set(displayedIds).size, data.sources.length);
-  assert.ok(
-    data.sources.every((item) =>
-      data.reports.some((report) => report.sourceId === item.id),
-    ),
-  );
+  const originalSourceIds = [
+    ...rentalIds,
+    "nda-capacity",
+    "cbre-datacenter",
+    "gds-quarterly",
+    "vnet-quarterly",
+    "nea-electricity",
+    "synergy-cloud",
+    "idc-server",
+    "kz-market",
+    "caict-computing",
+    "nda-digital-china",
+  ];
+  for (const id of originalSourceIds) {
+    assert.ok(
+      data.sources.some((item) => item.id === id),
+      `保留原来源 ${id}`,
+    );
+    assert.ok(
+      data.reports.some((item) => item.sourceId === id),
+      `保留原来源的报告 ${id}`,
+    );
+  }
   const sorted = sortReports(data.reports);
   const unknownIndex = sorted.findIndex((item) => item.publishedAt === null);
   if (unknownIndex >= 0)

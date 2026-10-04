@@ -40,6 +40,12 @@
             target="_blank"
             rel="noopener noreferrer"
             >方法说明 ↗</a
+          ><a
+            v-if="source.subscriptionUrl"
+            :href="source.subscriptionUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            >前往订阅页面 ↗</a
           >
         </div>
         <section>
@@ -71,6 +77,14 @@
             <dt>获取条件</dt>
             <dd>{{ accessLabels[source.access] }} · {{ source.accessNote }}</dd>
           </div>
+          <div v-if="source.trackingNote">
+            <dt>建议查看频率</dt>
+            <dd>{{ source.trackingNote }}</dd>
+          </div>
+          <div v-if="source.subscriptionNote">
+            <dt>订阅与追踪方式</dt>
+            <dd>{{ source.subscriptionNote }}</dd>
+          </div>
         </dl>
         <section class="caveats">
           <h3>口径与可比性</h3>
@@ -97,7 +111,7 @@
         </section>
         <section>
           <h3>
-            相关报告与方法说明 <small>{{ reports.length }} 篇</small>
+            相关动态、报告与方法说明 <small>{{ reports.length }} 篇</small>
           </h3>
           <p class="note">发布日期、数据所属期和成功核查日期分别记录。</p>
           <ReportEntry
@@ -105,7 +119,9 @@
             :key="report.id"
             :report="report"
           />
-          <p v-if="!reports.length" class="empty-inline">暂未收录具体报告</p>
+          <p v-if="!reports.length" class="empty-inline">
+            暂未收录具体资料，可打开来源栏目继续查看。
+          </p>
         </section>
       </div>
     </template>

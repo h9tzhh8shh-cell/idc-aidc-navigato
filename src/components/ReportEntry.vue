@@ -12,6 +12,12 @@
       >
     </h3>
     <p v-if="sourceName" class="report-source">来源：{{ sourceName }}</p>
+    <div v-if="report.regions?.length || report.stage" class="report-context">
+      <span v-for="region in report.regions" :key="region">{{ region }}</span>
+      <span v-if="report.stage" class="report-stage"
+        >阶段：{{ report.stage }}</span
+      >
+    </div>
     <p>{{ report.summary }}</p>
     <dl class="report-dates">
       <div>

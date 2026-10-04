@@ -21,6 +21,12 @@
           ><span>{{ accessLabels[source.access] }}</span
           ><span v-if="source.entryType === '机构首页'">机构首页入口</span>
         </div>
+        <p v-if="source.trackingNote" class="source-tracking">
+          {{ source.trackingNote }}
+        </p>
+        <p v-if="source.trackingNote" class="source-check-date">
+          成功核查：{{ source.verifiedAt || "暂无成功记录" }}
+        </p>
         <div class="source-bottom">
           <span class="verification" :class="source.verificationStatus"
             ><span aria-hidden="true">●</span>

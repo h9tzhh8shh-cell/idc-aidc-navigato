@@ -1,9 +1,10 @@
-/** Catalog operations are source-level: report periods never affect filtering. */
+/** Source frequencies and report periods are maintained independently. */
 export const frequencyLabels = Object.freeze({
   daily: "日度",
   weekly: "周度",
   monthly: "月度",
   quarterly: "季度",
+  semiannual: "半年",
   annual: "年度",
   irregular: "不定期",
   unknown: "待核查",
@@ -25,6 +26,7 @@ export const statusLabels = Object.freeze({
 });
 
 export const kindLabels = Object.freeze({
+  news: "新闻动态",
   report: "研究报告",
   "data-release": "数据发布",
   methodology: "方法说明",
@@ -35,7 +37,17 @@ export const sourceTypeLabels = Object.freeze({
   company: "公司披露",
   research: "研究机构",
   commercial: "商业数据机构",
+  media: "行业媒体",
 });
+
+export const SEA_REGIONS = Object.freeze([
+  "新加坡",
+  "马来西亚",
+  "泰国",
+  "印尼",
+  "越南",
+  "菲律宾",
+]);
 
 const searchableFields = [
   "name",
@@ -45,6 +57,7 @@ const searchableFields = [
   "metrics",
   "aliases",
   "tags",
+  "regions",
   "caveats",
   "frequencyNote",
 ];
@@ -90,6 +103,29 @@ export function sortReports(reports) {
     if (!b.publishedAt) return -1;
     return b.publishedAt.localeCompare(a.publishedAt);
   });
+}
+
+export function filterSeaSources(sources, region = "") {
+  return sources.filter(
+    (source) =>
+      source.tags.includes("东南亚专题") &&
+      (!region || source.regions.includes(region)),
+  );
+}
+
+/** Articles use their own coverage, never their publisher's country footprint. */
+export function filterSeaReports(reports, sources, region = "") {
+  const sourceIds = new Set(
+    filterSeaSources(sources).map((source) => source.id),
+  );
+  return sortReports(
+    reports.filter(
+      (report) =>
+        sourceIds.has(report.sourceId) &&
+        report.regions?.some((country) => SEA_REGIONS.includes(country)) &&
+        (!region || report.regions.includes(region)),
+    ),
+  );
 }
 
 /** The all-category view owns each source only in its first declared category. */
@@ -339,6 +375,13 @@ export function validateCatalog(
     enumValue(source.access, accessLabels, `${path}.access`);
     url(source.entryUrl, `${path}.entryUrl`);
     url(source.methodologyUrl, `${path}.methodologyUrl`, { nullable: true });
+    if (
+      Object.hasOwn(source, "subscriptionUrl") &&
+      source.subscriptionUrl !== null
+    )
+      url(source.subscriptionUrl, `${path}.subscriptionUrl`);
+    for (const key of ["trackingNote", "subscriptionNote"])
+      if (Object.hasOwn(source, key)) string(source[key], `${path}.${key}`);
     if (typeof source.featured !== "boolean")
       fail(`${path}.featured`, "必须为布尔值");
     verification(source, path);
@@ -353,6 +396,12 @@ export function validateCatalog(
       fail(`${path}.sourceId`, `未知来源 ${String(report.sourceId)}`);
     url(report.url, `${path}.url`);
     enumValue(report.kind, kindLabels, `${path}.kind`);
+    if (Object.hasOwn(report, "regions") || report.kind === "news")
+      strings(report.regions, `${path}.regions`, {
+        empty: report.kind !== "news",
+      });
+    if (Object.hasOwn(report, "stage") || report.kind === "news")
+      string(report.stage, `${path}.stage`);
     date(report.publishedAt, `${path}.publishedAt`);
     if (report.dataPeriod !== null)
       string(report.dataPeriod, `${path}.dataPeriod`);

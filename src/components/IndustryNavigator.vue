@@ -36,24 +36,39 @@
       <div class="side-divider"></div>
       <button
         class="reports-nav"
+        :class="{ active: view === 'sea' }"
+        :aria-pressed="view === 'sea'"
+        @click="view = 'sea'"
+      >
+        <i class="fas fa-earth-asia" aria-hidden="true"></i>东南亚专题
+        <span>{{ seaSourceCount }}</span>
+      </button>
+      <button
+        class="reports-nav"
         :class="{ active: view === 'reports' }"
         :aria-pressed="view === 'reports'"
         @click="view = 'reports'"
       >
-        <i class="far fa-file-lines" aria-hidden="true"></i>已收录报告
+        <i class="far fa-file-lines" aria-hidden="true"></i>动态与报告
         <span>{{ catalog?.reports.length || 0 }}</span>
       </button>
       <div class="side-note">
         <span class="side-note-dot"></span>资料由人工整理
         <p>从来源出发，核对口径。<br />让每个研究判断有据可查。</p>
-        <span>基于 Homer · 本地静态版</span>
+        <span>基于 Homer · 静态资料站</span>
       </div>
     </aside>
     <main id="directory" tabindex="-1" class="workspace">
       <header class="topbar">
         <p>
           研究工作台 <span>/</span>
-          {{ view === "sources" ? "来源目录" : "报告目录" }}
+          {{
+            view === "sea"
+              ? "东南亚专题"
+              : view === "sources"
+                ? "来源目录"
+                : "动态与报告"
+          }}
         </p>
         <DarkMode default-value="light" @updated="isDark = $event" />
       </header>
@@ -68,22 +83,46 @@
       <template v-else>
         <section class="hero">
           <div>
-            <p class="eyebrow">IDC / AIDC INTELLIGENCE DIRECTORY</p>
-            <h1>IDC/AIDC 与算力租赁<br class="desktop-break" />数据导航</h1>
+            <p class="eyebrow">
+              {{
+                view === "sea"
+                  ? "SOUTHEAST ASIA / PROJECT INTELLIGENCE"
+                  : "IDC / AIDC INTELLIGENCE DIRECTORY"
+              }}
+            </p>
+            <h1 v-if="view === 'sea'">
+              东南亚 AIDC / IDC<br class="desktop-break" />项目与商机追踪
+            </h1>
+            <h1 v-else>
+              IDC/AIDC 与算力租赁<br class="desktop-break" />数据导航
+            </h1>
             <p class="hero-description">
-              从研究问题出发，找到数据、读懂口径、回到原始来源。
+              {{
+                view === "sea"
+                  ? "追踪项目进展、供电条件与政策变化，回到原文确认每一步。"
+                  : "从研究问题出发，找到数据、读懂口径、回到原始来源。"
+              }}
             </p>
           </div>
           <div class="hero-stats">
             <div>
-              <strong>{{ catalog.sources.length }}</strong
-              ><span>核心数据入口</span>
+              <strong>{{
+                view === "sea" ? seaSourceCount : catalog.sources.length
+              }}</strong
+              ><span>{{
+                view === "sea" ? "长期追踪来源" : "核心数据入口"
+              }}</span>
             </div>
             <div>
               <strong>{{
-                catalog.categories.length.toString().padStart(2, "0")
+                (view === "sea"
+                  ? SEA_REGIONS.length
+                  : catalog.categories.length
+                )
+                  .toString()
+                  .padStart(2, "0")
               }}</strong
-              ><span>研究方向</span>
+              ><span>{{ view === "sea" ? "覆盖市场" : "研究方向" }}</span>
             </div>
           </div>
         </section>
@@ -185,11 +224,12 @@
             />
           </div>
         </template>
+        <SoutheastAsia v-else-if="view === 'sea'" :catalog="catalog" />
         <section v-else class="reports-section" aria-labelledby="reports-title">
           <div class="result-head">
             <div>
               <h2 id="reports-title">
-                已收录报告
+                动态与报告
                 <span class="result-count">{{ catalog.reports.length }}</span>
               </h2>
               <p>
@@ -229,7 +269,7 @@
               :source-name="sourceMap[report.sourceId]?.name"
           /></template>
           <p v-if="!displayedReports.length" class="empty-inline">
-            该状态暂未收录报告。
+            该状态暂未收录资料。
           </p>
         </section>
         <footer class="research-footer">
@@ -256,6 +296,7 @@ import DarkMode from "./DarkMode.vue";
 import ServiceGroup from "./ServiceGroup.vue";
 import SourceDetails from "./SourceDetails.vue";
 import ReportEntry from "./ReportEntry.vue";
+import SoutheastAsia from "./SoutheastAsia.vue";
 import {
   filterSources,
   groupSources,
@@ -263,6 +304,8 @@ import {
   validateCatalog,
   frequencyLabels,
   accessLabels,
+  SEA_REGIONS,
+  filterSeaSources,
 } from "../domain/catalog.js";
 const defaults = () => ({
   query: "",
@@ -279,6 +322,7 @@ export default {
     ServiceGroup,
     SourceDetails,
     ReportEntry,
+    SoutheastAsia,
   },
   provide() {
     return { openSource: this.openSource };
@@ -293,8 +337,12 @@ export default {
     reportStatus: "",
     frequencyLabels,
     accessLabels,
+    SEA_REGIONS,
   }),
   computed: {
+    seaSourceCount() {
+      return filterSeaSources(this.catalog?.sources || []).length;
+    },
     filtered() {
       return filterSources(this.catalog?.sources || [], this.filters);
     },

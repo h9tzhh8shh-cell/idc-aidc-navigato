@@ -874,6 +874,719 @@
       "verificationStatus": "verified",
       "verificationNote": "已读取年度报告专栏、2026 年 6 月 8 日全文发布页及其 52 页 PDF；以年度报告专栏替换机构首页。",
       "lastCheckAttemptAt": "2026-10-04"
+    },
+    {
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "lastCheckAttemptAt": "2026-10-04",
+      "subscriptionUrl": null,
+      "id": "dcd-southeast-asia",
+      "name": "DCD 东南亚数据中心新闻",
+      "organization": "DataCenterDynamics（DCD）",
+      "sourceType": "media",
+      "categoryIds": [
+        "capacity-construction",
+        "operating-demand"
+      ],
+      "purpose": "发现东南亚数据中心新建、扩建、客户签约与融资线索，再到运营商和政府原文确认。",
+      "questions": [
+        "哪些城市新增项目、交付容量或客户订单？",
+        "项目处于规划、施工还是投运阶段？"
+      ],
+      "metrics": [
+        "项目位置与阶段",
+        "规划、在建与投运容量（MW）",
+        "投资及融资金额",
+        "客户签约与供电进展"
+      ],
+      "aliases": [
+        "DCD",
+        "DataCenterDynamics",
+        "Southeast Asia",
+        "SEA",
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼",
+        "越南",
+        "菲律宾",
+        "Singapore",
+        "Malaysia",
+        "Thailand",
+        "Indonesia",
+        "Vietnam",
+        "Philippines"
+      ],
+      "tags": [
+        "东南亚专题",
+        "项目动态",
+        "行业媒体"
+      ],
+      "regions": [
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼",
+        "越南",
+        "菲律宾"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "新闻随事件持续更新，近期列表可见多日发布；未确认固定日刊或周刊承诺。",
+      "trackingNote": "建议每日查看区域新闻，重点线索再核对公司公告或政府原文。",
+      "subscriptionNote": "可收藏东南亚新闻入口；本次未确认该区域专属邮件订阅地址和发送频率。",
+      "access": "free",
+      "accessNote": "本次区域新闻列表及公开文章可读；其他会员内容和服务以原站权限为准。",
+      "entryUrl": "https://www.datacenterdynamics.com/en/news/?term=south-east-asia",
+      "caveats": [
+        "区域列表可能混入东南亚以外的新闻，需逐篇确认所在地。",
+        "媒体引用的计划容量、投资意向和签约容量不能直接作为已投运规模。"
+      ],
+      "verificationNote": "已读取东南亚新闻列表及近期条目日期，确认持续更新；未将媒体报道等同于项目官方确认。"
+    },
+    {
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "lastCheckAttemptAt": "2026-10-04",
+      "subscriptionUrl": "https://w.media/subscribe/",
+      "id": "wmedia-sea",
+      "name": "w.media 东南亚",
+      "organization": "w.media",
+      "sourceType": "media",
+      "categoryIds": [
+        "capacity-construction",
+        "market-technology",
+        "activity-demand"
+      ],
+      "purpose": "跟踪东南亚项目、供应链、供电和审批动态，并通过区域邮件订阅发现商机。",
+      "questions": [
+        "近期有哪些园区、扩建和供应链合作机会？",
+        "电力、用水和许可约束如何影响交付进度？"
+      ],
+      "metrics": [
+        "项目进度",
+        "园区及 IT 容量（MW）",
+        "投资和融资计划",
+        "供电与许可动态"
+      ],
+      "aliases": [
+        "w.media",
+        "W Media",
+        "SEA",
+        "Stavian",
+        "BDx",
+        "Globe",
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼",
+        "越南",
+        "菲律宾",
+        "Johor",
+        "Batam",
+        "Bangkok",
+        "Ho Chi Minh"
+      ],
+      "tags": [
+        "东南亚专题",
+        "项目动态",
+        "行业媒体"
+      ],
+      "regions": [
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼",
+        "越南",
+        "菲律宾"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "新闻高频更新；历史上有 SEA Weekly Briefing 栏目，但未确认其目前仍稳定周更。",
+      "trackingNote": "建议每日浏览或订阅区域邮件；涉及项目和政策的线索另查原始公告。",
+      "subscriptionNote": "原站提供邮件订阅入口，可选择区域内容；发送节奏以订阅页面及实际邮件为准。",
+      "access": "free",
+      "accessNote": "本次所收录文章正文可公开阅读；收藏功能需登录，邮件订阅需自行提供邮箱。",
+      "entryUrl": "https://w.media/category/markets/apac/sea/",
+      "caveats": [
+        "部分文章转述其他媒体、访谈或企业新闻稿，应保留原始信息出处。",
+        "法规提议不等于生效法规；计划投资不等于已落实订单或已投运容量。"
+      ],
+      "verificationNote": "已读取东南亚栏目、订阅入口和本次四篇文章正文及发布日期；项目批文、许可决定和法案原文未逐项独立核实。"
+    },
+    {
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "lastCheckAttemptAt": "2026-10-04",
+      "subscriptionUrl": "https://cloud.comm.cushmanwakefield.com/apacdatacentres-subscribe",
+      "id": "cushman-apac-datacenter",
+      "name": "Cushman & Wakefield 亚太数据中心半年报告",
+      "organization": "戴德梁行（Cushman & Wakefield）",
+      "sourceType": "commercial",
+      "categoryIds": [
+        "capacity-construction",
+        "operating-demand"
+      ],
+      "purpose": "按半年观察东南亚主要城市的容量、空置和开发管线，判断项目供需环境。",
+      "questions": [
+        "新加坡、柔佛、雅加达和曼谷的供给怎样变化？",
+        "在建和规划项目能否转化为可交付容量？"
+      ],
+      "metrics": [
+        "在运容量（MW）",
+        "在建与规划容量（MW）",
+        "空置率",
+        "重点市场供需与电力约束"
+      ],
+      "aliases": [
+        "戴德梁行",
+        "Cushman",
+        "C&W",
+        "APAC Data Centre Update",
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼",
+        "越南",
+        "菲律宾",
+        "Johor",
+        "Jakarta",
+        "Bangkok",
+        "Manila",
+        "Ho Chi Minh City"
+      ],
+      "tags": [
+        "东南亚专题",
+        "半年报告",
+        "区域供需"
+      ],
+      "regions": [
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼",
+        "越南",
+        "菲律宾"
+      ],
+      "frequency": "semiannual",
+      "frequencyNote": "栏目保留 H1/H2 半年版本，当前页面为 2026 H1；网页更新日期不等于报告数据所属期。",
+      "trackingNote": "建议半年报告发布时阅读，并每月查看一次是否有新版或专题补充。",
+      "subscriptionNote": "提供亚太数据中心研究邮件订阅入口；需用户自行填写资料。",
+      "access": "mixed",
+      "accessNote": "公开页面可读报告摘要、指标和历史版本入口；本次未完整读取外部报告阅读器，全文获取条件以原站为准。",
+      "entryUrl": "https://www.cushmanwakefield.com/en/singapore/insights/apac-data-centre-update",
+      "caveats": [
+        "主要和次级市场覆盖范围不同，不能把所列市场之和当作整个国家总量。",
+        "在运、在建和规划容量必须分列，规划不代表已取得全部条件。",
+        "本次核查公开摘要，未验证完整报告的所有图表与口径。"
+      ],
+      "verificationNote": "已读取 2026 H1 页面摘要、市场名单、历史 H1/H2 版本及订阅入口；完整报告正文尚未核查。"
+    },
+    {
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "lastCheckAttemptAt": "2026-10-04",
+      "subscriptionUrl": null,
+      "id": "dcbyte-global-index",
+      "name": "DC Byte 全球数据中心指数",
+      "organization": "DC Byte",
+      "sourceType": "commercial",
+      "categoryIds": [
+        "market-technology",
+        "capacity-construction"
+      ],
+      "purpose": "跟踪年度市场排名与未来增长城市，用公开研究补充东南亚项目开发判断。",
+      "questions": [
+        "哪些东南亚城市的开发管线和需求增长较快？",
+        "电力、土地和规划约束怎样影响项目交付？"
+      ],
+      "metrics": [
+        "区域市场排名",
+        "未来增长市场",
+        "在运与开发管线容量",
+        "需求与交付约束"
+      ],
+      "aliases": [
+        "DC Byte",
+        "Global Data Centre Index",
+        "全球数据中心指数",
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼",
+        "越南",
+        "菲律宾",
+        "Johor",
+        "Kuala Lumpur",
+        "Bangkok",
+        "Jakarta"
+      ],
+      "tags": [
+        "东南亚专题",
+        "年度指数",
+        "区域供需"
+      ],
+      "regions": [
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼",
+        "越南",
+        "菲律宾"
+      ],
+      "frequency": "annual",
+      "frequencyNote": "全球指数按年度发布，已确认 2026 年版发布于 7 月 27 日；市场专题和博客不定期更新。",
+      "trackingNote": "建议年度报告发布时阅读，并每月查看亚太市场专题。",
+      "subscriptionNote": "可收藏指数和市场专题栏目；本次未确认免费邮件订阅，数据库提供试用及演示申请。",
+      "access": "mixed",
+      "accessNote": "公开报告介绍和市场文章可读；完整报告获取及数据库访问按原站表单和商业权限办理，本次未取得报告全文。",
+      "entryUrl": "https://www.dcbyte.com/global-data-centre-index/",
+      "caveats": [
+        "公开介绍不能代替完整报告和数据库，市场排名与容量口径应以当期方法为准。",
+        "早期规划、已承诺、在建和在运属于不同阶段，不可合并解释为可用容量。"
+      ],
+      "verificationNote": "已读取指数栏目及 2026 年版公开介绍、发布日期和报告范围；未读取完整报告或付费数据库。"
+    },
+    {
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": null,
+      "verificationStatus": "partial",
+      "lastCheckAttemptAt": "2026-10-04",
+      "subscriptionUrl": null,
+      "id": "tnb-quarterly",
+      "name": "TNB 季度业绩与分析师资料",
+      "organization": "Tenaga Nasional Berhad（马来西亚国家能源公司）",
+      "sourceType": "company",
+      "categoryIds": [
+        "activity-demand",
+        "capacity-construction"
+      ],
+      "purpose": "通过电力公司的季度披露追踪马来西亚数据中心用电和接电兑现。",
+      "questions": [
+        "数据中心电力需求和接电进度怎样变化？",
+        "签订供电安排、已接电与实际用电是否同步增长？"
+      ],
+      "metrics": [
+        "电力销售及需求",
+        "数据中心供电项目",
+        "接电及供电安排",
+        "电网投资进度"
+      ],
+      "aliases": [
+        "TNB",
+        "Tenaga Nasional",
+        "国家能源",
+        "马来西亚",
+        "Malaysia",
+        "Johor",
+        "柔佛",
+        "Selangor",
+        "雪兰莪"
+      ],
+      "tags": [
+        "东南亚专题",
+        "季度披露",
+        "电力与接电"
+      ],
+      "regions": [
+        "马来西亚"
+      ],
+      "frequency": "quarterly",
+      "frequencyNote": "官方季度资料栏目按季度列示业绩及分析师演示资料；检索可见 2026 Q1/Q2，栏目正文此次访问超时。",
+      "trackingNote": "建议每季业绩发布后阅读数据中心和供电章节；重大供电合作可每周另查公司公告。",
+      "subscriptionNote": "收藏季度资料入口；本次未确认该栏目可用的专属邮件订阅。",
+      "access": "free",
+      "accessNote": "官方栏目检索可见公开季度业绩和分析师资料链接；本次未成功读取栏目正文或最新演示文件。",
+      "entryUrl": "https://www.tnb.com.my/listings/quarterly_results/",
+      "caveats": [
+        "供电申请、签约负荷、接电容量和实际电量并非同一指标。",
+        "发电功率、设施接入功率与数据中心 IT 负载不能直接互换。",
+        "当前栏目访问超时，最新季度具体数据仍需下载原始材料核对。"
+      ],
+      "verificationNote": "搜索收录确认官方季度资料入口及 2026 Q1/Q2 条目，直接打开仍超时；未将检索摘要标为已读全文。"
+    },
+    {
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "lastCheckAttemptAt": "2026-10-04",
+      "subscriptionUrl": null,
+      "id": "singtel-nxera-results",
+      "name": "Singtel / Nxera 经营与业绩资料",
+      "organization": "Singapore Telecommunications Limited（Singtel）",
+      "sourceType": "company",
+      "categoryIds": [
+        "operating-demand",
+        "capacity-construction"
+      ],
+      "purpose": "通过 Singtel 季度披露跟踪 Nxera 数据中心扩张、项目交付和需求兑现。",
+      "questions": [
+        "Nxera 各地数据中心的交付、签约和运营进度如何？",
+        "数字基础设施投入怎样转化为经营贡献？"
+      ],
+      "metrics": [
+        "数据中心项目与容量",
+        "签约及预留进度",
+        "数字基础设施业务表现",
+        "投资及融资情况"
+      ],
+      "aliases": [
+        "Singtel",
+        "Nxera",
+        "新电信",
+        "Digital InfraCo",
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼",
+        "Singapore",
+        "Johor",
+        "Bangkok",
+        "Batam"
+      ],
+      "tags": [
+        "东南亚专题",
+        "季度披露",
+        "需求兑现"
+      ],
+      "regions": [
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼"
+      ],
+      "frequency": "quarterly",
+      "frequencyNote": "Q1/Q3 主要为经营更新，半年及全年发布业绩；当前已核查截至 2026 年 6 月的 FY2026/27 Q1 更新。",
+      "trackingNote": "建议每季阅读经营更新，并查看投资者日资料中的数字基础设施章节。",
+      "subscriptionNote": "收藏 Financial Results 栏目；本次未确认 Nxera 专属邮件订阅。",
+      "access": "free",
+      "accessNote": "投资者关系栏目和本次季度经营更新 PDF 可公开阅读。",
+      "entryUrl": "https://www.singtel.com/about-us/investor-relations/financial-results",
+      "caveats": [
+        "Singtel 财年与自然年不同，需同时保留财季名称及截止日期。",
+        "已签约、预留、可用和已投运容量不可混用；集团经营数字不等于 Nxera 单项业务数字。"
+      ],
+      "verificationNote": "已确认官方财务资料入口，并读取 2026-08-13 季度经营更新 PDF 的季度说明及 Nxera 相关正文、演示内容；期间截至 2026-06-30。"
+    },
+    {
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "lastCheckAttemptAt": "2026-10-04",
+      "subscriptionUrl": null,
+      "id": "dayone-news",
+      "name": "DayOne 项目与合作公告",
+      "organization": "DayOne",
+      "sourceType": "company",
+      "categoryIds": [
+        "capacity-construction",
+        "activity-demand"
+      ],
+      "purpose": "从运营商原始公告跟踪东南亚园区、融资及电力合作进展。",
+      "questions": [
+        "DayOne 的东南亚园区有哪些建设或合作进展？",
+        "电力安排处于合作意向还是已落实阶段？"
+      ],
+      "metrics": [
+        "项目地点与阶段",
+        "IT 容量与园区规模",
+        "供电合作",
+        "投资及融资"
+      ],
+      "aliases": [
+        "DayOne",
+        "Day One",
+        "新加坡",
+        "马来西亚",
+        "印尼",
+        "泰国",
+        "Singapore",
+        "Johor",
+        "Batam",
+        "Bangkok",
+        "TNB"
+      ],
+      "tags": [
+        "东南亚专题",
+        "公司公告",
+        "电力与接电"
+      ],
+      "regions": [
+        "新加坡",
+        "马来西亚",
+        "印尼",
+        "泰国"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随项目和公司事件发布新闻，未发现固定发布周期。",
+      "trackingNote": "建议每周查看公司新闻；已跟踪项目发生签约、开工或投运时复核阶段。",
+      "subscriptionNote": "收藏公司新闻入口；本次未确认公开邮件订阅。",
+      "access": "free",
+      "accessNote": "公司公告公开可读；新闻列表部分内容动态加载，可从具体公告链接访问。",
+      "entryUrl": "https://dayonedc.com/news",
+      "caveats": [
+        "运营商公告反映公司披露，投资意向和可研并不代表项目已获全部批准。",
+        "现场发电容量属于电力供应侧，不能记为数据中心 IT 容量。"
+      ],
+      "verificationNote": "已读取公司新闻入口和 DayOne–TNB 现场发电合作公告，确认市场导航以及可研、正式协议和审批条件。"
+    },
+    {
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "lastCheckAttemptAt": "2026-10-04",
+      "subscriptionUrl": null,
+      "id": "sttgdc-news",
+      "name": "STTGDC 数据中心新闻室",
+      "organization": "ST Telemedia Global Data Centres（STTGDC）",
+      "sourceType": "company",
+      "categoryIds": [
+        "capacity-construction",
+        "operating-demand"
+      ],
+      "purpose": "跟踪 STTGDC 在东南亚的数据中心开发、融资、交付及业务变化。",
+      "questions": [
+        "哪些项目取得开发资格、融资或完成交付？",
+        "公司业务组合变化会怎样影响各地供给？"
+      ],
+      "metrics": [
+        "新建与扩建容量（MW）",
+        "项目建设阶段",
+        "融资与合作",
+        "地区业务变化"
+      ],
+      "aliases": [
+        "STTGDC",
+        "STT GDC",
+        "ST Telemedia",
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼",
+        "越南",
+        "菲律宾",
+        "Singapore",
+        "Johor",
+        "Jakarta",
+        "Bangkok",
+        "Manila"
+      ],
+      "tags": [
+        "东南亚专题",
+        "公司公告",
+        "项目动态"
+      ],
+      "regions": [
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼",
+        "越南",
+        "菲律宾"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "新闻室按公司事件更新，包含地区项目和集团公告，未确认固定周期。",
+      "trackingNote": "建议每周查看公司新闻和相关国家栏目，跟进开发资格到开工、投运的变化。",
+      "subscriptionNote": "收藏集团新闻室及目标国家栏目；本次未确认统一邮件订阅。",
+      "access": "free",
+      "accessNote": "新闻室及本次新加坡 50MW 项目公告可公开阅读。",
+      "entryUrl": "https://www.sttgdc.com/newsroom",
+      "caveats": [
+        "新闻室的历史国家覆盖不代表当前各国都存在相同规模的在营业务。",
+        "获选开发、融资完成、封顶及投运是不同里程碑，不能按新闻标题重复计入新增供给。"
+      ],
+      "verificationNote": "已读取新闻室和 2026-08-21 新加坡开发公告；入选 DC-CFA2 的开发容量未标为已投运。"
+    },
+    {
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "lastCheckAttemptAt": "2026-10-04",
+      "subscriptionUrl": null,
+      "id": "mida-media",
+      "name": "马来西亚 MIDA 投资公告",
+      "organization": "Malaysian Investment Development Authority（MIDA）",
+      "sourceType": "government",
+      "categoryIds": [
+        "market-technology",
+        "capacity-construction"
+      ],
+      "purpose": "跟踪马来西亚数据中心投资政策、产业链机会和官方项目消息。",
+      "questions": [
+        "数据中心投资与本地供应链有哪些政策和合作机会？",
+        "官方投资统计是获批、承诺还是实际落地？"
+      ],
+      "metrics": [
+        "投资批准与产业政策",
+        "本地供应链机会",
+        "项目公告",
+        "投资统计范围"
+      ],
+      "aliases": [
+        "MIDA",
+        "马来西亚投资发展局",
+        "马来西亚",
+        "Malaysia",
+        "Johor",
+        "柔佛",
+        "SME",
+        "供应链"
+      ],
+      "tags": [
+        "东南亚专题",
+        "官方发布",
+        "政策与投资"
+      ],
+      "regions": [
+        "马来西亚"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "媒体发布栏目随政策、投资活动和项目消息更新，不是固定周报。",
+      "trackingNote": "建议每周查看新闻稿，遇到数据中心投资和本地采购政策时核对附件与执行条件。",
+      "subscriptionNote": "收藏官方媒体发布栏目；本次未确认该栏目专属邮件订阅。",
+      "access": "free",
+      "accessNote": "官方新闻稿和媒体发布目录可公开阅读。",
+      "entryUrl": "https://www.mida.gov.my/media-release/",
+      "caveats": [
+        "批准投资、承诺投资和实际资本支出不是同一口径。",
+        "宏观投资促进政策不保证某一具体项目已完成土地、供电和建设许可。"
+      ],
+      "verificationNote": "已读取媒体发布栏目及 2026-09-14 数据中心产业链相关新闻稿，确认栏目持续更新。"
+    },
+    {
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": null,
+      "verificationStatus": "partial",
+      "lastCheckAttemptAt": "2026-10-04",
+      "subscriptionUrl": null,
+      "id": "imda-datacenter-policy",
+      "name": "新加坡 IMDA 政策与新闻发布",
+      "organization": "Infocomm Media Development Authority（IMDA）",
+      "sourceType": "government",
+      "categoryIds": [
+        "market-technology",
+        "capacity-construction"
+      ],
+      "purpose": "从官方发布追踪新加坡数据中心容量分配、可持续要求和数字基础设施政策。",
+      "questions": [
+        "数据中心新容量申请与分配有哪些官方进展？",
+        "新项目需满足哪些绿色与基础设施条件？"
+      ],
+      "metrics": [
+        "数据中心容量分配",
+        "申请及遴选阶段",
+        "能效与可持续要求",
+        "官方政策文件"
+      ],
+      "aliases": [
+        "IMDA",
+        "新加坡资讯通信媒体发展局",
+        "新加坡",
+        "Singapore",
+        "DC-CFA",
+        "DC-CFA2",
+        "绿色数据中心"
+      ],
+      "tags": [
+        "东南亚专题",
+        "官方发布",
+        "政策与投资"
+      ],
+      "regions": [
+        "新加坡"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "官方新闻、事实清单和演讲按事件发布，未确认固定周期。",
+      "trackingNote": "建议每周查看官方发布，容量申请及政策调整期重点关注原文和附件。",
+      "subscriptionNote": "收藏新闻与事实清单入口；本次未确认可用邮件订阅。",
+      "access": "free",
+      "accessNote": "官方公开发布入口；本次自动读取遭遇 JavaScript 验证，需在浏览器打开查看。",
+      "entryUrl": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches",
+      "caveats": [
+        "遴选额度和开发资格不等于现有投运容量。",
+        "本次未读取栏目正文，具体政策版本、日期及适用条件需在原站复核。"
+      ],
+      "verificationNote": "已确认官方发布入口，但此次直接打开返回 JavaScript 验证页面，未读取新闻目录正文；不记成功核查日期。"
+    },
+    {
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "lastCheckAttemptAt": "2026-10-04",
+      "subscriptionUrl": null,
+      "id": "thailand-boi-news",
+      "name": "泰国 BOI 官方新闻稿",
+      "organization": "Thailand Board of Investment（BOI）",
+      "sourceType": "government",
+      "categoryIds": [
+        "market-technology",
+        "capacity-construction"
+      ],
+      "purpose": "跟踪泰国数据中心投资促进、官方项目批准及相关政策进展。",
+      "questions": [
+        "哪些数据中心投资获得官方投资促进批准？",
+        "供电及其他申请条件有哪些调整？"
+      ],
+      "metrics": [
+        "投资促进政策",
+        "项目批准与投资金额",
+        "申请条件",
+        "数字基础设施投资"
+      ],
+      "aliases": [
+        "BOI",
+        "泰国投资促进委员会",
+        "泰国",
+        "Thailand",
+        "Bangkok",
+        "Chonburi",
+        "曼谷",
+        "春武里"
+      ],
+      "tags": [
+        "东南亚专题",
+        "官方发布",
+        "政策与投资"
+      ],
+      "regions": [
+        "泰国"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "新闻稿随政府投资促进和政策事件发布，不是固定周期统计序列。",
+      "trackingNote": "建议每周查看官方新闻稿及 Project Approval；项目执行条件以对应公告和批准文件为准。",
+      "subscriptionNote": "原站有 Subscribe/Sign up 注册入口，但本次未确认订阅范围和邮件频率；可先收藏新闻稿栏目。",
+      "access": "free",
+      "accessNote": "官方英文新闻稿目录可公开阅读；部分内容还提供 PDF，具体语言版本以原站为准。",
+      "entryUrl": "https://www.boi.go.th/index.php?page=press_releases2",
+      "caveats": [
+        "BOI 投资促进批准不等于取得全部建设、环境和电力许可。",
+        "官网也有外部媒体转载栏目，引用时应区分 BOI 原发新闻稿与其他机构报道。"
+      ],
+      "verificationNote": "已读取官网并沿 Press Releases 链接确认官方新闻稿入口为 page=press_releases2；原计划链接 page=press_releases 展示其他机构新闻。"
     }
   ],
   "reports": [
@@ -1084,6 +1797,161 @@
       "verifiedAt": "2026-10-04",
       "verificationStatus": "verified",
       "verificationNote": "已读取发布页及其 PDF。此日期为所收录的全文发布页日期；栏目另有 4 月 29 日首发消息，PDF 封面标 2026 年 5 月，三者未混用。"
+    },
+    {
+      "id": "wmedia-stavian-feasibility-20261002",
+      "sourceId": "wmedia-sea",
+      "title": "越南 Stavian Digital Park 开展数据中心可行性研究",
+      "url": "https://w.media/cushman-wakefield-aptelecom-to-undertake-feasibility-study-on-ho-chi-minh-city-data-center/",
+      "kind": "news",
+      "publishedAt": "2026-10-02",
+      "dataPeriod": null,
+      "regions": [
+        "越南"
+      ],
+      "stage": "可研阶段 · 媒体报道",
+      "summary": "w.media 引述联合新闻稿称，Cushman & Wakefield 与 APTelecom 将为胡志明市 Stavian Digital Park 拟建的数据中心园区开展可研，涵盖开发和通信连接条件。当前属于研究阶段，尚不能视为开工或已投运项目。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取 w.media 正文及 2026-10-02 页面日期；报道引用联合新闻稿，本次未独立取得项目批文或原始联合公告。核查指报道内容与日期，不代表独立确认全部项目事实。"
+    },
+    {
+      "id": "wmedia-globe-expansion-20261001",
+      "sourceId": "wmedia-sea",
+      "title": "菲律宾 Globe 谈 AI 与数据中心业务扩张",
+      "url": "https://w.media/philippines-telco-globe-bets-on-ai-and-data-centers-for-next-billion-dollar-growth/",
+      "kind": "news",
+      "publishedAt": "2026-10-01",
+      "dataPeriod": null,
+      "regions": [
+        "菲律宾"
+      ],
+      "stage": "投资计划 · 媒体报道",
+      "summary": "w.media 转述 Globe 管理层访谈，介绍其数字业务投资计划和通过 STTGDC Philippines 扩张数据中心业务的方向。相关投入涉及更广泛的数字业务，不能全部归入数据中心，也不能视为已落实订单或资本支出。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取报道正文和 2026-10-01 日期；原文引用 Bloomberg 访谈，未独立核查访谈全文或正式资本开支批准文件。"
+    },
+    {
+      "id": "wmedia-bdx-permits-20261001",
+      "sourceId": "wmedia-sea",
+      "title": "印尼 BDx 项目被报道因许可问题暂停施工",
+      "url": "https://w.media/indonesia-pauses-bdx-data-centers-construction-pending-required-permits-and-eia-report/",
+      "kind": "news",
+      "publishedAt": "2026-10-01",
+      "dataPeriod": null,
+      "regions": [
+        "印尼"
+      ],
+      "stage": "暂停施工报道 · 待官方确认",
+      "summary": "w.media 报道 BDx 在印尼的项目因许可和环境影响评估文件尚未取得而被要求暂停施工，引用现场视频及其他媒体消息。具体许可状态、受影响工程范围和复工时间仍需追踪主管部门与公司的正式确认。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取报道正文及日期；未独立取得政府停工文件、许可清单或公司正式回复。媒体原文核查不等同于已确认行政决定及其完整适用范围。"
+    },
+    {
+      "id": "wmedia-thailand-draft-20260923",
+      "sourceId": "wmedia-sea",
+      "title": "泰国数据中心监管法案提议涉及许可与环境评估",
+      "url": "https://w.media/thai-bill-proposes-data-center-licensing-environmental-health-impact-assessments/",
+      "kind": "news",
+      "publishedAt": "2026-09-23",
+      "dataPeriod": null,
+      "regions": [
+        "泰国"
+      ],
+      "stage": "草案提议 · 尚非生效规定",
+      "summary": "w.media 转述泰国数据中心监管法案草案消息，涉及许可、环境及社区健康评估、电力和用水等要求。这是立法提议的媒体报道，不能当作已生效规定；适用范围和执行条件应以正式公布文件为准。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取报道正文和 2026-09-23 日期；本次未独立核对议会草案或后续立法状态，不据此提供合规结论。"
+    },
+    {
+      "id": "dayone-tnb-power-20260901",
+      "sourceId": "dayone-news",
+      "title": "DayOne 与 TNB 探索最高 1.5GW 现场发电方案",
+      "url": "https://dayonedc.com/markets/dayone-and-tnb-to-explore-up-to-1-5-gw-of-on-site-power-generation-to-advance-malaysias-energy-resilience-and-digital-economy",
+      "kind": "news",
+      "publishedAt": "2026-09-01",
+      "dataPeriod": null,
+      "regions": [
+        "马来西亚"
+      ],
+      "stage": "合作意向与可研",
+      "summary": "DayOne 公告称，与 TNB 通过合作备忘录探索最高 1.5GW 的现场发电及配套方案，仍取决于可研、正式协议和必要批准。1.5GW 是潜在发电容量，并非数据中心 IT 容量或已投运规模。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取公司原始公告。网页发布于 2026-09-01，备忘录签署于 2026-08-07；保留公告所列可研、正式协议及审批条件。"
+    },
+    {
+      "id": "sttgdc-singapore-50mw-20260821",
+      "sourceId": "sttgdc-news",
+      "title": "STTGDC 入选新加坡新增 50MW 数据中心开发项目",
+      "url": "https://www.sttgdc.com/newsroom/stt-gdc-to-develop-50mw-sustainable-ai-ready-data-centre-capacity-singapore",
+      "kind": "news",
+      "publishedAt": "2026-08-21",
+      "dataPeriod": null,
+      "regions": [
+        "新加坡"
+      ],
+      "stage": "入选开发 · 尚未投运",
+      "summary": "STTGDC 宣布在新加坡第二轮数据中心容量申请中入选，将开发 50MW 的可持续、面向 AI 的数据中心容量。当前为开发资格及规划阶段，不能计为新增在运容量。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取运营商原始公告及日期；核查范围为公司的入选开发披露，未据此推断开工、客户签约或投运日期。"
+    },
+    {
+      "id": "cushman-apac-h1-2026",
+      "sourceId": "cushman-apac-datacenter",
+      "title": "Cushman & Wakefield 亚太数据中心报告：2026 H1",
+      "url": "https://www.cushmanwakefield.com/en/singapore/insights/apac-data-centre-update",
+      "kind": "report",
+      "publishedAt": null,
+      "dataPeriod": "2026 年上半年（H1 2026）",
+      "regions": [
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼",
+        "越南",
+        "菲律宾"
+      ],
+      "summary": "公开摘要对比亚太重点城市的在运、在建、规划容量及空置情况；东南亚市场包括新加坡、柔佛、曼谷、雅加达，以及马尼拉和胡志明市等次级市场。适合建立半年供需基准，本次未完整核查报告正文。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "partial",
+      "verificationNote": "已读取官方公开摘要、市场名单和 H1 2026 版本标识，未读取完整报告。所收录页面未确认明确发布日期，publishedAt 留空；报告所属期不作为发布日期。"
+    },
+    {
+      "id": "dcbyte-global-index-2026",
+      "sourceId": "dcbyte-global-index",
+      "title": "DC Byte 2026 全球数据中心指数报告",
+      "url": "https://www.dcbyte.com/market-spotlights/2026-global-data-centre-index-report/",
+      "kind": "report",
+      "publishedAt": "2026-07-27",
+      "dataPeriod": "2026 年版；各市场数据时点待全文核实",
+      "regions": [
+        "马来西亚"
+      ],
+      "summary": "公开介绍以需求、交付和市场深度观察全球主要及未来增长市场，并提到柔佛在亚太区域排名中的位置。可用作东南亚市场研究入口；本次仅核查公开摘要，未读取完整报告或底层数据。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "partial",
+      "verificationNote": "已读取官方介绍页及 2026-07-27 日期；未取得全文。国家筛选仅标注公开摘要明确提及的马来西亚，不把数据提供商的全球覆盖自动套到这篇报告。"
+    },
+    {
+      "id": "singtel-fy2027-q1-update",
+      "sourceId": "singtel-nxera-results",
+      "title": "Singtel FY2026/27 第一季度经营更新",
+      "url": "https://cdn2.singteldigital.com/content/dam/singtel/investorRelations/stockExchange/2026/1stqtr-Business%20Update.pdf",
+      "kind": "report",
+      "publishedAt": "2026-08-13",
+      "dataPeriod": "FY2026/27 第一季度；截至 2026-06-30",
+      "regions": [
+        "新加坡"
+      ],
+      "summary": "官方季度经营更新说明，新加坡 DC Tuas 于 2026 年 1 月开始运营，客户部署及 Nxera 业务贡献随后增长。可用于观察交付后的需求兑现；Digital InfraCo 还包含 RE:AI 等业务，其分部数字不能直接当作数据中心单项业务数据。",
+      "verifiedAt": "2026-10-04",
+      "verificationStatus": "verified",
+      "verificationNote": "已读取官方经营更新 PDF 中的季度期间、Nxera 相关正文和演示内容，确认发布日期为 2026-08-13、季度截至 2026-06-30。本条仅按明确涉及的数据中心项目标注新加坡，不继承运营商覆盖国家。"
     }
   ]
 }
