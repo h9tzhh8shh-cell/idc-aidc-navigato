@@ -1,0 +1,104 @@
+{
+  "retrievedAt": "2026-10-05",
+  "basePath": "work/source-assets",
+  "notes": [
+    "Images are original downloaded brand assets; no brand was redrawn or approximated.",
+    "DCD is the exact inline SVG extracted from its official homepage; currentColor resolves to black when loaded as an external image.",
+    "Cushman and STTGDC owner websites returned HTTP 403. Their real logos were obtained from named industry partners' official public pages.",
+    "w.media currently uses a white wordmark and blue waveform icon. The icon is the recommended version for a white interface. The selected design's older plain navy wordmark was not found.",
+    "DC Byte's current downloaded official logo is purple/magenta, different from the navy wordmark in the selected reference. Preserve the real asset rather than imitating the reference's brand styling.",
+    "All raster assets were successfully decoded, dimensions checked, and visually inspected. DCD SVG is XML-valid and contains the two original logo paths."
+  ],
+  "sources": {
+    "cbre-datacenter": {
+      "file": "cbre.png",
+      "width": 600,
+      "height": 149,
+      "url": "https://d1io3yog0oux5.cloudfront.net/_d96ee490bb9e08552d2c11c868522ad3/cbre/logo.png",
+      "officialPage": "https://ir.cbre.com/",
+      "provenance": "Official CBRE investor website JSON-LD logo URL",
+      "background": "transparent"
+    },
+    "dcd-southeast-asia": {
+      "file": "dcd.svg",
+      "width": 150,
+      "height": 80,
+      "url": "https://www.datacenterdynamics.com/en/",
+      "provenance": "Exact inline SVG inside homepage header .logo-link",
+      "background": "transparent"
+    },
+    "wmedia-sea": {
+      "file": "wmedia-icon.png",
+      "width": 512,
+      "height": 512,
+      "url": "https://w.media/wp-content/uploads/2026/04/cropped-android-chrome-192x192-1.png",
+      "officialPage": "https://w.media/",
+      "provenance": "Official homepage linked site icon",
+      "background": "blue",
+      "wordmarkVariant": {
+        "file": "wmedia.png",
+        "width": 848,
+        "height": 159,
+        "url": "https://w.media/wp-content/uploads/2025/11/Screenshot_75-removebg-preview.png",
+        "background": "transparent; white lettering requires a dark backing"
+      }
+    },
+    "cushman-apac-datacenter": {
+      "file": "cushman.png",
+      "width": 300,
+      "height": 115,
+      "url": "https://www.dcbyte.com/wp-content/uploads/2023/06/img-dcbyte-clientlogo-cushman-2.png",
+      "officialPage": "https://www.dcbyte.com/",
+      "provenance": "Cushman & Wakefield client logo on official DC Byte website; not hosted by trademark owner",
+      "background": "transparent"
+    },
+    "dcbyte-global-index": {
+      "file": "dcbyte.png",
+      "width": 300,
+      "height": 94,
+      "url": "https://dcbyte.com/wp-content/uploads/2023/05/img-dcbyte-logo-colour-1.png",
+      "officialPage": "https://www.dcbyte.com/",
+      "provenance": "Official homepage header logo",
+      "background": "transparent"
+    },
+    "singtel-nxera-results": {
+      "file": "singtel.png",
+      "width": 160,
+      "height": 88,
+      "url": "https://cdn1.singteldigital.com/content/dam/singtel/online-draft/singtel_logo_coloured.png",
+      "officialPage": "https://www.singtel.com/",
+      "provenance": "Official homepage colored header logo",
+      "background": "transparent"
+    },
+    "sttgdc-news": {
+      "file": "sttgdc.jpg",
+      "width": 300,
+      "height": 86,
+      "url": "https://w.media/wp-content/uploads/2025/12/STT_GDC_RGB-HiRes-scaled-1-300x86.jpg",
+      "officialPage": "https://w.media/our-story/",
+      "provenance": "ST Telemedia Global Data Centres partner logo on official w.media website; not hosted by trademark owner",
+      "background": "white"
+    },
+    "smm-rental": {
+      "file": "smm.png",
+      "url": "https://aidc.smm.cn/images/logo.png",
+      "officialPage": "https://aidc.smm.cn/price",
+      "provenance": "Official SMM computing homepage header logo",
+      "background": "transparent"
+    },
+    "smm-weekly": {
+      "file": "smm.png",
+      "url": "https://aidc.smm.cn/images/logo.png",
+      "officialPage": "https://aidc.smm.cn/price",
+      "provenance": "Same SMM computing business identity",
+      "background": "transparent"
+    }
+  },
+  "missing": [
+    {
+      "id": "mysteel-computing",
+      "url": "https://suanli.mysteel.com/",
+      "reason": "Official page returned HTTP 403; no fabricated replacement created."
+    }
+  ]
+}

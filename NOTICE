@@ -13,3 +13,9 @@ See docs/UPSTREAM.md for the exact reused modules and changed files.
 This is not an official Homer release or an official product of the data sources.
 No upstream NOTICE file was present at the pinned commit. This notice is added
 by the adaptation and does not replace the upstream LICENSE.
+
+2026-10-05: The production entry uses a React source-search workspace with
+faceted filters, source details, shareable queries, and real source logos.
+Original catalog records and the Apache-2.0 Homer source heritage are retained.
+Source brand assets remain the property of their respective owners; provenance
+is recorded in docs/ui-asset-sources.json.

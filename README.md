@@ -1,6 +1,6 @@
 # IDC/AIDC 与算力租赁数据导航
 
-基于 Homer v26.08.3 的本地静态改版（2026-10-04），包含 6 个研究分类、26 个来源与 25 条动态/报告/方法资料。新增东南亚六国专题，收录 11 个追踪来源和首批 9 条资料，支持国家筛选、项目阶段说明及订阅入口。保留关键词检索、地区/频率/获取条件组合筛选、来源详情和资料核查状态筛选。资料由人工维护；没有自动采集、后台、数据库、账号或价格历史图表。
+最初改编自 Homer v26.08.3，2026-10-05 接入 React 来源检索工作台，包含 6 个研究分类、26 个来源与 25 条动态/报告/方法资料。新增东南亚六国专题，收录 11 个追踪来源和首批 9 条资料，支持国家筛选、项目阶段说明及订阅入口。支持关键词检索、研究方向/地区/信息类型/频率/获取条件组合筛选、来源详情和可分享的检索链接。原始 6 个分类保留在资料数据中，界面按 5 个研究方向组织检索。资料由人工维护；没有自动采集、后台、数据库、账号或价格历史图表。
 
 线上访问：[IDC/AIDC 与算力租赁数据导航](https://idc-aidc-navigator.pages.dev/)。源码已托管在 GitHub，通过 Cloudflare Pages 构建发布；本地预览方式见下文。资料内容仍需人工核查和维护。
 
@@ -22,7 +22,7 @@ node scripts/serve.mjs dist 5050
 
 ## 开发、检查与构建
 
-建议 Node.js 24 LTS。实测环境是 Node.js v24.16.0、pnpm v11.19.0；保留上游 pnpm 11.9.0 packageManager 声明与原始锁文件。
+建议 Node.js 24 LTS。实测环境是 Node.js v24.16.0、pnpm v11.19.0；保留 pnpm 11.9.0 packageManager 声明，锁文件已随 React 工作台更新。
 
 ```powershell
 pnpm install --frozen-lockfile
@@ -33,23 +33,24 @@ pnpm build
 pnpm preview --host 127.0.0.1 --strictPort
 ```
 
-以命令实际打印的开发地址为准；`pnpm preview` 默认为 5050。开发及构建流程来自 Homer/Vite。当前完整克隆已有依赖，源码 ZIP 为减少体积不含 `node_modules`，解压后需先安装。
+以命令实际打印的开发地址为准；`pnpm preview` 默认为 5050。界面使用 React 19 和 Vite，构建结果仍是静态文件。当前完整克隆已有依赖，源码 ZIP 为减少体积不含 `node_modules`，解压后需先安装。
 
 `pnpm validate` 检查必填字段、枚举、真实日历日期、唯一 ID、来源/报告关联及 HTTPS 格式。它不会自动确认网页可访问。`pnpm test` 覆盖组合筛选、同义词、跨分类去重、未知日期排序和数据关联。
 
 ## 文件与部署
 
 - `public/assets/catalog.json`：**唯一需要手工维护的资料文件**。
-- `src/components/IndustryNavigator.vue`：行业目录视图。
-- `src/components/services/IndustrySource.vue`：Homer Generic 卡片扩展。
-- `src/domain/catalog.js`：来源筛选、分类、日期排序与资料校验。
+- `src/App.jsx`、`src/components.jsx`、`src/styles.css`：正式站点的 React 检索工作台。
+- `src/catalog.js`：组合筛选、文章地区、排序和检索链接状态。
+- `src/domain/catalog.js`：保留的原始资料校验和分类规则。
+- `docs/ui-asset-sources.json`：来源标识图片的出处。
 - `dist/`：生产静态产物；可以独立部署。
 - `docs/资料维护说明.md`：字段规则和完整操作说明。
 - `docs/来源核查记录.md`：首批来源、报告和 39 条 URL 检查记录。
 - `docs/验收记录.md`：实际执行结果及限制。
 - `docs/UPSTREAM.md`：固定上游提交、真实复用模块与改动范围。
 
-静态部署包保留 `dist/`、本地预览脚本、许可证和说明。将 **dist 目录内全部内容** 上传到任意普通静态 HTTP 服务的站点目录即可，勿只上传 index.html。Vite 使用相对资源路径，支持站点根目录或子目录。无需服务端函数、数据库、登录密钥或构建时环境变量。
+静态部署包保留 `dist/`、本地预览脚本、许可证和说明。将 **dist 目录内全部内容** 上传到任意普通静态 HTTP 服务的站点目录即可，勿只上传 index.html。本站部署在站点根目录；来源标识使用 `/assets/` 路径。无需服务端函数、数据库、登录密钥或构建时环境变量。
 
 服务器应让 `index.html`、`assets/catalog.json` 和 `sw.js` 每次重新验证（建议 `Cache-Control: no-cache`）；带哈希的 resources 文件可长期缓存。本站不注册离线 Service Worker；保留自注销 sw.js 以迁移开发期间的 Homer 缓存，不再预缓存人工资料。
 
@@ -63,7 +64,7 @@ GitHub Integration 工作流也会运行数据校验、测试及构建。上游 
 
 以下是首批已核查的 GDS 来源和关联报告（文档快照）。不是让你把已有 ID 再追加一遍；新增来源时按同一结构填写新事实和唯一 ID，修改现有来源时定位其 ID 更新。
 
-1. 分类在 `categories` 维护 `id/name/question/icon`。例如运营分类使用稳定 ID `operating-demand`；改展示名无需改 ID。新增分类后，在来源的 `categoryIds` 关联它，第一项决定“全部来源”中的归组位置。页面会自动生成导航。
+1. 分类在 `categories` 维护 `id/name/question/icon`。例如运营分类使用稳定 ID `operating-demand`；改展示名无需改 ID。新增分类后，在来源的 `categoryIds` 关联它，第一项决定“全部来源”中的归组位置。当前检索方向的映射在 `src/catalog.js` 中维护。
 2. 将下面来源对象放入 `sources`，将报告对象放入 `reports`；`report.sourceId` 必须等于来源 ID。同一来源跨两个分类只保存一条。
 3. 发布日期是原文发布时间；`dataPeriod` 是资料描述的统计期；`verifiedAt` 仅在实际成功读取后更新。失败尝试更新 `lastCheckAttemptAt`、状态和说明，保留旧成功日或 null。`maintainedAt` 只表示目录维护批次。
 4. 运行 `pnpm validate`、`pnpm test`、`pnpm build`，然后 HTTP 预览。更详细的状态和字段枚举见 [资料维护说明](docs/资料维护说明.md)。

@@ -1953,5 +1953,43 @@
       "verificationStatus": "verified",
       "verificationNote": "已读取官方经营更新 PDF 中的季度期间、Nxera 相关正文和演示内容，确认发布日期为 2026-08-13、季度截至 2026-06-30。本条仅按明确涉及的数据中心项目标注新加坡，不继承运营商覆盖国家。"
     }
-  ]
+  ],
+  "labelMaps": {
+    "frequency": {
+      "daily": "日度",
+      "weekly": "周度",
+      "monthly": "月度",
+      "quarterly": "季度",
+      "semiannual": "半年",
+      "annual": "年度",
+      "irregular": "不定期",
+      "unknown": "待核查"
+    },
+    "access": {
+      "free": "免费公开",
+      "registration": "需注册",
+      "mixed": "公开与受限并存",
+      "paid": "付费",
+      "unknown": "待核查"
+    },
+    "verificationStatus": {
+      "verified": "已核查",
+      "partial": "部分核查",
+      "unverified": "未核查",
+      "unreachable": "暂不可达"
+    },
+    "kind": {
+      "news": "新闻动态",
+      "report": "研究报告",
+      "data-release": "数据发布",
+      "methodology": "方法说明"
+    },
+    "sourceType": {
+      "government": "政府机构",
+      "company": "公司披露",
+      "research": "研究机构",
+      "commercial": "商业数据机构",
+      "media": "行业媒体"
+    }
+  }
 }

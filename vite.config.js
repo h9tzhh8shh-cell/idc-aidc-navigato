@@ -6,9 +6,9 @@ import path from "path";
 import process from "process";
 
 import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
+import react from "@vitejs/plugin-react";
 
-import { version } from "./package.json";
+const { version } = JSON.parse(fs.readFileSync(new URL("./package.json", import.meta.url), "utf8"));
 
 function writeVersionPlugin() {
   return {
@@ -65,7 +65,7 @@ export default defineConfig({
         });
       },
     },
-    vue(),
+    react(),
     VitePWA({
       // Manual catalog maintenance requires fresh builds; unregister Homer caches.
       selfDestroying: true,

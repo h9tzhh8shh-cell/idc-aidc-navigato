@@ -2,6 +2,10 @@
 
 This file provides guidance to AI Agents when working with code in this repository.
 
+## Active research navigator (2026-10-05)
+
+The production entry is now `src/main.jsx`, mounting the React workspace in `src/App.jsx`. `src/components.jsx`, `src/catalog.js`, and `src/styles.css` implement its detail panels, filters, URL state, and layout. `public/assets/catalog.json` remains the canonical data file; the active interface imports it during the build. Run `pnpm validate`, `pnpm test`, and `pnpm build` before deployment. Cloudflare Pages builds `main` to `dist`. The Vue/Homer code below remains as upstream history and does not power the current entry.
+
 ## Development Commands
 
 ```bash
