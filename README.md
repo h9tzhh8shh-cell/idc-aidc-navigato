@@ -1,6 +1,6 @@
 # IDC/AIDC 与算力租赁数据导航
 
-最初改编自 Homer v26.08.3，2026-10-05 接入 React 来源检索工作台，包含 6 个研究分类、29 个来源与 31 条动态/报告/方法资料。东南亚六国专题现收录 14 个追踪来源和 13 条资料，支持国家筛选、项目阶段说明及订阅入口。支持关键词检索、研究方向/地区/信息类型/频率/获取条件组合筛选、来源详情和可分享的检索链接。原始 6 个分类保留在资料数据中，界面按 5 个研究方向组织检索。资料由人工维护；没有自动采集、后台、数据库、账号或价格历史图表。
+最初改编自 Homer v26.08.3，2026-10-05 接入 React 来源检索工作台。当前本地优化版本采用 schema 2 与统一五类：行业供需与动态、算力租赁与价格、政策与规划、监管与合规、同业上市公司动态。裸首页默认国内，可切换全部地区及东南亚六国；来源行直接显示符合当前条件的近期资料标题、发布日期和中文摘要。支持资料自身分类/地区/获取条件、公司主体检索、组合筛选、补充参考开关及旧检索链接兼容。资料由人工维护，没有自动采集、后台、数据库、账号或价格历史图表。
 
 线上访问：[IDC/AIDC 与算力租赁数据导航](https://idc-aidc-navigator.pages.dev/)。源码已托管在 GitHub，通过 Cloudflare Pages 构建发布；本地预览方式见下文。资料内容仍需人工核查和维护。
 
@@ -18,7 +18,7 @@ node scripts/serve.mjs dist 5050
 
 保持终端运行后在浏览器打开上述地址；按 Ctrl+C 停止。这个预览方式只需要已安装 Node.js，不需要重新安装依赖。端口已被本项目占用时直接访问现有入口，不重复启动。改用其他端口：`node scripts/serve.mjs dist 5051`。
 
-**不能双击 `dist/index.html` 预览。** 资料通过 HTTP 加载。
+**不能双击 `dist/index.html` 预览。** 使用 HTTP 服务；资料在构建时静态导入，修改源 JSON 后须重新构建才能验收页面。
 
 ## 开发、检查与构建
 
@@ -42,11 +42,12 @@ pnpm preview --host 127.0.0.1 --strictPort
 - `public/assets/catalog.json`：**唯一需要手工维护的资料文件**。
 - `src/App.jsx`、`src/components.jsx`、`src/styles.css`：正式站点的 React 检索工作台。
 - `src/catalog.js`：组合筛选、文章地区、排序和检索链接状态。
-- `src/domain/catalog.js`：保留的原始资料校验和分类规则。
+- `src/domain/catalog.js`：schema 2 资料校验与共用枚举。
 - `docs/ui-asset-sources.json`：来源标识图片的出处。
 - `dist/`：生产静态产物；可以独立部署。
 - `docs/资料维护说明.md`：字段规则和完整操作说明。
-- `docs/来源核查记录.md`：首批来源、报告和 39 条 URL 检查记录。
+- `docs/来源核查记录.md`：逐批追加的来源、资料、准入与失败核查历史。
+- `docs/按需更新指令.md`：用户主动触发时使用的资料更新模板；文件本身不构成发布授权。
 - `docs/验收记录.md`：实际执行结果及限制。
 - `docs/UPSTREAM.md`：固定上游提交、真实复用模块与改动范围。
 
@@ -60,97 +61,30 @@ GitHub Integration 工作流也会运行数据校验、测试及构建。上游 
 
 维护推荐始终改 `public/assets/catalog.json`，检查后重新构建；不要只改 dist。所有静态文件公开可下载，勿写入账号、订阅凭证或未获授权的付费全文。资料中只保存自行概括的说明及公开原文链接。
 
-## 一个完整维护示例
+## 维护入口与范围
 
-以下是首批已核查的 GDS 来源和关联报告（文档快照）。不是让你把已有 ID 再追加一遍；新增来源时按同一结构填写新事实和唯一 ID，修改现有来源时定位其 ID 更新。
+唯一编辑入口是 `public/assets/catalog.json`。字段、分类边界、日期、展示状态和去重规则见 [资料维护说明](docs/资料维护说明.md)，后续用户主动更新可使用 [按需更新指令](docs/按需更新指令.md)。
 
-1. 分类在 `categories` 维护 `id/name/question/icon`。例如运营分类使用稳定 ID `operating-demand`；改展示名无需改 ID。新增分类后，在来源的 `categoryIds` 关联它，第一项决定“全部来源”中的归组位置。当前检索方向的映射在 `src/catalog.js` 中维护。
-2. 将下面来源对象放入 `sources`，将报告对象放入 `reports`；`report.sourceId` 必须等于来源 ID。同一来源跨两个分类只保存一条。
-3. 发布日期是原文发布时间；`dataPeriod` 是资料描述的统计期；`verifiedAt` 仅在实际成功读取后更新。失败尝试更新 `lastCheckAttemptAt`、状态和说明，保留旧成功日或 null。`maintainedAt` 只表示目录维护批次。
-4. 运行 `pnpm validate`、`pnpm test`、`pnpm build`，然后 HTTP 预览。更详细的状态和字段枚举见 [资料维护说明](docs/资料维护说明.md)。
+1. 按稳定 ID 修改或新增来源/资料。来源可覆盖多类，每篇资料只填一个主分类，独立填写地区、访问条件、取得范围和发布机构；不复制旧 GDS/VNET 季度材料。
+2. 六家核心公司为光环新网、行云科技、世纪互联、协创数据、万国数据、东阳光；另有中国移动、中国电信、中国联通入口。主体、集团与上市代码分别核查，现有海外资料保留。
+3. SMM 算力行情保留；订阅周报与未核历史周评归档，旧 ID 和核查历史保留，补充参考开关不会恢复归档产品。中金、国金及备用招商仅按实际验证准入，不把候选当已接入。
+4. 追加核查记录，运行校验、测试、构建并检查 HTTP 页面。`src/catalog.js` 构建时导入 JSON，**只替换 `dist/assets/catalog.json` 不会更新已打包界面**。
 
-来源：
-
-```json
-{
-  "id": "gds-quarterly",
-  "name": "万国数据季度业绩",
-  "organization": "万国数据（GDS Holdings Limited）",
-  "sourceType": "company",
-  "categoryIds": [
-    "operating-demand",
-    "capacity-construction"
-  ],
-  "purpose": "跟踪公司运营面积、签约与收入，观察项目交付如何转为实际利用。",
-  "questions": [
-    "投运与使用面积增长是否匹配？",
-    "签约、利用率和收入怎样变化？"
-  ],
-  "metrics": [
-    "投运面积（平方米）",
-    "已使用面积（平方米）",
-    "签约及预签约面积",
-    "面积利用率",
-    "净收入",
-    "调整后 EBITDA"
-  ],
-  "aliases": [
-    "GDS",
-    "万国数据",
-    "上架率",
-    "利用率",
-    "utilization"
-  ],
-  "tags": [
-    "公司披露",
-    "容量",
-    "需求兑现"
-  ],
-  "regions": [
-    "中国"
-  ],
-  "frequency": "quarterly",
-  "frequencyNote": "按季度披露财务和期末运营指标；业绩会材料随季度更新。",
-  "access": "free",
-  "accessNote": "投资者关系网站公开提供业绩公告、演示文稿和会议文字稿。",
-  "entryUrl": "https://investors.gds-services.com/financial-information/quarterly-results",
-  "entryType": "栏目",
-  "methodologyUrl": "https://investors.gds-services.com/system/files-encrypted/nasdaq_kms/assets/2026/08/13/7-36-49/GDS%202Q26%20Earnings%20Release_0813%201200.pdf",
-  "caveats": [
-    "利用率按已使用面积除以投运面积计算；上架率仅为检索别名，不能直接等同机柜上架率或 GPU 利用率。",
-    "签约及预签约面积不等于已经开始计费的使用面积。",
-    "不能与 VNET 的 MW 或机柜分母直接横向比较；调整后 EBITDA 属非 GAAP 指标。"
-  ],
-  "featured": true,
-  "verifiedAt": "2026-10-04",
-  "verificationStatus": "verified",
-  "verificationNote": "已读取季度栏目及从栏目进入的 2026 年第二季度业绩 PDF，核对发布日期与利用率定义。",
-  "lastCheckAttemptAt": "2026-10-04"
-}
-```
-
-报告：
-
-```json
-{
-  "id": "gds-2026-q2",
-  "sourceId": "gds-quarterly",
-  "title": "GDS Holdings Limited Reports Second Quarter 2026 Results",
-  "url": "https://investors.gds-services.com/system/files-encrypted/nasdaq_kms/assets/2026/08/13/7-36-49/GDS%202Q26%20Earnings%20Release_0813%201200.pdf",
-  "kind": "report",
-  "publishedAt": "2026-08-13",
-  "dataPeriod": "2026 年第二季度；运营指标截至 2026-06-30",
-  "summary": "公司季度财务及运营披露，包含投运、签约和使用面积及利用率定义。",
-  "verifiedAt": "2026-10-04",
-  "verificationStatus": "verified",
-  "verificationNote": "从官方季度栏目进入 PDF；正文第 2 页载明发布日期、所属季度及利用率定义。"
-}
-```
+本轮优化执行阶段 0—4；未经独立发布授权，不推送生产分支或部署。仓库描述的既有 Cloudflare 链路以及文档内未来更新模板，都不代替当前发布授权。
 
 ## 资料限制
 
-12 个来源已核查原文，SMM 周报与 Mysteel 为部分核查，信通院栏目暂不可达；16 条资料中 11 条已读原文、5 条部分核查。部分核查不等于死链，搜索摘要也不视为原文。未知发布日期保留 null；列表是人工样本，不宣称全网最新。请结合各条来源的口径和获取说明使用。
+人工目录是有限样本，不宣称全网最新。可读通知或报告介绍不等于已读附件或完整报告；部分核查与网络失败分别保留，未知发布日期为 null。媒体样例有原站版权限制时只提供必要书目信息及原文链接。未取得正文的线索默认作为补充参考，归档历史不进入活跃计数。实际新增、修订和未覆盖范围以 [来源核查记录](docs/来源核查记录.md) 最新批次为准。
 
 ## 许可证
 
 保留 Homer 的 Apache-2.0 LICENSE 与本次 NOTICE；依赖的许可证副本见 public/licenses，构建后也随静态文件交付。原上游 README 保存在 docs/HOMER_README.md。
+
+
+## 二期本地候选补充 · 2026-10-08
+
+本轮仅实现并验收本地二期，不授权推送或部署。一级五类与 schemaVersion=2 保留；新增 13 子方向、固定公司入口、跨分类公司全景、事件节点和核查范围。目录仍为唯一维护入口 public/assets/catalog.json。当前 47 来源（45 正式）、54 资料（48 正式、5 参考、1 归档）、16 公司、7 事项。
+
+普通来源/资料过滤保持严格主类；只选同业时默认按公司，来源/资料列表仍可切回。事件事实独立于新闻、免费等资料过滤。参照 docs/资料维护说明.md、docs/按需更新指令.md。东阳光后续重组较新附件待核；不要把前序平台交割当作上市公司后续重组交割。
+
+新增 scripts/reviewed-batch.mjs 仅用于已人工核查 JSON 批次的本地合并与隔离验收，无联网、自动采集、定时任务或部署能力。新测试在 tests/phase2*.test.mjs；pnpm validate / pnpm test / pnpm build。

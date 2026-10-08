@@ -1,43 +1,37 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "title": "IDC/AIDC 与算力租赁数据导航",
   "maintainedAt": "2026-10-08",
   "categories": [
     {
+      "id": "industry",
+      "name": "行业供需与动态",
+      "question": "项目建设、供给需求与资源条件有什么变化？",
+      "icon": "fas fa-building"
+    },
+    {
       "id": "rental-prices",
-      "name": "算力租赁价格",
+      "name": "算力租赁与价格",
       "question": "什么卡型、地区和租期的租金发生变化？",
       "icon": "fas fa-chart-line"
     },
     {
-      "id": "capacity-construction",
-      "name": "机房供给与建设",
-      "question": "算力和机房供给增加多少，区域供需如何？",
-      "icon": "fas fa-building"
-    },
-    {
-      "id": "operating-demand",
-      "name": "运营与需求兑现",
-      "question": "上架、利用、签约和收入情况如何？",
-      "icon": "fas fa-chart-pie"
-    },
-    {
-      "id": "activity-demand",
-      "name": "用电与运行活动",
-      "question": "运行活动和云需求发生了什么变化？",
-      "icon": "fas fa-bolt"
-    },
-    {
-      "id": "servers-hardware",
-      "name": "服务器与硬件",
-      "question": "服务器收入、出货和加速硬件供给如何？",
-      "icon": "fas fa-server"
-    },
-    {
-      "id": "market-technology",
-      "name": "市场与技术报告",
-      "question": "市场格局、统计体系和技术趋势是什么？",
+      "id": "policy-planning",
+      "name": "政策与规划",
+      "question": "产业布局、发展目标和支持政策是什么？",
       "icon": "fas fa-book-open"
+    },
+    {
+      "id": "regulation",
+      "name": "监管与合规",
+      "question": "适用什么义务、审批要求和监管进展？",
+      "icon": "fas fa-scale-balanced"
+    },
+    {
+      "id": "listed-companies",
+      "name": "同业上市公司动态",
+      "question": "关注公司的经营、披露与资本动作有什么变化？",
+      "icon": "fas fa-chart-pie"
     }
   ],
   "sources": [
@@ -98,7 +92,13 @@
       "verifiedAt": "2026-10-04",
       "verificationStatus": "unreachable",
       "verificationNote": "2026-10-08 重试 /price 行情栏目超时，未读取本轮价格；保留 2026-10-04 成功读取公开表的历史日期。方法公告本轮亦未取得正文。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "subcategoryIds": [
+        "price-indices",
+        "rental-demand-contracts",
+        "pricing-methodology"
+      ]
     },
     {
       "id": "smm-weekly",
@@ -155,7 +155,9 @@
       "verifiedAt": null,
       "verificationStatus": "unreachable",
       "verificationNote": "2026-10-08 重试产品栏目超时；旧公开周评链接仍为空正文。既有搜索线索保留，未取得最新一期目录或订阅全文。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "archived",
+      "visibilityReason": "用户决定移除 SMM 算力租赁市场周报；不代表已认定原站完全无公开内容。"
     },
     {
       "id": "mysteel-computing",
@@ -214,7 +216,13 @@
       "verifiedAt": null,
       "verificationStatus": "unreachable",
       "verificationNote": "2026-10-08 重试栏目超时，发布公告返回 HTTP 411；先前搜索收录线索保留，未读取最新价格或公告正文。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "subcategoryIds": [
+        "price-indices",
+        "rental-demand-contracts",
+        "pricing-methodology"
+      ]
     },
     {
       "id": "ornn-gpu",
@@ -271,7 +279,12 @@
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
       "verificationNote": "已读取重定向后的官方首页和 OCPI 方法全文；日结表为 2026-10-07，页面更新于 20:00 UTC（北京时间 10 月 8 日 04:00）。图表提示无可用数据，未核实历史曲线或 API。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "subcategoryIds": [
+        "price-indices",
+        "pricing-methodology"
+      ]
     },
     {
       "id": "semianalysis-gpu",
@@ -326,7 +339,13 @@
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
       "verificationNote": "2026-10-08 读取公开方法和历史静态表；最新价格组件停留在加载提示，未核实动态现价。表内 2026 年 3—4 月所属期不能当作本轮报价。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "subcategoryIds": [
+        "price-indices",
+        "rental-demand-contracts",
+        "pricing-methodology"
+      ]
     },
     {
       "id": "nda-capacity",
@@ -334,7 +353,8 @@
       "organization": "国家数据局",
       "sourceType": "government",
       "categoryIds": [
-        "capacity-construction"
+        "industry",
+        "policy-planning"
       ],
       "purpose": "查找全国智能算力、枢纽节点及算力网建设的阶段性公开信息。",
       "questions": [
@@ -376,7 +396,12 @@
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
       "verificationNote": "2026-10-08 已读取新闻动态目录并检查维护窗口内条目；未确认新增可收录的全国算力统计发布。旧报告成功日期未随目录复查刷新。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand",
+        "compute-industrial-plan"
+      ]
     },
     {
       "id": "cbre-datacenter",
@@ -384,8 +409,7 @@
       "organization": "CBRE Research",
       "sourceType": "commercial",
       "categoryIds": [
-        "capacity-construction",
-        "operating-demand"
+        "industry"
       ],
       "purpose": "研究主要数据中心市场的容量、空置、吸纳与机房租金。",
       "questions": [
@@ -433,7 +457,11 @@
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
       "verificationNote": "2026-10-08 已读取数据中心研究目录；可见全球 2026、北美 H1 2026、欧洲 Q2 2026 等版本，未确认 10 月 5—8 日新发布的定期报告。本轮未重读旧报告全文。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand"
+      ]
     },
     {
       "id": "gds-quarterly",
@@ -441,8 +469,8 @@
       "organization": "万国数据（GDS Holdings Limited）",
       "sourceType": "company",
       "categoryIds": [
-        "operating-demand",
-        "capacity-construction"
+        "listed-companies",
+        "industry"
       ],
       "purpose": "跟踪公司运营面积、签约与收入，观察项目交付如何转为实际利用。",
       "questions": [
@@ -488,7 +516,14 @@
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
       "verificationNote": "2026-10-08 已读取官方季度业绩目录，2026 年可见 Q1/Q2；未确认新一季发布。旧 Q2 PDF 的核查日期保留，不以目录复查代替重读全文。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "companyIds": [
+        "gds"
+      ],
+      "subcategoryIds": [
+        "market-supply-demand"
+      ]
     },
     {
       "id": "vnet-quarterly",
@@ -496,8 +531,8 @@
       "organization": "世纪互联（VNET Group, Inc.）",
       "sourceType": "company",
       "categoryIds": [
-        "operating-demand",
-        "capacity-construction"
+        "listed-companies",
+        "industry"
       ],
       "purpose": "分别跟踪批发与零售 IDC 的容量、利用和收入兑现。",
       "questions": [
@@ -546,7 +581,14 @@
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
       "verificationNote": "2026-10-08 已读取官方季度业绩目录，最新可确认季度仍为 2026 Q2；未确认新一季发布，旧 Q2 PDF 的成功核查日期保留。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "companyIds": [
+        "vnet"
+      ],
+      "subcategoryIds": [
+        "market-supply-demand"
+      ]
     },
     {
       "id": "nea-electricity",
@@ -554,7 +596,7 @@
       "organization": "国家能源局",
       "sourceType": "government",
       "categoryIds": [
-        "activity-demand"
+        "industry"
       ],
       "purpose": "用月度全社会及相关行业用电数据观察宏观运行活动。",
       "questions": [
@@ -599,7 +641,11 @@
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
       "verificationNote": "2026-10-08 已读取官网公开新闻列表，仍可见 2026 年 8 月及 1—8 月用电资料；维护窗口内未确认新的月度用电发布。未把重刊日期改写为既有文章发布日期。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "subcategoryIds": [
+        "power-resources"
+      ]
     },
     {
       "id": "synergy-cloud",
@@ -607,8 +653,7 @@
       "organization": "Synergy Research Group",
       "sourceType": "commercial",
       "categoryIds": [
-        "activity-demand",
-        "market-technology"
+        "industry"
       ],
       "purpose": "跟踪全球云基础设施服务收入、增长和厂商份额。",
       "questions": [
@@ -657,7 +702,11 @@
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
       "verificationNote": "已读取新闻目录与 2026-10-05 云及数字服务预测原稿；这是包含云基础设施、SaaS、社交媒体和搜索的合计市场，不等于既有云基础设施季度数据。未访问订阅数据库。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand"
+      ]
     },
     {
       "id": "idc-server",
@@ -665,8 +714,7 @@
       "organization": "IDC（International Data Corporation）",
       "sourceType": "commercial",
       "categoryIds": [
-        "servers-hardware",
-        "market-technology"
+        "industry"
       ],
       "purpose": "观察服务器厂商收入、出货与加速服务器结构变化。",
       "questions": [
@@ -716,7 +764,11 @@
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
       "verificationNote": "2026-10-08 已读取服务器栏目，页面仍展示 Q1 2026 等历史内容；目录与单独季度新闻稿不同步，未确认维护窗口内新增发布，不据栏目倒退替换已收录的 Q2 新闻稿。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "subcategoryIds": [
+        "facility-technology"
+      ]
     },
     {
       "id": "kz-market",
@@ -724,8 +776,7 @@
       "organization": "北京科智咨询有限公司",
       "sourceType": "commercial",
       "categoryIds": [
-        "market-technology",
-        "capacity-construction"
+        "industry"
       ],
       "purpose": "研究中国传统 IDC 规模、区域需求与算力产业结构。",
       "questions": [
@@ -769,7 +820,11 @@
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
       "verificationNote": "2026-10-08 已读取洞察目录并核对 2026 年中国第三方算力中心服务商报告介绍（7 月 1 日）；不属于本轮时间窗口，未重复补录，也未取得完整报告。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand"
+      ]
     },
     {
       "id": "caict-computing",
@@ -777,8 +832,7 @@
       "organization": "中国信息通信研究院",
       "sourceType": "research",
       "categoryIds": [
-        "market-technology",
-        "servers-hardware"
+        "industry"
       ],
       "purpose": "查找计算节点、互联架构及算力技术体系的专题研究。",
       "questions": [
@@ -822,7 +876,11 @@
       "verifiedAt": null,
       "verificationStatus": "unreachable",
       "verificationNote": "2026-10-08 重试官方专题目录及既有 AI 计算节点 PDF 仍失败/超时；仅保留此前检索线索，未确认新报告或全文。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "subcategoryIds": [
+        "facility-technology"
+      ]
     },
     {
       "id": "nda-digital-china",
@@ -830,8 +888,7 @@
       "organization": "国家数据局",
       "sourceType": "government",
       "categoryIds": [
-        "market-technology",
-        "capacity-construction"
+        "industry"
       ],
       "purpose": "以年度全国报告建立数字基础设施和数字经济的基准口径。",
       "questions": [
@@ -875,7 +932,11 @@
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
       "verificationNote": "2026-10-08 已读取年度报告专栏，最新可确认仍为《数字中国发展报告（2025年）》全文发布页（6 月 8 日）；未确认新版，未重读旧 PDF。",
-      "lastCheckAttemptAt": "2026-10-08"
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand"
+      ]
     },
     {
       "entryType": "栏目",
@@ -890,8 +951,8 @@
       "organization": "DataCenterDynamics（DCD）",
       "sourceType": "media",
       "categoryIds": [
-        "capacity-construction",
-        "operating-demand"
+        "industry",
+        "regulation"
       ],
       "purpose": "发现东南亚数据中心新建、扩建、客户签约与融资线索，再到运营商和政府原文确认。",
       "questions": [
@@ -946,7 +1007,12 @@
         "区域列表可能混入东南亚以外的新闻，需逐篇确认所在地。",
         "媒体引用的计划容量、投资意向和签约容量不能直接作为已投运规模。"
       ],
-      "verificationNote": "2026-10-08 已读取东南亚新闻列表及 10 月 6 日 DayOne IPO 报道，并追溯至 SEC 10 月 5 日 F-1 原文；目录采用公司申报原文，未再新增同事件媒体条目。"
+      "verificationNote": "2026-10-08 已读取东南亚新闻列表及 10 月 6 日 DayOne IPO 报道，并追溯至 SEC 10 月 5 日 F-1 原文；目录采用公司申报原文，未再新增同事件媒体条目。",
+      "visibility": "active",
+      "subcategoryIds": [
+        "project-delivery",
+        "project-compliance"
+      ]
     },
     {
       "entryType": "栏目",
@@ -961,9 +1027,8 @@
       "organization": "w.media",
       "sourceType": "media",
       "categoryIds": [
-        "capacity-construction",
-        "market-technology",
-        "activity-demand"
+        "industry",
+        "regulation"
       ],
       "purpose": "跟踪东南亚项目、供应链、供电和审批动态，并通过区域邮件订阅发现商机。",
       "questions": [
@@ -1018,7 +1083,13 @@
         "部分文章转述其他媒体、访谈或企业新闻稿，应保留原始信息出处。",
         "法规提议不等于生效法规；计划投资不等于已落实订单或已投运容量。"
       ],
-      "verificationNote": "初次直达东南亚栏目失败，沿 w.media 首页 SEA 导航重试后读到目录；复读越南 Stavian、菲律宾 Globe、印尼 BDx 和泰国法案四篇正文。按文章绝对发布日期去重，不采用列表相对时间推断新增。"
+      "verificationNote": "初次直达东南亚栏目失败，沿 w.media 首页 SEA 导航重试后读到目录；复读越南 Stavian、菲律宾 Globe、印尼 BDx 和泰国法案四篇正文。按文章绝对发布日期去重，不采用列表相对时间推断新增。",
+      "visibility": "active",
+      "subcategoryIds": [
+        "project-delivery",
+        "power-resources",
+        "project-compliance"
+      ]
     },
     {
       "entryType": "栏目",
@@ -1033,8 +1104,7 @@
       "organization": "戴德梁行（Cushman & Wakefield）",
       "sourceType": "commercial",
       "categoryIds": [
-        "capacity-construction",
-        "operating-demand"
+        "industry"
       ],
       "purpose": "按半年观察东南亚主要城市的容量、空置和开发管线，判断项目供需环境。",
       "questions": [
@@ -1089,7 +1159,11 @@
         "在运、在建和规划容量必须分列，规划不代表已取得全部条件。",
         "本次核查公开摘要，未验证完整报告的所有图表与口径。"
       ],
-      "verificationNote": "2026-10-08 已读取官方页面的 H1 2026 公开摘要、市场名单及历史版本；未确认 H2 新版或明确发布日期，未取得完整报告，报告条目仍为部分核查。"
+      "verificationNote": "2026-10-08 已读取官方页面的 H1 2026 公开摘要、市场名单及历史版本；未确认 H2 新版或明确发布日期，未取得完整报告，报告条目仍为部分核查。",
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand"
+      ]
     },
     {
       "entryType": "栏目",
@@ -1104,8 +1178,7 @@
       "organization": "DC Byte",
       "sourceType": "commercial",
       "categoryIds": [
-        "market-technology",
-        "capacity-construction"
+        "industry"
       ],
       "purpose": "跟踪年度市场排名与未来增长城市，用公开研究补充东南亚项目开发判断。",
       "questions": [
@@ -1157,7 +1230,11 @@
         "公开介绍不能代替完整报告和数据库，市场排名与容量口径应以当期方法为准。",
         "早期规划、已承诺、在建和在运属于不同阶段，不可合并解释为可用容量。"
       ],
-      "verificationNote": "2026-10-08 已读取指数目录和 2026 年版公开介绍（2026-07-27），未确认新版本；全文和底层数据库尚未取得，报告条目仍为部分核查。"
+      "verificationNote": "2026-10-08 已读取指数目录和 2026 年版公开介绍（2026-07-27），未确认新版本；全文和底层数据库尚未取得，报告条目仍为部分核查。",
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand"
+      ]
     },
     {
       "entryType": "栏目",
@@ -1172,8 +1249,8 @@
       "organization": "Tenaga Nasional Berhad（马来西亚国家能源公司）",
       "sourceType": "company",
       "categoryIds": [
-        "activity-demand",
-        "capacity-construction"
+        "listed-companies",
+        "industry"
       ],
       "purpose": "通过电力公司的季度披露追踪马来西亚数据中心用电和接电兑现。",
       "questions": [
@@ -1217,7 +1294,14 @@
         "发电功率、设施接入功率与数据中心 IT 负载不能直接互换。",
         "当前栏目访问超时，最新季度具体数据仍需下载原始材料核对。"
       ],
-      "verificationNote": "旧 quarterly_results 入口再次超时；已读取官网 Financial Info 栏目的 2026 Q1/Q2 财务及分析师材料列表，改用该可读入口。本轮仅核查目录，未读取各份演示/PDF，未确认 Q3。"
+      "verificationNote": "旧 quarterly_results 入口再次超时；已读取官网 Financial Info 栏目的 2026 Q1/Q2 财务及分析师材料列表，改用该可读入口。本轮仅核查目录，未读取各份演示/PDF，未确认 Q3。",
+      "visibility": "active",
+      "companyIds": [
+        "tnb"
+      ],
+      "subcategoryIds": [
+        "power-resources"
+      ]
     },
     {
       "entryType": "栏目",
@@ -1232,8 +1316,8 @@
       "organization": "Singapore Telecommunications Limited（Singtel）",
       "sourceType": "company",
       "categoryIds": [
-        "operating-demand",
-        "capacity-construction"
+        "listed-companies",
+        "industry"
       ],
       "purpose": "通过 Singtel 季度披露跟踪 Nxera 数据中心扩张、项目交付和需求兑现。",
       "questions": [
@@ -1282,7 +1366,14 @@
         "Singtel 财年与自然年不同，需同时保留财季名称及截止日期。",
         "已签约、预留、可用和已投运容量不可混用；集团经营数字不等于 Nxera 单项业务数字。"
       ],
-      "verificationNote": "2026-10-08 财务目录仅返回标题，未取得可核查的当期列表，无法确认新增季度；保留 2026-10-04 已读取官方季度 PDF 的成功日期及原记录。"
+      "verificationNote": "2026-10-08 财务目录仅返回标题，未取得可核查的当期列表，无法确认新增季度；保留 2026-10-04 已读取官方季度 PDF 的成功日期及原记录。",
+      "visibility": "active",
+      "companyIds": [
+        "singtel"
+      ],
+      "subcategoryIds": [
+        "project-delivery"
+      ]
     },
     {
       "entryType": "栏目",
@@ -1297,8 +1388,7 @@
       "organization": "DayOne",
       "sourceType": "company",
       "categoryIds": [
-        "capacity-construction",
-        "activity-demand"
+        "industry"
       ],
       "purpose": "从运营商原始公告跟踪东南亚园区、融资及电力合作进展。",
       "questions": [
@@ -1347,7 +1437,15 @@
         "现场发电容量属于电力供应侧，不能记为数据中心 IT 容量。",
         "SEC 申报中的在运、在建、已取得电力条件土地、Bookings 和 Reservations 各有定义；IPO 申请及未来交付预计不等于已上市或项目投运。"
       ],
-      "verificationNote": "新闻目录本轮未返回可用列表；已读取公司 DayOne–TNB 合作原文和 2026-10-05 SEC F-1 的封面、容量表及定义。核查对应公司原文，不能据此断言新闻目录无其他新增。"
+      "verificationNote": "新闻目录本轮未返回可用列表；已读取公司 DayOne–TNB 合作原文和 2026-10-05 SEC F-1 的封面、容量表及定义。核查对应公司原文，不能据此断言新闻目录无其他新增。",
+      "visibility": "active",
+      "companyIds": [
+        "dayone"
+      ],
+      "subcategoryIds": [
+        "project-delivery",
+        "power-resources"
+      ]
     },
     {
       "entryType": "栏目",
@@ -1362,8 +1460,7 @@
       "organization": "ST Telemedia Global Data Centres（STTGDC）",
       "sourceType": "company",
       "categoryIds": [
-        "capacity-construction",
-        "operating-demand"
+        "industry"
       ],
       "purpose": "跟踪 STTGDC 在东南亚的数据中心开发、融资、交付及业务变化。",
       "questions": [
@@ -1416,7 +1513,14 @@
         "新闻室的历史国家覆盖不代表当前各国都存在相同规模的在营业务。",
         "获选开发、融资完成、封顶及投运是不同里程碑，不能按新闻标题重复计入新增供给。"
       ],
-      "verificationNote": "2026-10-08 已读取新闻室列表，可见 9 月 2 日及 8 月 21 日等公告；维护窗口内未确认新增相关项目公告，既有新加坡 50MW 开发公告未改为投运。"
+      "verificationNote": "2026-10-08 已读取新闻室列表，可见 9 月 2 日及 8 月 21 日等公告；维护窗口内未确认新增相关项目公告，既有新加坡 50MW 开发公告未改为投运。",
+      "visibility": "active",
+      "companyIds": [
+        "sttgdc"
+      ],
+      "subcategoryIds": [
+        "project-delivery"
+      ]
     },
     {
       "entryType": "栏目",
@@ -1431,8 +1535,8 @@
       "organization": "Malaysian Investment Development Authority（MIDA）",
       "sourceType": "government",
       "categoryIds": [
-        "market-technology",
-        "capacity-construction"
+        "policy-planning",
+        "industry"
       ],
       "purpose": "跟踪马来西亚数据中心投资政策、产业链机会和官方项目消息。",
       "questions": [
@@ -1474,7 +1578,12 @@
         "批准投资、承诺投资和实际资本支出不是同一口径。",
         "宏观投资促进政策不保证某一具体项目已完成土地、供电和建设许可。"
       ],
-      "verificationNote": "2026-10-08 已读取官方媒体发布目录，可见 10 月 4 日活动及 9 月数据中心产业链公告；未确认 10 月 5—8 日新增的数据中心项目披露。"
+      "verificationNote": "2026-10-08 已读取官方媒体发布目录，可见 10 月 4 日活动及 9 月数据中心产业链公告；未确认 10 月 5—8 日新增的数据中心项目披露。",
+      "visibility": "active",
+      "subcategoryIds": [
+        "investment-incentives",
+        "project-delivery"
+      ]
     },
     {
       "entryType": "栏目",
@@ -1489,8 +1598,9 @@
       "organization": "Infocomm Media Development Authority（IMDA）",
       "sourceType": "government",
       "categoryIds": [
-        "market-technology",
-        "capacity-construction"
+        "policy-planning",
+        "regulation",
+        "industry"
       ],
       "purpose": "从官方发布追踪新加坡数据中心容量分配、可持续要求和数字基础设施政策。",
       "questions": [
@@ -1531,7 +1641,13 @@
         "遴选额度和开发资格不等于现有投运容量。",
         "本次未读取栏目正文，具体政策版本、日期及适用条件需在原站复核。"
       ],
-      "verificationNote": "2026-10-08 官方发布入口仍返回 JavaScript/机器人验证页面，未取得新闻列表正文；不能据此认定没有新政策。新加坡本轮另收录 MDDI 官方国会答复。"
+      "verificationNote": "2026-10-08 官方发布入口仍返回 JavaScript/机器人验证页面，未取得新闻列表正文；不能据此认定没有新政策。新加坡本轮另收录 MDDI 官方国会答复。",
+      "visibility": "active",
+      "subcategoryIds": [
+        "compute-industrial-plan",
+        "green-power-plan",
+        "project-compliance"
+      ]
     },
     {
       "entryType": "栏目",
@@ -1546,8 +1662,9 @@
       "organization": "Thailand Board of Investment（BOI）",
       "sourceType": "government",
       "categoryIds": [
-        "market-technology",
-        "capacity-construction"
+        "policy-planning",
+        "regulation",
+        "industry"
       ],
       "purpose": "跟踪泰国数据中心投资促进、官方项目批准及相关政策进展。",
       "questions": [
@@ -1589,15 +1706,21 @@
         "BOI 投资促进批准不等于取得全部建设、环境和电力许可。",
         "官网也有外部媒体转载栏目，引用时应区分 BOI 原发新闻稿与其他机构报道。"
       ],
-      "verificationNote": "2026-10-08 已读取官方新闻目录；10 月 7 日日本投资及 10 月 5 日签证等条目不作为数据中心新增收录。数据中心申报程序变化另按 ERC 10 月 5 日澄清及 BOI S.3/2569 原件建条目。"
+      "verificationNote": "2026-10-08 已读取官方新闻目录；10 月 7 日日本投资及 10 月 5 日签证等条目不作为数据中心新增收录。数据中心申报程序变化另按 ERC 10 月 5 日澄清及 BOI S.3/2569 原件建条目。",
+      "visibility": "active",
+      "subcategoryIds": [
+        "investment-incentives",
+        "project-compliance",
+        "project-delivery"
+      ]
     },
     {
       "id": "singapore-mddi-news",
       "name": "新加坡 MDDI 政策与国会答复",
       "organization": "新加坡数码发展及新闻部（MDDI）",
       "categoryIds": [
-        "market-technology",
-        "capacity-construction"
+        "policy-planning",
+        "regulation"
       ],
       "purpose": "跟踪新加坡数字政策、数据中心相关国会答复及算力供给约束。",
       "questions": [
@@ -1640,15 +1763,20 @@
       "lastCheckAttemptAt": "2026-10-08",
       "trackingNote": "建议维护时检查新公告及既有事项后续；未设置自动监控。",
       "subscriptionUrl": null,
-      "subscriptionNote": "未确认专门的数据中心订阅入口。"
+      "subscriptionNote": "未确认专门的数据中心订阅入口。",
+      "visibility": "active",
+      "subcategoryIds": [
+        "compute-industrial-plan",
+        "data-crossborder"
+      ]
     },
     {
       "id": "west-java-bappeda-news",
       "name": "印尼西爪哇 Bappeda 项目与地方政策",
       "organization": "西爪哇省发展规划局（Bappeda Jabar）",
       "categoryIds": [
-        "capacity-construction",
-        "activity-demand"
+        "regulation",
+        "industry"
       ],
       "purpose": "跟踪西爪哇数据中心项目的地方审批、环境评估及供水协调。",
       "questions": [
@@ -1697,16 +1825,19 @@
       "lastCheckAttemptAt": "2026-10-08",
       "trackingNote": "建议维护时检查新公告及既有事项后续；未设置自动监控。",
       "subscriptionUrl": null,
-      "subscriptionNote": "未确认专门的数据中心订阅入口。"
+      "subscriptionNote": "未确认专门的数据中心订阅入口。",
+      "visibility": "active",
+      "subcategoryIds": [
+        "project-compliance"
+      ]
     },
     {
       "id": "thailand-erc-news",
       "name": "泰国 ERC 电力监管公告",
       "organization": "泰国能源监管委员会办公室（ERC）",
       "categoryIds": [
-        "activity-demand",
-        "capacity-construction",
-        "market-technology"
+        "regulation",
+        "industry"
       ],
       "purpose": "跟踪数据中心供电条件、能源监管及投资促进申报程序的官方澄清。",
       "questions": [
@@ -1753,7 +1884,960 @@
       "lastCheckAttemptAt": "2026-10-08",
       "trackingNote": "建议维护时检查新公告及既有事项后续；未设置自动监控。",
       "subscriptionUrl": null,
-      "subscriptionNote": "未确认专门的数据中心订阅入口。"
+      "subscriptionNote": "未确认专门的数据中心订阅入口。",
+      "visibility": "active",
+      "subcategoryIds": [
+        "project-compliance",
+        "power-resources"
+      ]
+    },
+    {
+      "sourceType": "company",
+      "visibility": "active",
+      "id": "sinnet-disclosures",
+      "name": "光环新网公司披露",
+      "companyIds": [
+        "sinnet"
+      ],
+      "organization": "北京光环新网科技股份有限公司",
+      "entryUrl": "https://www.sinnet.com.cn/IR.html",
+      "entryType": "栏目",
+      "categoryIds": [
+        "listed-companies",
+        "industry"
+      ],
+      "regions": [
+        "中国",
+        "马来西亚"
+      ],
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "access": "free",
+      "frequency": "irregular",
+      "frequencyNote": "持续信息披露和公司财报栏目，按事项及定期报告披露。",
+      "accessNote": "官网栏目及本次半年报摘要PDF公开可读，不代表独立验证了公司全部陈述。",
+      "verificationNote": "读取IR目录及信息披露栏目、2026半年报摘要正文；目录显示2026-09-01。摘要第4—5页可核中国项目和马来西亚前期筹划，未推定开工。",
+      "caveats": [
+        "机柜投产、上架与规划规模不同。",
+        "网站上架日期不等于已确认最初交易所披露日期。"
+      ],
+      "purpose": "查看光环新网IDC、云服务和项目建设的公司披露，核对国内项目及马来西亚筹划状态。",
+      "questions": [
+        "国内项目交付与上架处于什么阶段？",
+        "马来西亚项目仍是规划还是已有建设进展？"
+      ],
+      "metrics": [
+        "项目阶段",
+        "交付与上架口径",
+        "报告期间"
+      ],
+      "tags": [
+        "IDC",
+        "公司披露",
+        "项目建设"
+      ],
+      "aliases": [
+        "光环新网",
+        "Sinnet"
+      ],
+      "methodologyUrl": null,
+      "featured": false,
+      "subcategoryIds": [
+        "project-delivery"
+      ]
+    },
+    {
+      "sourceType": "company",
+      "visibility": "active",
+      "id": "xingyun-disclosures",
+      "name": "行云科技公司披露",
+      "companyIds": [
+        "xingyun"
+      ],
+      "organization": "行云科技股份有限公司",
+      "entryUrl": "https://www.xingyuntech.com.cn/",
+      "entryType": "机构首页",
+      "categoryIds": [
+        "listed-companies",
+        "industry",
+        "rental-prices"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "access": "free",
+      "frequency": "irregular",
+      "frequencyNote": "官网提供新闻和信息披露入口；按实际公司事项披露。",
+      "accessNote": "本次官方半年报页面、PDF及合作公告可公开阅读；巨潮动态目录只返回框架，未验证自动获取。",
+      "verificationNote": "官网300209信息披露链接指向巨潮 orgId=9900018896；半年报页面 /disclosure/7 明示2026-07-31并提供原PDF；已读主体和算力业务相关章节。",
+      "additionalEntryUrls": [
+        "https://www.cninfo.com.cn/new/disclosure/stock?orgId=9900018896&stockCode=300209",
+        "https://www.xingyuntech.com.cn/disclosure"
+      ],
+      "caveats": [
+        "不得把行云集团与上市公司混同。",
+        "总合同/框架订单不等于收入、交付或现金回款。"
+      ],
+      "purpose": "查看行云科技300209的算力业务、合同和融资披露，并与跨境贸易业务区分。",
+      "questions": [
+        "算力订单是否已经交付并确认收入？",
+        "设备安排与融资条件有哪些限制？"
+      ],
+      "metrics": [
+        "合同与交付阶段",
+        "业务分部",
+        "报告期间"
+      ],
+      "tags": [
+        "算力服务",
+        "公司披露",
+        "合同"
+      ],
+      "aliases": [
+        "行云科技",
+        "Xingyun Technology Co.,Ltd",
+        "XINGYUN TECH",
+        "有棵树科技股份有限公司",
+        "天泽信息产业股份有限公司"
+      ],
+      "methodologyUrl": null,
+      "featured": false,
+      "subcategoryIds": [
+        "rental-demand-contracts"
+      ]
+    },
+    {
+      "sourceType": "company",
+      "visibility": "active",
+      "id": "sharetronic-disclosures",
+      "name": "协创数据公司披露",
+      "companyIds": [
+        "sharetronic"
+      ],
+      "organization": "协创数据技术股份有限公司",
+      "entryUrl": "https://www.sharetronic.com/",
+      "entryType": "机构首页",
+      "categoryIds": [
+        "listed-companies",
+        "industry"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "access": "free",
+      "frequency": "irregular",
+      "frequencyNote": "官网列有投资者关系入口；公司定期报告和事项按实际披露。",
+      "accessNote": "本次官网跳转英文版、未取得完整披露列表；巨潮2026半年报摘要可读，报告完整版读取失败。",
+      "verificationNote": "已核官网准确主体；2026半年报摘要原件明确300857和官网联系邮箱。官网中文/年度报告栏目未得到有效深链，保留机构首页且需注明入口覆盖有限。不要把虚构stockCode深链称为已验证栏目。",
+      "caveats": [
+        "设备、云服务和整体财务口径分开。",
+        "仅取得半年报摘要，未读取2026半年报全文。"
+      ],
+      "coverageGap": "准确主体和公开摘要已确认；持续披露子栏目尚待核，不能标称稳定增量公告列表已验证。",
+      "purpose": "查看协创数据的经营摘要及服务器采购、智算中心和再融资安排。",
+      "questions": [
+        "拟采购和拟发行是否已经完成？",
+        "公开摘要能支持哪些业务判断？"
+      ],
+      "metrics": [
+        "采购与发行阶段",
+        "募集资金用途",
+        "报告期间"
+      ],
+      "tags": [
+        "智算中心",
+        "公司披露",
+        "再融资"
+      ],
+      "aliases": [
+        "协创数据",
+        "Sharetronic Data Technology Co.,Ltd"
+      ],
+      "methodologyUrl": null,
+      "featured": false,
+      "subcategoryIds": [
+        "facility-technology",
+        "project-delivery"
+      ]
+    },
+    {
+      "sourceType": "company",
+      "visibility": "active",
+      "id": "hec-disclosures",
+      "name": "东阳光公司公告",
+      "companyIds": [
+        "hec"
+      ],
+      "organization": "广东东阳光科技控股股份有限公司",
+      "entryUrl": "https://www.hec-al.com/sys-nr/?g=40",
+      "entryType": "栏目",
+      "categoryIds": [
+        "listed-companies",
+        "industry"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "access": "free",
+      "frequency": "irregular",
+      "frequencyNote": "公司公告栏目按事项披露，定期报告另在法定渠道刊发。",
+      "accessNote": "公司公告列表及巨潮半年报可公开读取；原IR总页超时不代表公司整体不可达。",
+      "verificationNote": "从2026半年报公司网址hec-al.com进入官网，再经具体公告页面“公司公告”进入/sys-nr/?g=40并读到列表。已核600673主体，非集团/药业主体。",
+      "caveats": [
+        "参股、拟收购、受理与交割是不同阶段。",
+        "订单总额、设备投入与已确认营业收入不能互换。"
+      ],
+      "purpose": "查看东阳光600673的算力服务及数据中心投资披露，区分订单、收入、参股与拟收购。",
+      "questions": [
+        "算力合同与实际收入分别披露多少？",
+        "数据中心投资处于参股、受理还是交割阶段？"
+      ],
+      "metrics": [
+        "合同与收入口径",
+        "投资阶段",
+        "报告期间"
+      ],
+      "tags": [
+        "算力服务",
+        "公司披露",
+        "资产交易"
+      ],
+      "aliases": [
+        "东阳光",
+        "东阳光科"
+      ],
+      "methodologyUrl": null,
+      "featured": false,
+      "subcategoryIds": []
+    },
+    {
+      "sourceType": "company",
+      "visibility": "active",
+      "id": "vnet-news",
+      "name": "世纪互联公司新闻与资本动态",
+      "companyIds": [
+        "vnet"
+      ],
+      "organization": "VNET Group, Inc.",
+      "entryUrl": "https://ir.vnet.com/news-events/press-releases",
+      "entryType": "栏目",
+      "categoryIds": [
+        "listed-companies",
+        "industry"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "access": "free",
+      "frequency": "irregular",
+      "frequencyNote": "公司按事项发布新闻稿，季度财报继续复用原季度栏目。",
+      "accessNote": "本次新闻目录和9月21日公告正文公开可读。",
+      "verificationNote": "从已有季度栏目官方导航进入新闻列表并阅读2026-09-21股份转让交割公告；该来源与vnet-quarterly为不同官方栏目。",
+      "caveats": [
+        "原股东售股不是公司发行新股募资；买方关联宁德时代的关系按原文限定。"
+      ],
+      "purpose": "查看世纪互联公司新闻和资本事项，季度业绩继续使用已有财报入口。",
+      "questions": [
+        "公司股份转让或其他资本事项到哪一步？",
+        "该事项是发行人融资还是股东售股？"
+      ],
+      "metrics": [
+        "事项阶段",
+        "交易主体",
+        "公告日期"
+      ],
+      "tags": [
+        "公司新闻",
+        "资本动作"
+      ],
+      "aliases": [
+        "世纪互联",
+        "VNET",
+        "21Vianet"
+      ],
+      "methodologyUrl": null,
+      "featured": false,
+      "subcategoryIds": []
+    },
+    {
+      "sourceType": "company",
+      "visibility": "active",
+      "id": "gds-news",
+      "name": "万国数据公司新闻与资本动态",
+      "companyIds": [
+        "gds"
+      ],
+      "organization": "GDS Holdings Limited",
+      "entryUrl": "https://investors.gds-services.com/news-releases",
+      "entryType": "栏目",
+      "categoryIds": [
+        "listed-companies",
+        "industry"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "access": "free",
+      "frequency": "irregular",
+      "frequencyNote": "公司按事项发布新闻稿，定期业绩继续复用原季度栏目。",
+      "accessNote": "本次新闻列表及已有Q2原PDF公开可读。",
+      "verificationNote": "从已有季度栏目导航进入News Releases；最新可见为8月13日Q2公告，页面另列资本事项。Q2已存，不在新来源重复复制。",
+      "caveats": [
+        "Q2同份材料不能因新闻与财报两个入口重复建档。"
+      ],
+      "purpose": "查看万国数据公司新闻和资本事项，同份季度材料与已有财报入口去重。",
+      "questions": [
+        "是否出现新的公司经营或资本事项？",
+        "同一公告是否已经在季度栏目收录？"
+      ],
+      "metrics": [
+        "事项阶段",
+        "披露主体",
+        "公告日期"
+      ],
+      "tags": [
+        "公司新闻",
+        "资本动作"
+      ],
+      "aliases": [
+        "万国数据",
+        "GDS",
+        "GDS Holdings"
+      ],
+      "methodologyUrl": null,
+      "featured": false,
+      "subcategoryIds": []
+    },
+    {
+      "sourceType": "company",
+      "visibility": "active",
+      "id": "china-mobile-ir",
+      "name": "中国移动上市公司披露",
+      "companyIds": [
+        "china-mobile"
+      ],
+      "organization": "中国移动有限公司",
+      "entryUrl": "https://www.chinamobileltd.com/",
+      "entryType": "机构首页",
+      "categoryIds": [
+        "listed-companies",
+        "industry"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "verificationStatus": "unreachable",
+      "verifiedAt": null,
+      "lastCheckAttemptAt": "2026-10-08",
+      "access": "unknown",
+      "frequency": "irregular",
+      "frequencyNote": "按公司实际定期报告和重大事项披露；本次未验证当前目录列表。",
+      "accessNote": "官网根页超时、简体首页403；不推断付费。另已读巨潮公开半年报原件。",
+      "verificationNote": "2026半年报第4—5页核实主体、官网及600941/0941。官网本次不可达；上交所公司页能读框架未取得动态列表。来源状态与可读的单篇半年报状态分开。",
+      "additionalEntryUrls": [
+        "https://www.sse.com.cn/assortment/stock/list/info/company/index.shtml?COMPANY_CODE=600941"
+      ],
+      "caveats": [
+        "集团品牌与上市公司区分。",
+        "智算自建加租赁规模不等于全部自有已投运IT容量。"
+      ],
+      "coverageGap": "官方入口身份确认，当前官网内容列表未验证。",
+      "purpose": "查看中国移动上市主体算力与数据中心相关披露；当前官网列表待核，已收录可读半年报。",
+      "questions": [
+        "算力服务收入采用什么业务口径？",
+        "基础设施规模包含哪些自有与租赁资源？"
+      ],
+      "metrics": [
+        "算力服务口径",
+        "自建与租赁资源",
+        "报告期间"
+      ],
+      "tags": [
+        "运营商",
+        "算力服务",
+        "公司披露"
+      ],
+      "aliases": [
+        "中国移动",
+        "China Mobile Limited"
+      ],
+      "methodologyUrl": null,
+      "featured": false,
+      "subcategoryIds": []
+    },
+    {
+      "sourceType": "company",
+      "visibility": "active",
+      "id": "china-telecom-ir",
+      "name": "中国电信公司新闻与业绩",
+      "companyIds": [
+        "china-telecom"
+      ],
+      "organization": "中国电信股份有限公司",
+      "entryUrl": "https://www.chinatelecom-h.com/sc/media/press.php",
+      "entryType": "栏目",
+      "categoryIds": [
+        "listed-companies",
+        "industry"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "access": "free",
+      "frequency": "irregular",
+      "frequencyNote": "按公司事项和定期业绩发布新闻稿。",
+      "accessNote": "官网栏目及本次6页中期业绩新闻稿公开可读。",
+      "verificationNote": "官网导航进入新闻稿，实际读取2026-08-20中期业绩原稿；主体和A/H代码在原稿第2页明确。",
+      "caveats": [
+        "天翼云收入、智能业务收入与GPU租赁收入不能等同。",
+        "自有+接入智算规模不等于自营IT容量。"
+      ],
+      "purpose": "查看中国电信天翼云、AIDC和智算业务的公司业绩新闻稿。",
+      "questions": [
+        "云和智能业务收入分别采用什么口径？",
+        "智算资源中自有与接入如何区分？"
+      ],
+      "metrics": [
+        "业务收入口径",
+        "自有与接入资源",
+        "报告期间"
+      ],
+      "tags": [
+        "运营商",
+        "AIDC",
+        "公司披露"
+      ],
+      "aliases": [
+        "中国电信",
+        "China Telecom Corporation Limited"
+      ],
+      "methodologyUrl": null,
+      "featured": false,
+      "subcategoryIds": []
+    },
+    {
+      "sourceType": "company",
+      "visibility": "active",
+      "id": "china-unicom-ir",
+      "name": "中国联通公司新闻与业绩（香港上市主体）",
+      "companyIds": [
+        "china-unicom-h"
+      ],
+      "organization": "中国联合网络通信（香港）股份有限公司",
+      "entryUrl": "https://www.chinaunicom.com.hk/sc/media/press.php",
+      "entryType": "栏目",
+      "categoryIds": [
+        "listed-companies",
+        "industry"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "access": "free",
+      "frequency": "irregular",
+      "frequencyNote": "按相关公司事项和定期业绩发布。",
+      "accessNote": "公司新闻栏目公开可读；中期业绩PDF曾取得部分正文，末轮复读失败，单篇资料按部分正文保留。",
+      "verificationNote": "本次核实香港上市主体762及新闻栏目；首页明确提示A股公司的财务数据可能与本公司不同，不能合并。2026-08-18新闻稿取得部分内容，末轮复读失败，不影响独立确认的栏目身份。",
+      "caveats": [
+        "本入口是香港上市主体，非中国联合网络通信股份有限公司A股报表。",
+        "算力收入、智算中心收入和智能计算收入采用公司各自业务口径。"
+      ],
+      "purpose": "查看中国联通香港上市主体算力业务与资本开支的公司披露，独立保留报表口径。",
+      "questions": [
+        "香港上市主体披露哪些算力业务？",
+        "与A股上市主体的报表口径是否一致？"
+      ],
+      "metrics": [
+        "业务口径",
+        "资本开支",
+        "报告期间"
+      ],
+      "tags": [
+        "运营商",
+        "算力服务",
+        "公司披露"
+      ],
+      "aliases": [
+        "中国联通（香港上市主体）",
+        "中国联通",
+        "China Unicom (Hong Kong) Limited"
+      ],
+      "methodologyUrl": null,
+      "featured": false,
+      "subcategoryIds": []
+    },
+    {
+      "id": "stcn-industry",
+      "name": "证券时报 IDC/AIDC 相关报道",
+      "organization": "证券时报",
+      "sourceType": "media",
+      "categoryIds": [
+        "industry",
+        "rental-prices",
+        "listed-companies"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "entryUrl": "https://www.stcn.com/article/list/cj.html",
+      "entryType": "栏目",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "admissionStatus": "正式可用（仅书目信息及链接展示）",
+      "access": "unknown",
+      "accessNote": "样例原站正文免费可读；全站获取条件未核实，不据一次成功推断全站开放。",
+      "purpose": "精选国内数据中心、算力供需、资源条件及关注公司相关报道。",
+      "verificationNote": "亲自读取产经栏目及样例文章全文；原站有未经书面授权禁止转载等声明，未取得转载授权，展示限于题名、日期、原文链接及不复述正文事实的导航说明。",
+      "lastCheckAttemptAt": "2026-10-08",
+      "frequency": "irregular",
+      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "questions": [
+        "行业供需与经营差异有哪些报道线索？",
+        "哪些说法仍需要回到公司原公告核实？"
+      ],
+      "metrics": [
+        "原文发布日期",
+        "报道主题",
+        "原发布者"
+      ],
+      "tags": [
+        "财经媒体",
+        "行业供需"
+      ],
+      "caveats": [
+        "仅提供书目信息、链接和导航说明；未取得正文转载授权。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand",
+        "rental-demand-contracts"
+      ]
+    },
+    {
+      "id": "yicai-industry",
+      "name": "第一财经 IDC/AIDC 相关报道",
+      "organization": "第一财经",
+      "sourceType": "media",
+      "categoryIds": [
+        "industry",
+        "rental-prices",
+        "listed-companies"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "entryUrl": "https://www.yicai.com/news/",
+      "entryType": "栏目",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "admissionStatus": "正式可用（仅书目信息及链接展示）",
+      "access": "unknown",
+      "accessNote": "本次相关样例全文可读；不代表全站免费或取得转载授权。",
+      "purpose": "精选国内数据中心项目、供电与算电协同、产业供需报道。",
+      "verificationNote": "亲自读取新闻栏目及相关原创样例全文。文章明确限制未经授权使用、转载和摘编；本轮仅提供书目信息、链接及导航说明，不复述其采访数据或研究结论。",
+      "lastCheckAttemptAt": "2026-10-08",
+      "frequency": "irregular",
+      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "questions": [
+        "国内智算中心交付与供电有哪些报道？",
+        "媒体观点与已确认项目事实如何区分？"
+      ],
+      "metrics": [
+        "原文发布日期",
+        "报道主题",
+        "原发布者"
+      ],
+      "tags": [
+        "财经媒体",
+        "项目建设",
+        "供电"
+      ],
+      "caveats": [
+        "仅提供书目信息、链接和导航说明；未取得正文转载授权。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "project-delivery",
+        "power-resources"
+      ]
+    },
+    {
+      "id": "ndrc-datacenter-policy",
+      "name": "国家发展改革委：数据中心相关政策",
+      "organization": "国家发展和改革委员会",
+      "sourceType": "government",
+      "categoryIds": [
+        "policy-planning",
+        "regulation"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "entryUrl": "https://www.ndrc.gov.cn/xwdt/tzgg/",
+      "entryType": "栏目",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "admissionStatus": "正式可用",
+      "access": "free",
+      "accessNote": "本次通知栏目、印发通知正文及行动计划附件文本可读；不代表所有附件均可读取。",
+      "purpose": "按数据中心、算力布局、供电与绿色发展相关性精选官方政策及审批约束。",
+      "verificationNote": "亲自读取通知公告目录、2024-07-23印发通知；阅读附件部分正文，不宣称复核全部历史法规时效。",
+      "lastCheckAttemptAt": "2026-10-08",
+      "frequency": "irregular",
+      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "questions": [
+        "数据中心绿色低碳发展部署有哪些政策依据？",
+        "历史目标与当前执行状态是否区分？"
+      ],
+      "metrics": [
+        "文号",
+        "成文及发布日期",
+        "目标期限"
+      ],
+      "tags": [
+        "国内政策",
+        "绿色数据中心"
+      ],
+      "caveats": [
+        "旧政策仅作历史基准；后续修订和附件全文须单独核实。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "compute-industrial-plan",
+        "green-power-plan",
+        "project-compliance"
+      ]
+    },
+    {
+      "id": "miit-green-compute",
+      "name": "工信部：绿色算力设施政策",
+      "organization": "工业和信息化部",
+      "sourceType": "government",
+      "categoryIds": [
+        "policy-planning",
+        "regulation"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "entryUrl": "https://www.miit.gov.cn/jgsj/jns/gzdt/index.html",
+      "entryType": "栏目",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-08",
+      "admissionStatus": "正式可用（文章可读，栏目列表待核）",
+      "access": "free",
+      "accessNote": "已读公开通知正文；WPS附件未读取。",
+      "purpose": "跟踪绿色算力设施创建推荐、节能降碳及资源效率相关政策。",
+      "verificationNote": "栏目身份与导航可读，但提取未返回文章列表；2026年度国家绿色算力设施推荐通知正文完整可读，成文日、发布日期、申报截止日已分别核对。",
+      "lastCheckAttemptAt": "2026-10-08",
+      "frequency": "irregular",
+      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "questions": [
+        "绿色算力设施推荐有什么条件与时限？",
+        "通知正文与评价附件分别核到什么范围？"
+      ],
+      "metrics": [
+        "通知文号",
+        "报送期限",
+        "取得范围"
+      ],
+      "tags": [
+        "国内政策",
+        "绿色算力"
+      ],
+      "caveats": [
+        "自愿创建推荐不等于经营许可，附件未读不视作完整指标体系已核。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "green-power-plan",
+        "project-compliance"
+      ]
+    },
+    {
+      "id": "szse-regulation",
+      "name": "深交所：监管与相关规则",
+      "organization": "深圳证券交易所",
+      "sourceType": "exchange",
+      "categoryIds": [
+        "regulation"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "entryUrl": "https://www.szse.cn/disclosure/supervision/inquire/index.html",
+      "entryType": "栏目",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-08",
+      "admissionStatus": "入口确认但动态列表待核；规则发布通知可用",
+      "access": "unknown",
+      "accessNote": "问询列表本次超时，规则发布通知可公开读取；不判断付费。",
+      "purpose": "精选关注公司问询、监管事项及直接相关的重组和信息披露规则。",
+      "verificationNote": "官方信息披露导航搜索线索确认问询入口；本次问询、信息披露与法律规则目录未读取成功，单篇2025年重大资产重组规则发布通知成功。未发现并读取本轮相关新公司个案，不用全市场无关案例补数。",
+      "relatedEntryUrls": [
+        "https://www.szse.cn/lawrules/index.html"
+      ],
+      "lastCheckAttemptAt": "2026-10-08",
+      "frequency": "irregular",
+      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "questions": [
+        "关注深市公司的相关审核规则与问询在哪里查？",
+        "监管事项是否确实涉及关注公司？"
+      ],
+      "metrics": [
+        "规则版本",
+        "适用主体",
+        "程序阶段"
+      ],
+      "tags": [
+        "证券交易所",
+        "信息披露",
+        "资产重组"
+      ],
+      "caveats": [
+        "动态问询列表本次未成功读取；不以无关监管个案补数。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "securities-regulation"
+      ]
+    },
+    {
+      "id": "sse-regulation",
+      "name": "上交所：监管与相关规则",
+      "organization": "上海证券交易所",
+      "sourceType": "exchange",
+      "categoryIds": [
+        "regulation"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "entryUrl": "https://www.sse.com.cn/disclosure/credibility/supervision/inquiries/",
+      "entryType": "栏目",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-08",
+      "admissionStatus": "入口确认但动态列表待核；规则发布通知可用",
+      "access": "free",
+      "accessNote": "官方问询页框架可读取，未返回可验证公司个案；重组目录和规则发布通知可读。",
+      "purpose": "精选关注公司监管事项及与公司并购、融资和数据中心资产有关的规则。",
+      "verificationNote": "亲自读取监管问询页面但仅取得框架；重组规则目录及2025年修订发布页可读，页面标明现行有效。没有据空框架声称无新监管事项。",
+      "relatedEntryUrls": [
+        "https://www.sse.com.cn/lawandrules/sselawsrules2025/stocks/review/recombination/"
+      ],
+      "lastCheckAttemptAt": "2026-10-08",
+      "frequency": "irregular",
+      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "questions": [
+        "关注沪市公司的资产交易受哪些审核规则约束？",
+        "具体问询事项及规则效力如何核对？"
+      ],
+      "metrics": [
+        "规则版本",
+        "适用主体",
+        "程序阶段"
+      ],
+      "tags": [
+        "证券交易所",
+        "信息披露",
+        "资产重组"
+      ],
+      "caveats": [
+        "公司问询列表只取得框架；一般规则不代表具体交易已获批准。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "securities-regulation"
+      ]
+    },
+    {
+      "id": "hkex-regulation",
+      "name": "港交所：监管通讯与上市规则",
+      "organization": "香港交易及结算所有限公司／香港联合交易所有限公司",
+      "sourceType": "exchange",
+      "categoryIds": [
+        "regulation"
+      ],
+      "regions": [
+        "中国香港"
+      ],
+      "entryUrl": "https://www.hkex.com.hk/News/Regulatory-Announcements?sc_lang=zh-HK",
+      "entryType": "栏目",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "admissionStatus": "正式可用",
+      "access": "free",
+      "accessNote": "本次监管通讯目录及相关咨询新闻稿可读；未取得完整咨询文件。",
+      "purpose": "精选影响关注港股发行人的交易、披露及上市监管规则与相关个案。",
+      "verificationNote": "实际读取目录及2026-09-21第二阶段上市机制竞争力检讨咨询新闻稿，保留征求意见性质和未来截止日期；没有收录目录上无关发行人的处分。",
+      "lastCheckAttemptAt": "2026-10-08",
+      "frequency": "irregular",
+      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "questions": [
+        "关注港股发行人的交易与披露要求有何变化？",
+        "所见文件是咨询建议还是已生效规则？"
+      ],
+      "metrics": [
+        "咨询及生效状态",
+        "截止日期",
+        "适用主体"
+      ],
+      "tags": [
+        "证券交易所",
+        "信息披露",
+        "上市规则"
+      ],
+      "caveats": [
+        "咨询稿不当作现行规则；A股与港股上市主体分开。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "securities-regulation"
+      ]
+    },
+    {
+      "id": "vietnam-vgp-policy",
+      "name": "越南 VGP：政策与数据中心信息",
+      "organization": "越南政府新闻网（VGP）",
+      "sourceType": "government",
+      "categoryIds": [
+        "policy-planning",
+        "regulation",
+        "industry"
+      ],
+      "regions": [
+        "越南"
+      ],
+      "entryUrl": "https://en.baochinhphu.vn/policies.htm",
+      "entryType": "栏目",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "admissionStatus": "正式可用（政府报道，法规原件待核）",
+      "access": "free",
+      "accessNote": "政策栏目与云计算行动计划报道公开可读。",
+      "purpose": "查看越南政府发布的政策消息与云计算、数据中心相关官方报道。",
+      "verificationNote": "实际读取政策栏目和2025-06-12报道；网站页脚标明越南政府在线报纸。只确认政府报道内容，未据此确认法律原件文号、效力或具体生效日。",
+      "lastCheckAttemptAt": "2026-10-08",
+      "frequency": "irregular",
+      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "questions": [
+        "越南云计算与数据中心发展计划有哪些政府报道？",
+        "目标是否已有法规原件支持？"
+      ],
+      "metrics": [
+        "政府报道日期",
+        "目标期限",
+        "原件取得范围"
+      ],
+      "tags": [
+        "东南亚专题",
+        "越南政策"
+      ],
+      "caveats": [
+        "政府报道与法律原件分开，发展目标不是已实现成果。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "compute-industrial-plan"
+      ]
+    },
+    {
+      "id": "philippines-boi",
+      "name": "菲律宾 BOI 投资政策入口",
+      "organization": "菲律宾投资委员会（BOI）",
+      "sourceType": "government",
+      "categoryIds": [
+        "policy-planning",
+        "industry"
+      ],
+      "regions": [
+        "菲律宾"
+      ],
+      "entryUrl": "https://boi.gov.ph/",
+      "entryType": "机构首页",
+      "verificationStatus": "unreachable",
+      "verifiedAt": null,
+      "admissionStatus": "入口线索保留待核",
+      "access": "unknown",
+      "accessNote": "主页与已知政策文件入口均返回403；不能判断付费，也未取得全文。",
+      "purpose": "按任务书保留菲律宾投资政策官方入口线索，待能读取后核实具体资料。",
+      "verificationNote": "本次主页和2026 SIPP文件入口访问均返回403。官方机构身份沿用用户任务书入口定位，未冒称本次读取成功；未生成项目或政策正文资料。",
+      "lastCheckAttemptAt": "2026-10-08",
+      "frequency": "irregular",
+      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "questions": [
+        "菲律宾投资政策原件能否公开取得？"
+      ],
+      "metrics": [
+        "入口可达性",
+        "核查日期"
+      ],
+      "tags": [
+        "菲律宾政策"
+      ],
+      "caveats": [
+        "当前403，仅保留入口线索，不作为已取得正文或正式覆盖。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "reference",
+      "visibilityReason": "本次主页和政策文件入口均403；仅保留官方入口线索，未取得可核正文，不计正式来源覆盖。"
     }
   ],
   "reports": [
@@ -1768,7 +2852,22 @@
       "summary": "检索收录说明将成交价格指数与平台挂牌价分为不同系列；用于核对价格类型。正文尚待直接复核。",
       "verifiedAt": null,
       "verificationStatus": "unreachable",
-      "verificationNote": "2026-10-08 重试原文超时；保留先前搜索线索，不确认全文及发布日期。"
+      "verificationNote": "2026-10-08 重试原文超时；保留先前搜索线索，不确认全文及发布日期。",
+      "primaryCategoryId": "rental-prices",
+      "regions": [],
+      "contentScope": "search-snippet",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "unknown",
+      "originalPublisher": "上海有色网（SMM）",
+      "originalUrl": "https://news.smm.cn/gonggao/103970493",
+      "visibility": "reference",
+      "regionNote": "未取得原文，具体国家范围待核；不从来源覆盖或机构所在地推断。",
+      "visibilityReason": "仅有搜索线索，原文尚未取得；不作为已核实的实质更新。",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "参考/归档资料保留原核查限制，本次未取得进一步正文，不强行细分。"
     },
     {
       "id": "smm-composite-method-2026",
@@ -1781,7 +2880,22 @@
       "summary": "检索收录介绍以标准计算单元当量形成跨卡型综合价格；不能作为某一具体卡型的成交报价。",
       "verifiedAt": null,
       "verificationStatus": "unreachable",
-      "verificationNote": "2026-10-08 重试原文超时；保留先前搜索线索，发布日期和生效时间仍待正文核对。"
+      "verificationNote": "2026-10-08 重试原文超时；保留先前搜索线索，发布日期和生效时间仍待正文核对。",
+      "primaryCategoryId": "rental-prices",
+      "regions": [],
+      "contentScope": "search-snippet",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "unknown",
+      "originalPublisher": "上海有色网（SMM）",
+      "originalUrl": "https://news.smm.cn/news/104123430",
+      "visibility": "reference",
+      "regionNote": "未取得原文，具体国家范围待核；不从来源覆盖或机构所在地推断。",
+      "visibilityReason": "仅有搜索线索，原文尚未取得；不作为已核实的实质更新。",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "参考/归档资料保留原核查限制，本次未取得进一步正文，不强行细分。"
     },
     {
       "id": "smm-weekly-public-commentary-104134387",
@@ -1794,7 +2908,22 @@
       "summary": "公开周评线索，涉及分区域指数与长协行情。该文不是付费订阅周报全文。",
       "verifiedAt": null,
       "verificationStatus": "unreachable",
-      "verificationNote": "2026-10-08 重试仍为空正文；保留已收录公开周评线索，不确认发布日期或订阅周报全文。"
+      "verificationNote": "2026-10-08 重试仍为空正文；保留已收录公开周评线索，不确认发布日期或订阅周报全文。",
+      "primaryCategoryId": "rental-prices",
+      "regions": [],
+      "contentScope": "search-snippet",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "unknown",
+      "originalPublisher": "上海有色网（SMM）",
+      "originalUrl": "https://news.smm.cn/news/104134387",
+      "visibility": "archived",
+      "regionNote": "未取得原文，具体国家范围待核；不从来源覆盖或机构所在地推断。",
+      "visibilityReason": "用户决定移除 SMM 算力租赁市场周报；不代表已认定原站完全无公开内容。 历史未核周评不换来源或新 ID 回流。",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "参考/归档资料保留原核查限制，本次未取得进一步正文，不强行细分。"
     },
     {
       "id": "mysteel-price-launch-2026",
@@ -1807,12 +2936,27 @@
       "summary": "发布说明线索涉及国内、北美样本与成交、挂牌、询报盘的混合价格来源；正文待直接核实。",
       "verifiedAt": null,
       "verificationStatus": "unreachable",
-      "verificationNote": "2026-10-08 原文仍返回 HTTP 411；先前搜索线索不能代替正文，发布日期继续留空。"
+      "verificationNote": "2026-10-08 原文仍返回 HTTP 411；先前搜索线索不能代替正文，发布日期继续留空。",
+      "primaryCategoryId": "rental-prices",
+      "regions": [],
+      "contentScope": "search-snippet",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "unknown",
+      "originalPublisher": "上海钢联（Mysteel）",
+      "originalUrl": "https://news.mysteel.com/a/26090910/81150FD737D13EC4.html",
+      "visibility": "reference",
+      "regionNote": "未取得原文，具体国家范围待核；不从来源覆盖或机构所在地推断。",
+      "visibilityReason": "仅有搜索线索，原文尚未取得；不作为已核实的实质更新。",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "参考/归档资料保留原核查限制，本次未取得进一步正文，不强行细分。"
     },
     {
       "id": "ornn-ocpi-methodology",
       "sourceId": "ornn-gpu",
-      "title": "Ornn Compute Price Indices (OCPI): Methodology",
+      "title": "Ornn 算力价格指数（OCPI）方法说明",
       "url": "https://data.ornn.com/methodology",
       "kind": "methodology",
       "publishedAt": "2026-07-24",
@@ -1820,12 +2964,28 @@
       "summary": "说明按需成交样本、按量加权缩尾计算及治理规则；预留与长期合约不纳入 OCPI。",
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "2026-10-08 复读方法全文；变更记录仍列 2026-07-24 初版，未确认新版本。成功核查日期与方法发布日期分列。"
+      "verificationNote": "2026-10-08 复读方法全文；变更记录仍列 2026-07-24 初版，未确认新版本。成功核查日期与方法发布日期分列。",
+      "primaryCategoryId": "rental-prices",
+      "regions": [
+        "全球"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "Ornn Data",
+      "originalUrl": "https://data.ornn.com/methodology",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "originalTitle": "Ornn Compute Price Indices (OCPI): Methodology",
+      "primarySubcategoryId": "pricing-methodology"
     },
     {
       "id": "semianalysis-composite-methodology",
       "sourceId": "semianalysis-gpu",
-      "title": "GPU Spot-Contract Composite Index methodology",
+      "title": "SemiAnalysis GPU 现货与合约综合指数方法摘要",
       "url": "https://gpu-index.semianalysis.com/",
       "kind": "methodology",
       "publishedAt": null,
@@ -1833,25 +2993,56 @@
       "summary": "指数页内的方法摘要说明价格采集、加权合成与合同调查整合。公开静态表另有历史所属期，不能据此声称当日现价。",
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "2026-10-08 复读公开方法说明及历史静态表；未验证最新价格组件或付费序列，不用本轮核查日期代替未知发布日期。"
+      "verificationNote": "2026-10-08 复读公开方法说明及历史静态表；未验证最新价格组件或付费序列，不用本轮核查日期代替未知发布日期。",
+      "primaryCategoryId": "rental-prices",
+      "regions": [
+        "全球"
+      ],
+      "contentScope": "abstract",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "SemiAnalysis",
+      "originalUrl": "https://gpu-index.semianalysis.com/",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "originalTitle": "GPU Spot-Contract Composite Index methodology",
+      "primarySubcategoryId": "pricing-methodology"
     },
     {
       "id": "nda-capacity-20260430",
       "sourceId": "nda-capacity",
       "title": "媒体报道 | 国家数据局明确算力基建四大方向",
       "url": "https://www.nda.gov.cn/sjj/swdt/mtsy/0430/20260430114558848516126_pc.html",
-      "kind": "data-release",
+      "kind": "news",
       "publishedAt": "2026-04-30",
       "dataPeriod": "截至 2026 年 3 月底（智能算力与接入规模）",
       "summary": "国家数据局官网转载媒体报道，披露全国智能算力、枢纽占比和监测平台接入规模，并介绍算力网建设方向。",
       "verifiedAt": "2026-10-04",
       "verificationStatus": "verified",
-      "verificationNote": "已读取正文和页面日期；原始署名来源为上海证券报·中国证券网，统计规模注明 FP16。"
+      "verificationNote": "已读取正文和页面日期；原始署名来源为上海证券报·中国证券网，统计规模注明 FP16。",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "上海证券报·中国证券网",
+      "originalUrl": null,
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": "market-supply-demand"
     },
     {
       "id": "cbre-global-trends-2026",
       "sourceId": "cbre-datacenter",
-      "title": "Global Data Center Trends 2026",
+      "title": "CBRE 2026 全球数据中心趋势报告",
       "url": "https://www.cbre.com/insights/reports/global-data-center-trends-2026",
       "kind": "report",
       "publishedAt": "2026-06-17",
@@ -1859,33 +3050,93 @@
       "summary": "比较四大区域主要市场的容量、空置、净吸纳、机房租金与可用供给；租金指标为机房功率容量口径。",
       "verifiedAt": "2026-10-04",
       "verificationStatus": "verified",
-      "verificationNote": "已读取官网报告正文与发布日期；图表引用 CBRE Research, Q1 2026。"
+      "verificationNote": "已读取官网报告正文与发布日期；图表引用 CBRE Research, Q1 2026。",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "全球",
+        "北美",
+        "欧洲",
+        "亚太",
+        "拉丁美洲"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "opinion",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "CBRE Research",
+      "originalUrl": "https://www.cbre.com/insights/reports/global-data-center-trends-2026",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "originalTitle": "Global Data Center Trends 2026",
+      "primarySubcategoryId": "market-supply-demand"
     },
     {
       "id": "gds-2026-q2",
       "sourceId": "gds-quarterly",
-      "title": "GDS Holdings Limited Reports Second Quarter 2026 Results",
+      "title": "万国数据 2026 年第二季度业绩公告",
       "url": "https://investors.gds-services.com/system/files-encrypted/nasdaq_kms/assets/2026/08/13/7-36-49/GDS%202Q26%20Earnings%20Release_0813%201200.pdf",
-      "kind": "report",
+      "kind": "disclosure",
       "publishedAt": "2026-08-13",
       "dataPeriod": "2026 年第二季度；运营指标截至 2026-06-30",
       "summary": "公司季度财务及运营披露，包含投运、签约和使用面积及利用率定义。",
       "verifiedAt": "2026-10-04",
       "verificationStatus": "verified",
-      "verificationNote": "从官方季度栏目进入 PDF；正文第 2 页载明发布日期、所属季度及利用率定义。"
+      "verificationNote": "从官方季度栏目进入 PDF；正文第 2 页载明发布日期、所属季度及利用率定义。 2026-10-08补充核查：重读季度目录和原PDF第2页，确认GDS Holdings Limited及NASDAQ:GDS/HKEX:9698；未完整复核全部财报，历史成功核查日期不变。",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "partial",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "gds"
+      ],
+      "access": "free",
+      "originalPublisher": "万国数据（GDS Holdings Limited）",
+      "originalUrl": "https://investors.gds-services.com/system/files-encrypted/nasdaq_kms/assets/2026/08/13/7-36-49/GDS%202Q26%20Earnings%20Release_0813%201200.pdf",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "originalTitle": "GDS Holdings Limited Reports Second Quarter 2026 Results",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。"
     },
     {
       "id": "vnet-2026-q2",
       "sourceId": "vnet-quarterly",
-      "title": "VNET Reports Unaudited Second Quarter 2026 Financial Results",
+      "title": "世纪互联 2026 年第二季度未经审计业绩公告",
       "url": "https://ir.vnet.com/static-files/bd1c3fd8-22f7-4ee2-a84a-7140445a4d8e",
-      "kind": "report",
+      "kind": "disclosure",
       "publishedAt": "2026-08-18",
       "dataPeriod": "2026 年第二季度；运营指标截至 2026-06-30",
       "summary": "公司季度业绩，批发按 MW、零售按机柜分别披露容量及利用率，含预留机柜剔除说明。",
       "verifiedAt": "2026-10-04",
       "verificationStatus": "verified",
-      "verificationNote": "从官方季度栏目进入 PDF，核对第 1 页日期及第 3—4 页容量脚注。"
+      "verificationNote": "从官方季度栏目进入 PDF，核对第 1 页日期及第 3—4 页容量脚注。 2026-10-08补充核查：重读原PDF第1—4页，确认VNET Group, Inc.、财季和批发MW/零售机柜口径；未完整复核全部财报，历史成功核查日期不变。",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "partial",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "vnet"
+      ],
+      "access": "free",
+      "originalPublisher": "世纪互联（VNET Group, Inc.）",
+      "originalUrl": "https://ir.vnet.com/static-files/bd1c3fd8-22f7-4ee2-a84a-7140445a4d8e",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "originalTitle": "VNET Reports Unaudited Second Quarter 2026 Financial Results",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。"
     },
     {
       "id": "nea-2026-08-electricity",
@@ -1898,12 +3149,27 @@
       "summary": "披露全社会、分产业及互联网数据服务等用电量和增速，单月与累计分列。",
       "verifiedAt": "2026-10-04",
       "verificationStatus": "verified",
-      "verificationNote": "官网原文可读，页内载明发布日期及两种统计期。"
+      "verificationNote": "官网原文可读，页内载明发布日期及两种统计期。",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "国家能源局",
+      "originalUrl": "https://www.nea.gov.cn/20260920/bd277235282140f4b43e9e0f5f0af3d9/c.html",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": "power-resources"
     },
     {
       "id": "synergy-2026-q2-cloud",
       "sourceId": "synergy-cloud",
-      "title": "Q2 Cloud Market Passes $143 Billion; Highest Growth Rate in Eight Years",
+      "title": "Synergy 2026 年第二季度云基础设施市场新闻稿",
       "url": "https://www.srgresearch.com/articles/q2-cloud-market-passes-143-billion-highest-growth-rate-in-eight-years",
       "kind": "data-release",
       "publishedAt": "2026-07-30",
@@ -1911,12 +3177,28 @@
       "summary": "公开季度云市场新闻稿，包含规模、份额和地区增长，说明 IaaS、PaaS 与托管私有云范围。",
       "verifiedAt": "2026-10-04",
       "verificationStatus": "verified",
-      "verificationNote": "已读新闻稿原文；只验证公开内容，未访问订阅数据库。"
+      "verificationNote": "已读新闻稿原文；只验证公开内容，未访问订阅数据库。",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "全球"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "Synergy Research Group",
+      "originalUrl": "https://www.srgresearch.com/articles/q2-cloud-market-passes-143-billion-highest-growth-rate-in-eight-years",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "originalTitle": "Q2 Cloud Market Passes $143 Billion; Highest Growth Rate in Eight Years",
+      "primarySubcategoryId": "market-supply-demand"
     },
     {
       "id": "idc-2026-q2-servers",
       "sourceId": "idc-server",
-      "title": "Worldwide Server Market Revenue Hits Record $166.3 Billion in the Second Quarter of 2026 as AI Infrastructure Investment Continues to Broaden, according to IDC",
+      "title": "IDC 2026 年第二季度全球服务器市场新闻稿",
       "url": "https://www.idc.com/resource-center/press-releases/2q2026-wwserver-tracker/",
       "kind": "data-release",
       "publishedAt": "2026-09-10",
@@ -1924,20 +3206,53 @@
       "summary": "服务器季度市场新闻稿，含厂商收入、出货增速、地区与加速器结构，以及分类定义。",
       "verifiedAt": "2026-10-04",
       "verificationStatus": "verified",
-      "verificationNote": "已读官方正文和分类脚注；标题数值来自原题，不代表本站独立测算。"
+      "verificationNote": "已读官方正文和分类脚注；标题数值来自原题，不代表本站独立测算。",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "全球"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "IDC（International Data Corporation）",
+      "originalUrl": "https://www.idc.com/resource-center/press-releases/2q2026-wwserver-tracker/",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "originalTitle": "Worldwide Server Market Revenue Hits Record $166.3 Billion in the Second Quarter of 2026 as AI Infrastructure Investment Continues to Broaden, according to IDC",
+      "primarySubcategoryId": "facility-technology"
     },
     {
       "id": "kz-2025-idc-market",
       "sourceId": "kz-market",
       "title": "科智咨询：2025年中国IDC市场规模达1847.5亿元，AI驱动市场增速显著回升",
       "url": "https://www.kzconsulting.cn/insights/1251114323795771392.html",
-      "kind": "data-release",
+      "kind": "report",
       "publishedAt": "2026-06-15",
       "dataPeriod": "2025 年；另含至 2030 年预测",
       "summary": "2025—2026 年系列研究的公开介绍，明确传统 IDC 业务规模，并讨论区域变化和未来预测。",
       "verifiedAt": "2026-10-04",
       "verificationStatus": "verified",
-      "verificationNote": "已读科智官网公开文章及日期；未取得完整系列报告和底层样本。"
+      "verificationNote": "已读科智官网公开文章及日期；未取得完整系列报告和底层样本。",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "abstract",
+      "judgmentTypes": [
+        "fact",
+        "opinion",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "北京科智咨询有限公司",
+      "originalUrl": "https://www.kzconsulting.cn/insights/1251114323795771392.html",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": "market-supply-demand"
     },
     {
       "id": "caict-ai-node-2026",
@@ -1950,7 +3265,22 @@
       "summary": "待复核的官方 PDF 线索；搜索摘要涉及计算节点架构、互联与产业生态。",
       "verifiedAt": null,
       "verificationStatus": "unreachable",
-      "verificationNote": "2026-10-08 官方 PDF 再次超时；保留先前搜索摘要和原链接，未据文件路径推定发布日期或统计期。"
+      "verificationNote": "2026-10-08 官方 PDF 再次超时；保留先前搜索摘要和原链接，未据文件路径推定发布日期或统计期。",
+      "primaryCategoryId": "industry",
+      "regions": [],
+      "contentScope": "search-snippet",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "unknown",
+      "originalPublisher": "中国信息通信研究院",
+      "originalUrl": "https://www.caict.ac.cn/kxyj/qwfb/ztbg/202603/P020260326543562359406.pdf",
+      "visibility": "reference",
+      "regionNote": "未取得原文，具体国家范围待核；不从来源覆盖或机构所在地推断。",
+      "visibilityReason": "仅有搜索线索，原文尚未取得；不作为已核实的实质更新。",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "参考/归档资料保留原核查限制，本次未取得进一步正文，不强行细分。"
     },
     {
       "id": "nda-digital-china-2025",
@@ -1963,7 +3293,23 @@
       "summary": "全文发布页附官方 PDF，覆盖数字基础设施、数字经济和发展环境，可查年度机架、智能算力及能效口径。",
       "verifiedAt": "2026-10-04",
       "verificationStatus": "verified",
-      "verificationNote": "已读取发布页及其 PDF。此日期为所收录的全文发布页日期；栏目另有 4 月 29 日首发消息，PDF 封面标 2026 年 5 月，三者未混用。"
+      "verificationNote": "已读取发布页及其 PDF。此日期为所收录的全文发布页日期；栏目另有 4 月 29 日首发消息，PDF 封面标 2026 年 5 月，三者未混用。",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "国家数据局",
+      "originalUrl": "https://www.nda.gov.cn/sjj/swdt/xwfb/0608/20260608193210077440494_pc.html",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": "market-supply-demand"
     },
     {
       "id": "wmedia-stavian-feasibility-20261002",
@@ -1980,7 +3326,21 @@
       "summary": "w.media 引述联合新闻稿称，Cushman & Wakefield 与 APTelecom 将为胡志明市 Stavian Digital Park 拟建的数据中心园区开展可研，涵盖开发和通信连接条件。当前属于研究阶段，尚不能视为开工或已投运项目。",
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "2026-10-08 复读 w.media 正文和 2026-10-02 日期；仍未取得报道所引的原始联合公告或项目批文。保留可研阶段，不作为本轮新发布。"
+      "verificationNote": "2026-10-08 复读 w.media 正文和 2026-10-02 日期；仍未取得报道所引的原始联合公告或项目批文。保留可研阶段，不作为本轮新发布。",
+      "primaryCategoryId": "industry",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "stavian"
+      ],
+      "access": "free",
+      "originalPublisher": "w.media",
+      "originalUrl": "https://w.media/cushman-wakefield-aptelecom-to-undertake-feasibility-study-on-ho-chi-minh-city-data-center/",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": "project-delivery"
     },
     {
       "id": "wmedia-globe-expansion-20261001",
@@ -1997,7 +3357,23 @@
       "summary": "w.media 转述 Globe 管理层访谈，介绍其数字业务投资计划和通过 STTGDC Philippines 扩张数据中心业务的方向。相关投入涉及更广泛的数字业务，不能全部归入数据中心，也不能视为已落实订单或资本支出。",
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "2026-10-08 复读报道正文及 2026-10-01 日期；仍未取得 Bloomberg 完整访谈或正式资本开支批准文件。保留投资计划，不作为新增投运。"
+      "verificationNote": "2026-10-08 复读报道正文及 2026-10-01 日期；仍未取得 Bloomberg 完整访谈或正式资本开支批准文件。保留投资计划，不作为新增投运。",
+      "primaryCategoryId": "industry",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [
+        "globe",
+        "sttgdc"
+      ],
+      "access": "free",
+      "originalPublisher": "w.media",
+      "originalUrl": "https://w.media/philippines-telco-globe-bets-on-ai-and-data-centers-for-next-billion-dollar-growth/",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": "project-delivery"
     },
     {
       "id": "wmedia-bdx-permits-20261001",
@@ -2014,7 +3390,38 @@
       "summary": "w.media 10 月 1 日报道 BDx 项目因许可问题暂停施工。西爪哇政府 10 月 5 日公开说明补充，停工属临时安排，相关 PBG 建筑审批及 AMDAL 环评材料尚待完成；10 月 7 日官方报道继续讨论许可和冷却用水评估。未取得复工或新增容量投运确认。",
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "复读媒体原文，并交叉核对西爪哇政府 2026-10-05 说明：https://bapenda.jabarprov.go.id/2026/10/05/ini-penjelasan-dirut-pdam-kebutuhan-data-center-ai/ 。确认官方关于暂时停工及申报材料的表述；未取得行政决定全文或复工批准。10 月 7 日后续评估另列新条目，旧文发布日期保持 10 月 1 日。"
+      "verificationNote": "复读媒体原文，并交叉核对西爪哇政府 2026-10-05 说明：https://bapenda.jabarprov.go.id/2026/10/05/ini-penjelasan-dirut-pdam-kebutuhan-data-center-ai/ 。确认官方关于暂时停工及申报材料的表述；未取得行政决定全文或复工批准。10 月 7 日后续评估另列新条目，旧文发布日期保持 10 月 1 日。",
+      "primaryCategoryId": "regulation",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "bdx"
+      ],
+      "access": "free",
+      "originalPublisher": "w.media",
+      "originalUrl": "https://w.media/indonesia-pauses-bdx-data-centers-construction-pending-required-permits-and-eia-report/",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "eventId": "bdx-purwakarta-permits",
+      "jurisdiction": "印尼",
+      "documentStatus": "许可审查进展，未确认复工",
+      "relatedLinks": [
+        {
+          "url": "https://bapenda.jabarprov.go.id/2026/10/05/ini-penjelasan-dirut-pdam-kebutuhan-data-center-ai/",
+          "publisher": "西爪哇 Bapenda",
+          "role": "官方补证",
+          "publishedAt": "2026-10-05"
+        },
+        {
+          "url": "https://bappeda.jabarprov.go.id/pemkab-purwakarta-libatkan-sejumlah-pihak-bahas-ketersediaan-air-untuk-operasional-data-center-ai/",
+          "publisher": "西爪哇 Bappeda",
+          "role": "后续进展",
+          "publishedAt": "2026-10-07"
+        }
+      ],
+      "primarySubcategoryId": "project-compliance"
     },
     {
       "id": "wmedia-thailand-draft-20260923",
@@ -2031,14 +3438,29 @@
       "summary": "w.media 转述泰国数据中心监管法案草案消息，涉及许可、环境及社区健康评估、电力和用水等要求。这是立法提议的媒体报道，不能当作已生效规定；适用范围和执行条件应以正式公布文件为准。",
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "2026-10-08 复读媒体正文，仍未取得议会草案或后续正式立法文件；保留草案属性。另收录的 ERC 10 月 5 日澄清属于 BOI 投资促进申报程序，不是此草案已生效的证据。"
+      "verificationNote": "2026-10-08 复读媒体正文，仍未取得议会草案或后续正式立法文件；保留草案属性。另收录的 ERC 10 月 5 日澄清属于 BOI 投资促进申报程序，不是此草案已生效的证据。",
+      "primaryCategoryId": "regulation",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "w.media",
+      "originalUrl": "https://w.media/thai-bill-proposes-data-center-licensing-environmental-health-impact-assessments/",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "documentStatus": "草案报道，原件待核",
+      "jurisdiction": "泰国",
+      "effectiveAt": null,
+      "primarySubcategoryId": "project-compliance"
     },
     {
       "id": "dayone-tnb-power-20260901",
       "sourceId": "dayone-news",
       "title": "DayOne 与 TNB 探索最高 1.5GW 现场发电方案",
       "url": "https://dayonedc.com/markets/dayone-and-tnb-to-explore-up-to-1-5-gw-of-on-site-power-generation-to-advance-malaysias-energy-resilience-and-digital-economy",
-      "kind": "news",
+      "kind": "disclosure",
       "publishedAt": "2026-09-01",
       "dataPeriod": null,
       "regions": [
@@ -2048,14 +3470,29 @@
       "summary": "DayOne 公告称，与 TNB 通过合作备忘录探索最高 1.5GW 的现场发电及配套方案，仍取决于可研、正式协议和必要批准。1.5GW 是潜在发电容量，并非数据中心 IT 容量或已投运规模。",
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "2026-10-08 复读公司原文，确认网页发布 2026-09-01、备忘录签署 2026-08-07；仍以可研、正式协议及必要批准为条件，未取得本轮投运证据。"
+      "verificationNote": "2026-10-08 复读公司原文，确认网页发布 2026-09-01、备忘录签署 2026-08-07；仍以可研、正式协议及必要批准为条件，未取得本轮投运证据。",
+      "primaryCategoryId": "industry",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "dayone",
+        "tnb"
+      ],
+      "access": "free",
+      "originalPublisher": "DayOne",
+      "originalUrl": "https://dayonedc.com/markets/dayone-and-tnb-to-explore-up-to-1-5-gw-of-on-site-power-generation-to-advance-malaysias-energy-resilience-and-digital-economy",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": "power-resources"
     },
     {
       "id": "sttgdc-singapore-50mw-20260821",
       "sourceId": "sttgdc-news",
       "title": "STTGDC 入选新加坡新增 50MW 数据中心开发项目",
       "url": "https://www.sttgdc.com/newsroom/stt-gdc-to-develop-50mw-sustainable-ai-ready-data-centre-capacity-singapore",
-      "kind": "news",
+      "kind": "disclosure",
       "publishedAt": "2026-08-21",
       "dataPeriod": null,
       "regions": [
@@ -2065,7 +3502,22 @@
       "summary": "STTGDC 宣布在新加坡第二轮数据中心容量申请中入选，将开发 50MW 的可持续、面向 AI 的数据中心容量。当前为开发资格及规划阶段，不能计为新增在运容量。",
       "verifiedAt": "2026-10-04",
       "verificationStatus": "verified",
-      "verificationNote": "已读取运营商原始公告及日期；核查范围为公司的入选开发披露，未据此推断开工、客户签约或投运日期。"
+      "verificationNote": "已读取运营商原始公告及日期；核查范围为公司的入选开发披露，未据此推断开工、客户签约或投运日期。",
+      "primaryCategoryId": "industry",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [
+        "sttgdc"
+      ],
+      "access": "free",
+      "originalPublisher": "ST Telemedia Global Data Centres（STTGDC）",
+      "originalUrl": "https://www.sttgdc.com/newsroom/stt-gdc-to-develop-50mw-sustainable-ai-ready-data-centre-capacity-singapore",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": "project-delivery"
     },
     {
       "id": "cushman-apac-h1-2026",
@@ -2086,7 +3538,20 @@
       "summary": "公开摘要对比亚太重点城市的在运、在建、规划容量及空置情况；东南亚市场包括新加坡、柔佛、曼谷、雅加达，以及马尼拉和胡志明市等次级市场。适合建立半年供需基准，本次未完整核查报告正文。",
       "verifiedAt": "2026-10-08",
       "verificationStatus": "partial",
-      "verificationNote": "2026-10-08 复读官方公开摘要、国家/城市名单和 H1 2026 标识；完整报告与明确发布日期仍未取得。维持部分核查和 publishedAt=null，不把本轮复查视为新版。"
+      "verificationNote": "2026-10-08 复读官方公开摘要、国家/城市名单和 H1 2026 标识；完整报告与明确发布日期仍未取得。维持部分核查和 publishedAt=null，不把本轮复查视为新版。",
+      "primaryCategoryId": "industry",
+      "contentScope": "abstract",
+      "judgmentTypes": [
+        "fact",
+        "opinion"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "戴德梁行（Cushman & Wakefield）",
+      "originalUrl": "https://www.cushmanwakefield.com/en/singapore/insights/apac-data-centre-update",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": "market-supply-demand"
     },
     {
       "id": "dcbyte-global-index-2026",
@@ -2102,14 +3567,27 @@
       "summary": "公开介绍以需求、交付和市场深度观察全球主要及未来增长市场，并提到柔佛在亚太区域排名中的位置。可用作东南亚市场研究入口；本次仅核查公开摘要，未读取完整报告或底层数据。",
       "verifiedAt": "2026-10-08",
       "verificationStatus": "partial",
-      "verificationNote": "2026-10-08 复读官方介绍页及 2026-07-27 日期；全文与底层数据仍未取得，维持部分核查。国家仅标注公开介绍明确提及的马来西亚。"
+      "verificationNote": "2026-10-08 复读官方介绍页及 2026-07-27 日期；全文与底层数据仍未取得，维持部分核查。国家仅标注公开介绍明确提及的马来西亚。",
+      "primaryCategoryId": "industry",
+      "contentScope": "abstract",
+      "judgmentTypes": [
+        "fact",
+        "opinion"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "DC Byte",
+      "originalUrl": "https://www.dcbyte.com/market-spotlights/2026-global-data-centre-index-report/",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": "market-supply-demand"
     },
     {
       "id": "singtel-fy2027-q1-update",
       "sourceId": "singtel-nxera-results",
       "title": "Singtel FY2026/27 第一季度经营更新",
       "url": "https://cdn2.singteldigital.com/content/dam/singtel/investorRelations/stockExchange/2026/1stqtr-Business%20Update.pdf",
-      "kind": "report",
+      "kind": "disclosure",
       "publishedAt": "2026-08-13",
       "dataPeriod": "FY2026/27 第一季度；截至 2026-06-30",
       "regions": [
@@ -2118,14 +3596,29 @@
       "summary": "官方季度经营更新说明，新加坡 DC Tuas 于 2026 年 1 月开始运营，客户部署及 Nxera 业务贡献随后增长。可用于观察交付后的需求兑现；Digital InfraCo 还包含 RE:AI 等业务，其分部数字不能直接当作数据中心单项业务数据。",
       "verifiedAt": "2026-10-04",
       "verificationStatus": "verified",
-      "verificationNote": "已读取官方经营更新 PDF 中的季度期间、Nxera 相关正文和演示内容，确认发布日期为 2026-08-13、季度截至 2026-06-30。本条仅按明确涉及的数据中心项目标注新加坡，不继承运营商覆盖国家。"
+      "verificationNote": "已读取官方经营更新 PDF 中的季度期间、Nxera 相关正文和演示内容，确认发布日期为 2026-08-13、季度截至 2026-06-30。本条仅按明确涉及的数据中心项目标注新加坡，不继承运营商覆盖国家。",
+      "primaryCategoryId": "listed-companies",
+      "contentScope": "partial",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "singtel"
+      ],
+      "access": "free",
+      "originalPublisher": "Singapore Telecommunications Limited（Singtel）",
+      "originalUrl": "https://cdn2.singteldigital.com/content/dam/singtel/investorRelations/stockExchange/2026/1stqtr-Business%20Update.pdf",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。"
     },
     {
       "id": "dayone-sec-f1-20261005",
       "sourceId": "dayone-news",
       "title": "DayOne 提交 SEC F-1：分市场披露在运、在建及储备容量",
       "url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
-      "kind": "news",
+      "kind": "disclosure",
       "publishedAt": "2026-10-05",
       "dataPeriod": "容量截至 2026-09-20；含至 2028 年底的预计交付安排",
       "regions": [
@@ -2138,14 +3631,29 @@
       "summary": "DayOne 的 F-1 初步招股文件披露全球在运 962MW、在建 1,328MW。柔佛在运/在建为 789/616MW，巴淡岛 72/240MW，大曼谷 73/47MW；吉隆坡在建 128MW，新加坡列为 20MW 已取得电力条件的土地储备。Bookings 为 2,281MW，不能等同当前投运；2028 年底前的交付为预期。提交申请不代表 IPO 已完成。",
       "verificationNote": "已读取 SEC 官方 F-1 封面、Our Footprint 分市场表及容量定义；封面显示 2026-10-05 申报。数值为发行人披露，未作现场独立验证；全球总量含东南亚以外市场，签约与 Reservations 不相加当作投运。",
       "verifiedAt": "2026-10-08",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "primaryCategoryId": "industry",
+      "contentScope": "partial",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [
+        "dayone"
+      ],
+      "access": "free",
+      "originalPublisher": "DayOne",
+      "originalUrl": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": "market-supply-demand"
     },
     {
       "id": "mddi-ai-controls-response-20261006",
       "sourceId": "singapore-mddi-news",
       "title": "新加坡 MDDI 回应 AI 芯片出口与远程算力限制对数据中心的影响",
       "url": "https://www.mddi.gov.sg/newsroom/mddi-response-to-pq-on-impact-of-foreign-ai-chip-export-controls-and-remote-computing-access-restrictions-on-singapore-data-centre-and-cloud-services-sectors-and-mitigation-measures/",
-      "kind": "news",
+      "kind": "regulation",
       "publishedAt": "2026-10-06",
       "dataPeriod": null,
       "regions": [
@@ -2155,7 +3663,21 @@
       "summary": "MDDI 在国会书面答复中表示，正关注外国 AI 芯片出口管制及远程算力访问限制，并与企业沟通其对新加坡数据中心和云服务的潜在影响，必要时考虑适当措施。答复没有宣布新的缓解政策，也未确认具体项目受到容量削减。",
       "verificationNote": "已读取 MDDI 官方完整答复，发布日期取 2026-10-06；网页最后更新为 10 月 7 日，不混作首次发布日期。",
       "verifiedAt": "2026-10-08",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "primaryCategoryId": "regulation",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "新加坡数码发展及新闻部（MDDI）",
+      "originalUrl": "https://www.mddi.gov.sg/newsroom/mddi-response-to-pq-on-impact-of-foreign-ai-chip-export-controls-and-remote-computing-access-restrictions-on-singapore-data-centre-and-cloud-services-sectors-and-mitigation-measures/",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "documentStatus": "国会书面答复，非新规",
+      "jurisdiction": "新加坡",
+      "primarySubcategoryId": "data-crossborder"
     },
     {
       "id": "purwakarta-bdx-water-review-20261007",
@@ -2172,14 +3694,31 @@
       "summary": "西爪哇 Bappeda 报道，Purwakarta 政府于 10 月 5 日就 Jatiluhur 的 BDx AI 数据中心召集相关部门讨论 AMDAL 环评、PBG 建筑审批和冷却用水。地方政府要求进一步检验供水论证并继续讨论；该消息属于停工后的审查进展，不是许可获批、复工或新增投运公告。",
       "verificationNote": "已读取地方政府全文及 2026-10-07 发布日期；会议日期为 10 月 5 日。原文供水估算未当作最终可用水量或环境批准，不推定后续十日内必然获批。",
       "verifiedAt": "2026-10-08",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "primaryCategoryId": "regulation",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "bdx"
+      ],
+      "access": "free",
+      "originalPublisher": "西爪哇省发展规划局（Bappeda Jabar）",
+      "originalUrl": "https://bappeda.jabarprov.go.id/pemkab-purwakarta-libatkan-sejumlah-pihak-bahas-ketersediaan-air-untuk-operasional-data-center-ai/",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "eventId": "bdx-purwakarta-permits",
+      "jurisdiction": "印尼",
+      "documentStatus": "许可审查进展，未确认复工",
+      "primarySubcategoryId": "project-compliance"
     },
     {
       "id": "erc-data-center-boi-clarification-20261005",
       "sourceId": "thailand-erc-news",
       "title": "泰国 ERC 澄清数据中心申请 BOI 投资促进的前置程序",
       "url": "https://www.erc.or.th/th/news-release/3510",
-      "kind": "news",
+      "kind": "regulation",
       "publishedAt": "2026-10-05",
       "dataPeriod": "2026-10-05 澄清；依据 BOI 2026-07-15 S.3/2569",
       "regions": [
@@ -2189,7 +3728,34 @@
       "summary": "ERC 澄清，BOI S.3/2569 已替代旧通知：数据中心申请投资促进前须先经 BOI 指定的分委员会认可，不再以事先取得 ERC 确认函作为该申报的前置环节。公告讨论申报顺序，不代表免除全部供电、供水或环境要求，也不是此前媒体报道的数字基础设施法案已生效。",
       "verificationNote": "已核对官方新闻页 2026-10-05 日期与三页 PDF（首面扫描件经渲染目视核查，附旧 S.2/2569 及新 S.3/2569）。附件上传于 10 月 6 日，不取代公告日期；原件：https://www.erc.or.th/web-upload/200xf869baf82be74c18cc110e974eea8d5c/202610/m_news/9090/3510/file_download/51101dd27234a1a9651a4bd8d08f4972.pdf",
       "verifiedAt": "2026-10-08",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "primaryCategoryId": "regulation",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "泰国能源监管委员会办公室（ERC）",
+      "originalUrl": "https://www.erc.or.th/th/news-release/3510",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "documentStatus": "申报程序澄清",
+      "jurisdiction": "泰国",
+      "relatedLinks": [
+        {
+          "url": "https://www.erc.or.th/web-upload/200xf869baf82be74c18cc110e974eea8d5c/202610/m_news/9090/3510/file_download/51101dd27234a1a9651a4bd8d08f4972.pdf",
+          "publisher": "泰国 ERC",
+          "role": "官方附件"
+        },
+        {
+          "url": "https://www.boi.go.th/upload/content/sor3_2569_6a60286da8676.pdf",
+          "publisher": "泰国 BOI",
+          "role": "原通知",
+          "publishedAt": "2026-07-15"
+        }
+      ],
+      "primarySubcategoryId": "project-compliance"
     },
     {
       "id": "synergy-digital-services-forecast-20261005",
@@ -2206,7 +3772,20 @@
       "summary": "Synergy 公开新闻稿预计，云基础设施、SaaS、社交媒体和搜索四类服务的全球合计年收入将在 2031 年超过 5 万亿美元，为 2025 年的三倍以上。2026 年第二季度该合计口径为 4,970 亿美元、同比增 27%。这是跨市场预测，不能与单独云基础设施收入或 GPU 租赁规模混用。",
       "verificationNote": "已读取研究机构 2026-10-05 公开原稿及统计范围；此前因晚于 10 月 4 日截止日未收录，本轮纳入。仅核查公开预测摘要，未取得订阅数据库或完整预测模型。",
       "verifiedAt": "2026-10-08",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "primaryCategoryId": "industry",
+      "contentScope": "abstract",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "Synergy Research Group",
+      "originalUrl": "https://www.srgresearch.com/articles/annual-revenues-from-key-cloud-and-digital-services-to-pass-5-trillion-in-2031",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": "market-supply-demand"
     },
     {
       "id": "ornn-daily-settlement-20261007",
@@ -2223,7 +3802,872 @@
       "summary": "官方公开表的 10 月 7 日日结值为 H100 SXM 2.85、H200 5.29、B200 7.56、A100 SXM4 0.90 美元/GPU 小时，口径为按需实际租赁交易的加权缩尾价格。原链接会持续更新，本条保留本轮读到的日期与数值，不表示未来访问时的现价。",
       "verificationNote": "已读取四种 GPU 的日结日期、数值、币种及页面更新时间；发布日采用原页 UTC 日期。图表显示 No chart data available，未验证历史曲线、API 或订阅数据，不推算涨跌幅。",
       "verifiedAt": "2026-10-08",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "primaryCategoryId": "rental-prices",
+      "contentScope": "partial",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "Ornn Data",
+      "originalUrl": "https://data.ornn.com/",
+      "visibility": "active",
+      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
+      "primarySubcategoryId": "price-indices"
+    },
+    {
+      "primaryCategoryId": "listed-companies",
+      "kind": "disclosure",
+      "access": "free",
+      "originalUrl": "https://www.sinnet.com.cn/uploads/files/2026/0901/6semKmUxNDYFBvedJ7NWQQDP1kQFbG50F1olXTIv.pdf",
+      "visibility": "active",
+      "id": "sinnet-2026-h1-summary",
+      "sourceId": "sinnet-disclosures",
+      "companyIds": [
+        "sinnet"
+      ],
+      "title": "光环新网2026年半年度报告摘要",
+      "url": "https://www.sinnet.com.cn/uploads/files/2026/0901/6semKmUxNDYFBvedJ7NWQQDP1kQFbG50F1olXTIv.pdf",
+      "publishedAt": null,
+      "dataPeriod": "2026年上半年；项目状态按报告披露时点",
+      "regions": [
+        "中国",
+        "马来西亚"
+      ],
+      "summary": "公司披露国内数据中心交付、IDC与云业务经营情况；马来西亚智算/云计算基地仍处于前期筹划，不能视为已开工或投运。",
+      "contentScope": "abstract",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "已读官网7页正式半年报摘要，正文第4—5页支持中国及马来西亚范围。官网IR/信息披露目录显示2026-09-01上架；尚未确认交易所首次披露日，发布日期保持未知。报告摘要不等于171页半年报全文已完整核查。",
+      "originalPublisher": "北京光环新网科技股份有限公司",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "stage": null,
+      "eventType": "定期经营披露",
+      "dateEvidence": "https://www.sinnet.com.cn/info_disclosure.html",
+      "regionEvidence": "摘要第4页国内项目，第5页马来西亚项目仍前期筹划；按真实单篇范围纳入东南亚，可用于A06实证，勿复制出另一条相同半年报。",
+      "uploadedAt": "2026-09-01",
+      "dateNote": "官网目录于2026-09-01上架；尚未核实交易所首次发布日期，不把上传日当首发日。",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。"
+    },
+    {
+      "primaryCategoryId": "listed-companies",
+      "kind": "disclosure",
+      "access": "free",
+      "originalUrl": "https://static.xingyuntech.com.cn/portal-cms/files/d86e41c312bfa1160178f6218e78574ddb2b4ffec087858603a20aa24b63d166.pdf",
+      "visibility": "active",
+      "id": "xingyun-2026-h1",
+      "sourceId": "xingyun-disclosures",
+      "companyIds": [
+        "xingyun"
+      ],
+      "title": "行云科技2026年半年度报告",
+      "url": "https://www.xingyuntech.com.cn/disclosure/7",
+      "publishedAt": "2026-07-31",
+      "dataPeriod": "2026年1月1日至6月30日；文中期后事项另按原文日期",
+      "regions": [
+        "中国"
+      ],
+      "summary": "公司半年报区分跨境贸易、AI算力与配套业务，披露算力租赁及合同、融资安排；框架订单与实际交付、营业收入须分别判断。",
+      "contentScope": "partial",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "从官网日期页进入150页PDF，读取第5、7、10—11页等主体及业务章节；未逐页核对全部财报。巨潮同份PDF可读，作为同件补证不重复建条。中国范围依据第10页面向国内客户提供算力租赁，而非总部推断。",
+      "originalPublisher": "行云科技股份有限公司",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "stage": null,
+      "eventType": "定期经营披露",
+      "relatedLinks": [
+        {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-31/1225449048.PDF",
+          "publisher": "巨潮资讯网／行云科技",
+          "role": "原公告"
+        }
+      ],
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。"
+    },
+    {
+      "primaryCategoryId": "listed-companies",
+      "kind": "disclosure",
+      "access": "free",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225522064.PDF",
+      "visibility": "active",
+      "id": "sharetronic-2026-h1-summary",
+      "sourceId": "sharetronic-disclosures",
+      "companyIds": [
+        "sharetronic"
+      ],
+      "title": "协创数据2026年半年度报告摘要",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225522064.PDF",
+      "publishedAt": "2026-08-28",
+      "dataPeriod": "2026年上半年；拟交易事项截至报告披露时点",
+      "regions": [
+        "中国"
+      ],
+      "summary": "公司摘要披露服务器采购及用于智算中心建设等用途的再融资拟案。拟采购、拟发行不等于已交付或发行完成；公司整体财务不等于算力业务收入。",
+      "contentScope": "abstract",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "实际读取5页正式半年报摘要，第1页确认300857主体，第4页有拟采购及拟发行用途，第5页签章日2026-08-28。完整半年报1225522065.PDF两次工具内部错误，未取得全文，不能称全文已核。",
+      "originalPublisher": "协创数据技术股份有限公司",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "stage": "拟采购／拟发行（按摘要披露时点）",
+      "eventType": "定期披露及资本安排",
+      "dateEvidence": "摘要签章第5页2026年8月28日；巨潮原文件定位。",
+      "regionEvidence": "国内A股再融资及智算中心建设用途；不因公司全球介绍补六国。",
+      "dateNote": "日期依据正式摘要末页2026-08-28签章及巨潮披露批次；未独立核对持续披露列表。",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。"
+    },
+    {
+      "primaryCategoryId": "listed-companies",
+      "kind": "disclosure",
+      "access": "free",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225478556.PDF",
+      "visibility": "active",
+      "id": "hec-2026-h1",
+      "sourceId": "hec-disclosures",
+      "companyIds": [
+        "hec"
+      ],
+      "title": "东阳光2026年半年度报告：算力服务与数据中心投资",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225478556.PDF",
+      "publishedAt": "2026-08-18",
+      "dataPeriod": "2026年上半年；期后订单与报告期区分",
+      "regions": [
+        "中国"
+      ],
+      "summary": "公司半年报披露算力服务订单、已确认收入、设备投入及秦淮数据投资进展。参股、拟收购与交割分别判断，合同总额不能代替当期收入。",
+      "contentScope": "partial",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "读取214页报告的封面、第5—6页主体及第22—23页算力业务/投资章节；未逐页核对全部财务附注。出版日以同批法定披露报纸2026-08-18信息披露版辅助核对，不只按文件路径猜测。",
+      "originalPublisher": "广东东阳光科技控股股份有限公司",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "stage": null,
+      "eventType": "定期经营披露",
+      "relatedLinks": [
+        {
+          "url": "https://paper.cnstock.com/html/2026-08/18/content_2256008.htm",
+          "publisher": "上海证券报信息披露版",
+          "role": "披露日期补证",
+          "publishedAt": "2026-08-18"
+        }
+      ],
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。"
+    },
+    {
+      "primaryCategoryId": "listed-companies",
+      "kind": "disclosure",
+      "access": "free",
+      "originalUrl": "https://ir.vnet.com/news-releases/news-release-details/vnet-announces-closing-previously-announced-strategic-investment",
+      "visibility": "active",
+      "id": "vnet-strategic-investment-close-20260921",
+      "sourceId": "vnet-news",
+      "companyIds": [
+        "vnet"
+      ],
+      "title": "世纪互联公告此前战略投资股份转让完成交割",
+      "url": "https://ir.vnet.com/news-releases/news-release-details/vnet-announces-closing-previously-announced-strategic-investment",
+      "publishedAt": "2026-09-21",
+      "dataPeriod": null,
+      "regions": [
+        "中国"
+      ],
+      "summary": "公司公告两家买方完成向原股东购买股份，相关投资者权利及投票协议随交割生效。这是原股东股份转让，不应表述为公司发行新股募资。",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "完整读取官方新闻稿，核对2026-09-21、VNET主体及已交割措辞。买方与宁德时代关联方关系受原文非控制、非并表限定，摘要未简化为宁德时代直接收购。",
+      "originalPublisher": "VNET Group, Inc.",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "stage": "公司公告已交割",
+      "eventType": "战略投资／股份转让",
+      "eventId": "vnet-strategic-investment-2026",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。"
+    },
+    {
+      "primaryCategoryId": "listed-companies",
+      "kind": "disclosure",
+      "access": "free",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-14/1225472195.PDF",
+      "visibility": "active",
+      "id": "china-mobile-2026-h1",
+      "sourceId": "china-mobile-ir",
+      "companyIds": [
+        "china-mobile"
+      ],
+      "title": "中国移动2026年半年度报告：算力服务与基础设施",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-14/1225472195.PDF",
+      "publishedAt": "2026-08-14",
+      "dataPeriod": "2026年上半年；期末2026年6月30日",
+      "regions": [
+        "中国"
+      ],
+      "summary": "公司披露算力服务、数据中心和智算业务经营及基础设施建设情况。智算规模包含自建与租赁，算力服务收入不能直接当作GPU租赁收入。",
+      "contentScope": "partial",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "实际读取159页半年度报告第4—7页等主体和业务章节，未逐页核查财务附注。来源官网超时/403与这份可读公开原件分别评级。日期由同批法定披露报纸信息披露版核对，不只从URL推算。",
+      "originalPublisher": "中国移动有限公司",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "stage": null,
+      "eventType": "定期经营披露",
+      "relatedLinks": [
+        {
+          "url": "https://epaper.cs.com.cn/zgzqb/html/2026-08/14/nw.D110000zgzqb_20260814_2-B042.htm",
+          "publisher": "中国证券报信息披露版",
+          "role": "披露日期补证",
+          "publishedAt": "2026-08-14"
+        }
+      ],
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。"
+    },
+    {
+      "primaryCategoryId": "listed-companies",
+      "kind": "disclosure",
+      "access": "free",
+      "originalUrl": "https://www.chinatelecom-h.com/sc/media/press/p260820.pdf",
+      "visibility": "active",
+      "id": "china-telecom-2026-interim-release",
+      "sourceId": "china-telecom-ir",
+      "companyIds": [
+        "china-telecom"
+      ],
+      "title": "中国电信公布2026年中期业绩",
+      "url": "https://www.chinatelecom-h.com/sc/media/press/p260820.pdf",
+      "publishedAt": "2026-08-20",
+      "dataPeriod": "2026年上半年",
+      "regions": [
+        "中国"
+      ],
+      "summary": "公司中期业绩新闻稿披露天翼云、AIDC和智算业务进展。智算规模含自有与接入资源，云业务及智能业务收入不等于GPU租赁收入。",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "从官网首页和新闻稿栏目进入并读取6页业绩新闻稿，封面日期及第2页主体/两地代码明确，第4页为相关算力业务。只核新闻稿，不称读完整中报。",
+      "originalPublisher": "中国电信股份有限公司",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "stage": null,
+      "eventType": "中期业绩披露",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。"
+    },
+    {
+      "primaryCategoryId": "listed-companies",
+      "kind": "disclosure",
+      "access": "free",
+      "originalUrl": "https://www.chinaunicom.com.hk/sc/media/press/p260818.pdf",
+      "visibility": "active",
+      "id": "china-unicom-h-2026-interim-release",
+      "sourceId": "china-unicom-ir",
+      "companyIds": [
+        "china-unicom-h"
+      ],
+      "title": "中国联通（香港上市主体）2026年中期业绩新闻稿",
+      "url": "https://www.chinaunicom.com.hk/sc/media/press/p260818.pdf",
+      "publishedAt": "2026-08-18",
+      "dataPeriod": "2026年上半年",
+      "regions": [
+        "中国"
+      ],
+      "summary": "香港上市主体披露算力业务与相关资本开支，区分智算中心和智能计算业务。采用本发行人报表口径，不与A股上市主体财务数据合并。",
+      "contentScope": "partial",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "从官网2026-08-18中期业绩新闻稿进入4页PDF，取得部分经营正文；末轮复读两次返回工具内部错误，全文阅读范围未能完整复核，按部分正文保留。官网首页明确A股公司数据可能不同；本条只关联香港上市主体0762。",
+      "originalPublisher": "中国联合网络通信（香港）股份有限公司",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "stage": null,
+      "eventType": "中期业绩披露",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。"
+    },
+    {
+      "id": "stcn-rental-operations-20260623",
+      "sourceId": "stcn-industry",
+      "title": "算力租赁“众生相”：行业龙头、跨界新手业绩冷暖两重天",
+      "url": "https://www.stcn.com/article/detail/3973166.html",
+      "publishedAt": "2026-06-23",
+      "primaryCategoryId": "industry",
+      "kind": "news",
+      "regions": [
+        "中国"
+      ],
+      "judgmentTypes": [
+        "fact",
+        "opinion",
+        "forecast"
+      ],
+      "summary": "证券时报关于算力租赁行业经营差异的报道。本站仅提供书目信息与原文入口，具体采访观点和企业数据请在原站阅读。",
+      "contentScope": "full",
+      "access": "free",
+      "verificationStatus": "verified",
+      "verificationNote": "实际读取原站正文、署名、发布日期及版权声明；原发布者证券时报、作者尹靖霏。未取得转载授权，展示范围限定为必要书目信息及链接，不提炼或转载正文数据。正文为媒体报道与采访观点，本轮未逐项取得其所述公司公告。",
+      "classificationReason": "跨公司行业经营观察，主旨为算力租赁供需及经营差异；不作为具体GPU报价或纯概念股涨跌材料。",
+      "displayRestriction": "bibliographic-link-only",
+      "originalPublisher": "证券时报",
+      "originalUrl": "https://www.stcn.com/article/detail/3973166.html",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "companyIds": [
+        "sinnet",
+        "xingyun",
+        "sharetronic",
+        "hec"
+      ],
+      "dataPeriod": null,
+      "primarySubcategoryId": "market-supply-demand"
+    },
+    {
+      "id": "yicai-aidc-power-delivery-20260921",
+      "sourceId": "yicai-industry",
+      "title": "智算中心上演交付竞赛，算电协同迎来双向基建大考",
+      "url": "https://www.yicai.com/news/103372841.html",
+      "publishedAt": "2026-09-21",
+      "primaryCategoryId": "industry",
+      "kind": "news",
+      "regions": [
+        "中国"
+      ],
+      "judgmentTypes": [
+        "fact",
+        "opinion",
+        "forecast"
+      ],
+      "summary": "第一财经关于国内智算中心交付与算电协同的原创报道。请在原站阅读；本站仅提供题名、日期和链接，不转载正文。",
+      "contentScope": "full",
+      "access": "free",
+      "verificationStatus": "verified",
+      "verificationNote": "实际读取原站全文、日期2026-09-21 20:42:48、作者郭霁莹及末尾版权说明。原站明确限制未经授权使用、转载、摘编；未取得授权，故只展示必要书目信息和链接。文中采访、研究预测不是独立确认事实。",
+      "classificationReason": "正文主题明确涉及国内智算中心交付和供电，地区依据为文章实际中国项目与电网场景；非按媒体总部推定。",
+      "displayRestriction": "bibliographic-link-only",
+      "originalPublisher": "第一财经",
+      "originalUrl": "https://www.yicai.com/news/103372841.html",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "companyIds": [],
+      "dataPeriod": null,
+      "primarySubcategoryId": "power-resources"
+    },
+    {
+      "id": "ndrc-green-datacenter-notice-20240723",
+      "sourceId": "ndrc-datacenter-policy",
+      "title": "国家发展改革委等部门印发《数据中心绿色低碳发展专项行动计划》",
+      "url": "https://www.ndrc.gov.cn/xwdt/tzgg/202407/t20240723_1391895_ext.html",
+      "publishedAt": "2024-07-23",
+      "primaryCategoryId": "policy-planning",
+      "kind": "policy",
+      "regions": [
+        "中国"
+      ],
+      "judgmentTypes": [
+        "fact"
+      ],
+      "summary": "四部门发布数据中心绿色低碳发展行动计划，部署节能降碳改造和设备更新。此条为2024年历史政策基准，不能作为本轮新发布政策或已实现目标。",
+      "contentScope": "full",
+      "access": "free",
+      "verificationStatus": "verified",
+      "verificationNote": "已读网页印发通知全文，发改环资〔2024〕970号，网页发布2024-07-23、成文2024-07-03；另读附件部分正文，未宣称逐条完成附件及后续修订的时效审查。此条书目对象为印发通知。",
+      "documentStatus": "已发布（历史政策基准；后续修订时效待逐条复核）",
+      "issuedAt": "2024-07-03",
+      "effectiveAt": null,
+      "deadlineAt": null,
+      "jurisdiction": "中国",
+      "classificationReason": "主旨为发展行动、规划布局与支持部署，按综合文件主要问题归政策；不拆复制监管条目。",
+      "relatedLinks": [
+        {
+          "url": "https://www.ndrc.gov.cn/xwdt/tzgg/202407/P020240723625616053849.pdf",
+          "publisher": "国家发展和改革委员会",
+          "role": "原公告附件",
+          "note": "仅阅读部分正文，不声称完整审查。"
+        }
+      ],
+      "originalPublisher": "国家发展和改革委员会",
+      "originalUrl": "https://www.ndrc.gov.cn/xwdt/tzgg/202407/t20240723_1391895_ext.html",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "companyIds": [],
+      "dataPeriod": null,
+      "primarySubcategoryId": "green-power-plan"
+    },
+    {
+      "id": "miit-green-compute-recommendation-20260921",
+      "sourceId": "miit-green-compute",
+      "title": "五部门组织开展2026年度国家绿色算力设施推荐工作",
+      "url": "https://www.miit.gov.cn/jgsj/jns/gzdt/art/2026/art_ca5bc3edeff248dda5919a6d211489a5.html",
+      "publishedAt": "2026-09-21",
+      "primaryCategoryId": "policy-planning",
+      "kind": "policy",
+      "regions": [
+        "中国"
+      ],
+      "judgmentTypes": [
+        "fact"
+      ],
+      "summary": "五部门启动绿色算力设施自愿创建推荐，规定申报条件、评价与报送程序，材料于2026年11月16日前报送。此通知是推荐工作安排，不等于项目获批或设施已入选。",
+      "contentScope": "full",
+      "access": "free",
+      "verificationStatus": "verified",
+      "verificationNote": "实际读到通知网页全部正文，工信厅联节函〔2026〕433号；成文2026-09-08，发布2026-09-21，截止2026-11-16。三个WPS评价/申报附件未读，不能声称已核完整指标体系。",
+      "documentStatus": "已发布／推荐申报中",
+      "issuedAt": "2026-09-08",
+      "effectiveAt": null,
+      "deadlineAt": "2026-11-16",
+      "jurisdiction": "中国",
+      "classificationReason": "正文明确自愿参与创建推荐，主要是支持绿色发展；申报条件仅用于本次推荐，不当作所有IDC经营许可。",
+      "originalPublisher": "工业和信息化部",
+      "originalUrl": "https://www.miit.gov.cn/jgsj/jns/gzdt/art/2026/art_ca5bc3edeff248dda5919a6d211489a5.html",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "companyIds": [],
+      "dataPeriod": null,
+      "primarySubcategoryId": "green-power-plan"
+    },
+    {
+      "id": "szse-reorganization-rule-notice-20250516",
+      "sourceId": "szse-regulation",
+      "title": "深交所发布重大资产重组审核规则（2025年修订）的通知",
+      "url": "https://www.szse.cn/lawrules/rule/allrules/bussiness/t20250516_613585.html",
+      "publishedAt": "2025-05-16",
+      "primaryCategoryId": "regulation",
+      "kind": "regulation",
+      "regions": [
+        "中国"
+      ],
+      "judgmentTypes": [
+        "fact"
+      ],
+      "summary": "深交所发布2025年修订的重大资产重组审核规则，自发布之日起施行，并废止2024年版本。作为关注深市公司并购审核的背景入口；本次只核发布通知，未完成规则附件全文核查。",
+      "contentScope": "full",
+      "access": "free",
+      "verificationStatus": "verified",
+      "verificationNote": "亲自读取发布通知全文，文号深证上〔2025〕492号，发布日期及施行日期2025-05-16；书目对象是通知，不冒称已读完整规则附件。该一般规则与本轮深市核心公司的并购研究直接相关；不是任何公司已获批准。",
+      "documentStatus": "已发布并施行（按发布通知；后续修订待核）",
+      "effectiveAt": "2025-05-16",
+      "deadlineAt": null,
+      "jurisdiction": "中国／深圳证券交易所",
+      "classificationReason": "上市公司重大资产重组审核义务；是规则背景不是公司并购新闻。",
+      "relatedLinks": [
+        {
+          "url": "https://docs.static.szse.cn/www/lawrules/rule/stock/audit/W020250516733859041023.pdf",
+          "publisher": "深圳证券交易所",
+          "role": "原规则附件",
+          "note": "已定位，未读取全文。"
+        }
+      ],
+      "originalPublisher": "深圳证券交易所",
+      "originalUrl": "https://www.szse.cn/lawrules/rule/allrules/bussiness/t20250516_613585.html",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "companyIds": [],
+      "dataPeriod": null,
+      "primarySubcategoryId": "securities-regulation"
+    },
+    {
+      "id": "sse-reorganization-rule-notice-20250516",
+      "sourceId": "sse-regulation",
+      "title": "上交所发布重大资产重组审核规则（2025年5月修订）的通知",
+      "url": "https://www.sse.com.cn/lawandrules/sselawsrules2025/stocks/review/recombination/c/c_20250519_10779360.shtml",
+      "publishedAt": "2025-05-16",
+      "primaryCategoryId": "regulation",
+      "kind": "regulation",
+      "regions": [
+        "中国"
+      ],
+      "judgmentTypes": [
+        "fact"
+      ],
+      "summary": "上交所发布2025年5月修订的重大资产重组审核规则，页面标明现行有效。用于关注沪市公司资产交易的审核制度；本次核到发布通知与版本信息，未读取附件全文。",
+      "contentScope": "full",
+      "access": "free",
+      "verificationStatus": "verified",
+      "verificationNote": "实际读取官方发布页，发布及生效日均为2025-05-16，文号上证发〔2025〕70号，页面标示现行有效。未从URL中的20250519推定发布日期。此条对象是发布通知，规则DOCX附件未读。",
+      "documentStatus": "现行有效（原站发布页标示）",
+      "effectiveAt": "2025-05-16",
+      "deadlineAt": null,
+      "jurisdiction": "中国／上海证券交易所",
+      "classificationReason": "对东阳光等沪市关注公司重大资产重组研究直接相关，不能解读为任何特定交易获批。",
+      "originalPublisher": "上海证券交易所",
+      "originalUrl": "https://www.sse.com.cn/lawandrules/sselawsrules2025/stocks/review/recombination/c/c_20250519_10779360.shtml",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "companyIds": [],
+      "dataPeriod": null,
+      "primarySubcategoryId": "securities-regulation"
+    },
+    {
+      "id": "hkex-corporate-transactions-consultation-20260921",
+      "sourceId": "hkex-regulation",
+      "title": "港交所就公司交易与分拆上市规则启动第二阶段咨询",
+      "url": "https://www.hkex.com.hk/News/Regulatory-Announcements/2026/260921news?sc_lang=zh-HK",
+      "publishedAt": "2026-09-21",
+      "primaryCategoryId": "regulation",
+      "kind": "regulation",
+      "regions": [
+        "中国香港"
+      ],
+      "judgmentTypes": [
+        "fact"
+      ],
+      "summary": "港交所就须予公布交易、关联交易和分拆上市要求征求意见，咨询至2026年11月30日结束。相关建议尚非生效规则，可作为关注港股公司资产交易与披露要求的参考。",
+      "contentScope": "abstract",
+      "access": "free",
+      "verificationStatus": "verified",
+      "verificationNote": "实际读取官方监管通讯新闻稿全文和建议概要，完整咨询文件未读。核实发布日期、讨论范围和未来截止日；不将建议门槛当现行规则。",
+      "documentStatus": "征求意见",
+      "effectiveAt": null,
+      "deadlineAt": "2026-11-30",
+      "jurisdiction": "中国香港",
+      "classificationReason": "直接涉及关注港股发行人的资产收购、关联交易和披露义务，非一般市场运营消息。",
+      "originalPublisher": "香港交易及结算所有限公司／香港联合交易所有限公司",
+      "originalUrl": "https://www.hkex.com.hk/News/Regulatory-Announcements/2026/260921news?sc_lang=zh-HK",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "companyIds": [],
+      "dataPeriod": null,
+      "primarySubcategoryId": "securities-regulation"
+    },
+    {
+      "id": "vgp-cloud-action-program-20250612",
+      "sourceId": "vietnam-vgp-policy",
+      "title": "越南政府新闻网报道2025—2030年云计算发展行动计划获批",
+      "originalTitle": "Gov’t approves national action program on development of cloud computing during 2025–2030",
+      "url": "https://en.baochinhphu.vn/govt-approves-national-action-program-on-development-of-cloud-computing-during-20252030-111250612163552859.htm",
+      "publishedAt": "2025-06-12",
+      "primaryCategoryId": "policy-planning",
+      "kind": "news",
+      "regions": [
+        "越南"
+      ],
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "summary": "VGP报道越南批准2025—2030年云计算行动计划，提出政企上云及数据中心、云服务发展目标。此条为政府新闻报道，尚未取得决定原件，目标不能当作已实现成果。",
+      "contentScope": "full",
+      "access": "free",
+      "verificationStatus": "verified",
+      "verificationNote": "亲自读取政府新闻网正文及页脚身份；正文发布日期2025-06-12 18:27 GMT+7。核查范围为报道，不含决定原件文号和法律效力；报告年份/目标年不是生效日期。",
+      "documentStatus": "政府报道已批准；决定原件待核",
+      "effectiveAt": null,
+      "deadlineAt": null,
+      "jurisdiction": "越南",
+      "classificationReason": "主旨为云计算发展行动与目标；将政府媒体报道kind设新闻，不能假定法律原件。",
+      "originalPublisher": "越南政府新闻网（VGP）",
+      "originalUrl": "https://en.baochinhphu.vn/govt-approves-national-action-program-on-development-of-cloud-computing-during-20252030-111250612163552859.htm",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "visibility": "active",
+      "companyIds": [],
+      "dataPeriod": null,
+      "primarySubcategoryId": "compute-industrial-plan"
+    },
+    {
+      "id": "hec-platform-closing-20260117",
+      "sourceId": "hec-disclosures",
+      "companyIds": [
+        "hec"
+      ],
+      "title": "东阳光：前序合资平台收购秦淮中国业务交割公告",
+      "url": "https://paper.cnstock.com/html/2026-01/17/content_2170999.htm",
+      "originalUrl": "https://paper.cnstock.com/html/2026-01/17/content_2170999.htm",
+      "publishedAt": "2026-01-17",
+      "dataPeriod": null,
+      "regions": [
+        "中国"
+      ],
+      "summary": "东数一号通过东数三号收购秦淮数据中国业务100%股权。上市公司为东数一号参股股东；公告称现金价款已支付、交割完成，交割后事项仍待办理。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
+      "kind": "disclosure",
+      "access": "free",
+      "visibility": "active",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "上海证券报信息披露版临2026-04号；读取“概述”“交易进展”及风险提示文字。交割完成为公司披露，非独立审计结论；实际交割具体日未单列。",
+      "originalPublisher": "广东东阳光科技控股股份有限公司",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "eventId": "hec-chindata-platform-acquisition"
+    },
+    {
+      "id": "hec-reorganization-plan-20260307",
+      "sourceId": "hec-disclosures",
+      "companyIds": [
+        "hec"
+      ],
+      "title": "东阳光：拟发行股份收购东数一号相关权益的重组预案",
+      "url": "https://paper.cnstock.com/html/2026-03/07/content_2186269.htm",
+      "originalUrl": "https://paper.cnstock.com/html/2026-03/07/content_2186269.htm",
+      "publishedAt": "2026-03-07",
+      "dataPeriod": null,
+      "regions": [
+        "中国"
+      ],
+      "summary": "3月6日董事会审议重组预案，拟以发行股份方式取得东数一号直接及间接合计70%股权并配套募资。此为后续上市公司重组，与前序平台收购分开记录。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
+      "kind": "disclosure",
+      "access": "free",
+      "visibility": "active",
+      "contentScope": "partial",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "阅读临2026-12号预案披露及风险提示文字，未逐项读取同版其他公告和图片表格。预案披露时审计评估尚未完成。",
+      "originalPublisher": "广东东阳光科技控股股份有限公司",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "eventId": "hec-chindata-listed-reorganization"
+    },
+    {
+      "id": "hec-reorganization-reply-20260923",
+      "sourceId": "hec-disclosures",
+      "companyIds": [
+        "hec"
+      ],
+      "title": "东阳光：重组问询回复及报告书修订提示",
+      "url": "https://paper.cnstock.com/html/2026-09/23/content_2272066.htm",
+      "originalUrl": "https://paper.cnstock.com/html/2026-09/23/content_2272066.htm",
+      "publishedAt": "2026-09-23",
+      "dataPeriod": null,
+      "regions": [
+        "中国"
+      ],
+      "summary": "公司披露重组问询回复及报告书修订提示，仍拟取得东数一号直接及间接合计70%权益。该日公告文字称尚需上交所审核通过及证监会同意注册；不代表执行日所有审批状态。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
+      "kind": "disclosure",
+      "access": "free",
+      "visibility": "active",
+      "contentScope": "partial",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "读取临2026-97、98号文字及公告身份；原文称7月29日收到审核问询函。修订对照表未解析，完整回复和修订报告书未取得；同版临2026-99号财务资助股东会不作为重组批准证据。",
+      "originalPublisher": "广东东阳光科技控股股份有限公司",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "eventId": "hec-chindata-listed-reorganization"
+    },
+    {
+      "id": "hec-reorganization-newer-attachment-pending",
+      "sourceId": "hec-disclosures",
+      "companyIds": [
+        "hec"
+      ],
+      "title": "东阳光重组：任务书提供的较新附件线索（待核）",
+      "url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-01/600673_20261001_8MLQ.pdf",
+      "originalUrl": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-01/600673_20261001_8MLQ.pdf",
+      "publishedAt": null,
+      "dataPeriod": null,
+      "regions": [
+        "中国"
+      ],
+      "summary": "较新附件正文未取得，不能确认其文件身份、披露日期或具体审批结论。仅保留为专项核查线索，不计正式资料或已核进展。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
+      "kind": "disclosure",
+      "access": "free",
+      "visibility": "reference",
+      "contentScope": "unavailable",
+      "verificationStatus": "unreachable",
+      "verifiedAt": null,
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "2026-10-08两次读取失败；路径含10月1日不等于已确认披露日。财联社关联页亦未取得正文。",
+      "originalPublisher": "广东东阳光科技控股股份有限公司",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "eventId": "hec-chindata-listed-reorganization",
+      "dateNote": "真实原披露日待核，不从URL推断。",
+      "relatedLinks": [
+        {
+          "url": "https://www.cls.cn/detail/2496442",
+          "publisher": "财联社",
+          "role": "任务书提供的媒体线索；本次未读到正文"
+        }
+      ],
+      "visibilityReason": "较新附件正文未取得，仅保留参考线索，不作为已核进展。"
+    },
+    {
+      "id": "xingyun-vf-server-sale-20260930",
+      "sourceId": "xingyun-disclosures",
+      "companyIds": [
+        "xingyun"
+      ],
+      "title": "深圳行云：VF客户服务器销售合同已交付验收",
+      "url": "https://static.xingyuntech.com.cn/portal-cms/files/568af03571b5a67a103b01a0997b227916b4ae947c0eeba345916465524b68ef.pdf",
+      "originalUrl": "https://static.xingyuntech.com.cn/portal-cms/files/568af03571b5a67a103b01a0997b227916b4ae947c0eeba345916465524b68ef.pdf",
+      "publishedAt": "2026-09-30",
+      "dataPeriod": null,
+      "regions": [
+        "中国"
+      ],
+      "summary": "深圳行云向VF客户销售算力服务器，含税金额23,920万元；公司公告称已完成交付及验收。不能据此认定全部回款或确认等额收入。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
+      "kind": "disclosure",
+      "access": "free",
+      "visibility": "active",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "读取2026-127号公告全文文本。官网详情页显示2026-09-30，PDF落款2026-09-29，两者区分；不将落款等同合同签订或交付日期。PDF页面图像抓取未完整成功，未做版面逐页核验。",
+      "originalPublisher": "行云科技股份有限公司",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "eventId": "xingyun-vf-server-sale",
+      "documentNumber": "2026-127",
+      "relatedLinks": [
+        {
+          "url": "https://www.xingyuntech.com.cn/disclosure/49",
+          "publisher": "行云科技官网",
+          "role": "官网发布日期及原PDF入口",
+          "publishedAt": "2026-09-30"
+        }
+      ],
+      "dateNote": "官网显示日2026-09-30；公告落款2026-09-29。首次法定发布时点未另行核查。"
+    },
+    {
+      "id": "xingyun-ve-rental-20260928",
+      "sourceId": "xingyun-disclosures",
+      "companyIds": [
+        "xingyun"
+      ],
+      "title": "湘树云：VE客户五年智算租赁合同",
+      "url": "https://static.xingyuntech.com.cn/portal-cms/files/bc2e5476277de7c3c3d3f7a553079cf9330bb2d2df59663f843272a78bdee49b.pdf",
+      "originalUrl": "https://static.xingyuntech.com.cn/portal-cms/files/bc2e5476277de7c3c3d3f7a553079cf9330bb2d2df59663f843272a78bdee49b.pdf",
+      "publishedAt": "2026-09-28",
+      "dataPeriod": null,
+      "regions": [
+        "中国"
+      ],
+      "summary": "湘树云与VE客户签署五年智算服务合同，含税总额87,168万元。原文为接收验收中、预计9月30日前交付；尚未取得实际交付完成的后续依据。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
+      "kind": "disclosure",
+      "access": "free",
+      "visibility": "active",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "读取2026-125号公告全文文本。官网详情页显示2026-09-28，PDF落款2026-09-23，两者区分；不将落款等同合同签订或交付日期。PDF页面图像抓取未完整成功，未做版面逐页核验。",
+      "originalPublisher": "行云科技股份有限公司",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "eventId": "xingyun-ve-compute-rental",
+      "documentNumber": "2026-125",
+      "relatedLinks": [
+        {
+          "url": "https://www.xingyuntech.com.cn/disclosure/44",
+          "publisher": "行云科技官网",
+          "role": "官网发布日期及原PDF入口",
+          "publishedAt": "2026-09-28"
+        }
+      ],
+      "dateNote": "官网显示日2026-09-28；公告落款2026-09-23。首次法定发布时点未另行核查。"
+    },
+    {
+      "id": "xingyun-sa-procurement-20260928",
+      "sourceId": "xingyun-disclosures",
+      "companyIds": [
+        "xingyun"
+      ],
+      "title": "行云科技：SA供应商算力采购框架新增合同",
+      "url": "https://static.xingyuntech.com.cn/portal-cms/files/2c5fda64a8bf4e7f322eea6e445258d51bf0514e86f6afac1771eafd0e2603a1.pdf",
+      "originalUrl": "https://static.xingyuntech.com.cn/portal-cms/files/2c5fda64a8bf4e7f322eea6e445258d51bf0514e86f6afac1771eafd0e2603a1.pdf",
+      "publishedAt": "2026-09-28",
+      "dataPeriod": null,
+      "regions": [
+        "中国"
+      ],
+      "summary": "公司在128套采购框架下新增43套算力服务合同，含税45,313.98万元。累计签约75套；剩余53套仍为意向，不应将128套写成全部采购或交付。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
+      "kind": "disclosure",
+      "access": "free",
+      "visibility": "active",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "读取2026-124号公告全文文本。官网详情页显示2026-09-28，PDF落款2026-09-22，两者区分；不将落款等同合同签订或交付日期。PDF页面图像抓取未完整成功，未做版面逐页核验。",
+      "originalPublisher": "行云科技股份有限公司",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "eventId": "xingyun-sa-compute-procurement",
+      "documentNumber": "2026-124",
+      "relatedLinks": [
+        {
+          "url": "https://www.xingyuntech.com.cn/disclosure/42",
+          "publisher": "行云科技官网",
+          "role": "官网发布日期及原PDF入口",
+          "publishedAt": "2026-09-28"
+        }
+      ],
+      "dateNote": "官网显示日2026-09-28；公告落款2026-09-22。首次法定发布时点未另行核查。"
     }
   ],
   "labelMaps": {
@@ -2251,17 +4695,1283 @@
       "unreachable": "暂不可达"
     },
     "kind": {
-      "news": "新闻动态",
-      "report": "研究报告",
+      "news": "新闻报道",
+      "report": "机构研究报告",
+      "broker-report": "券商研报",
+      "disclosure": "公司披露",
+      "policy": "政策文件",
+      "regulation": "监管文件",
       "data-release": "数据发布",
       "methodology": "方法说明"
     },
     "sourceType": {
+      "exchange": "证券交易所",
       "government": "政府机构",
       "company": "公司披露",
       "research": "研究机构",
       "commercial": "商业数据机构",
       "media": "行业媒体"
     }
-  }
+  },
+  "companies": [
+    {
+      "id": "gds",
+      "name": "万国数据",
+      "legalName": "GDS Holdings Limited",
+      "aliases": [
+        "GDS",
+        "GDS Holdings"
+      ],
+      "securities": [
+        {
+          "exchange": "NASDAQ",
+          "code": "GDS"
+        },
+        {
+          "exchange": "HKEX",
+          "code": "9698"
+        }
+      ],
+      "role": "core",
+      "identityNote": "2026Q2公司公告第2页确认 GDS Holdings Limited 与 NASDAQ:GDS、HKEX:9698 为同一披露主体；保留gds-quarterly和gds-2026-q2。没有据此更改DayOne关系或项目容量。",
+      "identityUrls": [
+        "https://investors.gds-services.com/system/files-encrypted/nasdaq_kms/assets/2026/08/13/7-36-49/GDS%202Q26%20Earnings%20Release_0813%201200.pdf"
+      ],
+      "disclosureReview": {
+        "lastAttemptAt": "2026-10-08",
+        "result": "partial",
+        "note": "读取IR新闻列表当前页，最新为8月13日Q2披露（已收录）；未逐项核HKEX/SEC后续披露，不宣称已查到今天。",
+        "checks": [
+          {
+            "id": "gds-list-20261008",
+            "channel": "公司IR列表",
+            "url": "https://investors.gds-services.com/news-releases",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "可见页列出2026年1月至8月新闻，仅作有限栏目查阅。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "vnet",
+      "name": "世纪互联",
+      "legalName": "VNET Group, Inc.",
+      "aliases": [
+        "VNET",
+        "21Vianet"
+      ],
+      "securities": [
+        {
+          "exchange": "NASDAQ",
+          "code": "VNET"
+        }
+      ],
+      "role": "core",
+      "identityNote": "官网2026Q2公告首页及2026-09-21新闻稿确认 NASDAQ:VNET；保留vnet-quarterly来源和vnet-2026-q2资料ID。",
+      "identityUrls": [
+        "https://ir.vnet.com/static-files/bd1c3fd8-22f7-4ee2-a84a-7140445a4d8e",
+        "https://ir.vnet.com/news-releases/news-release-details/vnet-announces-closing-previously-announced-strategic-investment"
+      ],
+      "disclosureReview": {
+        "lastAttemptAt": "2026-10-08",
+        "result": "partial",
+        "note": "重新读取9月21日原新闻稿和当前IR可见列表；没有把重核日变成新业务日，SEC等渠道未覆盖。",
+        "checks": [
+          {
+            "id": "vnet-body-20261008",
+            "channel": "公司IR原文",
+            "url": "https://ir.vnet.com/news-releases/news-release-details/vnet-announces-closing-previously-announced-strategic-investment",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "完整读取交割新闻稿：两家买方向原股东受让股份，非发行人增发。"
+          },
+          {
+            "id": "vnet-list-20261008",
+            "channel": "公司IR列表",
+            "url": "https://ir.vnet.com/news-events/press-releases",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "可见2026年条目最新9月21日，未完成全部法定披露渠道覆盖。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "singtel",
+      "name": "Singtel / Nxera",
+      "legalName": "Singapore Telecommunications Limited",
+      "aliases": [
+        "Singtel",
+        "Nxera"
+      ],
+      "securities": [],
+      "role": "reference",
+      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityUrls": [
+        "https://www.singtel.com/about-us/investor-relations/financial-results"
+      ]
+    },
+    {
+      "id": "dayone",
+      "name": "DayOne",
+      "legalName": "DayOne（沿用公司公告称谓）",
+      "aliases": [
+        "DayOne"
+      ],
+      "securities": [],
+      "role": "reference",
+      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityUrls": [
+        "https://dayonedc.com/news"
+      ]
+    },
+    {
+      "id": "tnb",
+      "name": "TNB",
+      "legalName": "Tenaga Nasional Berhad",
+      "aliases": [
+        "TNB"
+      ],
+      "securities": [],
+      "role": "reference",
+      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityUrls": [
+        "https://www.tnb.com.my/suppliers-investors-media-relations/financial-info"
+      ]
+    },
+    {
+      "id": "sttgdc",
+      "name": "STTGDC",
+      "legalName": "ST Telemedia Global Data Centres",
+      "aliases": [
+        "STTGDC"
+      ],
+      "securities": [],
+      "role": "reference",
+      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityUrls": [
+        "https://www.sttgdc.com/newsroom"
+      ]
+    },
+    {
+      "id": "globe",
+      "name": "Globe",
+      "legalName": "Globe（沿用报道主体称谓）",
+      "aliases": [
+        "Globe"
+      ],
+      "securities": [],
+      "role": "reference",
+      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityUrls": [
+        "https://w.media/category/markets/apac/sea/"
+      ]
+    },
+    {
+      "id": "bdx",
+      "name": "BDx",
+      "legalName": "BDx（沿用报道项目主体称谓）",
+      "aliases": [
+        "BDx"
+      ],
+      "securities": [],
+      "role": "reference",
+      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityUrls": [
+        "https://bappeda.jabarprov.go.id/category/berita-umum/"
+      ]
+    },
+    {
+      "id": "stavian",
+      "name": "Stavian Digital Park",
+      "legalName": "Stavian Digital Park（项目称谓）",
+      "aliases": [
+        "Stavian"
+      ],
+      "securities": [],
+      "role": "reference",
+      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityUrls": [
+        "https://w.media/category/markets/apac/sea/"
+      ]
+    },
+    {
+      "id": "sinnet",
+      "name": "光环新网",
+      "legalName": "北京光环新网科技股份有限公司",
+      "aliases": [
+        "Sinnet"
+      ],
+      "securities": [
+        {
+          "exchange": "SZSE",
+          "code": "300383"
+        }
+      ],
+      "role": "core",
+      "identityNote": "公司 IR 页与2026半年度报告摘要首页相互核对；不把控股股东或境外项目公司视为上市发行人本体。",
+      "identityUrls": [
+        "https://www.sinnet.com.cn/IR.html",
+        "https://www.sinnet.com.cn/uploads/files/2026/0901/6semKmUxNDYFBvedJ7NWQQDP1kQFbG50F1olXTIv.pdf"
+      ],
+      "disclosureReview": {
+        "lastAttemptAt": "2026-10-08",
+        "result": "partial",
+        "note": "读取IR及信息披露目录第一页20条，最新可见9月1日半年报等；后续分页及法定披露目录未全覆盖。",
+        "checks": [
+          {
+            "id": "sinnet-list-20261008",
+            "channel": "公司信息披露目录",
+            "url": "https://www.sinnet.com.cn/info_disclosure.html",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "共有78页，读取当前第一页；不得作全年或截至今天完整覆盖。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "xingyun",
+      "name": "行云科技",
+      "legalName": "行云科技股份有限公司",
+      "aliases": [
+        "Xingyun Technology Co.,Ltd",
+        "XINGYUN TECH",
+        "有棵树科技股份有限公司",
+        "天泽信息产业股份有限公司"
+      ],
+      "securities": [
+        {
+          "exchange": "SZSE",
+          "code": "300209"
+        }
+      ],
+      "role": "core",
+      "identityNote": "官网页脚和2026半年报第5、7页确认名称/代码与曾用名；行云集团、深圳市天行云供应链有限公司和上市发行人不可混同。历史名称仅作检索别名。",
+      "identityUrls": [
+        "https://www.xingyuntech.com.cn/",
+        "https://www.xingyuntech.com.cn/disclosure/7",
+        "https://static.cninfo.com.cn/finalpage/2026-07-31/1225449048.PDF"
+      ],
+      "disclosureReview": {
+        "lastAttemptAt": "2026-10-08",
+        "result": "partial",
+        "note": "核300209官网披露列表当前可见页及2026-124/125/127号原PDF；新增三个不同合同事项，未把预计交付写成已交付。",
+        "checks": [
+          {
+            "id": "xingyun-vf-server-sale-20261008",
+            "channel": "公司官网原PDF",
+            "url": "https://static.xingyuntech.com.cn/portal-cms/files/568af03571b5a67a103b01a0997b227916b4ae947c0eeba345916465524b68ef.pdf",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取公告2026-127号全文文本；实际事项日期未单列。"
+          },
+          {
+            "id": "xingyun-list-20261008",
+            "channel": "公司披露列表",
+            "url": "https://www.xingyuntech.com.cn/disclosure",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取当前可见第一页10条，最新显示9月30日；其他4页及法定渠道未完整覆盖。"
+          },
+          {
+            "id": "xingyun-ve-compute-rental-20261008",
+            "channel": "公司官网原PDF",
+            "url": "https://static.xingyuntech.com.cn/portal-cms/files/bc2e5476277de7c3c3d3f7a553079cf9330bb2d2df59663f843272a78bdee49b.pdf",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取公告2026-125号全文文本；实际事项日期未单列。"
+          },
+          {
+            "id": "xingyun-sa-compute-procurement-20261008",
+            "channel": "公司官网原PDF",
+            "url": "https://static.xingyuntech.com.cn/portal-cms/files/2c5fda64a8bf4e7f322eea6e445258d51bf0514e86f6afac1771eafd0e2603a1.pdf",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取公告2026-124号全文文本；实际事项日期未单列。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sharetronic",
+      "name": "协创数据",
+      "legalName": "协创数据技术股份有限公司",
+      "aliases": [
+        "Sharetronic Data Technology Co.,Ltd"
+      ],
+      "securities": [
+        {
+          "exchange": "SZSE",
+          "code": "300857"
+        }
+      ],
+      "role": "core",
+      "identityNote": "公司介绍页和巨潮2026半年度报告摘要首页确认深交所300857；设备业务、算力服务和公司整体不能视作同一收入口径。",
+      "identityUrls": [
+        "https://www.sharetronic.com/en/about",
+        "https://static.cninfo.com.cn/finalpage/2026-08-28/1225522064.PDF"
+      ],
+      "disclosureReview": {
+        "lastAttemptAt": "2026-10-08",
+        "result": "blocked",
+        "note": "官网首页可读但未取得最新法定公告列表；巨潮300857动态目录不可达。本轮无法确认重要事项新增，保留一期资料及成功核查记录。",
+        "checks": [
+          {
+            "id": "sharetronic-cninfo-20261008",
+            "channel": "巨潮公告目录",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300857",
+            "attemptedAt": "2026-10-08",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "目录未取得。"
+          },
+          {
+            "id": "sharetronic-home-20261008",
+            "channel": "公司官网",
+            "url": "https://www.sharetronic.com/en",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读到主体首页，未取得重要披露正文；搜索命中旧报告不作为最新事件。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hec",
+      "name": "东阳光",
+      "legalName": "广东东阳光科技控股股份有限公司",
+      "aliases": [
+        "东阳光科"
+      ],
+      "securities": [
+        {
+          "exchange": "SSE",
+          "code": "600673"
+        }
+      ],
+      "role": "core",
+      "identityNote": "巨潮半年报封面及第5—6页、公司官网确认600673。发行人官网为hec-al.com；hec.cn为集团入口，药业上市主体不并入。",
+      "identityUrls": [
+        "https://www.hec-al.com/",
+        "https://static.cninfo.com.cn/finalpage/2026-08-18/1225478556.PDF"
+      ],
+      "disclosureReview": {
+        "lastAttemptAt": "2026-10-08",
+        "result": "partial",
+        "note": "只完成所列单篇正文和可见列表的有限检查；较新附件及完整审核文件未取得，不声称已覆盖至今天。",
+        "checks": [
+          {
+            "id": "hec-paper-jan-20261008",
+            "channel": "法定披露报纸",
+            "url": "https://paper.cnstock.com/html/2026-01/17/content_2170999.htm",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读到临2026-04号交割公告正文，属于前序合资平台收购。"
+          },
+          {
+            "id": "hec-paper-mar-20261008",
+            "channel": "法定披露报纸",
+            "url": "https://paper.cnstock.com/html/2026-03/07/content_2186269.htm",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读到临2026-12号预案及风险提示文字；版面其他公告及图片表格未全部核查。"
+          },
+          {
+            "id": "hec-paper-sep-20261008",
+            "channel": "法定披露报纸",
+            "url": "https://paper.cnstock.com/html/2026-09/23/content_2272066.htm",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读到临2026-97、98号问询回复及修订提示正文；修订表格未解析，未取得完整回复和报告书。"
+          },
+          {
+            "id": "hec-oct-pdf-20261008",
+            "channel": "上交所较新附件线索",
+            "url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-01/600673_20261001_8MLQ.pdf",
+            "attemptedAt": "2026-10-08",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "两次访问均未取得附件正文，不能据文件路径确认日期、标题或批准事项。"
+          },
+          {
+            "id": "hec-sse-list-20261008",
+            "channel": "上交所公告目录",
+            "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=600673",
+            "attemptedAt": "2026-10-08",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "当前读取工具不能打开目录；未完成执行日公告全覆盖。"
+          },
+          {
+            "id": "hec-ir-20261008",
+            "channel": "公司公告栏目",
+            "url": "https://www.hec-al.com/sys-nr/?g=40",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "可见列表最新至7月21日；不能据此排除后续新披露。"
+          },
+          {
+            "id": "hec-media-20261008",
+            "channel": "财联社线索",
+            "url": "https://www.cls.cn/detail/2496442",
+            "attemptedAt": "2026-10-08",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "返回空白文本，未取得消息正文。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "china-mobile",
+      "name": "中国移动",
+      "legalName": "中国移动有限公司",
+      "aliases": [
+        "China Mobile Limited"
+      ],
+      "securities": [
+        {
+          "exchange": "SSE",
+          "code": "600941"
+        },
+        {
+          "exchange": "HKEX",
+          "code": "0941"
+        }
+      ],
+      "role": "operator",
+      "identityNote": "2026半年报第4—5页明确法人、官网及两地代码；中国移动通信集团有限公司为集团，不能把集团新闻中的全部事项当上市发行人合并披露。80941为同发行人人民币柜台，不另建公司。",
+      "identityUrls": [
+        "https://static.cninfo.com.cn/finalpage/2026-08-14/1225472195.PDF"
+      ]
+    },
+    {
+      "id": "china-telecom",
+      "name": "中国电信",
+      "legalName": "中国电信股份有限公司",
+      "aliases": [
+        "China Telecom Corporation Limited"
+      ],
+      "securities": [
+        {
+          "exchange": "SSE",
+          "code": "601728"
+        },
+        {
+          "exchange": "HKEX",
+          "code": "0728"
+        }
+      ],
+      "role": "operator",
+      "identityNote": "官网2026中期业绩新闻稿第2页同时明确公司全称和两地代码；中国电信集团有限公司不混为该发行人。",
+      "identityUrls": [
+        "https://www.chinatelecom-h.com/sc/media/press/p260820.pdf",
+        "https://www.chinatelecom-h.com/sc/global/home.php"
+      ]
+    },
+    {
+      "id": "china-unicom-h",
+      "name": "中国联通（香港上市主体）",
+      "legalName": "中国联合网络通信（香港）股份有限公司",
+      "aliases": [
+        "中国联通",
+        "China Unicom (Hong Kong) Limited"
+      ],
+      "securities": [
+        {
+          "exchange": "HKEX",
+          "code": "0762"
+        }
+      ],
+      "role": "operator",
+      "identityNote": "官网股票资料确认762及完整名称；官网特别提示A股公司财务数据可能不同。本次入口与样例属于香港上市主体，不附加600050证券代码、不与A股报表合并。",
+      "identityUrls": [
+        "https://www.chinaunicom.com.hk/sc/ir/shareinfo.php",
+        "https://www.chinaunicom.com.hk/sc/global/home.php"
+      ]
+    }
+  ],
+  "subcategories": [
+    {
+      "id": "project-delivery",
+      "parentCategoryId": "industry",
+      "name": "项目建设与交付",
+      "order": 0
+    },
+    {
+      "id": "market-supply-demand",
+      "parentCategoryId": "industry",
+      "name": "市场供给与需求",
+      "order": 1
+    },
+    {
+      "id": "power-resources",
+      "parentCategoryId": "industry",
+      "name": "供电与资源条件",
+      "order": 2
+    },
+    {
+      "id": "facility-technology",
+      "parentCategoryId": "industry",
+      "name": "设施与技术",
+      "order": 3
+    },
+    {
+      "id": "price-indices",
+      "parentCategoryId": "rental-prices",
+      "name": "价格与指数",
+      "order": 0
+    },
+    {
+      "id": "rental-demand-contracts",
+      "parentCategoryId": "rental-prices",
+      "name": "租赁供需与交易条件",
+      "order": 1
+    },
+    {
+      "id": "pricing-methodology",
+      "parentCategoryId": "rental-prices",
+      "name": "定价口径与方法",
+      "order": 2
+    },
+    {
+      "id": "compute-industrial-plan",
+      "parentCategoryId": "policy-planning",
+      "name": "算力布局与产业发展",
+      "order": 0
+    },
+    {
+      "id": "investment-incentives",
+      "parentCategoryId": "policy-planning",
+      "name": "投资支持与激励",
+      "order": 1
+    },
+    {
+      "id": "green-power-plan",
+      "parentCategoryId": "policy-planning",
+      "name": "绿色发展与能源协同",
+      "order": 2
+    },
+    {
+      "id": "project-compliance",
+      "parentCategoryId": "regulation",
+      "name": "项目准入与资源约束",
+      "order": 0
+    },
+    {
+      "id": "data-crossborder",
+      "parentCategoryId": "regulation",
+      "name": "数据安全与跨境合规",
+      "order": 1
+    },
+    {
+      "id": "securities-regulation",
+      "parentCategoryId": "regulation",
+      "name": "交易所与证券监管",
+      "order": 2
+    }
+  ],
+  "events": [
+    {
+      "id": "vnet-strategic-investment-2026",
+      "title": "世纪互联：原股东股份转让及投资者权利安排",
+      "type": "capital",
+      "companyIds": [
+        "vnet"
+      ],
+      "participants": [
+        {
+          "companyId": "vnet",
+          "role": "被转让股份的发行人，非本次股份出售方"
+        },
+        {
+          "name": "PJ Millennium I Limited / PJ Millennium II Limited",
+          "role": "股份受让方"
+        },
+        {
+          "name": "Success Flow / Choice Faith",
+          "role": "原股东、股份转让方"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "priority": 80,
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "公司公告两家买方完成向原股东购买股份，相关投资者权利及投票协议随交割生效。这是原股东股份转让，不应表述为公司发行新股募资。",
+      "basisMilestoneIds": [
+        "historical-node"
+      ],
+      "latestVerifiedMilestoneId": "historical-node",
+      "uncertainties": [
+        "已核公司9月21日交割新闻稿；只核当前IR可见列表，未据此声称所有渠道均无后续事项。"
+      ],
+      "milestones": [
+        {
+          "id": "historical-node",
+          "title": "世纪互联：原股东股份转让及投资者权利安排",
+          "summary": "公司公告两家买方完成向原股东购买股份，相关投资者权利及投票协议随交割生效。这是原股东股份转让，不应表述为公司发行新股募资。",
+          "occurredAt": null,
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "vnet-strategic-investment-close-20260921",
+          "evidenceRefs": [
+            {
+              "reportId": "vnet-strategic-investment-close-20260921",
+              "locator": "2026-09-21公司新闻稿首段及投资者权利、投票安排段落",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "lastAttemptAt": "2026-10-08",
+        "result": "partial",
+        "note": "重新读取9月21日原新闻稿和当前IR可见列表；没有把重核日变成新业务日，SEC等渠道未覆盖。",
+        "checks": [
+          {
+            "id": "vnet-body-20261008",
+            "channel": "公司IR原文",
+            "url": "https://ir.vnet.com/news-releases/news-release-details/vnet-announces-closing-previously-announced-strategic-investment",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "完整读取交割新闻稿：两家买方向原股东受让股份，非发行人增发。"
+          },
+          {
+            "id": "vnet-list-20261008",
+            "channel": "公司IR列表",
+            "url": "https://ir.vnet.com/news-events/press-releases",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "可见2026年条目最新9月21日，未完成全部法定披露渠道覆盖。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "bdx-purwakarta-permits",
+      "title": "BDx Purwakarta 项目许可与冷却用水审查",
+      "type": "risk",
+      "companyIds": [
+        "bdx"
+      ],
+      "participants": [
+        {
+          "companyId": "bdx",
+          "role": "项目主体"
+        }
+      ],
+      "regions": [
+        "印尼"
+      ],
+      "priority": 0,
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "西爪哇 Bappeda 报道，Purwakarta 政府于 10 月 5 日就 Jatiluhur 的 BDx AI 数据中心召集相关部门讨论 AMDAL 环评、PBG 建筑审批和冷却用水。地方政府要求进一步检验供水论证并继续讨论；该消息属于停工后的审查进展，不是许可获批、复工或新增投运公告。",
+      "basisMilestoneIds": [
+        "historical-node"
+      ],
+      "latestVerifiedMilestoneId": "historical-node",
+      "uncertainties": [
+        "沿用一期核查证据；尚未进行本轮专项核查。"
+      ],
+      "milestones": [
+        {
+          "id": "historical-node",
+          "title": "BDx Purwakarta 项目许可与冷却用水审查",
+          "summary": "西爪哇 Bappeda 报道，Purwakarta 政府于 10 月 5 日就 Jatiluhur 的 BDx AI 数据中心召集相关部门讨论 AMDAL 环评、PBG 建筑审批和冷却用水。地方政府要求进一步检验供水论证并继续讨论；该消息属于停工后的审查进展，不是许可获批、复工或新增投运公告。",
+          "occurredAt": null,
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "purwakarta-bdx-water-review-20261007",
+          "evidenceRefs": [
+            {
+              "reportId": "purwakarta-bdx-water-review-20261007",
+              "locator": "一期记录所核公告正文，具体范围见资料核查说明",
+              "role": "主证据"
+            }
+          ]
+        },
+        {
+          "id": "media-suspension",
+          "title": "媒体报道项目暂停施工",
+          "summary": "沿用一期媒体线索；不作为独立的官方许可结论。",
+          "occurredAt": null,
+          "isProgress": false,
+          "verificationLevel": "media",
+          "primaryEvidenceReportId": "wmedia-bdx-permits-20261001",
+          "evidenceRefs": [
+            {
+              "reportId": "wmedia-bdx-permits-20261001",
+              "locator": "报道及一期核查说明",
+              "role": "历史报道"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "lastAttemptAt": null,
+        "result": "not-checked",
+        "note": "沿用一期历史成功证据，不能代表后续渠道已检查。",
+        "checks": []
+      }
+    },
+    {
+      "id": "hec-chindata-platform-acquisition",
+      "title": "前序交易 A：合资平台收购秦淮中国业务",
+      "type": "acquisition",
+      "companyIds": [
+        "hec"
+      ],
+      "participants": [
+        {
+          "companyId": "hec",
+          "role": "东数一号参股股东、增资参与方"
+        },
+        {
+          "name": "东数一号 / 东数三号",
+          "role": "合资平台及实际收购主体"
+        },
+        {
+          "name": "秦淮数据中国业务",
+          "role": "被收购业务主体100%股权"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "priority": 70,
+      "visibility": "active",
+      "relatedEventIds": [
+        "hec-chindata-listed-reorganization"
+      ],
+      "currentSummary": "东数一号通过东数三号收购秦淮数据中国业务100%股权。上市公司为东数一号参股股东；公告称现金价款已支付、交割完成，交割后事项仍待办理。",
+      "milestones": [
+        {
+          "id": "platform-closing",
+          "title": "平台收购披露交割完成",
+          "summary": "东数一号通过东数三号收购秦淮数据中国业务100%股权。上市公司为东数一号参股股东；公告称现金价款已支付、交割完成，交割后事项仍待办理。",
+          "occurredAt": null,
+          "isProgress": true,
+          "verificationLevel": "disclosure-paper",
+          "primaryEvidenceReportId": "hec-platform-closing-20260117",
+          "evidenceRefs": [
+            {
+              "reportId": "hec-platform-closing-20260117",
+              "locator": "临2026-04号：一、概述；二、交易进展",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "latestVerifiedMilestoneId": "platform-closing",
+      "basisMilestoneIds": [
+        "platform-closing"
+      ],
+      "uncertainties": [
+        "前序交易的完成不能作为后续上市公司发行股份重组已完成的证据。",
+        "原公告同时保留交割后待办事项；本轮未取得这些事项全部办结的依据。"
+      ],
+      "review": {
+        "lastAttemptAt": "2026-10-08",
+        "result": "partial",
+        "note": "只完成所列单篇正文和可见列表的有限检查；较新附件及完整审核文件未取得，不声称已覆盖至今天。",
+        "checks": [
+          {
+            "id": "hec-paper-jan-20261008",
+            "channel": "法定披露报纸",
+            "url": "https://paper.cnstock.com/html/2026-01/17/content_2170999.htm",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读到临2026-04号交割公告正文，属于前序合资平台收购。"
+          },
+          {
+            "id": "hec-paper-mar-20261008",
+            "channel": "法定披露报纸",
+            "url": "https://paper.cnstock.com/html/2026-03/07/content_2186269.htm",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读到临2026-12号预案及风险提示文字；版面其他公告及图片表格未全部核查。"
+          },
+          {
+            "id": "hec-paper-sep-20261008",
+            "channel": "法定披露报纸",
+            "url": "https://paper.cnstock.com/html/2026-09/23/content_2272066.htm",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读到临2026-97、98号问询回复及修订提示正文；修订表格未解析，未取得完整回复和报告书。"
+          },
+          {
+            "id": "hec-oct-pdf-20261008",
+            "channel": "上交所较新附件线索",
+            "url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-01/600673_20261001_8MLQ.pdf",
+            "attemptedAt": "2026-10-08",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "两次访问均未取得附件正文，不能据文件路径确认日期、标题或批准事项。"
+          },
+          {
+            "id": "hec-sse-list-20261008",
+            "channel": "上交所公告目录",
+            "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=600673",
+            "attemptedAt": "2026-10-08",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "当前读取工具不能打开目录；未完成执行日公告全覆盖。"
+          },
+          {
+            "id": "hec-ir-20261008",
+            "channel": "公司公告栏目",
+            "url": "https://www.hec-al.com/sys-nr/?g=40",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "可见列表最新至7月21日；不能据此排除后续新披露。"
+          },
+          {
+            "id": "hec-media-20261008",
+            "channel": "财联社线索",
+            "url": "https://www.cls.cn/detail/2496442",
+            "attemptedAt": "2026-10-08",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "返回空白文本，未取得消息正文。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hec-chindata-listed-reorganization",
+      "title": "重点交易 B：上市公司拟发行股份收购东数一号相关权益",
+      "type": "acquisition",
+      "companyIds": [
+        "hec"
+      ],
+      "participants": [
+        {
+          "companyId": "hec",
+          "role": "拟发行股份购买资产并募集配套资金的上市公司"
+        },
+        {
+          "name": "东数一号相关权益",
+          "role": "拟直接及间接取得合计70%权益的标的"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "priority": 100,
+      "visibility": "active",
+      "relatedEventIds": [
+        "hec-chindata-platform-acquisition"
+      ],
+      "currentSummary": "已核至9月23日问询回复与修订提示。该日文字仍称待证券审核与注册；较新线索待核，当前核查不完整，不能确认此后审批或交割状态。",
+      "milestones": [
+        {
+          "id": "board-plan",
+          "title": "董事会审议重组预案",
+          "summary": "3月6日董事会审议重组预案，拟以发行股份方式取得东数一号直接及间接合计70%股权并配套募资。此为后续上市公司重组，与前序平台收购分开记录。",
+          "occurredAt": "2026-03-06",
+          "isProgress": true,
+          "verificationLevel": "disclosure-paper",
+          "primaryEvidenceReportId": "hec-reorganization-plan-20260307",
+          "evidenceRefs": [
+            {
+              "reportId": "hec-reorganization-plan-20260307",
+              "locator": "临2026-12号第一、三节",
+              "role": "主证据"
+            }
+          ]
+        },
+        {
+          "id": "reply-and-revision",
+          "title": "披露问询回复及报告书修订提示",
+          "summary": "公司披露重组问询回复及报告书修订提示，仍拟取得东数一号直接及间接合计70%权益。该日公告文字称尚需上交所审核通过及证监会同意注册；不代表执行日所有审批状态。",
+          "occurredAt": null,
+          "isProgress": true,
+          "verificationLevel": "disclosure-paper",
+          "primaryEvidenceReportId": "hec-reorganization-reply-20260923",
+          "evidenceRefs": [
+            {
+              "reportId": "hec-reorganization-reply-20260923",
+              "locator": "临2026-97、98号正文；图片表格及完整附件未读",
+              "role": "主证据"
+            }
+          ]
+        },
+        {
+          "id": "newer-attachment-pending",
+          "title": "较新附件线索待核",
+          "summary": "较新附件正文未取得，不能确认其文件身份、披露日期或具体审批结论。仅保留为专项核查线索，不计正式资料或已核进展。",
+          "occurredAt": null,
+          "isProgress": false,
+          "verificationLevel": "pending",
+          "primaryEvidenceReportId": "hec-reorganization-newer-attachment-pending",
+          "evidenceRefs": [
+            {
+              "reportId": "hec-reorganization-newer-attachment-pending",
+              "locator": "任务书提供附件路径；未取得正文",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "latestVerifiedMilestoneId": "reply-and-revision",
+      "basisMilestoneIds": [
+        "reply-and-revision"
+      ],
+      "uncertainties": [
+        "较新线索待核／核查不完整：10月附件正文、完整回复及修订报告书未取得。",
+        "证券审核及注册：仅有9月23日尚需履行的文字；此后结论待核。",
+        "反垄断：较新线索未核，不能确认审批结论，也不能推导其他程序完成。",
+        "股权登记、实际交割及配套募资：尚未取得后续完成证据，分别待核。"
+      ],
+      "review": {
+        "lastAttemptAt": "2026-10-08",
+        "result": "partial",
+        "note": "只完成所列单篇正文和可见列表的有限检查；较新附件及完整审核文件未取得，不声称已覆盖至今天。",
+        "checks": [
+          {
+            "id": "hec-paper-jan-20261008",
+            "channel": "法定披露报纸",
+            "url": "https://paper.cnstock.com/html/2026-01/17/content_2170999.htm",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读到临2026-04号交割公告正文，属于前序合资平台收购。"
+          },
+          {
+            "id": "hec-paper-mar-20261008",
+            "channel": "法定披露报纸",
+            "url": "https://paper.cnstock.com/html/2026-03/07/content_2186269.htm",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读到临2026-12号预案及风险提示文字；版面其他公告及图片表格未全部核查。"
+          },
+          {
+            "id": "hec-paper-sep-20261008",
+            "channel": "法定披露报纸",
+            "url": "https://paper.cnstock.com/html/2026-09/23/content_2272066.htm",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读到临2026-97、98号问询回复及修订提示正文；修订表格未解析，未取得完整回复和报告书。"
+          },
+          {
+            "id": "hec-oct-pdf-20261008",
+            "channel": "上交所较新附件线索",
+            "url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-01/600673_20261001_8MLQ.pdf",
+            "attemptedAt": "2026-10-08",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "两次访问均未取得附件正文，不能据文件路径确认日期、标题或批准事项。"
+          },
+          {
+            "id": "hec-sse-list-20261008",
+            "channel": "上交所公告目录",
+            "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/?productId=600673",
+            "attemptedAt": "2026-10-08",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "当前读取工具不能打开目录；未完成执行日公告全覆盖。"
+          },
+          {
+            "id": "hec-ir-20261008",
+            "channel": "公司公告栏目",
+            "url": "https://www.hec-al.com/sys-nr/?g=40",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "可见列表最新至7月21日；不能据此排除后续新披露。"
+          },
+          {
+            "id": "hec-media-20261008",
+            "channel": "财联社线索",
+            "url": "https://www.cls.cn/detail/2496442",
+            "attemptedAt": "2026-10-08",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "返回空白文本，未取得消息正文。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "xingyun-vf-server-sale",
+      "title": "深圳行云：VF客户服务器销售合同已交付验收",
+      "type": "contract",
+      "companyIds": [
+        "xingyun"
+      ],
+      "participants": [
+        {
+          "companyId": "xingyun",
+          "role": "合同相关上市公司"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "priority": 75,
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "深圳行云向VF客户销售算力服务器，含税金额23,920万元；公司公告称已完成交付及验收。不能据此认定全部回款或确认等额收入。",
+      "milestones": [
+        {
+          "id": "disclosure",
+          "title": "深圳行云：VF客户服务器销售合同已交付验收",
+          "summary": "深圳行云向VF客户销售算力服务器，含税金额23,920万元；公司公告称已完成交付及验收。不能据此认定全部回款或确认等额收入。",
+          "occurredAt": null,
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "xingyun-vf-server-sale-20260930",
+          "evidenceRefs": [
+            {
+              "reportId": "xingyun-vf-server-sale-20260930",
+              "locator": "第1页特别提示、第2页第四节",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "latestVerifiedMilestoneId": "disclosure",
+      "basisMilestoneIds": [
+        "disclosure"
+      ],
+      "uncertainties": [
+        "实际交付、验收的具体日期和全部回款情况未单列。",
+        "仅核所列原公告及官网目录当前可见页，未完成全部渠道至执行日的区间核查。"
+      ],
+      "review": {
+        "lastAttemptAt": "2026-10-08",
+        "result": "partial",
+        "note": "读到原PDF全文文本；官网页面日期与PDF落款分别保留。",
+        "checks": [
+          {
+            "id": "xingyun-vf-server-sale-20261008",
+            "channel": "公司官网原PDF",
+            "url": "https://static.xingyuntech.com.cn/portal-cms/files/568af03571b5a67a103b01a0997b227916b4ae947c0eeba345916465524b68ef.pdf",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取公告2026-127号全文文本；实际事项日期未单列。"
+          },
+          {
+            "id": "xingyun-list-20261008",
+            "channel": "公司披露列表",
+            "url": "https://www.xingyuntech.com.cn/disclosure",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取当前可见第一页10条，最新显示9月30日；其他4页及法定渠道未完整覆盖。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "xingyun-ve-compute-rental",
+      "title": "湘树云：VE客户五年智算租赁合同",
+      "type": "contract",
+      "companyIds": [
+        "xingyun"
+      ],
+      "participants": [
+        {
+          "companyId": "xingyun",
+          "role": "合同相关上市公司"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "priority": 85,
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "湘树云与VE客户签署五年智算服务合同，含税总额87,168万元。原文为接收验收中、预计9月30日前交付；尚未取得实际交付完成的后续依据。",
+      "milestones": [
+        {
+          "id": "disclosure",
+          "title": "湘树云：VE客户五年智算租赁合同",
+          "summary": "湘树云与VE客户签署五年智算服务合同，含税总额87,168万元。原文为接收验收中、预计9月30日前交付；尚未取得实际交付完成的后续依据。",
+          "occurredAt": null,
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "xingyun-ve-rental-20260928",
+          "evidenceRefs": [
+            {
+              "reportId": "xingyun-ve-rental-20260928",
+              "locator": "第1页合同签署、第3页第四节",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "latestVerifiedMilestoneId": "disclosure",
+      "basisMilestoneIds": [
+        "disclosure"
+      ],
+      "uncertainties": [
+        "预计交付日已经过去不等于已交付；验收、收入与回款的后续情况待核。",
+        "仅核所列原公告及官网目录当前可见页，未完成全部渠道至执行日的区间核查。"
+      ],
+      "review": {
+        "lastAttemptAt": "2026-10-08",
+        "result": "partial",
+        "note": "读到原PDF全文文本；官网页面日期与PDF落款分别保留。",
+        "checks": [
+          {
+            "id": "xingyun-ve-compute-rental-20261008",
+            "channel": "公司官网原PDF",
+            "url": "https://static.xingyuntech.com.cn/portal-cms/files/bc2e5476277de7c3c3d3f7a553079cf9330bb2d2df59663f843272a78bdee49b.pdf",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取公告2026-125号全文文本；实际事项日期未单列。"
+          },
+          {
+            "id": "xingyun-list-20261008",
+            "channel": "公司披露列表",
+            "url": "https://www.xingyuntech.com.cn/disclosure",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取当前可见第一页10条，最新显示9月30日；其他4页及法定渠道未完整覆盖。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "xingyun-sa-compute-procurement",
+      "title": "行云科技：SA供应商算力采购框架新增合同",
+      "type": "contract",
+      "companyIds": [
+        "xingyun"
+      ],
+      "participants": [
+        {
+          "companyId": "xingyun",
+          "role": "合同相关上市公司"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "priority": 75,
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "公司在128套采购框架下新增43套算力服务合同，含税45,313.98万元。累计签约75套；剩余53套仍为意向，不应将128套写成全部采购或交付。",
+      "milestones": [
+        {
+          "id": "disclosure",
+          "title": "行云科技：SA供应商算力采购框架新增合同",
+          "summary": "公司在128套采购框架下新增43套算力服务合同，含税45,313.98万元。累计签约75套；剩余53套仍为意向，不应将128套写成全部采购或交付。",
+          "occurredAt": null,
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "xingyun-sa-procurement-20260928",
+          "evidenceRefs": [
+            {
+              "reportId": "xingyun-sa-procurement-20260928",
+              "locator": "第1页第一节、第3—4页第五节",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "latestVerifiedMilestoneId": "disclosure",
+      "basisMilestoneIds": [
+        "disclosure"
+      ],
+      "uncertainties": [
+        "新签合同不证明全部交付验收；后续采购、履约与续约仍有不确定性。",
+        "仅核所列原公告及官网目录当前可见页，未完成全部渠道至执行日的区间核查。"
+      ],
+      "review": {
+        "lastAttemptAt": "2026-10-08",
+        "result": "partial",
+        "note": "读到原PDF全文文本；官网页面日期与PDF落款分别保留。",
+        "checks": [
+          {
+            "id": "xingyun-sa-compute-procurement-20261008",
+            "channel": "公司官网原PDF",
+            "url": "https://static.xingyuntech.com.cn/portal-cms/files/2c5fda64a8bf4e7f322eea6e445258d51bf0514e86f6afac1771eafd0e2603a1.pdf",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取公告2026-124号全文文本；实际事项日期未单列。"
+          },
+          {
+            "id": "xingyun-list-20261008",
+            "channel": "公司披露列表",
+            "url": "https://www.xingyuntech.com.cn/disclosure",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取当前可见第一页10条，最新显示9月30日；其他4页及法定渠道未完整覆盖。"
+          }
+        ]
+      }
+    }
+  ]
 }
