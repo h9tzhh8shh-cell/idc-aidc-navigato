@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "title": "IDC/AIDC 与算力租赁数据导航",
-  "maintainedAt": "2026-10-04",
+  "maintainedAt": "2026-10-08",
   "categories": [
     {
       "id": "rental-prices",
@@ -85,7 +85,7 @@
       "frequency": "daily",
       "frequencyNote": "行情栏目明确标注每工作日 11:30 前更新；各价格点仍应核对原站日期。",
       "access": "free",
-      "accessNote": "本次可直接读取公开行情表。历史序列、专业终端和下载权限未作确认，需到原站查看。",
+      "accessNote": "2026-10-04 曾直接读取公开行情表；2026-10-08 请求超时，未确认最新报价。历史序列、专业终端与下载权限仍需到原站查看。",
       "entryUrl": "https://aidc.smm.cn/price",
       "entryType": "栏目",
       "methodologyUrl": "https://news.smm.cn/gonggao/103970493",
@@ -96,9 +96,9 @@
       ],
       "featured": true,
       "verifiedAt": "2026-10-04",
-      "verificationStatus": "verified",
-      "verificationNote": "已读取 /price 公开栏目正文，确认卡型、地区、周期、价格单位及更新说明；初始首页超时，改用同站可读行情栏目。方法公告未能提取正文。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationStatus": "unreachable",
+      "verificationNote": "2026-10-08 重试 /price 行情栏目超时，未读取本轮价格；保留 2026-10-04 成功读取公开表的历史日期。方法公告本轮亦未取得正文。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "smm-weekly",
@@ -153,9 +153,9 @@
       ],
       "featured": false,
       "verifiedAt": null,
-      "verificationStatus": "partial",
-      "verificationNote": "两次打开栏目均超时，独立 HTTPS 请求也失败；搜索收录可见产品介绍、试读目录及 W35/W36 列表，未读到订阅周报原文。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationStatus": "unreachable",
+      "verificationNote": "2026-10-08 重试产品栏目超时；旧公开周评链接仍为空正文。既有搜索线索保留，未取得最新一期目录或订阅全文。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "mysteel-computing",
@@ -212,9 +212,9 @@
       ],
       "featured": true,
       "verifiedAt": null,
-      "verificationStatus": "partial",
-      "verificationNote": "栏目与发布公告均返回 HTTP 411；独立 HTTPS 请求失败。搜索收录可见完整发布说明线索，但不将其视为已读原文。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationStatus": "unreachable",
+      "verificationNote": "2026-10-08 重试栏目超时，发布公告返回 HTTP 411；先前搜索收录线索保留，未读取最新价格或公告正文。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "ornn-gpu",
@@ -258,19 +258,20 @@
       "frequencyNote": "预览页提供日结价；方法说明以一小时交易窗口计算，完整历史及小时粒度按产品权限提供。",
       "access": "mixed",
       "accessNote": "预览页说明最新值及四类 GPU 三个月日度历史可免账户读取；全历史、小时粒度和 CSV 导出等需订阅。",
-      "entryUrl": "https://data.ornn.com/preview",
+      "entryUrl": "https://data.ornn.com/",
       "entryType": "栏目",
       "methodologyUrl": "https://data.ornn.com/methodology",
       "caveats": [
         "仅覆盖贡献者网络中的按需实际租赁，排除预留容量、长期和远期合同。",
         "方法采用按交易量加权并缩尾处理；贡献者名单和缩尾参数未全部公开。",
-        "公开预览日结值与小时粒度数据的发布时间不同，使用时核对时间戳。"
+        "公开预览日结值与小时粒度数据的发布时间不同，使用时核对时间戳。",
+        "当前入口为动态页面，本轮日结快照不代表今后打开时的价格；历史曲线及 API 本轮未验证。"
       ],
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取预览页和方法说明全文；确认按需成交口径、币种单位、免费范围与订阅限制。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationNote": "已读取重定向后的官方首页和 OCPI 方法全文；日结表为 2026-10-07，页面更新于 20:00 UTC（北京时间 10 月 8 日 04:00）。图表提示无可用数据，未核实历史曲线或 API。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "semianalysis-gpu",
@@ -322,10 +323,10 @@
         "公开合同价格为第 25—75 百分位区间；三个月以上条款含预付款假设，不能与无预付款报价直接比较。"
       ],
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取指数页的方法摘要、历史表和官方数据产品页；未验证动态图表实际刷新或付费底层序列。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationNote": "2026-10-08 读取公开方法和历史静态表；最新价格组件停留在加载提示，未核实动态现价。表内 2026 年 3—4 月所属期不能当作本轮报价。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "nda-capacity",
@@ -372,10 +373,10 @@
         "全国总规模、枢纽节点占比与监测平台接入量是不同分母和范围。"
       ],
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取新闻动态栏目和 2026-04-30 阶段性披露文章；初始机构首页无可提取正文，改用可读持续栏目。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationNote": "2026-10-08 已读取新闻动态目录并检查维护窗口内条目；未确认新增可收录的全国算力统计发布。旧报告成功日期未随目录复查刷新。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "cbre-datacenter",
@@ -429,10 +430,10 @@
         "全球报告的价格图比较 250—500 kW 容量需求；地区、交付条件与样本市场会影响可比性。"
       ],
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取数据中心研究栏目和 Global Data Center Trends 2026 正文，确认发布日期及主要数据所属期为 2026 年第一季度。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationNote": "2026-10-08 已读取数据中心研究目录；可见全球 2026、北美 H1 2026、欧洲 Q2 2026 等版本，未确认 10 月 5—8 日新发布的定期报告。本轮未重读旧报告全文。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "gds-quarterly",
@@ -484,10 +485,10 @@
         "不能与 VNET 的 MW 或机柜分母直接横向比较；调整后 EBITDA 属非 GAAP 指标。"
       ],
       "featured": true,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取季度栏目及从栏目进入的 2026 年第二季度业绩 PDF，核对发布日期与利用率定义。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationNote": "2026-10-08 已读取官方季度业绩目录，2026 年可见 Q1/Q2；未确认新一季发布。旧 Q2 PDF 的核查日期保留，不以目录复查代替重读全文。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "vnet-quarterly",
@@ -542,10 +543,10 @@
         "与 GDS 的面积口径不同，上架率仅作为检索别名。"
       ],
       "featured": true,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取季度栏目及 2026 年第二季度业绩 PDF，并核对批发/零售单位和分母脚注。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationNote": "2026-10-08 已读取官方季度业绩目录，最新可确认季度仍为 2026 Q2；未确认新一季发布，旧 Q2 PDF 的成功核查日期保留。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "nea-electricity",
@@ -595,10 +596,10 @@
         "注意单月与累计及亿千瓦时单位；首页新闻发布栏目在本次工具中未返回可核对的列表正文，暂保留机构首页。"
       ],
       "featured": true,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取机构首页及 2026 年 8 月用电原文；尝试新闻发布栏目仅返回标题，故保留并标识机构首页。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationNote": "2026-10-08 已读取官网公开新闻列表，仍可见 2026 年 8 月及 1—8 月用电资料；维护窗口内未确认新的月度用电发布。未把重刊日期改写为既有文章发布日期。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "synergy-cloud",
@@ -649,13 +650,14 @@
       "caveats": [
         "云基础设施口径包括 IaaS、PaaS 和托管私有云，不等于 GPU 算力租赁市场。",
         "市场份额和地区增速必须保持同一范围、币种及统计期；预测不作已实现数据。",
-        "栏目还包含其他云与数据中心专题，需按标题筛选研究范围。"
+        "栏目还包含其他云与数据中心专题，需按标题筛选研究范围。",
+        "2026-10-05 预测合并云基础设施、SaaS、社交媒体和搜索；不能与单独云基础设施收入直接比较，也不是 GPU 租赁市场规模。"
       ],
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取机构首页、新闻列表和 2026 年第二季度云市场新闻稿；以可持续浏览的新闻栏目替换机构首页。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationNote": "已读取新闻目录与 2026-10-05 云及数字服务预测原稿；这是包含云基础设施、SaaS、社交媒体和搜索的合计市场，不等于既有云基础设施季度数据。未访问订阅数据库。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "idc-server",
@@ -711,10 +713,10 @@
         "原文的加速器分类按出厂嵌入等规则划分，用户后加加速器的服务器可能归为非加速。"
       ],
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取服务器市场栏目及 2026 年第二季度新闻稿，核对发布时间和原文分类说明；栏目展示季度与新闻稿并不总是同步。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationNote": "2026-10-08 已读取服务器栏目，页面仍展示 Q1 2026 等历史内容；目录与单独季度新闻稿不同步，未确认维护窗口内新增发布，不据栏目倒退替换已收录的 Q2 新闻稿。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "kz-market",
@@ -764,10 +766,10 @@
         "未来市场规模为预测，应与历史实际值分开。"
       ],
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取科智洞察栏目和 2026 年 6 月 15 日文章，确认其讨论 2025 年传统 IDC 市场；完整研究未验证。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationNote": "2026-10-08 已读取洞察目录并核对 2026 年中国第三方算力中心服务商报告介绍（7 月 1 日）；不属于本轮时间窗口，未重复补录，也未取得完整报告。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "caict-computing",
@@ -819,8 +821,8 @@
       "featured": false,
       "verifiedAt": null,
       "verificationStatus": "unreachable",
-      "verificationNote": "2026-10-04 打开官方专题目录返回 Internal Error；官方 PDF 亦重复失败。搜索结果可确认报告题名及部分摘要，不能视为成功读取原文。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationNote": "2026-10-08 重试官方专题目录及既有 AI 计算节点 PDF 仍失败/超时；仅保留此前检索线索，未确认新报告或全文。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "id": "nda-digital-china",
@@ -870,18 +872,18 @@
         "报告含历史事实和未来展望；统计年度不等于网页发布日期。"
       ],
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取年度报告专栏、2026 年 6 月 8 日全文发布页及其 52 页 PDF；以年度报告专栏替换机构首页。",
-      "lastCheckAttemptAt": "2026-10-04"
+      "verificationNote": "2026-10-08 已读取年度报告专栏，最新可确认仍为《数字中国发展报告（2025年）》全文发布页（6 月 8 日）；未确认新版，未重读旧 PDF。",
+      "lastCheckAttemptAt": "2026-10-08"
     },
     {
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "lastCheckAttemptAt": "2026-10-04",
+      "lastCheckAttemptAt": "2026-10-08",
       "subscriptionUrl": null,
       "id": "dcd-southeast-asia",
       "name": "DCD 东南亚数据中心新闻",
@@ -944,15 +946,15 @@
         "区域列表可能混入东南亚以外的新闻，需逐篇确认所在地。",
         "媒体引用的计划容量、投资意向和签约容量不能直接作为已投运规模。"
       ],
-      "verificationNote": "已读取东南亚新闻列表及近期条目日期，确认持续更新；未将媒体报道等同于项目官方确认。"
+      "verificationNote": "2026-10-08 已读取东南亚新闻列表及 10 月 6 日 DayOne IPO 报道，并追溯至 SEC 10 月 5 日 F-1 原文；目录采用公司申报原文，未再新增同事件媒体条目。"
     },
     {
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "lastCheckAttemptAt": "2026-10-04",
+      "lastCheckAttemptAt": "2026-10-08",
       "subscriptionUrl": "https://w.media/subscribe/",
       "id": "wmedia-sea",
       "name": "w.media 东南亚",
@@ -1016,15 +1018,15 @@
         "部分文章转述其他媒体、访谈或企业新闻稿，应保留原始信息出处。",
         "法规提议不等于生效法规；计划投资不等于已落实订单或已投运容量。"
       ],
-      "verificationNote": "已读取东南亚栏目、订阅入口和本次四篇文章正文及发布日期；项目批文、许可决定和法案原文未逐项独立核实。"
+      "verificationNote": "初次直达东南亚栏目失败，沿 w.media 首页 SEA 导航重试后读到目录；复读越南 Stavian、菲律宾 Globe、印尼 BDx 和泰国法案四篇正文。按文章绝对发布日期去重，不采用列表相对时间推断新增。"
     },
     {
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "lastCheckAttemptAt": "2026-10-04",
+      "lastCheckAttemptAt": "2026-10-08",
       "subscriptionUrl": "https://cloud.comm.cushmanwakefield.com/apacdatacentres-subscribe",
       "id": "cushman-apac-datacenter",
       "name": "Cushman & Wakefield 亚太数据中心半年报告",
@@ -1087,15 +1089,15 @@
         "在运、在建和规划容量必须分列，规划不代表已取得全部条件。",
         "本次核查公开摘要，未验证完整报告的所有图表与口径。"
       ],
-      "verificationNote": "已读取 2026 H1 页面摘要、市场名单、历史 H1/H2 版本及订阅入口；完整报告正文尚未核查。"
+      "verificationNote": "2026-10-08 已读取官方页面的 H1 2026 公开摘要、市场名单及历史版本；未确认 H2 新版或明确发布日期，未取得完整报告，报告条目仍为部分核查。"
     },
     {
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "lastCheckAttemptAt": "2026-10-04",
+      "lastCheckAttemptAt": "2026-10-08",
       "subscriptionUrl": null,
       "id": "dcbyte-global-index",
       "name": "DC Byte 全球数据中心指数",
@@ -1155,15 +1157,15 @@
         "公开介绍不能代替完整报告和数据库，市场排名与容量口径应以当期方法为准。",
         "早期规划、已承诺、在建和在运属于不同阶段，不可合并解释为可用容量。"
       ],
-      "verificationNote": "已读取指数栏目及 2026 年版公开介绍、发布日期和报告范围；未读取完整报告或付费数据库。"
+      "verificationNote": "2026-10-08 已读取指数目录和 2026 年版公开介绍（2026-07-27），未确认新版本；全文和底层数据库尚未取得，报告条目仍为部分核查。"
     },
     {
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
-      "verifiedAt": null,
-      "verificationStatus": "partial",
-      "lastCheckAttemptAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
+      "verificationStatus": "verified",
+      "lastCheckAttemptAt": "2026-10-08",
       "subscriptionUrl": null,
       "id": "tnb-quarterly",
       "name": "TNB 季度业绩与分析师资料",
@@ -1208,22 +1210,22 @@
       "trackingNote": "建议每季业绩发布后阅读数据中心和供电章节；重大供电合作可每周另查公司公告。",
       "subscriptionNote": "收藏季度资料入口；本次未确认该栏目可用的专属邮件订阅。",
       "access": "free",
-      "accessNote": "官方栏目检索可见公开季度业绩和分析师资料链接；本次未成功读取栏目正文或最新演示文件。",
-      "entryUrl": "https://www.tnb.com.my/listings/quarterly_results/",
+      "accessNote": "官方 Financial Info 公开列出财务报表及分析师材料链接；本轮核查到目录内容，具体 PDF 正文未逐份读取。",
+      "entryUrl": "https://www.tnb.com.my/suppliers-investors-media-relations/financial-info",
       "caveats": [
         "供电申请、签约负荷、接电容量和实际电量并非同一指标。",
         "发电功率、设施接入功率与数据中心 IT 负载不能直接互换。",
         "当前栏目访问超时，最新季度具体数据仍需下载原始材料核对。"
       ],
-      "verificationNote": "搜索收录确认官方季度资料入口及 2026 Q1/Q2 条目，直接打开仍超时；未将检索摘要标为已读全文。"
+      "verificationNote": "旧 quarterly_results 入口再次超时；已读取官网 Financial Info 栏目的 2026 Q1/Q2 财务及分析师材料列表，改用该可读入口。本轮仅核查目录，未读取各份演示/PDF，未确认 Q3。"
     },
     {
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
       "verifiedAt": "2026-10-04",
-      "verificationStatus": "verified",
-      "lastCheckAttemptAt": "2026-10-04",
+      "verificationStatus": "unreachable",
+      "lastCheckAttemptAt": "2026-10-08",
       "subscriptionUrl": null,
       "id": "singtel-nxera-results",
       "name": "Singtel / Nxera 经营与业绩资料",
@@ -1280,15 +1282,15 @@
         "Singtel 财年与自然年不同，需同时保留财季名称及截止日期。",
         "已签约、预留、可用和已投运容量不可混用；集团经营数字不等于 Nxera 单项业务数字。"
       ],
-      "verificationNote": "已确认官方财务资料入口，并读取 2026-08-13 季度经营更新 PDF 的季度说明及 Nxera 相关正文、演示内容；期间截至 2026-06-30。"
+      "verificationNote": "2026-10-08 财务目录仅返回标题，未取得可核查的当期列表，无法确认新增季度；保留 2026-10-04 已读取官方季度 PDF 的成功日期及原记录。"
     },
     {
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "lastCheckAttemptAt": "2026-10-04",
+      "lastCheckAttemptAt": "2026-10-08",
       "subscriptionUrl": null,
       "id": "dayone-news",
       "name": "DayOne 项目与合作公告",
@@ -1342,17 +1344,18 @@
       "entryUrl": "https://dayonedc.com/news",
       "caveats": [
         "运营商公告反映公司披露，投资意向和可研并不代表项目已获全部批准。",
-        "现场发电容量属于电力供应侧，不能记为数据中心 IT 容量。"
+        "现场发电容量属于电力供应侧，不能记为数据中心 IT 容量。",
+        "SEC 申报中的在运、在建、已取得电力条件土地、Bookings 和 Reservations 各有定义；IPO 申请及未来交付预计不等于已上市或项目投运。"
       ],
-      "verificationNote": "已读取公司新闻入口和 DayOne–TNB 现场发电合作公告，确认市场导航以及可研、正式协议和审批条件。"
+      "verificationNote": "新闻目录本轮未返回可用列表；已读取公司 DayOne–TNB 合作原文和 2026-10-05 SEC F-1 的封面、容量表及定义。核查对应公司原文，不能据此断言新闻目录无其他新增。"
     },
     {
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "lastCheckAttemptAt": "2026-10-04",
+      "lastCheckAttemptAt": "2026-10-08",
       "subscriptionUrl": null,
       "id": "sttgdc-news",
       "name": "STTGDC 数据中心新闻室",
@@ -1413,15 +1416,15 @@
         "新闻室的历史国家覆盖不代表当前各国都存在相同规模的在营业务。",
         "获选开发、融资完成、封顶及投运是不同里程碑，不能按新闻标题重复计入新增供给。"
       ],
-      "verificationNote": "已读取新闻室和 2026-08-21 新加坡开发公告；入选 DC-CFA2 的开发容量未标为已投运。"
+      "verificationNote": "2026-10-08 已读取新闻室列表，可见 9 月 2 日及 8 月 21 日等公告；维护窗口内未确认新增相关项目公告，既有新加坡 50MW 开发公告未改为投运。"
     },
     {
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "lastCheckAttemptAt": "2026-10-04",
+      "lastCheckAttemptAt": "2026-10-08",
       "subscriptionUrl": null,
       "id": "mida-media",
       "name": "马来西亚 MIDA 投资公告",
@@ -1471,15 +1474,15 @@
         "批准投资、承诺投资和实际资本支出不是同一口径。",
         "宏观投资促进政策不保证某一具体项目已完成土地、供电和建设许可。"
       ],
-      "verificationNote": "已读取媒体发布栏目及 2026-09-14 数据中心产业链相关新闻稿，确认栏目持续更新。"
+      "verificationNote": "2026-10-08 已读取官方媒体发布目录，可见 10 月 4 日活动及 9 月数据中心产业链公告；未确认 10 月 5—8 日新增的数据中心项目披露。"
     },
     {
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
       "verifiedAt": null,
-      "verificationStatus": "partial",
-      "lastCheckAttemptAt": "2026-10-04",
+      "verificationStatus": "unreachable",
+      "lastCheckAttemptAt": "2026-10-08",
       "subscriptionUrl": null,
       "id": "imda-datacenter-policy",
       "name": "新加坡 IMDA 政策与新闻发布",
@@ -1528,15 +1531,15 @@
         "遴选额度和开发资格不等于现有投运容量。",
         "本次未读取栏目正文，具体政策版本、日期及适用条件需在原站复核。"
       ],
-      "verificationNote": "已确认官方发布入口，但此次直接打开返回 JavaScript 验证页面，未读取新闻目录正文；不记成功核查日期。"
+      "verificationNote": "2026-10-08 官方发布入口仍返回 JavaScript/机器人验证页面，未取得新闻列表正文；不能据此认定没有新政策。新加坡本轮另收录 MDDI 官方国会答复。"
     },
     {
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "lastCheckAttemptAt": "2026-10-04",
+      "lastCheckAttemptAt": "2026-10-08",
       "subscriptionUrl": null,
       "id": "thailand-boi-news",
       "name": "泰国 BOI 官方新闻稿",
@@ -1586,7 +1589,171 @@
         "BOI 投资促进批准不等于取得全部建设、环境和电力许可。",
         "官网也有外部媒体转载栏目，引用时应区分 BOI 原发新闻稿与其他机构报道。"
       ],
-      "verificationNote": "已读取官网并沿 Press Releases 链接确认官方新闻稿入口为 page=press_releases2；原计划链接 page=press_releases 展示其他机构新闻。"
+      "verificationNote": "2026-10-08 已读取官方新闻目录；10 月 7 日日本投资及 10 月 5 日签证等条目不作为数据中心新增收录。数据中心申报程序变化另按 ERC 10 月 5 日澄清及 BOI S.3/2569 原件建条目。"
+    },
+    {
+      "id": "singapore-mddi-news",
+      "name": "新加坡 MDDI 政策与国会答复",
+      "organization": "新加坡数码发展及新闻部（MDDI）",
+      "categoryIds": [
+        "market-technology",
+        "capacity-construction"
+      ],
+      "purpose": "跟踪新加坡数字政策、数据中心相关国会答复及算力供给约束。",
+      "questions": [
+        "AI 芯片与远程算力限制如何影响新加坡数据中心？",
+        "官方答复是影响监测、政策提案还是正式实施措施？"
+      ],
+      "metrics": [
+        "政策发布日期",
+        "适用范围",
+        "政策实施阶段"
+      ],
+      "aliases": [
+        "MDDI",
+        "Ministry of Digital Development and Information",
+        "AI 芯片出口管制"
+      ],
+      "tags": [
+        "东南亚专题",
+        "政策",
+        "官方发布"
+      ],
+      "regions": [
+        "新加坡"
+      ],
+      "entryUrl": "https://www.mddi.gov.sg/newsroom/",
+      "caveats": [
+        "国会答复中的监测和研究措施不等于已发布新规；政策适用条件以正式文件为准。"
+      ],
+      "verificationNote": "已读取官方新闻室及 2026-10-06 国会书面答复正文；页面最后更新时间与答复发布日期分开。",
+      "sourceType": "government",
+      "frequency": "irregular",
+      "frequencyNote": "按官方公告及事件不定期发布，不假定固定报告周期。",
+      "access": "free",
+      "accessNote": "本次相关公开栏目和公告可读取；未访问非公开申报材料。",
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": "2026-10-08",
+      "verificationStatus": "verified",
+      "lastCheckAttemptAt": "2026-10-08",
+      "trackingNote": "建议维护时检查新公告及既有事项后续；未设置自动监控。",
+      "subscriptionUrl": null,
+      "subscriptionNote": "未确认专门的数据中心订阅入口。"
+    },
+    {
+      "id": "west-java-bappeda-news",
+      "name": "印尼西爪哇 Bappeda 项目与地方政策",
+      "organization": "西爪哇省发展规划局（Bappeda Jabar）",
+      "categoryIds": [
+        "capacity-construction",
+        "activity-demand"
+      ],
+      "purpose": "跟踪西爪哇数据中心项目的地方审批、环境评估及供水协调。",
+      "questions": [
+        "项目是否取得建筑审批与环境评估文件？",
+        "冷却用水讨论是否形成批准或复工决定？"
+      ],
+      "metrics": [
+        "许可状态",
+        "环境评估阶段",
+        "供水论证",
+        "复工确认"
+      ],
+      "aliases": [
+        "Bappeda Jabar",
+        "Purwakarta",
+        "Jatiluhur",
+        "BDx",
+        "AMDAL",
+        "PBG"
+      ],
+      "tags": [
+        "东南亚专题",
+        "项目审批",
+        "用水",
+        "官方发布"
+      ],
+      "regions": [
+        "印尼"
+      ],
+      "entryUrl": "https://bappeda.jabarprov.go.id/category/berita-umum/",
+      "caveats": [
+        "地方政府沟通、技术论证与最终许可是不同阶段；没有正式复工确认时不推定已复工。",
+        "栏目列表可能滞后于具体文章，按文章绝对日期核对；供水估算不等于最终环境结论。"
+      ],
+      "verificationNote": "已读取官方栏目及 2026-10-07 Purwakarta 许可与供水讨论全文；文章署名来源为地方政府信息发布。",
+      "sourceType": "government",
+      "frequency": "irregular",
+      "frequencyNote": "按官方公告及事件不定期发布，不假定固定报告周期。",
+      "access": "free",
+      "accessNote": "本次相关公开栏目和公告可读取；未访问非公开申报材料。",
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": "2026-10-08",
+      "verificationStatus": "verified",
+      "lastCheckAttemptAt": "2026-10-08",
+      "trackingNote": "建议维护时检查新公告及既有事项后续；未设置自动监控。",
+      "subscriptionUrl": null,
+      "subscriptionNote": "未确认专门的数据中心订阅入口。"
+    },
+    {
+      "id": "thailand-erc-news",
+      "name": "泰国 ERC 电力监管公告",
+      "organization": "泰国能源监管委员会办公室（ERC）",
+      "categoryIds": [
+        "activity-demand",
+        "capacity-construction",
+        "market-technology"
+      ],
+      "purpose": "跟踪数据中心供电条件、能源监管及投资促进申报程序的官方澄清。",
+      "questions": [
+        "数据中心申报所需电力确认文件是否调整？",
+        "程序澄清、项目批准与实际接电如何区分？"
+      ],
+      "metrics": [
+        "申报条件",
+        "适用文件",
+        "监管程序",
+        "电力审批阶段"
+      ],
+      "aliases": [
+        "ERC",
+        "Energy Regulatory Commission",
+        "BOI",
+        "S.3/2569"
+      ],
+      "tags": [
+        "东南亚专题",
+        "电力",
+        "政策",
+        "官方发布"
+      ],
+      "regions": [
+        "泰国"
+      ],
+      "entryUrl": "https://www.erc.or.th/th/news-release/content",
+      "caveats": [
+        "投资促进申报程序变化不等于免除全部能源许可，也不证明任何具体项目已获批或接电。",
+        "泰历年份减 543 对应公历；新闻日期与附件上传日期分别核对。"
+      ],
+      "verificationNote": "已读取新闻目录、2026-10-05 澄清页及三页附件；首面为扫描件，渲染后目视核查，另核对附件中的 BOI S.3/2569。",
+      "sourceType": "government",
+      "frequency": "irregular",
+      "frequencyNote": "按官方公告及事件不定期发布，不假定固定报告周期。",
+      "access": "free",
+      "accessNote": "本次相关公开栏目和公告可读取；未访问非公开申报材料。",
+      "entryType": "栏目",
+      "methodologyUrl": null,
+      "featured": false,
+      "verifiedAt": "2026-10-08",
+      "verificationStatus": "verified",
+      "lastCheckAttemptAt": "2026-10-08",
+      "trackingNote": "建议维护时检查新公告及既有事项后续；未设置自动监控。",
+      "subscriptionUrl": null,
+      "subscriptionNote": "未确认专门的数据中心订阅入口。"
     }
   ],
   "reports": [
@@ -1600,8 +1767,8 @@
       "dataPeriod": null,
       "summary": "检索收录说明将成交价格指数与平台挂牌价分为不同系列；用于核对价格类型。正文尚待直接复核。",
       "verifiedAt": null,
-      "verificationStatus": "partial",
-      "verificationNote": "打开原文返回空正文，仅搜索收录可见标题与说明。检索显示 2026-06-25，但未将未直接确认的日期填为发布日期。"
+      "verificationStatus": "unreachable",
+      "verificationNote": "2026-10-08 重试原文超时；保留先前搜索线索，不确认全文及发布日期。"
     },
     {
       "id": "smm-composite-method-2026",
@@ -1613,8 +1780,8 @@
       "dataPeriod": null,
       "summary": "检索收录介绍以标准计算单元当量形成跨卡型综合价格；不能作为某一具体卡型的成交报价。",
       "verifiedAt": null,
-      "verificationStatus": "partial",
-      "verificationNote": "原文打开为空，只有搜索收录说明可读；日期和生效时间仍待原文核对。"
+      "verificationStatus": "unreachable",
+      "verificationNote": "2026-10-08 重试原文超时；保留先前搜索线索，发布日期和生效时间仍待正文核对。"
     },
     {
       "id": "smm-weekly-public-commentary-104134387",
@@ -1626,8 +1793,8 @@
       "dataPeriod": null,
       "summary": "公开周评线索，涉及分区域指数与长协行情。该文不是付费订阅周报全文。",
       "verifiedAt": null,
-      "verificationStatus": "partial",
-      "verificationNote": "搜索可见标题及部分摘要，原文打开为空；未据此确认日期或全文结论。订阅版具体周报暂未收录。"
+      "verificationStatus": "unreachable",
+      "verificationNote": "2026-10-08 重试仍为空正文；保留已收录公开周评线索，不确认发布日期或订阅周报全文。"
     },
     {
       "id": "mysteel-price-launch-2026",
@@ -1639,8 +1806,8 @@
       "dataPeriod": null,
       "summary": "发布说明线索涉及国内、北美样本与成交、挂牌、询报盘的混合价格来源；正文待直接核实。",
       "verifiedAt": null,
-      "verificationStatus": "partial",
-      "verificationNote": "直接访问返回 HTTP 411，搜索收录可见说明。检索显示 2026-09-09，发布日期留空待原文确认。"
+      "verificationStatus": "unreachable",
+      "verificationNote": "2026-10-08 原文仍返回 HTTP 411；先前搜索线索不能代替正文，发布日期继续留空。"
     },
     {
       "id": "ornn-ocpi-methodology",
@@ -1651,9 +1818,9 @@
       "publishedAt": "2026-07-24",
       "dataPeriod": null,
       "summary": "说明按需成交样本、按量加权缩尾计算及治理规则；预留与长期合约不纳入 OCPI。",
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取全文；发布日期取自页面变更记录所列方法首次发布日。"
+      "verificationNote": "2026-10-08 复读方法全文；变更记录仍列 2026-07-24 初版，未确认新版本。成功核查日期与方法发布日期分列。"
     },
     {
       "id": "semianalysis-composite-methodology",
@@ -1664,9 +1831,9 @@
       "publishedAt": null,
       "dataPeriod": null,
       "summary": "指数页内的方法摘要说明价格采集、加权合成与合同调查整合。公开静态表另有历史所属期，不能据此声称当日现价。",
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取页面内方法摘要；未见明确方法发布日期，留空。该方法与价格预览共用官方页面。"
+      "verificationNote": "2026-10-08 复读公开方法说明及历史静态表；未验证最新价格组件或付费序列，不用本轮核查日期代替未知发布日期。"
     },
     {
       "id": "nda-capacity-20260430",
@@ -1782,8 +1949,8 @@
       "dataPeriod": null,
       "summary": "待复核的官方 PDF 线索；搜索摘要涉及计算节点架构、互联与产业生态。",
       "verifiedAt": null,
-      "verificationStatus": "partial",
-      "verificationNote": "官方 PDF 多次打开返回 Internal Error，仅取得搜索摘要。未据文件名推定发布日期；报告年份不当作数据统计期。"
+      "verificationStatus": "unreachable",
+      "verificationNote": "2026-10-08 官方 PDF 再次超时；保留先前搜索摘要和原链接，未据文件路径推定发布日期或统计期。"
     },
     {
       "id": "nda-digital-china-2025",
@@ -1811,9 +1978,9 @@
       ],
       "stage": "可研阶段 · 媒体报道",
       "summary": "w.media 引述联合新闻稿称，Cushman & Wakefield 与 APTelecom 将为胡志明市 Stavian Digital Park 拟建的数据中心园区开展可研，涵盖开发和通信连接条件。当前属于研究阶段，尚不能视为开工或已投运项目。",
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取 w.media 正文及 2026-10-02 页面日期；报道引用联合新闻稿，本次未独立取得项目批文或原始联合公告。核查指报道内容与日期，不代表独立确认全部项目事实。"
+      "verificationNote": "2026-10-08 复读 w.media 正文和 2026-10-02 日期；仍未取得报道所引的原始联合公告或项目批文。保留可研阶段，不作为本轮新发布。"
     },
     {
       "id": "wmedia-globe-expansion-20261001",
@@ -1828,9 +1995,9 @@
       ],
       "stage": "投资计划 · 媒体报道",
       "summary": "w.media 转述 Globe 管理层访谈，介绍其数字业务投资计划和通过 STTGDC Philippines 扩张数据中心业务的方向。相关投入涉及更广泛的数字业务，不能全部归入数据中心，也不能视为已落实订单或资本支出。",
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取报道正文和 2026-10-01 日期；原文引用 Bloomberg 访谈，未独立核查访谈全文或正式资本开支批准文件。"
+      "verificationNote": "2026-10-08 复读报道正文及 2026-10-01 日期；仍未取得 Bloomberg 完整访谈或正式资本开支批准文件。保留投资计划，不作为新增投运。"
     },
     {
       "id": "wmedia-bdx-permits-20261001",
@@ -1843,11 +2010,11 @@
       "regions": [
         "印尼"
       ],
-      "stage": "暂停施工报道 · 待官方确认",
-      "summary": "w.media 报道 BDx 在印尼的项目因许可和环境影响评估文件尚未取得而被要求暂停施工，引用现场视频及其他媒体消息。具体许可状态、受影响工程范围和复工时间仍需追踪主管部门与公司的正式确认。",
-      "verifiedAt": "2026-10-04",
+      "stage": "暂时停工 · 官方说明已补核，复工待核实",
+      "summary": "w.media 10 月 1 日报道 BDx 项目因许可问题暂停施工。西爪哇政府 10 月 5 日公开说明补充，停工属临时安排，相关 PBG 建筑审批及 AMDAL 环评材料尚待完成；10 月 7 日官方报道继续讨论许可和冷却用水评估。未取得复工或新增容量投运确认。",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取报道正文及日期；未独立取得政府停工文件、许可清单或公司正式回复。媒体原文核查不等同于已确认行政决定及其完整适用范围。"
+      "verificationNote": "复读媒体原文，并交叉核对西爪哇政府 2026-10-05 说明：https://bapenda.jabarprov.go.id/2026/10/05/ini-penjelasan-dirut-pdam-kebutuhan-data-center-ai/ 。确认官方关于暂时停工及申报材料的表述；未取得行政决定全文或复工批准。10 月 7 日后续评估另列新条目，旧文发布日期保持 10 月 1 日。"
     },
     {
       "id": "wmedia-thailand-draft-20260923",
@@ -1862,9 +2029,9 @@
       ],
       "stage": "草案提议 · 尚非生效规定",
       "summary": "w.media 转述泰国数据中心监管法案草案消息，涉及许可、环境及社区健康评估、电力和用水等要求。这是立法提议的媒体报道，不能当作已生效规定；适用范围和执行条件应以正式公布文件为准。",
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取报道正文和 2026-09-23 日期；本次未独立核对议会草案或后续立法状态，不据此提供合规结论。"
+      "verificationNote": "2026-10-08 复读媒体正文，仍未取得议会草案或后续正式立法文件；保留草案属性。另收录的 ERC 10 月 5 日澄清属于 BOI 投资促进申报程序，不是此草案已生效的证据。"
     },
     {
       "id": "dayone-tnb-power-20260901",
@@ -1879,9 +2046,9 @@
       ],
       "stage": "合作意向与可研",
       "summary": "DayOne 公告称，与 TNB 通过合作备忘录探索最高 1.5GW 的现场发电及配套方案，仍取决于可研、正式协议和必要批准。1.5GW 是潜在发电容量，并非数据中心 IT 容量或已投运规模。",
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
-      "verificationNote": "已读取公司原始公告。网页发布于 2026-09-01，备忘录签署于 2026-08-07；保留公告所列可研、正式协议及审批条件。"
+      "verificationNote": "2026-10-08 复读公司原文，确认网页发布 2026-09-01、备忘录签署 2026-08-07；仍以可研、正式协议及必要批准为条件，未取得本轮投运证据。"
     },
     {
       "id": "sttgdc-singapore-50mw-20260821",
@@ -1917,9 +2084,9 @@
         "菲律宾"
       ],
       "summary": "公开摘要对比亚太重点城市的在运、在建、规划容量及空置情况；东南亚市场包括新加坡、柔佛、曼谷、雅加达，以及马尼拉和胡志明市等次级市场。适合建立半年供需基准，本次未完整核查报告正文。",
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "partial",
-      "verificationNote": "已读取官方公开摘要、市场名单和 H1 2026 版本标识，未读取完整报告。所收录页面未确认明确发布日期，publishedAt 留空；报告所属期不作为发布日期。"
+      "verificationNote": "2026-10-08 复读官方公开摘要、国家/城市名单和 H1 2026 标识；完整报告与明确发布日期仍未取得。维持部分核查和 publishedAt=null，不把本轮复查视为新版。"
     },
     {
       "id": "dcbyte-global-index-2026",
@@ -1933,9 +2100,9 @@
         "马来西亚"
       ],
       "summary": "公开介绍以需求、交付和市场深度观察全球主要及未来增长市场，并提到柔佛在亚太区域排名中的位置。可用作东南亚市场研究入口；本次仅核查公开摘要，未读取完整报告或底层数据。",
-      "verifiedAt": "2026-10-04",
+      "verifiedAt": "2026-10-08",
       "verificationStatus": "partial",
-      "verificationNote": "已读取官方介绍页及 2026-07-27 日期；未取得全文。国家筛选仅标注公开摘要明确提及的马来西亚，不把数据提供商的全球覆盖自动套到这篇报告。"
+      "verificationNote": "2026-10-08 复读官方介绍页及 2026-07-27 日期；全文与底层数据仍未取得，维持部分核查。国家仅标注公开介绍明确提及的马来西亚。"
     },
     {
       "id": "singtel-fy2027-q1-update",
@@ -1952,6 +2119,111 @@
       "verifiedAt": "2026-10-04",
       "verificationStatus": "verified",
       "verificationNote": "已读取官方经营更新 PDF 中的季度期间、Nxera 相关正文和演示内容，确认发布日期为 2026-08-13、季度截至 2026-06-30。本条仅按明确涉及的数据中心项目标注新加坡，不继承运营商覆盖国家。"
+    },
+    {
+      "id": "dayone-sec-f1-20261005",
+      "sourceId": "dayone-news",
+      "title": "DayOne 提交 SEC F-1：分市场披露在运、在建及储备容量",
+      "url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+      "kind": "news",
+      "publishedAt": "2026-10-05",
+      "dataPeriod": "容量截至 2026-09-20；含至 2028 年底的预计交付安排",
+      "regions": [
+        "新加坡",
+        "马来西亚",
+        "泰国",
+        "印尼"
+      ],
+      "stage": "上市申请 · 在运、在建、储备分别披露",
+      "summary": "DayOne 的 F-1 初步招股文件披露全球在运 962MW、在建 1,328MW。柔佛在运/在建为 789/616MW，巴淡岛 72/240MW，大曼谷 73/47MW；吉隆坡在建 128MW，新加坡列为 20MW 已取得电力条件的土地储备。Bookings 为 2,281MW，不能等同当前投运；2028 年底前的交付为预期。提交申请不代表 IPO 已完成。",
+      "verificationNote": "已读取 SEC 官方 F-1 封面、Our Footprint 分市场表及容量定义；封面显示 2026-10-05 申报。数值为发行人披露，未作现场独立验证；全球总量含东南亚以外市场，签约与 Reservations 不相加当作投运。",
+      "verifiedAt": "2026-10-08",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "mddi-ai-controls-response-20261006",
+      "sourceId": "singapore-mddi-news",
+      "title": "新加坡 MDDI 回应 AI 芯片出口与远程算力限制对数据中心的影响",
+      "url": "https://www.mddi.gov.sg/newsroom/mddi-response-to-pq-on-impact-of-foreign-ai-chip-export-controls-and-remote-computing-access-restrictions-on-singapore-data-centre-and-cloud-services-sectors-and-mitigation-measures/",
+      "kind": "news",
+      "publishedAt": "2026-10-06",
+      "dataPeriod": null,
+      "regions": [
+        "新加坡"
+      ],
+      "stage": "国会书面答复 · 影响监测",
+      "summary": "MDDI 在国会书面答复中表示，正关注外国 AI 芯片出口管制及远程算力访问限制，并与企业沟通其对新加坡数据中心和云服务的潜在影响，必要时考虑适当措施。答复没有宣布新的缓解政策，也未确认具体项目受到容量削减。",
+      "verificationNote": "已读取 MDDI 官方完整答复，发布日期取 2026-10-06；网页最后更新为 10 月 7 日，不混作首次发布日期。",
+      "verifiedAt": "2026-10-08",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "purwakarta-bdx-water-review-20261007",
+      "sourceId": "west-java-bappeda-news",
+      "title": "印尼 Purwakarta 继续审查 BDx 数据中心许可与冷却用水",
+      "url": "https://bappeda.jabarprov.go.id/pemkab-purwakarta-libatkan-sejumlah-pihak-bahas-ketersediaan-air-untuk-operasional-data-center-ai/",
+      "kind": "news",
+      "publishedAt": "2026-10-07",
+      "dataPeriod": "2026-10-05 协调会议；10 月 7 日发布",
+      "regions": [
+        "印尼"
+      ],
+      "stage": "许可与用水评估 · 未确认复工",
+      "summary": "西爪哇 Bappeda 报道，Purwakarta 政府于 10 月 5 日就 Jatiluhur 的 BDx AI 数据中心召集相关部门讨论 AMDAL 环评、PBG 建筑审批和冷却用水。地方政府要求进一步检验供水论证并继续讨论；该消息属于停工后的审查进展，不是许可获批、复工或新增投运公告。",
+      "verificationNote": "已读取地方政府全文及 2026-10-07 发布日期；会议日期为 10 月 5 日。原文供水估算未当作最终可用水量或环境批准，不推定后续十日内必然获批。",
+      "verifiedAt": "2026-10-08",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "erc-data-center-boi-clarification-20261005",
+      "sourceId": "thailand-erc-news",
+      "title": "泰国 ERC 澄清数据中心申请 BOI 投资促进的前置程序",
+      "url": "https://www.erc.or.th/th/news-release/3510",
+      "kind": "news",
+      "publishedAt": "2026-10-05",
+      "dataPeriod": "2026-10-05 澄清；依据 BOI 2026-07-15 S.3/2569",
+      "regions": [
+        "泰国"
+      ],
+      "stage": "申报程序澄清 · 非项目获批",
+      "summary": "ERC 澄清，BOI S.3/2569 已替代旧通知：数据中心申请投资促进前须先经 BOI 指定的分委员会认可，不再以事先取得 ERC 确认函作为该申报的前置环节。公告讨论申报顺序，不代表免除全部供电、供水或环境要求，也不是此前媒体报道的数字基础设施法案已生效。",
+      "verificationNote": "已核对官方新闻页 2026-10-05 日期与三页 PDF（首面扫描件经渲染目视核查，附旧 S.2/2569 及新 S.3/2569）。附件上传于 10 月 6 日，不取代公告日期；原件：https://www.erc.or.th/web-upload/200xf869baf82be74c18cc110e974eea8d5c/202610/m_news/9090/3510/file_download/51101dd27234a1a9651a4bd8d08f4972.pdf",
+      "verifiedAt": "2026-10-08",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "synergy-digital-services-forecast-20261005",
+      "sourceId": "synergy-cloud",
+      "title": "Synergy 上调云与数字服务预测：2031 年合计收入预计超 5 万亿美元",
+      "url": "https://www.srgresearch.com/articles/annual-revenues-from-key-cloud-and-digital-services-to-pass-5-trillion-in-2031",
+      "kind": "report",
+      "publishedAt": "2026-10-05",
+      "dataPeriod": "2025 年基期；2026 年第二季度实际跟踪；2031 年预测",
+      "regions": [
+        "全球"
+      ],
+      "stage": "市场预测 · 非已实现收入",
+      "summary": "Synergy 公开新闻稿预计，云基础设施、SaaS、社交媒体和搜索四类服务的全球合计年收入将在 2031 年超过 5 万亿美元，为 2025 年的三倍以上。2026 年第二季度该合计口径为 4,970 亿美元、同比增 27%。这是跨市场预测，不能与单独云基础设施收入或 GPU 租赁规模混用。",
+      "verificationNote": "已读取研究机构 2026-10-05 公开原稿及统计范围；此前因晚于 10 月 4 日截止日未收录，本轮纳入。仅核查公开预测摘要，未取得订阅数据库或完整预测模型。",
+      "verifiedAt": "2026-10-08",
+      "verificationStatus": "verified"
+    },
+    {
+      "id": "ornn-daily-settlement-20261007",
+      "sourceId": "ornn-gpu",
+      "title": "Ornn GPU 日结价格：2026 年 10 月 7 日核查快照",
+      "url": "https://data.ornn.com/",
+      "kind": "data-release",
+      "publishedAt": "2026-10-07",
+      "dataPeriod": "2026-10-07 日结；页面更新 20:00 UTC（北京时间 2026-10-08 04:00）",
+      "regions": [
+        "全球"
+      ],
+      "stage": "日结数据 · 动态页面快照",
+      "summary": "官方公开表的 10 月 7 日日结值为 H100 SXM 2.85、H200 5.29、B200 7.56、A100 SXM4 0.90 美元/GPU 小时，口径为按需实际租赁交易的加权缩尾价格。原链接会持续更新，本条保留本轮读到的日期与数值，不表示未来访问时的现价。",
+      "verificationNote": "已读取四种 GPU 的日结日期、数值、币种及页面更新时间；发布日采用原页 UTC 日期。图表显示 No chart data available，未验证历史曲线、API 或订阅数据，不推算涨跌幅。",
+      "verifiedAt": "2026-10-08",
+      "verificationStatus": "verified"
     }
   ],
   "labelMaps": {
