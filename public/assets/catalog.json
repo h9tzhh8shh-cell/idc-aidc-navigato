@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "title": "IDC/AIDC 与算力租赁数据导航",
-  "maintainedAt": "2026-10-08",
+  "maintainedAt": "2026-10-09",
   "categories": [
     {
       "id": "industry",
@@ -79,7 +79,7 @@
       "frequency": "daily",
       "frequencyNote": "行情栏目明确标注每工作日 11:30 前更新；各价格点仍应核对原站日期。",
       "access": "free",
-      "accessNote": "2026-10-04 曾直接读取公开行情表；2026-10-08 请求超时，未确认最新报价。历史序列、专业终端与下载权限仍需到原站查看。",
+      "accessNote": "2026-10-04 曾直接读取公开行情表；2026-10-08 请求超时，未确认最新报价。历史序列、专业终端与下载权限仍需到原站查看。 2026-10-09浏览器成功观察公开基准价页；仅作为当次快照，方法及历史序列未核。",
       "entryUrl": "https://aidc.smm.cn/price",
       "entryType": "栏目",
       "methodologyUrl": "https://news.smm.cn/gonggao/103970493",
@@ -89,10 +89,10 @@
         "综合指数不应理解为任一具体 GPU 的实际成交价；原文链接保留在相关方法说明中。"
       ],
       "featured": true,
-      "verifiedAt": "2026-10-04",
-      "verificationStatus": "unreachable",
-      "verificationNote": "2026-10-08 重试 /price 行情栏目超时，未读取本轮价格；保留 2026-10-04 成功读取公开表的历史日期。方法公告本轮亦未取得正文。",
-      "lastCheckAttemptAt": "2026-10-08",
+      "verifiedAt": "2026-10-09",
+      "verificationStatus": "partial",
+      "verificationNote": "2026-10-08 重试 /price 行情栏目超时，未读取本轮价格；保留 2026-10-04 成功读取公开表的历史日期。方法公告本轮亦未取得正文。 2026-10-09浏览器读取公开价格表，核对H100 80G整机、长三角、包月基准价一行。方法正文仍未核；保留10月4日成功和10月8日失败记录。",
+      "lastCheckAttemptAt": "2026-10-09",
       "visibility": "active",
       "subcategoryIds": [
         "price-indices",
@@ -863,7 +863,7 @@
       "frequency": "irregular",
       "frequencyNote": "专题报告按项目发布；年份为报告版本，不代表固定年度统计序列。",
       "access": "unknown",
-      "accessNote": "检索可发现官方 PDF，但本次官方目录和 PDF 均未成功读取，完整获取条件待复核。",
+      "accessNote": "检索可发现官方 PDF，但本次官方目录和 PDF 均未成功读取，完整获取条件待复核。 2026-10-09另取得《智能算力服务研究报告》官方完整PDF；不代表既有AI计算节点PDF已取得。",
       "entryUrl": "https://www.caict.ac.cn/kxyj/qwfb/ztbg/",
       "entryType": "栏目",
       "methodologyUrl": null,
@@ -873,13 +873,14 @@
         "工具访问失败不能证明链接永久失效；保留原始栏目与报告线索待后续核查。"
       ],
       "featured": false,
-      "verifiedAt": null,
-      "verificationStatus": "unreachable",
-      "verificationNote": "2026-10-08 重试官方专题目录及既有 AI 计算节点 PDF 仍失败/超时；仅保留此前检索线索，未确认新报告或全文。",
-      "lastCheckAttemptAt": "2026-10-08",
+      "verifiedAt": "2026-10-09",
+      "verificationStatus": "partial",
+      "verificationNote": "2026-10-08 重试官方专题目录及既有 AI 计算节点 PDF 仍失败/超时；仅保留此前检索线索，未确认新报告或全文。 2026-10-09取得《智能算力服务研究报告（2026年）》63页官方PDF，抽核封面、版权、前言、计费定义及市场章节；既有AI计算节点PDF仍待核，ODCC公开摘要作为辅助链接。",
+      "lastCheckAttemptAt": "2026-10-09",
       "visibility": "active",
       "subcategoryIds": [
-        "facility-technology"
+        "facility-technology",
+        "market-supply-demand"
       ]
     },
     {
@@ -3265,7 +3266,7 @@
       "summary": "待复核的官方 PDF 线索；搜索摘要涉及计算节点架构、互联与产业生态。",
       "verifiedAt": null,
       "verificationStatus": "unreachable",
-      "verificationNote": "2026-10-08 官方 PDF 再次超时；保留先前搜索摘要和原链接，未据文件路径推定发布日期或统计期。",
+      "verificationNote": "2026-10-08 官方 PDF 再次超时；保留先前搜索摘要和原链接，未据文件路径推定发布日期或统计期。 2026-10-09核到ODCC于4月10日发布的公开核心观点摘要，增加辅助入口；报告PDF本体与日级首发日期仍未核，不用摘要日期覆盖原件未知日期。",
       "primaryCategoryId": "industry",
       "regions": [],
       "contentScope": "search-snippet",
@@ -3280,7 +3281,15 @@
       "regionNote": "未取得原文，具体国家范围待核；不从来源覆盖或机构所在地推断。",
       "visibilityReason": "仅有搜索线索，原文尚未取得；不作为已核实的实质更新。",
       "primarySubcategoryId": null,
-      "subcategoryNote": "参考/归档资料保留原核查限制，本次未取得进一步正文，不强行细分。"
+      "subcategoryNote": "参考/归档资料保留原核查限制，本次未取得进一步正文，不强行细分。",
+      "relatedLinks": [
+        {
+          "url": "https://www.odcc.org.cn/news/p-2042484076217917442.html",
+          "role": "ODCC公开核心观点摘要（非PDF全文）",
+          "publisher": "开放数据中心委员会；研究发布机构为中国信通院",
+          "publishedAt": "2026-04-10"
+        }
+      ]
     },
     {
       "id": "nda-digital-china-2025",
@@ -4176,7 +4185,7 @@
       "contentScope": "full",
       "access": "free",
       "verificationStatus": "verified",
-      "verificationNote": "实际读取原站全文、日期2026-09-21 20:42:48、作者郭霁莹及末尾版权说明。原站明确限制未经授权使用、转载、摘编；未取得授权，故只展示必要书目信息和链接。文中采访、研究预测不是独立确认事实。",
+      "verificationNote": "实际读取原站全文、日期2026-09-21 20:42:48、作者郭霁莹及末尾版权说明。原站明确限制未经授权使用、转载、摘编；未取得授权，故只展示必要书目信息和链接。文中采访、研究预测不是独立确认事实。 2026-10-08第三轮：原站正文确有液冷、模块化交付和算电协同主题，仅补检索标签及显式关联，未改写书目摘要或转载正文。",
       "classificationReason": "正文主题明确涉及国内智算中心交付和供电，地区依据为文章实际中国项目与电网场景；非按媒体总部推定。",
       "displayRestriction": "bibliographic-link-only",
       "originalPublisher": "第一财经",
@@ -4186,7 +4195,17 @@
       "visibility": "active",
       "companyIds": [],
       "dataPeriod": null,
-      "primarySubcategoryId": "power-resources"
+      "primarySubcategoryId": "power-resources",
+      "tags": [
+        "液冷",
+        "模块化交付",
+        "算电协同"
+      ],
+      "relatedSubcategoryIds": [
+        "facility-technology",
+        "project-delivery"
+      ],
+      "relatedSubcategoryNote": "2026-10-08原文涉及液冷管路与模块化交付，作为设施技术及交付关联；主方向仍为供电与资源条件。"
     },
     {
       "id": "ndrc-green-datacenter-notice-20240723",
@@ -4495,12 +4514,20 @@
       "verificationStatus": "partial",
       "verifiedAt": "2026-10-08",
       "lastCheckAttemptAt": "2026-10-08",
-      "verificationNote": "读取临2026-97、98号文字及公告身份；原文称7月29日收到审核问询函。修订对照表未解析，完整回复和修订报告书未取得；同版临2026-99号财务资助股东会不作为重组批准证据。",
+      "verificationNote": "读取临2026-97、98号文字及公告身份；原文称7月29日收到审核问询函。修订对照表未解析，完整回复和修订报告书未取得；同版临2026-99号财务资助股东会不作为重组批准证据。 2026-10-08第三轮另取得67页修订稿摘要（独立资料），抽核第23页；完整报告书及问询回复仍未取得。",
       "originalPublisher": "广东东阳光科技控股股份有限公司",
       "judgmentTypes": [
         "fact"
       ],
-      "eventId": "hec-chindata-listed-reorganization"
+      "eventId": "hec-chindata-listed-reorganization",
+      "relatedLinks": [
+        {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-23/1225577147.PDF",
+          "publisher": "广东东阳光科技控股股份有限公司／巨潮",
+          "role": "本轮补得修订稿摘要，非完整报告书",
+          "publishedAt": "2026-09-23"
+        }
+      ]
     },
     {
       "id": "hec-reorganization-newer-attachment-pending",
@@ -4527,7 +4554,7 @@
       "verificationStatus": "unreachable",
       "verifiedAt": null,
       "lastCheckAttemptAt": "2026-10-08",
-      "verificationNote": "2026-10-08两次读取失败；路径含10月1日不等于已确认披露日。财联社关联页亦未取得正文。",
+      "verificationNote": "2026-10-08两次读取失败；路径含10月1日不等于已确认披露日。财联社关联页亦未取得正文。 2026-10-08第三轮：同URL返回HTML而非PDF。另取得临2026-105新浪镜像，已用独立ID记录载体，未确认本URL与该镜像为同件，不改变本线索日期。",
       "originalPublisher": "广东东阳光科技控股股份有限公司",
       "judgmentTypes": [
         "fact"
@@ -4539,6 +4566,12 @@
           "url": "https://www.cls.cn/detail/2496442",
           "publisher": "财联社",
           "role": "任务书提供的媒体线索；本次未读到正文"
+        },
+        {
+          "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-01/12630616.PDF",
+          "publisher": "新浪财经镜像",
+          "role": "另取得临2026-105镜像；与本附件同一性待核",
+          "publishedAt": "2026-10-01"
         }
       ],
       "visibilityReason": "较新附件正文未取得，仅保留参考线索，不作为已核进展。"
@@ -4668,6 +4701,189 @@
         }
       ],
       "dateNote": "官网显示日2026-09-28；公告落款2026-09-22。首次法定发布时点未另行核查。"
+    },
+    {
+      "id": "vnet-catl-cooperation-20260818",
+      "sourceId": "vnet-news",
+      "companyIds": [
+        "vnet"
+      ],
+      "title": "世纪互联与宁德时代签署战略合作协议",
+      "url": "https://ir.vnet.com/news-releases/news-release-details/vnet-announces-strategic-cooperation-catl",
+      "originalUrl": "https://ir.vnet.com/news-releases/news-release-details/vnet-announces-strategic-cooperation-catl",
+      "publishedAt": "2026-08-18",
+      "dataPeriod": null,
+      "regions": [
+        "中国"
+      ],
+      "summary": "世纪互联公告与宁德时代签署战略合作协议，探索算力与绿色能源协同。具体项目仍需后续协议及实施确认，不能据此认定设施建成或收益实现。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
+      "kind": "disclosure",
+      "access": "free",
+      "visibility": "active",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "官方IR全文署日Aug 18, 2026，发布主体VNET Group, Inc.；合作方CATL。原文列设施、分布式网络与零碳Token生态规划，风险段明确特定项目仍需最终协议及后续实施；不把规划容量计作已投运。",
+      "originalPublisher": "VNET Group, Inc.",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "eventId": "vnet-catl-cooperation-20260818",
+      "stage": "已签署战略合作；具体项目待落实",
+      "tags": [
+        "宁德时代",
+        "CATL",
+        "算电协同",
+        "战略合作"
+      ]
+    },
+    {
+      "id": "hec-reorganization-revised-abstract-20260923",
+      "sourceId": "hec-disclosures",
+      "companyIds": [
+        "hec"
+      ],
+      "title": "东阳光发行股份购买资产重组报告书修订稿摘要",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-23/1225577147.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-09-23/1225577147.PDF",
+      "publishedAt": "2026-09-23",
+      "dataPeriod": "交易方案截至2026年9月修订稿摘要；财务备考与经营现状不同",
+      "regions": [
+        "中国"
+      ],
+      "summary": "修订稿摘要仍拟发行股份取得东数一号直接及间接合计70%权益。第23页列证券审核、注册等尚待履行；这是方案摘要，尚未确认后续交割。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
+      "kind": "disclosure",
+      "access": "free",
+      "visibility": "active",
+      "contentScope": "abstract",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "取得巨潮完整67页摘要PDF，抽核封面、交易方案及第23页待履行程序；全文报告书和问询回复未取得。原披露日据巨潮披露批次及既有9月23日修订提示交叉核对；封面仅署2026年9月。",
+      "originalPublisher": "广东东阳光科技控股股份有限公司",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "eventId": "hec-chindata-listed-reorganization",
+      "stage": "修订稿摘要；未确认交割"
+    },
+    {
+      "id": "hec-antitrust-mirror-20261001",
+      "sourceId": "hec-disclosures",
+      "companyIds": [
+        "hec"
+      ],
+      "title": "东阳光反垄断审查公告（第三方镜像已读）",
+      "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-01/12630616.PDF",
+      "originalUrl": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-01/12630616.PDF",
+      "publishedAt": "2026-10-01",
+      "dataPeriod": null,
+      "regions": [
+        "中国"
+      ],
+      "summary": "临2026-105号镜像载明不实施进一步反垄断审查，同时仍称须经上交所审核及证监会注册。指定披露同件待核，不能据此认定股份登记、交割或配套募资完成。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
+      "kind": "disclosure",
+      "access": "free",
+      "visibility": "active",
+      "contentScope": "full",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-08",
+      "lastCheckAttemptAt": "2026-10-08",
+      "verificationNote": "从用户给定新浪地址取得1页PDF，核对600673、临2026-105、署日2026-10-01并完整渲染阅读。SSE旧路径返回HTML而非PDF，公司目录未展示该件；本次没有取得指定披露同件，不能升级为官方已核节点。",
+      "originalPublisher": "广东东阳光科技控股股份有限公司",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "eventId": "hec-chindata-listed-reorganization",
+      "evidenceLevel": "third-party-mirror",
+      "stage": "第三方镜像已读，指定披露同件待核"
+    },
+    {
+      "publishedAt": null,
+      "companyIds": [],
+      "access": "free",
+      "visibility": "active",
+      "verifiedAt": "2026-10-09",
+      "lastCheckAttemptAt": "2026-10-09",
+      "verificationStatus": "partial",
+      "judgmentTypes": [
+        "fact",
+        "opinion",
+        "forecast"
+      ],
+      "kind": "report",
+      "id": "caict-compute-service-2026",
+      "sourceId": "caict-computing",
+      "title": "中国信通院：智能算力服务研究报告（2026年4月）",
+      "url": "https://www.caict.ac.cn/kxyj/qwfb/ztbg/202604/P020260430517209165899.pdf",
+      "originalUrl": "https://www.caict.ac.cn/kxyj/qwfb/ztbg/202604/P020260430517209165899.pdf",
+      "originalPublisher": "中国信息通信研究院云计算与数字化研究所",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "regions": [
+        "中国",
+        "全球"
+      ],
+      "contentScope": "full",
+      "summary": "来源：中国信通院。报告分析智算资源供需匹配、跨域调度与服务交付，区分机柜、卡时和任务计费。市场章节包含机构测算与预测，不能等同GPU租赁成交规模；封面署2026年4月，具体发布日待核。",
+      "dataPeriod": "2026年4月版本；市场章节引用2025—2026年测算/预测，案例各有截至期，非统一统计样本",
+      "dateNote": "官方PDF封面仅署2026年4月；未以文件路径或第三方转载日填充publishedAt，日级日期保持未知。",
+      "verificationNote": "2026-10-09官方PDF返回200、2756274字节、63页，抽核封面、版权、前言、印刷第6—7页计费差异和第28—29页市场口径，市场页已渲染。第28页说明海外暂无对应服务统计口径，以相关AI算力表征；第29页为信通院测算。未独立复核外部被引预测或全部案例，不复制全文与图表。",
+      "tags": [
+        "算力供需",
+        "智能算力服务",
+        "计费口径",
+        "卡时",
+        "任务交付"
+      ]
+    },
+    {
+      "publishedAt": null,
+      "companyIds": [],
+      "access": "free",
+      "visibility": "active",
+      "verifiedAt": "2026-10-09",
+      "lastCheckAttemptAt": "2026-10-09",
+      "verificationStatus": "partial",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "kind": "data-release",
+      "id": "smm-h100-observation-20261009",
+      "sourceId": "smm-rental",
+      "title": "SMM H100 80G基准价：2026-10-09单行观察",
+      "url": "https://aidc.smm.cn/price",
+      "originalUrl": "https://aidc.smm.cn/price",
+      "originalPublisher": "上海有色网（SMM）",
+      "primaryCategoryId": "rental-prices",
+      "primarySubcategoryId": "price-indices",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "partial",
+      "summary": "10月9日观察原站：H100 80G、整机、长三角、包月基准价显示均价14.32元/卡·时。原行仅写“10-08”，年份未显示；这是当次页面快照，非实时成交价，样本与形成方法待核。",
+      "dataPeriod": "原行显示10-08（年份未显示）；网页观察为2026-10-09北京时间09:21起",
+      "dateNote": "publishedAt保持null；观察日不是报价发布日，不因今天读取而归入近7天原文新发布。",
+      "verificationNote": "2026-10-09浏览器在官方/price页核对基准价选中状态与H100 80G行：整机/长三角/包月，范围13.54—15.1、均价14.32元/卡·时、行日期10-08。只保存一行观察口径；采样、权重、成交定义及历史序列未取得，不作涨跌或跨卡比较。",
+      "tags": [
+        "H100",
+        "80G",
+        "基准价",
+        "整机",
+        "长三角",
+        "包月",
+        "观察快照"
+      ]
     }
   ],
   "labelMaps": {
@@ -4738,9 +4954,9 @@
         "https://investors.gds-services.com/system/files-encrypted/nasdaq_kms/assets/2026/08/13/7-36-49/GDS%202Q26%20Earnings%20Release_0813%201200.pdf"
       ],
       "disclosureReview": {
-        "lastAttemptAt": "2026-10-08",
+        "lastAttemptAt": "2026-10-09",
         "result": "partial",
-        "note": "读取IR新闻列表当前页，最新为8月13日Q2披露（已收录）；未逐项核HKEX/SEC后续披露，不宣称已查到今天。",
+        "note": "计划范围2026-07-01—2026-10-09；仅下列渠道及可见页有限检查。当前可见窗口内7月28日可持续发展、7月30日业绩安排和8月13日Q2；本页未确认新的重点交易。HKEX嵌入列表及SEC逐件未覆盖。",
         "checks": [
           {
             "id": "gds-list-20261008",
@@ -4751,6 +4967,16 @@
             "checkedFrom": null,
             "checkedThrough": null,
             "note": "可见页列出2026年1月至8月新闻，仅作有限栏目查阅。"
+          },
+          {
+            "id": "p3-gds-20261009",
+            "channel": "公司IR新闻列表",
+            "url": "https://investors.gds-services.com/news-releases",
+            "attemptedAt": "2026-10-09",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "当前可见窗口内7月28日可持续发展、7月30日业绩安排和8月13日Q2；本页未确认新的重点交易。HKEX嵌入列表及SEC逐件未覆盖。"
           }
         ]
       }
@@ -4776,9 +5002,9 @@
         "https://ir.vnet.com/news-releases/news-release-details/vnet-announces-closing-previously-announced-strategic-investment"
       ],
       "disclosureReview": {
-        "lastAttemptAt": "2026-10-08",
+        "lastAttemptAt": "2026-10-09",
         "result": "partial",
-        "note": "重新读取9月21日原新闻稿和当前IR可见列表；没有把重核日变成新业务日，SEC等渠道未覆盖。",
+        "note": "计划范围2026-07-01—2026-10-09；仅下列渠道及可见页有限检查。10月8日列表及CATL全文可读，8月18日合作已补录；10月9日列表返回403。SEC逐件未核，保留昨日成功证据。",
         "checks": [
           {
             "id": "vnet-body-20261008",
@@ -4799,6 +5025,26 @@
             "checkedFrom": null,
             "checkedThrough": null,
             "note": "可见2026年条目最新9月21日，未完成全部法定披露渠道覆盖。"
+          },
+          {
+            "id": "p3-vnet-catl-20261008",
+            "channel": "世纪互联官方IR原文",
+            "url": "https://ir.vnet.com/news-releases/news-release-details/vnet-announces-strategic-cooperation-catl",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "官方IR全文署日Aug 18, 2026，发布主体VNET Group, Inc.；合作方CATL。原文列设施、分布式网络与零碳Token生态规划，风险段明确特定项目仍需最终协议及后续实施；不把规划容量计作已投运。"
+          },
+          {
+            "id": "p3-vnet-20261009",
+            "channel": "公司IR新闻列表",
+            "url": "https://ir.vnet.com/news-events/press-releases",
+            "attemptedAt": "2026-10-09",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "10月8日列表及CATL全文可读，8月18日合作已补录；10月9日列表返回403。SEC逐件未核，保留昨日成功证据。"
           }
         ]
       }
@@ -4922,9 +5168,9 @@
         "https://www.sinnet.com.cn/uploads/files/2026/0901/6semKmUxNDYFBvedJ7NWQQDP1kQFbG50F1olXTIv.pdf"
       ],
       "disclosureReview": {
-        "lastAttemptAt": "2026-10-08",
+        "lastAttemptAt": "2026-10-09",
         "result": "partial",
-        "note": "读取IR及信息披露目录第一页20条，最新可见9月1日半年报等；后续分页及法定披露目录未全覆盖。",
+        "note": "计划范围2026-07-01—2026-10-09；仅下列渠道及可见页有限检查。当前页可见9月1日上传的半年披露至4月。读取质量回报双提升公告；本次不重复半年经营回顾，巨潮/深交所持续披露未覆盖。",
         "checks": [
           {
             "id": "sinnet-list-20261008",
@@ -4935,6 +5181,16 @@
             "checkedFrom": null,
             "checkedThrough": null,
             "note": "共有78页，读取当前第一页；不得作全年或截至今天完整覆盖。"
+          },
+          {
+            "id": "p3-sinnet-20261009",
+            "channel": "公司信息披露",
+            "url": "https://www.sinnet.com.cn/info_disclosure.html",
+            "attemptedAt": "2026-10-09",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "当前页可见9月1日上传的半年披露至4月。读取质量回报双提升公告；本次不重复半年经营回顾，巨潮/深交所持续披露未覆盖。"
           }
         ]
       }
@@ -4963,9 +5219,9 @@
         "https://static.cninfo.com.cn/finalpage/2026-07-31/1225449048.PDF"
       ],
       "disclosureReview": {
-        "lastAttemptAt": "2026-10-08",
+        "lastAttemptAt": "2026-10-09",
         "result": "partial",
-        "note": "核300209官网披露列表当前可见页及2026-124/125/127号原PDF；新增三个不同合同事项，未把预计交付写成已交付。",
+        "note": "计划范围2026-07-01—2026-10-09；仅下列渠道及可见页有限检查。当前页9月16—30日；已重读VF销售和VE租赁官方PDF，与既有资料一致。7月—9月上旬和境外孙公司最新附件尚未逐项检查。",
         "checks": [
           {
             "id": "xingyun-vf-server-sale-20261008",
@@ -5006,6 +5262,16 @@
             "checkedFrom": null,
             "checkedThrough": null,
             "note": "读取公告2026-124号全文文本；实际事项日期未单列。"
+          },
+          {
+            "id": "p3-xingyun-20261009",
+            "channel": "公司披露当前页",
+            "url": "https://www.xingyuntech.com.cn/disclosure",
+            "attemptedAt": "2026-10-09",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "当前页9月16—30日；已重读VF销售和VE租赁官方PDF，与既有资料一致。7月—9月上旬和境外孙公司最新附件尚未逐项检查。"
           }
         ]
       }
@@ -5030,9 +5296,9 @@
         "https://static.cninfo.com.cn/finalpage/2026-08-28/1225522064.PDF"
       ],
       "disclosureReview": {
-        "lastAttemptAt": "2026-10-08",
-        "result": "blocked",
-        "note": "官网首页可读但未取得最新法定公告列表；巨潮300857动态目录不可达。本轮无法确认重要事项新增，保留一期资料及成功核查记录。",
+        "lastAttemptAt": "2026-10-09",
+        "result": "partial",
+        "note": "计划范围2026-07-01—2026-10-09；仅下列渠道及可见页有限检查。官网未取得有效公告列表。10月8日新浪目录可见8月28—9月30日，提示再融资受理及融资租赁；尚未取得相应巨潮/深交所原件，不升级既有事件。",
         "checks": [
           {
             "id": "sharetronic-cninfo-20261008",
@@ -5053,6 +5319,16 @@
             "checkedFrom": null,
             "checkedThrough": null,
             "note": "读到主体首页，未取得重要披露正文；搜索命中旧报告不作为最新事件。"
+          },
+          {
+            "id": "p3-sharetronic-20261009",
+            "channel": "公司官网及证券披露线索",
+            "url": "https://www.sharetronic.com/",
+            "attemptedAt": "2026-10-09",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "官网未取得有效公告列表。10月8日新浪目录可见8月28—9月30日，提示再融资受理及融资租赁；尚未取得相应巨潮/深交所原件，不升级既有事件。"
           }
         ]
       }
@@ -5077,9 +5353,9 @@
         "https://static.cninfo.com.cn/finalpage/2026-08-18/1225478556.PDF"
       ],
       "disclosureReview": {
-        "lastAttemptAt": "2026-10-08",
+        "lastAttemptAt": "2026-10-09",
         "result": "partial",
-        "note": "只完成所列单篇正文和可见列表的有限检查；较新附件及完整审核文件未取得，不声称已覆盖至今天。",
+        "note": "计划范围2026-07-01—2026-10-09；仅下列渠道及可见页有限检查。当前目录只显示至7月21日；10月8日补得9月23日摘要及10月1日第三方镜像。SSE目录及指定披露同件受阻；完整回复、完整修订报告书与后续完成证据待核。",
         "checks": [
           {
             "id": "hec-paper-jan-20261008",
@@ -5150,6 +5426,46 @@
             "checkedFrom": null,
             "checkedThrough": null,
             "note": "返回空白文本，未取得消息正文。"
+          },
+          {
+            "id": "p3-hec-sep-abstract-20261008",
+            "channel": "巨潮修订稿摘要",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-09-23/1225577147.PDF",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "取得巨潮完整67页摘要PDF，抽核封面、交易方案及第23页待履行程序；全文报告书和问询回复未取得。原披露日据巨潮披露批次及既有9月23日修订提示交叉核对；封面仅署2026年9月。"
+          },
+          {
+            "id": "p3-hec-mirror-20261008",
+            "channel": "第三方PDF镜像",
+            "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-01/12630616.PDF",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "从用户给定新浪地址取得1页PDF，核对600673、临2026-105、署日2026-10-01并完整渲染阅读。SSE旧路径返回HTML而非PDF，公司目录未展示该件；本次没有取得指定披露同件，不能升级为官方已核节点。"
+          },
+          {
+            "id": "p3-hec-sse-file-20261008",
+            "channel": "SSE指定披露附件尝试",
+            "url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-01/600673_20261001_8MLQ.pdf",
+            "attemptedAt": "2026-10-08",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "HTTP200返回HTML，不是PDF；指定披露同件未取得。"
+          },
+          {
+            "id": "p3-hec-20261009",
+            "channel": "公司公告栏目",
+            "url": "https://www.hec-al.com/sys-nr/?g=40",
+            "attemptedAt": "2026-10-09",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "当前目录只显示至7月21日；10月8日补得9月23日摘要及10月1日第三方镜像。SSE目录及指定披露同件受阻；完整回复、完整修订报告书与后续完成证据待核。"
           }
         ]
       }
@@ -5612,7 +5928,7 @@
       "relatedEventIds": [
         "hec-chindata-platform-acquisition"
       ],
-      "currentSummary": "已核至9月23日问询回复与修订提示。该日文字仍称待证券审核与注册；较新线索待核，当前核查不完整，不能确认此后审批或交割状态。",
+      "currentSummary": "官方及指定披露证据已核至9月23日修订提示和修订稿摘要，仍为拟发行股份重组。10月1日反垄断公告第三方镜像已读，指定披露同件待核；未确认证券审核、注册、登记、交割或配套募资完成。",
       "milestones": [
         {
           "id": "board-plan",
@@ -5643,6 +5959,11 @@
               "reportId": "hec-reorganization-reply-20260923",
               "locator": "临2026-97、98号正文；图片表格及完整附件未读",
               "role": "主证据"
+            },
+            {
+              "reportId": "hec-reorganization-revised-abstract-20260923",
+              "locator": "修订稿摘要第23页；全文报告书未取得",
+              "role": "补充原件摘要依据"
             }
           ]
         },
@@ -5661,6 +5982,22 @@
               "role": "主证据"
             }
           ]
+        },
+        {
+          "id": "antitrust-mirror-read",
+          "title": "反垄断公告镜像已读，指定披露同件待核",
+          "summary": "临2026-105号镜像载明不实施进一步反垄断审查，同时仍称须经上交所审核及证监会注册。指定披露同件待核，不能据此认定股份登记、交割或配套募资完成。",
+          "occurredAt": null,
+          "isProgress": false,
+          "verificationLevel": "third-party-mirror",
+          "primaryEvidenceReportId": "hec-antitrust-mirror-20261001",
+          "evidenceRefs": [
+            {
+              "reportId": "hec-antitrust-mirror-20261001",
+              "locator": "1页，临2026-105全文",
+              "role": "第三方载体，非官方同件核验"
+            }
+          ]
         }
       ],
       "latestVerifiedMilestoneId": "reply-and-revision",
@@ -5668,15 +6005,15 @@
         "reply-and-revision"
       ],
       "uncertainties": [
-        "较新线索待核／核查不完整：10月附件正文、完整回复及修订报告书未取得。",
-        "证券审核及注册：仅有9月23日尚需履行的文字；此后结论待核。",
-        "反垄断：较新线索未核，不能确认审批结论，也不能推导其他程序完成。",
-        "股权登记、实际交割及配套募资：尚未取得后续完成证据，分别待核。"
+        "10月1日镜像载反垄断不实施进一步审查；指定披露同件待核，不能据此认定交易完成。",
+        "上交所审核与证监会注册：9月23日摘要及10月1日镜像均称尚需；后续完成证据待核。",
+        "股份登记、实际交割与配套募资分别待核，前序平台交易完成不外推。",
+        "完整问询回复与完整修订报告书未取得；本轮仅取得修订稿摘要。"
       ],
       "review": {
         "lastAttemptAt": "2026-10-08",
         "result": "partial",
-        "note": "只完成所列单篇正文和可见列表的有限检查；较新附件及完整审核文件未取得，不声称已覆盖至今天。",
+        "note": "补得修订稿摘要和较新镜像，完整回复/报告书及指定披露同件仍待核；不是所有程序完成。",
         "checks": [
           {
             "id": "hec-paper-jan-20261008",
@@ -5747,6 +6084,36 @@
             "checkedFrom": null,
             "checkedThrough": null,
             "note": "返回空白文本，未取得消息正文。"
+          },
+          {
+            "id": "p3-hec-sep-abstract-20261008",
+            "channel": "巨潮修订稿摘要",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-09-23/1225577147.PDF",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "取得巨潮完整67页摘要PDF，抽核封面、交易方案及第23页待履行程序；全文报告书和问询回复未取得。原披露日据巨潮披露批次及既有9月23日修订提示交叉核对；封面仅署2026年9月。"
+          },
+          {
+            "id": "p3-hec-mirror-20261008",
+            "channel": "第三方PDF镜像",
+            "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-01/12630616.PDF",
+            "attemptedAt": "2026-10-08",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "从用户给定新浪地址取得1页PDF，核对600673、临2026-105、署日2026-10-01并完整渲染阅读。SSE旧路径返回HTML而非PDF，公司目录未展示该件；本次没有取得指定披露同件，不能升级为官方已核节点。"
+          },
+          {
+            "id": "p3-hec-sse-file-20261008",
+            "channel": "SSE指定披露附件尝试",
+            "url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-01/600673_20261001_8MLQ.pdf",
+            "attemptedAt": "2026-10-08",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "HTTP200返回HTML，不是PDF；指定披露同件未取得。"
           }
         ]
       }
@@ -5972,6 +6339,403 @@
           }
         ]
       }
+    },
+    {
+      "id": "vnet-catl-cooperation-20260818",
+      "title": "世纪互联—宁德时代战略合作",
+      "type": "contract",
+      "companyIds": [
+        "vnet"
+      ],
+      "participants": [
+        {
+          "companyId": "vnet",
+          "role": "战略合作方"
+        },
+        {
+          "name": "宁德时代（CATL）",
+          "role": "战略合作方"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "priority": 90,
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "世纪互联公告与宁德时代签署战略合作协议，探索算力与绿色能源协同。具体项目仍需后续协议及实施确认，不能据此认定设施建成或收益实现。",
+      "milestones": [
+        {
+          "id": "strategic-agreement",
+          "title": "签署战略合作协议",
+          "summary": "世纪互联公告与宁德时代签署战略合作协议，探索算力与绿色能源协同。具体项目仍需后续协议及实施确认，不能据此认定设施建成或收益实现。",
+          "occurredAt": null,
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "vnet-catl-cooperation-20260818",
+          "evidenceRefs": [
+            {
+              "reportId": "vnet-catl-cooperation-20260818",
+              "locator": "公告前两段及前瞻风险段",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "latestVerifiedMilestoneId": "strategic-agreement",
+      "basisMilestoneIds": [
+        "strategic-agreement"
+      ],
+      "uncertainties": [
+        "仅确认战略合作签署；具体项目协议、实施时间及收益仍待落实。"
+      ],
+      "review": {
+        "lastAttemptAt": "2026-10-08",
+        "result": "progress",
+        "note": "仅此份官方新闻稿专项核查，非全渠道完成。",
+        "checks": [
+          {
+            "id": "p3-vnet-catl-20261008",
+            "channel": "世纪互联官方IR原文",
+            "url": "https://ir.vnet.com/news-releases/news-release-details/vnet-announces-strategic-cooperation-catl",
+            "attemptedAt": "2026-10-08",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "官方IR全文署日Aug 18, 2026，发布主体VNET Group, Inc.；合作方CATL。原文列设施、分布式网络与零碳Token生态规划，风险段明确特定项目仍需最终协议及后续实施；不把规划容量计作已投运。"
+          }
+        ]
+      }
+    }
+  ],
+  "changeBatches": [
+    {
+      "batchId": "phase3-reviewed-20261009",
+      "recordedAt": "2026-10-09T09:10:00+08:00",
+      "scope": "六家核心公司2026-07-01—2026-10-09有限重要披露；实际成功覆盖与受阻范围逐渠道列示。",
+      "summary": "补入世纪互联合作与东阳光两份证据；补液冷主题，记录有限检查。历史材料沿用原日期。",
+      "periodStart": "2026-10-08",
+      "inputHash": "cce10837ab3c8f85ec6e298e8a184458885ac498c13c00a6aff140106fb3ac76",
+      "previousBatchId": null,
+      "changes": [
+        {
+          "objectType": "report",
+          "objectId": "yicai-aidc-power-delivery-20260921",
+          "kinds": [
+            "revision",
+            "evidence"
+          ],
+          "beforeRefs": [
+            "yicai-aidc-power-delivery-20260921"
+          ],
+          "afterRefs": [
+            "yicai-aidc-power-delivery-20260921"
+          ],
+          "note": "修订：智算中心上演交付竞赛，算电协同迎来双向基建大考"
+        },
+        {
+          "objectType": "report",
+          "objectId": "hec-reorganization-reply-20260923",
+          "kinds": [
+            "evidence"
+          ],
+          "beforeRefs": [
+            "hec-reorganization-reply-20260923"
+          ],
+          "afterRefs": [
+            "hec-reorganization-reply-20260923"
+          ],
+          "note": "修订：东阳光：重组问询回复及报告书修订提示"
+        },
+        {
+          "objectType": "report",
+          "objectId": "hec-reorganization-newer-attachment-pending",
+          "kinds": [
+            "evidence"
+          ],
+          "beforeRefs": [
+            "hec-reorganization-newer-attachment-pending"
+          ],
+          "afterRefs": [
+            "hec-reorganization-newer-attachment-pending"
+          ],
+          "note": "修订：东阳光重组：任务书提供的较新附件线索（待核）"
+        },
+        {
+          "objectType": "report",
+          "objectId": "vnet-catl-cooperation-20260818",
+          "kinds": [
+            "historical"
+          ],
+          "beforeRefs": [],
+          "afterRefs": [
+            "vnet-catl-cooperation-20260818"
+          ],
+          "note": "历史补录8月18日官方合作；不是10月新发布。"
+        },
+        {
+          "objectType": "report",
+          "objectId": "hec-reorganization-revised-abstract-20260923",
+          "kinds": [
+            "historical"
+          ],
+          "beforeRefs": [],
+          "afterRefs": [
+            "hec-reorganization-revised-abstract-20260923"
+          ],
+          "note": "补入：东阳光发行股份购买资产重组报告书修订稿摘要"
+        },
+        {
+          "objectType": "report",
+          "objectId": "hec-antitrust-mirror-20261001",
+          "kinds": [
+            "historical"
+          ],
+          "beforeRefs": [],
+          "afterRefs": [
+            "hec-antitrust-mirror-20261001"
+          ],
+          "note": "补读第三方镜像，未升级为官方同件已核。"
+        },
+        {
+          "objectType": "event",
+          "objectId": "hec-chindata-listed-reorganization",
+          "kinds": [
+            "historical",
+            "evidence",
+            "revision"
+          ],
+          "beforeRefs": [
+            "hec-reorganization-plan-20260307",
+            "hec-reorganization-reply-20260923",
+            "hec-reorganization-newer-attachment-pending"
+          ],
+          "afterRefs": [
+            "hec-reorganization-plan-20260307",
+            "hec-reorganization-reply-20260923",
+            "hec-reorganization-revised-abstract-20260923",
+            "hec-reorganization-newer-attachment-pending",
+            "hec-antitrust-mirror-20261001"
+          ],
+          "note": "补充摘要原件与较新镜像；当前官方节点保持9月23日，各审批程序仍分别判断。"
+        },
+        {
+          "objectType": "event",
+          "objectId": "vnet-catl-cooperation-20260818",
+          "kinds": [
+            "event-node",
+            "historical"
+          ],
+          "beforeRefs": [],
+          "afterRefs": [
+            "vnet-catl-cooperation-20260818"
+          ],
+          "note": "历史补录8月18日官方合作；不是10月新发布。"
+        }
+      ],
+      "checks": [
+        {
+          "id": "p3-sinnet-20261009",
+          "channel": "公司信息披露",
+          "url": "https://www.sinnet.com.cn/info_disclosure.html",
+          "attemptedAt": "2026-10-09",
+          "result": "partial",
+          "checkedFrom": null,
+          "checkedThrough": null,
+          "note": "当前页可见9月1日上传的半年披露至4月。读取质量回报双提升公告；本次不重复半年经营回顾，巨潮/深交所持续披露未覆盖。"
+        },
+        {
+          "id": "p3-xingyun-20261009",
+          "channel": "公司披露当前页",
+          "url": "https://www.xingyuntech.com.cn/disclosure",
+          "attemptedAt": "2026-10-09",
+          "result": "partial",
+          "checkedFrom": null,
+          "checkedThrough": null,
+          "note": "当前页9月16—30日；已重读VF销售和VE租赁官方PDF，与既有资料一致。7月—9月上旬和境外孙公司最新附件尚未逐项检查。"
+        },
+        {
+          "id": "p3-vnet-catl-20261008",
+          "channel": "世纪互联官方IR原文",
+          "url": "https://ir.vnet.com/news-releases/news-release-details/vnet-announces-strategic-cooperation-catl",
+          "attemptedAt": "2026-10-08",
+          "result": "progress",
+          "checkedFrom": null,
+          "checkedThrough": null,
+          "note": "官方IR全文署日Aug 18, 2026，发布主体VNET Group, Inc.；合作方CATL。原文列设施、分布式网络与零碳Token生态规划，风险段明确特定项目仍需最终协议及后续实施；不把规划容量计作已投运。"
+        },
+        {
+          "id": "p3-vnet-20261009",
+          "channel": "公司IR新闻列表",
+          "url": "https://ir.vnet.com/news-events/press-releases",
+          "attemptedAt": "2026-10-09",
+          "result": "blocked",
+          "checkedFrom": null,
+          "checkedThrough": null,
+          "note": "10月8日列表及CATL全文可读，8月18日合作已补录；10月9日列表返回403。SEC逐件未核，保留昨日成功证据。"
+        },
+        {
+          "id": "p3-sharetronic-20261009",
+          "channel": "公司官网及证券披露线索",
+          "url": "https://www.sharetronic.com/",
+          "attemptedAt": "2026-10-09",
+          "result": "partial",
+          "checkedFrom": null,
+          "checkedThrough": null,
+          "note": "官网未取得有效公告列表。10月8日新浪目录可见8月28—9月30日，提示再融资受理及融资租赁；尚未取得相应巨潮/深交所原件，不升级既有事件。"
+        },
+        {
+          "id": "p3-gds-20261009",
+          "channel": "公司IR新闻列表",
+          "url": "https://investors.gds-services.com/news-releases",
+          "attemptedAt": "2026-10-09",
+          "result": "partial",
+          "checkedFrom": null,
+          "checkedThrough": null,
+          "note": "当前可见窗口内7月28日可持续发展、7月30日业绩安排和8月13日Q2；本页未确认新的重点交易。HKEX嵌入列表及SEC逐件未覆盖。"
+        },
+        {
+          "id": "p3-hec-sep-abstract-20261008",
+          "channel": "巨潮修订稿摘要",
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-23/1225577147.PDF",
+          "attemptedAt": "2026-10-08",
+          "result": "progress",
+          "checkedFrom": null,
+          "checkedThrough": null,
+          "note": "取得巨潮完整67页摘要PDF，抽核封面、交易方案及第23页待履行程序；全文报告书和问询回复未取得。原披露日据巨潮披露批次及既有9月23日修订提示交叉核对；封面仅署2026年9月。"
+        },
+        {
+          "id": "p3-hec-mirror-20261008",
+          "channel": "第三方PDF镜像",
+          "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-10/2026-10-01/12630616.PDF",
+          "attemptedAt": "2026-10-08",
+          "result": "partial",
+          "checkedFrom": null,
+          "checkedThrough": null,
+          "note": "从用户给定新浪地址取得1页PDF，核对600673、临2026-105、署日2026-10-01并完整渲染阅读。SSE旧路径返回HTML而非PDF，公司目录未展示该件；本次没有取得指定披露同件，不能升级为官方已核节点。"
+        },
+        {
+          "id": "p3-hec-sse-file-20261008",
+          "channel": "SSE指定披露附件尝试",
+          "url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-01/600673_20261001_8MLQ.pdf",
+          "attemptedAt": "2026-10-08",
+          "result": "blocked",
+          "checkedFrom": null,
+          "checkedThrough": null,
+          "note": "HTTP200返回HTML，不是PDF；指定披露同件未取得。"
+        },
+        {
+          "id": "p3-hec-20261009",
+          "channel": "公司公告栏目",
+          "url": "https://www.hec-al.com/sys-nr/?g=40",
+          "attemptedAt": "2026-10-09",
+          "result": "partial",
+          "checkedFrom": null,
+          "checkedThrough": null,
+          "note": "当前目录只显示至7月21日；10月8日补得9月23日摘要及10月1日第三方镜像。SSE目录及指定披露同件受阻；完整回复、完整修订报告书与后续完成证据待核。"
+        }
+      ]
+    },
+    {
+      "batchId": "phase3-research-20261009",
+      "recordedAt": "2026-10-09T09:25:41+08:00",
+      "scope": "第三轮R3有限研究补证及SMM单行观察；不含自动采集。",
+      "summary": "补入1份官方研究PDF和1条SMM观察快照，补充已有报告摘要入口；日级发布日期未知，不计今日原文新发布。券商研报合格0份。",
+      "periodStart": "2026-10-09",
+      "inputHash": "453f2af4238db347557bd927cf1bf4eee82386e9e5ec2f67eab6c5c09d514bbf",
+      "previousBatchId": "phase3-reviewed-20261009",
+      "changes": [
+        {
+          "objectType": "report",
+          "objectId": "caict-ai-node-2026",
+          "kinds": [
+            "evidence"
+          ],
+          "beforeRefs": [
+            "caict-ai-node-2026"
+          ],
+          "afterRefs": [
+            "caict-ai-node-2026"
+          ],
+          "note": "修订：AI计算节点发展研究报告（2026年）"
+        },
+        {
+          "objectType": "report",
+          "objectId": "caict-compute-service-2026",
+          "kinds": [
+            "historical"
+          ],
+          "beforeRefs": [],
+          "afterRefs": [
+            "caict-compute-service-2026"
+          ],
+          "note": "补入：中国信通院：智能算力服务研究报告（2026年4月）"
+        },
+        {
+          "objectType": "report",
+          "objectId": "smm-h100-observation-20261009",
+          "kinds": [
+            "historical"
+          ],
+          "beforeRefs": [],
+          "afterRefs": [
+            "smm-h100-observation-20261009"
+          ],
+          "note": "补入：SMM H100 80G基准价：2026-10-09单行观察"
+        },
+        {
+          "objectType": "source",
+          "objectId": "smm-rental",
+          "kinds": [
+            "evidence"
+          ],
+          "beforeRefs": [],
+          "afterRefs": [],
+          "note": "修订：SMM 算力行情"
+        },
+        {
+          "objectType": "source",
+          "objectId": "caict-computing",
+          "kinds": [
+            "evidence"
+          ],
+          "beforeRefs": [],
+          "afterRefs": [],
+          "note": "修订：中国信通院算力专题报告"
+        }
+      ],
+      "checks": [
+        {
+          "id": "p3-research-pdf-20261009",
+          "channel": "中国信通院官方PDF",
+          "url": "https://www.caict.ac.cn/kxyj/qwfb/ztbg/202604/P020260430517209165899.pdf",
+          "attemptedAt": "2026-10-09",
+          "result": "partial",
+          "checkedFrom": null,
+          "checkedThrough": null,
+          "note": "取得63页官方报告并抽核相关章节；仅封面月度署期，日级首发待核，未独立复核全部预测。"
+        },
+        {
+          "id": "p3-smm-observed-20261009",
+          "channel": "SMM公开行情页",
+          "url": "https://aidc.smm.cn/price",
+          "attemptedAt": "2026-10-09",
+          "result": "partial",
+          "checkedFrom": null,
+          "checkedThrough": null,
+          "note": "浏览器成功观察H100一行基准价；原行MM-DD无年份，方法正文未核。"
+        },
+        {
+          "id": "p3-broker-20261008",
+          "channel": "中金公开研究入口有限检查",
+          "url": "https://www.cicc.com/",
+          "attemptedAt": "2026-10-08",
+          "result": "blocked",
+          "checkedFrom": null,
+          "checkedThrough": null,
+          "note": "有限检索未找到合格且可读的直接相关研报，官网访问521；本轮合格券商研报0份，不以首页或转述凑数。"
+        }
+      ]
     }
   ]
 }

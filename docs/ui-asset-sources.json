@@ -7,7 +7,9 @@
     "Cushman and STTGDC owner websites returned HTTP 403. Their real logos were obtained from named industry partners' official public pages.",
     "w.media currently uses a white wordmark and blue waveform icon. The icon is the recommended version for a white interface. The selected design's older plain navy wordmark was not found.",
     "DC Byte's current downloaded official logo is purple/magenta, different from the navy wordmark in the selected reference. Preserve the real asset rather than imitating the reference's brand styling.",
-    "All raster assets were successfully decoded, dimensions checked, and visually inspected. DCD SVG is XML-valid and contains the two original logo paths."
+    "All raster assets were successfully decoded, dimensions checked, and visually inspected. DCD SVG is XML-valid and contains the two original logo paths.",
+    "2026-10-09: Added the 38 previously unmapped source identities. Existing nine mappings and original assets are unchanged. White original logos use a dark CSS backing; no brand artwork was redrawn.",
+    "Three domains (Thai BOI, West Java Bappeda, Philippines BOI) use the public favicon cache for that exact official domain. These are third-party cached site icons, not direct owner downloads. Logo availability does not change source or article verification status."
   ],
   "sources": {
     "cbre-datacenter": {
@@ -92,13 +94,404 @@
       "officialPage": "https://aidc.smm.cn/price",
       "provenance": "Same SMM computing business identity",
       "background": "transparent"
+    },
+    "nda-capacity": {
+      "url": "https://www.nda.gov.cn/sjj/res/images/logo.png",
+      "officialPage": "https://www.nda.gov.cn/sjj/swdt/list/index_pc_1.html",
+      "provenance": "Official portal header script",
+      "file": "source-logos/nda-capacity-verified.png",
+      "retrievedAt": "2026-10-09",
+      "finalUrl": "https://www.nda.gov.cn/sjj/res/images/logo.png",
+      "bytes": 129666,
+      "mime": "image/png",
+      "sha256": "af41ae16dfcd81b50c5e729c309ff844e82650ffe618f6a90d8b8fc3ac853a51"
+    },
+    "nda-digital-china": {
+      "url": "https://www.nda.gov.cn/sjj/res/images/logo.png",
+      "officialPage": "https://www.nda.gov.cn/sjj/swdt/list/index_pc_1.html",
+      "provenance": "Official portal header script",
+      "file": "source-logos/nda-capacity-verified.png",
+      "retrievedAt": "2026-10-09",
+      "finalUrl": "https://www.nda.gov.cn/sjj/res/images/logo.png",
+      "bytes": 129666,
+      "mime": "image/png",
+      "sha256": "af41ae16dfcd81b50c5e729c309ff844e82650ffe618f6a90d8b8fc3ac853a51"
+    },
+    "kz-market": {
+      "file": "source-logos/kz-market.png",
+      "url": "https://www.kzconsulting.cn/static/images/logo1.png",
+      "officialPage": "https://www.kzconsulting.cn/insights/index.html",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 3485,
+      "mime": "image/png",
+      "sha256": "2b3c88a81bd35bf6e3647e4f005cd78d62a932c7be5c6be4cbd685841b8511e2"
+    },
+    "ornn-gpu": {
+      "file": "source-logos/ornn-gpu.png",
+      "url": "https://data.ornn.com/icon.png?icon.3iayu_x8zbx3b.png",
+      "officialPage": "https://data.ornn.com/",
+      "retrievedAt": "2026-10-09",
+      "kind": "icon",
+      "bytes": 16407,
+      "mime": "image/png",
+      "sha256": "aee6e04dc24318bbfb65ad62b76fc0d93a1e202ed7faa537ba4275510f77508e"
+    },
+    "idc-server": {
+      "file": "source-logos/idc-server.png",
+      "url": "https://www.idc.com/wp-content/uploads/2025/01/cropped-favicon.png?w=192",
+      "officialPage": "https://www.idc.com/promo/servers/",
+      "retrievedAt": "2026-10-09",
+      "kind": "icon",
+      "bytes": 835,
+      "mime": "image/png",
+      "sha256": "eb226b886d7a54bdcdf19f64b2281e431ec0785429399ef81a11d887c6594159"
+    },
+    "gds-quarterly": {
+      "file": "source-logos/gds-quarterly.png",
+      "url": "https://investors.gds-services.com/sites/g/files/knoqqb55851/themes/site/nir_pid2222/client/images/logoNew.png",
+      "officialPage": "https://investors.gds-services.com/financial-information/quarterly-results",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 39294,
+      "mime": "image/png",
+      "sha256": "39b2bfdae51df09cf4b89fc272826009fc9adc13e3b002bc829ca00e4adec894"
+    },
+    "gds-news": {
+      "file": "source-logos/gds-quarterly.png",
+      "url": "https://investors.gds-services.com/sites/g/files/knoqqb55851/themes/site/nir_pid2222/client/images/logoNew.png",
+      "officialPage": "https://investors.gds-services.com/financial-information/quarterly-results",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 39294,
+      "mime": "image/png",
+      "sha256": "39b2bfdae51df09cf4b89fc272826009fc9adc13e3b002bc829ca00e4adec894"
+    },
+    "vnet-quarterly": {
+      "file": "source-logos/vnet-quarterly.png",
+      "url": "https://ir.vnet.com/sites/g/files/knoqqb113211/themes/site/nir_pid2526/client/images/header_VNET_Logo_v2_opt_blue.png",
+      "officialPage": "https://ir.vnet.com/financial-information/quarterly-results",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 4723,
+      "mime": "image/png",
+      "sha256": "23888b0290070dd987220dcec7c53b770b43f9144a0746b7d1f5338f00cfc8dc"
+    },
+    "vnet-news": {
+      "file": "source-logos/vnet-quarterly.png",
+      "url": "https://ir.vnet.com/sites/g/files/knoqqb113211/themes/site/nir_pid2526/client/images/header_VNET_Logo_v2_opt_blue.png",
+      "officialPage": "https://ir.vnet.com/financial-information/quarterly-results",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 4723,
+      "mime": "image/png",
+      "sha256": "23888b0290070dd987220dcec7c53b770b43f9144a0746b7d1f5338f00cfc8dc"
+    },
+    "semianalysis-gpu": {
+      "file": "source-logos/semianalysis-gpu.png",
+      "url": "https://gpu-index.semianalysis.com/_next/image?url=%2Fsemianalysis-logo.png&w=640&q=75",
+      "officialPage": "https://gpu-index.semianalysis.com/",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 3933,
+      "mime": "image/png",
+      "sha256": "cd7039eeb189549b4d745c6ff5e0989dc1f4bd219c2007014a12ede9bbbde021"
+    },
+    "xingyun-disclosures": {
+      "file": "source-logos/xingyun-disclosures.png",
+      "url": "https://www.xingyuntech.com.cn/favicon.png",
+      "officialPage": "https://www.xingyuntech.com.cn/",
+      "retrievedAt": "2026-10-09",
+      "kind": "icon",
+      "bytes": 4161,
+      "mime": "image/png",
+      "sha256": "ca98ad4679de817e15da050a66c6c42a4c3078607568c7d992fb9e5df731eaf8"
+    },
+    "synergy-cloud": {
+      "file": "source-logos/synergy-cloud-verified.svg",
+      "url": "https://www.srgresearch.com/articles",
+      "officialPage": "https://www.srgresearch.com/articles",
+      "provenance": "Exact inline SVG in official navbar-brand; no path or color changes",
+      "retrievedAt": "2026-10-09",
+      "bytes": 12630,
+      "mime": "image/svg+xml",
+      "sha256": "9c1072740a2d6831493761fcc600e0a78bbe60d9edab1ef490106eae8b954f9f"
+    },
+    "sharetronic-disclosures": {
+      "file": "source-logos/sharetronic-disclosures.png",
+      "url": "https://www.sharetronic.com/image/logo.png",
+      "officialPage": "https://www.sharetronic.com/",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 5226,
+      "mime": "image/png",
+      "sha256": "006fa225bb17c93a387f39b3f4b51abe9477cd4a0e82acead7281354559ca28f"
+    },
+    "imda-datacenter-policy": {
+      "url": "https://www.imda.gov.sg/assets/45d45448-2de8-424a-ae25-cf45b181e3d9",
+      "officialPage": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches",
+      "provenance": "Official alternate header logo",
+      "file": "source-logos/imda-datacenter-policy-verified.png",
+      "retrievedAt": "2026-10-09",
+      "finalUrl": "https://www.imda.gov.sg/assets/45d45448-2de8-424a-ae25-cf45b181e3d9",
+      "bytes": 5190,
+      "mime": "image/webp",
+      "sha256": "bc5b8a4a36254b5694e3a15324370e8536ac631c03afa2d39d9ae020c0f4ccdb"
+    },
+    "stcn-industry": {
+      "file": "source-logos/stcn-industry.png",
+      "url": "https://static-web.stcn.com/static/images/zqsb.png",
+      "officialPage": "https://www.stcn.com/article/list/cj.html",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 10320,
+      "mime": "image/png",
+      "sha256": "30649800b5048996fc5c49fd07229eeefc30e373b39ddacc54dcd23552fc8d3f"
+    },
+    "hec-disclosures": {
+      "file": "source-logos/hec-disclosures.png",
+      "url": "https://32545914.s21i.faiusr.com/4/2/ABUIABAEGAAgrofRwQYoiNb8iAEw6QI4UA.png",
+      "officialPage": "https://www.hec-al.com/sys-nr/?g=40",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 11823,
+      "mime": "image/png",
+      "sha256": "bd091e4c01dfa9109d427a9188dc2ccbccbc3ade6deb3298832e3a0210f85fdb"
+    },
+    "sinnet-disclosures": {
+      "file": "source-logos/sinnet-disclosures.png",
+      "url": "https://www.sinnet.com.cn/statics/home/images/logo.png",
+      "officialPage": "https://www.sinnet.com.cn/IR.html",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 5972,
+      "mime": "image/png",
+      "sha256": "75475fa4f355fc860deb982a2e1b773517974c96bb9bb190d6e5995a151319f2"
+    },
+    "yicai-industry": {
+      "url": "https://www.yicai.com/images/logo.png",
+      "officialPage": "https://www.yicai.com/news/",
+      "provenance": "Official common.js header image",
+      "file": "source-logos/yicai-industry-verified.png",
+      "retrievedAt": "2026-10-09",
+      "finalUrl": "https://www.yicai.com/images/logo.png",
+      "bytes": 23570,
+      "mime": "image/png",
+      "sha256": "126d327fc8039479b44f99b4334b966899ac72afbbe6cf1e35ff5f933b1f874d"
+    },
+    "mida-media": {
+      "file": "source-logos/mida-media.png",
+      "url": "https://www.mida.gov.my/wp-content/uploads/2020/12/MIDA-Logo-800x295.png",
+      "officialPage": "https://www.mida.gov.my/media-release/",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 54762,
+      "mime": "image/png",
+      "sha256": "1b0b3d1190ba2356be54f04b40ad70c916aca866acc80ace41651824ce5100dc"
+    },
+    "szse-regulation": {
+      "file": "source-logos/szse-regulation.ico",
+      "url": "https://res.szse.cn/common/images/favicon.ico",
+      "officialPage": "https://www.szse.cn/disclosure/supervision/inquire/index.html",
+      "retrievedAt": "2026-10-09",
+      "kind": "icon",
+      "bytes": 1150,
+      "mime": "image/x-icon",
+      "sha256": "e0fdc726a440067c68773b65b7dfae3612e2c20882d3f841757943af9e281a8f"
+    },
+    "singapore-mddi-news": {
+      "file": "source-logos/singapore-mddi-news.png",
+      "url": "https://isomer-user-content.by.gov.sg/38/ecb16835-2da3-440f-882a-11fa70e546cc/mddi-logo.png",
+      "officialPage": "https://www.mddi.gov.sg/newsroom/",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 10086,
+      "mime": "image/png",
+      "sha256": "92ad963279cc0e1ad3b3f9a44dd67ff3f3905d168bbccb68d0ab722d9d172aa0"
+    },
+    "sse-regulation": {
+      "file": "source-logos/sse-regulation.png",
+      "url": "https://www.sse.com.cn/xhtml/images/logo.png",
+      "officialPage": "https://www.sse.com.cn/disclosure/credibility/supervision/inquiries/",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 54592,
+      "mime": "image/png",
+      "sha256": "4e81685eacaf4079666dd26df24723c41a00d79622baf937dd8d5491ec0a49d7"
+    },
+    "dayone-news": {
+      "file": "source-logos/dayone-news.png",
+      "url": "https://dayonedc.com/android-chrome-512x512.png",
+      "officialPage": "https://dayonedc.com/news",
+      "retrievedAt": "2026-10-09",
+      "kind": "icon",
+      "bytes": 19890,
+      "mime": "image/png",
+      "sha256": "302cd114455237ecabff4ba90319e480fda787ff94d3f830121af3c2180462fa"
+    },
+    "tnb-quarterly": {
+      "file": "source-logos/tnb-quarterly.png",
+      "url": "https://www.tnb.com.my/assets/images/logo_tnb_wba.png",
+      "officialPage": "https://www.tnb.com.my/suppliers-investors-media-relations/financial-info",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 28914,
+      "mime": "image/png",
+      "sha256": "1aacb6692dd984d19e3bf7947195c584bdc7f6cc7bb614c20e6719a20d4244b6"
+    },
+    "china-telecom-ir": {
+      "file": "source-logos/china-telecom-ir.png",
+      "url": "https://www.chinatelecom-h.com/sc/images/global/logo.png",
+      "officialPage": "https://www.chinatelecom-h.com/sc/media/press.php",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 4782,
+      "mime": "image/png",
+      "sha256": "28b25c403eaab7d9dd3899ac0c35db5a0f2ba00ba039ffff47ad70c7a38b0a69"
+    },
+    "hkex-regulation": {
+      "url": "https://www.hkex.com.hk/-/media/13E237D9002044BB9514F485BA2C720F.ashx",
+      "officialPage": "https://www.hkex.com.hk/News/Regulatory-Announcements?sc_lang=zh-HK",
+      "provenance": "Official alternate header logo",
+      "file": "source-logos/hkex-regulation-verified.png",
+      "retrievedAt": "2026-10-09",
+      "finalUrl": "https://www.hkex.com.hk/-/media/13E237D9002044BB9514F485BA2C720F.ashx",
+      "bytes": 26522,
+      "mime": "image/png",
+      "sha256": "e741a461833dcc68f947176668667f7a58acbcb6e9fae63923c61a570065706a"
+    },
+    "vietnam-vgp-policy": {
+      "file": "source-logos/vietnam-vgp-policy.png",
+      "url": "https://static.mediacdn.vn/baochinhphu/image/logo_bcp.png",
+      "officialPage": "https://en.baochinhphu.vn/policies.htm",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 16886,
+      "mime": "image/png; charset=utf-8",
+      "sha256": "7919a96d8e1d2ea936bbf1476979b96e62f0c440376883ced9655fe109a3ac85"
+    },
+    "china-mobile-ir": {
+      "file": "source-logos/china-mobile-ir.svg",
+      "url": "https://www.chinamobileltd.com/en/images/global/logo.svg",
+      "officialPage": "https://www.chinamobileltd.com/",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 15355,
+      "mime": "image/svg+xml",
+      "sha256": "5c4daec43dfeaf7d989345e0b8fb4164a01bfb42e507e881770024ed0ed5e489"
+    },
+    "thailand-erc-news": {
+      "file": "source-logos/thailand-erc-news.png",
+      "url": "https://www.erc.or.th/assets/app/img/bg/ERC-Frame-logo.png",
+      "officialPage": "https://www.erc.or.th/th/news-release/content",
+      "retrievedAt": "2026-10-09",
+      "kind": "logo",
+      "bytes": 1841,
+      "mime": "image/png",
+      "sha256": "fa7775160ab3de4ef3d7209472a9f7b37025cffa5fb55cf194ce40b5450c3c83"
+    },
+    "china-unicom-ir": {
+      "url": "https://www.chinaunicom.com.hk/android-icon-192x192.png",
+      "officialPage": "https://www.chinaunicom.com.hk/sc/media/press.php",
+      "provenance": "Official linked 192px site icon",
+      "file": "source-logos/china-unicom-ir-verified.png",
+      "retrievedAt": "2026-10-09",
+      "finalUrl": "https://www.chinaunicom.com.hk/android-icon-192x192.png",
+      "bytes": 26858,
+      "mime": "image/png",
+      "sha256": "b577fb1e731b193e151f05ffa2b6910f258a5338d02fb4abdb9977fd16f5e25c"
+    },
+    "mysteel-computing": {
+      "url": "https://a.mysteelcdn.com/common/mysteel/suanli/images/logo.png",
+      "officialPage": "https://suanli.mysteel.com/",
+      "provenance": "Official computing channel stylesheet header image",
+      "file": "source-logos/mysteel-computing-verified.png",
+      "retrievedAt": "2026-10-09",
+      "finalUrl": "https://a.mysteelcdn.com/common/mysteel/suanli/images/logo.png",
+      "bytes": 13385,
+      "mime": "image/png",
+      "sha256": "2250693f6d717f616a8bc6ff8d8c6f8c66bce4194491d5a4aca54c0251f894c9"
+    },
+    "ndrc-datacenter-policy": {
+      "url": "https://www.ndrc.gov.cn/images/logonew.png",
+      "officialPage": "https://www.ndrc.gov.cn/xwdt/tzgg/",
+      "provenance": "Official headtop.js logo",
+      "file": "source-logos/ndrc-datacenter-policy-verified.png",
+      "retrievedAt": "2026-10-09",
+      "finalUrl": "https://www.ndrc.gov.cn/images/logonew.png",
+      "bytes": 678386,
+      "mime": "image/png",
+      "sha256": "baf7b0e0986fff87f9747272c91f400790c0651f7b447c23aca34acef002cb1c"
+    },
+    "miit-green-compute": {
+      "url": "https://www.miit.gov.cn/cms_files/webmiit/tplobject/gxbsy/e771c5369c614161ba46f6a4d1e29c42/images/logo_gh.png",
+      "officialPage": "https://www.miit.gov.cn/jgsj/jns/gzdt/index.html",
+      "provenance": "Official header national emblem",
+      "file": "source-logos/miit-green-compute-verified.png",
+      "retrievedAt": "2026-10-09",
+      "finalUrl": "https://www.miit.gov.cn/cms_files/webmiit/tplobject/gxbsy/e771c5369c614161ba46f6a4d1e29c42/images/logo_gh.png",
+      "bytes": 9325,
+      "mime": "image/png",
+      "sha256": "ee0241460536b3ebb5c3ebd04bf278ee5eb45f8144494d91fc7ae57cb0437358"
+    },
+    "caict-computing": {
+      "url": "https://service.caict.ac.cn/images/xty_logo.png",
+      "officialPage": "https://service.caict.ac.cn/",
+      "provenance": "CAICT logo on its official service subdomain; main site currently returns 412",
+      "file": "source-logos/caict-computing-verified.png",
+      "retrievedAt": "2026-10-09",
+      "finalUrl": "https://service.caict.ac.cn/images/xty_logo.png",
+      "bytes": 8000,
+      "mime": "image/png",
+      "sha256": "1cbcbe21e9bff98c7eff8cac19416aed51c43f6ff16f23f73ff9aac48d3786be"
+    },
+    "philippines-boi": {
+      "url": "https://www.google.com/s2/favicons?domain=boi.gov.ph&sz=128",
+      "officialPage": "https://boi.gov.ph/",
+      "provenance": "Google public favicon cache for the exact official domain; third-party cached asset, not a direct owner download",
+      "thirdPartyCache": true,
+      "file": "source-logos/philippines-boi-verified.jpg",
+      "retrievedAt": "2026-10-09",
+      "finalUrl": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://boi.gov.ph&size=128",
+      "bytes": 4717,
+      "mime": "image/jpeg",
+      "sha256": "41be7b614a819efed9b8e9bdc1e3d0a9f6f03b1473b25cbcb229073059b5fce9"
+    },
+    "west-java-bappeda-news": {
+      "url": "https://www.google.com/s2/favicons?domain=bappeda.jabarprov.go.id&sz=128",
+      "officialPage": "https://bappeda.jabarprov.go.id/",
+      "provenance": "Google public favicon cache for the exact official domain; third-party cached asset, not a direct owner download",
+      "thirdPartyCache": true,
+      "file": "source-logos/west-java-bappeda-news-verified.png",
+      "retrievedAt": "2026-10-09",
+      "finalUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://bappeda.jabarprov.go.id&size=128",
+      "bytes": 3605,
+      "mime": "image/png",
+      "sha256": "88a549a4a2fc953a06eb5ae0292451e82e6b3315898c995575043f27c7442606"
+    },
+    "thailand-boi-news": {
+      "url": "https://www.google.com/s2/favicons?domain=www.boi.go.th&sz=128",
+      "officialPage": "https://www.boi.go.th/",
+      "provenance": "Google public favicon cache for the exact official domain; third-party cached asset, not a direct owner download",
+      "thirdPartyCache": true,
+      "file": "source-logos/thailand-boi-news-verified.png",
+      "retrievedAt": "2026-10-09",
+      "finalUrl": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://www.boi.go.th&size=128",
+      "bytes": 749,
+      "mime": "image/png",
+      "sha256": "224863f4d9e066b658bd8babcd175f3f4069847d2e59c363eb55c002ee58667b"
+    },
+    "nea-electricity": {
+      "file": "source-logos/nea-electricity.png",
+      "url": "https://www.nea.gov.cn/2015nyj/xinban/new/images/logo.png",
+      "officialPage": "https://www.nea.gov.cn/zfxxgk/gkzn.htm",
+      "provenance": "Unmodified logo referenced in official information disclosure page stylesheet",
+      "retrievedAt": "2026-10-09",
+      "bytes": 27683,
+      "mime": "image/png",
+      "sha256": "199dd5bf52453f14d0fc5ba64ecb55b9bc9e6bad15169447a6ebc3805cb6ed29"
     }
   },
-  "missing": [
-    {
-      "id": "mysteel-computing",
-      "url": "https://suanli.mysteel.com/",
-      "reason": "Official page returned HTTP 403; no fabricated replacement created."
-    }
-  ]
+  "missing": [],
+  "lastUpdatedAt": "2026-10-09"
 }

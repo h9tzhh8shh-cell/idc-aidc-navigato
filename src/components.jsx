@@ -12,7 +12,7 @@ export function Highlight({ text = '', query = '' }) {
   return String(text).split(new RegExp(`(${words.join('|')})`, 'ig')).map((s, i) => i % 2 ? <mark key={i}>{s}</mark> : s);
 }
 export function SourceLogo({ source, large = false }) {
-  return <span className={`source-logo ${large ? 'large' : ''}`}>{logos[source.id] ? <img src={logos[source.id]} alt={`${source.organization} 标识`} /> : <IconBuilding size={large ? 34 : 27} stroke={1.5} aria-hidden="true" />}</span>;
+  return <span className={`source-logo ${large ? 'large' : ''} ${['ornn-gpu', 'hec-disclosures', 'mysteel-computing', 'nea-electricity'].includes(source.id) ? 'dark' : ''}`}>{logos[source.id] ? <img src={logos[source.id]} alt={`${source.organization} 标识`} /> : <IconBuilding size={large ? 34 : 27} stroke={1.5} aria-hidden="true" />}</span>;
 }
 export function OutLink({ href, children, className = '' }) {
   return <a className={className} href={href} target="_blank" rel="noopener noreferrer">{children}<IconArrowUpRight size={17} stroke={1.8} aria-hidden="true" /><span className="sr-only">（在新标签页打开）</span></a>;
@@ -56,19 +56,58 @@ export function SourceDetail({ source, showReference = false, onClose }) {
     </div>
   </dialog>;
 }
-export function ReportRow({ report, source, query, onSource }) {
+export function ReportRow({ report, source, query = '', onSource, filters = {} }) {
   const reason = getReportMatchReason(report, source, query);
-  return <article className="report-row" data-report-id={report.id}><div className="report-topline"><span>{TOPICS.find(topic => topic.id === report.primaryCategoryId)?.label} · {labels.kind[report.kind]}</span><span className={report.verificationStatus === 'verified' ? 'verified' : 'muted'}>{labels.verificationStatus[report.verificationStatus]}</span></div><h3><OutLink href={report.url} className="report-title"><Highlight text={report.title} query={query} /></OutLink></h3>{onSource && <button className="report-source" onClick={onSource}>来源：{source.name}<IconChevronRight size={14} /></button>}<ReportEvidence report={report} /><p className="report-summary"><Highlight text={report.summary} query={query} /></p><p className="report-coverage">资料地区：<Highlight text={report.regions.length ? report.regions.join(' / ') : '未明确 / 待核'} query={query} /></p>{reason && <p className="match-reason">{reason.label}：<Highlight text={reason.text} query={query} /></p>}<dl className="report-dates"><div><dt>发布日期</dt><dd>{report.publishedAt || '未知 / 待核查'}</dd></div><div><dt>数据所属期</dt><dd>{report.dataPeriod || '未知 / 不适用'}</dd></div><div><dt>最近成功核查</dt><dd>{report.verifiedAt || '暂无成功记录'}</dd></div></dl>{report.dateNote && <p className="report-coverage">{report.dateNote}</p>}<details className="report-note"><summary>核查说明与原始依据<IconChevronDown size={14} /></summary><p>原发布者：{report.originalPublisher}。{report.verificationNote}</p>{report.regionNote && <p>地区依据：{report.regionNote}</p>}{report.originalUrl && report.originalUrl !== report.url && <OutLink href={report.originalUrl} className="text-link">原始文件</OutLink>}{report.relatedLinks?.map(link => <p key={link.url}><OutLink href={link.url} className="text-link">{link.role} · {link.publisher}</OutLink>{link.publishedAt && ` · ${link.publishedAt}`}</p>)}</details></article>;
+  return <article className="report-row" data-report-id={report.id}>
+    <h3><OutLink href={report.url} className="report-title"><Highlight text={report.title} query={query} /></OutLink></h3>
+    <p className="report-byline"><time>{report.publishedAt || '发布日期未知'}</time><span> · {report.originalPublisher}</span><ReportRegion report={report} filters={filters} /></p>
+    <p className="report-summary"><Highlight text={report.summary} query={query} /></p>
+    <ReadingLimit report={report} />
+    {reason && <p className="match-reason">{reason.label}：<Highlight text={reason.text} query={query} /></p>}
+    <div className="report-actions"><OutLink href={report.url} className="text-link">访问原文</OutLink>{onSource && <button className="text-link" onClick={onSource}>来源详情</button>}</div>
+    <ReportDetails report={report} />
+  </article>;
+}
+
+function ReportRegion({ report, filters }) {
+  const singleCountry = filters.regions?.length === 1 && report.regions.length === 1 && filters.regions[0] === report.regions[0];
+  if (singleCountry || (filters.scope === 'domestic' && report.regions.length === 1 && report.regions[0] === '中国')) return null;
+  return <span> · {report.regions.join(' / ') || '地区待核'}</span>;
+}
+
+function ReadingLimit({ report }) {
+  const limit = report.evidenceLevel === 'third-party-mirror' ? '第三方镜像已读，指定披露同件待核'
+    : report.visibility === 'reference' ? '原文待核 · 补充参考'
+    : report.access === 'paid' || report.access === 'mixed' ? (report.contentScope === 'abstract' ? '仅公开摘要 · 全文需订阅' : '全文访问受限')
+    : report.contentScope === 'abstract' ? '仅公开摘要' : report.contentScope === 'partial' ? '仅核到部分正文' : null;
+  return limit ? <p className="reading-limit">{limit}</p> : null;
+}
+
+function ReportDetails({ report }) {
+  return <details className="report-note"><summary>查看依据与口径<IconChevronDown size={14} /></summary>
+    <p>{TOPICS.find(topic => topic.id === report.primaryCategoryId)?.label} · {labels.kind[report.kind]} · {labels.verificationStatus[report.verificationStatus]}</p>
+    <ReportEvidence report={report} />
+    <dl className="report-dates"><div><dt>数据所属期</dt><dd>{report.dataPeriod || '未知 / 不适用'}</dd></div><div><dt>最近成功核查</dt><dd>{report.verifiedAt || '暂无成功记录'}</dd></div><div><dt>最近尝试</dt><dd>{report.lastCheckAttemptAt || '未单列'}</dd></div></dl>
+    <p>资料地区：{report.regions.join(' / ') || '未明确 / 待核'}</p>{report.regionNote && <p>地区依据：{report.regionNote}</p>}
+    {report.dateNote && <p>{report.dateNote}</p>}<p>{report.verificationNote}</p>
+    {report.relatedSubcategoryNote && <p>{report.relatedSubcategoryNote}</p>}
+    {!!report.tags?.length && <p>主题标签：{report.tags.join('、')}</p>}
+    {report.originalUrl && report.originalUrl !== report.url && <OutLink href={report.originalUrl} className="text-link">原始文件</OutLink>}
+    {report.relatedLinks?.map(link => <p key={link.url}><OutLink href={link.url} className="text-link">{link.role} · {link.publisher}</OutLink>{link.publishedAt && ` · ${link.publishedAt}`}</p>)}
+  </details>;
 }
 
 function ReportEvidence({ report }) {
-  const today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Shanghai' });
+  const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Shanghai' });
   return <div className="report-evidence"><p>取得范围：{contentScopeLabels[report.contentScope]} · {labels.access[report.access]}{report.judgmentTypes.length > 0 && ` · ${report.judgmentTypes.map(type => judgmentLabels[type]).join(' / ')}`}{report.visibility === 'reference' && ' · 补充参考，非已核实动态'}</p>{report.stage && <p>阶段：{report.stage}</p>}{report.documentStatus && <p>文件状态：{report.documentStatus}{report.jurisdiction && ` · 适用法域：${report.jurisdiction}`}</p>}{report.effectiveAt && <p>{report.effectiveAt > today ? '将于' : '文件载明生效日：'}{report.effectiveAt}{report.effectiveAt > today ? '生效' : ''}</p>}{report.deadlineAt && <p>截止日期：{report.deadlineAt}</p>}</div>;
 }
 
 export function SourcePreview({ source, filters }) {
-  const report = getSourcePreview(source, filters);
-  const hasReports = source.relatedReports.some(item => item.visibility !== 'archived' && !item.duplicateOf);
-  if (!report) return <p className="source-preview-empty">{hasReports ? '暂未收录符合当前条件的资料' : '暂未收录具体资料'}</p>;
-  return <div className="source-preview" data-preview-id={report.id}><div className="preview-meta"><span>{report.kind === 'methodology' ? '参考资料 / 方法说明' : report.visibility === 'reference' ? '补充参考' : '近期匹配资料'} · {labels.kind[report.kind]}</span><span>发布日期：{report.publishedAt || '未知 / 待核查'}</span></div><OutLink href={report.url} className="preview-title"><Highlight text={report.title} query={filters.q} /></OutLink><p className="preview-summary"><Highlight text={report.summary} query={filters.q} /></p><p className="preview-regions">资料地区：{report.regions.length ? report.regions.join(' / ') : '未明确 / 待核'}</p><ReportEvidence report={report} />{report.dateNote && <p className="preview-regions">{report.dateNote}</p>}</div>;
+  const report = getSourcePreview(source, { ...filters, dateWindow: 'all', asOf: null });
+  if (!report) return <p className="source-preview-empty">当前条件下暂无收录资料</p>;
+  return <div className="source-preview" data-preview-id={report.id}>
+    <OutLink href={report.url} className="preview-title"><Highlight text={report.title} query={filters.q} /></OutLink>
+    <p className="report-byline">{report.publishedAt || '发布日期未知'}<ReportRegion report={report} filters={filters} /></p>
+    <p className="preview-summary"><Highlight text={report.summary} query={filters.q} /></p><ReadingLimit report={report} /><ReportDetails report={report} />
+  </div>;
 }

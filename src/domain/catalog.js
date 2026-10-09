@@ -43,7 +43,8 @@ export const contentScopeLabels = Object.freeze({
 export const judgmentLabels = Object.freeze({ fact: "事实陈述", opinion: "研究观点", forecast: "预测" });
 export const visibilityLabels = Object.freeze({ active: "正式资料", reference: "补充参考", archived: "已归档" });
 export const eventTypeLabels = Object.freeze({ acquisition: '并购 / 重大投资', capital: '融资 / 资产交易', contract: '重大合同 / 业务合作', risk: '重要风险 / 监管事项' });
-export const evidenceLevelLabels = Object.freeze({ 'official-body': '官方披露正文已核', 'disclosure-paper': '指定披露报刊所载公告已读', media: '媒体转述', lead: '仅目录 / 检索线索', pending: '待核' });
+export const evidenceLevelLabels = Object.freeze({ 'official-body': '官方披露正文已核', 'disclosure-paper': '指定披露报刊所载公告已读', 'third-party-mirror': '第三方镜像已读，指定披露同件待核', media: '媒体转述', lead: '仅目录 / 检索线索', pending: '待核' });
+export const changeKindLabels = Object.freeze({ 'new-record': '新收录', historical: '历史补录', 'event-node': '事项新节点', revision: '信息修订', evidence: '证据补核' });
 export const reviewResultLabels = Object.freeze({ progress: '发现已核进展', 'no-new': '限定范围未确认新增', partial: '核查部分完成', blocked: '核查受阻', 'not-checked': '尚未专项核查', conflict: '证据冲突待核' });
 
 export function isVerifiedMilestone(milestone, reports) {
@@ -473,6 +474,11 @@ export function validateCatalog(
     enumValue(report.kind, kindLabels, `${path}.kind`);
     if (!categoryIds.has(report.primaryCategoryId)) fail(`${path}.primaryCategoryId`, "未知主分类");
     if (report.primarySubcategoryId != null && (!subcategoryIds.has(report.primarySubcategoryId) || subcategoryById.get(report.primarySubcategoryId)?.parentCategoryId !== report.primaryCategoryId)) fail(`${path}.primarySubcategoryId`, '子方向须存在且匹配原主类');
+    if (report.relatedSubcategoryIds !== undefined) {
+      strings(report.relatedSubcategoryIds,`${path}.relatedSubcategoryIds`,{empty:true});
+      for (const id of report.relatedSubcategoryIds || []) if (!subcategoryIds.has(id) || id === report.primarySubcategoryId || subcategoryById.get(id)?.parentCategoryId !== report.primaryCategoryId) fail(`${path}.relatedSubcategoryIds`,'关联子方向须为同主类内其他合法方向');
+      if (report.relatedSubcategoryIds?.length) string(report.relatedSubcategoryNote,`${path}.relatedSubcategoryNote`);
+    }
     strings(report.regions, `${path}.regions`, { empty: true });
     if (!report.regions?.length) string(report.regionNote, `${path}.regionNote`);
     if (Object.hasOwn(report, "stage") && report.stage !== null)
@@ -582,9 +588,14 @@ export function validateCatalog(
     if (!Array.isArray(event.milestones)) fail(`${path}.milestones`, '必须为数组');
     const milestones = Array.isArray(event.milestones) ? event.milestones : [];
     const milestoneIds = identities(milestones, `${path}.milestones`);
+    const primaryEvidenceOwners = new Map();
     milestones.forEach((node, n) => {
       if (!isObject(node)) return;
       const np = `${path}.milestones[${n}]`;
+      if (node.primaryEvidenceReportId) {
+        if (primaryEvidenceOwners.has(node.primaryEvidenceReportId) && primaryEvidenceOwners.get(node.primaryEvidenceReportId) !== node.id) fail(`${np}.primaryEvidenceReportId`, '同一事项 ' + event.id + ' 的不同节点含重复主证据 ' + node.primaryEvidenceReportId);
+        primaryEvidenceOwners.set(node.primaryEvidenceReportId, node.id);
+      }
       string(node.title, `${np}.title`); string(node.summary, `${np}.summary`);
       date(node.occurredAt, `${np}.occurredAt`);
       enumValue(node.verificationLevel, evidenceLevelLabels, `${np}.verificationLevel`);
@@ -616,5 +627,35 @@ export function validateCatalog(
   });
   // Old schema-2 catalogs without an event layer retain their legacy grouping keys.
   if (catalog.events !== undefined) for (const report of reports) if (report.eventId && !eventIds.has(report.eventId)) fail(`reports.${report.id}.eventId`, '未知事件引用');
+  if (catalog.changeBatches !== undefined && !Array.isArray(catalog.changeBatches)) fail('changeBatches','必须为数组');
+  const batches = Array.isArray(catalog.changeBatches) ? catalog.changeBatches : [];
+  const batchIds = new Set();
+  for (const batch of batches) {
+    const path = `changeBatches.${batch?.batchId}`;
+    if (!isObject(batch)) { fail(path,'必须为对象'); continue; }
+    if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(batch.batchId || '') || batchIds.has(batch.batchId)) fail(path,'批次ID无效或重复');
+    if (batch.previousBatchId && !batchIds.has(batch.previousBatchId)) fail(path,'前序批次须存在且在前');
+    batchIds.add(batch.batchId);
+    if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\+08:00$/.test(batch.recordedAt || '') || !Number.isFinite(Date.parse(batch.recordedAt))) fail(path,'须为北京时间时间戳');
+    date(batch.recordedAt?.slice(0,10),`${path}.recordedAt`,{nullable:false});
+    date(batch.periodStart,`${path}.periodStart`,{nullable:false});
+    if (batch.periodStart > batch.recordedAt?.slice(0,10) || batch.recordedAt?.slice(0,10)>catalog.maintainedAt) fail(path,'批次日期范围无效');
+    for (const key of ['scope','summary']) string(batch[key],`${path}.${key}`);
+    if (!/^[a-f0-9]{64}$/.test(batch.inputHash || '')) fail(path,'缺少已核输入指纹');
+    if (!Array.isArray(batch.changes) || !Array.isArray(batch.checks)) { fail(path,'变化与检查须为数组'); continue; }
+    if (!batch.changes.length && !batch.checks.length) fail(path,'不得记录空批次');
+    const changeIds = new Set();
+    for (const change of batch.changes) {
+      if (!isObject(change)) { fail(path,'变化须为对象'); continue; }
+      const ids = {report:reportIds,event:eventIds,source:sourceIds}[change.objectType];
+      if (!ids?.has(change.objectId) || changeIds.has(`${change.objectType}:${change.objectId}`)) fail(path,'变化对象无效或重复');
+      changeIds.add(`${change.objectType}:${change.objectId}`);
+      strings(change.kinds,`${path}.kinds`);string(change.note,`${path}.note`);
+      for (const kind of change.kinds || []) enumValue(kind,changeKindLabels,`${path}.kind`);
+      for (const key of ['beforeRefs','afterRefs']) { strings(change[key],`${path}.${key}`,{empty:true});for (const id of change[key] || []) if (!reportIds.has(id)) fail(path,'未知新旧依据'); }
+      if (change.kinds?.includes('event-node') && (change.objectType !== 'event' || !events.find(e=>e.id===change.objectId)?.milestones.some(n=>change.afterRefs?.includes(n.primaryEvidenceReportId)&&isVerifiedMilestone(n,reports)))) fail(path,'事项新节点须有已核证据');
+    }
+    validateReview({lastAttemptAt:batch.recordedAt?.slice(0,10),result:'partial',note:batch.scope,checks:batch.checks},`${path}.review`);
+  }
   return errors;
 }

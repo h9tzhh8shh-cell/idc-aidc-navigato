@@ -49,13 +49,36 @@ const scopes = ['domestic', 'sea', 'all'];
 const extraViews = ['reports', 'southeast', 'southeast-reports'];
 const isSeaView = view => view === 'southeast' || view === 'southeast-reports';
 
+export const beijingToday = (now = new Date()) => now.toLocaleDateString('sv-SE', { timeZone: 'Asia/Shanghai' });
+export function validDay(value) {
+  return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value) && Number.isFinite(Date.parse(value)) && new Date(value).toISOString().slice(0,10) === value;
+}
+export function dateRange(window, asOf) {
+  if (!['7','30'].includes(window) || !validDay(asOf)) return null;
+  return { from: new Date(Date.parse(asOf) - (Number(window)-1)*86400000).toISOString().slice(0,10), through: asOf };
+}
+export function matchesPublishedDate(report, filters, today = beijingToday()) {
+  if (report.publishedAt && (!validDay(report.publishedAt) || report.publishedAt > today)) return false;
+  if (filters.dateWindow === 'unknown') return report.publishedAt === null;
+  const range = dateRange(filters.dateWindow, filters.asOf);
+  return !range || Boolean(report.publishedAt && report.publishedAt >= range.from && report.publishedAt <= range.through);
+}
+
 export function normalizeFilters(filters = {}, view = 'sources') {
   const clean = {
     q: String(filters.q || '').trim(),
     sort: ['relevance', 'name', 'verified'].includes(filters.sort) ? filters.sort : 'relevance',
     scope: scopes.includes(filters.scope) ? filters.scope : 'all',
     showReference: filters.showReference === true,
+    dateWindow: ['7','30','unknown'].includes(filters.dateWindow) ? filters.dateWindow : 'all',
+    asOf: null,
+    readingMode: filters.readingMode === 'batches' ? 'batches' : 'original',
+    batchId: /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(filters.batchId || '') ? filters.batchId : null,
   };
+  if (['7','30'].includes(clean.dateWindow)) {
+    if (validDay(filters.asOf) && filters.asOf <= beijingToday()) clean.asOf = filters.asOf;
+    else clean.dateWindow = 'all';
+  }
   for (const [key, values] of Object.entries(allowed)) {
     const selected = Array.isArray(filters[key]) ? filters[key] : [];
     const mapped = key === 'topics' ? selected.flatMap(value => oldTopics[value] || [value]) : selected;
@@ -136,6 +159,7 @@ export function decorateSources(data) {
 
 function matchesReport(report, source, filters) {
   return isVisible(report, filters) &&
+    matchesPublishedDate(report, filters) &&
     matchesAny([report.primaryCategoryId], filters.topics) &&
     (!filters.subcategory || report.primarySubcategoryId === filters.subcategory) &&
     matchesAny(report.companyIds, filters.companies) &&
@@ -176,7 +200,7 @@ function sortItems(items, filters, byReportDate = false) {
 }
 
 export function filterSources(sources, filters = {}) {
-  const clean = normalizeFilters(filters);
+  const clean = normalizeFilters({ ...filters, dateWindow: 'all', asOf: null });
   const seen = new Set();
   return sortItems(sources.filter(source => {
     if (seen.has(source.id) || !isVisible(source, clean)) return false;
@@ -257,6 +281,8 @@ export function getReportMatchReason(report, source, q) {
   const terms = termsOf(q);
   const visible = textOf([report.title, report.summary, report.dataPeriod, report.stage, report.regions || [], source.name]);
   if (!terms.length || includesAll(visible, terms)) return null;
+  const tags = (report.tags || []).filter(tag => terms.some(term => tag.toLocaleLowerCase().includes(term)));
+  if (tags.length) return { label: '主题标签匹配', text: tags.join(' · ') };
   const companyNames = companyTerms(report, source);
   if (companyNames.some(name => terms.some(term => name.toLocaleLowerCase().includes(term)))) {
     return { label: '主体匹配', text: companyNames.join(' · ') };
@@ -274,6 +300,12 @@ export function writeQuery(filters, view = 'sources', selectedId = null, navigat
   if (selectedId && /^[a-z0-9][a-z0-9-]{0,79}$/i.test(selectedId)) params.set('source', selectedId);
   if (clean.showReference) params.set('showReference', '1');
   if (clean.subcategory) params.set('subcategory', clean.subcategory);
+  if (view.endsWith('reports') || navigation.company || navigation.event) {
+    if (clean.dateWindow !== 'all') params.set('dateWindow',clean.dateWindow);
+    if (clean.asOf) params.set('asOf',clean.asOf);
+    if (clean.readingMode === 'batches' && !navigation.company && !navigation.event) params.set('readingMode','batches');
+    if (clean.batchId && clean.readingMode === 'batches') params.set('batch',clean.batchId);
+  }
   for (const key of ['company', 'event']) if (navigation[key] && /^[a-z0-9][a-z0-9-]{0,100}$/.test(navigation[key])) params.set(key, navigation[key]);
   if (navigation.listedMode === 'sources') params.set('listedMode', 'sources');
   if (['acquisition','capital','contract','risk'].includes(navigation.eventType)) params.set('eventType',navigation.eventType);
@@ -289,6 +321,8 @@ export function readQuery(search = '') {
   const source = params.get('source');
   const selectedId = source && /^[a-z0-9][a-z0-9-]{0,79}$/i.test(source) ? source : null;
   const filters = { q: params.get('q') || '', sort: params.get('sort'), showReference: params.get('showReference') === '1', subcategory: params.get('subcategory') };
+  const acceptsDates = view.endsWith('reports') || params.has('company') || params.has('event');
+  if (acceptsDates) Object.assign(filters,{dateWindow:params.get('dateWindow'),asOf:params.get('asOf'),readingMode:params.get('readingMode'),batchId:params.get('batch')});
   for (const key of Object.keys(allowed)) filters[key] = params.getAll(key);
   const clean = normalizeFilters(filters, view);
   const hasLegacyQuery = clean.q || Object.keys(allowed).some(key => clean[key].length) ||
@@ -298,6 +332,9 @@ export function readQuery(search = '') {
   const state = { filters: normalizeFilters(filters, view), view, selectedId };
   const notice = subcategoryNotice(filters, view);
   if (notice) state.notice = notice;
+  if ((params.has('dateWindow') && (!acceptsDates || !['all','7','30','unknown'].includes(params.get('dateWindow')))) ||
+      (['7','30'].includes(filters.dateWindow) && state.filters.dateWindow === 'all') ||
+      (params.has('asOf') && (!validDay(params.get('asOf')) || params.get('asOf') > beijingToday()))) state.notice = '日期条件无效或不适用，已恢复全部时间。';
   if (params.has('company') || params.has('event') || params.has('listedMode') || params.has('return') || params.has('eventType')) {
     state.navigation = {};
     for (const key of ['company', 'event']) if (params.has(key)) state.navigation[key] = /^[a-z0-9][a-z0-9-]{0,100}$/.test(params.get(key)) ? params.get(key) : 'invalid-record';
@@ -343,4 +380,18 @@ export function companyEvents(data, companyId, filters = {}) {
 }
 export function companyReports(data, sources, companyId, filters = {}) {
   return filterReports(data.reports, sources, { ...filters, topics: [], subcategory: null, companies: [companyId] });
+}
+
+export function relatedReports(data, sources, filters = {}) {
+  const clean = normalizeFilters(filters);
+  if (!clean.subcategory || filterReports(data.reports,sources,clean).length > 2) return [];
+  return filterReports(data.reports,sources,{...clean,subcategory:null}).filter(report =>
+    report.primarySubcategoryId !== clean.subcategory && report.relatedSubcategoryIds?.includes(clean.subcategory)).slice(0,3);
+}
+
+export function batchChanges(data, sources, batch, filters = {}) {
+  const allowedReports = new Set(filterReports(data.reports,sources,{...filters,dateWindow:'all',asOf:null}).map(r=>r.id));
+  const allowedSources = new Set(filterSources(sources,{...filters,dateWindow:'all',asOf:null}).map(s=>s.id));
+  return batch.changes.filter(change => change.objectType === 'report' ? allowedReports.has(change.objectId)
+    : change.objectType === 'event' ? change.afterRefs.some(id=>allowedReports.has(id)) : allowedSources.has(change.objectId));
 }
