@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import data from '../public/assets/catalog.json' with {type:'json'};
+import baseline from './fixtures/pre-phase4-catalog.json' with {type:'json'};
 import {mergeBatch} from '../scripts/reviewed-batch.mjs';
 import {validateCatalog} from '../src/domain/catalog.js';
 import {eventTimeline,readQuery,writeQuery,companyEvents} from '../src/catalog.js';
@@ -13,6 +14,7 @@ function fixture() {
  return {report,node,batch:{reports:[report],events:[{event:{id},nodes:[node],current:{reason:'progress',currentSummary:report.summary,latestVerifiedMilestoneId:node.id,basisMilestoneIds:[node.id]}}]}};
 }
 test('B13-17: actual HEC events distinct, pending newer clue never current; VNET original ID/date',()=>{
+ const data=baseline; // Preserve the historical pre-supplement acceptance, not today's evidence state.
  const a=data.events.find(e=>e.id==='hec-chindata-platform-acquisition'),b=get(data);
  assert.match(a.currentSummary,/交割完成/);assert.match(b.currentSummary,/待核/);assert.notEqual(a.latestVerifiedMilestoneId,b.latestVerifiedMilestoneId);
  assert.equal(b.latestVerifiedMilestoneId,'reply-and-revision');assert.equal(data.reports.find(r=>r.id==='hec-reorganization-newer-attachment-pending').publishedAt,null);

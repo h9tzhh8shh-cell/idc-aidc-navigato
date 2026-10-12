@@ -5,7 +5,7 @@ import { OutLink, ReportRow } from './components.jsx';
 export function DateControls({ filters, onChange, company = false }) {
   const range = dateRange(filters.dateWindow,filters.asOf);
   return <section className="date-controls" aria-label="资料原文时间">
-    {company && <p className="time-caption">资料原文时间 · 不改变上方事项当前状态</p>}
+    {company && <p className="time-caption">资料原文时间 · 不改变上方业绩及事项当前状态</p>}
     <div className="topic-tabs" role="group" aria-label="原文时间窗口">{[['all','全部时间'],['7','近7天'],['30','近30天'],['unknown','日期未知']].map(([id,label])=><button key={id} aria-pressed={(filters.dateWindow || 'all')===id} onClick={()=>onChange({dateWindow:id,asOf:['7','30'].includes(id)?beijingToday():null})}>{label}</button>)}</div>
     {range && <p className="time-caption">{range.from} — {range.through}（北京时间）{filters.asOf !== beijingToday() && <> · <button className="text-link" onClick={()=>onChange({asOf:beijingToday()})}>更新到今天</button></>}</p>}
   </section>;

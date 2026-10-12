@@ -1,0 +1,960 @@
+{
+  "maintainedAt": "2026-10-12",
+  "sources": [
+    {
+      "id": "stcn-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "亲自读取产经栏目及样例文章全文；原站有未经书面授权禁止转载等声明，未取得转载授权，展示限于题名、日期、原文链接及不复述正文事实的导航说明。\n2026-10-12：检查现有入口及近30日数据中心/液冷相关检索。未找到本轮适合新增且可按既有授权口径展示的新样例；行情、投资营销与窗外材料未凑数。保留已有bibliographic-link-only限制。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：储能及算力配储成新增量 多家产业链上市公司抢抓机遇。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。 本批新增3篇。实际补核题名：新华三集团与晶科科技签署战略合作协议 共同拓展国内外智算市场；中鼎股份：公司正在搭建Token工厂专项团队 推进AI算力业务产业化落地；阳光股份跨界转型迎实质性进展 两大智算中心项目落地数字智算园。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。"
+    },
+    {
+      "id": "yicai-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "亲自读取新闻栏目及相关原创样例全文。文章明确限制未经授权使用、转载和摘编；本轮仅提供书目信息、链接及导航说明，不复述其采访数据或研究结论。\n2026-10-12：检查现有入口及近30日数据中心/液冷相关检索。未找到本轮适合新增且可按既有授权口径展示的新样例；行情、投资营销与窗外材料未凑数。保留已有bibliographic-link-only限制。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：“337调查”指向立讯精密、工业富联，双双回应，影响几何？。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。 本批新增3篇。实际补核题名：全球运营商最大单体智算中心扩容项目竣工；光弘科技：已开始为国内外头部客户提供各类服务算力器板卡、冷却组件等产品的制造服务；罗曼股份：子公司签订2.77亿元算力设备采购合同。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。"
+    },
+    {
+      "id": "nbd-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得每经AI快讯，属于活动记录转述，不标记者原创。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：立讯精密遭美国337调查，涉及数据中心电源模块 公司：相关产品处于客户验证阶段。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。 本批新增1篇。实际补核题名：润泽科技：公司持续迭代适配国产芯片的超节点集群液冷散热方案与管控保障体系，已落地的新一代大规模超节点集群运行稳定。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。"
+    },
+    {
+      "id": "cls-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得记者付静行业会议采访正文。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：星展集团CEO：市场正在重新评估人工智能建设相关投资的风险。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。 本批新增1篇。实际补核题名：美国数据中心抵制声浪愈演愈烈？高盛：到2027年增长前景基本不变。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。"
+    },
+    {
+      "id": "jiemian-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得记者陆柯言产品路线图报道；计划不等于已交付。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：国产AI，开始为算力算账。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。 本批新增1篇。实际补核题名：机房紧缺，资本反而开始“挑剔”数据中心？。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。"
+    },
+    {
+      "id": "thepaper-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得周玲署名报道；澎湃号文章不自动纳入记者原创。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：GCC区俊彦：让标准成为连接全球计算产业的“共同语言”。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：父任务已有有限搜索与现有3篇；本轮未找到需补充的合格增量，保留3篇，未宣称完成栏目全覆盖。 本批新增0篇。保留已有资料，不为满5篇凑数。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。"
+    },
+    {
+      "id": "36kr-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得未署名产品发布快讯；性能为企业声称，未作独立验证。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：算力基建的战争，才刚刚在液冷赛道上演。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。已有10月12日天数智芯超节点快讯不重复新增；9月报道在10月转刊的峰会材料及10月5日窗外文章不作本周新事实。\n2026-10-12（折叠列表补核）：有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。 本批新增3篇。实际补核题名：中信证券：2026年有望成为液冷产业链订单—业绩集中兑现的转折之年；王超给超节点画了一条线；液冷为什么能成为模拟芯片新增长点。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。"
+    },
+    {
+      "id": "dcd-southeast-asia",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-10-08 已读取东南亚新闻列表及 10 月 6 日 DayOne IPO 报道，并追溯至 SEC 10 月 5 日 F-1 原文；目录采用公司申报原文，未再新增同事件媒体条目。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：Bitdeer AI签订马来西亚67MW A901数据中心服务协议。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：有限检索区域入口与本轮4个新增候选，均读取媒体正文、原站日期和署名；A202另核发行人IR。没有完成全站、全部分页及全部转引文件覆盖。 本批新增4篇。实际补核题名：Firmus 印尼首个机房移交，塔斯马尼亚机房完成封顶；Meta签约租用Firmus东南亚AI算力，项目仍在建设；Amazon马来西亚子公司签订雪兰莪土地有条件购买协议；Bitdeer AI预租柔佛65.1MW A202设施，计划2027年三季度通电。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。"
+    },
+    {
+      "id": "wmedia-sea",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "初次直达东南亚栏目失败，沿 w.media 首页 SEA 导航重试后读到目录；复读越南 Stavian、菲律宾 Globe、印尼 BDx 和泰国法案四篇正文。按文章绝对发布日期去重，不采用列表相对时间推断新增。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：软银、Grab与PETROS签署砂拉越AI基础设施探索框架协议。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：有限查阅主页、本轮3个新增候选全文；SM+交易另核PDG官方。东南亚分类直连失败；2篇web复读Internal Error后常规HTTPS直连200。未取得DayOne拟发债正式文件、彭博原文或BIMB研究札记。 本批新增3篇。实际补核题名：SM+签约收购PDG印尼企业级数据中心业务，尚待交割；媒体称DayOne商谈5亿美元债券融资，尚未正式发行；BIMB研究观点：雪兰莪用水约束可能放缓2027年数据中心建设。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。"
+    }
+  ],
+  "reports": [
+    {
+      "id": "yicai-mobile-20261012",
+      "sourceId": "yicai-industry",
+      "title": "全球运营商最大单体智算中心扩容项目竣工",
+      "url": "https://www.yicai.com/brief/103389126.html",
+      "kind": "news",
+      "publishedAt": "2026-10-12",
+      "dataPeriod": null,
+      "summary": "第一财经转述中国移动呼和浩特智算中心扩容竣工消息；竣工与实际投运须分别核实，详情请在原站阅读。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12实际读取原站公开正文、页面发布日期和署名；核实的是文章内容与出处。沿用来源bibliographic-link-only限制，仅作短主题介绍与书目链接，不转载数据和采访内容。原内蒙古日报文章、中建三局文件及实际投运确认未另取；原标题最大单体为媒体口径，本站不作独立认定。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "中国"
+      ],
+      "stage": "媒体报道竣工；实际投运待核",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "china-mobile"
+      ],
+      "access": "free",
+      "originalPublisher": "内蒙古日报",
+      "originalUrl": null,
+      "visibility": "active",
+      "tags": [
+        "中国移动",
+        "呼和浩特",
+        "智算中心",
+        "扩容",
+        "竣工"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "第一财经快讯（未署名；据内蒙古日报）"
+      },
+      "displayRestriction": "bibliographic-link-only"
+    },
+    {
+      "id": "yicai-liquid-20261008",
+      "sourceId": "yicai-industry",
+      "title": "光弘科技：已开始为国内外头部客户提供各类服务算力器板卡、冷却组件等产品的制造服务",
+      "url": "https://www.yicai.com/brief/103386751.html",
+      "kind": "news",
+      "publishedAt": "2026-10-08",
+      "dataPeriod": null,
+      "summary": "第一财经关于光弘科技算力设备制造及液冷超节点业务进入生产阶段的快讯；具体交付和收入请在原站核对。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12实际读取原站公开正文、页面发布日期和署名；核实的是文章内容与出处。沿用来源bibliographic-link-only限制，仅作短主题介绍与书目链接，不转载数据和采访内容。原公司互动平台问答未另取；客户未点名，海外项目国家不推断，进入生产不等于确认收入。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "中国"
+      ],
+      "stage": "公司互动平台生产进展转述",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "第一财经",
+      "originalUrl": "https://www.yicai.com/brief/103386751.html",
+      "visibility": "active",
+      "tags": [
+        "光弘科技",
+        "液冷",
+        "超节点",
+        "生产阶段"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "第一财经快讯（未署名；互动平台转述）"
+      },
+      "displayRestriction": "bibliographic-link-only"
+    },
+    {
+      "id": "yicai-roman-20261007",
+      "sourceId": "yicai-industry",
+      "title": "罗曼股份：子公司签订2.77亿元算力设备采购合同",
+      "url": "https://www.yicai.com/brief/103385020.html",
+      "kind": "news",
+      "publishedAt": "2026-10-07",
+      "dataPeriod": null,
+      "summary": "第一财经关于罗曼股份子公司算力设备采购框架合同的快讯；框架签订与实际交付、业绩贡献仍需分别核实。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12实际读取原站公开正文、页面发布日期和署名；核实的是文章内容与出处。沿用来源bibliographic-link-only限制，仅作短主题介绍与书目链接，不转载数据和采访内容。原公司公告和实际履约未另取；媒体题名写采购合同，正文为采购框架，不视为完成采购。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "中国"
+      ],
+      "stage": "采购框架合同签订；业绩影响待核",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "第一财经",
+      "originalUrl": "https://www.yicai.com/brief/103385020.html",
+      "visibility": "active",
+      "tags": [
+        "罗曼股份",
+        "采购框架",
+        "算力设备"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "第一财经快讯（未署名；公司公告转述）"
+      },
+      "displayRestriction": "bibliographic-link-only"
+    },
+    {
+      "id": "stcn-h3c-jinko-20261010",
+      "sourceId": "stcn-industry",
+      "title": "新华三集团与晶科科技签署战略合作协议 共同拓展国内外智算市场",
+      "url": "https://egs.stcn.com/news/detail/2348461.html",
+      "kind": "news",
+      "publishedAt": "2026-10-10",
+      "dataPeriod": null,
+      "summary": "证券时报旗下e公司刊载新华三与晶科科技智算战略合作消息；仅属合作协议，具体项目和交付请在原站核对。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12实际读取原站公开正文、页面发布日期和署名；核实的是文章内容与出处。沿用来源bibliographic-link-only限制，仅作短主题介绍与书目链接，不转载数据和采访内容。原公司协议及项目公告未另取；报道仅称国内外市场，未列海外项目国家，不用总部代替项目地区。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "中国"
+      ],
+      "stage": "战略合作协议；具体项目待披露",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "人民财讯",
+      "originalUrl": "https://egs.stcn.com/news/detail/2348461.html",
+      "visibility": "active",
+      "tags": [
+        "新华三",
+        "晶科科技",
+        "战略合作",
+        "智算"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "赖小风／人民财讯"
+      },
+      "displayRestriction": "bibliographic-link-only"
+    },
+    {
+      "id": "stcn-zhongding-20260917",
+      "sourceId": "stcn-industry",
+      "title": "中鼎股份：公司正在搭建Token工厂专项团队 推进AI算力业务产业化落地",
+      "url": "https://www.stcn.com/article/detail/4189238.html",
+      "kind": "news",
+      "publishedAt": "2026-09-17",
+      "dataPeriod": null,
+      "summary": "证券时报刊载中鼎股份关于智算业务及Token工厂团队筹建的表态；仍属规划与组织建设，详情请在原站阅读。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12实际读取原站公开正文、页面发布日期和署名；核实的是文章内容与出处。沿用来源bibliographic-link-only限制，仅作短主题介绍与书目链接，不转载数据和采访内容。原投资者活动记录未另取；不把万卡规划、合作协议当成投运容量或已交付订单。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "中国"
+      ],
+      "stage": "专项团队筹建与业务规划",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "人民财讯",
+      "originalUrl": "https://www.stcn.com/article/detail/4189238.html",
+      "visibility": "active",
+      "tags": [
+        "中鼎股份",
+        "Token工厂",
+        "智算中心",
+        "筹建"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "叶玲珍／人民财讯"
+      },
+      "displayRestriction": "bibliographic-link-only"
+    },
+    {
+      "id": "stcn-sunshine-20260915",
+      "sourceId": "stcn-industry",
+      "title": "阳光股份跨界转型迎实质性进展 两大智算中心项目落地数字智算园",
+      "url": "https://www.stcn.com/article/detail/4186490.html",
+      "kind": "news",
+      "publishedAt": "2026-09-15",
+      "dataPeriod": null,
+      "summary": "证券时报关于阳光齐昌数字智算园两项目签约入驻的报道；签约与后续投运须区分，详情请在原站阅读。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12实际读取原站公开正文、页面发布日期和署名；核实的是文章内容与出处。沿用来源bibliographic-link-only限制，仅作短主题介绍与书目链接，不转载数据和采访内容。原公司公告、官微、节能审查原件未另取；标题落地不自动认定已完成机房建设。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "中国"
+      ],
+      "stage": "项目签约入驻；后续建设投运待核",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "证券时报网",
+      "originalUrl": "https://www.stcn.com/article/detail/4186490.html",
+      "visibility": "active",
+      "tags": [
+        "阳光股份",
+        "兴宁",
+        "智算园",
+        "签约入驻"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "唐强"
+      },
+      "displayRestriction": "bibliographic-link-only"
+    },
+    {
+      "id": "nbd-runze-20260923",
+      "sourceId": "nbd-industry",
+      "title": "润泽科技：公司持续迭代适配国产芯片的超节点集群液冷散热方案与管控保障体系，已落地的新一代大规模超节点集群运行稳定",
+      "url": "https://m.nbd.com.cn/articles/2026-09-23/4590067.html",
+      "kind": "news",
+      "publishedAt": "2026-09-23",
+      "dataPeriod": null,
+      "summary": "每经快讯转述润泽科技对国产超节点液冷部署及运行情况的说明；属于公司互动平台口径，具体客户和运营表现未独立核实。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12实际读取原站公开正文、页面发布日期和署名；核实的是文章内容与出处。仅作有归属的短摘要，不转载全文。本次仅读取媒体短讯，原互动平台问答和客户交付文件未另取；不把自述能力当独立性能认证。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "中国"
+      ],
+      "stage": "公司互动平台说明既有集群部署与运行",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "每日经济新闻",
+      "originalUrl": "https://m.nbd.com.cn/articles/2026-09-23/4590067.html",
+      "visibility": "active",
+      "tags": [
+        "润泽科技",
+        "国产超节点",
+        "液冷",
+        "运维"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "每经AI快讯（未署记者）"
+      }
+    },
+    {
+      "id": "cls-goldman-20261005",
+      "sourceId": "cls-industry",
+      "title": "美国数据中心抵制声浪愈演愈烈？高盛：到2027年增长前景基本不变",
+      "url": "https://www.cls.cn/detail/2497898",
+      "kind": "news",
+      "publishedAt": "2026-10-05",
+      "dataPeriod": null,
+      "summary": "财联社转述高盛对美国数据中心扩张的研判：社区与政治阻力增加，但其短期增长判断基本不变；这是预测，实际建设仍需逐项目核实。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12实际读取原站公开正文、页面发布日期和署名；核实的是文章内容与出处。仅作有归属的短摘要，不转载全文。高盛研报原件及项目统计未取得，本篇只列媒体新闻，不新增已核券商研报。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "regions": [
+        "美国"
+      ],
+      "stage": "媒体转述券商容量预测",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "opinion",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "财联社",
+      "originalUrl": "https://www.cls.cn/detail/2497898",
+      "visibility": "active",
+      "tags": [
+        "美国",
+        "高盛",
+        "数据中心",
+        "容量预测",
+        "社区阻力"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "卞纯"
+      }
+    },
+    {
+      "id": "jiemian-capital-20261005",
+      "sourceId": "jiemian-industry",
+      "title": "机房紧缺，资本反而开始“挑剔”数据中心？",
+      "url": "https://www.jiemian.com/article/15161780.html",
+      "kind": "news",
+      "publishedAt": "2026-10-05",
+      "dataPeriod": null,
+      "summary": "半导体产业纵横分析机房开发融资：长租约仍须配合供电、资金及交付责任；属平台作者研判，所引项目和上市时间表未逐项核实。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12实际读取原站公开正文、页面发布日期和署名；核实的是文章内容与出处。仅作有归属的短摘要，不转载全文。读到界面全文和转载署名；原作者首发页、各公司交易及招股文件未另取，不能由文中未来计划生成官方进展节点。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "regions": [
+        "美国",
+        "马来西亚",
+        "日本"
+      ],
+      "stage": "平台作者融资与交付风险分析",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "opinion",
+        "forecast"
+      ],
+      "companyIds": [
+        "dayone",
+        "tnb"
+      ],
+      "access": "free",
+      "originalPublisher": "半导体产业纵横",
+      "originalUrl": null,
+      "visibility": "active",
+      "tags": [
+        "数据中心融资",
+        "交付风险",
+        "供电",
+        "DayOne"
+      ],
+      "authorship": {
+        "type": "platform",
+        "author": "半导体产业纵横（JMedia转载）"
+      },
+      "dateNote": "使用界面转载页2026/10/05 11:09；同日36氪同作者同题转载16:00没有增量，不重复收录。"
+    },
+    {
+      "id": "36kr-citic-liquid-20260924",
+      "sourceId": "36kr-industry",
+      "title": "中信证券：2026年有望成为液冷产业链订单—业绩集中兑现的转折之年",
+      "url": "https://www.36kr.com/newsflashes/3996658071359363",
+      "kind": "news",
+      "publishedAt": "2026-09-24",
+      "dataPeriod": null,
+      "summary": "36氪快讯转述中信证券对液冷向AI基础设施普及及产业链兑现的预测；属于券商观点，不能视为相关企业订单或收入已经实现。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12实际读取原站公开正文、页面发布日期和署名；核实的是文章内容与出处。仅作有归属的短摘要，不转载全文。读取完整短讯日期2026-09-24 08:18；中信证券研报原件未取得，本条为媒体新闻，非新增已核券商研报。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "中国",
+        "全球"
+      ],
+      "stage": "媒体转述券商液冷产业预测",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "opinion",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "36氪",
+      "originalUrl": "https://www.36kr.com/newsflashes/3996658071359363",
+      "visibility": "active",
+      "tags": [
+        "液冷",
+        "中信证券",
+        "AI基础设施",
+        "产业链"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "36氪快讯（未署名）"
+      }
+    },
+    {
+      "id": "36kr-supernode-analysis-20260923",
+      "sourceId": "36kr-industry",
+      "title": "王超给超节点画了一条线",
+      "url": "https://www.36kr.com/p/3995739738410884",
+      "kind": "news",
+      "publishedAt": "2026-09-23",
+      "dataPeriod": null,
+      "summary": "王智远结合阿里云峰会发言讨论超节点的统一内存、低时延及系统协作能力；属作者技术分析，产品性能和客户实际使用未独立验证。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12实际读取原站公开正文、页面发布日期和署名；核实的是文章内容与出处。仅作有归属的短摘要，不转载全文。实际读取正文、2026-09-23 21:10、文末授权与观点归属；未读作者微信首发或完整峰会录像，不摘录未经核实的性能及模型数字为本站事实。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "中国"
+      ],
+      "stage": "平台作者超节点技术分析",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "opinion"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "王智远",
+      "originalUrl": null,
+      "visibility": "active",
+      "tags": [
+        "阿里云",
+        "超节点",
+        "互联",
+        "统一内存"
+      ],
+      "authorship": {
+        "type": "platform",
+        "author": "王智远（36氪经授权转载）"
+      }
+    },
+    {
+      "id": "36kr-liquid-chips-20260916",
+      "sourceId": "36kr-industry",
+      "title": "液冷为什么能成为模拟芯片新增长点",
+      "url": "https://www.36kr.com/p/3985330817825794",
+      "kind": "news",
+      "publishedAt": "2026-09-16",
+      "dataPeriod": null,
+      "summary": "电子工程世界分析液冷带来的温度、压力、流量与漏液监测需求，以及模拟芯片控制链机会；属于技术与产业分析，不代表新增订单。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12实际读取原站公开正文、页面发布日期和署名；核实的是文章内容与出处。仅作有归属的短摘要，不转载全文。网页检索直开超时，但直接原站公开HTML取得全文、2026-09-16 08:52及作者冀凯署名；未另取作者首发页、芯片规格及厂商原件，不将分析写成实测结果。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "中国",
+        "全球"
+      ],
+      "stage": "平台作者液冷控制链分析",
+      "contentScope": "full",
+      "judgmentTypes": [
+        "opinion",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "电子工程世界",
+      "originalUrl": null,
+      "visibility": "active",
+      "tags": [
+        "液冷",
+        "模拟芯片",
+        "传感器",
+        "漏液检测"
+      ],
+      "authorship": {
+        "type": "platform",
+        "author": "冀凯／电子工程世界（36氪经授权转载）"
+      }
+    },
+    {
+      "kind": "news",
+      "dataPeriod": null,
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "contentScope": "full",
+      "access": "free",
+      "visibility": "active",
+      "id": "dcd-firmus-hall-progress-20261007",
+      "sourceId": "dcd-southeast-asia",
+      "title": "Firmus 印尼首个机房移交，塔斯马尼亚机房完成封顶",
+      "url": "https://www.datacenterdynamics.com/en/news/firmus-tops-out-data-center-building-in-tasmania/",
+      "publishedAt": "2026-10-07",
+      "summary": "Firmus称印尼首个机房已由建设伙伴移交，团队可开始安装HyperCube系统；澳大利亚塔斯马尼亚一栋机房完成封顶，印尼算力设备交付与安装仍在后续阶段，不能视为已运行算力。",
+      "verificationNote": "2026-10-12：复读DCD公开正文，页面署日October 07, 2026，记者Georgia Butler；原文引述Firmus LinkedIn动态，并说明印尼巴淡岛项目与DayOne合作。读取了媒体全文，未单独取得该LinkedIn原帖或验收文件；机房移交只支持后续HyperCube安装，不推定算力已经交付、投运。页面关于GPU数量仍为预期，本摘要不据此计容量。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "印尼"
+      ],
+      "regionNote": "本文同时涉及澳大利亚塔斯马尼亚；当前固定地区筛选中仅标记已支持的印尼，不将澳大利亚归入其他国家或全球项目。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "dayone"
+      ],
+      "originalPublisher": "DataCenterDynamics",
+      "originalUrl": "https://www.datacenterdynamics.com/en/news/firmus-tops-out-data-center-building-in-tasmania/",
+      "tags": [
+        "Firmus",
+        "巴淡岛",
+        "DayOne",
+        "机房移交",
+        "HyperCube",
+        "澳大利亚",
+        "塔斯马尼亚"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "Georgia Butler"
+      },
+      "stage": "机房移交／封顶；算力安装与投运未确认"
+    },
+    {
+      "kind": "news",
+      "dataPeriod": null,
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "contentScope": "full",
+      "access": "free",
+      "visibility": "active",
+      "id": "dcd-meta-firmus-sea-20260929",
+      "sourceId": "dcd-southeast-asia",
+      "title": "Meta签约租用Firmus东南亚AI算力，项目仍在建设",
+      "url": "https://www.datacenterdynamics.com/en/news/meta-signs-on-to-use-ai-capacity-at-firmus-southeast-asia-data-centers/",
+      "publishedAt": "2026-09-29",
+      "summary": "Meta签约租用Firmus计划部署的东南亚AI算力，报道涉及与DayOne合作开发的印尼及马来西亚设施，东南亚容量仍待建设和交付，不能把租约当作已实际使用。",
+      "verificationNote": "2026-10-12：复读DCD公开正文，页面署日September 29, 2026，记者Georgia Butler；正文写明upcoming deployments、Firmus与DayOne开发AI factories，并引述Meta及Firmus管理层。未取得租赁合同或单独核实各项目交付，签约和运行明确区分；不把已在墨尔本租用的算力混算为东南亚投运。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "regions": [
+        "印尼",
+        "马来西亚"
+      ],
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [
+        "dayone"
+      ],
+      "originalPublisher": "DataCenterDynamics",
+      "originalUrl": "https://www.datacenterdynamics.com/en/news/meta-signs-on-to-use-ai-capacity-at-firmus-southeast-asia-data-centers/",
+      "tags": [
+        "Meta",
+        "Firmus",
+        "DayOne",
+        "AI算力租约",
+        "巴淡岛",
+        "马来西亚"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "Georgia Butler"
+      },
+      "stage": "容量租约已签；设施建设与交付待落实"
+    },
+    {
+      "kind": "news",
+      "dataPeriod": null,
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "contentScope": "full",
+      "access": "free",
+      "visibility": "active",
+      "id": "dcd-amazon-sepang-land-20260929",
+      "sourceId": "dcd-southeast-asia",
+      "title": "Amazon马来西亚子公司签订雪兰莪土地有条件购买协议",
+      "url": "https://www.datacenterdynamics.com/en/news/amazon-buys-land-outside-kuala-lumpur-malaysia/",
+      "publishedAt": "2026-09-29",
+      "summary": "Amazon Data Services Malaysia与Sunsuria子公司签订雪兰莪雪邦土地有条件购买协议，报道未披露该地块具体数据中心规划，也未确认交易已经完成。",
+      "verificationNote": "2026-10-12：复读DCD公开正文，页面署日September 29, 2026，记者Dan Swinhoe。媒体标题用buys，但正文明确conditional sale and purchase agreement，并说明Details of any planned data center on the site have not been shared；以正文限定摘要。未取得Sunsuria原始交易所公告或交割证明，不据土地协议新增确定项目容量、施工或投运状态。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "马来西亚"
+      ],
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "originalPublisher": "DataCenterDynamics",
+      "originalUrl": "https://www.datacenterdynamics.com/en/news/amazon-buys-land-outside-kuala-lumpur-malaysia/",
+      "tags": [
+        "Amazon",
+        "AWS",
+        "Sunsuria",
+        "雪兰莪",
+        "雪邦",
+        "有条件土地协议"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "Dan Swinhoe"
+      },
+      "stage": "有条件土地买卖协议；数据中心规划未披露"
+    },
+    {
+      "kind": "news",
+      "dataPeriod": null,
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "contentScope": "full",
+      "access": "free",
+      "visibility": "active",
+      "id": "dcd-bitdeer-a202-20260918",
+      "sourceId": "dcd-southeast-asia",
+      "title": "Bitdeer AI预租柔佛65.1MW A202设施，计划2027年三季度通电",
+      "url": "https://www.datacenterdynamics.com/en/news/bitdeer-ai-to-lease-65mw-data-center-in-johor-malaysia/",
+      "publishedAt": "2026-09-18",
+      "summary": "Bitdeer AI签订10年数据中心服务协议，预租马来西亚柔佛65.1MW A202设施，计划2027年第三季度通电，该容量属于已签约待交付规模，不属于当前投运容量。",
+      "verificationNote": "2026-10-12：复读DCD公开正文（September 18, 2026，Dan Swinhoe）并核读Bitdeer官方IR 2026-09-14公告。A202为柔佛65.1MW设施，10年服务协议、预计2027Q3通电；官方定义为critical IT load。与目录既有67MW A901事项为不同设施，不重复合并。官方9月14日公告的合同及通电预期不是现场独立验证；本摘要不沿用其旧客户洽谈状态当作10月12日当前状态。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "马来西亚"
+      ],
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [],
+      "originalPublisher": "DataCenterDynamics",
+      "originalUrl": "https://www.datacenterdynamics.com/en/news/bitdeer-ai-to-lease-65mw-data-center-in-johor-malaysia/",
+      "tags": [
+        "Bitdeer",
+        "A202",
+        "柔佛",
+        "65.1MW",
+        "预租",
+        "2027Q3"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "Dan Swinhoe"
+      },
+      "stage": "服务协议已签；预计2027Q3通电",
+      "relatedLinks": [
+        {
+          "url": "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-ai-secures-651mw-a202-facility-its-existing-johor",
+          "publisher": "Bitdeer Technologies Group",
+          "role": "A202官方服务协议及通电预期公告",
+          "publishedAt": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "kind": "news",
+      "dataPeriod": null,
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "contentScope": "full",
+      "access": "free",
+      "visibility": "active",
+      "id": "wmedia-sm-pdg-acquisition-20261012",
+      "sourceId": "wmedia-sea",
+      "title": "SM+签约收购PDG印尼企业级数据中心业务，尚待交割",
+      "url": "https://w.media/sm-to-acquire-princeton-digital-groups-enterprise-data-center-business-in-indonesia/",
+      "publishedAt": "2026-10-12",
+      "summary": "SM+签署最终协议，拟收购PDG位于印尼四个市场的5个现有运营数据中心，交易仍须满足惯常交割条件，不能据此认定已完成收购或新增5个投运设施。",
+      "verificationNote": "2026-10-12：读取w.media公开全文（2026-10-12 11:02 GMT+8，Jan Yong），并复读PDG同日官方公告；双方确认5个operational设施位于大雅加达、万隆、泗水、北干巴鲁，交易仍subject to customary closing conditions。新闻为存量资产交易，PDG继续扩展的约400MW hyperscale组合不是这5个设施交易容量。本次web复读两次Internal Error，之后正常HTTPS直连200取得原文，成功和失败证据均保留。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "regions": [
+        "印尼"
+      ],
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [],
+      "originalPublisher": "w.media",
+      "originalUrl": "https://w.media/sm-to-acquire-princeton-digital-groups-enterprise-data-center-business-in-indonesia/",
+      "tags": [
+        "SM+",
+        "PDG",
+        "并购",
+        "最终协议",
+        "印尼",
+        "企业级数据中心"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "Jan Yong"
+      },
+      "stage": "最终协议已签；惯常交割条件待满足",
+      "relatedLinks": [
+        {
+          "url": "https://princetondg.com/press-releases/princeton-digital-group-signs-definitive-agreement-to-sell-its-indonesia-enterprise-business-to-sm/",
+          "publisher": "Princeton Digital Group",
+          "role": "卖方官方签约与交割条件公告",
+          "publishedAt": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "kind": "news",
+      "dataPeriod": null,
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "contentScope": "full",
+      "access": "free",
+      "visibility": "active",
+      "id": "wmedia-dayone-bond-talks-20261012",
+      "sourceId": "wmedia-sea",
+      "title": "媒体称DayOne商谈5亿美元债券融资，尚未正式发行",
+      "url": "https://w.media/dayone-in-talks-for-us500-million-bond-report/",
+      "publishedAt": "2026-10-12",
+      "summary": "w.media转述彭博匿名知情人士消息，称DayOne正与银行商谈潜在5亿美元债券融资，最早可能于明年推出；公司与银行未评论，具体项目未披露，尚不能视为已发行或资金已落实。",
+      "verificationNote": "2026-10-12：读取w.media公开全文（2026-10-12 09:34 GMT+8，Jan Yong），原文明确Bloomberg reports quoting people familiar with the matter，DayOne与Citigroup拒绝评论。未取得彭博原文、正式发债文件或发行人确认；这里只确认媒体已作该报道，不独立确认匿名消息。具体融资项目未指明，不以新加坡总部、历史项目国或文中其他融资背景代替这笔拟发债资金投向。本次web复读两次Internal Error，之后正常HTTPS直连200取得原文，成功和失败证据均保留。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "regions": [
+        "全球"
+      ],
+      "regionNote": "拟发债的具体项目及国家未披露；全球表示跨市场公司融资线索，不能推定资金投向全部国家。",
+      "judgmentTypes": [
+        "forecast"
+      ],
+      "companyIds": [
+        "dayone"
+      ],
+      "originalPublisher": "w.media",
+      "originalUrl": "https://w.media/dayone-in-talks-for-us500-million-bond-report/",
+      "tags": [
+        "DayOne",
+        "债券融资",
+        "5亿美元",
+        "匿名消息",
+        "彭博",
+        "未正式发行"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "Jan Yong"
+      },
+      "stage": "媒体转述融资商谈；未正式发行／未经公司确认"
+    },
+    {
+      "kind": "news",
+      "dataPeriod": null,
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "contentScope": "full",
+      "access": "free",
+      "visibility": "active",
+      "id": "wmedia-selangor-water-20261009",
+      "sourceId": "wmedia-sea",
+      "title": "BIMB研究观点：雪兰莪用水约束可能放缓2027年数据中心建设",
+      "url": "https://w.media/water-constraints-in-selangor-could-slow-down-data-center-construction-in-2027/",
+      "publishedAt": "2026-10-09",
+      "summary": "w.media转述BIMB Securities研究观点，认为马来西亚雪兰莪近期供水余量偏紧，可能放缓2027年新数据中心建设及审批；这是研判和预测，尚不能当作政府新禁令或项目已暂停。",
+      "verificationNote": "2026-10-12：复读w.media公开正文（2026-10-09 12:15 GMT+8，Jan Yong），正文归因BIMB Securities Research前一日研究札记。已读取媒体完整公开转述，未取得券商札记原件、Air Selangor项目文件或SPAN最新法规。工程完工时点、供水余量与建设影响属于媒体转述的研究预测；不将既有供水条件解释为新发布禁令。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "power-resources",
+      "regions": [
+        "马来西亚"
+      ],
+      "judgmentTypes": [
+        "opinion",
+        "forecast"
+      ],
+      "companyIds": [],
+      "originalPublisher": "w.media",
+      "originalUrl": "https://w.media/water-constraints-in-selangor-could-slow-down-data-center-construction-in-2027/",
+      "tags": [
+        "BIMB",
+        "雪兰莪",
+        "供水约束",
+        "资源条件",
+        "2027年预测"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "Jan Yong"
+      },
+      "stage": "券商研究预测；新禁令或具体停工未确认"
+    }
+  ],
+  "changeBatch": {
+    "batchId": "media-fold-20261012",
+    "recordedAt": "2026-10-12T15:53:00+08:00",
+    "periodStart": "2026-09-13",
+    "scope": "现有9个媒体按近7天不足5篇扩大15天、仍不足扩大30天补核。国内优先并持续关注东南亚；只核有限检索与选定公开正文，不宣称全站全部分页完整覆盖。保持官方、财务、公司地区逻辑，不新增公司或事件节点。",
+    "summary": "补入19篇媒体资料；封面及折叠合计最多5篇，原85篇与历史批次保持。媒体转述券商只作为新闻，未新增已核券商研报。",
+    "checks": [
+      {
+        "id": "media-fold-stcn-industry",
+        "channel": "证券时报 IDC/AIDC 相关报道近7/15/30天有限补核",
+        "url": "https://www.stcn.com/article/list/cj.html",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。"
+      },
+      {
+        "id": "media-fold-yicai-industry",
+        "channel": "第一财经 IDC/AIDC 相关报道近7/15/30天有限补核",
+        "url": "https://www.yicai.com/news/",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。"
+      },
+      {
+        "id": "media-fold-nbd-industry",
+        "channel": "每日经济新闻 IDC/AIDC 相关报道近7/15/30天有限补核",
+        "url": "https://www.nbd.com.cn/",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。"
+      },
+      {
+        "id": "media-fold-cls-industry",
+        "channel": "财联社 IDC/AIDC 相关报道近7/15/30天有限补核",
+        "url": "https://www.cls.cn/",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。"
+      },
+      {
+        "id": "media-fold-jiemian-industry",
+        "channel": "界面新闻 IDC/AIDC 相关报道近7/15/30天有限补核",
+        "url": "https://www.jiemian.com/",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。"
+      },
+      {
+        "id": "media-fold-thepaper-industry",
+        "channel": "澎湃新闻 IDC/AIDC 相关报道近7/15/30天有限补核",
+        "url": "https://www.thepaper.cn/",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "父任务已有有限搜索与现有3篇；本轮未找到需补充的合格增量，保留3篇，未宣称完成栏目全覆盖。"
+      },
+      {
+        "id": "media-fold-36kr-industry",
+        "channel": "36氪 IDC/AIDC 相关报道近7/15/30天有限补核",
+        "url": "https://www.36kr.com/newsflashes",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。"
+      },
+      {
+        "id": "media-fold-dcd-southeast-asia",
+        "channel": "DCD 东南亚数据中心新闻近7/15/30天有限补核",
+        "url": "https://www.datacenterdynamics.com/en/news/?term=south-east-asia",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "有限检索区域入口与本轮4个新增候选，均读取媒体正文、原站日期和署名；A202另核发行人IR。没有完成全站、全部分页及全部转引文件覆盖。"
+      },
+      {
+        "id": "media-fold-wmedia-sea",
+        "channel": "w.media 东南亚近7/15/30天有限补核",
+        "url": "https://w.media/category/markets/apac/sea/",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "有限查阅主页、本轮3个新增候选全文；SM+交易另核PDG官方。东南亚分类直连失败；2篇web复读Internal Error后常规HTTPS直连200。未取得DayOne拟发债正式文件、彭博原文或BIMB研究札记。"
+      }
+    ]
+  }
+}

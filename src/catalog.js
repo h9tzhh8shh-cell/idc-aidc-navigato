@@ -2,9 +2,10 @@ import catalog from '../public/assets/catalog.json' with { type: 'json' };
 import { kindLabels, SEA_REGIONS } from './domain/catalog.js';
 
 export const DOMESTIC_REGIONS = ['中国', '中国香港'];
+export const FOREIGN_REGIONS = [...SEA_REGIONS, '东南亚', '美国', '北美', '欧洲', '拉丁美洲'];
 export const REGION_TREE = [
   { id: '全球', label: '全球' },
-  { id: '北美', label: '北美' },
+  { id: '北美', label: '北美', children: [{id:'美国',label:'美国'}] },
   { id: '欧洲', label: '欧洲' },
   { id: '亚太', label: '亚太', children: [
     ...DOMESTIC_REGIONS.map(id => ({ id, label: id })),
@@ -45,7 +46,7 @@ const oldTopics = {
   infrastructure: ['industry'], market: ['industry'], rental: ['rental-prices'],
   financial: ['listed-companies'], policy: ['policy-planning', 'regulation'],
 };
-const scopes = ['domestic', 'sea', 'all'];
+const scopes = ['domestic', 'sea', 'overseas', 'all'];
 const extraViews = ['reports', 'southeast', 'southeast-reports'];
 const isSeaView = view => view === 'southeast' || view === 'southeast-reports';
 
@@ -54,7 +55,7 @@ export function validDay(value) {
   return typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value) && Number.isFinite(Date.parse(value)) && new Date(value).toISOString().slice(0,10) === value;
 }
 export function dateRange(window, asOf) {
-  if (!['7','30'].includes(window) || !validDay(asOf)) return null;
+  if (!['7','15','30'].includes(window) || !validDay(asOf)) return null;
   return { from: new Date(Date.parse(asOf) - (Number(window)-1)*86400000).toISOString().slice(0,10), through: asOf };
 }
 export function matchesPublishedDate(report, filters, today = beijingToday()) {
@@ -92,7 +93,7 @@ export function normalizeFilters(filters = {}, view = 'sources') {
     clean.scope = 'sea';
   } else if (clean.regions.length) {
     clean.scope = clean.regions.every(region => DOMESTIC_REGIONS.includes(region)) ? 'domestic'
-      : clean.regions.every(region => region === '东南亚' || SEA_REGIONS.includes(region)) ? 'sea' : 'all';
+      : clean.regions.every(region => region === '东南亚' || SEA_REGIONS.includes(region)) ? 'sea' : clean.regions.every(region=>FOREIGN_REGIONS.includes(region)) ? 'overseas' : 'all';
   }
   return clean;
 }
@@ -111,7 +112,7 @@ export function matchesRegion(recordedRegions = [], selectedRegions = []) {
 }
 
 function matchesScope(regions = [], scope = 'all') {
-  return scope === 'all' || regions.some(region => (scope === 'domestic' ? DOMESTIC_REGIONS : SEA_REGIONS).includes(region));
+  return scope === 'all' || regions.some(region => (scope === 'domestic' ? DOMESTIC_REGIONS : scope === 'overseas' ? FOREIGN_REGIONS : SEA_REGIONS).includes(region));
 }
 const matchesAny = (values = [], selected = []) => !selected.length || selected.some(value => values.includes(value));
 
@@ -227,9 +228,25 @@ export function getSourceReports(source, filters = {}) {
   return sortReportsByDate((source.relatedReports || []).filter(report => matchesReport(report, source, clean)));
 }
 
-export function getSourcePreview(source, filters = {}) {
-  if (!isVisible(source, filters)) return null;
-  return getSourceReports(source, filters)[0] || null;
+export function getSourcePreviewSelection(source, filters = {}, today = beijingToday()) {
+  const media = source.sourceType === 'media';
+  const empty = { report: null, reports: [], days: media ? 30 : null };
+  if (!isVisible(source, filters)) return empty;
+  const reports = getSourceReports(source, media ? { ...filters, dateWindow: 'all', asOf: null } : filters);
+  if (!media) return { report: reports[0] || null, reports: reports.slice(0, 1), days: null };
+  const qualified = reports.filter(report => report.kind === 'news' &&
+    ['verified', 'partial'].includes(report.verificationStatus) && ['full', 'abstract'].includes(report.contentScope) &&
+    report.summary?.trim() && report.authorship?.type !== 'sponsored')
+    .sort((a, b) => (b.publishedAt || '').localeCompare(a.publishedAt || '') || a.id.localeCompare(b.id));
+  for (const days of [7, 15, 30]) {
+    const selected = qualified.filter(item => matchesPublishedDate(item, { dateWindow: String(days), asOf: today }, today)).slice(0, 5);
+    if (selected.length === 5 || days === 30) return { report: selected[0] || null, reports: selected, days };
+  }
+  return empty;
+}
+
+export function getSourcePreview(source, filters = {}, today = beijingToday()) {
+  return getSourcePreviewSelection(source, filters, today).report;
 }
 
 export function getSeaSources(sources, filters = {}) {
@@ -359,16 +376,25 @@ export function subcategoryCounts(data, sources, filters, reportsView = false) {
   }));
 }
 
-export function companyGroups(data) {
+export function companyGroups(data, filters = {}) {
+  const clean = normalizeFilters(filters);
+  const regional = clean.scope !== 'all' || clean.regions.length > 0;
+  const records = [...data.reports, ...(data.events || [])].filter(record => isVisible(record, clean) &&
+    matchesScope(record.regions, clean.scope) && matchesRegion(record.regions, clean.regions));
+  const matchesCompany = company => (!clean.companies.length || clean.companies.includes(company.id)) &&
+    (!regional || records.some(record => record.companyIds.includes(company.id)));
   const lookup = new Map(data.companies.map(company => [company.id, company]));
   return [
     { id: 'core', name: '核心公司', items: ['sinnet','xingyun','vnet','sharetronic','gds','hec'].map(id => lookup.get(id)).filter(Boolean) },
     { id: 'operator', name: '电信运营商', items: ['china-mobile','china-telecom','china-unicom-h'].map(id => lookup.get(id)).filter(Boolean) },
     { id: 'reference', name: '其他已收录主体', items: data.companies.filter(company => company.role === 'reference') },
-  ];
+  ].map(group => ({ ...group, items: group.items.filter(matchesCompany) }));
 }
 
 export function milestoneReport(node, data) { return data.reports.find(report => report.id === node?.primaryEvidenceReportId); }
+export function evidenceUrl(report) {
+  return (report.evidenceLevel === 'official-body' && report.relatedLinks?.find(link => link.role.startsWith('指定披露同件'))?.url) || report.url;
+}
 export function eventTimeline(event, data) {
   return [...event.milestones].sort((a,b) => (milestoneReport(b,data)?.publishedAt || '').localeCompare(milestoneReport(a,data)?.publishedAt || ''));
 }
@@ -377,6 +403,10 @@ export function companyEvents(data, companyId, filters = {}) {
   return (data.events || []).filter(event => isVisible(event, clean) && event.companyIds.includes(companyId) &&
     matchesScope(event.regions, clean.scope) && matchesRegion(event.regions, clean.regions) && (!filters.eventType || event.type === filters.eventType))
     .sort((a,b) => b.priority-a.priority || a.id.localeCompare(b.id));
+}
+export function companyActions(data,companyId,filters={}) {
+  const clean=normalizeFilters(filters);
+  return data.reports.filter(report=>isVisible(report,clean)&&report.importantAction&&report.companyIds.includes(companyId)&&matchesScope(report.regions,clean.scope)&&matchesRegion(report.regions,clean.regions)).sort((a,b)=>(b.publishedAt||'').localeCompare(a.publishedAt||''));
 }
 export function companyReports(data, sources, companyId, filters = {}) {
   return filterReports(data.reports, sources, { ...filters, topics: [], subcategory: null, companies: [companyId] });

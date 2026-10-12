@@ -51,8 +51,13 @@
 .source-preview .preview-summary{font-size:13px;line-height:1.85}.source-preview .preview-title{font-size:14px}
 @media(max-width:540px){.date-controls .topic-tabs button{font-size:13px;padding:7px 9px}.report-byline,.time-caption,.report-note{font-size:13px}.batch-heading select{width:100%}.batch-heading label{width:100%}.report-actions{gap:18px}.batch-change h3{font-size:15px}.reading-tabs{flex-wrap:wrap}}
 .reading-tabs{margin:10px 0 4px;padding-bottom:6px;border-bottom:0}
+.media-news-fold{margin-top:12px;border-top:1px solid #dce5f2}.media-news-fold>summary{display:flex;align-items:center;gap:6px;padding:10px 0;cursor:pointer;color:var(--blue);font-size:13px;font-weight:600;list-style:none}.media-news-fold>summary::-webkit-details-marker{display:none}.media-news-fold>summary:focus-visible{outline:2px solid var(--blue);outline-offset:2px}.media-news-fold .fold-open-label{display:none}.media-news-fold[open]>summary .fold-open-label{display:inline}.media-news-fold[open]>summary .fold-closed-label{display:none}.media-news-fold[open]>summary svg{transform:rotate(180deg)}.media-news-item{padding:8px 0 10px;border-top:1px solid #dce5f2}.media-news-item .report-byline{margin:3px 0 5px}.media-news-item .preview-summary{margin:4px 0}.media-news-item .preview-title{line-height:1.75}
 .date-controls .topic-tabs{margin:0;padding-bottom:8px}
 .data-explanation{margin:12px 0}
 
 /* Original white brand assets need a contrasting backing. */
 .source-logo.dark{background:#17304b;border-radius:4px;padding:5px}.source-logo.dark img{max-width:100%}
+
+.company-financial { margin: 16px 0; padding: 14px 18px; background: #f5f8fc; border-left: 3px solid #d5e3f8; }
+.financial-preview p { margin: 7px 0; }
+.company-row .company-financial { max-width: 820px; }

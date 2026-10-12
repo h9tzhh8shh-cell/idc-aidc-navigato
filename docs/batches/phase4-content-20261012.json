@@ -1,0 +1,1547 @@
+{
+  "maintainedAt": "2026-10-12",
+  "sources": [
+    {
+      "id": "nea-electricity",
+      "visibility": "archived",
+      "visibilityReason": "用户决定移出本类宏观用电数据"
+    },
+    {
+      "id": "nbd-industry",
+      "name": "每日经济新闻 IDC/AIDC 相关报道",
+      "organization": "每日经济新闻",
+      "sourceType": "media",
+      "categoryIds": [
+        "industry"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "entryUrl": "https://www.nbd.com.cn/",
+      "entryType": "栏目",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "admissionStatus": "有限准入：已读本轮有效样例",
+      "access": "mixed",
+      "accessNote": "本轮样例正文可读；不代表全站免费或已取得全文转载授权。",
+      "purpose": "查找数据中心供需、设施技术与配套业务的实际报道。",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得每经AI快讯，属于活动记录转述，不标记者原创。",
+      "frequency": "irregular",
+      "frequencyNote": "按事件发布，未承诺更新周期。",
+      "questions": [
+        "发生了什么行业变化？"
+      ],
+      "metrics": [
+        "原文发布日期",
+        "事件阶段",
+        "作者身份"
+      ],
+      "tags": [
+        "财经媒体"
+      ],
+      "caveats": [
+        "仅提供原文链接与简短自写事实摘要；不提供原文全文、整表或PDF。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand",
+        "facility-technology",
+        "power-resources"
+      ]
+    },
+    {
+      "id": "cls-industry",
+      "name": "财联社 IDC/AIDC 相关报道",
+      "organization": "财联社",
+      "sourceType": "media",
+      "categoryIds": [
+        "industry"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "entryUrl": "https://www.cls.cn/",
+      "entryType": "栏目",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "admissionStatus": "有限准入：已读本轮有效样例",
+      "access": "mixed",
+      "accessNote": "本轮样例正文可读；不代表全站免费或已取得全文转载授权。",
+      "purpose": "查找数据中心供需、设施技术与配套业务的实际报道。",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得记者付静行业会议采访正文。",
+      "frequency": "irregular",
+      "frequencyNote": "按事件发布，未承诺更新周期。",
+      "questions": [
+        "发生了什么行业变化？"
+      ],
+      "metrics": [
+        "原文发布日期",
+        "事件阶段",
+        "作者身份"
+      ],
+      "tags": [
+        "财经媒体"
+      ],
+      "caveats": [
+        "仅提供原文链接与简短自写事实摘要；不提供原文全文、整表或PDF。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand",
+        "facility-technology",
+        "power-resources"
+      ]
+    },
+    {
+      "id": "jiemian-industry",
+      "name": "界面新闻 IDC/AIDC 相关报道",
+      "organization": "界面新闻",
+      "sourceType": "media",
+      "categoryIds": [
+        "industry"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "entryUrl": "https://www.jiemian.com/",
+      "entryType": "栏目",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "admissionStatus": "有限准入：已读本轮有效样例",
+      "access": "mixed",
+      "accessNote": "本轮样例正文可读；不代表全站免费或已取得全文转载授权。",
+      "purpose": "查找数据中心供需、设施技术与配套业务的实际报道。",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得记者陆柯言产品路线图报道；计划不等于已交付。",
+      "frequency": "irregular",
+      "frequencyNote": "按事件发布，未承诺更新周期。",
+      "questions": [
+        "发生了什么行业变化？"
+      ],
+      "metrics": [
+        "原文发布日期",
+        "事件阶段",
+        "作者身份"
+      ],
+      "tags": [
+        "财经媒体"
+      ],
+      "caveats": [
+        "仅提供原文链接与简短自写事实摘要；不提供原文全文、整表或PDF。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand",
+        "facility-technology",
+        "power-resources"
+      ]
+    },
+    {
+      "id": "thepaper-industry",
+      "name": "澎湃新闻 IDC/AIDC 相关报道",
+      "organization": "澎湃新闻",
+      "sourceType": "media",
+      "categoryIds": [
+        "industry"
+      ],
+      "regions": [
+        "中国",
+        "美国"
+      ],
+      "entryUrl": "https://www.thepaper.cn/",
+      "entryType": "栏目",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "admissionStatus": "有限准入：已读本轮有效样例",
+      "access": "mixed",
+      "accessNote": "本轮样例正文可读；不代表全站免费或已取得全文转载授权。",
+      "purpose": "查找数据中心供需、设施技术与配套业务的实际报道。",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得周玲署名报道；澎湃号文章不自动纳入记者原创。",
+      "frequency": "irregular",
+      "frequencyNote": "按事件发布，未承诺更新周期。",
+      "questions": [
+        "发生了什么行业变化？"
+      ],
+      "metrics": [
+        "原文发布日期",
+        "事件阶段",
+        "作者身份"
+      ],
+      "tags": [
+        "财经媒体"
+      ],
+      "caveats": [
+        "仅提供原文链接与简短自写事实摘要；不提供原文全文、整表或PDF。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand",
+        "facility-technology",
+        "power-resources"
+      ]
+    },
+    {
+      "id": "36kr-industry",
+      "name": "36氪 IDC/AIDC 相关报道",
+      "organization": "36氪",
+      "sourceType": "media",
+      "categoryIds": [
+        "industry"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "entryUrl": "https://www.36kr.com/newsflashes",
+      "entryType": "栏目",
+      "verificationStatus": "partial",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "admissionStatus": "有限准入：已读本轮有效样例",
+      "access": "mixed",
+      "accessNote": "本轮样例正文可读；不代表全站免费或已取得全文转载授权。",
+      "purpose": "查找数据中心供需、设施技术与配套业务的实际报道。",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得未署名产品发布快讯；性能为企业声称，未作独立验证。",
+      "frequency": "irregular",
+      "frequencyNote": "按事件发布，未承诺更新周期。",
+      "questions": [
+        "发生了什么行业变化？"
+      ],
+      "metrics": [
+        "原文发布日期",
+        "事件阶段",
+        "作者身份"
+      ],
+      "tags": [
+        "财经媒体"
+      ],
+      "caveats": [
+        "仅提供原文链接与简短自写事实摘要；不提供原文全文、整表或PDF。"
+      ],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand",
+        "facility-technology",
+        "power-resources"
+      ]
+    },
+    {
+      "id": "nda-capacity",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-10-08 已读取新闻动态目录并检查维护窗口内条目；未确认新增可收录的全国算力统计发布。旧报告成功日期未随目录复查刷新。\n2026-10-12：检查新闻发布、地方动态、数据局动态、媒体声音栏目及必要分页至5月前，筛选后读取与算力网相关正文；补录三份5月以来材料。没有宣称所有栏目全文均已核。",
+      "categoryIds": [
+        "industry",
+        "policy-planning"
+      ],
+      "subcategoryIds": [
+        "market-supply-demand",
+        "facility-technology",
+        "power-resources",
+        "compute-industrial-plan"
+      ],
+      "verifiedAt": "2026-10-12",
+      "verificationStatus": "partial"
+    },
+    {
+      "id": "sinnet-disclosures",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "读取IR目录及信息披露栏目、2026半年报摘要正文；目录显示2026-09-01。摘要第4—5页可核中国项目和马来西亚前期筹划，未推定开工。\n2026-10-12：优先核查巨潮发行人目录及正式附件。原官网栏目继续保留为入口，不把季度栏目改成全部动态。巨潮2026-09-13至10-12目录共6条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。"
+    },
+    {
+      "id": "xingyun-disclosures",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "官网300209信息披露链接指向巨潮 orgId=9900018896；半年报页面 /disclosure/7 明示2026-07-31并提供原PDF；已读主体和算力业务相关章节。\n2026-10-12：优先核查巨潮发行人目录及正式附件。原官网栏目继续保留为入口，不把季度栏目改成全部动态。巨潮2026-09-13至10-12目录共19条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。"
+    },
+    {
+      "id": "sharetronic-disclosures",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "已核官网准确主体；2026半年报摘要原件明确300857和官网联系邮箱。官网中文/年度报告栏目未得到有效深链，保留机构首页且需注明入口覆盖有限。不要把虚构stockCode深链称为已验证栏目。\n2026-10-12：优先核查巨潮发行人目录及正式附件。原官网栏目继续保留为入口，不把季度栏目改成全部动态。巨潮2026-09-13至10-12目录共20条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。"
+    },
+    {
+      "id": "hec-disclosures",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "从2026半年报公司网址hec-al.com进入官网，再经具体公告页面“公司公告”进入/sys-nr/?g=40并读到列表。已核600673主体，非集团/药业主体。\n2026-10-12：优先核查巨潮发行人目录及正式附件。原官网栏目继续保留为入口，不把季度栏目改成全部动态。巨潮2026-09-13至10-12目录共24条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。"
+    },
+    {
+      "id": "gds-quarterly",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-10-08 已读取官方季度业绩目录，2026 年可见 Q1/Q2；未确认新一季发布。旧 Q2 PDF 的核查日期保留，不以目录复查代替重读全文。\n2026-10-12：披露易9698目录最新定期报告为9月4日2026中期报告，SEC同件及发行人8月13日Q2表交叉核对；未见更晚报告期，不以6-K提交月份称第三季度财报。IR新闻目录本轮未见9月13日以来新条目；官网业务新闻不承诺全覆盖。",
+      "verifiedAt": "2026-10-12",
+      "verificationStatus": "partial"
+    },
+    {
+      "id": "vnet-quarterly",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-10-08 已读取官方季度业绩目录，最新可确认季度仍为 2026 Q2；未确认新一季发布，旧 Q2 PDF 的成功核查日期保留。\n2026-10-12：发行人新闻目录最新9月21日股东转让交割，最新实际财务公告仍为8月18日Q2；与SEC Exhibit 99.1财务表交叉核对。原PDF直连403不影响已核HTML，但不宣称PDF本轮取得。",
+      "verifiedAt": "2026-10-12",
+      "verificationStatus": "partial"
+    },
+    {
+      "id": "stcn-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "亲自读取产经栏目及样例文章全文；原站有未经书面授权禁止转载等声明，未取得转载授权，展示限于题名、日期、原文链接及不复述正文事实的导航说明。\n2026-10-12：检查现有入口及近30日数据中心/液冷相关检索。未找到本轮适合新增且可按既有授权口径展示的新样例；行情、投资营销与窗外材料未凑数。保留已有bibliographic-link-only限制。"
+    },
+    {
+      "id": "yicai-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "亲自读取新闻栏目及相关原创样例全文。文章明确限制未经授权使用、转载和摘编；本轮仅提供书目信息、链接及导航说明，不复述其采访数据或研究结论。\n2026-10-12：检查现有入口及近30日数据中心/液冷相关检索。未找到本轮适合新增且可按既有授权口径展示的新样例；行情、投资营销与窗外材料未凑数。保留已有bibliographic-link-only限制。"
+    }
+  ],
+  "reports": [
+    {
+      "id": "nea-2026-08-electricity",
+      "visibility": "archived",
+      "visibilityReason": "用户决定移出本类宏观用电数据"
+    },
+    {
+      "id": "nda-compute-network-20260912",
+      "sourceId": "nda-capacity",
+      "title": "事关算力网建设，国务院常务会最新部署",
+      "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/0912/20260912153754624614528_pc.html",
+      "kind": "policy",
+      "publishedAt": "2026-09-12",
+      "dataPeriod": null,
+      "summary": "国务院常务会议部署算力网建设，提出算电、算网协同以及监测调度、骨干网络等工作；绿电直连等资源条件需与布局衔接。这是建设部署，不是具体项目投运公告。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取原站正文，核对标题、发布日期、原发布者及下述摘要；未复刻全文。 国家数据局转载中国政府网，转载页2026-09-12；未另取原始中国政府网页。",
+      "primaryCategoryId": "policy-planning",
+      "primarySubcategoryId": "compute-industrial-plan",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "中国政府网",
+      "originalUrl": null,
+      "visibility": "active",
+      "tags": [
+        "算力网",
+        "算电协同",
+        "绿电直连",
+        "监测调度"
+      ],
+      "stage": "建设部署"
+    },
+    {
+      "id": "nda-ningxia-monitor-20260903",
+      "sourceId": "nda-capacity",
+      "title": "宁夏算力监测调度平台接入全国试验验证平台",
+      "url": "https://www.nda.gov.cn/sjj/swdt/dfdt/0903/20260903131554193890680_pc.html",
+      "kind": "news",
+      "publishedAt": "2026-09-03",
+      "dataPeriod": "原文报道时点；未单列统计截止日",
+      "summary": "宁夏完成省级平台与全国平台的标准化对接；当地调度基础模块已上线，技术验证和系统联调仍在推进。转载稿称全国平台已接入1462个设施、约145万PFLOPS（FP16），不等于宁夏规模。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取国家数据局地方动态全文，原发布者标为宁夏数据中心。规模为全国平台监测覆盖，不与其他月份或不同精度数值相加，也不据占比计算趋势。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "宁夏数据中心",
+      "originalUrl": null,
+      "visibility": "active",
+      "tags": [
+        "算力监测",
+        "异构调度",
+        "FP16"
+      ],
+      "stage": "监测接入；调度仍在联调验证"
+    },
+    {
+      "id": "nda-inner-mongolia-20260905",
+      "sourceId": "nda-capacity",
+      "title": "国家数据局调研内蒙古算力布局与算电协同",
+      "url": "https://www.nda.gov.cn/sjj/swdt/sjdt/0905/20260905165400677414218_pc.html",
+      "kind": "news",
+      "publishedAt": "2026-09-05",
+      "dataPeriod": null,
+      "summary": "国家数据局9月1日至2日在内蒙古调研，关注算力监测接入、算电协同和数据要素改革。报道中的词元工厂等方向仍属探索，不据此认定新增容量已交付。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取原站正文，核对标题、发布日期、原发布者及下述摘要；未复刻全文。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "power-resources",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "国家数据局",
+      "originalUrl": "https://www.nda.gov.cn/sjj/swdt/sjdt/0905/20260905165400677414218_pc.html",
+      "visibility": "active",
+      "tags": [
+        "算电协同",
+        "算力布局",
+        "监测调度"
+      ],
+      "stage": "调研与探索"
+    },
+    {
+      "id": "nbd-oulu-power-20260924",
+      "sourceId": "nbd-industry",
+      "title": "欧陆通：数据中心电源业务营收实现高速增长，高功率服务器电源收入增长显著",
+      "url": "https://www.nbd.com.cn/articles/2026-09-24/4591412.html",
+      "kind": "news",
+      "publishedAt": "2026-09-24",
+      "dataPeriod": null,
+      "summary": "每经AI快讯转述欧陆通投资者关系活动：上半年公司收入25.09亿元，高功率服务器电源业务增长。这里的25.09亿元是公司整体收入，不能全计为数据中心电源或算力租赁收入。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取09-24 15:45:56原文完整短讯；为调研活动转述，未取得对应调研原件，不称记者独立采访或新增券商研报。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "power-resources",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "oulu-tong"
+      ],
+      "access": "free",
+      "originalPublisher": "每日经济新闻",
+      "originalUrl": "https://www.nbd.com.cn/articles/2026-09-24/4591412.html",
+      "visibility": "active",
+      "tags": [
+        "服务器电源",
+        "数据中心电源"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "每经AI快讯；未署记者姓名"
+      },
+      "stage": "经营活动记录转述"
+    },
+    {
+      "id": "cls-compute-utilization-20260913",
+      "sourceId": "cls-industry",
+      "title": "全国仅7省上架率超过75%：“有效算力”成智算集群竞争重点",
+      "url": "https://www.cls.cn/detail/2481579",
+      "kind": "news",
+      "publishedAt": "2026-09-13",
+      "dataPeriod": "2026中国算力大会披露口径",
+      "summary": "记者在中国算力大会采访供需与资源约束，援引信通院口径称仅7省上架率超过75%。报道同时讨论新增项目、电力与液冷；该占比属于会上披露口径，不能替代任一运营商的利用率。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取原站正文，核对标题、发布日期、原发布者及下述摘要；未复刻全文。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "财联社",
+      "originalUrl": "https://www.cls.cn/detail/2481579",
+      "visibility": "active",
+      "tags": [
+        "上架率",
+        "智算中心",
+        "有效算力",
+        "液冷"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "付静"
+      }
+    },
+    {
+      "id": "jiemian-ascend-roadmap-20260917",
+      "sourceId": "jiemian-industry",
+      "title": "华为公布昇腾最新时间表",
+      "url": "https://www.jiemian.com/article/15108082.html",
+      "kind": "news",
+      "publishedAt": "2026-09-17",
+      "dataPeriod": null,
+      "summary": "界面新闻报道华为公布昇腾路线图：960系列两款产品分别计划在2027年一季度和三季度就绪，并介绍超节点方向。这是未来产品计划，不能视为当前已出货或数据中心已经投运。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取原站正文，核对标题、发布日期、原发布者及下述摘要；未复刻全文。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "界面新闻",
+      "originalUrl": "https://www.jiemian.com/article/15108082.html",
+      "visibility": "active",
+      "tags": [
+        "昇腾",
+        "超节点",
+        "AI基础设施"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "陆柯言；编辑文姝琪"
+      },
+      "stage": "产品路线图发布，未来交付待验证"
+    },
+    {
+      "id": "thepaper-huawei-3d-20260915",
+      "sourceId": "thepaper-industry",
+      "title": "华为发布3D数据中心架构方案",
+      "url": "https://m.thepaper.cn/newsDetail_forward_34075808",
+      "kind": "news",
+      "publishedAt": "2026-09-15",
+      "dataPeriod": null,
+      "summary": "华为在芜湖发布3D数据中心参考架构，将IT、供电和散热等设施分层组织，并提出模块化建设方式。报道属于架构发布，不能把方案中的集群规模当作已经投运容量。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取原站正文，核对标题、发布日期、原发布者及下述摘要；未复刻全文。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "澎湃新闻",
+      "originalUrl": "https://m.thepaper.cn/newsDetail_forward_34075808",
+      "visibility": "active",
+      "tags": [
+        "模块化",
+        "数据中心",
+        "液冷",
+        "供电"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "周玲"
+      },
+      "stage": "架构方案发布"
+    },
+    {
+      "id": "thepaper-intel-infrastructure-20260916",
+      "sourceId": "thepaper-industry",
+      "title": "英特尔CEO谈AI基础设施的内存、电力与散热瓶颈",
+      "url": "https://www.thepaper.cn/newsDetail_forward_34081656",
+      "kind": "news",
+      "publishedAt": "2026-09-16",
+      "dataPeriod": null,
+      "summary": "英特尔CEO在美国圣克拉拉峰会谈到AI基础设施扩张面临内存、电力和散热限制，并预测供给紧张可能延续。以上是媒体所载管理层判断，未独立验证，不是已签订单或项目投运消息。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取原站正文，核对标题、发布日期、原发布者及下述摘要；未复刻全文。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "regions": [
+        "美国",
+        "全球"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "opinion",
+        "forecast"
+      ],
+      "companyIds": [
+        "intel"
+      ],
+      "access": "free",
+      "originalPublisher": "澎湃新闻",
+      "originalUrl": "https://www.thepaper.cn/newsDetail_forward_34081656",
+      "visibility": "active",
+      "tags": [
+        "AI infrastructure",
+        "内存",
+        "电力",
+        "散热"
+      ],
+      "regionNote": "发言场景位于美国；供需判断涉及全球产业链，不扩展到未指明的各国项目。",
+      "authorship": {
+        "type": "journalist",
+        "author": "周玲"
+      },
+      "stage": "行业观点与预测"
+    },
+    {
+      "id": "36kr-ixin-supernode-20261012",
+      "sourceId": "36kr-industry",
+      "title": "天数智芯发布单柜集成144颗GPU的超节点",
+      "url": "https://www.36kr.com/newsflashes/4022192785232004",
+      "kind": "news",
+      "publishedAt": "2026-10-12",
+      "dataPeriod": null,
+      "summary": "36氪快讯报道天数智芯发布IXL144，称单柜集成144颗GPU和18颗CPU。这里记录产品发布及厂商描述；性能、兼容性和交付能力尚未独立验证，不认定客户已经使用。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取原站正文，核对标题、发布日期、原发布者及下述摘要；未复刻全文。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "36氪",
+      "originalUrl": "https://www.36kr.com/newsflashes/4022192785232004",
+      "visibility": "active",
+      "tags": [
+        "超节点",
+        "GPU",
+        "服务器",
+        "AI基础设施"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "未署名快讯"
+      },
+      "stage": "产品发布；性能与实际交付待核"
+    },
+    {
+      "id": "sinnet-2026-h1",
+      "sourceId": "sinnet-disclosures",
+      "title": "光环新网2026年半年度报告",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225510324.PDF",
+      "kind": "disclosure",
+      "publishedAt": "2026-08-27",
+      "dataPeriod": "2026年上半年（累计）",
+      "summary": "2026年上半年（累计）的收入及归属利润已按原表核对，具体数字、同比和原始单位见财务预览。IDC业务收入11.72亿元，同比增长9.38%；公司总收入还含云计算等业务。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "partial",
+      "verificationNote": "2026-10-12：PDF第12页“主要会计数据和财务指标”，2026半年累计/2025同期；经营拆分第14页。 完整PDF已取得，核对指定财务表及所引用经营内容；未宣称全报告逐页核验。采用原披露人民币口径，不换汇。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "access": "free",
+      "originalPublisher": "北京光环新网科技股份有限公司",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225510324.PDF",
+      "visibility": "active",
+      "tags": [],
+      "financial": {
+        "companyId": "sinnet",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年上半年（累计）",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 3331578061.9,
+          "priorValue": 3715830730.58,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表整体收入；不是单独IDC分部收入",
+          "change": {
+            "basis": "reported",
+            "percent": -10.34,
+            "note": "采用报告直接披露同比，原值复算核对。"
+          }
+        },
+        "profit": {
+          "label": "归属于上市公司股东的净利润",
+          "value": 60857658.98,
+          "priorValue": 115030256.9,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "合并报表归属于上市公司股东的净利润；不是扣非利润",
+          "change": {
+            "basis": "reported",
+            "percent": -47.09,
+            "note": "采用报告直接披露同比，原值复算核对。"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225510324.PDF",
+          "locator": "PDF第12页“主要会计数据和财务指标”，2026半年累计/2025同期；经营拆分第14页。"
+        },
+        "limitations": "完整PDF已取得，核对指定财务表及所引用经营内容；未宣称全报告逐页核验。采用原披露人民币口径，不换汇。",
+        "operatingChange": "IDC业务收入11.72亿元，同比增长9.38%；公司总收入还含云计算等业务。"
+      },
+      "relatedLinks": []
+    },
+    {
+      "id": "xingyun-2026-h1",
+      "financial": {
+        "companyId": "xingyun",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年上半年（累计）",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 254209383.77,
+          "priorValue": 42573389.21,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表整体收入；不是单独IDC分部收入",
+          "change": {
+            "basis": "reported",
+            "percent": 497.11,
+            "note": "采用报告直接披露同比，原值复算核对。"
+          }
+        },
+        "profit": {
+          "label": "归属于上市公司股东的净利润",
+          "value": 12015392.13,
+          "priorValue": 1876952.53,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "合并报表归属于上市公司股东的净利润；不是扣非利润",
+          "change": {
+            "basis": "reported",
+            "percent": 540.15,
+            "note": "采用报告直接披露同比，原值复算核对。"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-31/1225449048.PDF",
+          "locator": "PDF第8页“主要会计数据和财务指标”。"
+        },
+        "limitations": "完整PDF已取得，核对指定财务表及所引用经营内容；未宣称全报告逐页核验。采用原披露人民币口径，不换汇。"
+      },
+      "contentScope": "full",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "partial",
+      "summary": "2026年上半年（累计）的收入及归属利润已按原表核对，具体数字、同比和原始单位见财务预览。",
+      "relatedLinks": [
+        {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-07-31/1225449048.PDF",
+          "publisher": "巨潮资讯网／行云科技",
+          "role": "原公告"
+        }
+      ],
+      "verificationNote": "从官网日期页进入150页PDF，读取第5、7、10—11页等主体及业务章节；未逐页核对全部财报。巨潮同份PDF可读，作为同件补证不重复建条。中国范围依据第10页面向国内客户提供算力租赁，而非总部推断。\n2026-10-12：指定财务指标补核。PDF第8页“主要会计数据和财务指标”。 完整PDF已取得，核对指定财务表及所引用经营内容；未宣称全报告逐页核验。采用原披露人民币口径，不换汇。"
+    },
+    {
+      "id": "sharetronic-2026-h1",
+      "sourceId": "sharetronic-disclosures",
+      "title": "协创数据2026年半年度报告全文",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225522065.PDF",
+      "kind": "disclosure",
+      "publishedAt": "2026-08-28",
+      "dataPeriod": "2026年上半年（累计）",
+      "summary": "2026年上半年（累计）的收入及归属利润已按原表核对，具体数字、同比和原始单位见财务预览。采用8月28日正式半年报，未用此前业绩快报替代。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "partial",
+      "verificationNote": "2026-10-12：PDF第11页（印刷页10）“主要会计数据和财务指标”；上年同期采用表内同口径列。 完整PDF已取得，核对指定财务表及所引用经营内容；未宣称全报告逐页核验。采用原披露人民币口径，不换汇。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "sharetronic"
+      ],
+      "access": "free",
+      "originalPublisher": "协创数据技术股份有限公司",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225522065.PDF",
+      "visibility": "active",
+      "tags": [],
+      "financial": {
+        "companyId": "sharetronic",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年上半年（累计）",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 12522564910.65,
+          "priorValue": 4943984280.54,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表整体收入；不是单独IDC分部收入",
+          "change": {
+            "basis": "reported",
+            "percent": 153.29,
+            "note": "采用报告直接披露同比，原值复算核对。"
+          }
+        },
+        "profit": {
+          "label": "归属于上市公司股东的净利润",
+          "value": 1838423990.17,
+          "priorValue": 432055049.12,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "合并报表归属于上市公司股东的净利润；不是扣非利润",
+          "change": {
+            "basis": "reported",
+            "percent": 325.51,
+            "note": "采用报告直接披露同比，原值复算核对。"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225522065.PDF",
+          "locator": "PDF第11页（印刷页10）“主要会计数据和财务指标”；上年同期采用表内同口径列。"
+        },
+        "limitations": "完整PDF已取得，核对指定财务表及所引用经营内容；未宣称全报告逐页核验。采用原披露人民币口径，不换汇。",
+        "operatingChange": "采用8月28日正式半年报，未用此前业绩快报替代。"
+      },
+      "relatedLinks": []
+    },
+    {
+      "id": "hec-2026-h1",
+      "financial": {
+        "companyId": "hec",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年上半年（累计）",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 9375524476.64,
+          "priorValue": 7123771210.05,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表整体收入；不是单独IDC分部收入",
+          "change": {
+            "basis": "reported",
+            "percent": 31.61,
+            "note": "采用报告直接披露同比，原值复算核对。"
+          }
+        },
+        "profit": {
+          "label": "归属于上市公司股东的净利润",
+          "value": 389262088.82,
+          "priorValue": 612633991.25,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "合并报表归属于上市公司股东的净利润；不是扣非利润",
+          "change": {
+            "basis": "reported",
+            "percent": -36.46,
+            "note": "采用报告直接披露同比，原值复算核对。"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225478556.PDF",
+          "locator": "PDF第7页“主要会计数据”。"
+        },
+        "limitations": "完整PDF已取得，核对指定财务表及所引用经营内容；未宣称全报告逐页核验。采用原披露人民币口径，不换汇。",
+        "operatingChange": "此为上市公司整体业绩，不能全部归为IDC或算力服务收入。"
+      },
+      "contentScope": "full",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "partial",
+      "summary": "2026年上半年（累计）的收入及归属利润已按原表核对，具体数字、同比和原始单位见财务预览。此为上市公司整体业绩，不能全部归为IDC或算力服务收入。",
+      "relatedLinks": [],
+      "verificationNote": "读取214页报告的封面、第5—6页主体及第22—23页算力业务/投资章节；未逐页核对全部财务附注。出版日以同批法定披露报纸2026-08-18信息披露版辅助核对，不只按文件路径猜测。\n2026-10-12：指定财务指标补核。PDF第7页“主要会计数据”。 完整PDF已取得，核对指定财务表及所引用经营内容；未宣称全报告逐页核验。采用原披露人民币口径，不换汇。"
+    },
+    {
+      "id": "gds-2026-h1",
+      "sourceId": "gds-quarterly",
+      "title": "万国数据2026年中期报告",
+      "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0904/2026090401993.pdf",
+      "kind": "disclosure",
+      "publishedAt": "2026-09-04",
+      "dataPeriod": "2026年上半年（累计）",
+      "summary": "2026年上半年（累计）的收入及归属利润已按原表核对，具体数字、同比和原始单位见财务预览。半年权益法投资收益为30.96亿元，对利润影响较大；利润增长不能全部解释为数据中心运营增长。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "partial",
+      "verificationNote": "2026-10-12：PDF第14页（印刷页13）U.S. GAAP未审计合并损益表，Six months ended June 30的人民币列；不是单季度或IFRS调节后列。 完整PDF已取得，核对指定财务表及所引用经营内容；未宣称全报告逐页核验。采用原披露U.S. GAAP口径，不换汇。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "gds"
+      ],
+      "access": "free",
+      "originalPublisher": "GDS Holdings Limited",
+      "originalUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0904/2026090401993.pdf",
+      "visibility": "active",
+      "tags": [],
+      "financial": {
+        "companyId": "gds",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年上半年（累计）",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "净营业收入",
+          "value": 6455049,
+          "priorValue": 5623446,
+          "currency": "CNY",
+          "unit": "千元",
+          "attribution": "公司合并报表整体收入；不是单独IDC分部收入",
+          "change": {
+            "basis": "calculated",
+            "percent": 14.79,
+            "note": "同口径计算：(本期－上年同期)÷上年同期×100，四舍五入至两位小数。"
+          }
+        },
+        "profit": {
+          "label": "归属于GDS Holdings Limited股东的净利润",
+          "value": 3483916,
+          "priorValue": 690721,
+          "currency": "CNY",
+          "unit": "千元",
+          "attribution": "U.S. GAAP报表归属行；不是普通股股东可分配利润、调整后利润或EBITDA",
+          "change": {
+            "basis": "calculated",
+            "percent": 404.39,
+            "note": "同口径计算：(本期－上年同期)÷上年同期×100，四舍五入至两位小数。"
+          }
+        },
+        "evidence": {
+          "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0904/2026090401993.pdf",
+          "locator": "PDF第14页（印刷页13）U.S. GAAP未审计合并损益表，Six months ended June 30的人民币列；不是单季度或IFRS调节后列。"
+        },
+        "limitations": "完整PDF已取得，核对指定财务表及所引用经营内容；未宣称全报告逐页核验。采用原披露U.S. GAAP口径，不换汇。",
+        "operatingChange": "半年权益法投资收益为30.96亿元，对利润影响较大；利润增长不能全部解释为数据中心运营增长。"
+      },
+      "relatedLinks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1526125/000110465926105234/tm2624826d1_ex99-1.pdf",
+          "publisher": "GDS Holdings Limited",
+          "role": "SEC所载同份中期报告",
+          "publishedAt": "2026-09-04"
+        }
+      ]
+    },
+    {
+      "id": "vnet-2026-q2",
+      "financial": {
+        "companyId": "vnet",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年第二季度（单季）",
+          "start": "2026-04-01",
+          "end": "2026-06-30",
+          "type": "quarter",
+          "priorStart": "2025-04-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "净营业收入",
+          "value": 2778738,
+          "priorValue": 2434205,
+          "currency": "CNY",
+          "unit": "千元",
+          "attribution": "公司合并报表整体收入；不是单独IDC分部收入",
+          "change": {
+            "basis": "reported",
+            "percent": 14.2,
+            "note": "采用报告直接披露同比，原值复算核对。"
+          }
+        },
+        "profit": {
+          "label": "归属于VNET Group, Inc.的净亏损",
+          "value": -135597,
+          "priorValue": -11914,
+          "currency": "CNY",
+          "unit": "千元",
+          "attribution": "U.S. GAAP报表归属行；不是普通股股东可分配利润、调整后利润或EBITDA",
+          "change": {
+            "basis": "amount",
+            "percent": null,
+            "note": "保留两期金额；负基数不计算误导性的增长率。"
+          }
+        },
+        "evidence": {
+          "url": "https://www.sec.gov/Archives/edgar/data/1508475/000110465926098054/tm2623481d1_ex99-1.htm",
+          "locator": "Exhibit 99.1，第8页/UNAUDITED CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME，Three months ended June 30的人民币列。"
+        },
+        "limitations": "已核SEC及发行人HTML财务表；原IR PDF直连返回403。核对指定指标与运营段落，未宣称全报告逐页核验。",
+        "operatingChange": "批发业务在运容量1007MW、已利用744MW；这些是期末容量，不等于当季新增容量。"
+      },
+      "contentScope": "full",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "partial",
+      "summary": "2026年第二季度（单季）的收入及归属利润已按原表核对，具体数字、同比和原始单位见财务预览。批发业务在运容量1007MW、已利用744MW；这些是期末容量，不等于当季新增容量。",
+      "relatedLinks": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1508475/000110465926098054/tm2623481d1_ex99-1.htm",
+          "publisher": "VNET Group, Inc.",
+          "role": "财务表官方原文",
+          "publishedAt": "2026-08-18"
+        },
+        {
+          "url": "https://ir.vnet.com/news-releases/news-release-details/vnet-reports-unaudited-second-quarter-2026-financial-results",
+          "publisher": "VNET Group, Inc.",
+          "role": "发行人HTML交叉核对",
+          "publishedAt": "2026-08-18"
+        }
+      ],
+      "verificationNote": "从官方季度栏目进入 PDF，核对第 1 页日期及第 3—4 页容量脚注。 2026-10-08补充核查：重读原PDF第1—4页，确认VNET Group, Inc.、财季和批发MW/零售机柜口径；未完整复核全部财报，历史成功核查日期不变。\n2026-10-12：指定财务指标补核。Exhibit 99.1，第8页/UNAUDITED CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME，Three months ended June 30的人民币列。 已核SEC及发行人HTML财务表；原IR PDF直连返回403。核对指定指标与运营段落，未宣称全报告逐页核验。"
+    },
+    {
+      "id": "sinnet-invest-20260925",
+      "sourceId": "sinnet-disclosures",
+      "title": "光环新网拟对和林格尔智算中心追加投资",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-25/1225582046.PDF",
+      "kind": "disclosure",
+      "publishedAt": "2026-09-25",
+      "dataPeriod": null,
+      "summary": "董事会通过追加不超过12.65亿元投资，项目总投资约25亿元，调整后规划90—120MW并匹配液冷。原项目未按原计划开工；本公告是投资决策，不是已建成或投运。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：完整取得巨潮官方PDF并读取正文，发行人、公告编号、日期和摘要要点已核。保留实施阶段和交易条件。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "access": "free",
+      "originalPublisher": "北京光环新网科技股份有限公司",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-09-25/1225582046.PDF",
+      "visibility": "active",
+      "tags": [
+        "追加投资",
+        "智算中心",
+        "液冷"
+      ],
+      "importantAction": "董事会通过追加不超过12.65亿元投资，项目总投资约25亿元，调整后规划90—120MW并匹配液冷。原项目未按原计划开工；本公告是投资决策，不是已建成或投运。",
+      "stage": "董事会通过追加投资；建设进度待后续披露"
+    },
+    {
+      "id": "sharetronic-lease-20260921",
+      "sourceId": "sharetronic-disclosures",
+      "title": "协创数据融资租赁进展：追加应收账款质押",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-21/1225573798.PDF",
+      "kind": "disclosure",
+      "publishedAt": "2026-09-21",
+      "dataPeriod": null,
+      "summary": "协创数据与浦银金租签订应收账款最高额质押合同，质押标的评估值25.07亿元，担保主债权最高19.35亿元。用于已有售后回租债务担保，不是新增收入或已收到25.07亿元融资。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：完整取得巨潮官方PDF并读取正文，发行人、公告编号、日期和摘要要点已核。保留实施阶段和交易条件。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "sharetronic"
+      ],
+      "access": "free",
+      "originalPublisher": "协创数据技术股份有限公司",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-09-21/1225573798.PDF",
+      "visibility": "active",
+      "tags": [
+        "资本动作"
+      ],
+      "importantAction": "协创数据与浦银金租签订应收账款最高额质押合同，质押标的评估值25.07亿元，担保主债权最高19.35亿元。用于已有售后回租债务担保，不是新增收入或已收到25.07亿元融资。",
+      "stage": "质押合同签署"
+    },
+    {
+      "id": "sharetronic-issue-accepted-20260916",
+      "sourceId": "sharetronic-disclosures",
+      "title": "协创数据定向发行申请获深交所受理",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-16/1225568926.PDF",
+      "kind": "disclosure",
+      "publishedAt": "2026-09-16",
+      "dataPeriod": null,
+      "summary": "深交所受理协创数据向特定对象发行股票申请；文件仍须审核及证监会同意注册。受理不等于发行获批、募资到账或项目完成。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：完整取得巨潮官方PDF并读取正文，发行人、公告编号、日期和摘要要点已核。保留实施阶段和交易条件。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "sharetronic"
+      ],
+      "access": "free",
+      "originalPublisher": "协创数据技术股份有限公司",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-09-16/1225568926.PDF",
+      "visibility": "active",
+      "tags": [
+        "资本动作"
+      ],
+      "importantAction": "深交所受理协创数据向特定对象发行股票申请；文件仍须审核及证监会同意注册。受理不等于发行获批、募资到账或项目完成。",
+      "stage": "申请获受理，审核和注册尚待完成"
+    },
+    {
+      "id": "hec-buyback-20261010",
+      "sourceId": "hec-disclosures",
+      "title": "东阳光披露6亿至12亿元股份回购方案",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-10/1225600203.PDF",
+      "kind": "disclosure",
+      "publishedAt": "2026-10-10",
+      "dataPeriod": null,
+      "summary": "10月9日董事会通过回购方案，拟用自有或自筹资金6亿至12亿元，价格上限47.74元/股，期限6个月，用于员工持股或股权激励。方案获审议不等于回购已经完成。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：完整取得巨潮官方PDF并读取正文，发行人、公告编号、日期和摘要要点已核。保留实施阶段和交易条件。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "hec"
+      ],
+      "access": "free",
+      "originalPublisher": "广东东阳光科技控股股份有限公司",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-10-10/1225600203.PDF",
+      "visibility": "active",
+      "tags": [
+        "资本动作"
+      ],
+      "importantAction": "10月9日董事会通过回购方案，拟用自有或自筹资金6亿至12亿元，价格上限47.74元/股，期限6个月，用于员工持股或股权激励。方案获审议不等于回购已经完成。",
+      "stage": "董事会通过回购方案"
+    },
+    {
+      "id": "xingyun-vg-sale-20260930",
+      "sourceId": "xingyun-disclosures",
+      "title": "行云科技新加坡孙公司VG客户服务器订单已交付验收",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-30/1225588474.PDF",
+      "kind": "disclosure",
+      "publishedAt": "2026-09-30",
+      "dataPeriod": null,
+      "summary": "行云科技新加坡孙公司向VG客户销售算力服务器，两份订单约5.73亿元；公告称已完成交付验收。VG客户及交货国家未披露，不能推定新加坡项目，也不能直接视作已确认等额收入。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：完整取得巨潮官方PDF并读取正文，发行人、公告编号、日期和摘要要点已核。保留实施阶段和交易条件。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国",
+        "新加坡"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "xingyun"
+      ],
+      "access": "free",
+      "originalPublisher": "行云科技股份有限公司",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-09-30/1225588474.PDF",
+      "visibility": "active",
+      "tags": [
+        "服务器销售",
+        "交付验收"
+      ],
+      "importantAction": "行云科技新加坡孙公司向VG客户销售算力服务器，两份订单约5.73亿元；公告称已完成交付验收。VG客户及交货国家未披露，不能推定新加坡项目，也不能直接视作已确认等额收入。",
+      "stage": "合同已交付验收；实际收入贡献仍有不确定性",
+      "regionNote": "中国上市主体与明确位于新加坡的签约孙公司；仅表示参与主体地域，客户及设备交付地未披露，不推定为新加坡数据中心。"
+    },
+    {
+      "id": "hec-antitrust-mirror-20261001",
+      "title": "东阳光反垄断审查公告：已补核巨潮指定披露同件",
+      "evidenceLevel": "official-body",
+      "visibility": "active",
+      "visibilityReason": "已取得指定披露同件；镜像初始链接保留供追溯。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "contentScope": "full",
+      "summary": "临2026-105号公告已由巨潮同件补核：市场监管总局决定不实施进一步反垄断审查；公司仍称须经上交所审核及证监会同意注册，不能据此认定重组交割或募资完成。",
+      "relatedLinks": [
+        {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-01/1225591558.PDF",
+          "publisher": "广东东阳光科技控股股份有限公司",
+          "role": "指定披露同件：临2026-105号官方全文",
+          "publishedAt": "2026-10-01"
+        }
+      ],
+      "verificationNote": "从用户给定新浪地址取得1页PDF，核对600673、临2026-105、署日2026-10-01并完整渲染阅读。SSE旧路径返回HTML而非PDF，公司目录未展示该件；本次没有取得指定披露同件，不能升级为官方已核节点。\n2026-10-12：取得巨潮1225591558.PDF（1页），对照发行人、临2026-105号、日期、交易对象和审批条件，完成指定披露同件补核；原镜像身份及先前受阻记录保留。任务书另一SSE未知附件身份仍未确认。"
+    }
+  ],
+  "companies": [
+    {
+      "id": "oulu-tong",
+      "name": "欧陆通",
+      "legalName": "深圳欧陆通电子股份有限公司",
+      "aliases": [
+        "欧陆通",
+        "300870"
+      ],
+      "securities": [
+        {
+          "exchange": "SZSE",
+          "code": "300870"
+        }
+      ],
+      "role": "reference",
+      "identityNote": "巨潮2026年半年报摘要确认发行人名称及证券代码；作为数据中心电源相关参考主体，不升为核心公司。",
+      "identityUrls": [
+        "https://static.cninfo.com.cn/finalpage/2026-08-26/1225503388.PDF"
+      ],
+      "researchScope": "domestic",
+      "researchScopeNote": "本轮已读资料聚焦国内上市主体的数据中心电源经营；不是断言公司只在国内经营。"
+    },
+    {
+      "id": "intel",
+      "name": "英特尔",
+      "legalName": "Intel Corporation",
+      "aliases": [
+        "Intel",
+        "INTC"
+      ],
+      "securities": [
+        {
+          "exchange": "NASDAQ",
+          "code": "INTC"
+        }
+      ],
+      "role": "reference",
+      "identityNote": "发行人IR确认Intel Corporation/INTC；本轮仅扩充行业报道关联，不建立财务档案。",
+      "identityUrls": [
+        "https://www.intc.com/"
+      ],
+      "researchScope": "overseas",
+      "researchScopeNote": "本轮研究记录是美国AI基础设施峰会发言及海外供应链；不按上市地点推断全部经营地区。"
+    }
+  ],
+  "companyReviews": [
+    {
+      "companyId": "sinnet",
+      "review": {
+        "lastAttemptAt": "2026-10-12",
+        "result": "partial",
+        "note": "巨潮2026-09-13至10-12目录共6条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。",
+        "checks": [
+          {
+            "id": "p4-sinnet-cninfo",
+            "channel": "巨潮发行人目录及选定正文",
+            "url": "https://www.cninfo.com.cn/",
+            "result": "partial",
+            "note": "巨潮2026-09-13至10-12目录共6条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。",
+            "attemptedAt": "2026-10-12",
+            "checkedFrom": "2026-09-13",
+            "checkedThrough": "2026-10-12"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "xingyun",
+      "review": {
+        "lastAttemptAt": "2026-10-12",
+        "result": "partial",
+        "note": "巨潮2026-09-13至10-12目录共19条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。",
+        "checks": [
+          {
+            "id": "p4-xingyun-cninfo",
+            "channel": "巨潮发行人目录及选定正文",
+            "url": "https://www.cninfo.com.cn/",
+            "result": "partial",
+            "note": "巨潮2026-09-13至10-12目录共19条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。",
+            "attemptedAt": "2026-10-12",
+            "checkedFrom": "2026-09-13",
+            "checkedThrough": "2026-10-12"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "sharetronic",
+      "review": {
+        "lastAttemptAt": "2026-10-12",
+        "result": "partial",
+        "note": "巨潮2026-09-13至10-12目录共20条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。",
+        "checks": [
+          {
+            "id": "p4-sharetronic-cninfo",
+            "channel": "巨潮发行人目录及选定正文",
+            "url": "https://www.cninfo.com.cn/",
+            "result": "partial",
+            "note": "巨潮2026-09-13至10-12目录共20条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。",
+            "attemptedAt": "2026-10-12",
+            "checkedFrom": "2026-09-13",
+            "checkedThrough": "2026-10-12"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "hec",
+      "review": {
+        "lastAttemptAt": "2026-10-12",
+        "result": "partial",
+        "note": "巨潮2026-09-13至10-12目录共24条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。",
+        "checks": [
+          {
+            "id": "p4-hec-cninfo",
+            "channel": "巨潮发行人目录及选定正文",
+            "url": "https://www.cninfo.com.cn/",
+            "result": "partial",
+            "note": "巨潮2026-09-13至10-12目录共24条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。",
+            "attemptedAt": "2026-10-12",
+            "checkedFrom": "2026-09-13",
+            "checkedThrough": "2026-10-12"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "gds",
+      "review": {
+        "lastAttemptAt": "2026-10-12",
+        "result": "partial",
+        "note": "披露易9698目录最新定期报告为9月4日2026中期报告，SEC同件及发行人8月13日Q2表交叉核对；未见更晚报告期，不以6-K提交月份称第三季度财报。IR新闻目录本轮未见9月13日以来新条目；官网业务新闻不承诺全覆盖。",
+        "checks": [
+          {
+            "id": "p4-gds-filing",
+            "channel": "正式披露目录与发行人正文",
+            "url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=1000061808",
+            "result": "partial",
+            "note": "披露易9698目录最新定期报告为9月4日2026中期报告，SEC同件及发行人8月13日Q2表交叉核对；未见更晚报告期，不以6-K提交月份称第三季度财报。IR新闻目录本轮未见9月13日以来新条目；官网业务新闻不承诺全覆盖。",
+            "attemptedAt": "2026-10-12",
+            "checkedFrom": "2026-09-13",
+            "checkedThrough": "2026-10-12"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "vnet",
+      "review": {
+        "lastAttemptAt": "2026-10-12",
+        "result": "partial",
+        "note": "发行人新闻目录最新9月21日股东转让交割，最新实际财务公告仍为8月18日Q2；与SEC Exhibit 99.1财务表交叉核对。原PDF直连403不影响已核HTML，但不宣称PDF本轮取得。",
+        "checks": [
+          {
+            "id": "p4-vnet-filing",
+            "channel": "正式披露目录与发行人正文",
+            "url": "https://ir.vnet.com/news-events/press-releases/",
+            "result": "partial",
+            "note": "发行人新闻目录最新9月21日股东转让交割，最新实际财务公告仍为8月18日Q2；与SEC Exhibit 99.1财务表交叉核对。原PDF直连403不影响已核HTML，但不宣称PDF本轮取得。",
+            "attemptedAt": "2026-10-12",
+            "checkedFrom": "2026-09-13",
+            "checkedThrough": "2026-10-12"
+          }
+        ]
+      }
+    }
+  ],
+  "events": [
+    {
+      "event": {
+        "id": "hec-chindata-listed-reorganization"
+      },
+      "nodeReviews": [
+        {
+          "id": "antitrust-mirror-read",
+          "reason": "official-supplement",
+          "title": "反垄断审查公告已补核指定披露同件",
+          "summary": "10月1日临2026-105号反垄断公告已补核巨潮官方同件：市场监管总局决定不实施进一步审查。公告仍称须经上交所审核及证监会同意注册；未取得后续审核、注册、登记、交割或配套募资完成依据。",
+          "verificationLevel": "official-body",
+          "isProgress": true
+        }
+      ],
+      "nodeEvidence": [
+        {
+          "id": "antitrust-mirror-read",
+          "evidenceRefs": [
+            {
+              "reportId": "hec-antitrust-mirror-20261001",
+              "locator": "补充链接：巨潮1225591558.PDF全文1页，临2026-105号",
+              "role": "本轮指定披露同件补核"
+            }
+          ]
+        }
+      ],
+      "current": {
+        "reason": "correction",
+        "currentSummary": "10月1日临2026-105号反垄断公告已补核巨潮官方同件：市场监管总局决定不实施进一步审查。公告仍称须经上交所审核及证监会同意注册；未取得后续审核、注册、登记、交割或配套募资完成依据。",
+        "latestVerifiedMilestoneId": "antitrust-mirror-read",
+        "basisMilestoneIds": [
+          "reply-and-revision",
+          "antitrust-mirror-read"
+        ],
+        "uncertainties": [
+          "反垄断审查与证券审核、注册及实际交割是不同程序；尚无后续完成依据。",
+          "任务书原SSE路径附件身份仍待核，保留原线索，不与新取得的巨潮附件强行认定为同一文件。"
+        ]
+      }
+    }
+  ],
+  "excludedProducts": [
+    {
+      "id": "nea-macro-electricity",
+      "sourceIds": [
+        "nea-electricity"
+      ],
+      "reportIds": [
+        "nea-2026-08-electricity"
+      ],
+      "urls": [
+        "https://www.nea.gov.cn/20260920/bd277235282140f4b43e9e0f5f0af3d9/c.html"
+      ],
+      "sourceNames": [
+        "国家能源局用电数据"
+      ],
+      "reason": "用户决定移出本类宏观用电数据"
+    },
+    {
+      "id": "smm-compute-weekly",
+      "sourceIds": [
+        "smm-weekly"
+      ],
+      "reportIds": [
+        "smm-weekly-public-commentary-104134387"
+      ],
+      "urls": [
+        "https://news.smm.cn/news/104134387"
+      ],
+      "sourceNames": [
+        "SMM 算力租赁市场周报"
+      ],
+      "reason": "用户决定移出无可读公开摘要的SMM订阅周报"
+    }
+  ],
+  "changeBatch": {
+    "batchId": "phase4-content-20261012",
+    "recordedAt": "2026-10-12T11:17:02+08:00",
+    "periodStart": "2026-09-13",
+    "scope": "第四轮：宏观用电归档；国家数据局2026-05-01以来栏目筛选；六家公司最新报告及近30日披露目录；五家媒体近30日样例。有限核查，不宣称全网全量覆盖。",
+    "summary": "补核财务和公告、新增有效报道与媒体、归档指定宏观用电产品。",
+    "notes": {},
+    "checks": [
+      {
+        "id": "p4-nda-columns",
+        "channel": "国家数据局四个栏目与必要分页",
+        "url": "https://www.nda.gov.cn/sjj/swdt/list/index_pc_1.html",
+        "result": "partial",
+        "note": "新闻发布3页、地方动态3页、数据局动态2页、媒体声音10页，目录覆盖回溯至5月之前；只读取筛选出的相关正文。",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": "2026-05-01",
+        "checkedThrough": "2026-10-12"
+      }
+    ]
+  }
+}

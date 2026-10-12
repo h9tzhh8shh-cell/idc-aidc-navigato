@@ -1,3 +1,5 @@
+import { validateFinancial } from './financial.js';
+import { excludedProduct } from './exclusions.js';
 /** Source frequencies and report periods are maintained independently. */
 export const frequencyLabels = Object.freeze({
   daily: "日度",
@@ -44,7 +46,7 @@ export const judgmentLabels = Object.freeze({ fact: "事实陈述", opinion: "�
 export const visibilityLabels = Object.freeze({ active: "正式资料", reference: "补充参考", archived: "已归档" });
 export const eventTypeLabels = Object.freeze({ acquisition: '并购 / 重大投资', capital: '融资 / 资产交易', contract: '重大合同 / 业务合作', risk: '重要风险 / 监管事项' });
 export const evidenceLevelLabels = Object.freeze({ 'official-body': '官方披露正文已核', 'disclosure-paper': '指定披露报刊所载公告已读', 'third-party-mirror': '第三方镜像已读，指定披露同件待核', media: '媒体转述', lead: '仅目录 / 检索线索', pending: '待核' });
-export const changeKindLabels = Object.freeze({ 'new-record': '新收录', historical: '历史补录', 'event-node': '事项新节点', revision: '信息修订', evidence: '证据补核' });
+export const changeKindLabels = Object.freeze({ 'new-record': '新收录', historical: '历史补录', 'event-node': '事项新节点', revision: '信息修订', evidence: '证据补核', financial: '财务补齐', archive: '归档', source: '来源调整' });
 export const reviewResultLabels = Object.freeze({ progress: '发现已核进展', 'no-new': '限定范围未确认新增', partial: '核查部分完成', blocked: '核查受阻', 'not-checked': '尚未专项核查', conflict: '证据冲突待核' });
 
 export function isVerifiedMilestone(milestone, reports) {
@@ -370,6 +372,12 @@ export function validateCatalog(
   const sourceIds = identities(sources, "sources");
   const reportIds = identities(reports, "reports");
   const companyIds = identities(companies, "companies");
+  if (catalog.excludedProducts !== undefined && !Array.isArray(catalog.excludedProducts)) fail('excludedProducts','必须为数组');
+  for (const rule of Array.isArray(catalog.excludedProducts) ? catalog.excludedProducts : []) {
+    if (!isObject(rule)) { fail('excludedProducts','必须为对象'); continue; }
+    string(rule.id,'excludedProducts.id'); string(rule.reason,'excludedProducts.reason');
+    for (const field of ['sourceIds','reportIds','urls','sourceNames']) strings(rule[field],`excludedProducts.${field}`,{empty:true});
+  }
   const subcategories = Array.isArray(catalog.subcategories) ? catalog.subcategories : [];
   if (catalog.subcategories !== undefined && !Array.isArray(catalog.subcategories)) fail('subcategories', '必须为数组');
   const subcategoryIds = identities(subcategories, 'subcategories');
@@ -401,6 +409,7 @@ export function validateCatalog(
     strings(company.identityUrls, `${path}.identityUrls`);
     for (const link of Array.isArray(company.identityUrls) ? company.identityUrls : []) url(link, `${path}.identityUrls`);
     enumValue(company.role, { core: 1, operator: 1, reference: 1 }, `${path}.role`);
+    if (company.researchScope !== undefined) { enumValue(company.researchScope,{domestic:1,overseas:1,cross:1,pending:1},`${path}.researchScope`); string(company.researchScopeNote,`${path}.researchScopeNote`); }
     if (!Array.isArray(company.securities)) fail(`${path}.securities`, "必须为数组");
     for (const security of Array.isArray(company.securities) ? company.securities : []) {
       if (!isObject(security)) { fail(`${path}.securities`, "必须为证券标识对象"); continue; }
@@ -454,6 +463,7 @@ export function validateCatalog(
       fail(`${path}.featured`, "必须为布尔值");
     verification(source, path);
     visibility(source, path);
+    if (source.visibility !== 'archived' && excludedProduct(catalog,source,'source')) fail(path,'已排除产品不得恢复展示');
     if (Object.hasOwn(source, "companyIds")) companyReferences(source, path);
     if (source.subcategoryIds !== undefined) {
       strings(source.subcategoryIds, `${path}.subcategoryIds`, { empty: true });
@@ -491,6 +501,10 @@ export function validateCatalog(
     url(report.originalUrl, `${path}.originalUrl`, { nullable: true });
     companyReferences(report, path);
     visibility(report, path);
+    if (report.visibility !== 'archived' && excludedProduct(catalog,report)) fail(path,'已排除产品不得恢复展示');
+    if (report.financial !== undefined) errors.push(...validateFinancial(report.financial,report,today));
+    if (report.importantAction !== undefined) { string(report.importantAction,`${path}.importantAction`); if (report.kind !== 'disclosure' || !report.verifiedAt || !['full','partial','abstract'].includes(report.contentScope)) fail(path,'重要公告需有已核披露正文'); }
+    if (report.authorship !== undefined) { if (!isObject(report.authorship)) fail(path,'作者身份须为对象'); else { enumValue(report.authorship.type,{journalist:1,brief:1,repost:1,platform:1,contributed:1,sponsored:1},`${path}.authorship.type`); string(report.authorship.author,`${path}.authorship.author`); } }
     if (report.visibility === "active" && ["title", "search-snippet", "unavailable"].includes(report.contentScope)) fail(`${path}.contentScope`, "仅线索不能作为正式资料");
     for (const key of ["effectiveAt", "deadlineAt"]) if (Object.hasOwn(report, key)) date(report[key], `${path}.${key}`, { future: true });
     for (const key of ["eventId", "eventType", "documentStatus", "jurisdiction"]) if (Object.hasOwn(report, key) && report[key] !== null) string(report[key], `${path}.${key}`);

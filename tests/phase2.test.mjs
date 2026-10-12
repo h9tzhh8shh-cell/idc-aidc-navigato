@@ -57,8 +57,8 @@ test('B07/B08: never stitch different articles; source-only coverage cannot sati
 test('B09/B10: stable company groups and explicit cross-topic panorama', () => {
   const groups=companyGroups(data);
   assert.deepEqual(ids(groups[0].items),['sinnet','xingyun','vnet','sharetronic','gds','hec']);
-  assert.equal(groups[1].items.length,3);assert.equal(groups[2].items.length,7);
-  assert.equal(new Set(groups.flatMap(g=>ids(g.items))).size,16);
+  assert.equal(groups[1].items.length,3);assert.equal(groups[2].items.length,data.companies.filter(c=>c.role==='reference').length);
+  assert.equal(new Set(groups.flatMap(g=>ids(g.items))).size,data.companies.length);
   const normal=filterReports(data.reports,sources,{topics:['listed-companies'],companies:['hec']});
   assert.ok(normal.every(r=>r.primaryCategoryId==='listed-companies'));
   assert.ok(companyReports(data,sources,'hec',{topics:['listed-companies']}).some(r=>r.primaryCategoryId==='industry'));

@@ -9,7 +9,8 @@
     "DC Byte's current downloaded official logo is purple/magenta, different from the navy wordmark in the selected reference. Preserve the real asset rather than imitating the reference's brand styling.",
     "All raster assets were successfully decoded, dimensions checked, and visually inspected. DCD SVG is XML-valid and contains the two original logo paths.",
     "2026-10-09: Added the 38 previously unmapped source identities. Existing nine mappings and original assets are unchanged. White original logos use a dark CSS backing; no brand artwork was redrawn.",
-    "Three domains (Thai BOI, West Java Bappeda, Philippines BOI) use the public favicon cache for that exact official domain. These are third-party cached site icons, not direct owner downloads. Logo availability does not change source or article verification status."
+    "Three domains (Thai BOI, West Java Bappeda, Philippines BOI) use the public favicon cache for that exact official domain. These are third-party cached site icons, not direct owner downloads. Logo availability does not change source or article verification status.",
+    "2026-10-12: Added five missing media identities from their official page or official stylesheet. Original downloaded bytes are preserved; no brand recreation and no third-party cache used for these five."
   ],
   "sources": {
     "cbre-datacenter": {
@@ -490,8 +491,71 @@
       "bytes": 27683,
       "mime": "image/png",
       "sha256": "199dd5bf52453f14d0fc5ba64ecb55b9bc9e6bad15169447a6ebc3805cb6ed29"
+    },
+    "nbd-industry": {
+      "file": "nbd-industry.png",
+      "url": "https://static.nbd.com.cn/images/nbd_v5/big_logo.png",
+      "officialPage": "https://www.nbd.com.cn/",
+      "provenance": "Official homepage img#logo",
+      "retrievedAt": "2026-10-12",
+      "finalUrl": "https://static.nbd.com.cn/images/nbd_v5/big_logo.png",
+      "bytes": 9716,
+      "mime": "image/png",
+      "sha256": "95e0a6af63e2bd0f772729177e384452027ed8a52aad97b3af56673d21a66f85",
+      "width": 252,
+      "height": 90
+    },
+    "cls-industry": {
+      "file": "cls-industry.png",
+      "url": "https://cdnjs.cls.cn/www/20200601/image/logo.png",
+      "officialPage": "https://www.cls.cn/",
+      "provenance": "Official homepage stylesheet global-2026083.css .level-1-logo-box:before",
+      "retrievedAt": "2026-10-12",
+      "finalUrl": "https://cdnjs.cls.cn/www/20200601/image/logo.png",
+      "bytes": 4748,
+      "mime": "image/png",
+      "sha256": "a98bbe3f30b9e1d596b6ca8382413c4a352656bb819fffb2b0c4d24f981cf1df",
+      "width": 396,
+      "height": 106
+    },
+    "jiemian-industry": {
+      "file": "jiemian-industry.svg",
+      "url": "https://res.jiemian.com/assets/pc/common/img/jiemian_logo.svg",
+      "officialPage": "https://www.jiemian.com/",
+      "provenance": "Official homepage logo img",
+      "retrievedAt": "2026-10-12",
+      "finalUrl": "https://res.jiemian.com/assets/pc/common/img/jiemian_logo.svg",
+      "bytes": 8987,
+      "mime": "image/svg+xml",
+      "sha256": "474df84795c8af842da4148c4244573ba8703e4521c62709cb6d80065bf68665"
+    },
+    "thepaper-industry": {
+      "file": "thepaper-industry.png",
+      "url": "https://www.thepaper.cn/_next/static/media/logo_light.4da59bed.png",
+      "officialPage": "https://www.thepaper.cn/",
+      "provenance": "Official homepage logo img",
+      "retrievedAt": "2026-10-12",
+      "finalUrl": "https://www.thepaper.cn/_next/static/media/logo_light.4da59bed.png",
+      "bytes": 5011,
+      "mime": "image/png",
+      "sha256": "324d2e00af207b7efe4328b1e41eb0801ec7deda0801efb23af37edb70046fd7",
+      "width": 224,
+      "height": 122
+    },
+    "36kr-industry": {
+      "file": "36kr-industry.png",
+      "url": "https://staticx.36krcdn.com/36kr-web/static/ic_36kr_logo_68_38@2x.187cd924.png",
+      "officialPage": "https://www.36kr.com/p/4019942949295744",
+      "provenance": "Official article stylesheet app.3239240a.css .kr-sider .go-home .logo",
+      "retrievedAt": "2026-10-12",
+      "finalUrl": "https://staticx.36krcdn.com/36kr-web/static/ic_36kr_logo_68_38@2x.187cd924.png",
+      "bytes": 5337,
+      "mime": "image/png",
+      "sha256": "d83b607af51c747c4268a848108ea2715aa0bb527ec368388935038ca911552c",
+      "width": 144,
+      "height": 76
     }
   },
   "missing": [],
-  "lastUpdatedAt": "2026-10-09"
+  "lastUpdatedAt": "2026-10-12"
 }

@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import data from '../public/assets/catalog.json' with {type:'json'};
+import baseline from './fixtures/pre-phase4-catalog.json' with {type:'json'};
 import { dateRange, beijingToday, matchesPublishedDate, normalizeFilters, readQuery, writeQuery, filterReports, decorateSources, companyEvents, companyReports, relatedReports, getReportMatchReason, batchChanges } from '../src/catalog.js';
 import { validateCatalog, isVerifiedMilestone } from '../src/domain/catalog.js';
 import { mergeBatch } from '../scripts/reviewed-batch.mjs';
@@ -59,6 +60,7 @@ test('C06/C07/C17: historical CATL cooperation stays separate from shareholder t
  assert.match(data.reports.find(r=>r.id==='vnet-strategic-investment-close-20260921').summary,/原股东股份转让/);
 });
 test('C03–C05/C26: mirror is never an official current node and HEC identity survives',()=>{
+ const data=baseline; // Historical mirror-only state; Phase 4 separately tests official supplementation.
  const event=data.events.find(e=>e.id==='hec-chindata-listed-reorganization');
  const node=event.milestones.find(n=>n.id==='antitrust-mirror-read');
  assert.equal(isVerifiedMilestone(node,data.reports),false);assert.equal(node.isProgress,false);
@@ -96,6 +98,7 @@ test('C13: batch view ignores inactive original-date window and keeps other filt
  assert.ok(!results.some(c=>c.objectId.startsWith('hec')));
 });
 test('C18/C19/C29: liquid cooling finds existing bibliographic document without reclassification',()=>{
+ const data=baseline,sources=decorateSources(data); // This zero-result scenario predates new articles.
  const r=data.reports.find(r=>r.id==='yicai-aidc-power-delivery-20260921');
  assert.ok(filterReports(data.reports,sources,{scope:'domestic',q:'液冷'}).some(x=>x.id===r.id));
  assert.equal(getReportMatchReason(r,sources.find(s=>s.id===r.sourceId),'液冷').label,'主题标签匹配');

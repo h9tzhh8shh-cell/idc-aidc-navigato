@@ -12,7 +12,7 @@ import { CompanyBrowser, CompanyPanorama } from './company-components.jsx';
 const sources = decorateSources(data);
 const labels = data.labelMaps;
 const emptyFilters = (scope = 'domestic') => ({ q: '', topics: [], companies: [], subcategory: null, regions: [], types: [], access: [], frequency: [], sort: 'relevance', scope, showReference: false, dateWindow: 'all', asOf: null, readingMode: 'original', batchId: null });
-const scopeLabels = { domestic: '国内（中国 / 中国香港）', sea: '东南亚六国', all: '全部地区' };
+const scopeLabels = { domestic: '国内（中国 / 中国香港）', sea: '东南亚六国', overseas: '海外', all: '全部地区' };
 const lookup = Object.fromEntries(sources.map(s => [s.id, s]));
 const allRegions = [];
 function collectRegions(nodes, ancestors = []) { nodes.forEach(node => { allRegions.push({ ...node, ancestors }); if (node.children) collectRegions(node.children, [...ancestors, node.id]); }); }

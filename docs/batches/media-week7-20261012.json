@@ -1,0 +1,537 @@
+{
+  "maintainedAt": "2026-10-12",
+  "sources": [
+    {
+      "id": "dcd-southeast-asia",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-10-08 已读取东南亚新闻列表及 10 月 6 日 DayOne IPO 报道，并追溯至 SEC 10 月 5 日 F-1 原文；目录采用公司申报原文，未再新增同事件媒体条目。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：Bitdeer AI签订马来西亚67MW A901数据中心服务协议。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+    },
+    {
+      "id": "wmedia-sea",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "初次直达东南亚栏目失败，沿 w.media 首页 SEA 导航重试后读到目录；复读越南 Stavian、菲律宾 Globe、印尼 BDx 和泰国法案四篇正文。按文章绝对发布日期去重，不采用列表相对时间推断新增。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：软银、Grab与PETROS签署砂拉越AI基础设施探索框架协议。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+    },
+    {
+      "id": "stcn-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "亲自读取产经栏目及样例文章全文；原站有未经书面授权禁止转载等声明，未取得转载授权，展示限于题名、日期、原文链接及不复述正文事实的导航说明。\n2026-10-12：检查现有入口及近30日数据中心/液冷相关检索。未找到本轮适合新增且可按既有授权口径展示的新样例；行情、投资营销与窗外材料未凑数。保留已有bibliographic-link-only限制。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：储能及算力配储成新增量 多家产业链上市公司抢抓机遇。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+    },
+    {
+      "id": "yicai-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "亲自读取新闻栏目及相关原创样例全文。文章明确限制未经授权使用、转载和摘编；本轮仅提供书目信息、链接及导航说明，不复述其采访数据或研究结论。\n2026-10-12：检查现有入口及近30日数据中心/液冷相关检索。未找到本轮适合新增且可按既有授权口径展示的新样例；行情、投资营销与窗外材料未凑数。保留已有bibliographic-link-only限制。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：“337调查”指向立讯精密、工业富联，双双回应，影响几何？。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+    },
+    {
+      "id": "nbd-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得每经AI快讯，属于活动记录转述，不标记者原创。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：立讯精密遭美国337调查，涉及数据中心电源模块 公司：相关产品处于客户验证阶段。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+    },
+    {
+      "id": "cls-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得记者付静行业会议采访正文。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：星展集团CEO：市场正在重新评估人工智能建设相关投资的风险。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+    },
+    {
+      "id": "jiemian-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得记者陆柯言产品路线图报道；计划不等于已交付。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：国产AI，开始为算力算账。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+    },
+    {
+      "id": "thepaper-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得周玲署名报道；澎湃号文章不自动纳入记者原创。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：GCC区俊彦：让标准成为连接全球计算产业的“共同语言”。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+    },
+    {
+      "id": "36kr-industry",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得未署名产品发布快讯；性能为企业声称，未作独立验证。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：算力基建的战争，才刚刚在液冷赛道上演。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。已有10月12日天数智芯超节点快讯不重复新增；9月报道在10月转刊的峰会材料及10月5日窗外文章不作本周新事实。"
+    }
+  ],
+  "reports": [
+    {
+      "id": "nbd-luxshare-vpd-20261010",
+      "sourceId": "nbd-industry",
+      "title": "立讯精密遭美国337调查，涉及数据中心电源模块 公司：相关产品处于客户验证阶段",
+      "url": "https://www.nbd.com.cn/articles/2026-10-10/4600791.html",
+      "kind": "news",
+      "publishedAt": "2026-10-10",
+      "dataPeriod": null,
+      "summary": "每经记者报道：立讯精密及子公司被列为数据中心垂直供电技术相关调查对象；公司称涉案产品仍在客户验证、尚未量产。立案不代表侵权已认定，相关影响仍待后续披露。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取每经原站全文，2026-10-10 21:58:41，记者王晶。仅摘要媒体明示的阶段；本轮未另取ITC立案原件或两家公司公告，不视为官方核定事实或法律结论。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "power-resources",
+      "regions": [
+        "中国",
+        "美国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "每日经济新闻",
+      "originalUrl": "https://www.nbd.com.cn/articles/2026-10-10/4600791.html",
+      "visibility": "active",
+      "tags": [
+        "数据中心电源",
+        "垂直供电",
+        "VPD",
+        "客户验证"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "王晶"
+      },
+      "regionNote": "中国企业及美国ITC调查，按报道实质标记；不推定项目落地国家。",
+      "stage": "调查立案；涉案产品客户验证中"
+    },
+    {
+      "id": "cls-ai-financing-risk-20261012",
+      "sourceId": "cls-industry",
+      "title": "星展集团CEO：市场正在重新评估人工智能建设相关投资的风险",
+      "url": "https://www.cls.cn/detail/2501796",
+      "kind": "news",
+      "publishedAt": "2026-10-12",
+      "dataPeriod": null,
+      "summary": "财联社快讯转述星展集团CEO对AI基础设施融资的看法：投资者更关注长期回报和融资结构，涉及数据中心等硬件投入。这是受访者判断，不是新增项目获批、融资落地或需求下降的确认。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：网页检索工具正文直开失败；通过原站公开HTML实际读到2026年10月12日10:00:16及完整电报，与官网首页同条内容交叉核对。未把搜索摘要当正文。原文未单列作者；未另取受访者发言原件。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "regions": [
+        "全球"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "opinion"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "财联社",
+      "originalUrl": "https://www.cls.cn/detail/2501796",
+      "visibility": "active",
+      "tags": [
+        "数据中心",
+        "AI基础设施",
+        "融资",
+        "资本开支"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "财联社电报（未单列作者）"
+      },
+      "regionNote": "报道讨论AI融资市场及星展交易，不列具体项目国家；不因星展总部在新加坡而归为新加坡项目。",
+      "stage": "融资风险观点"
+    },
+    {
+      "id": "jiemian-compute-economics-20261011",
+      "sourceId": "jiemian-industry",
+      "title": "国产AI，开始为算力算账",
+      "url": "https://www.jiemian.com/article/15176644.html",
+      "kind": "news",
+      "publishedAt": "2026-10-11",
+      "dataPeriod": null,
+      "summary": "奇帆商业在界面JMedia讨论算力经营：电力成本、利用率、设备折旧和客户付费共同影响投资回收。属平台作者分析；文中假设测算及转引项目数字未作为本站已核经营数据。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取界面JMedia完整正文及署名。页面明确为转载内容，授权须联系原作者；未取得原作者首发页，不标界面记者原创。仅提炼有归属的观点，不复用其测算、报价及引文数字为本站事实。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "opinion"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "奇帆商业",
+      "originalUrl": null,
+      "visibility": "active",
+      "tags": [
+        "利用率",
+        "算力经营",
+        "电力成本",
+        "GPU折旧"
+      ],
+      "authorship": {
+        "type": "platform",
+        "author": "奇帆商业（JMedia转载）"
+      },
+      "dateNote": "采用界面页面2026/10/11 11:16的发布日；原作者首发日未另行核定。",
+      "stage": "平台作者经营分析"
+    },
+    {
+      "id": "thepaper-gcc-aidc-20261009",
+      "sourceId": "thepaper-industry",
+      "title": "GCC区俊彦：让标准成为连接全球计算产业的“共同语言”",
+      "url": "https://m.thepaper.cn/newsDetail_forward_34217609",
+      "kind": "news",
+      "publishedAt": "2026-10-09",
+      "dataPeriod": null,
+      "summary": "澎湃采访GCC区俊彦，介绍AIDC供需方如何围绕液冷、供配电等需求协作制定技术规范；800伏直流供配电仍属探索中的方案。采访中的拟发布成果不能视为已生效标准或已完成项目。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：实际读取原站正文、日期和署名；本站只提供短摘要及原文链接，不提供全文转载。核实的是文章内容及出处，不代表独立审计媒体转述的全部事实。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "中国",
+        "美国",
+        "欧洲"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "opinion"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "澎湃新闻",
+      "originalUrl": "https://m.thepaper.cn/newsDetail_forward_34217609",
+      "visibility": "active",
+      "tags": [
+        "液冷",
+        "供配电",
+        "800V",
+        "AIDC",
+        "技术规范"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "李思聪"
+      },
+      "regionNote": "原文明确讨论中国计算产业与美国、法国企业共同参与；欧洲对应文中的法国，不扩展到其他国家。",
+      "stage": "技术规范协作；部分成果拟发布"
+    },
+    {
+      "id": "36kr-liquid-delivery-20261010",
+      "sourceId": "36kr-industry",
+      "title": "算力基建的战争，才刚刚在液冷赛道上演",
+      "url": "https://www.36kr.com/p/4019942949295744",
+      "kind": "news",
+      "publishedAt": "2026-10-10",
+      "dataPeriod": null,
+      "summary": "硅碳变量作者沈浪讨论液冷从样品、认证到规模交付的难点，提醒区分意向订单与可交付订单，并关注长期运维能力。属平台作者观点；不把框架单、行业预测或文中转引增长数字当作确认收入。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取36氪完整正文与文末署名。原站明确作者沈浪、来自微信公众号硅碳变量、观点仅代表作者本人；不标成36氪记者报道。文章引用较早消息作为背景，本站只收录本篇分析，不另计旧消息为本周新增事实。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "opinion",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "硅碳变量",
+      "originalUrl": null,
+      "visibility": "active",
+      "tags": [
+        "液冷",
+        "冷板",
+        "浸没式",
+        "交付",
+        "运维"
+      ],
+      "authorship": {
+        "type": "platform",
+        "author": "沈浪／硅碳变量（36氪经授权发布）"
+      },
+      "dateNote": "采用36氪页面2026年10月10日21:28；微信公众号原作者首发日期未另核。",
+      "stage": "液冷产业分析"
+    },
+    {
+      "id": "stcn-aidc-storage-20261008",
+      "sourceId": "stcn-industry",
+      "title": "储能及算力配储成新增量 多家产业链上市公司抢抓机遇",
+      "url": "https://www.stcn.com/article/detail/4207225.html",
+      "kind": "news",
+      "publishedAt": "2026-10-08",
+      "dataPeriod": null,
+      "summary": "证券时报转载的算力配套储能产业报道。本站只提供题名、日期及原文入口；具体企业数据、采访与判断请在原站阅读。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：实际读取证券时报转载全文，原发布者证券日报、署名李雯珊、页面日期2026-10-08 08:23。沿用此来源bibliographic-link-only边界，不复述正文数据和结论；未另取证券日报首发页及文中企业公告。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "power-resources",
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "opinion"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "证券日报",
+      "originalUrl": null,
+      "visibility": "active",
+      "tags": [
+        "算力配储",
+        "储能",
+        "数据中心供电"
+      ],
+      "authorship": {
+        "type": "repost",
+        "author": "李雯珊／证券日报（证券时报转载）"
+      },
+      "displayRestriction": "bibliographic-link-only",
+      "dateNote": "2026-10-08为证券时报转载页日期，原发布页未另取。"
+    },
+    {
+      "id": "yicai-vpd-investigation-20261011",
+      "sourceId": "yicai-industry",
+      "title": "“337调查”指向立讯精密、工业富联，双双回应，影响几何？",
+      "url": "https://www.yicai.com/news/103388891.html",
+      "kind": "news",
+      "publishedAt": "2026-10-11",
+      "dataPeriod": null,
+      "summary": "第一财经关于数据中心供电产业链相关调查及企业回应的报道。本站只提供题名、日期及链接，不转载其采访数据或研究结论；请在原站阅读。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取第一财经全文、魏中原署名及2026-10-11 17:19:06；原站限制未经书面授权转载、摘编等，沿用bibliographic-link-only。相比10月10日每经稿，本篇包含10月11日工业富联回应及比对分析，非同篇无增量转载；不另建重复事项或官方已核节点。未另取ITC及公司公告原件。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "power-resources",
+      "regions": [
+        "中国",
+        "美国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "opinion"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "第一财经",
+      "originalUrl": "https://www.yicai.com/news/103388891.html",
+      "visibility": "active",
+      "tags": [
+        "数据中心供电",
+        "VPD",
+        "立讯精密",
+        "工业富联"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "魏中原"
+      },
+      "displayRestriction": "bibliographic-link-only",
+      "regionNote": "报道明确涉及中国上市公司与美国ITC调查。"
+    },
+    {
+      "id": "dcd-bitdeer-a901-20261009",
+      "sourceId": "dcd-southeast-asia",
+      "title": "Bitdeer AI签订马来西亚67MW A901数据中心服务协议",
+      "url": "https://www.datacenterdynamics.com/en/news/bitdeer-ai-signs-67mw-ai-cloud-agreement-in-malaysia/",
+      "kind": "news",
+      "publishedAt": "2026-10-09",
+      "dataPeriod": null,
+      "summary": "DCD报道并经Bitdeer公告交叉核对：A901签订10年数据中心服务协议，容量67MW，拟支持液冷GB300 NVL72系统；计划2027年一季度开始交付、二季度完成。当前是签约及交付计划，不能算已投运容量。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读DCD全文及10月9日署名Georgia Butler；交叉读取Bitdeer IR 10月8日A901公告的协议、容量及交付计划。媒体文章保留自身日期；官方公告只作关联证据，不另计重复资料。签约容量不等于已交付、满载或确认收入。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "马来西亚"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "DataCenterDynamics（DCD）",
+      "originalUrl": "https://www.datacenterdynamics.com/en/news/bitdeer-ai-signs-67mw-ai-cloud-agreement-in-malaysia/",
+      "visibility": "active",
+      "tags": [
+        "马来西亚",
+        "A901",
+        "67MW",
+        "液冷",
+        "数据中心服务协议"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "Georgia Butler"
+      },
+      "stage": "已签服务协议；计划2027年交付",
+      "relatedLinks": [
+        {
+          "url": "https://ir.bitdeer.com/news-releases/news-release-details/bitdeer-ai-expands-southeast-asia-footprint-a901-new-67mw-ai",
+          "publisher": "Bitdeer Technologies Group",
+          "role": "公司公告交叉核对",
+          "publishedAt": "2026-10-08"
+        }
+      ]
+    },
+    {
+      "id": "wmedia-sarawak-framework-20261009",
+      "sourceId": "wmedia-sea",
+      "title": "软银、Grab与PETROS签署砂拉越AI基础设施探索框架协议",
+      "url": "https://w.media/softbank-grab-petros-ink-deal-to-explore-ai-infrastructure-in-sarawak-malaysia/",
+      "kind": "news",
+      "publishedAt": "2026-10-09",
+      "dataPeriod": null,
+      "summary": "三方签署框架协议，拟探索马来西亚砂拉越AI及数字基础设施，并制定分期发展路线。官方说明框架不要求各方必须订立最终协议或实施项目；选址、供电、融资和审批等条件仍待落实。",
+      "verifiedAt": "2026-10-12",
+      "lastCheckAttemptAt": "2026-10-12",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-12：读取w.media全文（2026-10-09 13:55 GMT+8，Jan Yong）及软银官网10月8日三方联合声明，包括前瞻性风险条款。未披露确定容量及交付时间，不自行补数或写成已开工。媒体原发布日期与签约日期分开。",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "马来西亚"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "companyIds": [],
+      "access": "free",
+      "originalPublisher": "w.media",
+      "originalUrl": "https://w.media/softbank-grab-petros-ink-deal-to-explore-ai-infrastructure-in-sarawak-malaysia/",
+      "visibility": "active",
+      "tags": [
+        "马来西亚",
+        "砂拉越",
+        "框架协议",
+        "AI基础设施"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "Jan Yong"
+      },
+      "stage": "探索框架协议；未承诺最终实施",
+      "relatedLinks": [
+        {
+          "url": "https://group.softbank/en/news/press/20261008",
+          "publisher": "SoftBank Group／Grab／PETROS",
+          "role": "三方官方联合声明",
+          "publishedAt": "2026-10-08"
+        }
+      ]
+    }
+  ],
+  "changeBatch": {
+    "batchId": "media-week7-20261012",
+    "recordedAt": "2026-10-12T11:54:26+08:00",
+    "periodStart": "2026-10-06",
+    "scope": "媒体窗口改为北京时间近7个自然日（2026-10-06至2026-10-12）。有限检查已配置的7家中文媒体及DCD、w.media相关入口与候选正文，不宣称全站、全网或六国全量覆盖。公司财报和官方来源规则不变。",
+    "summary": "媒体近7天补入9条资料；同日既有36氪超节点快讯不重复收录。旧文章和历史批次保持。",
+    "checks": [
+      {
+        "id": "week7-dcd-southeast-asia",
+        "channel": "DCD 东南亚数据中心新闻近7天有限核查",
+        "url": "https://www.datacenterdynamics.com/en/news/?term=south-east-asia",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：Bitdeer AI签订马来西亚67MW A901数据中心服务协议。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+      },
+      {
+        "id": "week7-wmedia-sea",
+        "channel": "w.media 东南亚近7天有限核查",
+        "url": "https://w.media/category/markets/apac/sea/",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：软银、Grab与PETROS签署砂拉越AI基础设施探索框架协议。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+      },
+      {
+        "id": "week7-stcn-industry",
+        "channel": "证券时报 IDC/AIDC 相关报道近7天有限核查",
+        "url": "https://www.stcn.com/article/list/cj.html",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：储能及算力配储成新增量 多家产业链上市公司抢抓机遇。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+      },
+      {
+        "id": "week7-yicai-industry",
+        "channel": "第一财经 IDC/AIDC 相关报道近7天有限核查",
+        "url": "https://www.yicai.com/news/",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：“337调查”指向立讯精密、工业富联，双双回应，影响几何？。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+      },
+      {
+        "id": "week7-nbd-industry",
+        "channel": "每日经济新闻 IDC/AIDC 相关报道近7天有限核查",
+        "url": "https://www.nbd.com.cn/",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：立讯精密遭美国337调查，涉及数据中心电源模块 公司：相关产品处于客户验证阶段。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+      },
+      {
+        "id": "week7-cls-industry",
+        "channel": "财联社 IDC/AIDC 相关报道近7天有限核查",
+        "url": "https://www.cls.cn/",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：星展集团CEO：市场正在重新评估人工智能建设相关投资的风险。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+      },
+      {
+        "id": "week7-jiemian-industry",
+        "channel": "界面新闻 IDC/AIDC 相关报道近7天有限核查",
+        "url": "https://www.jiemian.com/",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：国产AI，开始为算力算账。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+      },
+      {
+        "id": "week7-thepaper-industry",
+        "channel": "澎湃新闻 IDC/AIDC 相关报道近7天有限核查",
+        "url": "https://www.thepaper.cn/",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：GCC区俊彦：让标准成为连接全球计算产业的“共同语言”。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。"
+      },
+      {
+        "id": "week7-36kr-industry",
+        "channel": "36氪 IDC/AIDC 相关报道近7天有限核查",
+        "url": "https://www.36kr.com/newsflashes",
+        "result": "partial",
+        "attemptedAt": "2026-10-12",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：算力基建的战争，才刚刚在液冷赛道上演。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。已有10月12日天数智芯超节点快讯不重复新增；9月报道在10月转刊的峰会材料及10月5日窗外文章不作本周新事实。"
+      }
+    ]
+  }
+}

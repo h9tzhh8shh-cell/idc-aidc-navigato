@@ -643,7 +643,7 @@ test("正式资料保持验收关键词、来源关联、唯一计数与未知�
       (item) => item.id,
     ),
   );
-  assert.ok(monthlyChinaIds.has("nea-electricity"));
+  assert.ok(!monthlyChinaIds.has("nea-electricity")); // Phase 4: explicitly archived product.
   const displayedIds = groupSources(data.sources, data.categories).flatMap(
     (group) => group.items.map((item) => item.id),
   );

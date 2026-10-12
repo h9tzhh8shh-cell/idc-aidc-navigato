@@ -2,7 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { IconX, IconChevronDown, IconChevronRight, IconArrowUpRight, IconBuilding, IconInfoCircle, IconAlertCircle } from '@tabler/icons-react';
 import data from '../public/assets/catalog.json';
 import logos from './logos.json';
-import { getReportMatchReason, getSourcePreview, getSourceReports, TOPICS, sortReportsByDate } from './catalog.js';
+import { FinancialPreview } from './financial-components.jsx';
+import { evidenceUrl, getReportMatchReason, getSourcePreviewSelection, getSourceReports, TOPICS, sortReportsByDate } from './catalog.js';
 import { contentScopeLabels, judgmentLabels } from './domain/catalog.js';
 const labels = data.labelMaps;
 
@@ -61,10 +62,10 @@ export function ReportRow({ report, source, query = '', onSource, filters = {} }
   return <article className="report-row" data-report-id={report.id}>
     <h3><OutLink href={report.url} className="report-title"><Highlight text={report.title} query={query} /></OutLink></h3>
     <p className="report-byline"><time>{report.publishedAt || '发布日期未知'}</time><span> · {report.originalPublisher}</span><ReportRegion report={report} filters={filters} /></p>
-    <p className="report-summary"><Highlight text={report.summary} query={query} /></p>
+    {report.financial ? <FinancialPreview report={report} /> : <p className="report-summary"><Highlight text={report.summary} query={query} /></p>}
     <ReadingLimit report={report} />
     {reason && <p className="match-reason">{reason.label}：<Highlight text={reason.text} query={query} /></p>}
-    <div className="report-actions"><OutLink href={report.url} className="text-link">访问原文</OutLink>{onSource && <button className="text-link" onClick={onSource}>来源详情</button>}</div>
+    <div className="report-actions"><OutLink href={evidenceUrl(report)} className="text-link">访问原文</OutLink>{onSource && <button className="text-link" onClick={onSource}>来源详情</button>}</div>
     <ReportDetails report={report} />
   </article>;
 }
@@ -86,7 +87,7 @@ function ReadingLimit({ report }) {
 function ReportDetails({ report }) {
   return <details className="report-note"><summary>查看依据与口径<IconChevronDown size={14} /></summary>
     <p>{TOPICS.find(topic => topic.id === report.primaryCategoryId)?.label} · {labels.kind[report.kind]} · {labels.verificationStatus[report.verificationStatus]}</p>
-    <ReportEvidence report={report} />
+    <ReportEvidence report={report} />{report.authorship && <p>作者身份：{{journalist:"媒体记者",brief:"未署名快讯",repost:"转载",platform:"平台作者",contributed:"机构供稿",sponsored:"商业推广"}[report.authorship.type]} · {report.authorship.author}</p>}
     <dl className="report-dates"><div><dt>数据所属期</dt><dd>{report.dataPeriod || '未知 / 不适用'}</dd></div><div><dt>最近成功核查</dt><dd>{report.verifiedAt || '暂无成功记录'}</dd></div><div><dt>最近尝试</dt><dd>{report.lastCheckAttemptAt || '未单列'}</dd></div></dl>
     <p>资料地区：{report.regions.join(' / ') || '未明确 / 待核'}</p>{report.regionNote && <p>地区依据：{report.regionNote}</p>}
     {report.dateNote && <p>{report.dateNote}</p>}<p>{report.verificationNote}</p>
@@ -102,12 +103,24 @@ function ReportEvidence({ report }) {
   return <div className="report-evidence"><p>取得范围：{contentScopeLabels[report.contentScope]} · {labels.access[report.access]}{report.judgmentTypes.length > 0 && ` · ${report.judgmentTypes.map(type => judgmentLabels[type]).join(' / ')}`}{report.visibility === 'reference' && ' · 补充参考，非已核实动态'}</p>{report.stage && <p>阶段：{report.stage}</p>}{report.documentStatus && <p>文件状态：{report.documentStatus}{report.jurisdiction && ` · 适用法域：${report.jurisdiction}`}</p>}{report.effectiveAt && <p>{report.effectiveAt > today ? '将于' : '文件载明生效日：'}{report.effectiveAt}{report.effectiveAt > today ? '生效' : ''}</p>}{report.deadlineAt && <p>截止日期：{report.deadlineAt}</p>}</div>;
 }
 
-export function SourcePreview({ source, filters }) {
-  const report = getSourcePreview(source, { ...filters, dateWindow: 'all', asOf: null });
-  if (!report) return <p className="source-preview-empty">当前条件下暂无收录资料</p>;
-  return <div className="source-preview" data-preview-id={report.id}>
+function PreviewArticle({ report, filters }) {
+  return <div data-news-id={report.id}>
     <OutLink href={report.url} className="preview-title"><Highlight text={report.title} query={filters.q} /></OutLink>
     <p className="report-byline">{report.publishedAt || '发布日期未知'}<ReportRegion report={report} filters={filters} /></p>
-    <p className="preview-summary"><Highlight text={report.summary} query={filters.q} /></p><ReadingLimit report={report} /><ReportDetails report={report} />
+    {report.financial ? <FinancialPreview report={report} compact /> : <p className="preview-summary"><Highlight text={report.summary} query={filters.q} /></p>}<ReadingLimit report={report} /><ReportDetails report={report} />
+  </div>;
+}
+
+export function SourcePreview({ source, filters }) {
+  const { report, reports, days } = getSourcePreviewSelection(source, { ...filters, dateWindow: 'all', asOf: null });
+  if (!report) return <p className="source-preview-empty">{source.sourceType === 'media' ? '当前条件下近30天暂无合格收录，历史资料可在来源详情查看。' : '当前条件下暂无收录资料'}</p>;
+  const remaining = reports.slice(1);
+  return <div className="source-preview" data-preview-id={report.id}>
+    {days && <p className="report-byline">近{days}天 · 展示{reports.length}篇 · 按原文发布日期</p>}
+    <PreviewArticle report={report} filters={filters} />
+    {remaining.length > 0 && <details className="media-news-fold" key={reports.map(item=>item.id).join(':')}>
+      <summary><span className="fold-closed-label">展开其余{remaining.length}篇</span><span className="fold-open-label">收起其余{remaining.length}篇</span><IconChevronDown size={16} aria-hidden="true" /></summary>
+      {remaining.map(item=><article className="media-news-item" key={item.id}><PreviewArticle report={item} filters={filters} /></article>)}
+    </details>}
   </div>;
 }
