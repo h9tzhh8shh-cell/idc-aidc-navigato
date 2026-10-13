@@ -8,6 +8,8 @@ import { Highlight, SourceLogo, OutLink, Facet, CheckOption, SourceDetail, Repor
 
 import { DateControls, BatchView, RelatedReports } from './update-components.jsx';
 import { CompanyBrowser, CompanyPanorama } from './company-components.jsx';
+import { HorizontalFilters } from './horizontal-filters.jsx';
+import './horizontal.css';
 
 const sources = decorateSources(data);
 const labels = data.labelMaps;
@@ -21,6 +23,13 @@ const regionById = Object.fromEntries(allRegions.map(n => [n.id, n]));
 function leafIds(node) { return node.children?.length ? node.children.flatMap(leafIds) : [node.id]; }
 
 export function App() {
+  const [mobileLayout, setMobileLayout] = useState(() => window.matchMedia('(max-width: 800px)').matches);
+  useEffect(() => {
+    const media = window.matchMedia('(max-width: 800px)');
+    const syncLayout = () => setMobileLayout(media.matches);
+    media.addEventListener('change', syncLayout);
+    return () => media.removeEventListener('change', syncLayout);
+  }, []);
   const initial = useMemo(() => readQuery(window.location.search), []);
   const [filters, setFilters] = useState({ ...emptyFilters(), ...initial.filters });
   const [draft, setDraft] = useState(initial.filters.q || '');
@@ -34,12 +43,14 @@ export function App() {
   const [moreTypes, setMoreTypes] = useState(initial.filters.types.some(id => INFO_TYPES.slice(4).some(type => type.id === id)));
   const [toast, setToast] = useState('');
   const [copyFallback, setCopyFallback] = useState('');
+  const [dataExplanationOpen, setDataExplanationOpen] = useState(false);
   const searchInput = useRef(null);
   const main = useRef(null);
   const detailTrigger = useRef(null);
   const filterTrigger = useRef(null);
   const filterDialog = useRef(null);
   const historyMode = useRef('replace');
+  const summaryRef = useRef(null);
   const southeast = view.startsWith('southeast');
   const reportsView = view.endsWith('reports');
   const effectiveFilters = useMemo(() => normalizeFilters(filters, view), [filters, view]);
@@ -68,6 +79,12 @@ export function App() {
   }, []);
   useEffect(() => { if (!toast) return; const timer = setTimeout(() => setToast(''), 3200); return () => clearTimeout(timer); }, [toast]);
   useEffect(() => { if (mobileFilters) filterDialog.current?.showModal(); }, [mobileFilters]);
+  useEffect(() => {
+    if (!summaryRef.current) return;
+    const observer = new ResizeObserver(() => main.current?.style.setProperty('--directory-summary-height', `${summaryRef.current.offsetHeight}px`));
+    observer.observe(summaryRef.current);
+    return () => observer.disconnect();
+  }, []);
   function update(changes) { const raw = { ...filters, ...changes }; setFilterNotice(subcategoryNotice(raw,view)); setFilters(normalizeFilters(raw,view)); if (changes.topics) setNavigation({}); main.current?.scrollTo({ top: 0 }); }
   function toggle(key, id) { update({ [key]: filters[key].includes(id) ? filters[key].filter(x => x !== id) : [...filters[key], id] }); }
   function reset() { setDraft(''); setNavigation({}); setFilterNotice(''); setFilters(emptyFilters(effectiveFilters.scope)); main.current?.scrollTo({ top: 0 }); }
@@ -93,7 +110,7 @@ export function App() {
   const chips = [
     ...(filters.q ? [{ key: 'q', id: filters.q, text: `关键词：${filters.q}` }] : []),
     ...filters.topics.map(id => ({ key: 'topics', id, text: `研究：${TOPICS.find(t => t.id === id)?.label}` })),
-    ...(filters.subcategory ? [{key:'subcategory',id:filters.subcategory,text:`细分：${SUBCATEGORIES.find(s=>s.id===filters.subcategory)?.name}`}] : []),
+    ...(filters.subcategory ? [{key:'subcategory',id:filters.subcategory,text: mobileLayout ? `细分：${SUBCATEGORIES.find(s=>s.id===filters.subcategory)?.name}` : `${TOPICS.find(t=>t.id===filters.topics[0])?.label} / ${SUBCATEGORIES.find(s=>s.id===filters.subcategory)?.name}`}] : []),
     ...filters.companies.map(id=>({key:'companies',id,text:`公司：${data.companies.find(c=>c.id===id)?.name}`})),
     ...filters.regions.map(id => ({ key: 'regions', id, text: `地区：${id}${regionById[id]?.children ? '（含下级地区）' : ''}` })),
     ...filters.types.map(id => ({ key: 'types', id, text: `类型：${INFO_TYPES.find(t => t.id === id)?.label}` })),
@@ -116,25 +133,29 @@ export function App() {
     <CheckOption label="显示补充参考资料" checked={filters.showReference} onChange={() => update({ showReference: !filters.showReference })} />
     <details className="filter-rules"><summary>筛选规则</summary><p>父级包含已列子地区；全球、亚太等概览标签不自动代表具体国家。来源按覆盖地区筛选，资料按自身涉及地区筛选。</p><p>同维条件取并集（OR），跨维条件同时满足（AND）。类型和获取条件按实际资料判断，频率表示来源发布节奏；来源目录不使用原文日期窗口。</p></details>
   </>;
-  return <>
+  return <div className={mobileLayout ? undefined : "horizontal-directory"}>
     <a className="skip-link" href="#results">跳至检索结果</a>
     <header className="app-header"><a className="brand" href="?" onClick={e => { e.preventDefault(); goHome(); }}><FontAwesomeIcon icon={faLayerGroup} aria-hidden="true" /><span><strong>算力研究导航</strong><small>IDC / AIDC Navigator</small></span></a><nav aria-label="主导航">{[['sources', '来源目录'], ['southeast', '东南亚专题'], ['reports', '动态与报告']].map(([id, text]) => <button key={id} className={view === id || (id === 'southeast' && southeast) ? 'active' : ''} aria-current={view === id || (id === 'southeast' && southeast) ? 'page' : undefined} onClick={() => goView(id)}>{text}</button>)}</nav><div className="header-meta"><span>资料维护批次：{data.maintainedAt}</span><span>共 {sources.filter(source => isVisible(source)).length} 个正式来源</span></div></header>
-    <div className="workspace"><aside className="filter-rail" aria-label="来源筛选">{facetContent()}</aside><main ref={main} className="main-panel">
+    <div className="workspace"><main ref={main} className="main-panel">
       <div className="page-heading"><div><h1>{heading}</h1><p>{southeast ? '追踪东南亚六国的项目进展、供电条件与政策变化。' : reportsView ? '回到原文，区分发布日期、数据所属期与核查日期。' : '从研究问题出发，找到可用的信息来源。'}</p></div><button ref={filterTrigger} className="button mobile-filter" onClick={() => setMobileFilters(true)}><IconAdjustmentsHorizontal size={18} />筛选{chips.length > 0 && <span>{chips.length}</span>}</button></div>
+      <div className="directory-query-row">
       <div className="scope-tabs" role="group" aria-label="地区范围">{Object.entries(scopeLabels).map(([id, label]) => <button key={id} aria-pressed={effectiveFilters.scope === id} onClick={() => { if (southeast && id !== 'sea') setView(reportsView ? 'reports' : 'sources'); setFilters(previous => normalizeFilters({ ...previous, scope: id, regions: [] })); }}>{label}</button>)}</div>
-      {southeast && <div className="topic-tabs" role="group" aria-label="专题内容"><button aria-pressed={!reportsView} onClick={() => goView('southeast')}>追踪来源</button><button aria-pressed={reportsView} onClick={() => goView('southeast-reports')}>最新动态</button><span>默认覆盖东南亚六国</span></div>}
+      {mobileLayout && southeast && <div className="topic-tabs" role="group" aria-label="专题内容"><button aria-pressed={!reportsView} onClick={() => goView('southeast')}>追踪来源</button><button aria-pressed={reportsView} onClick={() => goView('southeast-reports')}>最新动态</button><span>默认覆盖东南亚六国</span></div>}
       <form className="search-form" role="search" onSubmit={e => { e.preventDefault(); const q = draft.trim(); setDraft(q); update({ q }); }}><div className="search-input"><IconSearch size={21} stroke={1.8} aria-hidden="true" /><input ref={searchInput} type="search" aria-label={reportsView ? '搜索动态与报告' : '搜索来源、机构、指标或关键词'} placeholder={reportsView ? '搜索资料标题、机构或关键词' : '搜索来源、机构、指标或关键词'} value={draft} onChange={e => { setDraft(e.target.value); if (!e.target.value) update({ q: '' }); }} />{draft ? <button type="button" className="icon-button" aria-label="清除搜索词" onClick={() => { setDraft(''); update({ q: '' }); searchInput.current?.focus(); }}><IconX size={17} /></button> : <kbd>/</kbd>}</div><button className="button primary search-button" type="submit">搜索</button></form>
+      </div>
+      {!mobileLayout && southeast && <div className="topic-tabs" role="group" aria-label="专题内容"><button aria-pressed={!reportsView} onClick={() => goView('southeast')}>追踪来源</button><button aria-pressed={reportsView} onClick={() => goView('southeast-reports')}>最新动态</button><span>默认覆盖东南亚六国</span></div>}
+      {!mobileLayout && <HorizontalFilters key={view} filters={filters} update={update} toggle={toggle} subCounts={subCounts} regionOptions={(southeast ? regionById['东南亚'].children : REGION_TREE).map(n => regionOption(n))} companyId={companyId} reportsView={reportsView} />}
       <div className="active-filters" aria-label="已选筛选条件">{chips.map(c => <button className="filter-chip" key={`${c.key}-${c.id}`} onClick={() => { if (c.key === 'subcategory') update({subcategory:null}); else if (c.key === 'q') { setDraft(''); update({ q: '' }); } else toggle(c.key, c.id); requestAnimationFrame(() => searchInput.current?.focus()); }} aria-label={`移除${c.text}`}>{c.text}<IconX size={14} /></button>)}{chips.length > 0 && <button className="text-link" onClick={reset}>清空条件</button>}</div>
-      <div className="query-summary"><IconInfoCircle size={19} aria-hidden="true" /><p>范围：{scopeLabels[effectiveFilters.scope]}<span className="summary-divider">|</span>当前检索：<strong>{filters.q || (chips.length ? '不限关键词' : southeast ? (reportsView ? '本专题全部资料' : '本专题全部来源') : reportsView ? '全部资料' : '全部来源')}</strong>{filters.regions.length > 0 && <><span className="summary-divider">|</span>地区：{filters.regions.join('、')}{filters.regions.some(id => regionById[id]?.children) && '（含下级地区）'}</>}{southeast && !filters.regions.length && <><span className="summary-divider">|</span>地区：东南亚六国</>}</p><button className="text-link copy-link" onClick={copyLink}><IconLink size={18} />复制检索链接</button></div>
+      <div ref={summaryRef} className="query-summary"><IconInfoCircle size={19} aria-hidden="true" /><p>范围：{scopeLabels[effectiveFilters.scope]}<span className="summary-divider">|</span>当前检索：<strong>{filters.q || (chips.length ? '不限关键词' : southeast ? (reportsView ? '本专题全部资料' : '本专题全部来源') : reportsView ? '全部资料' : '全部来源')}</strong>{filters.regions.length > 0 && <><span className="summary-divider">|</span>地区：{filters.regions.join('、')}{filters.regions.some(id => regionById[id]?.children) && '（含下级地区）'}</>}{southeast && !filters.regions.length && <><span className="summary-divider">|</span>地区：东南亚六国</>}</p><button className="text-link copy-link" onClick={copyLink}><IconLink size={18} />复制检索链接</button>{!mobileLayout && <><button className="text-link data-explanation-trigger" aria-expanded={dataExplanationOpen} aria-controls="directory-data-explanation" onClick={() => setDataExplanationOpen(!dataExplanationOpen)}>数据说明<IconChevronDown size={14} aria-hidden="true" /></button>{dataExplanationOpen && <p id="directory-data-explanation" className="directory-data-explanation">仅展示本站实际收录资料，零条不表示行业没有新闻。原文日期、数据所属期、成功核查与整理批次分别记录；未知日期单列，历史补录不会变成今日发布。公司事项保留当前已核状态，日期窗口只过滤资料。</p>}</>}</div>
       {copyFallback && <div className="copy-fallback"><label>浏览器未能复制，请手动复制链接<input value={copyFallback} readOnly onFocus={e => e.target.select()} autoFocus /></label><button className="text-link" onClick={() => setCopyFallback('')}>关闭</button></div>}
       {filterNotice && <p className="filter-notice" role="status">{filterNotice}<button className="text-link" onClick={()=>setFilterNotice('')}>关闭提示</button></p>}
-      {reportsView && !companyId && <><div className="topic-tabs reading-tabs" role="group" aria-label="阅读方式"><button aria-pressed={!batchMode} onClick={()=>update({readingMode:'original'})}>按原文时间</button><button aria-pressed={batchMode} onClick={()=>update({readingMode:'batches',batchId:filters.batchId || data.changeBatches?.at(-1)?.batchId || null})}>按更新批次</button></div>{!batchMode && !companyMode && <DateControls filters={effectiveFilters} onChange={update} />}</>}
-      {!batchMode && <details className="data-explanation"><summary>数据说明</summary><p>仅展示本站实际收录资料，零条不表示行业没有新闻。原文日期、数据所属期、成功核查与整理批次分别记录；未知日期单列，历史补录不会变成今日发布。公司事项保留当前已核状态，日期窗口只过滤资料。</p></details>}
+      {reportsView && !companyId && <div className="report-reading-controls"><div className="topic-tabs reading-tabs" role="group" aria-label="阅读方式"><button aria-pressed={!batchMode} onClick={()=>update({readingMode:'original'})}>按原文时间</button><button aria-pressed={batchMode} onClick={()=>update({readingMode:'batches',batchId:filters.batchId || data.changeBatches?.at(-1)?.batchId || null})}>按更新批次</button></div>{!batchMode && !companyMode && <DateControls filters={effectiveFilters} onChange={update} />}</div>}
+      {mobileLayout && !batchMode && <details className="data-explanation"><summary>数据说明</summary><p>仅展示本站实际收录资料，零条不表示行业没有新闻。原文日期、数据所属期、成功核查与整理批次分别记录；未知日期单列，历史补录不会变成今日发布。公司事项保留当前已核状态，日期窗口只过滤资料。</p></details>}
       {listedOnly && !companyId && !batchMode && <div className="topic-tabs" role="group" aria-label="同业浏览方式"><button aria-pressed={companyMode} onClick={()=>setNavigation({})}>按公司浏览</button><button aria-pressed={!companyMode} onClick={()=>setNavigation({listedMode:'sources'})}>保留来源／资料列表</button></div>}
       {companyId ? <CompanyPanorama data={data} sources={sources} companyId={companyId} eventId={navigation.event} eventType={navigation.eventType} filters={{...effectiveFilters,readingMode:'original'}} onDateChange={update} onBack={backToSearch} onEvent={openEvent} onEventType={eventType=>setNavigation(previous=>({...previous,eventType}))} onSource={openSource} /> : batchMode ? <BatchView data={data} sources={sources} filters={effectiveFilters} onChange={update} onEvent={openEvent} /> : companyMode ? <CompanyBrowser data={data} sources={sources} filters={effectiveFilters} onCompany={openCompany} /> : <>
       <div className="results-heading" id="results" tabIndex={-1}><h2>{reportsView ? '相关资料' : filtered ? '相关来源' : '全部来源'}<span className="result-count" role="status" aria-label={`${reportsView ? reports.length : results.length} ${reportsView ? '条资料' : '个来源'}`}>{reportsView ? reports.length : results.length}</span></h2><span className="result-hint">{filters.q && '文本匹配'}{filters.q && chips.some(c => c.key !== 'q') && ' + '}{chips.some(c => c.key !== 'q') && '条件筛选'}</span><label className="sort-control"><span className="sr-only">排序方式</span><select value={filters.sort} onChange={e => update({ sort: e.target.value })}><option value="relevance">{reportsView ? (filters.q ? '相关性优先' : '发布日期优先') : '综合相关性'}</option><option value="name">名称顺序</option><option value="verified">最近核查</option></select><IconChevronDown size={16} aria-hidden="true" /></label></div>
-      {!(reportsView ? reports : results).length ? <div className="empty-state"><IconSearch size={36} stroke={1.3} /><h3>当前范围暂无匹配收录</h3><p>可移除部分条件，放宽筛选。</p><div className="empty-actions">{topicOnlyCount > 0 && <button className="button primary" onClick={() => { setDraft(''); update(topicOnlyFilters); requestAnimationFrame(() => searchInput.current?.focus()); }}>仅按研究方向查看（{topicOnlyCount}）</button>}<button className={`button ${topicOnlyCount > 0 ? 'secondary' : 'primary'}`} onClick={reset}>{southeast ? '清空条件，查看本专题' : '清空条件，保留当前范围'}</button></div></div> : reportsView ? <div className="report-list">{groupedReports.map(group => <section key={group.id} aria-label={group.label || "相关资料"}>{group.label && <h3 className="region-group-title">{group.label} <span>{group.items.length}</span></h3>}{group.items.map(report => <ReportRow key={report.id} report={report} source={lookup[report.sourceId]} query={filters.q} filters={effectiveFilters} onSource={e => openSource(lookup[report.sourceId], e)} />)}</section>)}</div> : <div className="source-list">{results.map(source => <article className="source-row" key={source.id}>
-        <SourceLogo source={source} /><div className="source-copy"><h3><button className="source-title" onClick={e => openSource(source, e)}><Highlight text={source.name} query={filters.q} /></button></h3><p className="source-purpose"><Highlight text={source.purpose} query={filters.q} /></p><div className="source-meta"><span><IconFileText size={17} />{labels.sourceType[source.sourceType]}</span>{source.access !== 'free' && <span>{labels.access[source.access]}</span>}</div>{hasHiddenMatch(source) && <p className="match-reason">{getMatchReason(source, filters.q, effectiveFilters)?.label || '匹配内容'}：<Highlight text={getMatchReason(source, filters.q, effectiveFilters)?.text || source.aliases.join('、')} query={filters.q} /></p>}<SourcePreview source={source} filters={effectiveFilters} /></div>
+      {!(reportsView ? reports : results).length ? <div className="empty-state"><IconSearch size={36} stroke={1.3} /><h3>当前范围暂无匹配收录</h3><p>可移除部分条件，放宽筛选。</p><div className="empty-actions">{topicOnlyCount > 0 && <button className="button primary" onClick={() => { setDraft(''); update(topicOnlyFilters); requestAnimationFrame(() => searchInput.current?.focus()); }}>仅按研究方向查看（{topicOnlyCount}）</button>}<button className={`button ${topicOnlyCount > 0 ? 'secondary' : 'primary'}`} onClick={reset}>{southeast ? '清空条件，查看本专题' : '清空条件，保留当前范围'}</button></div></div> : reportsView ? <div className="report-list">{groupedReports.map(group => <section key={group.id} aria-label={group.label || "相关资料"}>{group.label && <h3 className="region-group-title">{group.label} <span>{group.items.length}</span></h3>}{group.items.map(report => <ReportRow compact={!mobileLayout} key={report.id} report={report} source={lookup[report.sourceId]} query={filters.q} filters={effectiveFilters} onSource={e => openSource(lookup[report.sourceId], e)} />)}</section>)}</div> : <div className="source-list">{results.map(source => <article className="source-row" key={source.id} data-source-id={source.id}>
+        <SourceLogo source={source} /><div className="source-copy"><h3><button className="source-title" onClick={e => openSource(source, e)}><Highlight text={source.name} query={filters.q} /></button></h3><p className="source-purpose"><Highlight text={source.purpose} query={filters.q} /></p><div className="source-meta"><span><IconFileText size={17} />{labels.sourceType[source.sourceType]}</span>{source.access !== 'free' && <span>{labels.access[source.access]}</span>}</div>{hasHiddenMatch(source) && <p className="match-reason">{getMatchReason(source, filters.q, effectiveFilters)?.label || '匹配内容'}：<Highlight text={getMatchReason(source, filters.q, effectiveFilters)?.text || source.aliases.join('、')} query={filters.q} /></p>}{mobileLayout && <SourcePreview source={source} filters={effectiveFilters} />}</div>{!mobileLayout && <div className="source-preview-column"><SourcePreview source={source} filters={effectiveFilters} compact /></div>}
         <div className="row-actions"><OutLink href={source.entryUrl} className="button primary visit-button">访问原站</OutLink><button className="button secondary" onClick={e => openSource(source, e)}>查看详情</button></div>
       </article>)}</div>}
       <RelatedReports reports={related} strictCount={reports.length} onRelax={()=>update({subcategory:null})} />
@@ -144,5 +165,5 @@ export function App() {
     {mobileFilters && <dialog ref={filterDialog} className="mobile-filter-dialog" onKeyDown={trapDialogFocus} onCancel={closeFilters} aria-labelledby="mobile-filter-title"><div className="mobile-filter-top"><strong id="mobile-filter-title">组合筛选</strong><button className="icon-button" aria-label="关闭筛选" onClick={closeFilters}><IconX size={22} /></button></div><div className="mobile-facets">{facetContent(true)}</div><div className="mobile-filter-bottom"><button className="button primary" onClick={closeFilters}>查看 {reportsView ? reports.length : results.length} 个结果</button></div></dialog>}
     {currentSource && <SourceDetail key={currentSource.id} source={currentSource} showReference={filters.showReference} onClose={closeSource} />}
     {toast && <div className="toast" role="status"><IconCheck size={19} />{toast}</div>}
-  </>;
+  </div>;
 }

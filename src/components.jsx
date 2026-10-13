@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { IconX, IconChevronDown, IconChevronRight, IconArrowUpRight, IconBuilding, IconInfoCircle, IconAlertCircle } from '@tabler/icons-react';
 import data from '../public/assets/catalog.json';
 import logos from './logos.json';
@@ -57,16 +57,16 @@ export function SourceDetail({ source, showReference = false, onClose }) {
     </div>
   </dialog>;
 }
-export function ReportRow({ report, source, query = '', onSource, filters = {} }) {
+export function ReportRow({ report, source, query = '', onSource, filters = {}, compact = false }) {
   const reason = getReportMatchReason(report, source, query);
   return <article className="report-row" data-report-id={report.id}>
     <h3><OutLink href={report.url} className="report-title"><Highlight text={report.title} query={query} /></OutLink></h3>
     <p className="report-byline"><time>{report.publishedAt || '发布日期未知'}</time><span> · {report.originalPublisher}</span><ReportRegion report={report} filters={filters} /></p>
-    {report.financial ? <FinancialPreview report={report} /> : <p className="report-summary"><Highlight text={report.summary} query={query} /></p>}
-    <ReadingLimit report={report} />
+    {report.financial ? <FinancialPreview report={report} /> : compact ? <CompactSummary key={`${report.id}:${JSON.stringify(filters)}`} report={report} query={query} /> : <p className="report-summary"><Highlight text={report.summary} query={query} /></p>}
+    {(report.financial || !compact) && <ReadingLimit report={report} />}
     {reason && <p className="match-reason">{reason.label}：<Highlight text={reason.text} query={query} /></p>}
     <div className="report-actions"><OutLink href={evidenceUrl(report)} className="text-link">访问原文</OutLink>{onSource && <button className="text-link" onClick={onSource}>来源详情</button>}</div>
-    <ReportDetails report={report} />
+    {(report.financial || !compact) && <ReportDetails report={report} />}
   </article>;
 }
 
@@ -103,24 +103,47 @@ function ReportEvidence({ report }) {
   return <div className="report-evidence"><p>取得范围：{contentScopeLabels[report.contentScope]} · {labels.access[report.access]}{report.judgmentTypes.length > 0 && ` · ${report.judgmentTypes.map(type => judgmentLabels[type]).join(' / ')}`}{report.visibility === 'reference' && ' · 补充参考，非已核实动态'}</p>{report.stage && <p>阶段：{report.stage}</p>}{report.documentStatus && <p>文件状态：{report.documentStatus}{report.jurisdiction && ` · 适用法域：${report.jurisdiction}`}</p>}{report.effectiveAt && <p>{report.effectiveAt > today ? '将于' : '文件载明生效日：'}{report.effectiveAt}{report.effectiveAt > today ? '生效' : ''}</p>}{report.deadlineAt && <p>截止日期：{report.deadlineAt}</p>}</div>;
 }
 
-function PreviewArticle({ report, filters }) {
+function CompactSummary({ report, query }) {
+  const summary = useRef(null);
+  const summaryId = useId();
+  const [expanded, setExpanded] = useState(false);
+  const [overflows, setOverflows] = useState(false);
+  useEffect(() => {
+    const element = summary.current;
+    if (!element) return;
+    const measure = () => setOverflows(element.scrollHeight > parseFloat(getComputedStyle(element).lineHeight) * 2 + 1);
+    const observer = new ResizeObserver(measure);
+    observer.observe(element);
+    measure();
+    return () => observer.disconnect();
+  }, []);
+  return <>
+    <p ref={summary} id={summaryId} className={`preview-summary ${expanded ? '' : 'summary-collapsed'}`}><Highlight text={report.summary} query={query} /></p>
+    <div className="preview-tools">
+      {overflows && <button className="text-link summary-toggle" aria-expanded={expanded} aria-controls={summaryId} onClick={() => setExpanded(!expanded)}>{expanded ? '收起摘要' : '展开摘要'}<IconChevronDown size={14} aria-hidden="true" /></button>}
+      <ReadingLimit report={report} /><ReportDetails report={report} />
+    </div>
+  </>;
+}
+
+function PreviewArticle({ report, filters, compact = false }) {
   return <div data-news-id={report.id}>
     <OutLink href={report.url} className="preview-title"><Highlight text={report.title} query={filters.q} /></OutLink>
     <p className="report-byline">{report.publishedAt || '发布日期未知'}<ReportRegion report={report} filters={filters} /></p>
-    {report.financial ? <FinancialPreview report={report} compact /> : <p className="preview-summary"><Highlight text={report.summary} query={filters.q} /></p>}<ReadingLimit report={report} /><ReportDetails report={report} />
+    {compact && !report.financial ? <CompactSummary key={`${report.id}:${JSON.stringify(filters)}`} report={report} query={filters.q} /> : <>{report.financial ? <FinancialPreview report={report} compact /> : <p className="preview-summary"><Highlight text={report.summary} query={filters.q} /></p>}<ReadingLimit report={report} /><ReportDetails report={report} /></>}
   </div>;
 }
 
-export function SourcePreview({ source, filters }) {
+export function SourcePreview({ source, filters, compact = false }) {
   const { report, reports, days } = getSourcePreviewSelection(source, { ...filters, dateWindow: 'all', asOf: null });
   if (!report) return <p className="source-preview-empty">{source.sourceType === 'media' ? '当前条件下近30天暂无合格收录，历史资料可在来源详情查看。' : '当前条件下暂无收录资料'}</p>;
   const remaining = reports.slice(1);
   return <div className="source-preview" data-preview-id={report.id}>
     {days && <p className="report-byline">近{days}天 · 展示{reports.length}篇 · 按原文发布日期</p>}
-    <PreviewArticle report={report} filters={filters} />
+    <PreviewArticle report={report} filters={filters} compact={compact} />
     {remaining.length > 0 && <details className="media-news-fold" key={reports.map(item=>item.id).join(':')}>
       <summary><span className="fold-closed-label">展开其余{remaining.length}篇</span><span className="fold-open-label">收起其余{remaining.length}篇</span><IconChevronDown size={16} aria-hidden="true" /></summary>
-      {remaining.map(item=><article className="media-news-item" key={item.id}><PreviewArticle report={item} filters={filters} /></article>)}
+      {remaining.map(item=><article className="media-news-item" key={item.id}><PreviewArticle report={item} filters={filters} compact={compact} /></article>)}
     </details>}
   </div>;
 }
