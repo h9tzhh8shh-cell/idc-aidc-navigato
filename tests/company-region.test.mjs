@@ -25,7 +25,7 @@ test('R03: a specific country and an explicit company selection both constrain c
  assert.deepEqual(ids({scope:'sea',companies:['hec']}),[]);
 });
 test('R04: all-region overview retains the complete dictionary; article dates and types do not remove company identity',()=>{
- assert.equal(ids({scope:'all'}).length,18);
+ assert.deepEqual([...ids({scope:'all'})].sort(),data.companies.map(company=>company.id).sort());
  assert.deepEqual(ids({scope:'sea',dateWindow:'7',types:['news'],q:'nonmatching'}),ids({scope:'sea'}));
 });
 test('R05: broad or unknown regions cannot imply overseas; archived and reference-only evidence obey visibility',()=>{

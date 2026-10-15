@@ -1,0 +1,542 @@
+{
+  "maintainedAt": "2026-10-14",
+  "companies": [
+    {
+      "id": "infinigence-ai",
+      "name": "无问芯穹",
+      "legalName": "上海无问芯穹智能科技股份有限公司",
+      "aliases": [
+        "Infinigence AI",
+        "上海无问芯穹智能科技有限公司"
+      ],
+      "securities": [],
+      "role": "reference",
+      "identityNote": "2026-10-14：企业官网核对名称及业务身份；作为本库首次发现参考企业。infinigence.com 打开为另一家IT支持公司，不可作为本企业官网。；搜索返回 infini-aicn.com 自称官网，与确认官网不同，未采信。",
+      "identityUrls": [
+        "https://www.infinigence-ai.com/about-us.html"
+      ],
+      "researchScope": "domestic",
+      "researchScopeNote": "研究范围依据已核业务材料，不能由总部或品牌名称推定项目所在地。",
+      "discoveryProfile": {
+        "website": "https://www.infinigence-ai.com/",
+        "businessIdentity": "AI原生基础设施与异构算力服务商",
+        "financialNote": "本次核查的非上市企业公开资料未见可用的公司收入及净利润披露；不代表断言所有渠道绝无披露。",
+        "wordmark": "无问芯穹"
+      }
+    },
+    {
+      "id": "konst-group",
+      "name": "KONST 康斯特超算集团",
+      "legalName": "KONST Co., LIMITED",
+      "aliases": [
+        "KONST",
+        "康斯特超算集团"
+      ],
+      "securities": [],
+      "role": "reference",
+      "identityNote": "2026-10-14：企业官网核对名称及业务身份；作为本库首次发现参考企业。不同于北京康斯特仪表科技股份有限公司（300445），不得关联该上市主体财务。；KONST为集团，Konstra AI、Glows.ai、Horizon AI为品牌/伙伴结构；本轮不推定全部股权归属。",
+      "identityUrls": [
+        "https://www.konsttech.ai/group"
+      ],
+      "researchScope": "cross",
+      "researchScopeNote": "研究范围依据已核业务材料，不能由总部或品牌名称推定项目所在地。",
+      "discoveryProfile": {
+        "website": "https://www.konsttech.ai/",
+        "businessIdentity": "AI数据中心、GPU云与算力交付服务商",
+        "financialNote": "未获得 KONST Co., LIMITED 集团同口径财报；搜索出现台湾康斯特科技子公司较早收入与预测，不能自动等同集团口径；拒绝套用300445财报。",
+        "wordmark": "KONST"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "oregon-capital-chronicle",
+      "name": "Oregon Capital Chronicle",
+      "organization": "Oregon Capital Chronicle",
+      "sourceType": "media",
+      "entryUrl": "https://oregoncapitalchronicle.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "美国"
+      ],
+      "categoryIds": [
+        "regulation"
+      ],
+      "purpose": "核对美国俄勒冈数据中心许可与公共政策报道。",
+      "questions": [
+        "本次已核材料记载了哪些行业变化？"
+      ],
+      "metrics": [
+        "发布日期",
+        "当前进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "公共政策媒体"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "本次只核样例与身份，不推定固定发布节奏。",
+      "access": "free",
+      "accessNote": "本轮所读公开页面可访问，未核全站获取条件。",
+      "methodologyUrl": null,
+      "caveats": [
+        "按所列材料范围核查；未覆盖全站，也不等于独立证实所有被引述说法。"
+      ],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "companyIds": [],
+      "verificationNote": "2026-10-14：读取本轮原文并核对发布机构身份。开放发现媒体，不升级为固定追踪。",
+      "mediaType": "公共政策媒体",
+      "shortName": "OCC",
+      "discoveryType": "open"
+    },
+    {
+      "id": "china-securities-journal",
+      "name": "中国证券报·中证网",
+      "organization": "中国证券报·中证网",
+      "sourceType": "media",
+      "entryUrl": "https://www.cs.com.cn/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "rental-prices"
+      ],
+      "purpose": "核对算力服务商融资及经营变化报道。",
+      "questions": [
+        "本次已核材料记载了哪些行业变化？"
+      ],
+      "metrics": [
+        "发布日期",
+        "当前进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "财经媒体"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "本次只核样例与身份，不推定固定发布节奏。",
+      "access": "free",
+      "accessNote": "本轮所读公开页面可访问，未核全站获取条件。",
+      "methodologyUrl": null,
+      "caveats": [
+        "按所列材料范围核查；未覆盖全站，也不等于独立证实所有被引述说法。"
+      ],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "companyIds": [],
+      "verificationNote": "2026-10-14：读取本轮原文并核对发布机构身份。开放发现媒体，不升级为固定追踪。",
+      "mediaType": "财经媒体",
+      "shortName": "中国证券报",
+      "discoveryType": "open"
+    },
+    {
+      "id": "thehubnews",
+      "name": "新头条 TheHubNews",
+      "organization": "新头条 TheHubNews",
+      "sourceType": "media",
+      "entryUrl": "https://www.thehubnews.net/",
+      "entryType": "机构首页",
+      "regions": [
+        "亚太"
+      ],
+      "categoryIds": [
+        "industry"
+      ],
+      "purpose": "核对已明确署名来源的亚洲算力设施报道与企业通稿。",
+      "questions": [
+        "本次已核材料记载了哪些行业变化？"
+      ],
+      "metrics": [
+        "发布日期",
+        "当前进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "综合媒体"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "本次只核样例与身份，不推定固定发布节奏。",
+      "access": "free",
+      "accessNote": "本轮所读公开页面可访问，未核全站获取条件。",
+      "methodologyUrl": null,
+      "caveats": [
+        "按所列材料范围核查；未覆盖全站，也不等于独立证实所有被引述说法。"
+      ],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "companyIds": [],
+      "verificationNote": "2026-10-14：读取本轮原文并核对发布机构身份。开放发现媒体，不升级为固定追踪。",
+      "mediaType": "综合媒体",
+      "shortName": "新头条",
+      "discoveryType": "open"
+    },
+    {
+      "id": "shanghai-government",
+      "name": "上海市人民政府办公厅",
+      "organization": "上海市人民政府办公厅",
+      "sourceType": "government",
+      "entryUrl": "https://www.shanghai.gov.cn/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "policy-planning"
+      ],
+      "purpose": "核对上海算力设施节能与准入相关政策原文。",
+      "questions": [
+        "本次已核材料记载了哪些行业变化？"
+      ],
+      "metrics": [
+        "发布日期",
+        "当前进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "政策"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "本次只核样例与身份，不推定固定发布节奏。",
+      "access": "free",
+      "accessNote": "本轮所读公开页面可访问，未核全站获取条件。",
+      "methodologyUrl": null,
+      "caveats": [
+        "按所列材料范围核查；未覆盖全站，也不等于独立证实所有被引述说法。"
+      ],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "companyIds": [],
+      "verificationNote": "2026-10-14：读取本轮原文并核对发布机构身份。政府政策原文。"
+    }
+  ],
+  "reports": [
+    {
+      "id": "open-oregon-permit-20261013",
+      "sourceId": "oregon-capital-chronicle",
+      "title": "俄勒冈州暂停数据中心新建及扩建项目环保许可审批",
+      "originalTitle": "Oregon governor orders pause on environmental permits to build or expand data centers",
+      "url": "https://oregoncapitalchronicle.com/2026/10/13/oregon-governor-orders-pause-on-environmental-permits-to-build-or-expand-data-centers/",
+      "originalUrl": "https://oregoncapitalchronicle.com/2026/10/13/oregon-governor-orders-pause-on-environmental-permits-to-build-or-expand-data-centers/",
+      "originalPublisher": "Oregon Capital Chronicle",
+      "kind": "news",
+      "primaryCategoryId": "regulation",
+      "primarySubcategoryId": "project-compliance",
+      "regions": [
+        "美国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-13",
+      "dataPeriod": null,
+      "summary": "报道指，俄勒冈州州长要求暂停数据中心新建及扩建项目空气和水污染许可审批，期限至2027年7月1日；此举可能影响仍在审查许可的项目，并非要求现有数据中心停运。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "verificationNote": "2026-10-14：实际读取Oregon Capital Chronicle所载原文，核对题名、日期与来源身份。B：已读具名媒体原文，原行政函未直接取回。原行政函链接 DocumentCloud 打开失败，不能声称逐条核验法律效力。；暂停许可不等于所有项目取消或已营运设施停机。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "政策监管",
+        "项目建设"
+      ],
+      "sourceNature": "独立采编报道",
+      "stage": "已发出暂停审批指示；具体项目影响待跟踪",
+      "intelligence": {
+        "importance": 3,
+        "overview": "美国俄勒冈州的变化发生在项目许可环节。具名媒体报道州长要求暂停部分数据中心环保许可审批；已运营设施不能据此直接认定停运。",
+        "why": "这会影响新建与扩建项目的前置审批安排。即使已有客户或土地资源，项目仍需核对许可阶段及是否适用暂停。",
+        "impact": "评估海外容量与交付计划时，应把客户需求、电力接入、建设条件和环保许可分别列出。许可变化可能改变部分项目排期及替代选址比较，但现有证据不足以量化延期容量、成本增加或竞争者收益。",
+        "uncertainty": "州长原行政函尚未直接取回，具体项目、例外条款与执行细节仍待原件核查。",
+        "followupId": "oregon-data-center-permits",
+        "followup": "取得州长原函和 DEQ 实施口径，再核对具体在审项目、例外与恢复审批安排；后续沿用此跟踪 ID。"
+      },
+      "publicationDateNote": "正文显示日期时间但未直接显示时区；保留原文10月13日，不强行改写为北京时间今日新闻。",
+      "dailyDateUncertain": true
+    },
+    {
+      "id": "open-cs-infini-20261013",
+      "sourceId": "china-securities-journal",
+      "title": "无问芯穹完成23亿元C轮融资 已累计融资43亿元",
+      "originalTitle": "无问芯穹完成23亿元C轮融资 已累计融资43亿元",
+      "url": "https://www.cs.com.cn/ssgs/01/2026/10/13/detail_2026101310044327.html",
+      "originalUrl": "https://www.cs.com.cn/ssgs/01/2026/10/13/detail_2026101310044327.html",
+      "originalPublisher": "中国证券报·中证网",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "infinigence-ai"
+      ],
+      "publishedAt": "2026-10-13",
+      "dataPeriod": null,
+      "summary": "中国证券报报道，无问芯穹近日完成23亿元C轮融资，累计融资43亿元。公司提供AI原生基础设施服务，布局异构算力与模型服务；融资金额属于资本活动，不能直接作为算力租赁收入。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "verificationNote": "2026-10-14：实际读取中国证券报·中证网所载原文，核对题名、日期与来源身份。B：具名记者原文与企业官网身份互证。本条报道未披露收入、净利润或新增IDC合同。；不采纳未获企业确认的IPO时间或估值传闻。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "算力租赁",
+        "企业动态"
+      ],
+      "sourceNature": "记者报道",
+      "stage": "融资完成（媒体报道）；未据此确认机房投运或新增收入",
+      "intelligence": {
+        "importance": 3,
+        "overview": "中国算力平台方面，无问芯穹完成 C 轮融资的报道表明资金继续进入异构算力与模型服务领域。融资完成和数据中心合同、收入兑现仍是不同证据层次。",
+        "why": "该企业的业务处于算力基础设施与模型服务连接处，后续采购、租赁和客户合同可能反映平台型算力需求的形成方式。",
+        "impact": "对 IDC/AIDC 企业而言，可将这类平台视为潜在的算力需求方或合作对象，跟踪其设备与机房采购需求；是否形成可确认订单，取决于实际合同、交付和客户使用。不能把资本进入直接视为已签租赁收入，也不能由融资额估算机柜需求。",
+        "uncertainty": "本条未披露收入、净利润、新增机房合同或交付容量，尚不足以判断融资对具体 IDC 企业收入的影响。",
+        "followupId": "infinigence-capacity-contracts",
+        "followup": "继续核对正式算力采购、租赁合同和项目交付。若仅出现生态合作或平台调用数据，保留行业关联而不升级为收入证据。"
+      }
+    },
+    {
+      "id": "open-konst-seriesb-20261008",
+      "sourceId": "thehubnews",
+      "title": "KONST 完成 3,000 萬美元 B 輪股權融資，擴大亞洲 AI 資料中心建置規模並推進 Token Factory 布局",
+      "originalTitle": "KONST 完成 3,000 萬美元 B 輪股權融資，擴大亞洲 AI 資料中心建置規模並推進 Token Factory 布局",
+      "url": "https://www.thehubnews.net/archives/673099",
+      "originalUrl": null,
+      "originalPublisher": "PR Newswire 美通社",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "regions": [
+        "亚太"
+      ],
+      "regionNote": "报道说明亚洲建设计划，不根据总部所在地推定具体项目国家。",
+      "companyIds": [
+        "konst-group"
+      ],
+      "publishedAt": "2026-10-08",
+      "dataPeriod": null,
+      "summary": "KONST宣布完成3,000万美元B轮股权融资，由威刚科技领投，拟用于扩大亚洲AI数据中心建设及Token服务。该文为美通社企业通稿转载，资金用途仍属计划，不能视为新项目已经投运。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "verificationNote": "2026-10-14：实际读取新头条 TheHubNews所载原文，核对题名、日期与来源身份。C：企业通稿全文转载、官网身份互证；非独立记者核查。不计入独立采编报道数量；展示时须保留企业通稿转载标识。；不进入2026-10-12至14本周新闻主条目；可作为10月8日报或前周历史候选资料。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "算力租赁",
+        "项目建设"
+      ],
+      "sourceNature": "企业通稿转载（PR Newswire 供稿）",
+      "stage": "公司宣布融资完成；扩建为资金用途计划",
+      "intelligence": {
+        "importance": 2,
+        "overview": "KONST 宣布融资完成并计划投入亚洲 AI 数据中心及 Token 服务；这一消息发表于 10 月 8 日，属于此前自然周。",
+        "why": "企业通稿明确融资用途指向算力设施及 GPU 云服务，与泛 AI 应用融资有所区别，但仍需跟踪实际部署。",
+        "impact": "研究判断应关注资金是否落实到设施交付和客户用量，融资规模不等于已实现收入或新增投运容量。",
+        "uncertainty": "本文为美通社企业通稿转载，未独立核验资金到账与项目完成情况；集团同口径财务未取得。",
+        "followupId": "konst-smx01-delivery",
+        "followup": "跟踪 SMX01 液冷容量的进场、验收和上线，官网预计 2027 年第一季度上线，当前不能提前认定投运。"
+      }
+    },
+    {
+      "id": "shanghai-green-compute-plan-20261013",
+      "sourceId": "shanghai-government",
+      "title": "上海规划提高数据中心能效准入要求",
+      "originalTitle": "上海市人民政府办公厅关于印发《上海市节能降碳和循环经济发展“十五五”规划》的通知",
+      "url": "https://www.shanghai.gov.cn/nw12344/20261013/9818972b5d6c4a50b7e08896ec412e02.html",
+      "originalUrl": "https://www.shanghai.gov.cn/nw12344/20261013/9818972b5d6c4a50b7e08896ec412e02.html",
+      "originalPublisher": "上海市人民政府办公厅",
+      "kind": "policy",
+      "primaryCategoryId": "policy-planning",
+      "primarySubcategoryId": "green-power-plan",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-13",
+      "dataPeriod": null,
+      "summary": "上海公布节能降碳和循环经济发展“十五五”规划，提出新建算力设施能源利用效率不超过1.2，支持液冷、高效服务器等集成应用，并推进现有算力设施节能改造；政策发布日为10月13日。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "verificationNote": "2026-10-14：政府官网全文已读；沪府办发〔2026〕25号。媒体14日报道不改变官方原文13日发布。印发元数据与落款日期不同，保留各自字段，不擅自合并。用原文能源利用效率术语；本条未直接标注PUE，不新增推定解释。支持液冷不等于所有项目必须液冷，也不等于新增订单。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "上海",
+        "能效",
+        "绿色算力"
+      ],
+      "stage": "规划已印发公布；具体项目实施与配套执行待跟踪",
+      "sourceNature": "政府原文",
+      "evidenceLevel": "official-body",
+      "documentStatus": "已发布规划",
+      "issuedAt": "2026-09-29",
+      "signatureDate": "2026-09-28",
+      "intelligence": {
+        "importance": 3,
+        "overview": "上海公布节能降碳和循环经济发展“十五五”规划，将新建算力设施能效要求、液冷等技术应用与存量改造并列提出。政策方向已经明确，具体项目的落实仍要看审批和执行。",
+        "why": "规划同时涉及新设施准入和存量改造，直接关系 IDC/AIDC 的设计方案、能源条件及投资比较，适合向管理层汇报。",
+        "impact": "评估上海新项目与改造项目时，应把能效要求纳入方案比选，结合设备效率、冷却方案、运维能耗及建设成本综合比较。政策支持某项技术并不自动形成供应商订单；是否采用液冷、改造节奏及商业回报，仍需结合项目实际和后续执行口径。",
+        "uncertainty": "具体节能审查、准入执行与项目改造安排仍需后续文件和实际项目证据，不能把规划写成已完成改造。",
+        "followupId": "shanghai-green-compute-implementation",
+        "followup": "跟踪项目准入口径、节能审查要求与存量设施改造安排；保留通知文号，后续执行材料挂接同一跟踪关系。"
+      }
+    }
+  ],
+  "changeBatch": {
+    "batchId": "discovery-v1-20261014",
+    "recordedAt": "2026-10-14T15:49:04+08:00",
+    "periodStart": "2026-10-07",
+    "scope": "中国、美国及亚洲；固定来源有限检查与开放搜索",
+    "summary": "首次开放发现：2家参考企业，3篇媒体内容及1份政府政策；候选仅本地。",
+    "checks": [
+      {
+        "id": "v1-check-dcd-southeast-asia",
+        "channel": "DCD入口可用性有限检查",
+        "url": "https://www.datacenterdynamics.com/en/news/?term=south-east-asia",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "新闻列表、日期及文章链接可读，返回479行；含10月13日DayOne等题目。仅入口当前返回，不代表近7天全覆盖；未为凑数读取或纳入全部条目。不代表近7天全覆盖。"
+      },
+      {
+        "id": "v1-check-wmedia-sea",
+        "channel": "w.media入口可用性有限检查",
+        "url": "https://w.media/category/markets/apac/sea/",
+        "attemptedAt": "2026-10-14",
+        "result": "blocked",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "原栏目 open Internal Error。首页602行，可见原站导航；未验证SEA分类全部内容。不代表近7天全覆盖。"
+      },
+      {
+        "id": "v1-check-stcn-industry",
+        "channel": "证券时报入口可用性有限检查",
+        "url": "https://www.stcn.com/article/list/cj.html",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "产经栏目146行。不代表近7天全覆盖。"
+      },
+      {
+        "id": "v1-check-yicai-industry",
+        "channel": "第一财经入口可用性有限检查",
+        "url": "https://www.yicai.com/news/",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "返回新闻标题及3行，无法据此断言新闻列表已完整取得。不代表近7天全覆盖。"
+      },
+      {
+        "id": "v1-check-nbd-industry",
+        "channel": "每日经济新闻入口可用性有限检查",
+        "url": "https://www.nbd.com.cn/",
+        "attemptedAt": "2026-10-14",
+        "result": "blocked",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "首页 open Internal Error；下述10月14日样例正文也失败，搜索索引有内容不等于已读原文。不代表近7天全覆盖。"
+      },
+      {
+        "id": "v1-check-cls-industry",
+        "channel": "财联社入口可用性有限检查",
+        "url": "https://www.cls.cn/",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "首页572行；本轮选定5篇文章均无法通过open取回正文，首页可读不能推断文章可读。不代表近7天全覆盖。"
+      },
+      {
+        "id": "v1-check-jiemian-industry",
+        "channel": "界面新闻入口可用性有限检查",
+        "url": "https://www.jiemian.com/",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "首页572行；定向搜索返回一篇消费电子ETF行情内容，未选作行业事实候选。不代表近7天全覆盖。"
+      },
+      {
+        "id": "v1-check-thepaper-industry",
+        "channel": "澎湃新闻入口可用性有限检查",
+        "url": "https://www.thepaper.cn/",
+        "attemptedAt": "2026-10-14",
+        "result": "blocked",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "首页 open Internal Error，未声称无新新闻。不代表近7天全覆盖。"
+      },
+      {
+        "id": "v1-check-36kr-industry",
+        "channel": "36氪入口可用性有限检查",
+        "url": "https://www.36kr.com/newsflashes",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "配置快讯页200行，见10月14日条目，部分标注其他原始媒体。仅读取当前返回列表，未遍历所有快讯，未把转载域名计作原始来源。不代表近7天全覆盖。"
+      }
+    ]
+  },
+  "discovery": {
+    "generatedAt": "2026-10-14T15:49:04+08:00",
+    "highlightReportIds": [
+      "open-cs-infini-20261013",
+      "open-oregon-permit-20261013"
+    ],
+    "note": "本批核实2篇独立媒体报道及1篇明确企业通稿转载，另收1份政府政策。搜索与入口检查为定向抽样，不是全网覆盖；10月14日固定媒体正文未能取回。海外原文时区未确定的报道不进入单日日报。",
+    "issueRequests": [
+      {
+        "kind": "daily",
+        "date": "2026-10-13"
+      },
+      {
+        "kind": "daily",
+        "date": "2026-10-08"
+      },
+      {
+        "kind": "weekly",
+        "date": "2026-10-14"
+      },
+      {
+        "kind": "weekly",
+        "date": "2026-10-11"
+      }
+    ]
+  }
+}

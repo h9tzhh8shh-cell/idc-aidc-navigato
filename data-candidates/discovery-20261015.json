@@ -1,0 +1,1336 @@
+{
+  "maintainedAt": "2026-10-15",
+  "companies": [
+    {
+      "id": "athub",
+      "name": "数据港",
+      "legalName": "上海数据港股份有限公司",
+      "aliases": [],
+      "securities": [
+        {
+          "exchange": "上交所",
+          "code": "603881"
+        }
+      ],
+      "role": "reference",
+      "identityNote": "2026-10-15：AnySearch核对公司名称、证券代码、官网及本轮业务资料。",
+      "identityUrls": [
+        "https://www.athub.com/"
+      ],
+      "researchScope": "domestic",
+      "researchScopeNote": "本轮收录中国境内数据中心及算力业务。",
+      "discoveryProfile": {
+        "website": "https://www.athub.com/",
+        "businessIdentity": "数据中心定制、算力交付与运营服务商",
+        "financialNote": "财务栏按已收录财务报告展示。",
+        "wordmark": "数据港"
+      }
+    },
+    {
+      "id": "aofei",
+      "name": "奥飞数据",
+      "legalName": "广东奥飞数据科技股份有限公司",
+      "aliases": [],
+      "securities": [
+        {
+          "exchange": "深交所",
+          "code": "300738"
+        }
+      ],
+      "role": "reference",
+      "identityNote": "2026-10-15：AnySearch核对公司名称、证券代码、官网及本轮业务资料。",
+      "identityUrls": [
+        "https://www.ofidc.com/"
+      ],
+      "researchScope": "domestic",
+      "researchScopeNote": "本轮收录中国境内数据中心及算力业务。",
+      "discoveryProfile": {
+        "website": "https://www.ofidc.com/",
+        "businessIdentity": "自建自营数据中心与云网基础服务商",
+        "financialNote": "财务栏按已收录财务报告展示。",
+        "wordmark": "奥飞数据"
+      }
+    },
+    {
+      "id": "capitalonline",
+      "name": "首都在线",
+      "legalName": "北京首都在线科技股份有限公司",
+      "aliases": [],
+      "securities": [
+        {
+          "exchange": "深交所",
+          "code": "300846"
+        }
+      ],
+      "role": "reference",
+      "identityNote": "2026-10-15：AnySearch核对公司名称、证券代码、官网及本轮业务资料。",
+      "identityUrls": [
+        "https://www.capitalonline.net/"
+      ],
+      "researchScope": "domestic",
+      "researchScopeNote": "本轮收录中国境内数据中心及算力业务。",
+      "discoveryProfile": {
+        "website": "https://www.capitalonline.net/",
+        "businessIdentity": "全球云网服务、智算云与数据中心运营商",
+        "financialNote": "财务栏按已收录财务报告展示。",
+        "wordmark": "首都在线"
+      }
+    },
+    {
+      "id": "hongxin",
+      "name": "弘信电子",
+      "legalName": "厦门弘信电子科技集团股份有限公司",
+      "aliases": [],
+      "securities": [
+        {
+          "exchange": "深交所",
+          "code": "300657"
+        }
+      ],
+      "role": "reference",
+      "identityNote": "2026-10-15：AnySearch核对公司名称、证券代码、官网及本轮业务资料。",
+      "identityUrls": [
+        "https://www.hon-flex.com/"
+      ],
+      "researchScope": "domestic",
+      "researchScopeNote": "本轮收录中国境内数据中心及算力业务。",
+      "discoveryProfile": {
+        "website": "https://www.hon-flex.com/",
+        "businessIdentity": "柔性电子制造及算力设备、资源和技术服务商",
+        "financialNote": "财务栏按已收录财务报告展示。",
+        "wordmark": "弘信电子"
+      }
+    },
+    {
+      "id": "litong",
+      "name": "利通电子",
+      "legalName": "江苏利通电子股份有限公司",
+      "aliases": [],
+      "securities": [
+        {
+          "exchange": "上交所",
+          "code": "603629"
+        }
+      ],
+      "role": "reference",
+      "identityNote": "2026-10-15：AnySearch核对公司名称、证券代码、官网及本轮业务资料。",
+      "identityUrls": [
+        "https://www.lettall.com/"
+      ],
+      "researchScope": "domestic",
+      "researchScopeNote": "本轮收录中国境内数据中心及算力业务。",
+      "discoveryProfile": {
+        "website": "https://www.lettall.com/",
+        "businessIdentity": "电子结构件制造、算力租赁与设备经销企业",
+        "financialNote": "财务栏按已收录财务报告展示。",
+        "wordmark": "利通电子"
+      }
+    },
+    {
+      "id": "nexwise",
+      "name": "杰创智能",
+      "legalName": "杰创智能科技股份有限公司",
+      "aliases": [],
+      "securities": [
+        {
+          "exchange": "深交所",
+          "code": "301248"
+        }
+      ],
+      "role": "reference",
+      "identityNote": "2026-10-15：AnySearch核对公司名称、证券代码、官网及本轮业务资料。",
+      "identityUrls": [
+        "https://www.nexwise.com.cn/"
+      ],
+      "researchScope": "domestic",
+      "researchScopeNote": "本轮收录中国境内数据中心及算力业务。",
+      "discoveryProfile": {
+        "website": "https://www.nexwise.com.cn/",
+        "businessIdentity": "智算云集群、算力服务与AI行业应用企业",
+        "financialNote": "财务栏按已收录财务报告展示。",
+        "wordmark": "杰创智能"
+      }
+    },
+    {
+      "id": "range",
+      "name": "润泽科技",
+      "legalName": "润泽智算科技集团股份有限公司",
+      "aliases": [],
+      "securities": [
+        {
+          "exchange": "深交所",
+          "code": "300442"
+        }
+      ],
+      "role": "reference",
+      "identityNote": "2026-10-15：AnySearch核对公司名称、证券代码、官网及本轮业务资料。",
+      "identityUrls": [
+        "https://www.rangeidc.com/"
+      ],
+      "researchScope": "domestic",
+      "researchScopeNote": "本轮收录中国境内数据中心及算力业务。",
+      "discoveryProfile": {
+        "website": "https://www.rangeidc.com/",
+        "businessIdentity": "园区级IDC与AIDC基础设施服务商",
+        "financialNote": "财务栏按已收录财务报告展示。",
+        "wordmark": "润泽科技"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "wabei",
+      "name": "挖贝网",
+      "organization": "挖贝网",
+      "sourceType": "media",
+      "entryUrl": "https://www.wabei.cn/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "rental-prices",
+        "listed-companies"
+      ],
+      "purpose": "上市公司业务与重大合同报道",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [],
+      "verificationNote": "2026-10-15：通过AnySearch读取所收录文章正文并核对发布机构。",
+      "mediaType": "财经媒体",
+      "shortName": "挖贝网",
+      "discoveryType": "open"
+    },
+    {
+      "id": "eastmoney-news",
+      "name": "东方财富",
+      "organization": "东方财富",
+      "sourceType": "media",
+      "entryUrl": "https://finance.eastmoney.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国",
+        "中国香港",
+        "美国"
+      ],
+      "categoryIds": [
+        "industry",
+        "rental-prices",
+        "listed-companies"
+      ],
+      "purpose": "财经媒体报道与上市公司经营动态",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [],
+      "verificationNote": "2026-10-15：通过AnySearch读取所收录文章正文并核对发布机构。",
+      "mediaType": "财经媒体",
+      "shortName": "东方财富",
+      "discoveryType": "open"
+    },
+    {
+      "id": "21jingji",
+      "name": "21世纪经济报道",
+      "organization": "21世纪经济报道",
+      "sourceType": "media",
+      "entryUrl": "https://www.21jingji.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国",
+        "中国香港",
+        "美国"
+      ],
+      "categoryIds": [
+        "industry",
+        "rental-prices",
+        "listed-companies"
+      ],
+      "purpose": "企业融资、科技产业与经营分析",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [],
+      "verificationNote": "2026-10-15：通过AnySearch读取所收录文章正文并核对发布机构。",
+      "mediaType": "财经媒体",
+      "shortName": "21世纪经济报道",
+      "discoveryType": "open"
+    },
+    {
+      "id": "10jqka-news",
+      "name": "同花顺财经",
+      "organization": "同花顺财经",
+      "sourceType": "media",
+      "entryUrl": "https://news.10jqka.com.cn/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "rental-prices",
+        "listed-companies"
+      ],
+      "purpose": "上市公司经营信息及公开业绩说明会报道",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [],
+      "verificationNote": "2026-10-15：通过AnySearch读取所收录文章正文并核对发布机构。",
+      "mediaType": "财经媒体",
+      "shortName": "同花顺财经",
+      "discoveryType": "open"
+    },
+    {
+      "id": "data-center-knowledge",
+      "name": "Data Center Knowledge",
+      "organization": "Data Center Knowledge",
+      "sourceType": "media",
+      "entryUrl": "https://www.datacenterknowledge.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "美国",
+        "巴西"
+      ],
+      "categoryIds": [
+        "industry",
+        "rental-prices",
+        "listed-companies"
+      ],
+      "purpose": "全球数据中心投资、建设、电力与运营报道",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [],
+      "verificationNote": "2026-10-15：通过AnySearch读取所收录文章正文并核对发布机构。",
+      "mediaType": "行业媒体",
+      "shortName": "DCK",
+      "discoveryType": "open"
+    },
+    {
+      "id": "antara-news",
+      "name": "ANTARA 印尼安塔拉通讯社",
+      "organization": "ANTARA 印尼安塔拉通讯社",
+      "sourceType": "media",
+      "entryUrl": "https://en.antaranews.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "印尼"
+      ],
+      "categoryIds": [
+        "industry",
+        "rental-prices",
+        "listed-companies"
+      ],
+      "purpose": "印尼产业政策、数据中心及电力用水报道",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [],
+      "verificationNote": "2026-10-15：通过AnySearch读取所收录文章正文并核对发布机构。",
+      "mediaType": "通讯社",
+      "shortName": "ANTARA",
+      "discoveryType": "open"
+    },
+    {
+      "id": "athub-news",
+      "name": "数据港公司动态",
+      "organization": "数据港公司动态",
+      "sourceType": "company",
+      "entryUrl": "https://www.athub.com/index/Lists/index/catid/22.html",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "rental-prices",
+        "listed-companies"
+      ],
+      "purpose": "数据港算力项目建设、投用与业务合作",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "公司动态"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [
+        "athub"
+      ],
+      "verificationNote": "2026-10-15：通过AnySearch读取所收录文章正文并核对发布机构。"
+    },
+    {
+      "id": "litong-disclosures",
+      "name": "利通电子公司公告",
+      "organization": "利通电子公司公告",
+      "sourceType": "company",
+      "entryUrl": "https://www.lettall.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "rental-prices",
+        "listed-companies"
+      ],
+      "purpose": "利通电子算力租赁、设备经销及项目进展",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "公司动态"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [
+        "litong"
+      ],
+      "verificationNote": "2026-10-15：通过AnySearch读取所收录文章正文并核对发布机构。"
+    },
+    {
+      "id": "aep-releases",
+      "name": "American Electric Power",
+      "organization": "American Electric Power",
+      "sourceType": "company",
+      "entryUrl": "https://www.aep.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "美国"
+      ],
+      "categoryIds": [
+        "industry",
+        "rental-prices",
+        "listed-companies"
+      ],
+      "purpose": "数据中心供电协议与电源项目建设",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "公司动态"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [],
+      "verificationNote": "2026-10-15：通过AnySearch读取所收录文章正文并核对发布机构。"
+    }
+  ],
+  "reports": [
+    {
+      "id": "wabei-hongxin-chips-20261013",
+      "sourceId": "wabei",
+      "title": "弘信电子子公司签订29.83亿元算力芯片采购合同",
+      "originalTitle": "弘信电子拟采购30亿算力芯片：受AI算力生态持续完善等因素影响，今年上半年归母净利润增长130%",
+      "url": "https://www.wabei.cn/Home/News/366201",
+      "originalUrl": "https://www.wabei.cn/Home/News/366201",
+      "originalPublisher": "挖贝网",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "hongxin"
+      ],
+      "publishedAt": "2026-10-13",
+      "dataPeriod": null,
+      "summary": "弘信电子披露，子公司北京安联通分别与两家供应商签订高性能服务器算力芯片采购合同，含税金额合计29.83亿元，用于增强算力设备供给能力。公司业务覆盖算力设备销售、资源服务与技术服务。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "stage": "签约"
+    },
+    {
+      "id": "litong-operations-20261015",
+      "sourceId": "litong-disclosures",
+      "title": "利通电子：三季度新增租赁订单交付，长期战略客户执行固定价格",
+      "originalTitle": "关于2026年半年度业绩说明会召开情况的公告",
+      "url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?stockid=603629&id=12641854",
+      "originalUrl": null,
+      "originalPublisher": "江苏利通电子股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "rental-prices",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "litong"
+      ],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "利通电子在业绩说明会公告中披露，三季度已有新增算力租赁订单交付，存量算力均签订长期订单并正常执行；长期战略客户在协议期内通常采用固定价格。中卫算力中心正推进建设，Token业务处于客户测试阶段。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "公司公告",
+      "stage": "交付与客户测试",
+      "intelligence": {
+        "importance": 10,
+        "overview": "长期订单与交付节奏是租赁收入的主要观察指标。",
+        "followupId": "litong-operations-followup",
+        "followup": "跟踪新增订单的计费周期、中卫项目交付及Token客户测试进度。"
+      }
+    },
+    {
+      "id": "athub-ascend-supernode-20260921",
+      "sourceId": "athub-news",
+      "title": "数据港北京1号算力中心部署昇腾910C超节点集群",
+      "originalTitle": "国芯领航 算力跃升｜数据港×华为昇腾910C超节点正式点亮",
+      "url": "https://www.athub.com/index/Lists/show/catid/22/id/1341.html",
+      "originalUrl": "https://www.athub.com/index/Lists/show/catid/22/id/1341.html",
+      "originalPublisher": "上海数据港股份有限公司",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "athub"
+      ],
+      "publishedAt": "2026-09-21",
+      "dataPeriod": null,
+      "summary": "数据港宣布与华为合作的昇腾910C超节点集群落地投用，全部部署在北京1号算力中心。数据港提供算力交付、机房保障与运维，清昴智能将启用集群开展AI训练和推理业务。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "公司动态",
+      "stage": "投用"
+    },
+    {
+      "id": "stcn-capitalonline-huailai-20261011",
+      "sourceId": "stcn-industry",
+      "title": "首都在线怀来一期高功率机柜整体出租，转向自建运营",
+      "originalTitle": "首都在线怀来数据中心一期与某互联网头部企业达成合作",
+      "url": "https://www.stcn.com/article/detail/4211420.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4211420.html",
+      "originalPublisher": "证券时报·人民财讯",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "capitalonline"
+      ],
+      "publishedAt": "2026-10-11",
+      "dataPeriod": null,
+      "summary": "首都在线与某互联网头部企业签署怀来数据中心一期服务协议，高功率机柜资源整体出租，并提供托管及运维。该项目是公司在河北首个由机房转租转向自建运营的成规模项目，面向AI训练等高密度部署需求。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "stage": "签约"
+    },
+    {
+      "id": "stcn-aofei-repurchase-20261009",
+      "sourceId": "stcn-industry",
+      "title": "奥飞数据董事长提议回购5000万元至1亿元股份",
+      "originalTitle": "奥飞数据：董事长提议5000万元—1亿元回购公司股份",
+      "url": "https://www.stcn.com/article/detail/4210411.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4210411.html",
+      "originalPublisher": "证券时报·人民财讯",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "aofei"
+      ],
+      "publishedAt": "2026-10-09",
+      "dataPeriod": null,
+      "summary": "奥飞数据公告，董事长、总经理冯康提议以5000万元至1亿元回购公司股份，计划用于员工持股或股权激励。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "stage": "提议"
+    },
+    {
+      "id": "10jqka-aofei-capacity-20260916",
+      "sourceId": "10jqka-news",
+      "title": "奥飞数据披露运营规模382MW，固安及无锡项目已交付",
+      "originalTitle": "奥飞数据：9月15日召开业绩说明会，投资者参与",
+      "url": "https://news.10jqka.com.cn/20260916/c679959296.shtml",
+      "originalUrl": "https://wap.stockstar.com/detail/RB2026091600016196",
+      "originalPublisher": "证券之星（同花顺转载）",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "aofei"
+      ],
+      "publishedAt": "2026-09-16",
+      "dataPeriod": null,
+      "summary": "奥飞数据在9月15日业绩说明会上介绍，2026年上半年固安第八栋及无锡首期已交付，怀来项目土建总体完成。截至6月底，自建自营数据中心折合标准机柜超过8.6万个，运营规模约382MW。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "stage": "交付与经营披露"
+    },
+    {
+      "id": "eastmoney-range-increase-20261013",
+      "sourceId": "eastmoney-news",
+      "title": "润泽科技控股股东计划增持5亿至10亿元",
+      "originalTitle": "不设定价格区间 润泽科技控股股东抛出最高10亿元增持计划",
+      "url": "https://wap.eastmoney.com/a/202610133893052662.html",
+      "originalUrl": null,
+      "originalPublisher": "证券日报（东方财富转载）",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "range"
+      ],
+      "publishedAt": "2026-10-13",
+      "dataPeriod": null,
+      "summary": "润泽科技控股股东计划自10月13日起六个月内增持5亿至10亿元，资金来自自有及自筹资金。证券日报报道，公司主营IDC和AIDC服务，2026年上半年AIDC算力业务收入占比为53.26%。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "stage": "增持计划"
+    },
+    {
+      "id": "eastmoney-ai-earnings-20261015",
+      "sourceId": "eastmoney-news",
+      "title": "算力企业三季报预喜，杰创智能新增智算集群进入计费周期",
+      "originalTitle": "AI硬件需求持续兑现 多家算力上市公司三季报预喜",
+      "url": "https://finance.eastmoney.com/a/202610153895874659.html",
+      "originalUrl": null,
+      "originalPublisher": "证券日报（东方财富转载）",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "nexwise"
+      ],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "证券日报梳理三季度业绩预告：浪潮信息预计前三季度归母净利润38亿至41亿元；杰创智能新建智算云集群持续交付并进入计费周期，预计同期归母净利润3670万至4940万元。服务器和智算服务需求正向经营收入传导。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "stage": "业绩预告与计费",
+      "publishedAtBeijing": "2026-10-15",
+      "publishedTimestamp": "2026-10-15T07:39:00+08:00",
+      "intelligence": {
+        "importance": 9,
+        "overview": "新增集群交付后进入计费周期，经营表现开始体现部署成果。",
+        "followupId": "ai-earnings-followup",
+        "followup": "跟踪实际季报中的智算收入、回款和服务器交付。"
+      }
+    },
+    {
+      "id": "21jingji-ai-financing-20261015",
+      "sourceId": "21jingji",
+      "title": "科技大厂扩大融资，腾讯签订美元与人民币票据认购协议",
+      "originalTitle": "AI算力缺口或达1.5万亿美元 科技大厂集体“找钱”",
+      "url": "https://www.21jingji.com/article/20261015/709bec3be5d889ce2cceba4c3decf9d0.html",
+      "originalUrl": "https://www.21jingji.com/article/20261015/709bec3be5d889ce2cceba4c3decf9d0.html",
+      "originalPublisher": "21世纪经济报道",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国",
+        "中国香港",
+        "美国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "腾讯10月14日就18亿美元及260亿元人民币票据签订认购协议，募集资金用于一般企业用途。21世纪经济报道同时梳理全球云厂商融资扩张，反映AI基础设施投入对长期资金的需求。供应商需结合客户项目预算与付款安排评估交付节奏。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "stage": "融资协议",
+      "publishedTimestamp": "2026-10-15T07:00:00+08:00",
+      "intelligence": {
+        "importance": 8,
+        "overview": "AI基础设施建设推动云厂商扩大长期融资。",
+        "followupId": "ai-financing-followup",
+        "followup": "核对客户项目资本预算、付款节点与融资期限。"
+      }
+    },
+    {
+      "id": "yicai-deepseek-service-20261015",
+      "sourceId": "yicai-industry",
+      "title": "DeepSeek对话及部分API服务中断，官方排查运行问题",
+      "originalTitle": "DeepSeek崩了",
+      "url": "https://www.yicai.com/brief/103394173.html",
+      "originalUrl": "https://www.yicai.com/brief/103394173.html",
+      "originalPublisher": "第一财经",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "第一财经9:09报道，北京时间8点后DeepSeek网页和App出现服务器暂时不可用提示。官方状态信息显示对话及V4.1 Flash API服务部分中断、网页与API性能下降，正在排查。面向企业的推理服务需要持续跟踪可用性与故障恢复。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "stage": "服务排查",
+      "publishedTimestamp": "2026-10-15T09:09:00+08:00",
+      "intelligence": {
+        "importance": 6,
+        "overview": "模型服务稳定性直接影响企业使用和服务连续性。",
+        "followupId": "deepseek-service-followup",
+        "followup": "跟踪官方恢复时间、故障原因和服务可用性。"
+      }
+    },
+    {
+      "id": "yicai-ling31-open-20261015",
+      "sourceId": "yicai-industry",
+      "title": "蚂蚁百灵开源Ling-3.1-flash，支持企业自有算力环境验证",
+      "originalTitle": "蚂蚁百灵正式开源Ling-3.1-flash",
+      "url": "https://www.yicai.com/brief/103394183.html",
+      "originalUrl": "https://www.yicai.com/brief/103394183.html",
+      "originalPublisher": "第一财经",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "蚂蚁百灵宣布开源Ling-3.1-flash。第一财经引述模型方信息称，总参数约560B，每个Token激活约25B，最高支持1M上下文；团队可在自身任务和算力环境中验证模型能力及推理效率，为企业推理部署增加可测试选项。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "stage": "开源发布",
+      "publishedTimestamp": "2026-10-15T09:17:00+08:00",
+      "intelligence": {
+        "importance": 5,
+        "overview": "开源模型为自有集群的推理效率测试提供新选项。",
+        "followupId": "ling31-followup",
+        "followup": "在实际业务负载下比较显存需求、吞吐、时延与单位调用成本。"
+      }
+    },
+    {
+      "id": "dck-us-powered-land-20261014",
+      "sourceId": "data-center-knowledge",
+      "title": "美国上半年数据中心购地约60亿美元，供电交付影响选址价值",
+      "originalTitle": "AI Data Center Land Buying Hits $6B as Power Premiums Rise",
+      "url": "https://www.datacenterknowledge.com/data-center-construction/ai-data-center-land-buying-hits-6b-as-power-premiums-rise",
+      "originalUrl": "https://www.datacenterknowledge.com/data-center-construction/ai-data-center-land-buying-hits-6b-as-power-premiums-rise",
+      "originalPublisher": "Data Center Knowledge",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "美国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "Data Center Knowledge援引Avison Young报告，美国2026年上半年用于未来数据中心的土地购买额约60亿美元，同比增长79%。报道指出，已落实的供电容量与接电时间成为土地定价和项目交付安排的重要因素。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "dailyDateUncertain": true
+    },
+    {
+      "id": "dck-brazil-regional-20261014",
+      "sourceId": "data-center-knowledge",
+      "title": "巴西数据中心向圣保罗以外扩展，电网与许可决定落地节奏",
+      "originalTitle": "Brazil’s Data Center Growth Pushes Beyond São Paulo",
+      "url": "https://www.datacenterknowledge.com/data-center-site-selection/brazil-s-data-center-growth-pushes-beyond-s-o-paulo",
+      "originalUrl": "https://www.datacenterknowledge.com/data-center-site-selection/brazil-s-data-center-growth-pushes-beyond-s-o-paulo",
+      "originalPublisher": "Data Center Knowledge",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "巴西"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "Data Center Knowledge援引DC Byte八月研究，圣保罗仍占巴西已投运数据中心容量的76%，开发商正关注里约、福塔莱萨和南部市场。受访机构将输电升级、变电站交付与环境许可列为扩建项目的关键条件。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "dailyDateUncertain": true
+    },
+    {
+      "id": "antara-indonesia-team-20261013",
+      "sourceId": "antara-news",
+      "title": "印尼拟设国家协调团队，统筹数据中心电力、用水和项目审批",
+      "originalTitle": "Indonesia plans national team to support data center development",
+      "url": "https://en.antaranews.com/news/435305/indonesia-plans-national-team-to-support-data-center-development",
+      "originalUrl": "https://en.antaranews.com/news/435305/indonesia-plans-national-team-to-support-data-center-development",
+      "originalPublisher": "ANTARA 印尼安塔拉通讯社",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "印尼"
+      ],
+      "companyIds": [
+        "bdx"
+      ],
+      "publishedAt": "2026-10-13",
+      "dataPeriod": null,
+      "summary": "印尼工业部副部长表示，计划组建政府部门与工商会参与的国家团队，协调数据中心发展所需的电力和水资源，并就Jatiluhur停工项目与相关部门讨论。项目能否恢复建设，将取决于环境评估和建设许可等手续进展。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "stage": "协调计划",
+      "publishedAtBeijing": "2026-10-13",
+      "publishedTimestamp": "2026-10-13T21:46:00+07:00"
+    },
+    {
+      "id": "wmedia-philippines-pax-20261014",
+      "sourceId": "wmedia-sea",
+      "title": "菲律宾提交Pax Silica园区法律框架，推进AI与制造业合作",
+      "originalTitle": "Philippines moves closer to US-backed Pax Silica AI and manufacturing hub",
+      "url": "https://w.media/philippines-moves-closer-to-us-backed-pax-silica-ai-and-manufacturing-hub/",
+      "originalUrl": "https://w.media/philippines-moves-closer-to-us-backed-pax-silica-ai-and-manufacturing-hub/",
+      "originalPublisher": "w.media",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "菲律宾"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "菲律宾基地转换发展局已提交新克拉克城Pax Silica园区法律框架，涉及1620公顷先进制造园区；合作协议细节仍在磋商，预计年内签署。规划涉及AI、半导体及数据中心经济区。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "stage": "框架提交与磋商",
+      "publishedAtBeijing": "2026-10-14",
+      "publishedTimestamp": "2026-10-14T20:07:00+08:00"
+    },
+    {
+      "id": "wmedia-dayone-billings-20261014",
+      "sourceId": "wmedia-sea",
+      "title": "DayOne计费容量超过1GW，马来西亚融资扩至72亿美元",
+      "originalTitle": "DayOne’s billings surpass 1GW; upsizes its Malaysia financing to US$7.2 billion",
+      "url": "https://w.media/dayones-billings-surpass-1gw-upsizes-its-malaysia-financing-to-us7-2-billion/",
+      "originalUrl": "https://w.media/dayones-billings-surpass-1gw-upsizes-its-malaysia-financing-to-us7-2-billion/",
+      "originalPublisher": "w.media",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "新加坡",
+        "马来西亚"
+      ],
+      "companyIds": [
+        "dayone"
+      ],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "DayOne宣布计费容量超过1GW，较2024年底121MW增长；客户预订容量达2.3GW，另有1.1GW预留。马来西亚高级担保多币种银团融资扩至约72亿美元，公司正推进多市场项目交付。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "媒体报道",
+      "stage": "经营披露与融资扩容",
+      "publishedAtBeijing": "2026-10-14",
+      "publishedTimestamp": "2026-10-14T23:29:00+08:00"
+    },
+    {
+      "id": "aep-google-fuelcells-20261014",
+      "sourceId": "aep-releases",
+      "title": "AEP拟投约40亿美元建设702MW燃料电池项目，为谷歌供电",
+      "originalTitle": "AEP Advances Innovative Energy Solution for Google with 702MW of Bloom Fuel Cells",
+      "url": "https://www.prnewswire.com/news-releases/aep-advances-innovative-energy-solution-for-google-with-702mw-of-bloom-fuel-cells-302907658.html",
+      "originalUrl": "https://www.prnewswire.com/news-releases/aep-advances-innovative-energy-solution-for-google-with-702mw-of-bloom-fuel-cells-302907658.html",
+      "originalPublisher": "American Electric Power（美通社发布）",
+      "kind": "disclosure",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "美国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "AEP宣布依据与谷歌的20年购电协议，计划投资约40亿美元，在怀俄明州建设702MW燃料电池发电项目。项目拟于2026年开工、2028年底全面运营，采用Bloom Energy技术，为夏延地区新增用电需求配套供电。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "公司新闻稿",
+      "stage": "购电协议与建设计划",
+      "dailyDateUncertain": true
+    }
+  ],
+  "events": [],
+  "changeBatch": {
+    "batchId": "discovery-20261015",
+    "recordedAt": "2026-10-15T09:32:38+08:00",
+    "scope": "国内同行扩充及国内、东南亚、全球行业更新",
+    "periodStart": "2026-10-15",
+    "summary": "新增7家国内同行、17篇资料，生成10月15日日报。",
+    "checks": [
+      {
+        "id": "update-20261015-dcd-southeast-asia",
+        "channel": "DCD 东南亚数据中心新闻",
+        "url": "https://www.datacenterdynamics.com/en/news/?term=south-east-asia",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "AnySearch检索与入口读取，证据：media-overseas.txt；home-4.txt"
+      },
+      {
+        "id": "update-20261015-wmedia-sea",
+        "channel": "w.media 东南亚",
+        "url": "https://w.media/category/markets/apac/sea/",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "AnySearch检索与入口读取，证据：media-overseas.txt；home-3.txt；daily-dayone.txt；sea-philippines.txt"
+      },
+      {
+        "id": "update-20261015-stcn-industry",
+        "channel": "证券时报 IDC/AIDC 相关报道",
+        "url": "https://www.stcn.com/article/list/cj.html",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "AnySearch检索与入口读取，证据：media-cn-a.txt；home-0.txt；peer-capital-new.txt；peer-aofei-new.txt"
+      },
+      {
+        "id": "update-20261015-yicai-industry",
+        "channel": "第一财经 IDC/AIDC 相关报道",
+        "url": "https://www.yicai.com/news/",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "AnySearch检索与入口读取，证据：media-cn-a.txt；home-2.txt；daily-yicai.txt；daily-ling.txt"
+      },
+      {
+        "id": "update-20261015-nbd-industry",
+        "channel": "每日经济新闻 IDC/AIDC 相关报道",
+        "url": "https://www.nbd.com.cn/",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "AnySearch检索与入口读取，证据：media-cn-a.txt；home-nbd.txt"
+      },
+      {
+        "id": "update-20261015-cls-industry",
+        "channel": "财联社 IDC/AIDC 相关报道",
+        "url": "https://www.cls.cn/",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "AnySearch检索与入口读取，证据：media-cn-a.txt；home-1.txt（出现晚于本轮时间的条目，未收录）"
+      },
+      {
+        "id": "update-20261015-jiemian-industry",
+        "channel": "界面新闻 IDC/AIDC 相关报道",
+        "url": "https://www.jiemian.com/",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "AnySearch检索与入口读取，证据：media-cn-b.txt；home-jiemian.txt"
+      },
+      {
+        "id": "update-20261015-thepaper-industry",
+        "channel": "澎湃新闻 IDC/AIDC 相关报道",
+        "url": "https://www.thepaper.cn/",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "AnySearch检索与入口读取，证据：media-cn-b.txt；首页提取失败 requestId bb212828-5c85-4527-a071-823b9a41f017"
+      },
+      {
+        "id": "update-20261015-36kr-industry",
+        "channel": "36氪 IDC/AIDC 相关报道",
+        "url": "https://www.36kr.com/newsflashes",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "AnySearch检索与入口读取，证据：media-cn-b.txt；home-36kr.txt"
+      },
+      {
+        "id": "update-20261015-oregon-capital-chronicle",
+        "channel": "Oregon Capital Chronicle",
+        "url": "https://oregoncapitalchronicle.com/",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "AnySearch检索与入口读取，证据：media-overseas.txt"
+      },
+      {
+        "id": "update-20261015-china-securities-journal",
+        "channel": "中国证券报·中证网",
+        "url": "https://www.cs.com.cn/",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "AnySearch检索与入口读取，证据：media-cn-b.txt；home-5.txt"
+      },
+      {
+        "id": "update-20261015-thehubnews",
+        "channel": "新头条 TheHubNews",
+        "url": "https://www.thehubnews.net/",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "AnySearch检索与入口读取，证据：media-overseas.txt；home-hub.txt"
+      }
+    ]
+  },
+  "discovery": {
+    "generatedAt": "2026-10-15T09:32:38+08:00",
+    "weekPolicy": "previous-complete",
+    "note": "国内同行、全球报道及当日日报更新。",
+    "highlightReportIds": [
+      "litong-operations-20261015",
+      "eastmoney-ai-earnings-20261015",
+      "dck-us-powered-land-20261014"
+    ],
+    "issueRequests": [
+      {
+        "kind": "daily",
+        "date": "2026-10-15"
+      }
+    ]
+  }
+}

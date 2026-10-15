@@ -1,0 +1,758 @@
+{
+  "maintainedAt": "2026-10-14",
+  "sources": [],
+  "companies": [],
+  "reports": [
+    {
+      "id": "semianalysis-composite-methodology",
+      "summary": "指数页的方法摘要介绍价格采集、加权合成与合同调查整合，静态价格表按各自历史所属期展示。"
+    },
+    {
+      "id": "vnet-2026-q2",
+      "summary": "2026年第二季度单季收入、归属利润及同比见财务预览。期末批发业务在运容量1007MW、已利用744MW。"
+    },
+    {
+      "id": "wmedia-stavian-feasibility-20261002",
+      "summary": "w.media引述联合新闻稿称，Cushman & Wakefield与APTelecom将为胡志明市Stavian Digital Park拟建的数据中心园区开展可研，研究开发和通信连接条件。"
+    },
+    {
+      "id": "wmedia-globe-expansion-20261001",
+      "summary": "w.media采访Globe管理层，介绍其数字业务投资计划，以及通过STTGDC Philippines扩张数据中心业务的方向。"
+    },
+    {
+      "id": "wmedia-thailand-draft-20260923",
+      "summary": "w.media报道泰国数据中心监管法案草案，提议对许可、环境及社区健康评估、电力和用水等提出要求。"
+    },
+    {
+      "id": "sttgdc-singapore-50mw-20260821",
+      "summary": "STTGDC宣布在新加坡第二轮数据中心容量申请中入选，计划开发50MW可持续、面向AI的数据中心容量。"
+    },
+    {
+      "id": "singtel-fy2027-q1-update",
+      "summary": "Singtel季度经营更新披露，新加坡DC Tuas于2026年1月开始运营，客户部署及Nxera业务贡献随后增长。Digital InfraCo分部同时包含RE:AI等业务。"
+    },
+    {
+      "id": "dayone-sec-f1-20261005",
+      "summary": "DayOne提交F-1初步招股文件，披露全球在运962MW、在建1328MW，Bookings为2281MW。柔佛在运789MW、在建616MW；巴淡岛在运72MW、在建240MW。",
+      "intelligence": {
+        "importance": 10,
+        "overview": "DayOne的上市申请披露了在运、在建及预订容量，柔佛与巴淡岛仍是其主要建设市场。",
+        "followupId": "dayone-sec-f1-20261005-followup",
+        "followup": "关注柔佛和巴淡岛在建项目的交付进度。"
+      }
+    },
+    {
+      "id": "purwakarta-bdx-water-review-20261007",
+      "summary": "西爪哇Bappeda报道，Purwakarta政府于10月5日就Jatiluhur的BDx AI数据中心讨论环评、建筑审批和冷却用水，要求进一步检验供水论证并继续审查。"
+    },
+    {
+      "id": "erc-data-center-boi-clarification-20261005",
+      "summary": "泰国ERC澄清，BOI S.3/2569已替代旧通知：数据中心申请投资促进前须经BOI指定的分委员会认可，取消事先取得ERC确认函这一申报前置环节。"
+    },
+    {
+      "id": "synergy-digital-services-forecast-20261005",
+      "summary": "Synergy预计，云基础设施、SaaS、社交媒体和搜索四类服务的合计年收入将在2031年超过5万亿美元。2026年第二季度，这四类服务合计收入4970亿美元，同比增长27%。"
+    },
+    {
+      "id": "sinnet-2026-h1-summary",
+      "summary": "光环新网披露国内数据中心交付、IDC与云业务经营情况，马来西亚智算及云计算基地处于前期筹划阶段。"
+    },
+    {
+      "id": "sharetronic-2026-h1-summary",
+      "summary": "协创数据摘要披露服务器采购计划，以及用于智算中心建设等用途的再融资拟案。财务预览展示公司整体业绩。"
+    },
+    {
+      "id": "hec-2026-h1",
+      "summary": "财务预览展示东阳光上市公司2026年上半年累计收入、归属利润、同比及原始单位。"
+    },
+    {
+      "id": "china-mobile-2026-h1",
+      "summary": "中国移动披露算力服务、数据中心及智算业务经营情况，智算规模包括自建和租赁资源。"
+    },
+    {
+      "id": "china-telecom-2026-interim-release",
+      "summary": "中国电信中期业绩新闻稿披露天翼云、AIDC及智算业务进展，智算规模包括自有和接入资源。"
+    },
+    {
+      "id": "ndrc-green-datacenter-notice-20240723",
+      "summary": "四部门于2024年发布数据中心绿色低碳发展行动计划，部署节能降碳改造和设备更新。"
+    },
+    {
+      "id": "miit-green-compute-recommendation-20260921",
+      "summary": "五部门启动绿色算力设施自愿创建推荐，规定申报条件、评价与报送程序，要求于2026年11月16日前报送材料。"
+    },
+    {
+      "id": "vgp-cloud-action-program-20250612",
+      "summary": "越南政府新闻网报道，越南批准2025—2030年云计算行动计划，提出政企上云、数据中心及云服务发展目标。"
+    },
+    {
+      "id": "hec-reorganization-reply-20260923",
+      "summary": "东阳光披露重组问询回复及报告书修订提示，拟取得东数一号直接及间接合计70%权益；9月23日公告列示后续程序为上交所审核及证监会注册。"
+    },
+    {
+      "id": "xingyun-vf-server-sale-20260930",
+      "summary": "深圳行云向VF客户销售算力服务器，合同含税金额23920万元。公司公告称设备已完成交付及验收。"
+    },
+    {
+      "id": "vnet-catl-cooperation-20260818",
+      "summary": "世纪互联公告与宁德时代签署战略合作协议，计划探索算力基础设施与绿色能源协同。"
+    },
+    {
+      "id": "hec-antitrust-mirror-20261001",
+      "summary": "东阳光临2026-105号公告披露，市场监管总局决定不实施进一步反垄断审查；该公告同时列示上交所审核及证监会注册等后续程序。"
+    },
+    {
+      "id": "nda-compute-network-20260912",
+      "summary": "国务院常务会议部署算力网建设，提出算电、算网协同，以及监测调度、骨干网络和绿电直连等工作安排。"
+    },
+    {
+      "id": "nda-ningxia-monitor-20260903",
+      "summary": "宁夏完成省级平台与全国平台的标准化对接，当地调度基础模块已上线，正在推进技术验证和系统联调。报道同时介绍全国平台已接入1462个设施、约145万PFLOPS（FP16）。"
+    },
+    {
+      "id": "nbd-oulu-power-20260924",
+      "summary": "每经AI快讯转述欧陆通投资者关系活动：上半年公司整体收入25.09亿元，高功率服务器电源业务增长。"
+    },
+    {
+      "id": "cls-compute-utilization-20260913",
+      "summary": "财联社记者在中国算力大会采访算力供需，援引信通院口径称仅7省上架率超过75%，并讨论新增项目、电力及液冷需求。"
+    },
+    {
+      "id": "jiemian-ascend-roadmap-20260917",
+      "summary": "界面新闻报道华为公布昇腾产品路线图，960系列两款产品分别计划在2027年一季度和三季度就绪，并介绍超节点研发方向。"
+    },
+    {
+      "id": "thepaper-huawei-3d-20260915",
+      "summary": "华为在芜湖发布3D数据中心参考架构，将IT、供电和散热等设施分层组织，并提出模块化建设方案。"
+    },
+    {
+      "id": "gds-2026-h1",
+      "summary": "财务预览展示万国数据2026年上半年累计收入、归属利润、同比和原始单位。半年权益法投资收益为30.96亿元。"
+    },
+    {
+      "id": "sharetronic-issue-accepted-20260916",
+      "summary": "深交所受理协创数据向特定对象发行股票申请，后续程序包括审核及证监会注册。"
+    },
+    {
+      "id": "36kr-ixin-supernode-20261012",
+      "summary": "36氪报道，天数智芯发布IXL144超节点。公司介绍，该产品单柜集成144颗GPU和18颗CPU，面向大规模AI计算任务。"
+    },
+    {
+      "id": "hec-buyback-20261010",
+      "summary": "东阳光董事会10月9日通过回购方案，拟使用6亿至12亿元自有或自筹资金，回购价格上限47.74元/股，期限6个月，用于员工持股或股权激励。"
+    },
+    {
+      "id": "xingyun-vg-sale-20260930",
+      "summary": "行云科技新加坡孙公司向VG客户销售算力服务器，两份订单合计约5.73亿元。公司公告称设备已完成交付及验收。"
+    },
+    {
+      "id": "nbd-luxshare-vpd-20261010",
+      "summary": "每经记者报道，立讯精密及子公司被列为美国数据中心垂直供电技术相关337调查对象；公司回应，涉案产品处于客户验证阶段。"
+    },
+    {
+      "id": "jiemian-compute-economics-20261011",
+      "summary": "奇帆商业在界面JMedia分析算力经营，讨论电力成本、利用率、设备折旧及客户付费对投资回收的影响。"
+    },
+    {
+      "id": "thepaper-gcc-aidc-20261009",
+      "summary": "澎湃采访GCC区俊彦，介绍AIDC供需方围绕液冷、供配电等需求共同制定技术规范的工作，并讨论800伏直流供配电方案的探索。"
+    },
+    {
+      "id": "36kr-liquid-delivery-20261010",
+      "summary": "硅碳变量作者沈浪分析液冷产业从样品、客户认证到规模交付的过程，讨论订单交付条件和长期运维能力。"
+    },
+    {
+      "id": "stcn-aidc-storage-20261008",
+      "summary": "算力设施配套储能产业报道。"
+    },
+    {
+      "id": "yicai-vpd-investigation-20261011",
+      "summary": "数据中心供电产业链相关调查及企业回应。"
+    },
+    {
+      "id": "dcd-bitdeer-a901-20261009",
+      "summary": "Bitdeer AI为马来西亚A901项目签订10年数据中心服务协议，容量67MW，拟支持液冷GB300 NVL72系统，计划2027年一季度开始交付、二季度完成。",
+      "intelligence": {
+        "importance": 9,
+        "overview": "马来西亚AI设施建设继续推进，Bitdeer AI为67MW项目签订长期服务协议，交付安排延伸至2027年。",
+        "followupId": "dcd-bitdeer-a901-20261009-followup",
+        "followup": "跟踪A901设备进场、液冷系统联调及2027年分批交付安排。"
+      }
+    },
+    {
+      "id": "wmedia-sarawak-framework-20261009",
+      "summary": "三方签署框架协议，计划探索马来西亚砂拉越AI及数字基础设施建设，并制定分期发展路线。"
+    },
+    {
+      "id": "yicai-liquid-20261008",
+      "summary": "第一财经报道光弘科技算力设备制造及液冷超节点业务进入生产阶段。"
+    },
+    {
+      "id": "yicai-roman-20261007",
+      "summary": "第一财经报道罗曼股份子公司签订算力设备采购框架合同。"
+    },
+    {
+      "id": "stcn-h3c-jinko-20261010",
+      "summary": "证券时报旗下e公司报道新华三与晶科科技签署智算战略合作协议。"
+    },
+    {
+      "id": "cls-goldman-20261005",
+      "summary": "财联社转述高盛对美国数据中心扩张的预测，讨论社区及政治阻力增加对项目建设的影响，高盛短期增长判断基本不变。"
+    },
+    {
+      "id": "jiemian-capital-20261005",
+      "summary": "半导体产业纵横分析机房开发融资，讨论长租约与供电、资金安排及交付责任之间的关系。"
+    },
+    {
+      "id": "36kr-citic-liquid-20260924",
+      "summary": "36氪转述中信证券对液冷在AI基础设施中普及及产业链发展的预测。"
+    },
+    {
+      "id": "36kr-liquid-chips-20260916",
+      "summary": "电子工程世界分析液冷带来的温度、压力、流量和漏液监测需求，以及模拟芯片控制链的产业机会。"
+    },
+    {
+      "id": "dcd-firmus-hall-progress-20261007",
+      "summary": "Firmus宣布印尼首个机房已由建设伙伴移交，团队将开始安装HyperCube系统；澳大利亚塔斯马尼亚一栋机房完成封顶。",
+      "intelligence": {
+        "importance": 7,
+        "overview": "Firmus在印尼和澳大利亚的建设分别推进至机房移交和封顶阶段。",
+        "followupId": "dcd-firmus-hall-progress-20261007-followup",
+        "followup": "关注印尼机房的设备安装及塔斯马尼亚后续工程进度。"
+      }
+    },
+    {
+      "id": "dcd-meta-firmus-sea-20260929",
+      "summary": "Meta签约租用Firmus计划部署的东南亚AI算力，项目包括与DayOne合作开发的印尼及马来西亚设施。"
+    },
+    {
+      "id": "wmedia-sm-pdg-acquisition-20261012",
+      "summary": "SM+签署最终协议，拟收购PDG位于印尼四个市场的5个运营数据中心，交易进入交割准备阶段。"
+    },
+    {
+      "id": "wmedia-dayone-bond-talks-20261012",
+      "summary": "w.media引述彭博消息称，DayOne正与银行商谈潜在5亿美元债券融资，最早可能于明年推出。"
+    },
+    {
+      "id": "wmedia-selangor-water-20261009",
+      "summary": "w.media引述BIMB Securities研究观点，认为马来西亚雪兰莪供水余量偏紧，可能放缓2027年新数据中心建设及审批。",
+      "intelligence": {
+        "importance": 8,
+        "overview": "水资源成为马来西亚部分地区数据中心建设的重要条件，雪兰莪供水余量受到研究机构关注。",
+        "followupId": "wmedia-selangor-water-20261009-followup",
+        "followup": "跟踪雪兰莪供水扩容安排及新数据中心审批进度。"
+      }
+    },
+    {
+      "id": "open-oregon-permit-20261013",
+      "summary": "Oregon Capital Chronicle报道，俄勒冈州州长要求暂停数据中心新建及扩建项目的空气和水污染许可审批，期限至2027年7月1日。",
+      "intelligence": {
+        "importance": 3,
+        "overview": "俄勒冈州暂停部分新建及扩建数据中心环保许可审批。",
+        "followupId": "oregon-data-center-permits",
+        "followup": "跟踪在审项目及恢复审批安排。"
+      }
+    },
+    {
+      "id": "open-cs-infini-20261013",
+      "summary": "中国证券报报道，无问芯穹近日完成23亿元C轮融资，累计融资43亿元。公司提供AI原生基础设施服务，业务涵盖异构算力与模型服务。",
+      "intelligence": {
+        "importance": 3,
+        "overview": "无问芯穹完成23亿元C轮融资，继续布局异构算力与模型服务。",
+        "followupId": "infinigence-capacity-contracts",
+        "followup": "关注算力采购、租赁合同及项目交付。"
+      }
+    },
+    {
+      "id": "open-konst-seriesb-20261008",
+      "summary": "KONST宣布完成3000万美元B轮股权融资，由威刚科技领投，计划用于扩大亚洲AI数据中心建设及Token服务。",
+      "intelligence": {
+        "importance": 6,
+        "overview": "KONST完成新一轮融资，计划扩大亚洲AI设施及Token服务布局。",
+        "followupId": "konst-smx01-delivery",
+        "followup": "跟踪SMX01的建设、验收及计划于2027年一季度上线的进度。"
+      }
+    },
+    {
+      "id": "shanghai-green-compute-plan-20261013",
+      "intelligence": {
+        "importance": 3,
+        "overview": "上海规划提出新建算力设施能效要求，并支持液冷应用和存量改造。",
+        "followupId": "shanghai-green-compute-implementation",
+        "followup": "关注上海算力设施准入及节能改造安排。"
+      }
+    },
+    {
+      "id": "stcn-rental-contracts-20261014",
+      "sourceId": "stcn-industry",
+      "title": "算力租赁长协增加，上市公司探索服务费与Token分成",
+      "originalTitle": "算力租赁大单频现 上市公司发力差异化布局",
+      "url": "https://www.stcn.com/article/detail/4217051.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4217051.html",
+      "originalPublisher": "证券日报",
+      "kind": "news",
+      "primaryCategoryId": "rental-prices",
+      "primarySubcategoryId": "rental-demand-contracts",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "证券日报梳理上市公司算力长协：行云科技重签算力服务协议，合同额调整为33.57亿元，采用服务费加Token收入分成；康惠股份签订五年期17.20亿元算力服务合同。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "verificationNote": "2026-10-14：读取媒体正文、题名、发布日期与署名，摘编事件及业务内容。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "算力",
+        "数据中心"
+      ],
+      "sourceNature": "媒体报道",
+      "intelligence": {
+        "importance": 9,
+        "overview": "证券日报梳理上市公司算力长协：行云科技重签算力服务协议，合同额调整为33.57亿元，采用服务费加Token收入分成；康惠股份签订五年期17.20亿元算力服务合同。",
+        "followupId": "stcn-rental-contracts-20261014-followup",
+        "followup": "关注后续项目交付及业务进展。"
+      }
+    },
+    {
+      "id": "stcn-liquid-industry-20261014",
+      "sourceId": "stcn-industry",
+      "title": "液冷产业进入规模交付阶段，冷却液和配套产品加快验证",
+      "originalTitle": "“冷”产业遇上了“热”市场 算力散热倒逼技术革新",
+      "url": "https://www.stcn.com/article/detail/4217063.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4217063.html",
+      "originalPublisher": "证券日报",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "证券日报走访液冷企业，介绍贵阳浸没式液冷算力方舱运行情况。新宙邦、集泰化工推进冷却液及方案验证，领益智造持续交付液冷板、快接头、分水器及电源配套产品。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "verificationNote": "2026-10-14：读取媒体正文、题名、发布日期与署名，摘编事件及业务内容。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "算力",
+        "数据中心"
+      ],
+      "sourceNature": "媒体报道",
+      "intelligence": {
+        "importance": 6,
+        "overview": "证券日报走访液冷企业，介绍贵阳浸没式液冷算力方舱运行情况。新宙邦、集泰化工推进冷却液及方案验证，领益智造持续交付液冷板、快接头、分水器及电源配套产品。",
+        "followupId": "stcn-liquid-industry-20261014-followup",
+        "followup": "关注后续项目交付及业务进展。"
+      }
+    },
+    {
+      "id": "stcn-litong-distribution-20261014",
+      "sourceId": "stcn-industry",
+      "title": "利通电子回应算力经销业务持续开展",
+      "originalTitle": "利通电子：算力经销业务持续开展中",
+      "url": "https://www.stcn.com/article/detail/4217436.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4217436.html",
+      "originalPublisher": "人民财讯",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "利通电子在半年度业绩说明会上介绍，公司按客户意向采购算力服务器及配件，直接销售或完成设备优化改装后销售。目前算力经销业务持续开展，服务内容包括设备供应和优化改装。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "verificationNote": "2026-10-14：读取媒体正文、题名、发布日期与署名，摘编事件及业务内容。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "算力",
+        "数据中心"
+      ],
+      "sourceNature": "媒体报道",
+      "intelligence": {
+        "importance": 4,
+        "overview": "利通电子在半年度业绩说明会上介绍，公司按客户意向采购算力服务器及配件，直接销售或完成设备优化改装后销售。目前算力经销业务持续开展，服务内容包括设备供应和优化改装。",
+        "followupId": "stcn-litong-distribution-20261014-followup",
+        "followup": "关注后续项目交付及业务进展。"
+      }
+    },
+    {
+      "id": "cls-amd-inference-20261014",
+      "sourceId": "cls-industry",
+      "title": "AMD介绍Helios交付进展及AI推理市场预期",
+      "originalTitle": "AMD苏姿丰：2026将是“AI推理元年” CPU市场需求将爆发式增长",
+      "url": "https://www.cls.cn/detail/2504227",
+      "originalUrl": "https://www.cls.cn/detail/2504227",
+      "originalPublisher": "财联社",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "美国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "财联社报道，AMD称Helios机架系统9月开始量产交付，第四季度将继续提升产量。苏姿丰预计2030年数据中心AI加速器市场接近1.5万亿美元，并介绍面向智能体任务的Helion系统。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "verificationNote": "2026-10-14：读取媒体正文、题名、发布日期与署名，摘编事件及业务内容。",
+      "judgmentTypes": [
+        "fact",
+        "forecast"
+      ],
+      "tags": [
+        "算力",
+        "数据中心"
+      ],
+      "sourceNature": "媒体报道",
+      "intelligence": {
+        "importance": 7,
+        "overview": "财联社报道，AMD称Helios机架系统9月开始量产交付，第四季度将继续提升产量。苏姿丰预计2030年数据中心AI加速器市场接近1.5万亿美元，并介绍面向智能体任务的Helion系统。",
+        "followupId": "cls-amd-inference-20261014-followup",
+        "followup": "关注后续项目交付及业务进展。"
+      }
+    },
+    {
+      "id": "cls-guangxi-token-20261014",
+      "sourceId": "cls-industry",
+      "title": "五象云谷以Token计量提供算力服务，拓展东盟市场",
+      "originalTitle": "每小时2000亿Token！全国首个实现商业化运营的词元工厂为何花落广西？｜活力中国调研行",
+      "url": "https://m.cls.cn/detail/2504259",
+      "originalUrl": "https://m.cls.cn/detail/2504259",
+      "originalPublisher": "财联社",
+      "kind": "news",
+      "primaryCategoryId": "rental-prices",
+      "primarySubcategoryId": "rental-demand-contracts",
+      "regions": [
+        "中国",
+        "东南亚"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "财联社实地采访广西五象云谷词元工厂。润建股份将算力封装成按Token计量的服务，支持按需使用、按量计费，并依托广西绿电、跨境网络及模型部署能力拓展东盟市场。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "verificationNote": "2026-10-14：读取媒体正文、题名、发布日期与署名，摘编事件及业务内容。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "算力",
+        "数据中心"
+      ],
+      "sourceNature": "媒体报道",
+      "intelligence": {
+        "importance": 8,
+        "overview": "财联社实地采访广西五象云谷词元工厂。润建股份将算力封装成按Token计量的服务，支持按需使用、按量计费，并依托广西绿电、跨境网络及模型部署能力拓展东盟市场。",
+        "followupId": "cls-guangxi-token-20261014-followup",
+        "followup": "关注后续项目交付及业务进展。"
+      }
+    },
+    {
+      "id": "cls-microsoft-expansion-20261014",
+      "sourceId": "cls-industry",
+      "title": "微软计划到2032年将全球数据中心容量扩至38GW以上",
+      "originalTitle": "微软计划将算力规模扩大超两倍 数据中心需求迎来乐观支撑",
+      "url": "https://m.cls.cn/detail/2504146",
+      "originalUrl": "https://m.cls.cn/detail/2504146",
+      "originalPublisher": "财联社",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "美国",
+        "欧洲"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "财联社报道，微软计划到2032年把全球数据中心容量从约12GW扩大至38GW以上。报道援引监管文件称，季度新增数据中心租赁超过1300亿美元，尚未生效的租赁承诺总额为3291亿美元。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "verificationNote": "2026-10-14：读取媒体正文、题名、发布日期与署名，摘编事件及业务内容。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "算力",
+        "数据中心"
+      ],
+      "sourceNature": "媒体报道",
+      "intelligence": {
+        "importance": 10,
+        "overview": "财联社报道，微软计划到2032年把全球数据中心容量从约12GW扩大至38GW以上。报道援引监管文件称，季度新增数据中心租赁超过1300亿美元，尚未生效的租赁承诺总额为3291亿美元。",
+        "followupId": "cls-microsoft-expansion-20261014-followup",
+        "followup": "关注后续项目交付及业务进展。"
+      }
+    },
+    {
+      "id": "wmedia-ctrls-bihar-20261014",
+      "sourceId": "wmedia-sea",
+      "title": "CtrlS签署比哈尔邦150MW AI设施投资意向书",
+      "originalTitle": "CtrlS to invest US$1 billion in Bihar to set up hyperscale AI infrastructure",
+      "url": "https://w.media/ctrls-to-invest-us1-billion-in-bihar-to-set-up-hyperscale-ai-infrastructure/",
+      "originalUrl": "https://w.media/ctrls-to-invest-us1-billion-in-bihar-to-set-up-hyperscale-ai-infrastructure/",
+      "originalPublisher": "w.media",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "印度"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "CtrlS与印度比哈尔邦政府签署意向书，计划在菩提伽耶投资建设150MW AI设施。公司同期启用巴特那新数据中心，现有IT负载12MW，并计划继续扩展二、三线城市布局。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "verificationNote": "2026-10-14：读取媒体正文、题名、发布日期与署名，摘编事件及业务内容。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "算力",
+        "数据中心"
+      ],
+      "sourceNature": "媒体报道",
+      "intelligence": {
+        "importance": 8,
+        "overview": "CtrlS与印度比哈尔邦政府签署意向书，计划在菩提伽耶投资建设150MW AI设施。公司同期启用巴特那新数据中心，现有IT负载12MW，并计划继续扩展二、三线城市布局。",
+        "followupId": "wmedia-ctrls-bihar-20261014-followup",
+        "followup": "关注后续项目交付及业务进展。"
+      }
+    },
+    {
+      "id": "wmedia-dayone-loan-20261013",
+      "sourceId": "wmedia-sea",
+      "title": "DayOne获得150亿林吉特贷款，支持柔佛扩建",
+      "originalTitle": "DayOne secures US$3.7 billion loan for Malaysia expansion",
+      "url": "https://w.media/dayone-secures-us3-7-billion-loan-for-malaysia-expansion/",
+      "originalUrl": "https://w.media/dayone-secures-us3-7-billion-loan-for-malaysia-expansion/",
+      "originalPublisher": "w.media",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "马来西亚"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-13",
+      "dataPeriod": null,
+      "summary": "DayOne宣布获得七家银行组成的银团提供150亿林吉特、约36.7亿美元贷款，用于马来西亚柔佛超大规模数据中心扩建，融资包括美元贷款和林吉特Murabahah融资安排。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-14",
+      "lastCheckAttemptAt": "2026-10-14",
+      "verificationNote": "2026-10-14：读取媒体正文、题名、发布日期与署名，摘编事件及业务内容。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "算力",
+        "数据中心"
+      ],
+      "sourceNature": "媒体报道",
+      "intelligence": {
+        "importance": 8,
+        "overview": "DayOne宣布获得七家银行组成的银团提供150亿林吉特、约36.7亿美元贷款，用于马来西亚柔佛超大规模数据中心扩建，融资包括美元贷款和林吉特Murabahah融资安排。",
+        "followupId": "wmedia-dayone-loan-20261013-followup",
+        "followup": "关注后续项目交付及业务进展。"
+      }
+    }
+  ],
+  "changeBatch": {
+    "batchId": "discovery-r2-20261014",
+    "recordedAt": "2026-10-14T16:42:20+08:00",
+    "periodStart": "2026-10-05",
+    "scope": "全部12家已录入媒体及开放搜索；国内、东南亚、其他海外市场",
+    "summary": "补入8篇媒体报道，更新当日日报及上一完整周周报，简化阅读文案。",
+    "checks": [
+      {
+        "id": "r2-media-dcd-southeast-asia",
+        "channel": "DCD 东南亚数据中心新闻",
+        "url": "https://www.datacenterdynamics.com/en/news/?term=south-east-asia",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "已执行站点定向检索；查询及原文读取结果见V1_修正版_2026-10-14/research。查询组0"
+      },
+      {
+        "id": "r2-media-wmedia-sea",
+        "channel": "w.media 东南亚",
+        "url": "https://w.media/category/markets/apac/sea/",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "已执行站点定向检索；查询及原文读取结果见V1_修正版_2026-10-14/research。查询组0"
+      },
+      {
+        "id": "r2-media-stcn-industry",
+        "channel": "证券时报 IDC/AIDC 相关报道",
+        "url": "https://www.stcn.com/article/list/cj.html",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "已执行站点定向检索；查询及原文读取结果见V1_修正版_2026-10-14/research。查询组0"
+      },
+      {
+        "id": "r2-media-yicai-industry",
+        "channel": "第一财经 IDC/AIDC 相关报道",
+        "url": "https://www.yicai.com/news/",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "已执行站点定向检索；查询及原文读取结果见V1_修正版_2026-10-14/research。查询组0"
+      },
+      {
+        "id": "r2-media-nbd-industry",
+        "channel": "每日经济新闻 IDC/AIDC 相关报道",
+        "url": "https://www.nbd.com.cn/",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "已执行站点定向检索；查询及原文读取结果见V1_修正版_2026-10-14/research。查询组1"
+      },
+      {
+        "id": "r2-media-cls-industry",
+        "channel": "财联社 IDC/AIDC 相关报道",
+        "url": "https://www.cls.cn/",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "已执行站点定向检索；查询及原文读取结果见V1_修正版_2026-10-14/research。查询组1"
+      },
+      {
+        "id": "r2-media-jiemian-industry",
+        "channel": "界面新闻 IDC/AIDC 相关报道",
+        "url": "https://www.jiemian.com/",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "已执行站点定向检索；查询及原文读取结果见V1_修正版_2026-10-14/research。查询组1"
+      },
+      {
+        "id": "r2-media-thepaper-industry",
+        "channel": "澎湃新闻 IDC/AIDC 相关报道",
+        "url": "https://www.thepaper.cn/",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "已执行站点定向检索；查询及原文读取结果见V1_修正版_2026-10-14/research。查询组1"
+      },
+      {
+        "id": "r2-media-36kr-industry",
+        "channel": "36氪 IDC/AIDC 相关报道",
+        "url": "https://www.36kr.com/newsflashes",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "已执行站点定向检索；查询及原文读取结果见V1_修正版_2026-10-14/research。查询组2"
+      },
+      {
+        "id": "r2-media-oregon-capital-chronicle",
+        "channel": "Oregon Capital Chronicle",
+        "url": "https://oregoncapitalchronicle.com/",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "已执行站点定向检索；查询及原文读取结果见V1_修正版_2026-10-14/research。查询组2"
+      },
+      {
+        "id": "r2-media-china-securities-journal",
+        "channel": "中国证券报·中证网",
+        "url": "https://www.cs.com.cn/",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "已执行站点定向检索；查询及原文读取结果见V1_修正版_2026-10-14/research。查询组2"
+      },
+      {
+        "id": "r2-media-thehubnews",
+        "channel": "新头条 TheHubNews",
+        "url": "https://www.thehubnews.net/",
+        "attemptedAt": "2026-10-14",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "已执行站点定向检索；查询及原文读取结果见V1_修正版_2026-10-14/research。查询组2"
+      }
+    ]
+  },
+  "discovery": {
+    "weekPolicy": "previous-complete",
+    "generatedAt": "2026-10-14T16:42:20+08:00",
+    "note": "当日媒体补查与阅读修正。",
+    "highlightReportIds": [
+      "cls-microsoft-expansion-20261014",
+      "stcn-rental-contracts-20261014",
+      "wmedia-ctrls-bihar-20261014"
+    ],
+    "issueRequests": [
+      {
+        "kind": "daily",
+        "date": "2026-10-14"
+      },
+      {
+        "kind": "weekly",
+        "date": "2026-10-14"
+      }
+    ]
+  }
+}

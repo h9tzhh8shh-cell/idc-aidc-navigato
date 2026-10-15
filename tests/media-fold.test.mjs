@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import data from '../public/assets/catalog.json' with {type:'json'};
+import data from './fixtures/v1-baseline-catalog.json' with {type:'json'};
 import prior from './fixtures/phase4-rc3-catalog.json' with {type:'json'};
 import {decorateSources,getSourcePreviewSelection,getSourcePreview,getSourceReports} from '../src/catalog.js';
 import {mergeBatch,applyBatchFile} from '../scripts/reviewed-batch.mjs';

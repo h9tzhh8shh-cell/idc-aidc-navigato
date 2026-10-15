@@ -1,5 +1,5 @@
 import { useEffect, useId, useRef, useState } from 'react';
-import { IconX, IconChevronDown, IconChevronRight, IconArrowUpRight, IconBuilding, IconInfoCircle, IconAlertCircle } from '@tabler/icons-react';
+import { IconX, IconChevronDown, IconChevronRight, IconArrowUpRight, IconBuilding } from '@tabler/icons-react';
 import data from '../public/assets/catalog.json';
 import logos from './logos.json';
 import { FinancialPreview } from './financial-components.jsx';
@@ -49,11 +49,9 @@ export function SourceDetail({ source, showReference = false, onClose }) {
       <section><h3>适合研究什么</h3><ul>{source.questions.map(q => <li key={q}>{q}</li>)}</ul></section>
       <section><h3>主要指标</h3><div className="metric-tags">{source.metrics.map(m => <span key={m}>{m}</span>)}</div></section>
       {!!source.companyIds?.length && <section><h3>关联公司与主体</h3>{source.companyIds.map(id => source.companyLookup[id]).filter(Boolean).map(company => <div className="company-identity" key={company.id}><strong>{company.name} · {company.role === 'core' ? '核心公司' : company.role === 'operator' ? '运营商' : '参考公司'}</strong><p>{company.legalName}</p><p>{company.securities.map(security => `${security.exchange}:${security.code}`).join(' / ') || '未按上市证券标注'}</p><p>{company.identityNote}</p>{company.identityUrls.map((url, index) => <OutLink key={url} href={url} className="text-link">主体依据 {index + 1}</OutLink>)}</div>)}</section>}
-      {!!source.caveats?.length && <section className="caution"><h3><IconAlertCircle size={18} />口径与使用提示</h3><ul>{source.caveats.map(c => <li key={c}>{c}</li>)}</ul></section>}
-      <section><h3>来源核查记录</h3><p className="muted small">入口与具体资料分别核查；成功日期和最近尝试分列。</p><p className={`verification ${source.verificationStatus === 'verified' ? 'verified' : ''}`}><IconInfoCircle size={17} />{labels.verificationStatus[source.verificationStatus]} · {source.verifiedAt || '暂无成功核查日期'}</p><p className="secondary-copy">{source.verificationNote}</p><p className="muted small">最近尝试核查：{source.lastCheckAttemptAt || '暂无记录'}</p></section>
       <details className="detail-disclosure"><summary>完整来源说明<IconChevronDown size={17} /></summary><p>{source.purpose}</p><h4>更新频率说明</h4><p>{source.frequencyNote}</p><h4>获取条件说明</h4><p>{source.accessNote}</p>{source.trackingNote && <><h4>建议跟踪方式</h4><p>{source.trackingNote}</p></>}{source.subscriptionNote && <p>{source.subscriptionNote}</p>}{source.subscriptionUrl && <OutLink href={source.subscriptionUrl} className="text-link">订阅入口</OutLink>}<h4>检索别名</h4><p>{source.aliases.join('、')}</p></details>
       <details className="detail-disclosure"><summary>已收录资料（{related.length}）{showReference && ' · 含补充参考'}<IconChevronDown size={17} /></summary>{related.length ? related.map(report => <ReportRow key={report.id} report={report} source={source} />) : <p>暂未收录可展示的具体资料，可前往原站查看。</p>}</details>
-      {!!historical.length && <details className="detail-disclosure"><summary>历史归档与合并记录（{historical.length}）<IconChevronDown size={17} /></summary>{historical.map(report => <article className="related-report" key={report.id}><OutLink href={report.url} className="text-link">{report.title}</OutLink><p>{report.visibilityReason || `已合并至 ${report.duplicateOf}`}</p><p>发布日期：{report.publishedAt || '未知 / 待核查'}；历史成功核查：{report.verifiedAt || '暂无记录'}。{report.verificationNote}</p></article>)}</details>}
+      {!!historical.length && <details className="detail-disclosure"><summary>历史归档与合并记录（{historical.length}）<IconChevronDown size={17} /></summary>{historical.map(report => <article className="related-report" key={report.id}><OutLink href={report.url} className="text-link">{report.title}</OutLink><p>{report.visibilityReason || `已合并至 ${report.duplicateOf}`}</p><p>发布日期：{report.publishedAt || '未知 / 待核查'}；历史成功核查：{report.verifiedAt || '暂无记录'}。</p></article>)}</details>}
     </div>
   </dialog>;
 }
@@ -77,20 +75,17 @@ function ReportRegion({ report, filters }) {
 }
 
 function ReadingLimit({ report }) {
-  const limit = report.evidenceLevel === 'third-party-mirror' ? '第三方镜像已读，指定披露同件待核'
-    : report.visibility === 'reference' ? '原文待核 · 补充参考'
-    : report.access === 'paid' || report.access === 'mixed' ? (report.contentScope === 'abstract' ? '仅公开摘要 · 全文需订阅' : '全文访问受限')
-    : report.contentScope === 'abstract' ? '仅公开摘要' : report.contentScope === 'partial' ? '仅核到部分正文' : null;
+  const limit = report.access === 'paid' || report.access === 'mixed' ? (report.contentScope === 'abstract' ? '公开摘要 · 全文需订阅' : '全文需订阅')
+    : report.contentScope === 'abstract' ? '仅公开摘要' : null;
   return limit ? <p className="reading-limit">{limit}</p> : null;
 }
 
 function ReportDetails({ report }) {
-  return <details className="report-note"><summary>查看依据与口径<IconChevronDown size={14} /></summary>
-    <p>{TOPICS.find(topic => topic.id === report.primaryCategoryId)?.label} · {labels.kind[report.kind]} · {labels.verificationStatus[report.verificationStatus]}</p>
+  return <details className="report-note"><summary>查看详情<IconChevronDown size={14} /></summary>
+    <p>{TOPICS.find(topic => topic.id === report.primaryCategoryId)?.label} · {labels.kind[report.kind]}</p>
     <ReportEvidence report={report} />{report.authorship && <p>作者身份：{{journalist:"媒体记者",brief:"未署名快讯",repost:"转载",platform:"平台作者",contributed:"机构供稿",sponsored:"商业推广"}[report.authorship.type]} · {report.authorship.author}</p>}
-    <dl className="report-dates"><div><dt>数据所属期</dt><dd>{report.dataPeriod || '未知 / 不适用'}</dd></div><div><dt>最近成功核查</dt><dd>{report.verifiedAt || '暂无成功记录'}</dd></div><div><dt>最近尝试</dt><dd>{report.lastCheckAttemptAt || '未单列'}</dd></div></dl>
+    {report.dataPeriod && <p>数据所属期：{report.dataPeriod}</p>}
     <p>资料地区：{report.regions.join(' / ') || '未明确 / 待核'}</p>{report.regionNote && <p>地区依据：{report.regionNote}</p>}
-    {report.dateNote && <p>{report.dateNote}</p>}<p>{report.verificationNote}</p>
     {report.relatedSubcategoryNote && <p>{report.relatedSubcategoryNote}</p>}
     {!!report.tags?.length && <p>主题标签：{report.tags.join('、')}</p>}
     {report.originalUrl && report.originalUrl !== report.url && <OutLink href={report.originalUrl} className="text-link">原始文件</OutLink>}
@@ -100,7 +95,7 @@ function ReportDetails({ report }) {
 
 function ReportEvidence({ report }) {
   const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Shanghai' });
-  return <div className="report-evidence"><p>取得范围：{contentScopeLabels[report.contentScope]} · {labels.access[report.access]}{report.judgmentTypes.length > 0 && ` · ${report.judgmentTypes.map(type => judgmentLabels[type]).join(' / ')}`}{report.visibility === 'reference' && ' · 补充参考，非已核实动态'}</p>{report.stage && <p>阶段：{report.stage}</p>}{report.documentStatus && <p>文件状态：{report.documentStatus}{report.jurisdiction && ` · 适用法域：${report.jurisdiction}`}</p>}{report.effectiveAt && <p>{report.effectiveAt > today ? '将于' : '文件载明生效日：'}{report.effectiveAt}{report.effectiveAt > today ? '生效' : ''}</p>}{report.deadlineAt && <p>截止日期：{report.deadlineAt}</p>}</div>;
+  return <div className="report-evidence"><p>取得范围：{contentScopeLabels[report.contentScope]} · {labels.access[report.access]}{report.judgmentTypes.length > 0 && ` · ${report.judgmentTypes.map(type => judgmentLabels[type]).join(' / ')}`}</p>{report.documentStatus && <p>文件状态：{report.documentStatus}{report.jurisdiction && ` · 适用法域：${report.jurisdiction}`}</p>}{report.effectiveAt && <p>{report.effectiveAt > today ? '将于' : '文件载明生效日：'}{report.effectiveAt}{report.effectiveAt > today ? '生效' : ''}</p>}{report.deadlineAt && <p>截止日期：{report.deadlineAt}</p>}</div>;
 }
 
 function CompactSummary({ report, query }) {

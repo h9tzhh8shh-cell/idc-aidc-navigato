@@ -327,6 +327,8 @@ export function writeQuery(filters, view = 'sources', selectedId = null, navigat
   if (navigation.listedMode === 'sources') params.set('listedMode', 'sources');
   if (['acquisition','capital','contract','risk'].includes(navigation.eventType)) params.set('eventType',navigation.eventType);
   if (navigation.returnQuery && navigation.returnQuery.length < 4000) params.set('return',navigation.returnQuery);
+  if (['companies','articles','daily','weekly'].includes(navigation.discovery)) params.set('discover', navigation.discovery);
+  for (const key of ['issue']) if (/^[a-z0-9][a-z0-9-]{0,180}$/.test(navigation[key] || '')) params.set(key, navigation[key]);
   // Non-bare links carry scope explicitly; otherwise legacy-query parsing means all.
   if (clean.scope !== 'domestic' || params.size) params.set('scope', clean.scope);
   return params.toString();
@@ -352,12 +354,14 @@ export function readQuery(search = '') {
   if ((params.has('dateWindow') && (!acceptsDates || !['all','7','30','unknown'].includes(params.get('dateWindow')))) ||
       (['7','30'].includes(filters.dateWindow) && state.filters.dateWindow === 'all') ||
       (params.has('asOf') && (!validDay(params.get('asOf')) || params.get('asOf') > beijingToday()))) state.notice = '日期条件无效或不适用，已恢复全部时间。';
-  if (params.has('company') || params.has('event') || params.has('listedMode') || params.has('return') || params.has('eventType')) {
+  if (params.has('company') || params.has('event') || params.has('listedMode') || params.has('return') || params.has('eventType') || params.has('discover')) {
     state.navigation = {};
     for (const key of ['company', 'event']) if (params.has(key)) state.navigation[key] = /^[a-z0-9][a-z0-9-]{0,100}$/.test(params.get(key)) ? params.get(key) : 'invalid-record';
     if (params.get('listedMode') === 'sources') state.navigation.listedMode = 'sources';
     if (['acquisition','capital','contract','risk'].includes(params.get('eventType'))) state.navigation.eventType=params.get('eventType');
     if (params.get('return') && params.get('return').length < 4000) state.navigation.returnQuery=params.get('return');
+    if (['companies','articles','daily','weekly'].includes(params.get('discover'))) state.navigation.discovery=params.get('discover');
+    for (const key of ['issue']) if (params.has(key)) state.navigation[key] = /^[a-z0-9][a-z0-9-]{0,180}$/.test(params.get(key)) ? params.get(key) : 'invalid-record';
   }
   return state;
 }

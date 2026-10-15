@@ -53,7 +53,7 @@ test('C12: document time does not filter or roll back company current events',()
 });
 test('C06/C07/C17: historical CATL cooperation stays separate from shareholder transfer',()=>{
  const id='vnet-catl-cooperation-20260818',record=data.reports.find(r=>r.id===id);
- assert.equal(record.publishedAt,'2026-08-18');assert.match(record.summary,/具体项目.*后续/);
+ assert.equal(record.publishedAt,'2026-08-18');assert.match(record.summary,/签署战略合作协议.*计划探索/);
  for(const dateWindow of ['7','30']) assert.ok(!filterReports(data.reports,sources,{scope:'domestic',dateWindow,asOf:'2026-10-08'}).some(r=>r.id===id));
  const entry=data.changeBatches.find(b=>b.batchId==='phase3-reviewed-20261009').changes.find(c=>c.objectType==='report'&&c.objectId===id);
  assert.deepEqual(entry.kinds,['historical']);

@@ -1,4 +1,5 @@
 import { validateFinancial } from './financial.js';
+import { validateDiscovery } from './discovery.js';
 import { excludedProduct } from './exclusions.js';
 /** Source frequencies and report periods are maintained independently. */
 export const frequencyLabels = Object.freeze({
@@ -671,5 +672,6 @@ export function validateCatalog(
     }
     validateReview({lastAttemptAt:batch.recordedAt?.slice(0,10),result:'partial',note:batch.scope,checks:batch.checks},`${path}.review`);
   }
+  errors.push(...validateDiscovery(catalog));
   return errors;
 }
