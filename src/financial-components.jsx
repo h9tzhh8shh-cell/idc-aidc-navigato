@@ -4,6 +4,7 @@ export function FinancialPreview({report,compact=false}) {
   if(f.status==='pending')return <p className="reading-limit">{f.period.label} 已披露，指标待核：{f.limitations}</p>;
   return <div className="financial-preview" data-financial-id={report.id}>
     <p><strong>{f.period.label}</strong></p>
+    <p>披露日期：{report.publishedAt}</p>
     {[f.revenue,f.profit].map(m=><p key={m.label}>{m.label}：<strong>{amount(m)}</strong>，{changeText(m)}</p>)}
     {f.operatingChange&&<p>{f.operatingChange}</p>}
     <a className="text-link" href={f.evidence.url} target="_blank" rel="noopener noreferrer">查看业绩原文 ↗</a>

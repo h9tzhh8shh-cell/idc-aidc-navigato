@@ -48,7 +48,7 @@ export function discoveryReports(data, batch) {
 export function recentDiscoveries(data, asOf = beijingTimestamp().slice(0, 10)) {
   const start = new Date(Date.parse(asOf) - 20 * 86400000).toISOString().slice(0, 10);
   const batches = discoveryBatches(data).filter(batch => batch.cutoffAt.slice(0, 10) <= asOf).sort((a, b) => a.cutoffAt.localeCompare(b.cutoffAt));
-  const latest = batches.at(-1);
+  const latest = batches.filter(batch => !batch.companyIdentityNotTracked).at(-1) || batches.at(-1);
   function collect(key, records) {
     const first = new Map();
     for (const batch of batches) for (const id of batch[key]) {

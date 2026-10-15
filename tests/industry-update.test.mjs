@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import before from './fixtures/discovery-reviewed.mjs';
-import current from '../public/assets/catalog.json' with {type:'json'};
+import current from './fixtures/industry-reviewed.mjs';
 import input from '../data-candidates/discovery-20261015.json' with {type:'json'};
 import weekly from '../data-candidates/weekly-strategy-20261015.json' with {type:'json'};
 import revisedWeekly from '../data-candidates/weekly-strategy-20261015-revised.json' with {type:'json'};

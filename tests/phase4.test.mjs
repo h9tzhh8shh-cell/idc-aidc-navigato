@@ -54,7 +54,7 @@ test('F06–F10/F17–F18: concrete NDA additions, all five media and six financ
  assert.equal(r('36kr-ixin-supernode-20261012').authorship.type,'brief');
  assert.equal(r('nbd-oulu-power-20260924').authorship.type,'brief');
  assert.equal(r('cls-compute-utilization-20260913').authorship.type,'journalist');
- assert.equal(data.reports.filter(r=>r.financial?.status==='verified').length,6);
+ assert.equal(data.reports.filter(r=>r.financial?.status==='verified'&&data.companies.find(c=>c.id===r.financial.companyId)?.role==='core').length,6);
  for(const c of data.companies.filter(c=>c.role==='core'))assert.ok(latestFinancial(data,c.id).report);
 });
 test('F11–F13: original financial rows, foreign attribution and arithmetic are exact',()=>{

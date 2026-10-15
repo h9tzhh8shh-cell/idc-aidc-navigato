@@ -1,0 +1,826 @@
+{
+  "maintainedAt": "2026-10-15",
+  "sources": [
+    {
+      "id": "aofei-disclosures",
+      "name": "奥飞数据公司公告与财报",
+      "organization": "奥飞数据",
+      "sourceType": "company",
+      "entryUrl": "https://www.ofidc.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "listed-companies"
+      ],
+      "purpose": "奥飞数据定期报告及经营数据",
+      "questions": [
+        "营业收入及归母净利润如何变化？"
+      ],
+      "metrics": [
+        "报告期",
+        "营业收入",
+        "归母净利润"
+      ],
+      "aliases": [],
+      "tags": [
+        "财务报告"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [
+        "aofei"
+      ],
+      "verificationNote": "2026-10-15：核对公司主体、正式半年报及主要会计数据表。"
+    },
+    {
+      "id": "athub-disclosures",
+      "name": "数据港公司公告与财报",
+      "organization": "数据港",
+      "sourceType": "company",
+      "entryUrl": "https://www.athub.com/index/Lists/index/catid/4.html",
+      "entryType": "投资者关系",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "listed-companies"
+      ],
+      "purpose": "数据港定期报告及经营数据",
+      "questions": [
+        "营业收入及归母净利润如何变化？"
+      ],
+      "metrics": [
+        "报告期",
+        "营业收入",
+        "归母净利润"
+      ],
+      "aliases": [],
+      "tags": [
+        "财务报告"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [
+        "athub"
+      ],
+      "verificationNote": "2026-10-15：核对公司主体、正式半年报及主要会计数据表。"
+    },
+    {
+      "id": "capitalonline-disclosures",
+      "name": "首都在线公司公告与财报",
+      "organization": "首都在线",
+      "sourceType": "company",
+      "entryUrl": "https://www.capitalonline.net/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "listed-companies"
+      ],
+      "purpose": "首都在线定期报告及经营数据",
+      "questions": [
+        "营业收入及归母净利润如何变化？"
+      ],
+      "metrics": [
+        "报告期",
+        "营业收入",
+        "归母净利润"
+      ],
+      "aliases": [],
+      "tags": [
+        "财务报告"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [
+        "capitalonline"
+      ],
+      "verificationNote": "2026-10-15：核对公司主体、正式半年报及主要会计数据表。"
+    },
+    {
+      "id": "hongxin-disclosures",
+      "name": "弘信电子公司公告与财报",
+      "organization": "弘信电子",
+      "sourceType": "company",
+      "entryUrl": "https://www.hon-flex.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "listed-companies"
+      ],
+      "purpose": "弘信电子定期报告及经营数据",
+      "questions": [
+        "营业收入及归母净利润如何变化？"
+      ],
+      "metrics": [
+        "报告期",
+        "营业收入",
+        "归母净利润"
+      ],
+      "aliases": [],
+      "tags": [
+        "财务报告"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [
+        "hongxin"
+      ],
+      "verificationNote": "2026-10-15：核对公司主体、正式半年报及主要会计数据表。"
+    },
+    {
+      "id": "nexwise-disclosures",
+      "name": "杰创智能公司公告与财报",
+      "organization": "杰创智能",
+      "sourceType": "company",
+      "entryUrl": "https://www.nexwise.com.cn/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "listed-companies"
+      ],
+      "purpose": "杰创智能定期报告及经营数据",
+      "questions": [
+        "营业收入及归母净利润如何变化？"
+      ],
+      "metrics": [
+        "报告期",
+        "营业收入",
+        "归母净利润"
+      ],
+      "aliases": [],
+      "tags": [
+        "财务报告"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [
+        "nexwise"
+      ],
+      "verificationNote": "2026-10-15：核对公司主体、正式半年报及主要会计数据表。"
+    },
+    {
+      "id": "range-disclosures",
+      "name": "润泽科技公司公告与财报",
+      "organization": "润泽科技",
+      "sourceType": "company",
+      "entryUrl": "https://www.rangeidc.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "listed-companies"
+      ],
+      "purpose": "润泽科技定期报告及经营数据",
+      "questions": [
+        "营业收入及归母净利润如何变化？"
+      ],
+      "metrics": [
+        "报告期",
+        "营业收入",
+        "归母净利润"
+      ],
+      "aliases": [],
+      "tags": [
+        "财务报告"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "companyIds": [
+        "range"
+      ],
+      "verificationNote": "2026-10-15：核对公司主体、正式半年报及主要会计数据表。"
+    }
+  ],
+  "reports": [
+    {
+      "id": "aofei-2026-h1",
+      "sourceId": "aofei-disclosures",
+      "title": "奥飞数据2026年半年度报告",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-01/1225451898.PDF",
+      "kind": "disclosure",
+      "publishedAt": "2026-08-01",
+      "dataPeriod": "2026年半年报｜1—6月累计",
+      "summary": "2026年1—6月，公司营业收入14.69亿元，归属于上市公司股东的净利润19657.18万元。",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-15：PDF第7页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。核对原始数值、归属口径、同期数及同比，查看表格页。PDF SHA-256：e8d0a58df78b095c4a6dd689e52e11a3498a17933f5f7b1f7ca01258a117ef60。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "aofei"
+      ],
+      "access": "free",
+      "originalPublisher": "广东奥飞数据科技股份有限公司",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-01/1225451898.PDF",
+      "visibility": "active",
+      "tags": [
+        "2026年半年报"
+      ],
+      "financial": {
+        "companyId": "aofei",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年半年报｜1—6月累计",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 1468814395.33,
+          "priorValue": 1147991587.7,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "reported",
+            "percent": 27.95,
+            "note": "报告披露同比；按同口径原值复算。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": 196571835.59,
+          "priorValue": 87896925.76,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "归属于上市公司股东",
+          "change": {
+            "basis": "reported",
+            "percent": 123.64,
+            "note": "报告披露同比；按同口径原值复算。"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-01/1225451898.PDF",
+          "locator": "PDF第7页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
+        },
+        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+      },
+      "relatedLinks": []
+    },
+    {
+      "id": "athub-2026-h1",
+      "sourceId": "athub-disclosures",
+      "title": "数据港2026年半年度报告",
+      "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-08-22/603881_20260822_HE0L.pdf",
+      "kind": "disclosure",
+      "publishedAt": "2026-08-22",
+      "dataPeriod": "2026年半年报｜1—6月累计",
+      "summary": "2026年1—6月，公司营业收入7.82亿元，归属于上市公司股东的净利润8588.31万元。",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-15：PDF第7页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。核对原始数值、归属口径、同期数及同比，查看表格页。PDF SHA-256：a8f55051cea02b96720bd3164ba7a649269b419b5a740b406de46dca4d478513。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "athub"
+      ],
+      "access": "free",
+      "originalPublisher": "上海数据港股份有限公司",
+      "originalUrl": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-08-22/603881_20260822_HE0L.pdf",
+      "visibility": "active",
+      "tags": [
+        "2026年半年报"
+      ],
+      "financial": {
+        "companyId": "athub",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年半年报｜1—6月累计",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 781608094.59,
+          "priorValue": 810505707.82,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "reported",
+            "percent": -3.57,
+            "note": "报告披露同比；按同口径原值复算。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": 85883134.69,
+          "priorValue": 84958577.73,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "归属于上市公司股东",
+          "change": {
+            "basis": "reported",
+            "percent": 1.09,
+            "note": "报告披露同比；按同口径原值复算。"
+          }
+        },
+        "evidence": {
+          "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-8/2026-08-22/12517577.PDF",
+          "locator": "PDF第7页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
+        },
+        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+      },
+      "relatedLinks": [
+        {
+          "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-8/2026-08-22/12517577.PDF",
+          "publisher": "新浪财经",
+          "role": "公司半年报原件镜像",
+          "publishedAt": "2026-08-22"
+        },
+        {
+          "url": "https://www.athub.com/index/Lists/index/catid/4.html",
+          "publisher": "上海数据港股份有限公司",
+          "role": "公司公告目录"
+        }
+      ]
+    },
+    {
+      "id": "capitalonline-2026-h1",
+      "sourceId": "capitalonline-disclosures",
+      "title": "首都在线2026年半年度报告摘要",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225496151.PDF",
+      "kind": "disclosure",
+      "publishedAt": "2026-08-25",
+      "dataPeriod": "2026年半年报｜1—6月累计",
+      "summary": "2026年1—6月，公司营业收入6.65亿元，归属于上市公司股东的净利润-3218.50万元。",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-15：PDF第2页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。核对原始数值、归属口径、同期数及同比，查看表格页。PDF SHA-256：69df85eba86eae1fd00fc0a9f0a1633f8f1dc64ab0464ab020ba6ca6af1bd7b1。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "abstract",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "capitalonline"
+      ],
+      "access": "free",
+      "originalPublisher": "北京首都在线科技股份有限公司",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225496151.PDF",
+      "visibility": "active",
+      "tags": [
+        "2026年半年报"
+      ],
+      "financial": {
+        "companyId": "capitalonline",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年半年报｜1—6月累计",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 665166831.31,
+          "priorValue": 629058411.6,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "reported",
+            "percent": 5.74,
+            "note": "报告披露同比；按同口径原值复算。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": -32185014.98,
+          "priorValue": -70959305.93,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "归属于上市公司股东",
+          "change": {
+            "basis": "amount",
+            "percent": null,
+            "note": "亏损收窄"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225496151.PDF",
+          "locator": "PDF第2页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
+        },
+        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+      },
+      "relatedLinks": []
+    },
+    {
+      "id": "hongxin-2026-h1",
+      "sourceId": "hongxin-disclosures",
+      "title": "弘信电子2026年半年度报告",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225484595.PDF",
+      "kind": "disclosure",
+      "publishedAt": "2026-08-21",
+      "dataPeriod": "2026年半年报｜1—6月累计",
+      "summary": "2026年1—6月，公司营业收入33.76亿元，归属于上市公司股东的净利润12396.13万元。",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-15：PDF第9页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。核对原始数值、归属口径、同期数及同比，查看表格页。PDF SHA-256：6ebbce0f214fc23a30550086b69883a376e432fbd62a9972be8a4cbca12dacd0。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "hongxin"
+      ],
+      "access": "free",
+      "originalPublisher": "厦门弘信电子科技集团股份有限公司",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225484595.PDF",
+      "visibility": "active",
+      "tags": [
+        "2026年半年报"
+      ],
+      "financial": {
+        "companyId": "hongxin",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年半年报｜1—6月累计",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 3375792103.59,
+          "priorValue": 3493825718.76,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "reported",
+            "percent": -3.38,
+            "note": "报告披露同比；按同口径原值复算。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": 123961305.68,
+          "priorValue": 53993082.7,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "归属于上市公司股东",
+          "change": {
+            "basis": "reported",
+            "percent": 129.59,
+            "note": "报告披露同比；按同口径原值复算。"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225484595.PDF",
+          "locator": "PDF第9页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
+        },
+        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+      },
+      "relatedLinks": []
+    },
+    {
+      "id": "litong-2026-h1",
+      "sourceId": "litong-disclosures",
+      "title": "利通电子2026年半年度报告",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225529563.PDF",
+      "kind": "disclosure",
+      "publishedAt": "2026-08-29",
+      "dataPeriod": "2026年半年报｜1—6月累计",
+      "summary": "2026年1—6月，公司营业收入21.01亿元，归属于上市公司股东的净利润70241.39万元。",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-15：PDF第8页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。核对原始数值、归属口径、同期数及同比，查看表格页。PDF SHA-256：56fcdf7870df538152b397c00fc0d482ed562e68757e906496e7259b6019d30c。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "litong"
+      ],
+      "access": "free",
+      "originalPublisher": "江苏利通电子股份有限公司",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225529563.PDF",
+      "visibility": "active",
+      "tags": [
+        "2026年半年报"
+      ],
+      "financial": {
+        "companyId": "litong",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年半年报｜1—6月累计",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 2101150261.85,
+          "priorValue": 1516253281.04,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "reported",
+            "percent": 38.58,
+            "note": "报告披露同比；按同口径原值复算。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": 702413938.08,
+          "priorValue": 51079176.76,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "归属于上市公司股东",
+          "change": {
+            "basis": "reported",
+            "percent": 1275.15,
+            "note": "报告披露同比；按同口径原值复算。"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225529563.PDF",
+          "locator": "PDF第8页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
+        },
+        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+      },
+      "relatedLinks": []
+    },
+    {
+      "id": "nexwise-2026-h1",
+      "sourceId": "nexwise-disclosures",
+      "title": "杰创智能2026年半年度报告摘要",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225504270.PDF",
+      "kind": "disclosure",
+      "publishedAt": "2026-08-26",
+      "dataPeriod": "2026年半年报｜1—6月累计",
+      "summary": "2026年1—6月，公司营业收入3.43亿元，归属于上市公司股东的净利润-326.10万元。",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-15：PDF第1页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。核对原始数值、归属口径、同期数及同比，查看表格页。PDF SHA-256：550bfbef78b94a574417e281f787d0b6c37a2910b0cdad96ba196cf1b4abfacd。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "abstract",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "nexwise"
+      ],
+      "access": "free",
+      "originalPublisher": "杰创智能科技股份有限公司",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225504270.PDF",
+      "visibility": "active",
+      "tags": [
+        "2026年半年报"
+      ],
+      "financial": {
+        "companyId": "nexwise",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年半年报｜1—6月累计",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 343235883.72,
+          "priorValue": 315699094.26,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "reported",
+            "percent": 8.72,
+            "note": "报告披露同比；按同口径原值复算。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": -3261004.75,
+          "priorValue": 18728038.06,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "归属于上市公司股东",
+          "change": {
+            "basis": "amount",
+            "percent": null,
+            "note": "由盈转亏"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225504270.PDF",
+          "locator": "PDF第1页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
+        },
+        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+      },
+      "relatedLinks": []
+    },
+    {
+      "id": "range-2026-h1",
+      "sourceId": "range-disclosures",
+      "title": "润泽科技2026年半年度报告",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225521959.PDF",
+      "kind": "disclosure",
+      "publishedAt": "2026-08-28",
+      "dataPeriod": "2026年半年报｜1—6月累计",
+      "summary": "2026年1—6月，公司营业收入37.46亿元，归属于上市公司股东的净利润120344.67万元。",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationStatus": "verified",
+      "verificationNote": "2026-10-15：PDF第9页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。核对原始数值、归属口径、同期数及同比，查看表格页。PDF SHA-256：53b580a1144d7f73feb43319e2224119a8618d9b9e34eccb9bdecf3f8e6dfab1。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "range"
+      ],
+      "access": "free",
+      "originalPublisher": "润泽智算科技集团股份有限公司",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225521959.PDF",
+      "visibility": "active",
+      "tags": [
+        "2026年半年报"
+      ],
+      "financial": {
+        "companyId": "range",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年半年报｜1—6月累计",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 3745694047.05,
+          "priorValue": 2496223080.63,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "reported",
+            "percent": 50.05,
+            "note": "报告披露同比；按同口径原值复算。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": 1203446677.8,
+          "priorValue": 882122065.03,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "归属于上市公司股东",
+          "change": {
+            "basis": "reported",
+            "percent": 36.43,
+            "note": "报告披露同比；按同口径原值复算。"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225521959.PDF",
+          "locator": "PDF第9页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
+        },
+        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+      },
+      "relatedLinks": []
+    }
+  ],
+  "changeBatch": {
+    "batchId": "financial-peers-20261015",
+    "recordedAt": "2026-10-15T10:12:13+08:00",
+    "scope": "国内上市同行财务数据",
+    "summary": "补齐七家国内同行2026年半年报营业收入及归母净利润。",
+    "periodStart": "2026-10-15",
+    "notes": {},
+    "checks": []
+  }
+}
