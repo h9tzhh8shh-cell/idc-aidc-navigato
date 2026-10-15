@@ -3,6 +3,7 @@ import { IconX, IconChevronDown, IconChevronRight, IconArrowUpRight, IconBuildin
 import data from '../public/assets/catalog.json';
 import logos from './logos.json';
 import { FinancialPreview } from './financial-components.jsx';
+import { SmmPricePreview, smmPriceReportId } from './smm-prices.jsx';
 import { evidenceUrl, getReportMatchReason, getSourcePreviewSelection, getSourceReports, TOPICS, sortReportsByDate } from './catalog.js';
 import { contentScopeLabels, judgmentLabels } from './domain/catalog.js';
 const labels = data.labelMaps;
@@ -56,6 +57,7 @@ export function SourceDetail({ source, showReference = false, onClose }) {
   </dialog>;
 }
 export function ReportRow({ report, source, query = '', onSource, filters = {}, compact = false }) {
+  if (report.id === smmPriceReportId) return <article className="report-row" data-report-id={report.id}><SmmPricePreview /></article>;
   const reason = getReportMatchReason(report, source, query);
   return <article className="report-row" data-report-id={report.id}>
     <h3><OutLink href={report.url} className="report-title"><Highlight text={report.title} query={query} /></OutLink></h3>
@@ -122,6 +124,7 @@ function CompactSummary({ report, query }) {
 }
 
 function PreviewArticle({ report, filters, compact = false }) {
+  if (report.id === smmPriceReportId) return <SmmPricePreview />;
   return <div data-news-id={report.id}>
     <OutLink href={report.url} className="preview-title"><Highlight text={report.title} query={filters.q} /></OutLink>
     <p className="report-byline">{report.publishedAt || '发布日期未知'}<ReportRegion report={report} filters={filters} /></p>
