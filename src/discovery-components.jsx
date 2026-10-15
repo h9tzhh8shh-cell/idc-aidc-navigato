@@ -3,6 +3,7 @@ import { IconStarFilled, IconBuildingSkyscraper, IconNews, IconCalendar, IconCha
 import { OutLink, Highlight, trapDialogFocus } from './components.jsx';
 import { TOPICS, filterReports } from './catalog.js';
 import { latestFinancial, amount } from './domain/financial.js';
+import { FinancialChange } from './financial-components.jsx';
 import { beijingTimestamp, previousCompleteWeek, availableIssues, discoveryBatch, recentDiscoveries, industryDiscoveryReports, generateIssue, saveIssue, issueTitle, validateDiscovery } from './domain/discovery.js';
 import { WEEKLY_FORMAT, WEEKLY_SECTIONS, WEEKLY_FIELDS } from './domain/weekly.js';
 import './discovery.css';
@@ -45,7 +46,7 @@ export function DiscoveryHighlights({ data, mode, onReport }) {
 function FinancialCell({ data, company, metric }) {
   const { report } = latestFinancial(data, company.id);
   const value = report?.financial?.[metric];
-  return <div className="discovery-financial"><span className="mobile-column-label">{metric === 'revenue' ? '营业收入' : '净利润'}</span>{value ? <><strong>{amount(value)}</strong><p>{report.financial.period.label.split('｜').map(line => <span key={line}>{line}</span>)}</p><small>{value.label} · {value.attribution}</small><small>披露 {report.publishedAt}</small><OutLink href={report.financial.evidence.url} className="text-link">财报原文</OutLink></> : <strong>—</strong>}</div>;
+  return <div className="discovery-financial"><span className="mobile-column-label">{metric === 'revenue' ? '营业收入' : '净利润'}</span>{value ? <><strong>{amount(value)}</strong><FinancialChange metric={value} /><p>{report.financial.period.label.split('｜').map(line => <span key={line}>{line}</span>)}</p><small>{value.label} · {value.attribution}</small><small>披露 {report.publishedAt}</small><OutLink href={report.financial.evidence.url} className="text-link">财报原文</OutLink></> : <strong>—</strong>}</div>;
 }
 function TextIdentity({ name }) { return <span className="discovery-wordmark" aria-label={`${name}文字标识`}>{name}</span>; }
 export function DiscoveryWorkspace({ data, sources, filters, navigation, onNavigate, onBack, onCompany, onReport, issues, onIssues }) {

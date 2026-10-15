@@ -60,4 +60,10 @@
 
 .company-financial { margin: 16px 0; padding: 14px 18px; background: #f5f8fc; border-left: 3px solid #d5e3f8; }
 .financial-preview p { margin: 7px 0; }
+.financial-change { display:inline-flex; align-items:baseline; gap:4px; font-size:13px; font-weight:600; white-space:nowrap; line-height:1.8; }
+.financial-change > span { font-size:16px; font-weight:700; }
+.financial-change-up { color:#c82132; }
+.financial-change-down { color:#087b45; }
+.financial-change-flat { color:#64748b; }
+.financial-preview .financial-change { margin-left:8px; }
 .company-row .company-financial { max-width: 820px; }
