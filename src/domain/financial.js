@@ -49,11 +49,12 @@ export function amount(metric,value=metric.value) {
 }
 export function changeText(m) {
   const a=m.value,b=m.priorValue;
-  if(b===0)return '上年同期为零，不计算增长率';
+  if(b===0)return a===0?'本期及上年同期均为零':a<0?'由盈亏平衡转为亏损（上年同期为零）':'本期金额增加（上年同期为零）';
   if(b<0&&a>=0)return a===0?'亏损收窄至零':'扭亏为盈';
   if(b>=0&&a<0)return '由盈转亏';
   if(b<0&&a<0)return a>b?'亏损收窄':a<b?'亏损扩大':'亏损持平';
   if(m.change.percent===null)return m.change.note;
+  if(m.change.percent===0)return '同比持平';
   return `同比${m.change.percent>=0?'增长':'下降'}${Math.abs(m.change.percent).toFixed(2)}%${m.change.basis==='calculated'?'（计算值）':''}`;
 }
 export function latestFinancial(data,companyId) {

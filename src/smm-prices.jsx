@@ -1,6 +1,7 @@
 import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
 import { IconArrowDown, IconArrowRight, IconArrowUp, IconArrowUpRight, IconChartBar, IconChevronDown, IconX } from '@tabler/icons-react';
 import prices from '../public/assets/smm-prices.json';
+import { priceQuoteState } from './domain/prices.js';
 import './smm-prices.css';
 
 export const smmPriceReportId = prices.reportId;
@@ -19,15 +20,20 @@ function PriceRange({ quote, scale }) {
 
 function PriceBoard({ titleId, onClose }) {
   return <>
-    <header className="smm-board-header"><div><h3 id={titleId}><IconChartBar size={23} aria-hidden="true" />SMM 算力租赁价格</h3><p>来源：SMM<span>来源更新：{prices.sourceCadence}</span></p></div><div className="smm-board-actions"><a href={prices.sourceUrl} target="_blank" rel="noopener noreferrer">访问原站<IconArrowUpRight size={17} aria-hidden="true" /></a><button className="icon-button" aria-label="关闭算力行情看板" onClick={onClose}><IconX size={19} /></button></div></header>
+    <header className="smm-board-header"><div><h3 id={titleId}><IconChartBar size={23} aria-hidden="true" />SMM 算力租赁价格</h3><p>来源：SMM · 人工核对<span>原站发布：{prices.sourceCadence}</span></p></div><div className="smm-board-actions"><a href={prices.sourceUrl} target="_blank" rel="noopener noreferrer">访问原站<IconArrowUpRight size={17} aria-hidden="true" /></a><button className="icon-button" aria-label="关闭算力行情看板" onClick={onClose}><IconX size={19} /></button></div></header>
     <div className="smm-groups">{prices.groups.map(group => <section className="smm-group" key={group.model} aria-label={group.model}>
       <div className="smm-group-heading"><h4>{group.model}</h4><span className={`smm-price-type ${group.type === '零售价' ? 'retail' : ''}`}>{group.type}</span></div>
       {group.quotes.map(quote => {
-        const ChangeIcon = quote.change < 0 ? IconArrowDown : quote.change > 0 ? IconArrowUp : IconArrowRight;
-        return <div className={`smm-quote ${quote.change < 0 ? 'is-down' : ''}`} key={quote.label}>
-          <div className="smm-quote-heading"><span>{quote.label}</span><span className={`smm-change ${quote.change < 0 ? 'down' : quote.change > 0 ? 'up' : ''}`} aria-label={`涨跌幅 ${quote.change.toFixed(2)}%`}><ChangeIcon size={16} aria-hidden="true" />{Math.abs(quote.change).toFixed(2)}%</span></div>
-          <p className="smm-price"><strong>{quote.mean.toFixed(2)}</strong><span>元/卡·时</span></p>
+        const state = priceQuoteState(quote), comparison = state.comparison;
+        const ChangeIcon = comparison?.percent < 0 ? IconArrowDown : comparison?.percent > 0 ? IconArrowUp : IconArrowRight;
+        return <div className={`smm-quote ${comparison?.percent < 0 ? 'is-down' : ''}`} key={quote.label}>
+          <div className="smm-quote-heading"><span>{quote.label}</span></div>
+          {state.dateStatus !== 'current' && <p className={`smm-quote-status ${state.dateStatus}`}>{state.dateStatus === 'historical' ? `历史快照 ${state.dateLabel}` : '报价日期待核实'}</p>}
+          <p className="smm-price"><strong>{quote.mean.toFixed(2)}</strong><span>{quote.unit}</span></p>
+          <div className="smm-quote-comparison">{comparison ? <><span className={`smm-change ${comparison.percent < 0 ? 'down' : comparison.percent > 0 ? 'up' : ''}`} aria-label={`较 ${comparison.date} ${comparison.basis}，${comparison.percent === 0 ? '持平' : comparison.percent > 0 ? '上涨' : '下降'} ${Math.abs(comparison.percent).toFixed(2)}%`}><ChangeIcon size={16} aria-hidden="true" />{Math.abs(comparison.percent).toFixed(2)}%</span><span>较 {comparison.date} · {comparison.basis}</span></> : <span>暂无可比数据</span>}</div>
           <PriceRange quote={quote} scale={group.scale} />
+          <dl className="smm-quote-dates"><div><dt>报价日期</dt><dd>{state.dateLabel}</dd></div><div><dt>最近核对</dt><dd>{state.checkedLabel}</dd></div></dl>
+          <a className="smm-quote-source" href={quote.sourceUrl} target="_blank" rel="noopener noreferrer">{group.model} · {group.type} · 原站报价<IconArrowUpRight size={13} aria-hidden="true" /></a>
         </div>;
       })}
       <div className="smm-legend"><span>圆点：均价</span><span>蓝条：价格区间</span><span>单位：元/卡·时</span></div>

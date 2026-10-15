@@ -1,5 +1,6 @@
 import catalog from '../public/assets/catalog.json' with { type: 'json' };
 import { kindLabels, SEA_REGIONS } from './domain/catalog.js';
+import { companyRegistry, companySearchTerms, companyMatchesQuery } from './domain/company-research.js';
 
 export const DOMESTIC_REGIONS = ['中国', '中国香港'];
 export const FOREIGN_REGIONS = [...SEA_REGIONS, '东南亚', '美国', '北美', '欧洲', '拉丁美洲'];
@@ -40,7 +41,7 @@ const allowed = {
   types: INFO_TYPES.map(type => type.id),
   access: ['free', 'registration', 'mixed', 'paid', 'unknown'],
   frequency: ['daily', 'weekly', 'monthly', 'quarterly', 'semiannual', 'annual', 'irregular', 'unknown'],
-  companies: (catalog.companies || []).map(company => company.id),
+  companies: companyRegistry(catalog).map(company => company.id),
 };
 const oldTopics = {
   infrastructure: ['industry'], market: ['industry'], rental: ['rental-prices'],
@@ -68,7 +69,7 @@ export function matchesPublishedDate(report, filters, today = beijingToday()) {
 export function normalizeFilters(filters = {}, view = 'sources') {
   const clean = {
     q: String(filters.q || '').trim(),
-    sort: ['relevance', 'name', 'verified'].includes(filters.sort) ? filters.sort : 'relevance',
+    sort: ['relevance', 'name', 'verified', 'published'].includes(filters.sort) ? filters.sort : 'relevance',
     scope: scopes.includes(filters.scope) ? filters.scope : 'all',
     showReference: filters.showReference === true,
     dateWindow: ['7','30','unknown'].includes(filters.dateWindow) ? filters.dateWindow : 'all',
@@ -120,9 +121,7 @@ function companyTerms(record, source) {
   return (record.companyIds || []).flatMap(id => {
     const company = source.companyLookup?.[id];
     if (!company) return [];
-    return [company.name, company.legalName, ...(company.aliases || []), ...(company.securities || []).flatMap(security =>
-      typeof security === 'string' ? [security] : [security.code, `${security.exchange}:${security.code}`]
-    )].filter(Boolean);
+    return companySearchTerms(company);
   });
 }
 
@@ -130,7 +129,7 @@ function matchesText(text, companyNames, terms) {
   const normalized = text.toLocaleLowerCase();
   return terms.every(term => normalized.includes(term) || companyNames.some(name => {
     const value = name.toLocaleLowerCase();
-    return /^[a-z0-9.:_-]+$/i.test(term) ? value === term : value.includes(term);
+    return /^[a-z0-9.:_-]+$/i.test(term) ? value === term || value.split(/\s+/u).includes(term) : value.includes(term);
   }));
 }
 
@@ -144,7 +143,7 @@ function reportText(report, source) {
 }
 
 export function decorateSources(data) {
-  const companyLookup = Object.fromEntries((data.companies || []).map(company => [company.id, company]));
+  const companyLookup = Object.fromEntries(companyRegistry(data).map(company => [company.id, company]));
   return data.sources.map(source => {
     const relatedReports = data.reports.filter(report => report.sourceId === source.id);
     return {
@@ -193,6 +192,7 @@ export function sortReportsByDate(reports) {
 function sortItems(items, filters, byReportDate = false) {
   const terms = termsOf(filters.q);
   return [...items].sort((a, b) => {
+    if (filters.sort === 'published') return (b.publishedAt || '').localeCompare(a.publishedAt || '');
     if (filters.sort === 'name') return (a.name || a.title).localeCompare(b.name || b.title, 'zh-CN');
     if (filters.sort === 'verified') return (b.verifiedAt || '').localeCompare(a.verifiedAt || '');
     return relevance(b, terms) - relevance(a, terms) ||
@@ -317,9 +317,9 @@ export function writeQuery(filters, view = 'sources', selectedId = null, navigat
   if (selectedId && /^[a-z0-9][a-z0-9-]{0,79}$/i.test(selectedId)) params.set('source', selectedId);
   if (clean.showReference) params.set('showReference', '1');
   if (clean.subcategory) params.set('subcategory', clean.subcategory);
+  if (clean.dateWindow !== 'all') params.set('dateWindow',clean.dateWindow);
+  if (clean.asOf) params.set('asOf',clean.asOf);
   if (view.endsWith('reports') || navigation.company || navigation.event) {
-    if (clean.dateWindow !== 'all') params.set('dateWindow',clean.dateWindow);
-    if (clean.asOf) params.set('asOf',clean.asOf);
     if (clean.readingMode === 'batches' && !navigation.company && !navigation.event) params.set('readingMode','batches');
     if (clean.batchId && clean.readingMode === 'batches') params.set('batch',clean.batchId);
   }
@@ -328,7 +328,7 @@ export function writeQuery(filters, view = 'sources', selectedId = null, navigat
   if (['acquisition','capital','contract','risk'].includes(navigation.eventType)) params.set('eventType',navigation.eventType);
   if (navigation.returnQuery && navigation.returnQuery.length < 4000) params.set('return',navigation.returnQuery);
   if (['companies','articles','daily','weekly'].includes(navigation.discovery)) params.set('discover', navigation.discovery);
-  for (const key of ['issue']) if (/^[a-z0-9][a-z0-9-]{0,180}$/.test(navigation[key] || '')) params.set(key, navigation[key]);
+  for (const key of ['issue', 'report']) if (/^[a-z0-9][a-z0-9-]{0,179}$/.test(navigation[key] || '')) params.set(key, navigation[key]);
   // Non-bare links carry scope explicitly; otherwise legacy-query parsing means all.
   if (clean.scope !== 'domestic' || params.size) params.set('scope', clean.scope);
   return params.toString();
@@ -339,29 +339,28 @@ export function readQuery(search = '') {
   const view = extraViews.includes(params.get('view')) ? params.get('view') : 'sources';
   const source = params.get('source');
   const selectedId = source && /^[a-z0-9][a-z0-9-]{0,79}$/i.test(source) ? source : null;
-  const filters = { q: params.get('q') || '', sort: params.get('sort'), showReference: params.get('showReference') === '1', subcategory: params.get('subcategory') };
-  const acceptsDates = view.endsWith('reports') || params.has('company') || params.has('event');
-  if (acceptsDates) Object.assign(filters,{dateWindow:params.get('dateWindow'),asOf:params.get('asOf'),readingMode:params.get('readingMode'),batchId:params.get('batch')});
+  const filters = { q: params.get('q') || '', sort: params.get('sort'), showReference: params.get('showReference') === '1', subcategory: params.get('subcategory'), dateWindow: params.get('dateWindow'), asOf: params.get('asOf') };
+  if (view.endsWith('reports') || params.has('company') || params.has('event')) Object.assign(filters,{readingMode:params.get('readingMode'),batchId:params.get('batch')});
   for (const key of Object.keys(allowed)) filters[key] = params.getAll(key);
   const clean = normalizeFilters(filters, view);
   const hasLegacyQuery = clean.q || Object.keys(allowed).some(key => clean[key].length) ||
     selectedId || extraViews.includes(params.get('view')) || params.get('view') === 'sources' ||
-    ['name', 'verified'].includes(params.get('sort')) || clean.showReference;
+    ['name', 'verified', 'published'].includes(params.get('sort')) || clean.showReference;
   filters.scope = scopes.includes(params.get('scope')) ? params.get('scope') : hasLegacyQuery ? 'all' : 'domestic';
   const state = { filters: normalizeFilters(filters, view), view, selectedId };
   const notice = subcategoryNotice(filters, view);
   if (notice) state.notice = notice;
-  if ((params.has('dateWindow') && (!acceptsDates || !['all','7','30','unknown'].includes(params.get('dateWindow')))) ||
+  if ((params.has('dateWindow') && !['all','7','30','unknown'].includes(params.get('dateWindow'))) ||
       (['7','30'].includes(filters.dateWindow) && state.filters.dateWindow === 'all') ||
-      (params.has('asOf') && (!validDay(params.get('asOf')) || params.get('asOf') > beijingToday()))) state.notice = '日期条件无效或不适用，已恢复全部时间。';
-  if (params.has('company') || params.has('event') || params.has('listedMode') || params.has('return') || params.has('eventType') || params.has('discover')) {
+      (params.has('asOf') && (!validDay(params.get('asOf')) || params.get('asOf') > beijingToday()))) state.notice = '日期条件无效，已恢复全部时间。';
+  if (params.has('company') || params.has('event') || params.has('listedMode') || params.has('return') || params.has('eventType') || params.has('discover') || params.has('issue') || params.has('report')) {
     state.navigation = {};
     for (const key of ['company', 'event']) if (params.has(key)) state.navigation[key] = /^[a-z0-9][a-z0-9-]{0,100}$/.test(params.get(key)) ? params.get(key) : 'invalid-record';
     if (params.get('listedMode') === 'sources') state.navigation.listedMode = 'sources';
     if (['acquisition','capital','contract','risk'].includes(params.get('eventType'))) state.navigation.eventType=params.get('eventType');
     if (params.get('return') && params.get('return').length < 4000) state.navigation.returnQuery=params.get('return');
     if (['companies','articles','daily','weekly'].includes(params.get('discover'))) state.navigation.discovery=params.get('discover');
-    for (const key of ['issue']) if (params.has(key)) state.navigation[key] = /^[a-z0-9][a-z0-9-]{0,180}$/.test(params.get(key)) ? params.get(key) : 'invalid-record';
+    for (const key of ['issue', 'report']) if (params.has(key)) state.navigation[key] = /^[a-z0-9][a-z0-9-]{0,179}$/.test(params.get(key)) ? params.get(key) : 'invalid-record';
   }
   return state;
 }
@@ -385,13 +384,16 @@ export function companyGroups(data, filters = {}) {
   const regional = clean.scope !== 'all' || clean.regions.length > 0;
   const records = [...data.reports, ...(data.events || [])].filter(record => isVisible(record, clean) &&
     matchesScope(record.regions, clean.scope) && matchesRegion(record.regions, clean.regions));
+  const matchingCompanies = new Set(clean.q ? filterReports(data.reports, decorateSources(data), { ...clean, topics: [], subcategory: null }).flatMap(report => report.companyIds || []) : []);
   const matchesCompany = company => (!clean.companies.length || clean.companies.includes(company.id)) &&
-    (!regional || records.some(record => record.companyIds.includes(company.id)));
-  const lookup = new Map(data.companies.map(company => [company.id, company]));
+    (!regional || records.some(record => record.companyIds.includes(company.id))) &&
+    (companyMatchesQuery(company, clean.q) || matchingCompanies.has(company.id));
+  const registry = companyRegistry(data);
+  const lookup = new Map(registry.map(company => [company.id, company]));
   return [
     { id: 'core', name: '核心公司', items: ['sinnet','xingyun','vnet','sharetronic','gds','hec'].map(id => lookup.get(id)).filter(Boolean) },
     { id: 'operator', name: '电信运营商', items: ['china-mobile','china-telecom','china-unicom-h'].map(id => lookup.get(id)).filter(Boolean) },
-    { id: 'reference', name: '其他已收录主体', items: data.companies.filter(company => company.role === 'reference') },
+    { id: 'reference', name: '其他已收录主体', items: registry.filter(company => company.role === 'reference') },
   ].map(group => ({ ...group, items: group.items.filter(matchesCompany) }));
 }
 

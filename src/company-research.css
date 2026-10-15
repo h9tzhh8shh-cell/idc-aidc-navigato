@@ -1,0 +1,15 @@
+.company-coverage { padding: 16px 18px; margin: 16px 0; border: 1px solid var(--border, #dfe7f1); border-radius: 12px; background: #f7faff; }
+.company-coverage p { margin: 7px 0; color: #536a89; font-size: 14px; line-height: 1.65; overflow-wrap: anywhere; }
+.company-coverage .company-coverage-status { color: #243c5c; font-weight: 650; }
+.company-coverage h3 { margin: 0 0 6px; font-size: 16px; }
+.company-coverage--compact { padding: 0; border: 0; background: transparent; margin: 8px 0 12px; }
+.company-coverage--compact p { font-size: 13px; margin: 4px 0; }
+.company-identity { margin: 8px 0 16px; }
+.company-identity summary { color: #536a89; font-size: 14px; cursor: pointer; }
+.company-identity p { overflow-wrap: anywhere; }
+.company-identity .text-link + .text-link { margin-left: 14px; }
+@media (max-width: 640px) {
+  .company-coverage { padding: 12px; }
+  .company-coverage--compact { padding: 0; }
+  .company-coverage p { font-size: 13px; }
+}

@@ -1,0 +1,18 @@
+.research-result-types { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin:12px 0; }
+.research-result-types button { min-height:36px; padding:7px 16px; border:1px solid #dce5f0; border-radius:6px; background:white; color:#456080; font:inherit; font-size:13px; cursor:pointer; }
+.research-result-types button[aria-pressed="true"] { color:#095ec9; background:#edf5ff; border-color:#9cc4f6; font-weight:650; }
+.research-result-types > span { margin-left:8px; color:#60738c; font-size:12px; }
+.company-search-links { display:flex; flex-wrap:wrap; gap:10px 20px; padding:14px 16px; margin:12px 0; background:#f5f8fc; border-radius:6px; font-size:13px; }
+.company-search-links strong { color:#4b617c; }
+.discovery-search-controls { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin:14px 0; }
+.discovery-search-controls .sort-control { gap:8px; font-size:13px; }
+.discovery-search-controls .sort-control select { max-width:100%; }
+.retained-date { display:flex; align-items:center; gap:18px; flex-wrap:wrap; color:#60738c; font-size:12px; margin:14px 0; }
+.reading-brief { padding-top:24px !important; }
+@media (max-width:800px) {
+  .research-result-types > span { flex-basis:100%; margin-left:0; line-height:1.7; }
+  .research-result-types button { min-height:44px; }
+  .discovery-search-controls { display:block; }
+  .discovery-search-controls .sort-control { display:flex; margin:14px 0; }
+  .reading-brief { padding-top:16px !important; }
+}

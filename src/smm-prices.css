@@ -26,6 +26,13 @@
 .smm-quote { padding: 13px 12px 8px; border: 1px solid #e8eef7; border-radius: 6px; background: #fbfcff; margin-bottom: 12px; }
 .smm-quote.is-down { border-color: #daeee6; background: #f4fbf8; }
 .smm-quote-heading { display: flex; align-items: center; justify-content: space-between; gap: 6px; font-size: 13px; line-height: 1.5; }
+.smm-quote-comparison { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 8px; margin: 4px 0 9px; color: #61728a; font-size: 12px; line-height: 1.5; }
+.smm-popover .smm-quote-status { margin: 5px 0 0; color: #8b5a16; font-size: 12px; line-height: 1.5; }
+.smm-quote-dates { display: grid; gap: 3px; margin: 3px 0 6px; font-size: 11px; line-height: 1.5; color: #526780; }
+.smm-quote-dates > div { display: flex; flex-wrap: wrap; gap: 2px 8px; }
+.smm-quote-dates dt { font-weight: 400; }
+.smm-quote-dates dd { margin: 0; font-variant-numeric: tabular-nums; }
+.smm-quote-source { display: inline-flex; align-items: center; gap: 3px; font-size: 11px; line-height: 1.5; color: #1761d8; }
 .smm-change { display: inline-flex; align-items: center; gap: 3px; color: #61728a; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .smm-change.down { color: #087b45; }
 .smm-change.up { color: #c82132; }

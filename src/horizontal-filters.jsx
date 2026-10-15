@@ -4,6 +4,7 @@ import { IconChevronDown, IconX } from '@tabler/icons-react';
 import data from '../public/assets/catalog.json';
 import { TOPICS, SUBCATEGORIES, INFO_TYPES } from './catalog.js';
 import { CheckOption } from './components.jsx';
+import { companyRegistry } from './domain/company-research.js';
 
 export function HorizontalFilters({ filters, update, toggle, subCounts, regionOptions, companyId, reportsView }) {
   const [open, setOpen] = useState(null);
@@ -76,7 +77,7 @@ export function HorizontalFilters({ filters, update, toggle, subCounts, regionOp
   }
   const listOptions = key => {
     const options = key === 'types' ? INFO_TYPES.map(item => [item.id, item.label])
-      : key === 'companies' ? data.companies.filter(company => company.role !== 'reference').map(company => [company.id, company.name])
+      : key === 'companies' ? companyRegistry(data).map(company => [company.id, company.name])
       : Object.entries(data.labelMaps[key]);
     return options.map(([id, label]) => <CheckOption key={id} label={label} checked={filters[key].includes(id)} onChange={() => toggle(key, id)} />);
   };

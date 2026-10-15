@@ -1,0 +1,11 @@
+.financial-amounts { display:grid; gap:4px; min-width:0; }
+.financial-current,.financial-prior { display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 8px; }
+.financial-current > span,.financial-prior { color:#526780; font-size:12px; }
+.financial-current > strong { color:#193454; font-size:16px; font-variant-numeric:tabular-nums; }
+.financial-prior > span:last-child { font-variant-numeric:tabular-nums; }
+.financial-change-description { color:#193454; font-size:13px; font-weight:700; line-height:1.6; }
+.financial-preview .financial-amounts .financial-change { margin-left:0; }
+.financial-metric { margin:12px 0; }
+.financial-preview .financial-metric-label { margin:0 0 4px; font-weight:600; }
+.financial-preview .financial-attribution { margin:4px 0 0; color:#526780; font-size:12px; }
+.financial-period { font-size:12px; color:#526780; }

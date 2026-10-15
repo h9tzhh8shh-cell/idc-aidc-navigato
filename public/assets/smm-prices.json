@@ -2,20 +2,20 @@
   "reportId": "smm-h100-observation-20261009",
   "sourceUrl": "https://aidc.smm.cn/price",
   "sourceCadence": "工作日11:30前",
-  "evidence": "用户于2026-10-15提供的SMM算力租赁价格截图；截图未显示报价日期。",
+  "evidence": "2026-10-15人工核对SMM原站公开报价；报价日期取自各产品newest_price.renew_date。原站四组均显示0.00%，未注明比较日期及依据，页面不展示该涨跌幅。",
   "groups": [
     {
       "model": "H100 80G", "type": "基准价", "scale": [13, 16],
       "quotes": [
-        { "label": "整机 · 长三角 · 包月", "mean": 14.32, "low": 13.54, "high": 15.10, "change": 0 },
-        { "label": "整机 · 西部 · 包月", "mean": 14.06, "low": 13.54, "high": 14.58, "change": 0 }
+        { "label": "整机 · 长三角 · 包月", "productCode": "SMM-GPU-CC-005", "mean": 14.32, "low": 13.54, "high": 15.10, "unit": "元/卡·时", "quoteDate": "2026-10-15", "checkedAt": "2026-10-15T06:24:39.687Z", "sourceUrl": "https://aidc.smm.cn/price", "sourceChange": { "percent": 0, "label": "0.00%" }, "comparison": null },
+        { "label": "整机 · 西部（青海、甘肃、宁夏、内蒙古等） · 包月", "productCode": "SMM-GPU-CC-019", "mean": 14.06, "low": 13.54, "high": 14.58, "unit": "元/卡·时", "quoteDate": "2026-10-15", "checkedAt": "2026-10-15T06:24:39.687Z", "sourceUrl": "https://aidc.smm.cn/price", "sourceChange": { "percent": 0, "label": "0.00%" }, "comparison": null }
       ]
     },
     {
       "model": "4090 24G", "type": "零售价", "scale": [1, 4],
       "quotes": [
-        { "label": "单卡 · 全国 · 短期", "mean": 1.89, "low": 1.38, "high": 2.29, "change": 0 },
-        { "label": "整机 · 全国 · 短期", "mean": 2.11, "low": 1.37, "high": 3.95, "change": -13.88 }
+        { "label": "单卡 · 全国 · 短期", "productCode": "SMM-GPU-CC-020", "mean": 1.89, "low": 1.38, "high": 2.29, "unit": "元/卡·时", "quoteDate": "2026-10-15", "checkedAt": "2026-10-15T06:24:39.687Z", "sourceUrl": "https://aidc.smm.cn/price", "sourceChange": { "percent": 0, "label": "0.00%" }, "comparison": null },
+        { "label": "整机 · 全国 · 短期", "productCode": "SMM-GPU-CC-021", "mean": 2.11, "low": 1.37, "high": 3.95, "unit": "元/卡·时", "quoteDate": "2026-10-15", "checkedAt": "2026-10-15T06:24:39.687Z", "sourceUrl": "https://aidc.smm.cn/price", "sourceChange": { "percent": 0, "label": "0.00%" }, "comparison": null }
       ]
     }
   ]

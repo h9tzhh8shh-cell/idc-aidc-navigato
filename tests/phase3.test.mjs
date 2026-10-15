@@ -44,7 +44,7 @@ test('C11/C31: fixed cutoff and batch identity survive rich URL and old URL reta
  assert.equal(readQuery('?q=IDC').filters.scope,'all');assert.equal(readQuery('?view=reports').filters.dateWindow,'all');
  assert.equal(readQuery('?view=reports&dateWindow=7&asOf=2026-02-30').filters.dateWindow,'all');
  assert.match(readQuery('?view=reports&dateWindow=7&asOf=2099-01-01').notice,/日期/);
- assert.equal(readQuery('?dateWindow=7&asOf=2026-10-08').filters.dateWindow,'all');
+ assert.equal(readQuery('?dateWindow=7&asOf=2026-10-08').filters.dateWindow,'7');
 });
 test('C12: document time does not filter or roll back company current events',()=>{
  const latest=companyEvents(data,'hec',{scope:'domestic'});
