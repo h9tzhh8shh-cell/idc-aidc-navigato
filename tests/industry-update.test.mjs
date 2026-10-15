@@ -4,6 +4,7 @@ import before from './fixtures/discovery-reviewed.mjs';
 import current from '../public/assets/catalog.json' with {type:'json'};
 import input from '../data-candidates/discovery-20261015.json' with {type:'json'};
 import weekly from '../data-candidates/weekly-strategy-20261015.json' with {type:'json'};
+import revisedWeekly from '../data-candidates/weekly-strategy-20261015-revised.json' with {type:'json'};
 import {mergeDiscoveryBatch} from '../scripts/discovery-update.mjs';
 import {mergeWeeklyReview} from '../scripts/weekly-update.mjs';
 import {validateCatalog} from '../src/domain/catalog.js';
@@ -11,10 +12,11 @@ import {discoveryEligibleReport,generateIssue,recentDiscoveries,industryDiscover
 import {decorateSources,filterReports} from '../src/catalog.js';
 
 test('U01 reviewed October 15 import and weekly supplement reproduce the catalog and replay unchanged',()=>{
-  const imported=mergeDiscoveryBatch(before,input),result=mergeWeeklyReview(imported,weekly);
+  const imported=mergeDiscoveryBatch(before,input),result=mergeWeeklyReview(mergeWeeklyReview(imported,weekly),revisedWeekly);
   assert.deepEqual(result,current);
   assert.deepEqual(mergeDiscoveryBatch(current,input),current);
   assert.deepEqual(mergeWeeklyReview(current,weekly),current);
+  assert.deepEqual(mergeWeeklyReview(current,revisedWeekly),current);
   assert.deepEqual(validateCatalog(current),[]);
   for(const key of ['companies','sources','reports','events','changeBatches'])assert.deepEqual(current[key].slice(0,before[key].length),before[key],key);
   assert.deepEqual(current.discovery.issues.slice(0,before.discovery.issues.length),before.discovery.issues);
@@ -68,9 +70,10 @@ test('U06 21-day expiry still applies to new company evidence and media articles
 });
 
 test('U07 weekly stays October 5–11 and can be regenerated after the new historical company stories are reviewed',()=>{
-  const issue=generateIssue(current,{kind:'weekly',date:'2026-10-15',generatedAt:weekly.generatedAt});
+  const issue=generateIssue(current,{kind:'weekly',date:'2026-10-15',generatedAt:revisedWeekly.generatedAt});
   assert.equal(issue.periodStart,'2026-10-05');assert.equal(issue.periodEnd,'2026-10-11');
   assert.equal(issue.sections.length,8);assert.equal(issue.reportIds.length,15);
+  assert.ok(!issue.sections.find(section=>section.id==='companies').intro?.includes('暂无纳入选稿'));
   assert.ok(issue.reportIds.includes('stcn-capitalonline-huailai-20261011'));
   assert.ok(!issue.reportIds.includes('litong-operations-20261015'));
   assert.equal(availableIssues(current.discovery.issues,'weekly','2026-10-15')[0].id,issue.id);

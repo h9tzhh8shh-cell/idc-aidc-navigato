@@ -1,0 +1,457 @@
+{
+  "requestedDate": "2026-10-15",
+  "periodStart": "2026-10-05",
+  "periodEnd": "2026-10-11",
+  "generatedAt": "2026-10-15T09:49:34+08:00",
+  "reportIds": [
+    "jiemian-compute-economics-20261011",
+    "dayone-sec-f1-20261005",
+    "dcd-bitdeer-a901-20261009",
+    "purwakarta-bdx-water-review-20261007",
+    "thepaper-gcc-aidc-20261009",
+    "36kr-liquid-delivery-20261010",
+    "nbd-luxshare-vpd-20261010",
+    "synergy-digital-services-forecast-20261005",
+    "ornn-daily-settlement-20261007",
+    "mddi-ai-controls-response-20261006",
+    "erc-data-center-boi-clarification-20261005",
+    "wmedia-selangor-water-20261009",
+    "cls-goldman-20261005",
+    "stcn-capitalonline-huailai-20261011",
+    "stcn-aofei-repurchase-20261009"
+  ],
+  "sections": [
+    {
+      "id": "summary",
+      "intro": "本周研究判断：行业竞争正在同时围绕客户付费能力、项目交付能力和高密度机房适配展开。对经营决策最有价值的，是把订单、可用资源和投入回收放在同一张项目表中比较。",
+      "items": [
+        {
+          "title": "国内算力经营讨论转向成本与利用率",
+          "reportIds": [
+            "jiemian-compute-economics-20261011"
+          ],
+          "viewpoint": "奇帆商业本周讨论电费、设备折旧、利用率及客户付费对算力投资回收的影响。",
+          "significance": "设备规模需要转化为持续付费使用，才会形成稳定经营回报。",
+          "businessImpact": "算力租赁项目立项应同时测算租金、付费利用率、电费和折旧，优先核实客户用量与付款安排。"
+        },
+        {
+          "title": "东南亚扩张进入容量兑现和资源配套竞争",
+          "reportIds": [
+            "dayone-sec-f1-20261005",
+            "dcd-bitdeer-a901-20261009",
+            "purwakarta-bdx-water-review-20261007"
+          ],
+          "fact": "DayOne披露分市场容量，Bitdeer签订马来西亚A901长期服务协议；印尼BDx项目继续接受许可及用水审查。",
+          "significance": "扩张需求与供水、供电、审批、设备安装相互牵制，交付节奏成为竞争要素。",
+          "businessImpact": "海外项目的报价和交付承诺应与资源落实、验收和客户起租节点联动。"
+        },
+        {
+          "title": "高密度机房升级需要系统交付能力",
+          "reportIds": [
+            "thepaper-gcc-aidc-20261009",
+            "36kr-liquid-delivery-20261010",
+            "nbd-luxshare-vpd-20261010"
+          ],
+          "fact": "GCC介绍液冷、供配电规范协作；每经报道立讯精密数据中心电源产品相关调查及公司回应。",
+          "viewpoint": "硅碳变量分析液冷产品从样品认证走向批量交付的要求。",
+          "significance": "新技术的价值取决于整套机房的兼容、验证和长期运维。",
+          "businessImpact": "项目采购应增加系统联调、备件和服务响应要求，并比较供电及液冷方案的整体成本。"
+        },
+        {
+          "title": "全球需求仍有支撑，租赁收益要用同口径数据检验",
+          "reportIds": [
+            "synergy-digital-services-forecast-20261005",
+            "ornn-daily-settlement-20261007"
+          ],
+          "fact": "Synergy上调云与数字服务长期预测；Ornn公开GPU租赁成交价格指标提供了按机型观察的基准。",
+          "significance": "需求增长与具体机型的租赁收益需要分层判断。",
+          "businessImpact": "业务计划分别跟踪客户预算、机型报价和付费使用时长，持续比较市场价格与本公司成本。"
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "intro": "中国内地及香港：本期已核资料中暂无可用于本板块的新增政策；国内经营与技术变化分别见第四、第五板块。",
+      "items": [
+        {
+          "title": "新加坡关注芯片出口管制与远程算力访问",
+          "reportIds": [
+            "mddi-ai-controls-response-20261006"
+          ],
+          "fact": "新加坡MDDI于10月6日在国会书面答复中表示，正监测外国AI芯片出口管制及远程算力访问限制，并与企业沟通。",
+          "significance": "跨境算力服务的设备供应和客户访问方式进入政策关注范围。",
+          "businessImpact": "涉及跨境客户的服务方案，应逐项核对设备来源、部署地和访问方式，再落实交付安排。"
+        },
+        {
+          "title": "泰国调整投资促进申报前置程序",
+          "reportIds": [
+            "erc-data-center-boi-clarification-20261005"
+          ],
+          "fact": "泰国ERC于10月5日说明，数据中心投资促进申请改为取得BOI指定分委员会认可，取消事先取得ERC确认函的申报前置环节。",
+          "significance": "项目团队需要按新程序安排申报材料与办理顺序。",
+          "businessImpact": "评估泰国项目时，应重新列出办理部门、材料清单及所需时间，并单独推进接电安排。"
+        },
+        {
+          "title": "东南亚供水与美国项目阻力值得并行跟踪",
+          "reportIds": [
+            "purwakarta-bdx-water-review-20261007",
+            "wmedia-selangor-water-20261009",
+            "cls-goldman-20261005"
+          ],
+          "fact": "印尼Purwakarta继续审查BDx项目的环评、建筑审批和冷却用水。",
+          "viewpoint": "BIMB关于雪兰莪供水的研究观点，经w.media转述认为可能影响2027年建设；财联社转述高盛对美国项目阻力的分析，其截至2027年的增长判断基本不变。",
+          "significance": "市场需求与当地项目推进条件可能出现不同节奏。",
+          "businessImpact": "市场排序应同时比较客户需求、资源取得和交付时间，把选址及许可延迟纳入项目现金流情景。"
+        },
+        {
+          "title": "全球云与数字服务增长提供需求背景",
+          "reportIds": [
+            "synergy-digital-services-forecast-20261005"
+          ],
+          "fact": "Synergy 10月5日发布研究：2026年第二季度云基础设施、SaaS、社交媒体和搜索四类服务合计收入4970亿美元，同比增长27%。",
+          "viewpoint": "机构预计上述四类服务2031年合计年收入超过5万亿美元。",
+          "significance": "这一统计反映主要云与数字服务的业务规模，可用于观察基础设施需求来源。",
+          "businessImpact": "客户开发可重点核对云服务及AI应用客户的预算和部署计划，项目收益测算仍按具体合同进行。"
+        }
+      ]
+    },
+    {
+      "id": "companies",
+      "items": [
+        {
+          "title": "DayOne：以长期客户合同推动跨市场园区建设",
+          "reportIds": [
+            "dayone-sec-f1-20261005"
+          ],
+          "fact": "DayOne于10月5日提交F-1。文件介绍其以空间、电力和冷却服务为主营业务，客户管理IT设备；电费通常按实际用量传导。",
+          "significance": "其发展模式围绕长期客户合同、资源取得和多市场复制展开。",
+          "businessImpact": "同行对标可拆成客户锁定、资源储备、建设周期和服务回款四项，评估公司在哪个环节具备优势。"
+        },
+        {
+          "title": "Bitdeer：为GPU云服务锁定高密度设施",
+          "reportIds": [
+            "dcd-bitdeer-a901-20261009"
+          ],
+          "fact": "Bitdeer于10月8日公告签订10年A901数据中心服务协议，位于马来西亚，规模67MW关键IT负载，拟配置液冷GB300 NVL72系统，计划2027年一季度开始、二季度完成容量交付。",
+          "significance": "GPU云服务商通过长期设施协议组织高密度供给，机房与计算服务的交付需要衔接。",
+          "businessImpact": "面向同类客户的合作方案应明确可交付IT负载、液冷条件、分期交付日期，以及终端客户的签约和起租安排。"
+        },
+        {
+          "title": "首都在线以整体出租锁定怀来一期客户",
+          "reportIds": [
+            "stcn-capitalonline-huailai-20261011"
+          ],
+          "fact": "首都在线与互联网头部企业签署怀来一期服务协议，高功率机柜资源整体出租，并由公司提供托管及运维；这是其在河北首个由机房转租转向自建运营的成规模项目。",
+          "significance": "项目从资源转租延伸至自建运营，客户协议与机房投建开始形成更直接的经营联系。",
+          "businessImpact": "对同类项目，可将整租客户的功率需求、验收和起租节点纳入建设排期；同时比较自建投入、长期租约收入和运维成本。"
+        },
+        {
+          "title": "奥飞数据拟通过回购支持员工持股或激励",
+          "reportIds": [
+            "stcn-aofei-repurchase-20261009"
+          ],
+          "fact": "奥飞数据董事长、总经理提议以5000万元至1亿元回购股份，用于员工持股计划或股权激励。",
+          "significance": "IDC运营涉及长期建设与服务交付，激励方案是观察企业组织和资金安排的一项线索。",
+          "businessImpact": "持续跟踪回购方案审议、实施资金及激励对象设置，并与项目资本开支安排一起评估。"
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "items": [
+        {
+          "title": "GPU租赁价格：固定机型与计量单位建立跟踪基准",
+          "reportIds": [
+            "ornn-daily-settlement-20261007"
+          ],
+          "fact": "已核10月7日Ornn日结快照：H100 SXM 2.85、H200 5.29、B200 7.56、A100 SXM4 0.90，单位均为美元/GPU小时；数据为按需实际租赁交易的成交量加权缩尾价格。该日结于北京时间10月8日04:00更新。",
+          "significance": "按机型、交易类型和计量单位固定口径后，才适合做连续价格比较。本期周均价及周环比暂无同口径完整序列。",
+          "businessImpact": "租赁产品报价比较应同时列明卡型、租期、网络及服务内容；经营预算还需纳入利用率、电费和折旧。"
+        },
+        {
+          "title": "DayOne容量：分别跟踪在运、在建和合同承诺",
+          "reportIds": [
+            "dayone-sec-f1-20261005"
+          ],
+          "fact": "F-1披露截至2026年9月20日，全球在运962MW、在建1328MW，合同承诺容量（Bookings）2281MW；柔佛在运789MW、在建616MW，巴淡岛在运72MW、在建240MW，中国香港在运27MW、在建17MW。单位为MW IT电力容量；Bookings按具有法律约束力的客户合同统计。",
+          "significance": "分阶段容量比单一总规模更能体现供给释放的时间结构。",
+          "businessImpact": "公司项目台账可对应列出已投运、在建、客户承诺及预计交付日期，逐月比较投运和起租进度。"
+        },
+        {
+          "title": "国内经营观察：把利用率与成本放回租赁测算",
+          "reportIds": [
+            "jiemian-compute-economics-20261011"
+          ],
+          "viewpoint": "奇帆商业讨论了算力租赁、自建及基础设施运营的不同成本承担方式，重点涉及电力、折旧和付费客户。",
+          "significance": "收益取决于资源是否被有效使用，以及客户付款能否覆盖持续支出。",
+          "businessImpact": "对拟新增GPU资源，分别测算不同租金和付费利用率下的现金流；对机房业务，核对客户上架计划和电费结算条款。"
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "items": [
+        {
+          "title": "液冷与供配电规范：从单点设备转向系统适配",
+          "reportIds": [
+            "thepaper-gcc-aidc-20261009",
+            "36kr-liquid-delivery-20261010"
+          ],
+          "fact": "GCC在10月9日访谈中介绍AIDC供需方围绕散热、供配电共同制定规范，并讨论800伏直流供配电探索。",
+          "viewpoint": "硅碳变量10月10日分析液冷产业由样品认证走向规模交付时的运维要求。",
+          "significance": "不同技术组合会改变机房接口、设备采购和验收安排。",
+          "businessImpact": "新建及改造项目应与客户确认机柜功率、液冷接口、配电架构和维护责任，再比较整体投资与运维费用。"
+        },
+        {
+          "title": "数据中心电源模块：关注供应商验证与交付路径",
+          "reportIds": [
+            "nbd-luxshare-vpd-20261010"
+          ],
+          "fact": "每经10月10日报道立讯精密及子公司涉及美国数据中心垂直供电技术相关337调查；公司回应涉案产品处于客户验证阶段。",
+          "significance": "高密度供电产品进入客户体系还涉及验证、知识产权和供应链安排。",
+          "businessImpact": "选型时核实产品验证进度、供货地区、替代方案和交期，重点评估对本项目设备采购的实际影响。"
+        }
+      ]
+    },
+    {
+      "id": "deep-dive",
+      "items": [
+        {
+          "title": "经营模式选择：托管机房与GPU租赁分别由谁承担成本",
+          "reportIds": [
+            "jiemian-compute-economics-20261011",
+            "dayone-sec-f1-20261005"
+          ],
+          "background": "算力业务同时涉及机房资源、IT设备和持续运营，不同服务模式对应不同投入和回款结构。",
+          "fact": "DayOne披露以空间、电力及冷却服务收费；国内经营讨论则将GPU折旧、利用率和客户付费作为关键变量。",
+          "significance": "选择经营模式，决定公司承担哪些资产投入和需求波动。",
+          "businessImpact": "对同一客户需求，可分别比较机房托管、GPU长租及按量服务的投资额、回款条件和资源闲置成本。",
+          "analysis": "本期材料支持把“谁购置设备、谁承担闲置、何时开始付款”列为商业方案的首要问题。公司应根据已取得的客户需求和交付能力决定投入方式。"
+        },
+        {
+          "title": "东南亚扩张：把资源取得与客户交付放在同一进度表",
+          "reportIds": [
+            "dcd-bitdeer-a901-20261009",
+            "purwakarta-bdx-water-review-20261007",
+            "wmedia-selangor-water-20261009"
+          ],
+          "background": "东南亚AI设施建设持续推进，项目从选址、资源落实到设备联调需跨多个环节协作。",
+          "fact": "A901进入长期设施协议及计划交付阶段，BDx项目处于许可与用水审查阶段。",
+          "significance": "建设规模相近的项目，可能因资源和审批进度形成不同的交付能力。",
+          "businessImpact": "在项目评估中将接电、供水、许可、机房验收和客户起租逐项排期，识别会推迟现金流的关键环节。",
+          "analysis": "竞争优势正在从取得项目机会延伸到按期交付。对外承诺可围绕已落实条件分期安排，并让设备采购与机房就绪时间匹配。"
+        },
+        {
+          "title": "高密度升级：采购评价需要覆盖整个机房生命周期",
+          "reportIds": [
+            "thepaper-gcc-aidc-20261009",
+            "36kr-liquid-delivery-20261010",
+            "nbd-luxshare-vpd-20261010"
+          ],
+          "background": "GPU系统升级提高机柜供电和散热要求，设施改造需要跨专业协同。",
+          "fact": "本周出现技术规范协作、液冷交付分析及电源产品验证相关报道。",
+          "significance": "单项设备参数难以直接代表整套设施的能效和可用性。",
+          "businessImpact": "技术评审应比较整体功耗、改造停机、备件、维护和验收成本；对客户尚未确定的架构采用分期设计。",
+          "analysis": "业务机会在于把供电、冷却、联调与运维组合成可验收的交付能力。供应商评价应加入现场运行记录、响应时效和系统兼容性。"
+        }
+      ]
+    },
+    {
+      "id": "strategy",
+      "items": [
+        {
+          "title": "项目建设：将资源落实和客户起租设为投资节点",
+          "reportIds": [
+            "dcd-bitdeer-a901-20261009",
+            "purwakarta-bdx-water-review-20261007"
+          ],
+          "analysis": "设施长期协议与资源审查并存，说明项目推进速度需要逐项拆解。对于公司拟建或改造项目，审批、供电和客户验收进度会影响资金占用。",
+          "action": "战略、工程及商务团队共同形成单项目进度表；每一阶段列出建设付款、资源到位、客户验收和起租条件，优先推进条件清晰的项目。"
+        },
+        {
+          "title": "客户与商业模式：用付费需求决定GPU采购节奏",
+          "reportIds": [
+            "jiemian-compute-economics-20261011",
+            "ornn-daily-settlement-20261007"
+          ],
+          "analysis": "租金和付费利用率直接影响GPU资产回收。已确定持续用量的客户，更适合讨论长租与容量锁定；需求波动较大的客户，可比较按量服务方案。",
+          "action": "商务团队核实客户机型、用量、租期和付款安排；经营团队测算租金下降及利用率变化情景，据此安排采购批次。"
+        },
+        {
+          "title": "技术与业务布局：先建立高密度交付样板",
+          "reportIds": [
+            "thepaper-gcc-aidc-20261009",
+            "36kr-liquid-delivery-20261010",
+            "nbd-luxshare-vpd-20261010"
+          ],
+          "analysis": "技术协作和供应商验证将影响设备选型及交付效率。具备系统联调和运维能力的团队，更容易承接高密度设施改造需求。",
+          "action": "选择一个需求明确的客户项目，列出供电、液冷、接口和运维验收指标，比较两套可供货方案的全生命周期成本。"
+        },
+        {
+          "title": "区域机会：按客户需求和资源条件比较国内与东南亚",
+          "reportIds": [
+            "synergy-digital-services-forecast-20261005",
+            "dayone-sec-f1-20261005",
+            "mddi-ai-controls-response-20261006"
+          ],
+          "analysis": "全球数字服务增长、东南亚设施扩张和跨境访问政策共同影响市场布局。区域机会应落实到具体客户、服务内容和可交付资源。",
+          "action": "以中国内地及香港、东南亚分别建立机会清单，记录客户需求、网络时延、供电条件、合作方式与预计回款；按可执行程度安排下一轮商务核实。"
+        }
+      ]
+    },
+    {
+      "id": "follow-up",
+      "intro": "对应下一统计周：2026年10月12日—18日。",
+      "items": [
+        {
+          "title": "国内算力客户的实际付费用量",
+          "reportIds": [
+            "jiemian-compute-economics-20261011"
+          ],
+          "analysis": "客户持续用量决定租赁业务的资源利用和回款。",
+          "action": "核实重点客户所需机型、起租时间、最低用量、租期和付款条件，将商务线索与已签约需求分别记录。"
+        },
+        {
+          "title": "GPU同口径价格序列",
+          "reportIds": [
+            "ornn-daily-settlement-20261007"
+          ],
+          "analysis": "单日价格可作横截面对照，连续数据才能支持周度趋势判断。",
+          "action": "取得相同卡型和计费口径的逐日记录，核对UTC结算日与北京时间，计算同一完整周的均价及可比周变化。"
+        },
+        {
+          "title": "DayOne及A901项目交付与客户签约",
+          "reportIds": [
+            "dayone-sec-f1-20261005",
+            "dcd-bitdeer-a901-20261009"
+          ],
+          "analysis": "分期容量和客户承诺决定后续供给释放与起租节奏。",
+          "action": "查公司公告和披露文件，核实在建转在运、设备进场、客户签约及验收起租的新增进展。"
+        },
+        {
+          "title": "印尼用水审查、雪兰莪供水及泰国申报程序",
+          "reportIds": [
+            "purwakarta-bdx-water-review-20261007",
+            "wmedia-selangor-water-20261009",
+            "erc-data-center-boi-clarification-20261005"
+          ],
+          "analysis": "资源与程序直接影响项目能否按期推进。",
+          "action": "查地方政府、供水机构和BOI/ ERC公开材料，核实BDx审查结论、供水扩容安排，以及泰国新程序对应的材料清单。"
+        },
+        {
+          "title": "液冷、供配电规范及供应商验证",
+          "reportIds": [
+            "thepaper-gcc-aidc-20261009",
+            "36kr-liquid-delivery-20261010",
+            "nbd-luxshare-vpd-20261010"
+          ],
+          "analysis": "规范和验证进度会影响新建机房设计、采购和联调。",
+          "action": "跟踪GCC拟发布成果及供应商正式说明，核实适用功率、接口、验证阶段、供货时间和运维责任。"
+        }
+      ]
+    }
+  ],
+  "coverageNotes": {},
+  "decisions": [
+    {
+      "reportId": "hec-buyback-20261010",
+      "selected": false,
+      "reason": "股份回购用于激励，与本期IDC建设和算力经营主线关联较弱，保留企业目录。"
+    },
+    {
+      "reportId": "mddi-ai-controls-response-20261006",
+      "selected": true,
+      "reason": "新加坡官方回应跨境芯片和远程访问问题，关系服务部署。"
+    },
+    {
+      "reportId": "dayone-sec-f1-20261005",
+      "selected": true,
+      "reason": "公司原始披露支持经营模式、容量阶段及香港和东南亚同行比较。"
+    },
+    {
+      "reportId": "erc-data-center-boi-clarification-20261005",
+      "selected": true,
+      "reason": "泰国官方申报程序更新，影响项目办理流程。"
+    },
+    {
+      "reportId": "jiemian-compute-economics-20261011",
+      "selected": true,
+      "reason": "国内算力经营观点，聚焦付费利用率、电费及折旧。"
+    },
+    {
+      "reportId": "36kr-liquid-delivery-20261010",
+      "selected": true,
+      "reason": "国内液冷产业交付与运维观点，用于技术和采购分析。"
+    },
+    {
+      "reportId": "nbd-luxshare-vpd-20261010",
+      "selected": true,
+      "reason": "国内电源供应商客户验证及相关调查，对采购与供货有经营影响。"
+    },
+    {
+      "reportId": "dcd-bitdeer-a901-20261009",
+      "selected": true,
+      "reason": "长期设施协议与高密度设备方案，可分析合同、交付及客户起租。"
+    },
+    {
+      "reportId": "thepaper-gcc-aidc-20261009",
+      "selected": true,
+      "reason": "国内供需协作及供配电规范，影响机房技术适配。"
+    },
+    {
+      "reportId": "wmedia-sarawak-framework-20261009",
+      "selected": false,
+      "reason": "探索框架尚未形成明确项目规模和交付安排，本期优先分析已签服务协议的项目。"
+    },
+    {
+      "reportId": "wmedia-selangor-water-20261009",
+      "selected": true,
+      "reason": "马来西亚供水研究观点，为资源条件和建设节奏分析提供线索。"
+    },
+    {
+      "reportId": "open-konst-seriesb-20261008",
+      "selected": false,
+      "reason": "融资通稿保留企业及报道目录；本期优先采用更明确的容量、合同和经营指标。"
+    },
+    {
+      "reportId": "dcd-firmus-hall-progress-20261007",
+      "selected": false,
+      "reason": "机房移交进展保留行业报道；本期项目分析集中于经营模式、容量及资源约束。"
+    },
+    {
+      "reportId": "ornn-daily-settlement-20261007",
+      "selected": true,
+      "reason": "可持续跟踪的按机型成交价格指标，补充租赁经营数据。"
+    },
+    {
+      "reportId": "purwakarta-bdx-water-review-20261007",
+      "selected": true,
+      "reason": "印尼地方政府实际许可与用水审查进展，关系交付排期。"
+    },
+    {
+      "reportId": "cls-goldman-20261005",
+      "selected": true,
+      "reason": "美国项目阻力与需求观点，提供海外建设环境比较。"
+    },
+    {
+      "reportId": "jiemian-capital-20261005",
+      "selected": false,
+      "reason": "融资与交付观点和本期深度分析主题重合，采用公司披露及项目原件作为主要依据。"
+    },
+    {
+      "reportId": "synergy-digital-services-forecast-20261005",
+      "selected": true,
+      "reason": "研究机构原始市场数据与预测，提供全球需求背景。"
+    },
+    {
+      "reportId": "stcn-capitalonline-huailai-20261011",
+      "selected": true,
+      "reason": "补充本周国内同行的客户签约、自建运营及激励安排。"
+    },
+    {
+      "reportId": "stcn-aofei-repurchase-20261009",
+      "selected": true,
+      "reason": "补充本周国内同行的客户签约、自建运营及激励安排。"
+    }
+  ]
+}
