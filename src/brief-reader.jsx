@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { OutLink } from './components.jsx';
 import { availableIssues, beijingTimestamp, discoveryBatch, generateIssue, previousCompleteWeek, saveIssue } from './domain/discovery.js';
-import { briefReading, briefSummaryText } from './domain/brief-reading.js';
+import { briefReading, briefSummaryText, readingSectionAtPosition } from './domain/brief-reading.js';
 import './brief-reader.css';
 
 const storageKey = 'navigator-local-briefs-v1';
-function JumpLink({ target, children, className }) {
-  return <a className={className} href={`#${target}`} onClick={event => {
+function JumpLink({ target, children, className, current }) {
+  return <a className={className} href={`#${target}`} aria-current={current ? 'location' : undefined} onClick={event => {
     event.preventDefault();
     const section = document.getElementById(target);
     section?.focus({ preventScroll: true }); section?.scrollIntoView({ block: 'start' });
@@ -24,8 +24,26 @@ export function BriefReader({ data, kind, navigation, onNavigate, issues, onIssu
   const [date, setDate] = useState(beijingTimestamp().slice(0, 10));
   const [notice, setNotice] = useState('');
   const [copyFallback, setCopyFallback] = useState('');
+  const reader = useRef(null);
+  const [activeSection, setActiveSection] = useState('brief-summary');
   useEffect(() => { setNotice(''); setCopyFallback(''); }, [kind]);
   useEffect(() => setCopyFallback(''), [issue?.id]);
+  useEffect(() => {
+    const panel = reader.current.closest('.main-panel');
+    const sections = [...reader.current.querySelectorAll('.brief-paper section[id]')];
+    if (!panel || !sections.length) return;
+    let frame;
+    const update = () => {
+      const top = panel.getBoundingClientRect().top + 20;
+      setActiveSection(readingSectionAtPosition(sections.map(section => ({ id: section.id, top: section.getBoundingClientRect().top - top })), panel.scrollHeight > panel.clientHeight && panel.scrollTop + panel.clientHeight >= panel.scrollHeight - 2));
+    };
+    const schedule = () => { cancelAnimationFrame(frame); frame = requestAnimationFrame(update); };
+    panel.addEventListener('scroll', schedule, { passive: true });
+    const observer = new ResizeObserver(schedule);
+    observer.observe(reader.current); observer.observe(panel);
+    update();
+    return () => { panel.removeEventListener('scroll', schedule); observer.disconnect(); cancelAnimationFrame(frame); };
+  }, [issue?.id]);
   const week = previousCompleteWeek(date || beijingTimestamp().slice(0, 10));
   function generate() {
     try {
@@ -42,7 +60,7 @@ export function BriefReader({ data, kind, navigation, onNavigate, issues, onIssu
     try { await navigator.clipboard.writeText(text); setNotice('摘要已复制，包含报告日期和来源链接。'); setCopyFallback(''); }
     catch { setCopyFallback(text); setNotice('请复制下方摘要。'); }
   }
-  return <section className="brief-workspace brief-reading" id="results" tabIndex={-1}>
+  return <section ref={reader} className="brief-workspace brief-reading" id="results" tabIndex={-1}>
     <div className="discovery-heading brief-reading-toolbar"><h2>{kind === 'daily' ? '每日快报' : '行业周报'}</h2><div className="brief-reading-actions">
       {onBack && <button className="button secondary" onClick={onBack}>返回检索</button>}
       {model && <><button className="button secondary" onClick={copySummary}>复制摘要</button><button className="button primary" onClick={() => window.print()}>打印 / 保存 PDF</button></>}
@@ -51,18 +69,18 @@ export function BriefReader({ data, kind, navigation, onNavigate, issues, onIssu
     {notice && <p className="brief-notice" role="status">{notice}</p>}
     {copyFallback && <div className="brief-copy-fallback"><label htmlFor="brief-copy-text">摘要、日期与来源</label><textarea id="brief-copy-text" readOnly value={copyFallback} onFocus={event => event.target.select()} /><button className="text-link" onClick={() => setCopyFallback('')}>收起</button></div>}
     {!model ? <p className="discovery-empty">暂无报告，可生成新一期。</p> : <div className="brief-reading-layout">
-      <nav className="brief-contents" aria-label="报告章节目录"><strong>章节目录</strong><JumpLink target="brief-summary">阅读摘要</JumpLink>{model.sections.map((section, index) => <JumpLink key={section.id} target={`brief-section-${section.id}`}>{index + 1}. {section.label}</JumpLink>)}<JumpLink target="brief-sources">重要信息来源</JumpLink></nav>
+      <nav className="brief-contents" aria-label="报告章节目录"><strong>章节目录</strong><JumpLink target="brief-summary" current={activeSection === 'brief-summary'}>阅读摘要</JumpLink>{model.sections.map((section, index) => <JumpLink key={section.id} target={`brief-section-${section.id}`} current={activeSection === `brief-section-${section.id}`}>{index + 1}. {section.label}</JumpLink>)}<JumpLink target="brief-sources" current={activeSection === 'brief-sources'}>重要信息来源</JumpLink></nav>
       <article className="brief-paper">
-        <header><h2>{model.title}</h2><p>{model.dateLabel}</p><p>{model.references.length} 项来源资料 · 生成于 {model.generatedAt}</p></header>
+        <header><h2>{model.title}</h2><p>{model.dateLabel}</p><p>{issue.reportIds.length} 项{issue.kind === 'weekly' ? '本周' : '来源'}资料{issue.backgroundReportIds?.length ? ` · ${issue.backgroundReportIds.length} 项条款背景` : ''} · 生成于 {model.generatedAt}</p></header>
         <section className="brief-reading-summary" id="brief-summary" tabIndex={-1} aria-labelledby="brief-summary-title"><h3 id="brief-summary-title">阅读摘要</h3><div className="brief-summary-columns">{model.summary.map(group => <div key={group.id}><h4>{group.label}</h4>{group.items.length ? <ul>{group.items.map((item, index) => <li key={index}><span className="brief-evidence-label">{item.fields[0].label}</span>{item.fields[0].text}<Sources ids={item.reportIds} references={model.references} /></li>)}</ul> : <p>本期未整理此项。</p>}</div>)}</div></section>
         <div className="weekly-research">{model.sections.map((section, index) => <section key={section.id} id={`brief-section-${section.id}`} data-weekly-section={issue.kind === 'weekly' ? section.id : undefined} tabIndex={-1}>
           <h3>{index + 1}. {section.label}</h3>{section.summaryLink && <p><JumpLink className="text-link" target="brief-summary">核心事实与重要性见阅读摘要</JumpLink></p>}{section.intro && <p>{section.intro}</p>}{!section.items.length && <p>{section.emptyText || '本期暂无相关资料。'}</p>}
-          {section.items.map((item, itemIndex) => <div className="brief-news" key={itemIndex}><h4>{item.title}</h4>{item.fields.map(field => <p key={field.key}><strong>{field.label}：</strong>{field.text}</p>)}<div className="brief-links">{item.reportIds.map(id => {
+          {section.items.map((item, itemIndex) => <div className="brief-news" key={itemIndex}><h4>{item.context === 'background' ? '现行条款背景｜' : ''}{item.title}</h4>{item.fields.map(field => <p key={field.key}><strong>{field.label}：</strong>{field.text}</p>)}<div className="brief-links">{item.reportIds.map(id => {
             const ref = model.references.find(ref => ref.id === id);
             return ref ? <OutLink key={id} href={ref.url} className="text-link">{ref.publisher} · {ref.publishedAt}</OutLink> : null;
           })}{item.report && <button className="text-link brief-open-detail" onClick={event => onReport(item.report, event)}>查看详情</button>}</div></div>)}
         </section>)}</div>
-        <section className="brief-reading-sources" id="brief-sources" tabIndex={-1}><h3>重要信息来源</h3><ol>{model.references.map((ref, index) => <li key={ref.id} id={`brief-source-${index}`} tabIndex={-1}><span>{ref.publishedAt} · {ref.publisher}</span><OutLink href={ref.url} className="text-link">{ref.title}</OutLink><span className="brief-source-url">{ref.url}</span>{(ref.relatedLinks || []).map(link => <div key={link.url}><OutLink href={link.url} className="text-link">{link.publishedAt} {link.publisher} · {link.role}</OutLink><span className="brief-source-url">{link.url}</span></div>)}</li>)}</ol></section>
+        <section className="brief-reading-sources" id="brief-sources" tabIndex={-1}><h3>重要信息来源</h3><ol>{model.references.map((ref, index) => <li key={ref.id} id={`brief-source-${index}`} tabIndex={-1}><span>{ref.context === 'background' ? '现行条款背景 · ' : ''}{ref.publishedAt} · {ref.publisher}</span><OutLink href={ref.url} className="text-link">{ref.title}</OutLink><span className="brief-source-url">{ref.url}</span>{(ref.relatedLinks || []).map(link => <div key={link.url}><OutLink href={link.url} className="text-link">{link.publishedAt} {link.publisher} · {link.role}</OutLink><span className="brief-source-url">{link.url}</span></div>)}</li>)}</ol></section>
       </article>
     </div>}
   </section>;

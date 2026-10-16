@@ -46,7 +46,7 @@ test('四组人工核对报价各自保存报价日、核对时间及来源证�
   assert.deepEqual(quotes.map(item=>[item.mean,item.low,item.high]),[[14.32,13.54,15.1],[14.06,13.54,14.58],[1.89,1.38,2.29],[2.11,1.37,3.95]]);
   for(const item of quotes) {
     assert.equal(item.quoteDate,'2026-10-15');
-    assert.equal(item.checkedAt,'2026-10-15T06:24:39.687Z');
+    assert.equal(item.checkedAt,'2026-10-16T02:14:38.000Z');
     assert.equal(item.sourceChange.percent,0);
     assert.equal(item.comparison,null);
     assert.equal(item.sourceUrl,'https://aidc.smm.cn/price');

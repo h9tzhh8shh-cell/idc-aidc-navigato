@@ -5,6 +5,11 @@ const normalized = value => String(value || '').trim().replace(/\s+/g, ' ');
 const firstSentence = value => normalized(value).match(/^.*?[。！？](?:[”」])?|^.+$/)?.[0] || '';
 const unique = values => [...new Set(values)];
 
+export function readingSectionAtPosition(sections, atEnd = false) {
+  if (atEnd) return sections.at(-1)?.id;
+  return sections.findLast(section => section.top <= 1)?.id || sections[0]?.id;
+}
+
 // Only identical arguments are combined; different evidence types or analyses stay separate.
 export function mergeReadingItems(items) {
   const result = [], seen = new Map();
@@ -98,14 +103,14 @@ export function briefReadingMarkdown(model) {
     if (section.intro) lines.push(section.intro, '');
     if (!section.items.length) lines.push(section.emptyText || '本期暂无相关资料。', '');
     for (const item of section.items) {
-      lines.push(`### ${item.title}`, '');
+      lines.push(`### ${item.context === 'background' ? '现行条款背景｜' : ''}${item.title}`, '');
       for (const field of item.fields) lines.push(`**${field.label}：**${field.text}`, '');
       lines.push(refs(item.reportIds), '');
     }
   }
   lines.push('## 重要信息来源', '');
   for (const ref of model.references) {
-    lines.push(`- ${ref.publishedAt}｜${ref.publisher}｜[${ref.title}](${ref.url})`);
+    lines.push(`- ${ref.context === 'background' ? '现行条款背景｜' : ''}${ref.publishedAt}｜${ref.publisher}｜[${ref.title}](${ref.url})`);
     for (const link of ref.relatedLinks || []) lines.push(`  - ${link.publishedAt || ''} ${link.publisher || ''}｜[${link.role || '相关来源'}](${link.url})`);
   }
   return lines.join('\n') + '\n';

@@ -3,10 +3,34 @@ import assert from 'node:assert/strict';
 import data from '../public/assets/catalog.json' with { type:'json' };
 import { availableIssues } from '../src/domain/discovery.js';
 import { WEEKLY_SECTIONS } from '../src/domain/weekly.js';
-import { briefReading, briefSummaryText, briefReadingMarkdown, mergeReadingItems } from '../src/domain/brief-reading.js';
+import { briefReading, briefSummaryText, briefReadingMarkdown, mergeReadingItems, readingSectionAtPosition } from '../src/domain/brief-reading.js';
 
 const weekly = availableIssues(data.discovery.issues, 'weekly', '2026-10-15')[0];
 const daily = availableIssues(data.discovery.issues, 'daily', '2026-10-15')[0];
+
+test('reading position follows headings in both directions and reaches a short final section', () => {
+  const positions = [{ id: 'summary', top: 200 }, { id: 'news', top: 500 }, { id: 'sources', top: 1400 }];
+  const at = scroll => positions.map(section => ({ ...section, top: section.top - scroll }));
+  assert.equal(readingSectionAtPosition(at(0)), 'summary');
+  assert.equal(readingSectionAtPosition(at(500)), 'news');
+  assert.equal(readingSectionAtPosition(at(1300)), 'news');
+  assert.equal(readingSectionAtPosition(at(1300), true), 'sources');
+  assert.equal(readingSectionAtPosition(at(400)), 'summary');
+  assert.equal(readingSectionAtPosition([]), undefined);
+});
+
+test('reading exports remove process disclaimers while preserving event stage, report dates and sources', () => {
+  for (const issue of data.discovery.issues) {
+    const markdown = briefReadingMarkdown(briefReading(issue, data));
+    assert.doesNotMatch(markdown, /当前不能提前认定投运|已运营设施不能据此直接认定停运|暂无已核实的新规或处罚原件可补入|公开索引本周未见收购守则新修订|未宣称全报告逐页核验/);
+    assert.ok(markdown.includes(issue.periodStart));
+  }
+  const current = briefReadingMarkdown(briefReading(weekly, data));
+  assert.match(current, /拟同意/);
+  assert.match(current, /7月16日生效/);
+  assert.match(current, /若四名现任董事/);
+  for (const ref of weekly.references) assert.ok(current.includes(ref.url));
+});
 
 test('reading summary extracts existing sentences and preserves fact, viewpoint and analysis labels', () => {
   const model = briefReading(weekly, data);

@@ -26,7 +26,7 @@ test('confirmed English aliases and legal names resolve to the same company', ()
 test('reference company with reports has unorganized status rather than zero events', () => {
   const reports = [{ companyIds: ['range'], publishedAt: '2026-10-14', verifiedAt: '2026-10-15' },
     { companyIds: ['range'], financial: {}, publishedAt: '2026-08-25', verifiedAt: '2026-10-14' }];
-  const coverage = companyCoverage({ company: range, reports, filters: { scope: 'domestic' } });
+  const coverage = companyCoverage({ company: { ...range, disclosureReview: undefined }, reports, filters: { scope: 'domestic' } });
   assert.equal(coverage.state, 'unorganized');
   assert.equal(coverage.status, '已有报道，事项尚未整理');
   assert.equal(coverage.reportCount, 2);

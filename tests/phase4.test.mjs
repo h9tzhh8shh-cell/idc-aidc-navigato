@@ -116,7 +116,7 @@ test('F25/F26: official supplementation upgrades existing node without another i
  assert.equal(r('hec-antitrust-mirror-20261001').url,baseline.reports.find(r=>r.id==='hec-antitrust-mirror-20261001').url);
  assert.equal(evidenceUrl(r('hec-antitrust-mirror-20261001')),'https://static.cninfo.com.cn/finalpage/2026-10-01/1225591558.PDF');
  assert.equal(evidenceUrl(baseline.reports.find(r=>r.id==='hec-antitrust-mirror-20261001')),r('hec-antitrust-mirror-20261001').url);
- assert.match(b.currentSummary,/未取得.*交割/);assert.equal(r('hec-reorganization-newer-attachment-pending').visibility,'reference');
+ assert.match(b.currentSummary,/须经上交所审核及证监会同意注册/);assert.equal(r('hec-reorganization-newer-attachment-pending').visibility,'reference');
  const node=b.milestones[0];assert.throws(()=>mergeBatch(data,{events:[{event:{id:b.id},nodes:[{...node,id:'fixture-duplicate-media-node'}]}]}),/Same evidence/);
 });
 test('F27–F29: actual reviewed batch replay gives identical catalog and ledger',()=>{

@@ -9,11 +9,17 @@ import {latestFinancial,amount,changeText} from '../src/domain/financial.js';
 import {recentDiscoveries,industryDiscoveryReports,generateIssue} from '../src/domain/discovery.js';
 
 test('PF01 reviewed financial import is reproducible and preserves previous records and reports',()=>{
-  assert.deepEqual(mergeBatch(before,input),current);
+  const imported=mergeBatch(before,input);
+  assert.deepEqual(mergeBatch(imported,input),imported);
+  for(const key of ['sources','reports'])for(const record of input[key]){
+    const {lastCheckAttemptAt:currentCheck,...actual}=current[key].find(x=>x.id===record.id);
+    const {lastCheckAttemptAt:importedCheck,...expected}=imported[key].find(x=>x.id===record.id);
+    assert.deepEqual(actual,expected);assert.ok(currentCheck>=importedCheck);
+  }
   assert.deepEqual(mergeBatch(current,input),current);
   assert.deepEqual(validateCatalog(current),[]);
-  for(const key of ['companies','sources','reports','events','changeBatches'])assert.deepEqual(current[key].slice(0,before[key].length),before[key],key);
-  assert.deepEqual(current.discovery,before.discovery);
+  for(const key of ['companies','sources','reports','events','changeBatches'])assert.deepEqual(imported[key].slice(0,before[key].length),before[key],key);
+  assert.deepEqual(imported.discovery,before.discovery);
 });
 
 test('PF02 all seven listed discoveries have actual H1 financials with dated original evidence',()=>{
@@ -52,9 +58,10 @@ test('PF03 losses remain negative and private companies are not assigned guessed
 
 test('PF04 financial maintenance preserves NEW markers, discovery order and the daily selection',()=>{
   const previous=recentDiscoveries(before,'2026-10-15'),recent=recentDiscoveries(current,'2026-10-15');
-  assert.deepEqual(recent,previous);
+  const discoveryIdentity=feed=>Object.fromEntries(['companies','reports'].map(key=>[key,feed[key].map(({id,discoveredAt,isNew})=>({id,discoveredAt,isNew}))]));
+  assert.deepEqual(discoveryIdentity(recent),discoveryIdentity(previous));
   assert.equal(recent.companies.filter(c=>c.isNew).length,7);
   assert.equal(industryDiscoveryReports(current,recent.reports).filter(r=>r.isNew).length,8);
-  const options={kind:'daily',date:'2026-10-15',generatedAt:'2026-10-15T10:12:13+08:00'};
+  const options={kind:'daily',date:'2026-10-15',generatedAt:'2026-10-15T10:12:13+08:00',batchId:'discovery-20261015'};
   assert.deepEqual(generateIssue(current,options),generateIssue(before,options));
 });

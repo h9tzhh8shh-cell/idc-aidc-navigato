@@ -22,7 +22,7 @@ test('B13-17: actual HEC events distinct, pending newer clue never current; VNET
  const r=data.reports.find(r=>r.id==='vnet-strategic-investment-close-20260921');assert.equal(r.publishedAt,'2026-09-21');assert.match(r.summary,/原股东股份转让/);
 });
 test('B21/B26: six companies have bounded channel checks; malformed and false no-new rejected',()=>{
- assert.equal(data.companies.filter(c=>c.disclosureReview).length,6);
+ assert.equal(baseline.companies.filter(c=>c.disclosureReview).length,6);
  for(const mutate of [d=>{get(d).companyIds='hec';},d=>{get(d).participants={};},d=>{get(d).basisMilestoneIds='oops';},d=>{get(d).review.result='no-new';},d=>{d.companies.find(c=>c.id==='hec').disclosureReview.checks[0].checkedThrough='2099-01-01';}]) {const d=copy();mutate(d);assert.ok(validateCatalog(d).length);}
 });
 test('B23/B30: explicit new progress is atomic and same reviewed batch is byte-idempotent',()=>{

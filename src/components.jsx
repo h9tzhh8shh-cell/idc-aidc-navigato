@@ -134,7 +134,7 @@ function PreviewArticle({ report, filters, compact = false }) {
 
 export function SourcePreview({ source, filters, compact = false }) {
   const { report, reports, days } = getSourcePreviewSelection(source, { ...filters, dateWindow: 'all', asOf: null });
-  if (!report) return <p className="source-preview-empty">{source.sourceType === 'media' ? '当前条件下近30天暂无合格收录，历史资料可在来源详情查看。' : '当前条件下暂无收录资料'}</p>;
+  if (!report) return <p className="source-preview-empty">{source.sourceType === 'media' ? '当前条件下近30天暂无收录资料。' : '当前条件下暂无收录资料'}</p>;
   const remaining = reports.slice(1);
   return <div className="source-preview" data-preview-id={report.id}>
     {days && <p className="report-byline">近{days}天 · 展示{reports.length}篇 · 按原文发布日期</p>}

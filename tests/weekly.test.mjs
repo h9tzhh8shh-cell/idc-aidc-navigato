@@ -5,6 +5,7 @@ import review from '../data-candidates/weekly-strategy-20261014.json' with {type
 import {generateIssue,weeklyCandidates,availableIssues,saveIssue,validateDiscovery,issueTitle} from '../src/domain/discovery.js';
 import {WEEKLY_SECTIONS,weeklyRegions,validateWeeklyReview,weeklyMarkdown} from '../src/domain/weekly.js';
 import {mergeWeeklyReview} from '../scripts/weekly-update.mjs';
+import {briefReading,briefReadingMarkdown,briefSummaryText} from '../src/domain/brief-reading.js';
 const range={periodStart:review.periodStart,periodEnd:review.periodEnd,cutoffDay:'2026-10-14'};
 const candidates=weeklyCandidates(data,range);
 const issue=availableIssues(data.discovery.issues,'weekly','2026-10-14')[0];
@@ -87,4 +88,48 @@ test('W11 price observations on different dates survive deduplication for weekly
   const price=candidates.find(r=>r.kind==='data-release');
   const d={...data,reports:[price,{...price,id:'next-price-date',publishedAt:'2026-10-08'}]};
   assert.equal(weeklyCandidates(d,range).length,2);
+});
+
+function withBackground() {
+  const d=structuredClone(data), r=structuredClone(review);
+  const background={...candidates[0],id:'earlier-rule',kind:'regulation',publishedAt:'2026-09-29',publishedAtBeijing:null,
+    url:'https://example.test/earlier-rule',originalUrl:'https://example.test/earlier-rule',eventId:null};
+  d.reports.push(background);r.backgroundReportIds=[background.id];
+  r.sections[1].items.push({title:'期前已生效的收购条款',context:'background',reportIds:[background.id],
+    fact:'规则在本周之前公布。',significance:'解释当前交易安排。',businessImpact:'核查适用条件。'});
+  return {d,r,background};
+}
+test('W12 earlier regulations are separate context, never new weekly events or summary changes',()=>{
+  const {d,r,background}=withBackground();
+  const next=generateIssue(d,{kind:'weekly',date:r.requestedDate,generatedAt:r.generatedAt,weeklyReview:r});
+  assert.equal(next.reportIds.length,issue.reportIds.length);
+  assert.equal(next.references.length,next.reportIds.length+1);
+  assert.equal(next.references.at(-1).context,'background');
+  assert.equal(next.references.at(-1).publishedAt,'2026-09-29');
+  assert.ok(!weeklyCandidates(d,range).some(x=>x.id===background.id));
+  assert.deepEqual(validateDiscovery({...d,discovery:{...d.discovery,issues:[next]}}),[]);
+  const misplaced=structuredClone(r);misplaced.sections[0].items.push(misplaced.sections[1].items.pop());
+  assert.throws(()=>generateIssue(d,{kind:'weekly',date:r.requestedDate,generatedAt:r.generatedAt,weeklyReview:misplaced}),/条款背景只能/);
+  const inWeek=structuredClone(r);inWeek.backgroundReportIds=[candidates[0].id];
+  assert.throws(()=>generateIssue(d,{kind:'weekly',date:r.requestedDate,generatedAt:r.generatedAt,weeklyReview:inWeek}),/本周之前/);
+  r.reportIds.push(background.id);
+  assert.throws(()=>generateIssue(d,{kind:'weekly',date:r.requestedDate,generatedAt:r.generatedAt,weeklyReview:r}),/本周合格候选/);
+});
+test('W13 unverified, future-dated and non-regulatory material cannot enter as current-rule background',()=>{
+  for(const patch of [{verificationStatus:'unverified'},{publishedAt:'2026-10-12'},{publishedAt:'2026-10-05'},{kind:'news'}]){
+    const {d,r,background}=withBackground();Object.assign(background,patch);
+    assert.throws(()=>generateIssue(d,{kind:'weekly',date:r.requestedDate,generatedAt:r.generatedAt,weeklyReview:r}),/本周之前/);
+  }
+});
+test('W14 reading and exports retain background labels and original dates without adding them to the summary',()=>{
+  const {d,r}=withBackground();
+  const next=generateIssue(d,{kind:'weekly',date:r.requestedDate,generatedAt:r.generatedAt,weeklyReview:r});
+  const model=briefReading(next,d), md=briefReadingMarkdown(model);
+  for(const exported of [md,weeklyMarkdown(next,issueTitle(next))]){
+    assert.match(exported,/现行条款背景｜期前已生效的收购条款/);
+    assert.match(exported,/2026-09-29/);assert.match(exported,/https:\/\/example.test\/earlier-rule/);
+  }
+  assert.doesNotMatch(briefSummaryText(model),/earlier-rule/);
+  const bad=structuredClone(next);delete bad.references.at(-1).context;
+  assert.ok(validateDiscovery({...d,discovery:{...d.discovery,issues:[bad]}}).some(x=>x.includes('来源快照')));
 });

@@ -1,0 +1,1477 @@
+{
+  "maintainedAt": "2026-10-16",
+  "companies": [],
+  "sources": [
+    {
+      "id": "gds-quarterly",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "vnet-quarterly",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "dcd-southeast-asia",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "wmedia-sea",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "tnb-quarterly",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "singtel-nxera-results",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "dayone-news",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "sttgdc-news",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "sinnet-disclosures",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "xingyun-disclosures",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "sharetronic-disclosures",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "hec-disclosures",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "vnet-news",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "gds-news",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "china-mobile-ir",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "china-telecom-ir",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "china-unicom-ir",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "stcn-industry",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "yicai-industry",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "nbd-industry",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "cls-industry",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "jiemian-industry",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "thepaper-industry",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "36kr-industry",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "oregon-capital-chronicle",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "china-securities-journal",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "thehubnews",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "wabei",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "eastmoney-news",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "21jingji",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "10jqka-news",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "data-center-knowledge",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "antara-news",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "athub-news",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "litong-disclosures",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "aofei-disclosures",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "athub-disclosures",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "capitalonline-disclosures",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "hongxin-disclosures",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "nexwise-disclosures",
+      "lastCheckAttemptAt": "2026-10-16"
+    },
+    {
+      "id": "range-disclosures",
+      "lastCheckAttemptAt": "2026-10-16"
+    }
+  ],
+  "reports": [
+    {
+      "id": "cls-guangku-outlook-20261016",
+      "sourceId": "cls-industry",
+      "title": "光库科技预告前三季度归母净利2.79亿至3.02亿元，光器件需求增长",
+      "url": "https://www.cls.cn/detail/2506194",
+      "originalUrl": null,
+      "originalPublisher": "财联社 IDC/AIDC 相关报道",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国",
+        "泰国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-16",
+      "dataPeriod": null,
+      "summary": "光库科技预计2026年前三季度归母净利润2.79亿至3.02亿元，同比增长142%至162%。公司称高速光模块及光器件需求增长、产销规模扩大推动业绩；泰国基地处于产能爬坡阶段，高密度光纤阵列产品进入大客户供应商名单。",
+      "stage": "业绩预告与产能爬坡",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/cls-body-2506194.json。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体",
+      "intelligence": {
+        "importance": 9,
+        "overview": "光互联供给正在影响AI集群交付节奏，机房扩容计划需要同步确认网络设备及关键光器件交期。",
+        "followupId": "cls-guangku-outlook-20261016-followup",
+        "followup": "跟踪正式三季报、泰国基地爬坡和高速光器件批量交付。"
+      },
+      "publishedAtBeijing": "2026-10-16"
+    },
+    {
+      "id": "cs-vcsel-expansion-20261016",
+      "sourceId": "china-securities-journal",
+      "title": "纵慧芯光推进高速光芯片布局，转向自建制造产线",
+      "url": "https://www.cs.com.cn/ssgs/01/2026/10/16/detail_2026101610044974.html",
+      "originalUrl": null,
+      "originalPublisher": "中国证券报·中证网",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-16",
+      "dataPeriod": null,
+      "summary": "中国证券报采访披露，纵慧芯光从消费电子及汽车感知芯片向数据中心光互联延伸，推进高速VCSEL、光电探测器和连续波激光器布局，并从芯片设计模式转向自建制造产线。",
+      "stage": "研发与制造布局",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/cn-vcsel.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体",
+      "intelligence": {
+        "importance": 7,
+        "overview": "高速光互联的国产供给扩展，有望为后续AI集群建设增加采购选择，落地价值取决于客户验证与稳定交付。",
+        "followupId": "cs-vcsel-expansion-20261016-followup",
+        "followup": "跟踪产品客户验证、产线投产及800G/1.6T应用进度。"
+      },
+      "publishedAtBeijing": "2026-10-16"
+    },
+    {
+      "id": "yicai-energy-compute-20261016",
+      "sourceId": "yicai-industry",
+      "title": "清洁能源装备大会提出推进新能源基地与算力枢纽协同布局",
+      "url": "https://www.yicai.com/news/103395983.html",
+      "originalUrl": null,
+      "originalPublisher": "第一财经 IDC/AIDC 相关报道",
+      "kind": "news",
+      "primaryCategoryId": "policy-planning",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-16",
+      "dataPeriod": null,
+      "summary": "第一财经报道，10月15日在德阳开幕的世界清洁能源装备大会提出加快新能源基地与国家算力枢纽协同布局，并发布152个重点合作项目。报道同时讨论高温超导输电、清洁能源装备及供需对接。",
+      "stage": "大会与产业合作",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/cn-energy.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体",
+      "intelligence": {
+        "importance": 8,
+        "overview": "数据中心选址和扩容应将电源结构、可交付电力和建设周期一起评估，电力配套会影响起租时间与长期运营成本。",
+        "followupId": "yicai-energy-compute-20261016-followup",
+        "followup": "跟踪项目清单中可对接的电力资源、并网时间和供电协议。"
+      },
+      "publishedAtBeijing": "2026-10-16"
+    },
+    {
+      "id": "cls-compute-investment-20261016",
+      "sourceId": "cls-industry",
+      "title": "CINNO统计：第三季度中国智能算力中心产业投资额约7288亿元",
+      "url": "https://www.cls.cn/detail/2506299",
+      "originalUrl": null,
+      "originalPublisher": "财联社 IDC/AIDC 相关报道",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-16",
+      "dataPeriod": null,
+      "summary": "财联社援引CINNO·IC Research统计称，2026年第三季度中国智能算力中心产业投资额约7288亿元，同比增长34.4%。华西证券认为国内供给呈高端紧张、低端宽松的结构性差异。",
+      "stage": "研究统计与市场观点",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/cls-body-2506299.json。",
+      "judgmentTypes": [
+        "opinion"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体",
+      "intelligence": {
+        "importance": 8,
+        "overview": "总量扩张与分层供需并存，项目评估应落到客户所需机型、机柜功率、可供资源及付费利用率。",
+        "followupId": "cls-compute-investment-20261016-followup",
+        "followup": "核对CINNO投资统计覆盖项目与口径，并持续比较高低端机型的租金和利用率。"
+      },
+      "publishedAtBeijing": "2026-10-16"
+    },
+    {
+      "id": "cls-ai-supply-delivery-20261016",
+      "sourceId": "cls-industry",
+      "title": "AI硬件供给跟踪：中科曙光发布业绩快报，源杰科技推进设备进厂",
+      "url": "https://www.cls.cn/detail/2506312",
+      "originalUrl": null,
+      "originalPublisher": "财联社 IDC/AIDC 相关报道",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-16",
+      "dataPeriod": null,
+      "summary": "科创板日报汇总10月15日公告：中科曙光前三季度业绩快报披露营业收入122.38亿元、归母净利润17.24亿元，同比分别增长38.75%和78.48%；源杰科技光芯片二期首批设备预计近期进厂调试，计划2026年底至2027年初形成产能。",
+      "stage": "业绩快报与设备进厂",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/cls-body-2506312.json。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体",
+      "intelligence": {
+        "importance": 9,
+        "overview": "服务器业务增长与光芯片供给扩建同时推进，客户预算、设备到货和机房验收需要按交付计划衔接。",
+        "followupId": "cls-ai-supply-delivery-20261016-followup",
+        "followup": "核对中科曙光正式季度报告，并跟踪源杰二期设备调试和产能形成节点。"
+      },
+      "publishedAtBeijing": "2026-10-16"
+    },
+    {
+      "id": "cs-newhope-purchase-plan-20261015",
+      "sourceId": "china-securities-journal",
+      "title": "新希智算确定万张级算力卡采购方案，面向教育实训与产业应用",
+      "url": "https://www.cs.com.cn/ssgs/01/2026/10/15/detail_2026101510044931.html",
+      "originalUrl": null,
+      "originalPublisher": "中国证券报·中证网",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "中公教育控股子公司新希智算宣布已确定万张级高性能算力卡采购方案，初步达成采购意向，拟服务职业院校AI实训、教育内容生产及产业AI应用。",
+      "stage": "采购方案与意向",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/cn-newhope.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体",
+      "intelligence": {
+        "importance": 8,
+        "overview": "垂直行业客户开始规划专用算力，托管需求将取决于正式采购、设备批次及教育客户的使用安排。",
+        "followupId": "cs-newhope-purchase-plan-20261015-followup",
+        "followup": "跟踪采购合同、设备交付地点、供电功率与实际付费客户。"
+      },
+      "publishedAtBeijing": "2026-10-15"
+    },
+    {
+      "id": "cs-guanghong-server-orders-20261015",
+      "sourceId": "china-securities-journal",
+      "title": "光弘科技称已承接国内外客户算力服务器与液冷服务器相关订单",
+      "url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/135202.html",
+      "originalUrl": null,
+      "originalPublisher": "中国证券报·中证网",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国",
+        "全球"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "光弘科技10月15日在互动平台回应，公司本部及包括AC公司在内的部分海外基地已开始承接国内外头部企业的算力服务器、液冷服务器及部件订单。公司将算力相关业务列为后续业务增长和资本投入方向。",
+      "stage": "承接订单",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/cn-guanghong.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体",
+      "intelligence": {
+        "importance": 7,
+        "overview": "电子制造服务商进入服务器及液冷设备供应链，项目采购可进一步比较整机集成、质量控制与交付能力。",
+        "followupId": "cs-guanghong-server-orders-20261015-followup",
+        "followup": "跟踪订单交付、液冷服务器验证和售后服务安排。"
+      },
+      "publishedAtBeijing": "2026-10-15"
+    },
+    {
+      "id": "wabei-xiangjiang-services-20261014",
+      "sourceId": "wabei",
+      "title": "香江云瀚签订预计1.58亿元五年算力技术服务合同",
+      "url": "https://www.wabei.cn/Home/News/366290",
+      "originalUrl": null,
+      "originalPublisher": "挖贝网",
+      "kind": "news",
+      "primaryCategoryId": "rental-prices",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "香江控股全资子公司香江云瀚与关联方诚雅泰于10月13日签署算力技术服务合同，预计总金额1.5816亿元、期限五年，按月收取服务费。服务包括集群规划、专家支持、运维体系及网络链路管理。",
+      "stage": "签约",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/cn-xiangjiang.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体",
+      "intelligence": {
+        "importance": 8,
+        "overview": "技术服务可以形成独立于设备销售的持续收入模式；关联方履约与月度回款是判断合同经营质量的关键。",
+        "followupId": "wabei-xiangjiang-services-20261014-followup",
+        "followup": "跟踪服务启动、月度验收和回款安排。"
+      },
+      "publishedAtBeijing": "2026-10-14"
+    },
+    {
+      "id": "wabei-tianyang-gpu-purchase-20261013",
+      "sourceId": "wabei",
+      "title": "天阳科技签署2万张RTX PRO 5500采购合同，采用分批交付",
+      "url": "https://www.wabei.cn/Home/News/366199",
+      "originalUrl": null,
+      "originalPublisher": "挖贝网",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-13",
+      "dataPeriod": null,
+      "summary": "天阳科技披露采购2万张NVIDIA RTX PRO 5500 Blackwell GPU的合同，采用分批交付，资金拟由自有资金、银行授信及融资租赁组合筹措，应用方向包括AI推理、专业渲染及科研。",
+      "stage": "采购签约",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/cn-tianyang.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体",
+      "intelligence": {
+        "importance": 7,
+        "overview": "推理算力扩张会带来机柜、电力与网络配套需求，托管规划需要跟随实际设备批次和客户使用节奏。",
+        "followupId": "wabei-tianyang-gpu-purchase-20261013-followup",
+        "followup": "跟踪首批到货、客户合同及配套机房投用时间。"
+      },
+      "publishedAtBeijing": "2026-10-13"
+    },
+    {
+      "id": "wmedia-malaysia-approved-20261015",
+      "sourceId": "wmedia-sea",
+      "title": "马来西亚披露27个获批数据中心项目，投资额约2259.7亿林吉特",
+      "url": "https://w.media/malaysia-approves-27-data-center-projects-with-us-55-4-billion-investment/",
+      "originalUrl": null,
+      "originalPublisher": "w.media 东南亚",
+      "kind": "news",
+      "primaryCategoryId": "policy-planning",
+      "regions": [
+        "马来西亚"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "w.media援引马来西亚数字部议会说明，截至2026年7月，27个获批数据中心项目估计投资2259.7亿林吉特，其中柔佛16个、雪兰莪10个、森美兰1个；仅一个已运营，其余在建。项目须满足至少30%的本地内容要求。",
+      "stage": "获批与建设",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/sea-malaysia.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体",
+      "intelligence": {
+        "importance": 9,
+        "overview": "获批项目集中将提高电力接入、本地采购和运维人才需求，经营判断应把在建规模与投运容量分开。",
+        "followupId": "wmedia-malaysia-approved-20261015-followup",
+        "followup": "跟踪各州投运批次、电力接入和本地采购要求落实。"
+      },
+      "publishedAtBeijing": "2026-10-15"
+    },
+    {
+      "id": "dcd-uob-aws-20261015",
+      "sourceId": "dcd-southeast-asia",
+      "title": "大华银行与AWS签署谅解备忘录，推进新加坡专用混合云环境",
+      "url": "https://www.datacenterdynamics.com/en/news/united-overseas-bank-taps-aws-for-hybrid-cloud-strategy/",
+      "originalUrl": null,
+      "originalPublisher": "DCD 东南亚数据中心新闻",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "新加坡"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "大华银行与AWS签署谅解备忘录，拟在新加坡建立专用云环境，将自有基础设施与云服务结合，并探索AI及数据分析应用。隔离式云扩展将用于适配不同司法辖区的数据要求。",
+      "stage": "谅解备忘录",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/sea-uob.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体",
+      "intelligence": {
+        "importance": 7,
+        "overview": "金融客户的混合云需求同时涉及机房连接、数据驻留及运维服务，可形成区别于通用公有云的基础设施机会。",
+        "followupId": "dcd-uob-aws-20261015-followup",
+        "followup": "跟踪正式建设安排、数据驻留及本地网络连接要求。"
+      },
+      "dailyDateUncertain": true
+    },
+    {
+      "id": "dcd-seoul-icn11-20261015",
+      "sourceId": "dcd-southeast-asia",
+      "title": "Digital Realty首尔ICN11封顶，计划2027年下半年投运",
+      "url": "https://www.datacenterdynamics.com/en/news/digital-realty-tops-out-second-data-center-in-seoul-south-korea/",
+      "originalUrl": null,
+      "originalPublisher": "DCD 东南亚数据中心新闻",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "韩国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "Digital Realty在首尔的第二座数据中心ICN11完成封顶。该项目规划容量64MW，预计2027年下半年投入运营，建设方正推进后续工程与交付。",
+      "stage": "封顶",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/global-seoul.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体",
+      "intelligence": {
+        "importance": 8,
+        "overview": "大容量项目从结构完工到计费仍有机电安装、调试和客户部署阶段，项目比较应按交付节点而非建筑进度判断。",
+        "followupId": "dcd-seoul-icn11-20261015-followup",
+        "followup": "跟踪供电、机电调试及客户起租计划。"
+      },
+      "dailyDateUncertain": true
+    },
+    {
+      "id": "dck-construction-cost-20261015",
+      "sourceId": "data-center-knowledge",
+      "title": "JLL讨论建设成本上升对数据中心利润与交付的影响",
+      "url": "https://www.datacenterknowledge.com/data-center-construction/data-center-developers-face-tighter-margins-as-construction-costs-rise",
+      "originalUrl": null,
+      "originalPublisher": "Data Center Knowledge",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "全球"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "Data Center Knowledge援引JLL研究与采访称，全球建筑行业年度成本涨幅3%至6%已成为新基准。JLL专家指出，数据中心项目尤其需要落实供电、核心客户及机电调试人员，并用分期建设匹配资金投入与交付。",
+      "stage": "研究报告与专家观点",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/global-cost.txt。",
+      "judgmentTypes": [
+        "opinion"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体",
+      "intelligence": {
+        "importance": 8,
+        "overview": "固定租金合同与持续上升的建设成本可能压缩项目回报；供电延迟还会拉长融资支出与收入形成之间的间隔。",
+        "followupId": "dck-construction-cost-20261015-followup",
+        "followup": "跟踪变压器、开关柜、冷却设备交期，以及电力交付和客户入驻日期。"
+      },
+      "dailyDateUncertain": true
+    },
+    {
+      "id": "dcd-digico-lease-20261015",
+      "sourceId": "dcd-southeast-asia",
+      "title": "DigiCo签署悉尼71MW十五年合同，扩建容量计划分期交付",
+      "url": "https://www.datacenterdynamics.com/en/news/digico-signs-71mw-lease-for-sydney-data-center-with-unnamed-tech-firm/",
+      "originalUrl": null,
+      "originalPublisher": "DCD 东南亚数据中心新闻",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "澳大利亚"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "DigiCo在悉尼SYD1项目与一家全球科技企业签署71MW、十五年合同，其中20MW来自原已签约容量的重新分配。项目总规划88MW已全部签约，扩建首批10MW预计在2027财年第四季度末通电并产生收入，其余按客户需求于2028财年交付。",
+      "stage": "签约与分期建设",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/global-digico.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体",
+      "intelligence": {
+        "importance": 9,
+        "overview": "长期合同提升收入可见性，但净新增容量、通电和起租时点决定实际现金流，适合用于比较预租与分期投资模式。",
+        "followupId": "dcd-digico-lease-20261015-followup",
+        "followup": "跟踪新增容量交付、客户验收及扩建资本开支。"
+      },
+      "dailyDateUncertain": true
+    },
+    {
+      "id": "dcd-greece-energy-draft-20261015",
+      "sourceId": "dcd-southeast-asia",
+      "title": "希腊数据中心用能规则草案提出60%可再生能源要求",
+      "url": "https://www.datacenterdynamics.com/en/news/greece-drafts-legislation-requiring-data-centers-source-60-of-power-from-renewables/",
+      "originalUrl": null,
+      "originalPublisher": "DCD 东南亚数据中心新闻",
+      "kind": "news",
+      "primaryCategoryId": "regulation",
+      "regions": [
+        "希腊"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "DCD报道，希腊环境与能源部提出草案，拟要求数据中心至少60%电力来自可再生能源，并要求并网申请提供每MW 20万欧元银行担保、承担接入及相关电网加强成本。征求意见截止2026年10月24日。",
+      "stage": "公开征求意见",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-16",
+      "lastCheckAttemptAt": "2026-10-16",
+      "verificationNote": "2026-10-16：读取原文并核对正文、署名和日期。证据：行业更新部署_2026-10-16/global-greece.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体",
+      "intelligence": {
+        "importance": 8,
+        "overview": "若条款实施，将同时提高项目能源采购和并网资金要求，海外投资模型需计入绿电采购、担保占用和接入成本。",
+        "followupId": "dcd-greece-energy-draft-20261015-followup",
+        "followup": "跟踪征求意见结果、最终条文及适用项目范围。"
+      },
+      "dailyDateUncertain": true
+    }
+  ],
+  "companyReviews": [
+    {
+      "companyId": "gds",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-gds",
+            "channel": "万国数据财报与披露核查",
+            "url": "https://investors.gds-services.com/financial-information/quarterly-results",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-1.txt；company-home-gds-quarterly.txt、company-home-gds-news.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "vnet",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-vnet",
+            "channel": "世纪互联财报与披露核查",
+            "url": "https://ir.vnet.com/financial-information/quarterly-results",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-1.txt；company-home-vnet-quarterly.txt、company-home-vnet-news.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "singtel",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-singtel",
+            "channel": "Singtel / Nxera财报与披露核查",
+            "url": "https://www.singtel.com/about-us/investor-relations/financial-results",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-1.txt；company-home-singtel-nxera-results.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "dayone",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-dayone",
+            "channel": "DayOne财报与披露核查",
+            "url": "https://dayonedc.com/news",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-1.txt；company-home-dayone-news.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "tnb",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-tnb",
+            "channel": "TNB财报与披露核查",
+            "url": "https://www.tnb.com.my/suppliers-investors-media-relations/financial-info",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-1.txt；company-home-tnb-quarterly.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "sttgdc",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-sttgdc",
+            "channel": "STTGDC财报与披露核查",
+            "url": "https://www.sttgdc.com/newsroom",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-2.txt；company-home-sttgdc-news.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "globe",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-globe",
+            "channel": "Globe财报与披露核查",
+            "url": "https://w.media/category/markets/apac/sea/",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-2.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "bdx",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-bdx",
+            "channel": "BDx财报与披露核查",
+            "url": "https://bappeda.jabarprov.go.id/category/berita-umum/",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-2.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "stavian",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-stavian",
+            "channel": "Stavian Digital Park财报与披露核查",
+            "url": "https://w.media/category/markets/apac/sea/",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-2.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "sinnet",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-sinnet",
+            "channel": "光环新网财报与披露核查",
+            "url": "https://www.sinnet.com.cn/IR.html",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-2.txt；company-home-sinnet-disclosures.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "xingyun",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-xingyun",
+            "channel": "行云科技财报与披露核查",
+            "url": "https://www.xingyuntech.com.cn/",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-3.txt；company-home-xingyun-disclosures.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "sharetronic",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-sharetronic",
+            "channel": "协创数据财报与披露核查",
+            "url": "https://www.sharetronic.com/",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-3.txt；company-home-sharetronic-disclosures.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "hec",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-hec",
+            "channel": "东阳光财报与披露核查",
+            "url": "https://www.hec-al.com/sys-nr/?g=40",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-3.txt；company-home-hec-disclosures.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "china-mobile",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-china-mobile",
+            "channel": "中国移动财报与披露核查",
+            "url": "https://www.chinamobileltd.com/",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-3.txt；company-home-china-mobile-ir.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "china-telecom",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-china-telecom",
+            "channel": "中国电信财报与披露核查",
+            "url": "https://www.chinatelecom-h.com/sc/media/press.php",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-3.txt；company-home-china-telecom-ir.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "china-unicom-h",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-china-unicom-h",
+            "channel": "中国联通（香港上市主体）财报与披露核查",
+            "url": "https://www.chinaunicom.com.hk/sc/media/press.php",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-4.txt；company-home-china-unicom-ir.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "oulu-tong",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-oulu-tong",
+            "channel": "欧陆通财报与披露核查",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225503388.PDF",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-4.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "intel",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-intel",
+            "channel": "英特尔财报与披露核查",
+            "url": "https://www.intc.com/",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-4.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "infinigence-ai",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-infinigence-ai",
+            "channel": "无问芯穹财报与披露核查",
+            "url": "https://www.infinigence-ai.com/about-us.html",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-4.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "konst-group",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-konst-group",
+            "channel": "KONST 康斯特超算集团财报与披露核查",
+            "url": "https://www.konsttech.ai/group",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-4.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "athub",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-athub",
+            "channel": "数据港财报与披露核查",
+            "url": "https://www.athub.com/index/Lists/index/catid/22.html",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-5.txt；company-home-athub-news.txt、company-home-athub-disclosures.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "aofei",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-aofei",
+            "channel": "奥飞数据财报与披露核查",
+            "url": "https://www.ofidc.com/",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-5.txt；company-home-aofei-disclosures.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "capitalonline",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-capitalonline",
+            "channel": "首都在线财报与披露核查",
+            "url": "https://www.capitalonline.net/",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-5.txt；company-home-capitalonline-disclosures.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "hongxin",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-hongxin",
+            "channel": "弘信电子财报与披露核查",
+            "url": "https://www.hon-flex.com/",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-5.txt；company-home-hongxin-disclosures.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "litong",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-litong",
+            "channel": "利通电子财报与披露核查",
+            "url": "https://www.lettall.com/",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-5.txt；company-home-litong-disclosures.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "nexwise",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-nexwise",
+            "channel": "杰创智能财报与披露核查",
+            "url": "https://www.nexwise.com.cn/",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-6.txt；company-home-nexwise-disclosures.txt"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "range",
+      "review": {
+        "lastAttemptAt": "2026-10-16",
+        "result": "partial",
+        "note": "已核对本轮可获取的财报及公告资料。",
+        "checks": [
+          {
+            "id": "finance-20261016-range",
+            "channel": "润泽科技财报与披露核查",
+            "url": "https://www.rangeidc.com/",
+            "attemptedAt": "2026-10-16",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "本轮检索最新财报与公告，未获得可替换现有收入及净利润的新正式报告。证据：finance-check-6.txt；company-home-range-disclosures.txt"
+          }
+        ]
+      }
+    }
+  ],
+  "events": [],
+  "changeBatch": {
+    "batchId": "discovery-20261016",
+    "recordedAt": "2026-10-16T10:18:58+08:00",
+    "scope": "国内、东南亚及全球行业更新，财报与SMM复核",
+    "periodStart": "2026-10-16",
+    "summary": "新增15篇行业资料，按北京时间生成10月16日5条日报；同步复核财报和SMM。",
+    "checks": [
+      {
+        "id": "update-20261016-dcd-southeast-asia",
+        "channel": "DCD 东南亚数据中心新闻",
+        "url": "https://www.datacenterdynamics.com/en/news/?term=south-east-asia",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-dcd-southeast-asia.txt。"
+      },
+      {
+        "id": "update-20261016-wmedia-sea",
+        "channel": "w.media 东南亚",
+        "url": "https://w.media/category/markets/apac/sea/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-wmedia-sea.txt。"
+      },
+      {
+        "id": "update-20261016-stcn-industry",
+        "channel": "证券时报 IDC/AIDC 相关报道",
+        "url": "https://www.stcn.com/article/list/cj.html",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-stcn-industry.txt。"
+      },
+      {
+        "id": "update-20261016-yicai-industry",
+        "channel": "第一财经 IDC/AIDC 相关报道",
+        "url": "https://www.yicai.com/news/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-yicai-industry.txt。"
+      },
+      {
+        "id": "update-20261016-nbd-industry",
+        "channel": "每日经济新闻 IDC/AIDC 相关报道",
+        "url": "https://www.nbd.com.cn/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-nbd-industry.txt。"
+      },
+      {
+        "id": "update-20261016-cls-industry",
+        "channel": "财联社 IDC/AIDC 相关报道",
+        "url": "https://www.cls.cn/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-cls-industry.txt。"
+      },
+      {
+        "id": "update-20261016-jiemian-industry",
+        "channel": "界面新闻 IDC/AIDC 相关报道",
+        "url": "https://www.jiemian.com/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-jiemian-industry.txt。"
+      },
+      {
+        "id": "update-20261016-thepaper-industry",
+        "channel": "澎湃新闻 IDC/AIDC 相关报道",
+        "url": "https://www.thepaper.cn/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；入口提取受阻，仅保留检索记录。证据：media-search-*.txt、home-thepaper-industry.txt。"
+      },
+      {
+        "id": "update-20261016-36kr-industry",
+        "channel": "36氪 IDC/AIDC 相关报道",
+        "url": "https://www.36kr.com/newsflashes",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-36kr-industry.txt。"
+      },
+      {
+        "id": "update-20261016-oregon-capital-chronicle",
+        "channel": "Oregon Capital Chronicle",
+        "url": "https://oregoncapitalchronicle.com/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-oregon-capital-chronicle.txt。"
+      },
+      {
+        "id": "update-20261016-china-securities-journal",
+        "channel": "中国证券报·中证网",
+        "url": "https://www.cs.com.cn/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-china-securities-journal.txt。"
+      },
+      {
+        "id": "update-20261016-thehubnews",
+        "channel": "新头条 TheHubNews",
+        "url": "https://www.thehubnews.net/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-thehubnews.txt。"
+      },
+      {
+        "id": "update-20261016-wabei",
+        "channel": "挖贝网",
+        "url": "https://www.wabei.cn/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-wabei.txt。"
+      },
+      {
+        "id": "update-20261016-eastmoney-news",
+        "channel": "东方财富",
+        "url": "https://finance.eastmoney.com/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-eastmoney-news.txt。"
+      },
+      {
+        "id": "update-20261016-21jingji",
+        "channel": "21世纪经济报道",
+        "url": "https://www.21jingji.com/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-21jingji.txt。"
+      },
+      {
+        "id": "update-20261016-10jqka-news",
+        "channel": "同花顺财经",
+        "url": "https://news.10jqka.com.cn/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-10jqka-news.txt。"
+      },
+      {
+        "id": "update-20261016-data-center-knowledge",
+        "channel": "Data Center Knowledge",
+        "url": "https://www.datacenterknowledge.com/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-data-center-knowledge.txt。"
+      },
+      {
+        "id": "update-20261016-antara-news",
+        "channel": "ANTARA 印尼安塔拉通讯社",
+        "url": "https://en.antaranews.com/",
+        "attemptedAt": "2026-10-16",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成媒体定向检索；已读取入口正文。证据：media-search-*.txt、home-antara-news.txt。"
+      }
+    ]
+  },
+  "discovery": {
+    "generatedAt": "2026-10-16T10:18:58+08:00",
+    "weekPolicy": "previous-complete",
+    "note": "国内、东南亚及全球行业更新。",
+    "highlightReportIds": [
+      "cls-ai-supply-delivery-20261016",
+      "wmedia-malaysia-approved-20261015",
+      "dcd-digico-lease-20261015"
+    ],
+    "issueRequests": [
+      {
+        "kind": "daily",
+        "date": "2026-10-16"
+      }
+    ]
+  }
+}

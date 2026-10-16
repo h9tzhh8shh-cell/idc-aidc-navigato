@@ -1,0 +1,339 @@
+{
+  "maintainedAt": "2026-10-15",
+  "sources": [
+    {
+      "id": "hkex-regulation",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "verificationNote": "实际读取目录及2026-09-21第二阶段上市机制竞争力检讨咨询新闻稿，保留征求意见性质和未来截止日期；没有收录目录上无关发行人的处分。 2026-10-15按新增周报规则补核10月8日持续经营声明及10月6日两项纪律处分原文，跨行业案例仅用于治理研究。",
+      "accessNote": "已核相关监管新闻稿及汇森处分原件，免费公开。"
+    },
+    {
+      "id": "sfc-takeovers",
+      "name": "香港证监会：收购及合并监管",
+      "organization": "香港证券及期货事务监察委员会",
+      "sourceType": "government",
+      "categoryIds": [
+        "regulation"
+      ],
+      "regions": [
+        "中国香港"
+      ],
+      "entryUrl": "https://www.sfc.hk/en/Regulatory-functions/Corporates/Takeovers-and-mergers/Transaction-announcements-and-documents",
+      "entryType": "栏目",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "admissionStatus": "正式可用",
+      "access": "free",
+      "accessNote": "公开监管原文及附件可免费阅读。",
+      "purpose": "跟踪收购通讯、条款解释及要约程序个案，分析对交易结构和时间表的影响。",
+      "verificationNote": "已读取收购交易索引、Greentech 10月6日公告及9月29日第78期收购通讯，分别保留发行人披露与监管指引属性。",
+      "lastCheckAttemptAt": "2026-10-15",
+      "frequency": "irregular",
+      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "questions": [
+        "收购规则及实务指引有哪些变化？",
+        "哪些安排影响交易条款与交割时间？"
+      ],
+      "metrics": [
+        "发布日期",
+        "生效日期",
+        "适用主体",
+        "要约与交割时限"
+      ],
+      "tags": [
+        "收购监管",
+        "并购",
+        "信息披露"
+      ],
+      "caveats": [],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "securities-regulation"
+      ]
+    },
+    {
+      "id": "mas-sic-takeovers",
+      "name": "新加坡 MAS／SIC：收购及合并守则",
+      "organization": "新加坡金融管理局／证券业理事会",
+      "sourceType": "government",
+      "categoryIds": [
+        "regulation"
+      ],
+      "regions": [
+        "新加坡"
+      ],
+      "entryUrl": "https://www.mas.gov.sg/securities-industry-council",
+      "entryType": "栏目",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "admissionStatus": "正式可用",
+      "access": "free",
+      "accessNote": "公开监管原文及附件可免费阅读。",
+      "purpose": "跟踪适用新加坡收购守则的交易保护、要约程序和协议安排。",
+      "verificationNote": "已读取SIC公开索引与6月16日修订公告；该次修订7月16日生效。本次索引检查未见10月5日至11日新修订，不推定全市场没有个案。",
+      "lastCheckAttemptAt": "2026-10-15",
+      "frequency": "irregular",
+      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "questions": [
+        "收购规则及实务指引有哪些变化？",
+        "哪些安排影响交易条款与交割时间？"
+      ],
+      "metrics": [
+        "发布日期",
+        "生效日期",
+        "适用主体",
+        "要约与交割时限"
+      ],
+      "tags": [
+        "收购监管",
+        "并购",
+        "信息披露"
+      ],
+      "caveats": [],
+      "aliases": [],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "securities-regulation"
+      ]
+    }
+  ],
+  "reports": [
+    {
+      "id": "hk-joint-going-concern-20261008",
+      "sourceId": "hkex-regulation",
+      "title": "香港三家监管机构联合加强持续经营评估及财务披露要求",
+      "url": "https://www.hkex.com.hk/News/Regulatory-Announcements/2026/261008news?sc_lang=en",
+      "originalUrl": "https://www.hkex.com.hk/News/Regulatory-Announcements/2026/261008news?sc_lang=en",
+      "originalPublisher": "香港证监会、会财局及香港联合交易所",
+      "publishedAt": "2026-10-08",
+      "kind": "regulation",
+      "primaryCategoryId": "regulation",
+      "primarySubcategoryId": "securities-regulation",
+      "regions": [
+        "中国香港"
+      ],
+      "jurisdiction": "中国香港",
+      "summary": "10月8日联合声明要求管理层形成有依据的持续经营评估和可执行计划，由审核委员会监督、核数师审慎评价。若情况未明显改善，联交所将考虑修订相关停牌规则。",
+      "verificationNote": "已读取港交所10月8日完整新闻稿，并核对联合声明背景和监管要求。停牌规则修订为后续可能措施，未写成已生效的新规定。",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "access": "free",
+      "visibility": "active",
+      "companyIds": [],
+      "judgmentTypes": [
+        "fact"
+      ],
+      "dataPeriod": null,
+      "documentStatus": "联合监管声明；停牌规则修订仍属后续考虑",
+      "relatedLinks": [
+        {
+          "url": "https://www.hkex.com.hk/-/media/HKEX-Market/Listing/Rules-and-Guidance/Other-Resources/Listed-Issuers/Joint-Statement-with-SFC/20261008news.pdf",
+          "publisher": "香港证监会、会财局及香港联合交易所",
+          "publishedAt": "2026-10-08",
+          "role": "联合声明原件"
+        }
+      ]
+    },
+    {
+      "id": "hkex-chk-oil-cfo-sanction-20261006",
+      "sourceId": "hkex-regulation",
+      "title": "港交所谴责 CHK Oil 前财务总监兼公司秘书，并作损害投资者权益声明",
+      "url": "https://www.hkex.com.hk/News/Regulatory-Announcements/2026/2610062news?sc_lang=en",
+      "originalUrl": "https://www.hkex.com.hk/News/Regulatory-Announcements/2026/2610062news?sc_lang=en",
+      "originalPublisher": "香港联合交易所",
+      "publishedAt": "2026-10-06",
+      "kind": "regulation",
+      "primaryCategoryId": "regulation",
+      "primarySubcategoryId": "securities-regulation",
+      "regions": [
+        "中国香港"
+      ],
+      "jurisdiction": "中国香港",
+      "summary": "联交所对 CHK Oil（00632）前财务总监兼公司秘书 Li Siu Bun 作出谴责及损害投资者权益声明。他知悉美国油气租约被终止后未向董事会、审核委员会及核数师升级报告，相关资产仍被确认，造成2023年财务报表重大错报。",
+      "verificationNote": "已读取港交所10月6日完整处分新闻稿，核对受处分人员、租约终止与报表错报事实、上市规则2.13(2)及2A.10B(3)。这是油气行业治理案例，不关联为IDC同行。",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "access": "free",
+      "visibility": "active",
+      "companyIds": [],
+      "judgmentTypes": [
+        "fact"
+      ],
+      "dataPeriod": null,
+      "documentStatus": "交易所纪律处分已公告；针对前财务总监兼公司秘书"
+    },
+    {
+      "id": "hkex-huisen-directors-sanction-20261006",
+      "sourceId": "hkex-regulation",
+      "title": "港交所谴责汇森股份六名董事，作董事不适合性声明",
+      "url": "https://www.hkex.com.hk/-/media/HKEX-Market/Listing/Rules-and-Guidance/Disciplinary-and-Enforcement/Disciplinary-Sanctions/2026/261006_SoDA.pdf",
+      "originalUrl": "https://www.hkex.com.hk/-/media/HKEX-Market/Listing/Rules-and-Guidance/Disciplinary-and-Enforcement/Disciplinary-Sanctions/2026/261006_SoDA.pdf",
+      "originalPublisher": "香港联合交易所",
+      "publishedAt": "2026-10-06",
+      "kind": "regulation",
+      "primaryCategoryId": "regulation",
+      "primarySubcategoryId": "securities-regulation",
+      "regions": [
+        "中国香港"
+      ],
+      "jurisdiction": "中国香港",
+      "summary": "六名现任或前任董事因未配合联交所及证监会调查，被谴责并作董事不适合性声明。若其中四名现任董事任何一人在声明发布14日后仍任公司或附属公司的董事或高级管理人员，联交所将取消上市地位。",
+      "verificationNote": "已读取10月6日处分声明PDF全部3页，核对六名董事、调查配合义务及14日附条件取消上市安排；没有将未来条件写成已经退市。属于跨行业公司治理案例。",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "access": "free",
+      "visibility": "active",
+      "companyIds": [],
+      "judgmentTypes": [
+        "fact"
+      ],
+      "dataPeriod": null,
+      "documentStatus": "纪律处分已公告；取消上市措施附后续任职条件"
+    },
+    {
+      "id": "sfc-greentech-offer-extension-20261006",
+      "sourceId": "sfc-takeovers",
+      "title": "Greentech 要约文件申请再延期，执行人员表示拟同意",
+      "url": "https://www.sfc.hk/-/media/EN/files/CF/pdf/Transaction-annts-and-docs/2026/Greentech/EN-Greentech20261006.pdf",
+      "originalUrl": "https://www.sfc.hk/-/media/EN/files/CF/pdf/Transaction-annts-and-docs/2026/Greentech/EN-Greentech20261006.pdf",
+      "originalPublisher": "Berk Kivanc（要约人；香港证监会网站收录）",
+      "publishedAt": "2026-10-06",
+      "kind": "disclosure",
+      "primaryCategoryId": "regulation",
+      "primarySubcategoryId": "securities-regulation",
+      "regions": [
+        "中国香港"
+      ],
+      "jurisdiction": "中国香港",
+      "summary": "要约人10月6日公告，接收代理尚未落实，申请把 Greentech 部分收购要约文件寄发期限进一步延至10月13日或之前；公告披露收购执行人员表示拟同意该延期。",
+      "verificationNote": "已读取证监会收录的要约人公告全部3页，并目视核对第2页。原文为 minded to grant consent，不写成已获正式批准；这属于收购守则8.2条的个案程序，不是条款修订。",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "access": "free",
+      "visibility": "active",
+      "companyIds": [],
+      "judgmentTypes": [
+        "fact"
+      ],
+      "dataPeriod": null,
+      "documentStatus": "要约人延期申请及执行人员拟同意；非规则修订",
+      "deadlineAt": "2026-10-13"
+    },
+    {
+      "id": "sfc-takeovers-bulletin-78-20260929",
+      "sourceId": "sfc-takeovers",
+      "title": "香港证监会收购通讯第78期：政府持股企业一致行动判断与无纸证券程序",
+      "url": "https://www.sfc.hk/-/media/EN/files/CF/pdf/Takeovers-Bulletin/20260929SFC-Takeover-Bulletinc.pdf",
+      "originalUrl": "https://www.sfc.hk/-/media/EN/files/CF/pdf/Takeovers-Bulletin/20260929SFC-Takeover-Bulletinc.pdf",
+      "originalPublisher": "香港证券及期货事务监察委员会",
+      "publishedAt": "2026-09-29",
+      "kind": "regulation",
+      "primaryCategoryId": "regulation",
+      "primarySubcategoryId": "securities-regulation",
+      "regions": [
+        "中国香港"
+      ],
+      "jurisdiction": "中国香港",
+      "summary": "通讯说明政府持股企业的一致行动关系须结合持股、管理、决策及投票等事实判断，并讨论无纸证券制度对要约文件和接纳程序的影响。此项为现行实务背景，发布日期为9月29日。",
+      "verificationNote": "已读取通讯PDF全部3页并目视核对第2页，发布日期交叉核对证监会监管日历9月29日记录；无纸证券制度预定11月16日实施，不视作10月5日至11日的新规。",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "access": "free",
+      "visibility": "active",
+      "companyIds": [],
+      "judgmentTypes": [
+        "fact"
+      ],
+      "dataPeriod": null,
+      "documentStatus": "收购实务通讯；期前背景"
+    },
+    {
+      "id": "mas-sic-takeovers-code-20260616",
+      "sourceId": "mas-sic-takeovers",
+      "title": "新加坡修订收购及合并守则：分手费、排他安排及交易时限",
+      "url": "https://www.mas.gov.sg/news/media-releases/2026/mas-amends-the-singapore-code-on-take-overs-and-mergers",
+      "originalUrl": "https://www.mas.gov.sg/news/media-releases/2026/mas-amends-the-singapore-code-on-take-overs-and-mergers",
+      "originalPublisher": "新加坡金融管理局（MAS）／证券业理事会（SIC）",
+      "publishedAt": "2026-06-16",
+      "kind": "regulation",
+      "primaryCategoryId": "regulation",
+      "primarySubcategoryId": "securities-regulation",
+      "regions": [
+        "新加坡"
+      ],
+      "jurisdiction": "新加坡",
+      "summary": "6月16日公布、7月16日生效的修订涵盖交易保护、协议安排、要约声明与阻挠行动：分手费总额不得超过受要约公司价值的1%，协议安排批准会议须在公告6个月内举行。",
+      "verificationNote": "已读取MAS完整官方新闻稿，核对公布与生效日期、分手费上限、排他安排、协议安排及28日表态机制；规则全文附件未作逐条法律适用分析。SIC公开索引本次未见10月5日至11日的新修订，该材料仅作现行条款背景。",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-15",
+      "access": "free",
+      "visibility": "active",
+      "companyIds": [],
+      "judgmentTypes": [
+        "fact"
+      ],
+      "dataPeriod": null,
+      "documentStatus": "已生效的守则修订；期前背景",
+      "effectiveAt": "2026-07-16"
+    }
+  ],
+  "changeBatch": {
+    "batchId": "weekly-regulation-20261015",
+    "recordedAt": "2026-10-15T17:54:05+08:00",
+    "periodStart": "2026-10-05",
+    "scope": "周报监管专题：本周香港监管声明、交易所处分及收购程序；香港和新加坡现行条款背景。",
+    "summary": "新增4项本周资料及2项期前条款背景，补充监管与收购研究规则。",
+    "checks": [
+      {
+        "id": "hk-reg-week-20261015",
+        "channel": "港交所监管公告与处分原件",
+        "url": "https://www.hkex.com.hk/News/Regulatory-Announcements?sc_lang=en",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": "2026-10-05",
+        "checkedThrough": "2026-10-11",
+        "note": "读取10月8日联合声明新闻稿、10月6日CHK Oil处分新闻稿和汇森处分PDF；有限专题核查，不声称全部公告覆盖。"
+      },
+      {
+        "id": "sic-week-20261015",
+        "channel": "MAS／SIC公开索引",
+        "url": "https://www.mas.gov.sg/securities-industry-council",
+        "attemptedAt": "2026-10-15",
+        "result": "no-new",
+        "checkedFrom": "2026-10-05",
+        "checkedThrough": "2026-10-11",
+        "note": "该公开索引未见本周修订公告；最近列示修订为6月16日公布、7月16日生效。本次不将期前修订记作周内新规。"
+      },
+      {
+        "id": "szse-week-20261015",
+        "channel": "深交所纪律处分目录及中介机构目录",
+        "url": "https://www.szse.cn/disclosure/supervision/measure/pushish/index.html",
+        "attemptedAt": "2026-10-15",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "AnySearch及公开搜索得到深证上〔2026〕1369号毕马威华振线索，未取得可核正文；官方目录API返回的日期覆盖不足，中介目录返回空数据。本期不将该线索写作已核处罚案例，也不据此认定内地无处分。"
+      }
+    ]
+  }
+}

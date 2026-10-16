@@ -73,6 +73,10 @@ export function weeklyCandidates(data, { periodStart, periodEnd, cutoffDay }) {
     .sort((a, b) => Number(['disclosure', 'policy', 'regulation'].includes(b.kind)) - Number(['disclosure', 'policy', 'regulation'].includes(a.kind)) || weeklyDay(b).localeCompare(weeklyDay(a)) || a.id.localeCompare(b.id))
     .filter(report => { const key = eventKey(report); if (seen.has(key)) return false; seen.add(key); return true; });
 }
+function weeklyBackgroundCandidates(data, periodStart, cutoffDay) {
+  return data.reports.filter(report => qualifiedReport(report, cutoffDay) &&
+    ['policy', 'regulation'].includes(report.kind) && weeklyDay(report) < periodStart);
+}
 export function generateIssue(data, { kind, date = beijingTimestamp().slice(0, 10), batchId, generatedAt = beijingTimestamp(), weekPolicy = 'previous-complete', weeklyFormat = weekPolicy === 'containing' ? 'legacy' : WEEKLY_FORMAT, weeklyReview }) {
   const batch = discoveryBatch(data, batchId);
   if (!batch || !['daily', 'weekly'].includes(kind) || !day(date) || !timestamp(generatedAt)) throw new Error('报告类型、日期或更新批次无效');
@@ -90,13 +94,15 @@ export function generateIssue(data, { kind, date = beijingTimestamp().slice(0, 1
       .sort((a, b) => b.generatedAt.localeCompare(a.generatedAt))[0];
     if (!review) throw new Error('该周尚未整理研究内容，请先完成八个板块的周报整理。');
     if (review.periodStart !== periodStart || review.periodEnd !== periodEnd) throw new Error('研究内容与周报统计周期不一致');
-    const errors = validateWeeklyReview(review, candidates, { complete: true });
+    const errors = validateWeeklyReview(review, candidates, { complete: true,
+      backgroundCandidates: weeklyBackgroundCandidates(data, periodStart, cutoffDay) });
     if (errors.length) throw new Error(errors.join('\n'));
     const issue = {
       id: `weekly-${periodStart}-${WEEKLY_FORMAT}-${generatedAt.replace(/[^0-9]/g, '')}`,
       kind, format: WEEKLY_FORMAT, date: periodEnd, batchId: batch.batchId, periodStart, periodEnd, weekEnd: week.end,
       partial: false, weekPolicy: 'previous-complete', requestedDate: date, generatedAt, cutoffAt: batch.cutoffAt,
       reportIds: [...review.reportIds], analysis: [], sections: structuredClone(review.sections),
+      ...(review.backgroundReportIds?.length ? { backgroundReportIds: [...review.backgroundReportIds] } : {}),
       decisions: structuredClone(review.decisions), coverageNotes: { ...review.coverageNotes },
     };
     issue.references = weeklyReferences(issue, data);
@@ -171,8 +177,9 @@ export function validateDiscovery(data) {
         const period = previousCompleteWeek(issue.requestedDate), batch = discoveryBatch(data, issue.batchId);
         if (issue.kind !== 'weekly' || issue.partial || issue.periodStart !== period.start || issue.periodEnd !== period.end || issue.date !== period.end || issue.weekEnd !== period.end || !timestamp(issue.generatedAt) || issue.generatedAt < batch?.cutoffAt || issue.cutoffAt !== batch?.cutoffAt || issue.periodEnd > batch?.cutoffAt.slice(0, 10) || issue.requestedDate > issue.generatedAt.slice(0, 10)) fail(`战略周报周期或时间无效 ${issue.id}`);
         const candidates = weeklyCandidates(data, { periodStart: issue.periodStart, periodEnd: issue.periodEnd, cutoffDay: issue.cutoffAt.slice(0, 10) });
-        errors.push(...validateWeeklyReview(issue, candidates).map(message => `discovery: ${message}`));
-        if (!Array.isArray(issue.references) || issue.references.length !== issue.reportIds.length || issue.reportIds.some(id => !issue.references.some(ref => ref.id === id && /^https:\/\//.test(ref.url)))) fail(`战略周报来源快照无效 ${issue.id}`);
+        errors.push(...validateWeeklyReview(issue, candidates, { backgroundCandidates: weeklyBackgroundCandidates(data, issue.periodStart, issue.cutoffAt.slice(0, 10)) }).map(message => `discovery: ${message}`));
+        const referenceIds = [...issue.reportIds, ...(issue.backgroundReportIds || [])];
+        if (!Array.isArray(issue.references) || issue.references.length !== referenceIds.length || referenceIds.some(id => !issue.references.some(ref => ref.id === id && /^https:\/\//.test(ref.url) && (ref.context === 'background') === Boolean(issue.backgroundReportIds?.includes(id))))) fail(`战略周报来源快照无效 ${issue.id}`);
         continue;
       }
       // Later additions may outrank older choices; validate the saved selection, never rerank its history.

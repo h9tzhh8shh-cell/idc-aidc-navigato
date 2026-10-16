@@ -19,7 +19,8 @@ test('source evidence remains discoverable in batches; failed check cannot erase
  const snapshot=data.reports.find(r=>r.id==='smm-h100-observation-20261009');
  assert.equal(snapshot.publishedAt,null);
  assert.equal(matchesPublishedDate(snapshot,frozen),false);
- assert.match(snapshot.summary,/非实时成交价/);
+ assert.match(snapshot.summary,/10月9日页面快照.*包月基准价.*14.32元\/卡·时/);
+ assert.match(snapshot.summary,/10-08.*未标年份/);
 });
 
 test('C09: inclusive Beijing natural-day windows and month/year/leap boundaries',()=>{
@@ -57,7 +58,7 @@ test('C06/C07/C17: historical CATL cooperation stays separate from shareholder t
  for(const dateWindow of ['7','30']) assert.ok(!filterReports(data.reports,sources,{scope:'domestic',dateWindow,asOf:'2026-10-08'}).some(r=>r.id===id));
  const entry=data.changeBatches.find(b=>b.batchId==='phase3-reviewed-20261009').changes.find(c=>c.objectType==='report'&&c.objectId===id);
  assert.deepEqual(entry.kinds,['historical']);
- assert.match(data.reports.find(r=>r.id==='vnet-strategic-investment-close-20260921').summary,/原股东股份转让/);
+ assert.match(data.reports.find(r=>r.id==='vnet-strategic-investment-close-20260921').summary,/完成向原股东购买股份/);
 });
 test('C03–C05/C26: mirror is never an official current node and HEC identity survives',()=>{
  const data=baseline; // Historical mirror-only state; Phase 4 separately tests official supplementation.
