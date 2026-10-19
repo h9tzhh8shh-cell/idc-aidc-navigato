@@ -93,7 +93,7 @@ export function HorizontalFilters({ filters, update, toggle, subCounts, regionOp
   return <div className="directory-filters" aria-label={reportsView ? '资料筛选' : '来源目录筛选'}>
     <div className="directory-topics" role="group" aria-label="研究方向">
       <span className="directory-filter-label">研究方向</span>
-      {TOPICS.map(topic => <div className={`directory-topic ${filters.topics.includes(topic.id) ? 'is-selected' : ''}`} key={topic.id}>
+      {TOPICS.filter(topic => topic.id !== 'listed-companies').map(topic => <div className={`directory-topic ${filters.topics.includes(topic.id) ? 'is-selected' : ''}`} key={topic.id}>
         <CheckOption label={topic.label} checked={filters.topics.includes(topic.id)} onChange={() => toggle('topics', topic.id)} />
         {activeTopic?.id === topic.id && children.length > 0 && <button className="directory-topic-arrow" aria-label={`${open === 'subcategory' ? '收起' : '展开'}${topic.label}子方向`} aria-expanded={open === 'subcategory'} aria-controls={open === 'subcategory' ? 'directory-filter-panel' : undefined} onClick={event => openPanel('subcategory', event)}><IconChevronDown size={16} aria-hidden="true" /></button>}
       </div>)}

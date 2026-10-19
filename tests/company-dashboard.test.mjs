@@ -1,0 +1,62 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import data from '../public/assets/catalog.json' with { type: 'json' };
+import { companyRange, companyDashboardActions, companyHighlights, companyFinancialAt } from '../src/domain/company-dashboard.js';
+import { readQuery, writeQuery, normalizeFilters } from '../src/catalog.js';
+
+const range = companyRange('2026','2026-10-19');
+test('company time ranges use inclusive calendar dates and a fixed 2026 default', () => {
+  assert.deepEqual(range,{start:'2026-01-01',end:'2026-10-19'});
+  assert.deepEqual(companyRange('30','2026-10-19'),{start:'2026-09-20',end:'2026-10-19'});
+  assert.deepEqual(companyRange('90','2026-10-19'),{start:'2026-07-22',end:'2026-10-19'});
+  assert.deepEqual(companyRange('2026-h1','2026-10-19'),{start:'2026-01-01',end:'2026-06-30'});
+  assert.deepEqual(companyRange('30','2026-01-10'),{start:'2025-12-12',end:'2026-01-10'});
+});
+test('Sinnet uses actual board day and groups release and launch into one event', () => {
+  const actions=companyDashboardActions(data,'sinnet',range);
+  assert.equal(actions.length,6);
+  assert.equal(actions.find(a=>a.id==='sinnet-horinger-expansion').date,'2026-09-24');
+  const sme=actions.find(a=>a.id==='sinnet-cloud-panacea-sme');
+  assert.deepEqual(sme.nodes.map(n=>n.occurredAt),['2026-07-20','2026-09-21']);
+  assert.equal(sme.date,'2026-09-21');
+  assert.equal(companyDashboardActions(data,'sinnet',{start:'2026-07-01',end:'2026-07-31'}).find(a=>a.id===sme.id).title,'发布中小企业智能体平台');
+  assert.equal(companyDashboardActions(data,'sinnet',range,'project').length,1);
+  assert.deepEqual(companyDashboardActions(data,'sinnet',{start:'2025-01-01',end:'2025-12-31'}).map(a=>a.date),['2025-12-09']);
+});
+test('unknown dates, future nodes, unverified sources and lookalike companies cannot enter timeline', () => {
+  const fixture=structuredClone(data);
+  const event=fixture.events.find(e=>e.id==='sinnet-horinger-expansion');
+  const original=structuredClone(event.milestones[0]);
+  for(const date of [null,'2026-10-20']) {
+    event.milestones[0].occurredAt=date;
+    assert.ok(!companyDashboardActions(fixture,'sinnet',range).some(a=>a.id===event.id));
+  }
+  event.milestones[0]=original;
+  event.milestones[0].verificationLevel='lead';
+  assert.ok(!companyDashboardActions(fixture,'sinnet',range).some(a=>a.id===event.id));
+  event.milestones[0]=original;
+  assert.equal(companyDashboardActions(fixture,'sinnet-lookalike',range).length,0);
+});
+test('historical cutoff never leaks a later financial disclosure', () => {
+  assert.equal(companyFinancialAt(data,'sinnet','2026-10-19').id,'sinnet-2026-h1');
+  assert.equal(companyFinancialAt(data,'sinnet','2026-06-30').id,'sinnet-2026-q1');
+  assert.equal(companyFinancialAt(data,'sinnet','2026-01-01'),undefined);
+});
+test('highlights select eight important independent actions, sort by date, and never pad', () => {
+  const actions=Array.from({length:10},(_,i)=>({id:String(i),priority:i,date:`2026-01-${String(10-i).padStart(2,'0')}`}));
+  const result=companyHighlights(actions);
+  assert.equal(result.length,8);
+  assert.ok(result.every(a=>a.priority>=2));
+  assert.deepEqual(result.map(a=>a.date),result.map(a=>a.date).sort());
+  assert.equal(companyHighlights(actions.slice(0,2)).length,2);
+  assert.equal(actions.length,10);
+});
+test('company, time and event filters roundtrip while original research conditions remain intact', () => {
+  const filters=normalizeFilters({q:'液冷',scope:'domestic',dateWindow:'7',sort:'published'});
+  const nav={company:'sinnet',companyRange:'30',eventType:'project',returnQuery:writeQuery(filters,'reports')};
+  const restored=readQuery(writeQuery(filters,'reports',null,nav));
+  assert.deepEqual(restored.navigation,nav);
+  assert.deepEqual(restored.filters,filters);
+  assert.deepEqual(readQuery(restored.navigation.returnQuery).filters,filters);
+  assert.equal(readQuery('?company=sinnet&companyRange=invalid').navigation.companyRange,undefined);
+});

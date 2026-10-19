@@ -11250,6 +11250,306 @@
         "followupId": "szse-supervision-20261016-followup",
         "followup": "跟踪与项目投资、关联交易及重大合同有关的具体处分决定。"
       }
+    },
+    {
+      "id": "sinnet-2026-q1",
+      "sourceId": "sinnet-disclosures",
+      "title": "光环新网2026年第一季度报告",
+      "url": "https://www.sinnet.com.cn/uploads/files/2026/0430/4z9ABlEvSXygZwEjee8SOZ37m4nopUxRnvIS727v.pdf",
+      "kind": "disclosure",
+      "publishedAt": "2026-04-30",
+      "dataPeriod": "2026年第一季度（1—3月）",
+      "summary": "2026年一季度营业收入16.33亿元，归母净利润2246.52万元。",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationStatus": "verified",
+      "verificationNote": "公司财报目录署日4月30日；PDF第2页主要会计数据和财务指标。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "access": "free",
+      "originalPublisher": "北京光环新网科技股份有限公司",
+      "originalUrl": "https://www.sinnet.com.cn/uploads/files/2026/0430/4z9ABlEvSXygZwEjee8SOZ37m4nopUxRnvIS727v.pdf",
+      "visibility": "active",
+      "tags": [],
+      "relatedLinks": [],
+      "financial": {
+        "companyId": "sinnet",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年第一季度（1—3月）",
+          "start": "2026-01-01",
+          "end": "2026-03-31",
+          "type": "quarter",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-03-31"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 1633283833.53,
+          "priorValue": 1831558870.01,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表整体收入；不是单独IDC分部收入",
+          "change": {
+            "basis": "reported",
+            "percent": -10.83,
+            "note": "采用报告直接披露同比，原值复算核对。"
+          }
+        },
+        "profit": {
+          "label": "归属于上市公司股东的净利润",
+          "value": 22465210.56,
+          "priorValue": 69174516.68,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "合并报表归属于上市公司股东的净利润；不是扣非利润",
+          "change": {
+            "basis": "reported",
+            "percent": -67.52,
+            "note": "采用报告直接披露同比，原值复算核对。"
+          }
+        },
+        "evidence": {
+          "url": "https://www.sinnet.com.cn/uploads/files/2026/0430/4z9ABlEvSXygZwEjee8SOZ37m4nopUxRnvIS727v.pdf",
+          "locator": "PDF第2页：2026年第一季度与上年同期主要会计数据。"
+        },
+        "limitations": "采用原披露人民币口径，不换汇。"
+      }
+    },
+    {
+      "id": "sinnet-cloud-jv-20260206",
+      "sourceId": "sinnet-disclosures",
+      "title": "光环云与绿地香港组建绿环智擎",
+      "url": "https://sinnet-cloud.cn/news/details/114.html",
+      "kind": "news",
+      "publishedAt": "2026-02-06",
+      "dataPeriod": null,
+      "summary": "2月4日，光环云与绿地香港共同组建的绿环智擎数据科技有限公司在上海启动。",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationStatus": "verified",
+      "verificationNote": "光环云官方新闻目录2026-02-06条目摘要明确2月4日启动；半年报第30—31页确认光环云为控股子公司。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "abstract",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "access": "free",
+      "originalPublisher": "光环云数据有限公司",
+      "originalUrl": "https://sinnet-cloud.cn/news/details/114.html",
+      "visibility": "active",
+      "tags": [],
+      "relatedLinks": []
+    },
+    {
+      "id": "sinnet-cloud-panacea-acquisition-20260313",
+      "sourceId": "sinnet-disclosures",
+      "title": "光环云宣布收购湃阳智能团队",
+      "url": "https://sinnet-cloud.cn/news/details/115.html",
+      "kind": "news",
+      "publishedAt": "2026-03-13",
+      "dataPeriod": null,
+      "summary": "光环云宣布收购湃阳智能团队，并推出联合开发的Panacea智能体训推平台，扩展企业AI工程化交付业务。",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationStatus": "verified",
+      "verificationNote": "官方新闻目录3月13日发布收购及平台公告摘要；7月20日后续官方正文确认3月并购；半年报第31页列示湃阳智能认缴资本比例60%。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "abstract",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "access": "free",
+      "originalPublisher": "光环云数据有限公司",
+      "originalUrl": "https://sinnet-cloud.cn/news/details/115.html",
+      "visibility": "active",
+      "tags": [],
+      "relatedLinks": []
+    },
+    {
+      "id": "sinnet-cloud-panacea-release-20260723",
+      "sourceId": "sinnet-disclosures",
+      "title": "光环云与湃阳发布中小企业智能体平台",
+      "url": "https://sinnet-cloud.cn/news/details/128.html",
+      "kind": "news",
+      "publishedAt": "2026-07-23",
+      "dataPeriod": null,
+      "summary": "7月20日，中国中小企业协会人工智能专委会联合光环云、湃阳智能发布Panacea for SMEs，由光环云与湃阳联合开发运营。",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationStatus": "verified",
+      "verificationNote": "原文首段明确2026年7月20日发布，官方目录上架7月23日。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "access": "free",
+      "originalPublisher": "光环云数据有限公司",
+      "originalUrl": "https://sinnet-cloud.cn/news/details/128.html",
+      "visibility": "active",
+      "tags": [],
+      "relatedLinks": []
+    },
+    {
+      "id": "sinnet-cloud-panacea-online-20260922",
+      "sourceId": "sinnet-disclosures",
+      "title": "中小企业智能体平台在合肥上线",
+      "url": "https://sinnet-cloud.cn/news/details/133.html",
+      "kind": "news",
+      "publishedAt": "2026-09-22",
+      "dataPeriod": null,
+      "summary": "光环云与湃阳联合开发运营的中小企业智能体平台在合肥上线，首批智能体同步开放，初期采用限流免费推广。",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationStatus": "verified",
+      "verificationNote": "原文首段明确9月21日下午上线，回溯7月20日发布的是同一平台；官网列表上架9月22日。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "access": "free",
+      "originalPublisher": "光环云数据有限公司",
+      "originalUrl": "https://sinnet-cloud.cn/news/details/133.html",
+      "visibility": "active",
+      "tags": [],
+      "relatedLinks": []
+    },
+    {
+      "id": "sinnet-cloud-ziphub-20260827",
+      "sourceId": "sinnet-disclosures",
+      "title": "光环云与蒜泥科技上线模型调用平台",
+      "url": "https://sinnet-cloud.cn/news/details/129.html",
+      "kind": "news",
+      "publishedAt": "2026-08-27",
+      "dataPeriod": null,
+      "summary": "光环云与蒜泥科技联合上线西安人工智能OPC创新社区模型调用平台，整合40余个模型，提供按用量计费的调用服务。",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationStatus": "verified",
+      "verificationNote": "官网目录8月27日，正文首段“今日正式上线”；后文介绍40余个模型与Token用量计费。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "access": "free",
+      "originalPublisher": "光环云数据有限公司",
+      "originalUrl": "https://sinnet-cloud.cn/news/details/129.html",
+      "visibility": "active",
+      "tags": [],
+      "relatedLinks": []
+    },
+    {
+      "id": "sinnet-cloud-orbix-20260916",
+      "sourceId": "sinnet-disclosures",
+      "title": "光环云签署AI平台国际合作协议",
+      "url": "https://sinnet-cloud.cn/news/details/131.html",
+      "kind": "news",
+      "publishedAt": "2026-09-16",
+      "dataPeriod": null,
+      "summary": "光环云与乌兹别克斯坦ORBIX TECH、重庆云计算投资运营有限公司签署合作协议，拟联合建设AI应用、支撑平台与支付服务。",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationStatus": "verified",
+      "verificationNote": "原文明确15日重庆专场活动签约，论坛2026年9月15—16日于乌鲁木齐举行。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "access": "free",
+      "originalPublisher": "光环云数据有限公司",
+      "originalUrl": "https://sinnet-cloud.cn/news/details/131.html",
+      "visibility": "active",
+      "tags": [],
+      "relatedLinks": []
+    },
+    {
+      "id": "sinnet-unicom-20251211",
+      "sourceId": "sinnet-disclosures",
+      "title": "光环新网与内蒙古联通签署战略合作协议",
+      "url": "https://www.sinnet.com.cn/news/1814.html",
+      "kind": "news",
+      "publishedAt": "2025-12-11",
+      "dataPeriod": null,
+      "summary": "光环新网与内蒙古联通在呼和浩特签署战略合作协议，合作方向包括绿色算力基础设施、市场拓展及行业解决方案。",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationStatus": "verified",
+      "verificationNote": "公司原文明确2025年12月9日签约；页面发布12月11日。",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "contentScope": "full",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "access": "free",
+      "originalPublisher": "北京光环新网科技股份有限公司",
+      "originalUrl": "https://www.sinnet.com.cn/news/1814.html",
+      "visibility": "active",
+      "tags": [],
+      "relatedLinks": []
     }
   ],
   "labelMaps": {
@@ -13036,9 +13336,9 @@
       "milestones": [
         {
           "id": "historical-node",
-          "title": "世纪互联：原股东股份转让及投资者权利安排",
+          "title": "披露原股东股份转让交割完成",
           "summary": "公司公告两家买方完成向原股东购买股份，相关投资者权利及投票协议随交割生效。",
-          "occurredAt": null,
+          "occurredAt": "2026-09-21",
           "isProgress": true,
           "verificationLevel": "official-body",
           "primaryEvidenceReportId": "vnet-strategic-investment-close-20260921",
@@ -13047,6 +13347,11 @@
               "reportId": "vnet-strategic-investment-close-20260921",
               "locator": "2026-09-21公司新闻稿首段及投资者权利、投票安排段落",
               "role": "主证据"
+            },
+            {
+              "reportId": "vnet-strategic-investment-close-20260921",
+              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
+              "role": "披露日期"
             }
           ]
         }
@@ -13109,9 +13414,9 @@
       "milestones": [
         {
           "id": "historical-node",
-          "title": "BDx Purwakarta 项目许可与冷却用水审查",
-          "summary": "西爪哇 Bappeda 报道，Purwakarta 政府于 10 月 5 日就 Jatiluhur 的 BDx AI 数据中心召集相关部门讨论 AMDAL 环评、PBG 建筑审批和冷却用水。地方政府要求进一步检验供水论证并继续讨论；该消息属于停工后的审查进展，不是许可获批、复工或新增投运公告。",
-          "occurredAt": null,
+          "title": "政府审查BDx项目冷却用水",
+          "summary": "Purwakarta政府召集相关部门讨论BDx项目环评、建筑审批与冷却用水，要求进一步检验供水论证。项目仍处于停工后的审查阶段。",
+          "occurredAt": "2026-10-05",
           "isProgress": true,
           "verificationLevel": "official-body",
           "primaryEvidenceReportId": "purwakarta-bdx-water-review-20261007",
@@ -13120,6 +13425,11 @@
               "reportId": "purwakarta-bdx-water-review-20261007",
               "locator": "一期记录所核公告正文，具体范围见资料核查说明",
               "role": "主证据"
+            },
+            {
+              "reportId": "purwakarta-bdx-water-review-20261007",
+              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
+              "role": "披露日期"
             }
           ]
         },
@@ -13180,9 +13490,9 @@
       "milestones": [
         {
           "id": "platform-closing",
-          "title": "平台收购披露交割完成",
+          "title": "披露秦淮中国业务平台收购交割完成",
           "summary": "东数一号通过东数三号收购秦淮数据中国业务100%股权。上市公司为东数一号参股股东；公告称现金价款已支付、交割完成，交割后事项仍待办理。",
-          "occurredAt": null,
+          "occurredAt": "2026-01-17",
           "isProgress": true,
           "verificationLevel": "disclosure-paper",
           "primaryEvidenceReportId": "hec-platform-closing-20260117",
@@ -13191,6 +13501,11 @@
               "reportId": "hec-platform-closing-20260117",
               "locator": "临2026-04号：一、概述；二、交易进展",
               "role": "主证据"
+            },
+            {
+              "reportId": "hec-platform-closing-20260117",
+              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
+              "role": "披露日期"
             }
           ]
         }
@@ -13311,7 +13626,7 @@
         {
           "id": "board-plan",
           "title": "董事会审议重组预案",
-          "summary": "3月6日董事会审议重组预案，拟以发行股份方式取得东数一号直接及间接合计70%股权并配套募资。此为后续上市公司重组，与前序平台收购分开记录。",
+          "summary": "董事会审议重组预案，拟以发行股份方式取得东数一号直接及间接合计70%股权，并募集配套资金。",
           "occurredAt": "2026-03-06",
           "isProgress": true,
           "verificationLevel": "disclosure-paper",
@@ -13326,9 +13641,9 @@
         },
         {
           "id": "reply-and-revision",
-          "title": "披露问询回复及报告书修订提示",
-          "summary": "公司披露重组问询回复及报告书修订提示，仍拟取得东数一号直接及间接合计70%权益。该日公告文字称尚需上交所审核通过及证监会同意注册。",
-          "occurredAt": null,
+          "title": "披露重组问询回复及报告书修订",
+          "summary": "东阳光披露重组问询回复及报告书修订，拟取得东数一号直接及间接合计70%权益，后续须经上交所审核及证监会注册。",
+          "occurredAt": "2026-09-23",
           "isProgress": true,
           "verificationLevel": "disclosure-paper",
           "primaryEvidenceReportId": "hec-reorganization-reply-20260923",
@@ -13342,6 +13657,11 @@
               "reportId": "hec-reorganization-revised-abstract-20260923",
               "locator": "修订稿摘要第23页；全文报告书未取得",
               "role": "补充原件摘要依据"
+            },
+            {
+              "reportId": "hec-reorganization-reply-20260923",
+              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
+              "role": "披露日期"
             }
           ]
         },
@@ -13363,9 +13683,9 @@
         },
         {
           "id": "antitrust-mirror-read",
-          "title": "反垄断审查公告已补核指定披露同件",
-          "summary": "10月1日临2026-105号反垄断公告已补核巨潮官方同件：市场监管总局决定不实施进一步审查。公告仍称须经上交所审核及证监会同意注册。",
-          "occurredAt": null,
+          "title": "披露：重组通过反垄断审查",
+          "summary": "东阳光披露，秦淮数据重组取得市场监管总局不实施进一步审查决定。交易尚需上交所审核和证监会注册。",
+          "occurredAt": "2026-10-01",
           "isProgress": true,
           "verificationLevel": "official-body",
           "primaryEvidenceReportId": "hec-antitrust-mirror-20261001",
@@ -13379,6 +13699,11 @@
               "reportId": "hec-antitrust-mirror-20261001",
               "locator": "补充链接：巨潮1225591558.PDF全文1页，临2026-105号",
               "role": "本轮指定披露同件补核"
+            },
+            {
+              "reportId": "hec-antitrust-mirror-20261001",
+              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
+              "role": "披露日期"
             }
           ]
         }
@@ -13523,9 +13848,9 @@
       "milestones": [
         {
           "id": "disclosure",
-          "title": "深圳行云：VF客户服务器销售合同已交付验收",
+          "title": "披露VF客户服务器交付验收",
           "summary": "深圳行云向VF客户销售算力服务器，含税金额23,920万元；公司公告称已完成交付及验收。",
-          "occurredAt": null,
+          "occurredAt": "2026-09-30",
           "isProgress": true,
           "verificationLevel": "official-body",
           "primaryEvidenceReportId": "xingyun-vf-server-sale-20260930",
@@ -13534,6 +13859,11 @@
               "reportId": "xingyun-vf-server-sale-20260930",
               "locator": "第1页特别提示、第2页第四节",
               "role": "主证据"
+            },
+            {
+              "reportId": "xingyun-vf-server-sale-20260930",
+              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
+              "role": "披露日期"
             }
           ]
         }
@@ -13597,9 +13927,9 @@
       "milestones": [
         {
           "id": "disclosure",
-          "title": "湘树云：VE客户五年智算租赁合同",
-          "summary": "湘树云与VE客户签署五年智算服务合同，含税总额87,168万元。原文为接收验收中、预计9月30日前交付。",
-          "occurredAt": null,
+          "title": "披露VE客户五年智算租赁合同",
+          "summary": "湘树云与VE客户签署五年智算服务合同，含税总额8.72亿元。9月28日披露时设备仍在接收验收中，计划9月30日前交付。",
+          "occurredAt": "2026-09-28",
           "isProgress": true,
           "verificationLevel": "official-body",
           "primaryEvidenceReportId": "xingyun-ve-rental-20260928",
@@ -13608,6 +13938,11 @@
               "reportId": "xingyun-ve-rental-20260928",
               "locator": "第1页合同签署、第3页第四节",
               "role": "主证据"
+            },
+            {
+              "reportId": "xingyun-ve-rental-20260928",
+              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
+              "role": "披露日期"
             }
           ]
         }
@@ -13671,9 +14006,9 @@
       "milestones": [
         {
           "id": "disclosure",
-          "title": "行云科技：SA供应商算力采购框架新增合同",
+          "title": "披露SA供应商新增算力采购合同",
           "summary": "公司在128套采购框架下新增43套算力服务合同，含税45,313.98万元。累计签约75套；剩余53套仍为意向。",
-          "occurredAt": null,
+          "occurredAt": "2026-09-28",
           "isProgress": true,
           "verificationLevel": "official-body",
           "primaryEvidenceReportId": "xingyun-sa-procurement-20260928",
@@ -13682,6 +14017,11 @@
               "reportId": "xingyun-sa-procurement-20260928",
               "locator": "第1页第一节、第3—4页第五节",
               "role": "主证据"
+            },
+            {
+              "reportId": "xingyun-sa-procurement-20260928",
+              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
+              "role": "披露日期"
             }
           ]
         }
@@ -13749,9 +14089,9 @@
       "milestones": [
         {
           "id": "strategic-agreement",
-          "title": "签署战略合作协议",
-          "summary": "世纪互联公告与宁德时代签署战略合作协议，探索算力与绿色能源协同。具体项目仍需后续协议及实施确认。",
-          "occurredAt": null,
+          "title": "披露与宁德时代战略合作",
+          "summary": "世纪互联披露与宁德时代签署战略合作协议，合作方向涵盖数据中心、绿色能源及分布式算力网络。",
+          "occurredAt": "2026-08-18",
           "isProgress": true,
           "verificationLevel": "official-body",
           "primaryEvidenceReportId": "vnet-catl-cooperation-20260818",
@@ -13760,6 +14100,11 @@
               "reportId": "vnet-catl-cooperation-20260818",
               "locator": "公告前两段及前瞻风险段",
               "role": "主证据"
+            },
+            {
+              "reportId": "vnet-catl-cooperation-20260818",
+              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
+              "role": "披露日期"
             }
           ]
         }
@@ -13785,6 +14130,697 @@
             "checkedFrom": null,
             "checkedThrough": null,
             "note": "官方IR全文署日Aug 18, 2026，发布主体VNET Group, Inc.；合作方CATL。原文列设施、分布式网络与零碳Token生态规划，风险段明确特定项目仍需最终协议及后续实施；不把规划容量计作已投运。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sinnet-cloud-greenland-jv",
+      "title": "光环云与绿地香港组建合资公司",
+      "type": "acquisition",
+      "priority": 70,
+      "companyIds": [
+        "sinnet"
+      ],
+      "participants": [
+        {
+          "companyId": "sinnet",
+          "role": "公司及控股子公司经营事项"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "2月4日，光环云与绿地香港共同组建的绿环智擎数据科技有限公司在上海启动。",
+      "uncertainties": [],
+      "milestones": [
+        {
+          "id": "launch",
+          "title": "光环云与绿地香港组建合资公司",
+          "summary": "2月4日，光环云与绿地香港共同组建的绿环智擎数据科技有限公司在上海启动。",
+          "occurredAt": "2026-02-04",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "sinnet-cloud-jv-20260206",
+          "evidenceRefs": [
+            {
+              "reportId": "sinnet-cloud-jv-20260206",
+              "locator": "官方目录对应条目正文摘要：2月4日。",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "basisMilestoneIds": [
+        "launch"
+      ],
+      "latestVerifiedMilestoneId": "launch",
+      "review": {
+        "lastAttemptAt": "2026-10-19",
+        "result": "progress",
+        "note": "核对原始公告、发生日期及母子公司关系。",
+        "checks": [
+          {
+            "id": "sinnet-cloud-greenland-jv-review",
+            "channel": "公司原文",
+            "url": "https://sinnet-cloud.cn/news/details/114.html",
+            "attemptedAt": "2026-10-19",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "原文日期与节点动作对应；同一事项的后续进展合并。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sinnet-cloud-panacea-acquisition",
+      "title": "光环云宣布收购湃阳智能团队",
+      "type": "acquisition",
+      "priority": 75,
+      "companyIds": [
+        "sinnet"
+      ],
+      "participants": [
+        {
+          "companyId": "sinnet",
+          "role": "公司及控股子公司经营事项"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "光环云宣布收购湃阳智能团队，并推出联合开发的Panacea智能体训推平台，扩展企业AI工程化交付业务。",
+      "uncertainties": [],
+      "milestones": [
+        {
+          "id": "announcement",
+          "title": "光环云宣布收购湃阳智能团队",
+          "summary": "光环云宣布收购湃阳智能团队，并推出联合开发的Panacea智能体训推平台，扩展企业AI工程化交付业务。",
+          "occurredAt": "2026-03-13",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "sinnet-cloud-panacea-acquisition-20260313",
+          "evidenceRefs": [
+            {
+              "reportId": "sinnet-cloud-panacea-acquisition-20260313",
+              "locator": "官方新闻目录3月13日公告摘要；日期为宣布收购日。",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "basisMilestoneIds": [
+        "announcement"
+      ],
+      "latestVerifiedMilestoneId": "announcement",
+      "review": {
+        "lastAttemptAt": "2026-10-19",
+        "result": "progress",
+        "note": "核对原始公告、发生日期及母子公司关系。",
+        "checks": [
+          {
+            "id": "sinnet-cloud-panacea-acquisition-review",
+            "channel": "公司原文",
+            "url": "https://sinnet-cloud.cn/news/details/115.html",
+            "attemptedAt": "2026-10-19",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "原文日期与节点动作对应；同一事项的后续进展合并。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sinnet-cloud-panacea-sme",
+      "title": "中小企业智能体平台正式上线",
+      "type": "technology",
+      "priority": 80,
+      "companyIds": [
+        "sinnet"
+      ],
+      "participants": [
+        {
+          "companyId": "sinnet",
+          "role": "公司及控股子公司经营事项"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "visibility": "active",
+      "relatedEventIds": [
+        "sinnet-cloud-panacea-acquisition"
+      ],
+      "currentSummary": "光环云与湃阳联合开发运营的中小企业智能体平台在合肥上线，首批智能体同步开放，初期采用限流免费推广。",
+      "uncertainties": [],
+      "milestones": [
+        {
+          "id": "release",
+          "title": "发布中小企业智能体平台",
+          "summary": "7月20日，中国中小企业协会人工智能专委会联合光环云、湃阳智能发布Panacea for SMEs，由光环云与湃阳联合开发运营。",
+          "occurredAt": "2026-07-20",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "sinnet-cloud-panacea-release-20260723",
+          "evidenceRefs": [
+            {
+              "reportId": "sinnet-cloud-panacea-release-20260723",
+              "locator": "原文首段2026年7月20日。",
+              "role": "主证据"
+            }
+          ]
+        },
+        {
+          "id": "online",
+          "title": "中小企业智能体平台正式上线",
+          "summary": "光环云与湃阳联合开发运营的中小企业智能体平台在合肥上线，首批智能体同步开放，初期采用限流免费推广。",
+          "occurredAt": "2026-09-21",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "sinnet-cloud-panacea-online-20260922",
+          "evidenceRefs": [
+            {
+              "reportId": "sinnet-cloud-panacea-online-20260922",
+              "locator": "原文首段9月21日下午；中段关联7月发布。",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "basisMilestoneIds": [
+        "release",
+        "online"
+      ],
+      "latestVerifiedMilestoneId": "online",
+      "review": {
+        "lastAttemptAt": "2026-10-19",
+        "result": "progress",
+        "note": "核对原始公告、发生日期及母子公司关系。",
+        "checks": [
+          {
+            "id": "sinnet-cloud-panacea-sme-review",
+            "channel": "公司原文",
+            "url": "https://sinnet-cloud.cn/news/details/133.html",
+            "attemptedAt": "2026-10-19",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "原文日期与节点动作对应；同一事项的后续进展合并。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sinnet-cloud-ziphub",
+      "title": "光环云联合上线模型调用平台",
+      "type": "technology",
+      "priority": 60,
+      "companyIds": [
+        "sinnet"
+      ],
+      "participants": [
+        {
+          "companyId": "sinnet",
+          "role": "公司及控股子公司经营事项"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "光环云与蒜泥科技联合上线西安人工智能OPC创新社区模型调用平台，整合40余个模型，提供按用量计费的调用服务。",
+      "uncertainties": [],
+      "milestones": [
+        {
+          "id": "online",
+          "title": "光环云联合上线模型调用平台",
+          "summary": "光环云与蒜泥科技联合上线西安人工智能OPC创新社区模型调用平台，整合40余个模型，提供按用量计费的调用服务。",
+          "occurredAt": "2026-08-27",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "sinnet-cloud-ziphub-20260827",
+          "evidenceRefs": [
+            {
+              "reportId": "sinnet-cloud-ziphub-20260827",
+              "locator": "正文“今日正式上线”与目录8月27日对应。",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "basisMilestoneIds": [
+        "online"
+      ],
+      "latestVerifiedMilestoneId": "online",
+      "review": {
+        "lastAttemptAt": "2026-10-19",
+        "result": "progress",
+        "note": "核对原始公告、发生日期及母子公司关系。",
+        "checks": [
+          {
+            "id": "sinnet-cloud-ziphub-review",
+            "channel": "公司原文",
+            "url": "https://sinnet-cloud.cn/news/details/129.html",
+            "attemptedAt": "2026-10-19",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "原文日期与节点动作对应；同一事项的后续进展合并。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sinnet-cloud-orbix",
+      "title": "光环云签署AI平台国际合作",
+      "type": "contract",
+      "priority": 65,
+      "companyIds": [
+        "sinnet"
+      ],
+      "participants": [
+        {
+          "companyId": "sinnet",
+          "role": "公司及控股子公司经营事项"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "光环云与乌兹别克斯坦ORBIX TECH、重庆云计算投资运营有限公司签署合作协议，拟联合建设AI应用、支撑平台与支付服务。",
+      "uncertainties": [],
+      "milestones": [
+        {
+          "id": "signed",
+          "title": "光环云签署AI平台国际合作",
+          "summary": "光环云与乌兹别克斯坦ORBIX TECH、重庆云计算投资运营有限公司签署合作协议，拟联合建设AI应用、支撑平台与支付服务。",
+          "occurredAt": "2026-09-15",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "sinnet-cloud-orbix-20260916",
+          "evidenceRefs": [
+            {
+              "reportId": "sinnet-cloud-orbix-20260916",
+              "locator": "原文“在15日举办的…活动上…正式签署合作协议”。",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "basisMilestoneIds": [
+        "signed"
+      ],
+      "latestVerifiedMilestoneId": "signed",
+      "review": {
+        "lastAttemptAt": "2026-10-19",
+        "result": "progress",
+        "note": "核对原始公告、发生日期及母子公司关系。",
+        "checks": [
+          {
+            "id": "sinnet-cloud-orbix-review",
+            "channel": "公司原文",
+            "url": "https://sinnet-cloud.cn/news/details/131.html",
+            "attemptedAt": "2026-10-19",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "原文日期与节点动作对应；同一事项的后续进展合并。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sinnet-horinger-expansion",
+      "title": "和林格尔项目拟追加12.65亿元",
+      "type": "project",
+      "priority": 100,
+      "companyIds": [
+        "sinnet"
+      ],
+      "participants": [
+        {
+          "companyId": "sinnet",
+          "role": "公司及控股子公司经营事项"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "董事会通过和林格尔项目追加投资不超过12.65亿元，总投资约25亿元，规划90—120MW、7000—10000个机柜。项目尚未开工。",
+      "uncertainties": [],
+      "milestones": [
+        {
+          "id": "board-approved",
+          "title": "和林格尔项目拟追加12.65亿元",
+          "summary": "董事会通过和林格尔项目追加投资不超过12.65亿元，总投资约25亿元，规划90—120MW、7000—10000个机柜。项目尚未开工。",
+          "occurredAt": "2026-09-24",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "sinnet-invest-20260925",
+          "evidenceRefs": [
+            {
+              "reportId": "sinnet-invest-20260925",
+              "locator": "公告2026-034号第1页董事会9月24日；第2页规模与未开工状态。",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "basisMilestoneIds": [
+        "board-approved"
+      ],
+      "latestVerifiedMilestoneId": "board-approved",
+      "review": {
+        "lastAttemptAt": "2026-10-19",
+        "result": "progress",
+        "note": "核对原始公告、发生日期及母子公司关系。",
+        "checks": [
+          {
+            "id": "sinnet-horinger-expansion-review",
+            "channel": "公司原文",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-09-25/1225582046.PDF",
+            "attemptedAt": "2026-10-19",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "原文日期与节点动作对应；同一事项的后续进展合并。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sinnet-unicom-inner-mongolia",
+      "title": "与内蒙古联通签署战略合作",
+      "type": "contract",
+      "priority": 70,
+      "companyIds": [
+        "sinnet"
+      ],
+      "participants": [
+        {
+          "companyId": "sinnet",
+          "role": "公司及控股子公司经营事项"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "光环新网与内蒙古联通在呼和浩特签署战略合作协议，合作方向包括绿色算力基础设施、市场拓展及行业解决方案。",
+      "uncertainties": [],
+      "milestones": [
+        {
+          "id": "signed",
+          "title": "与内蒙古联通签署战略合作",
+          "summary": "光环新网与内蒙古联通在呼和浩特签署战略合作协议，合作方向包括绿色算力基础设施、市场拓展及行业解决方案。",
+          "occurredAt": "2025-12-09",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "sinnet-unicom-20251211",
+          "evidenceRefs": [
+            {
+              "reportId": "sinnet-unicom-20251211",
+              "locator": "公司原文签约日期2025年12月9日。",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "basisMilestoneIds": [
+        "signed"
+      ],
+      "latestVerifiedMilestoneId": "signed",
+      "review": {
+        "lastAttemptAt": "2026-10-19",
+        "result": "progress",
+        "note": "核对原始公告、发生日期及母子公司关系。",
+        "checks": [
+          {
+            "id": "sinnet-unicom-inner-mongolia-review",
+            "channel": "公司原文",
+            "url": "https://www.sinnet.com.cn/news/1814.html",
+            "attemptedAt": "2026-10-19",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "原文日期与节点动作对应；同一事项的后续进展合并。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sharetronic-lease-20260921-action",
+      "title": "披露融资租赁追加应收账款质押",
+      "type": "capital",
+      "priority": 75,
+      "companyIds": [
+        "sharetronic"
+      ],
+      "participants": [
+        {
+          "companyId": "sharetronic",
+          "role": "上市公司及合并范围内子公司"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "协创数据与浦银金租签订应收账款质押合同，标的评估值25.07亿元，担保主债权最高19.35亿元，用于已有售后回租债务担保。",
+      "uncertainties": [],
+      "milestones": [
+        {
+          "id": "disclosed",
+          "title": "披露融资租赁追加应收账款质押",
+          "summary": "协创数据与浦银金租签订应收账款质押合同，标的评估值25.07亿元，担保主债权最高19.35亿元，用于已有售后回租债务担保。",
+          "occurredAt": "2026-09-21",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "sharetronic-lease-20260921",
+          "evidenceRefs": [
+            {
+              "reportId": "sharetronic-lease-20260921",
+              "locator": "2026-144号第2—3页；签约表述为近日，节点为9月21日披露动作。",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "basisMilestoneIds": [
+        "disclosed"
+      ],
+      "latestVerifiedMilestoneId": "disclosed",
+      "review": {
+        "lastAttemptAt": "2026-10-19",
+        "result": "progress",
+        "note": "核对原始公告、发生日期及母子公司关系。",
+        "checks": [
+          {
+            "id": "sharetronic-lease-20260921-action-review",
+            "channel": "公司原文",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-09-21/1225573798.PDF",
+            "attemptedAt": "2026-10-19",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "原文日期与节点动作对应；同一事项的后续进展合并。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "sharetronic-issue-accepted-20260916-action",
+      "title": "定向发行申请获深交所受理",
+      "type": "capital",
+      "priority": 75,
+      "companyIds": [
+        "sharetronic"
+      ],
+      "participants": [
+        {
+          "companyId": "sharetronic",
+          "role": "上市公司及合并范围内子公司"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "协创数据收到深交所受理通知，向特定对象发行股票申请进入审核程序，后续须经深交所审核及证监会注册。",
+      "uncertainties": [],
+      "milestones": [
+        {
+          "id": "disclosed",
+          "title": "定向发行申请获深交所受理",
+          "summary": "协创数据收到深交所受理通知，向特定对象发行股票申请进入审核程序，后续须经深交所审核及证监会注册。",
+          "occurredAt": "2026-09-16",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "sharetronic-issue-accepted-20260916",
+          "evidenceRefs": [
+            {
+              "reportId": "sharetronic-issue-accepted-20260916",
+              "locator": "2026-140号第1页：9月16日收到受理通知。",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "basisMilestoneIds": [
+        "disclosed"
+      ],
+      "latestVerifiedMilestoneId": "disclosed",
+      "review": {
+        "lastAttemptAt": "2026-10-19",
+        "result": "progress",
+        "note": "核对原始公告、发生日期及母子公司关系。",
+        "checks": [
+          {
+            "id": "sharetronic-issue-accepted-20260916-action-review",
+            "channel": "公司原文",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-09-16/1225568926.PDF",
+            "attemptedAt": "2026-10-19",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "原文日期与节点动作对应；同一事项的后续进展合并。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "xingyun-vg-sale-20260930-action",
+      "title": "披露VG客户5.73亿元订单交付验收",
+      "type": "contract",
+      "priority": 75,
+      "companyIds": [
+        "xingyun"
+      ],
+      "participants": [
+        {
+          "companyId": "xingyun",
+          "role": "上市公司及合并范围内子公司"
+        }
+      ],
+      "regions": [
+        "中国",
+        "新加坡"
+      ],
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "行云科技新加坡孙公司向VG客户销售算力服务器，两份订单合计约5.73亿元；公司披露设备已完成交付及验收。",
+      "uncertainties": [],
+      "milestones": [
+        {
+          "id": "disclosed",
+          "title": "披露VG客户5.73亿元订单交付验收",
+          "summary": "行云科技新加坡孙公司向VG客户销售算力服务器，两份订单合计约5.73亿元；公司披露设备已完成交付及验收。",
+          "occurredAt": "2026-09-30",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "xingyun-vg-sale-20260930",
+          "evidenceRefs": [
+            {
+              "reportId": "xingyun-vg-sale-20260930",
+              "locator": "2026-128号第1—2页；披露9月30日，交付验收具体日未单列。",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "basisMilestoneIds": [
+        "disclosed"
+      ],
+      "latestVerifiedMilestoneId": "disclosed",
+      "review": {
+        "lastAttemptAt": "2026-10-19",
+        "result": "progress",
+        "note": "核对原始公告、发生日期及母子公司关系。",
+        "checks": [
+          {
+            "id": "xingyun-vg-sale-20260930-action-review",
+            "channel": "公司原文",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-09-30/1225588474.PDF",
+            "attemptedAt": "2026-10-19",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "原文日期与节点动作对应；同一事项的后续进展合并。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hec-buyback-20261010-action",
+      "title": "董事会通过6亿至12亿元回购方案",
+      "type": "capital",
+      "priority": 75,
+      "companyIds": [
+        "hec"
+      ],
+      "participants": [
+        {
+          "companyId": "hec",
+          "role": "上市公司及合并范围内子公司"
+        }
+      ],
+      "regions": [
+        "中国"
+      ],
+      "visibility": "active",
+      "relatedEventIds": [],
+      "currentSummary": "东阳光拟使用6亿至12亿元自有或自筹资金回购股份，上限47.74元/股、期限6个月，用于员工持股或股权激励。",
+      "uncertainties": [],
+      "milestones": [
+        {
+          "id": "disclosed",
+          "title": "董事会通过6亿至12亿元回购方案",
+          "summary": "东阳光拟使用6亿至12亿元自有或自筹资金回购股份，上限47.74元/股、期限6个月，用于员工持股或股权激励。",
+          "occurredAt": "2026-10-09",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "hec-buyback-20261010",
+          "evidenceRefs": [
+            {
+              "reportId": "hec-buyback-20261010",
+              "locator": "临2026-107号第2页：10月9日董事会审议。",
+              "role": "主证据"
+            }
+          ]
+        }
+      ],
+      "basisMilestoneIds": [
+        "disclosed"
+      ],
+      "latestVerifiedMilestoneId": "disclosed",
+      "review": {
+        "lastAttemptAt": "2026-10-19",
+        "result": "progress",
+        "note": "核对原始公告、发生日期及母子公司关系。",
+        "checks": [
+          {
+            "id": "hec-buyback-20261010-action-review",
+            "channel": "公司原文",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-10-10/1225600203.PDF",
+            "attemptedAt": "2026-10-19",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "原文日期与节点动作对应；同一事项的后续进展合并。"
           }
         ]
       }

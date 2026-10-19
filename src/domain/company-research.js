@@ -4,6 +4,11 @@ export function companyRegistry(data) {
   return data.companies || [];
 }
 
+export function trackedCompanies(data) {
+  return ['sinnet', 'xingyun', 'vnet', 'sharetronic', 'gds', 'hec']
+    .map(id => companyRegistry(data).find(company => company.id === id)).filter(Boolean);
+}
+
 export function companySearchTerms(company) {
   return [...new Set([
     company.name, company.legalName, ...(company.aliases || []),

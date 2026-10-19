@@ -11,6 +11,11 @@
 .horizontal-directory .brand { width: 248px; padding-left: 0; }
 .horizontal-directory .app-header nav { margin-left: 24px; gap: 32px; }
 .horizontal-directory .header-meta { font-size: 12px; }
+@media (min-width:801px) and (max-width:1100px) {
+  .horizontal-directory .app-header .brand { width:190px; }
+  .horizontal-directory .app-header nav { gap:14px; margin-left:12px; }
+  .horizontal-directory .header-meta { display:none; }
+}
 .horizontal-directory .workspace { display: block; }
 .horizontal-directory .main-panel { height: 100%; padding: 20px var(--directory-gutter) 32px; }
 .horizontal-directory .page-heading { margin-bottom: 16px; }

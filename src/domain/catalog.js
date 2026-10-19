@@ -45,7 +45,7 @@ export const contentScopeLabels = Object.freeze({
 });
 export const judgmentLabels = Object.freeze({ fact: "事实陈述", opinion: "研究观点", forecast: "预测" });
 export const visibilityLabels = Object.freeze({ active: "正式资料", reference: "补充参考", archived: "已归档" });
-export const eventTypeLabels = Object.freeze({ acquisition: '并购 / 重大投资', capital: '融资 / 资产交易', contract: '重大合同 / 业务合作', risk: '重要风险 / 监管事项' });
+export const eventTypeLabels = Object.freeze({ project: '项目建设', technology: '技术升级', acquisition: '并购 / 重大投资', capital: '融资 / 资产交易', contract: '重大合同 / 业务合作', risk: '重要风险 / 监管事项' });
 export const evidenceLevelLabels = Object.freeze({ 'official-body': '官方披露正文已核', 'disclosure-paper': '指定披露报刊所载公告已读', 'third-party-mirror': '第三方镜像已读，指定披露同件待核', media: '媒体转述', lead: '仅目录 / 检索线索', pending: '待核' });
 export const changeKindLabels = Object.freeze({ 'new-record': '新收录', historical: '历史补录', 'event-node': '事项新节点', revision: '信息修订', evidence: '证据补核', financial: '财务补齐', archive: '归档', source: '来源调整' });
 export const reviewResultLabels = Object.freeze({ progress: '发现已核进展', 'no-new': '限定范围未确认新增', partial: '核查部分完成', blocked: '核查受阻', 'not-checked': '尚未专项核查', conflict: '证据冲突待核' });

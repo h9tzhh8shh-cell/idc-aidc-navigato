@@ -44,7 +44,7 @@ test('F04: concrete NEA power policy remains admissible',()=>{
  const d=copy();d.reports.push({...r('nda-compute-network-20260912'),id:'fixture-power-policy',title:'数据中心绿电直连政策',summary:'隔离夹具：具体接电与绿电直连审批，不是宏观用电统计。',originalPublisher:'国家能源局',url:'https://www.nea.gov.cn/fixture-power-policy',originalUrl:null});
  assert.deepEqual(validateCatalog(d),[]);
 });
-test('F06–F10/F17–F18: concrete NDA additions, all five media and six financial records have evidence',()=>{
+test('F06–F10/F17–F18: concrete NDA additions, all five media and six core companies have financial evidence',()=>{
  assert.equal(data.reports.filter(r=>r.id.startsWith('nda-')&&r.publishedAt>='2026-09-01').length,3);
  for(const sourceId of ['nbd-industry','cls-industry','jiemian-industry','thepaper-industry','36kr-industry']){
   const originalIds=new Set(data.changeBatches.find(b=>b.batchId==='phase4-content-20261012').changes.filter(c=>c.objectType==='report'&&c.kinds.includes('new-record')).map(c=>c.objectId));
@@ -54,7 +54,7 @@ test('F06–F10/F17–F18: concrete NDA additions, all five media and six financ
  assert.equal(r('36kr-ixin-supernode-20261012').authorship.type,'brief');
  assert.equal(r('nbd-oulu-power-20260924').authorship.type,'brief');
  assert.equal(r('cls-compute-utilization-20260913').authorship.type,'journalist');
- assert.equal(data.reports.filter(r=>r.financial?.status==='verified'&&data.companies.find(c=>c.id===r.financial.companyId)?.role==='core').length,6);
+ assert.equal(new Set(data.reports.filter(r=>r.financial?.status==='verified'&&data.companies.find(c=>c.id===r.financial.companyId)?.role==='core').map(r=>r.financial.companyId)).size,6);
  for(const c of data.companies.filter(c=>c.role==='core'))assert.ok(latestFinancial(data,c.id).report);
 });
 test('F11–F13: original financial rows, foreign attribution and arithmetic are exact',()=>{
@@ -88,7 +88,8 @@ test('F07/F16: report period selection ignores news windows and historical recor
  assert.equal(latestFinancial(d,'sinnet').pending.length,1);assert.equal(latestFinancial(d,'sinnet').report.id,original.id);
 });
 test('F16/F20: ordinary source preview obeys topic and type; source description does not pollute articles',()=>{
- const s=sources.find(s=>s.id==='sinnet-disclosures');assert.equal(getSourcePreview(s,{scope:'domestic',types:['news']}),null);
+ const s=sources.find(s=>s.id==='sinnet-disclosures');const preview=getSourcePreview(s,{scope:'domestic',types:['news']});assert.equal(preview.kind,'news');assert.equal(preview.financial,undefined);
+ assert.equal(getSourcePreview({...s,relatedReports:s.relatedReports.filter(r=>r.financial)},{scope:'domestic',types:['news']}),null);
  const bad={...r('36kr-ixin-supernode-20261012'),title:'不相关消费资讯',summary:'测试：消费手机',tags:[]};
  assert.equal(filterReports([bad],sources,{scope:'all',q:'液冷'}).length,0);
  assert.equal(data.reports.filter(r=>r.kind==='broker-report'&&r.visibility==='active').length,0);

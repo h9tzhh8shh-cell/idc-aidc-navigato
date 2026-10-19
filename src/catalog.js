@@ -1,6 +1,6 @@
 import catalog from '../public/assets/catalog.json' with { type: 'json' };
 import { kindLabels, SEA_REGIONS } from './domain/catalog.js';
-import { companyRegistry, companySearchTerms, companyMatchesQuery } from './domain/company-research.js';
+import { companyRegistry, companySearchTerms, companyMatchesQuery, trackedCompanies } from './domain/company-research.js';
 
 export const DOMESTIC_REGIONS = ['中国', '中国香港'];
 export const FOREIGN_REGIONS = [...SEA_REGIONS, '东南亚', '美国', '北美', '欧洲', '拉丁美洲'];
@@ -324,8 +324,9 @@ export function writeQuery(filters, view = 'sources', selectedId = null, navigat
     if (clean.batchId && clean.readingMode === 'batches') params.set('batch',clean.batchId);
   }
   for (const key of ['company', 'event']) if (navigation[key] && /^[a-z0-9][a-z0-9-]{0,100}$/.test(navigation[key])) params.set(key, navigation[key]);
+  if (['90','30','2026-h1'].includes(navigation.companyRange)) params.set('companyRange', navigation.companyRange);
   if (navigation.listedMode === 'sources') params.set('listedMode', 'sources');
-  if (['acquisition','capital','contract','risk'].includes(navigation.eventType)) params.set('eventType',navigation.eventType);
+  if (['acquisition','capital','contract','risk','project','technology'].includes(navigation.eventType)) params.set('eventType',navigation.eventType);
   if (navigation.returnQuery && navigation.returnQuery.length < 4000) params.set('return',navigation.returnQuery);
   if (['companies','articles','daily','weekly'].includes(navigation.discovery)) params.set('discover', navigation.discovery);
   for (const key of ['issue', 'report']) if (/^[a-z0-9][a-z0-9-]{0,179}$/.test(navigation[key] || '')) params.set(key, navigation[key]);
@@ -356,8 +357,9 @@ export function readQuery(search = '') {
   if (params.has('company') || params.has('event') || params.has('listedMode') || params.has('return') || params.has('eventType') || params.has('discover') || params.has('issue') || params.has('report')) {
     state.navigation = {};
     for (const key of ['company', 'event']) if (params.has(key)) state.navigation[key] = /^[a-z0-9][a-z0-9-]{0,100}$/.test(params.get(key)) ? params.get(key) : 'invalid-record';
+    if (['2026','90','30','2026-h1'].includes(params.get('companyRange'))) state.navigation.companyRange=params.get('companyRange');
     if (params.get('listedMode') === 'sources') state.navigation.listedMode = 'sources';
-    if (['acquisition','capital','contract','risk'].includes(params.get('eventType'))) state.navigation.eventType=params.get('eventType');
+    if (['acquisition','capital','contract','risk','project','technology'].includes(params.get('eventType'))) state.navigation.eventType=params.get('eventType');
     if (params.get('return') && params.get('return').length < 4000) state.navigation.returnQuery=params.get('return');
     if (['companies','articles','daily','weekly'].includes(params.get('discover'))) state.navigation.discovery=params.get('discover');
     for (const key of ['issue', 'report']) if (params.has(key)) state.navigation[key] = /^[a-z0-9][a-z0-9-]{0,179}$/.test(params.get(key)) ? params.get(key) : 'invalid-record';
@@ -391,7 +393,7 @@ export function companyGroups(data, filters = {}) {
   const registry = companyRegistry(data);
   const lookup = new Map(registry.map(company => [company.id, company]));
   return [
-    { id: 'core', name: '核心公司', items: ['sinnet','xingyun','vnet','sharetronic','gds','hec'].map(id => lookup.get(id)).filter(Boolean) },
+    { id: 'core', name: '核心公司', items: trackedCompanies(data) },
     { id: 'operator', name: '电信运营商', items: ['china-mobile','china-telecom','china-unicom-h'].map(id => lookup.get(id)).filter(Boolean) },
     { id: 'reference', name: '其他已收录主体', items: registry.filter(company => company.role === 'reference') },
   ].map(group => ({ ...group, items: group.items.filter(matchesCompany) }));
