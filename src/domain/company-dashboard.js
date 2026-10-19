@@ -33,15 +33,21 @@ export function companyFinancialAt(data, companyId, date) {
   return latestFinancial({ reports: data.reports.filter(report => report.publishedAt && report.publishedAt <= date && (!report.financial || report.financial.period.end <= date)) }, companyId).report;
 }
 
-export function companyMediaRange(today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Shanghai' })) {
+export function companyMediaRange(today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Shanghai' }), selectedRange) {
   const [year, month, day] = today.split('-').map(Number);
   const start = new Date(Date.UTC(year, month - 4, 1));
   const lastDay = new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth() + 1, 0)).getUTCDate();
   start.setUTCDate(Math.min(day, lastDay));
-  return { start: start.toISOString().slice(0, 10), end: today };
+  const range = { start: start.toISOString().slice(0, 10), end: today };
+  if (selectedRange) {
+    range.start = range.start > selectedRange.start ? range.start : selectedRange.start;
+    range.end = range.end < selectedRange.end ? range.end : selectedRange.end;
+  }
+  return range.start <= range.end ? range : null;
 }
 
 export function companyMediaReports(data, companyId, range = companyMediaRange()) {
+  if (!range) return [];
   const sources = new Map(data.sources.map(source => [source.id, source]));
   const seen = new Set();
   return data.reports.filter(report => report.companyIds?.includes(companyId) && report.kind === 'news' &&

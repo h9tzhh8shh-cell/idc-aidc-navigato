@@ -68,6 +68,22 @@ test('media uses three calendar months, clamping month ends and spanning years',
   assert.deepEqual(companyMediaRange('2026-01-01'), { start:'2025-10-01', end:'2026-01-01' });
 });
 
+test('media follows the selected company time range within the three-month window', () => {
+  const today='2026-10-19';
+  const selected=key=>companyMediaRange(today,companyRange(key,today));
+  assert.deepEqual(selected('2026'),{start:'2026-07-19',end:today});
+  assert.deepEqual(selected('90'),{start:'2026-07-22',end:today});
+  assert.deepEqual(selected('30'),{start:'2026-09-20',end:today});
+  assert.equal(selected('2026-h1'),null);
+  const all=companyMediaReports(data,'sinnet',selected('2026'));
+  const recent=companyMediaReports(data,'sinnet',selected('30'));
+  assert.ok(all.some(report=>report.publishedAt < '2026-09-20'));
+  assert.ok(recent.length > 0 && recent.length < all.length);
+  assert.ok(recent.every(report=>report.publishedAt >= '2026-09-20' && report.publishedAt <= today));
+  assert.deepEqual(companyMediaReports(data,'sinnet',selected('2026-h1')),[]);
+  assert.deepEqual(companyMediaRange('2026-01-10',companyRange('2026','2026-01-10')),{start:'2026-01-01',end:'2026-01-10'});
+});
+
 test('media includes older-than-21-day independent coverage, excludes unverified, unrelated and duplicate records', () => {
   const item = { id:'media', sourceId:'press', companyIds:['sinnet'], kind:'news', visibility:'active',
     publishedAt:'2026-08-01', verifiedAt:'2026-10-19', verificationStatus:'verified', contentScope:'full', url:'https://news.example/article' };

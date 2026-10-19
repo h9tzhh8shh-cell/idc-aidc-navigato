@@ -48,7 +48,7 @@ function TimelineCard({ action }) {
   </li>;
 }
 
-function MediaReports({ reports, companyId, height, onHeight, expanded }) {
+function MediaReports({ reports, companyId, rangeKey, height, onHeight, expanded }) {
   const viewport = useRef(null);
   const drag = useRef(null);
   const [measuredHeight, setMeasuredHeight] = useState(0);
@@ -57,7 +57,7 @@ function MediaReports({ reports, companyId, height, onHeight, expanded }) {
     observer.observe(viewport.current);
     return () => observer.disconnect();
   }, []);
-  useEffect(() => { viewport.current?.scrollTo({ top: 0 }); }, [companyId]);
+  useEffect(() => { viewport.current?.scrollTo({ top: 0 }); }, [companyId, rangeKey]);
   function resize(value) { onHeight(Math.max(80, Math.min(1200, value))); }
   function beginResize(event) {
     if (event.button !== 0) return;
@@ -77,7 +77,7 @@ function MediaReports({ reports, companyId, height, onHeight, expanded }) {
         <div className="company-media-content"><h4><OutLink href={report.originalUrl || report.url}>{report.title}</OutLink></h4><p>{report.summary}</p>
           <div className="company-media-meta"><span>{report.originalPublisher}</span><span className="company-media-kind">{report.authorship?.type === 'repost' ? '转载' : report.judgmentTypes.includes('opinion') ? '解读' : '报道'}</span></div>
         </div><OutLink className="company-media-source" href={report.originalUrl || report.url}>阅读原文</OutLink>
-      </li>)}</ol> : <p className="company-dashboard-empty">近三个月暂无已收录媒体报道。</p>}
+      </li>)}</ol> : <p className="company-dashboard-empty">当前时间范围暂无媒体报道。</p>}
     </div>
     {reports.length > 0 && <div className="company-media-resize" role="separator" tabIndex={0} aria-label="调整媒体报道窗口高度" aria-controls="company-media-window" aria-orientation="horizontal" aria-valuemin={80} aria-valuemax={Math.max(1200, measuredHeight)} aria-valuenow={measuredHeight} onPointerDown={beginResize} onPointerMove={event => { if (drag.current) resize(drag.current.height + event.clientY - drag.current.y); }} onPointerUp={endResize} onPointerCancel={endResize} onLostPointerCapture={endResize} onKeyDown={resizeByKey}>
       <IconGripHorizontal size={19} aria-hidden="true"/><span>拖动调整高度</span>
@@ -94,7 +94,8 @@ export function CompanyDashboard({ data, sources, companyId, eventId, rangeKey =
   const company = data.companies.find(company => company.id === companyId);
   const companies = trackedCompanies(data);
   const range = companyRange(rangeKey);
-  const mediaRange = companyMediaRange();
+  const mediaRange = companyMediaRange(undefined, range);
+  const displayedMediaRange = mediaRange || range;
   const mediaReports = companyMediaReports(data, companyId, mediaRange);
   const readingMedia = companyTab === 'media';
   const actions = companyDashboardActions(data, companyId, range, eventType);
@@ -105,7 +106,7 @@ export function CompanyDashboard({ data, sources, companyId, eventId, rangeKey =
   const website = company?.discoveryProfile?.website || source?.entryUrl;
   useEffect(() => { setShowAll(false); track.current?.scrollTo({ left: 0 }); }, [companyId, rangeKey, eventType]);
   useEffect(() => { title.current?.focus(); }, [companyId]);
-  useEffect(() => { setMediaHeight(null); setMediaExpanded(false); }, [companyId]);
+  useEffect(() => { setMediaHeight(null); setMediaExpanded(false); }, [companyId, rangeKey]);
   function changeTabByKey(event, index) {
     const next = { ArrowRight: 1 - index, ArrowLeft: 1 - index, Home: 0, End: 1 }[event.key];
     if (next !== undefined) { event.preventDefault(); onTab(next ? 'media' : 'timeline'); event.currentTarget.parentElement.children[next].focus(); }
@@ -132,10 +133,10 @@ export function CompanyDashboard({ data, sources, companyId, eventId, rangeKey =
     <section className="company-timeline-section" aria-label="公司重大动作与媒体报道">
       <div className="company-research-heading">
         <div className="company-research-tabs" role="tablist" aria-label="公司研究内容">{[['timeline', '重大动作时间线'], ['media', '相关媒体报道']].map(([id, label], index) => <button key={id} id={`company-tab-${id}`} role="tab" aria-selected={companyTab === id} aria-controls={`company-panel-${id}`} tabIndex={companyTab === id ? 0 : -1} onClick={() => onTab(id)} onKeyDown={event => changeTabByKey(event, index)}>{label}</button>)}</div>
-        <span className="company-range-label">{readingMedia ? `近三个月 · ${mediaRange.start} — ${mediaRange.end}` : `${range.start} — ${range.end}`}</span>
+        <span className="company-range-label">{readingMedia ? `${rangeKey === '2026' ? '近三个月 · ' : ''}${displayedMediaRange.start} — ${displayedMediaRange.end}` : `${range.start} — ${range.end}`}</span>
         {readingMedia ? mediaReports.length > 4 && <button className="text-link company-panel-expand" onClick={() => { setMediaHeight(null); setMediaExpanded(!mediaExpanded); }} aria-expanded={mediaExpanded} aria-controls="company-media-window">{mediaExpanded ? '收起' : '查看全部'}<IconArrowRight size={15} aria-hidden="true"/></button> : actions.length > 8 && <button className="text-link company-panel-expand" onClick={() => setShowAll(!showAll)} aria-expanded={showAll}>{showAll ? '收起' : `查看全部 ${actions.length} 项`}<IconArrowRight size={15} aria-hidden="true"/></button>}
       </div>
-      {readingMedia ? <div role="tabpanel" id="company-panel-media" aria-labelledby="company-tab-media"><MediaReports reports={mediaReports} companyId={companyId} height={mediaHeight} expanded={mediaExpanded} onHeight={value => { setMediaHeight(value); setMediaExpanded(false); }}/></div> : <div role="tabpanel" id="company-panel-timeline" aria-labelledby="company-tab-timeline">
+      {readingMedia ? <div role="tabpanel" id="company-panel-media" aria-labelledby="company-tab-media"><MediaReports reports={mediaReports} companyId={companyId} rangeKey={rangeKey} height={mediaHeight} expanded={mediaExpanded} onHeight={value => { setMediaHeight(value); setMediaExpanded(false); }}/></div> : <div role="tabpanel" id="company-panel-timeline" aria-labelledby="company-tab-timeline">
       <div className="company-event-filters" role="group" aria-label="事件类型">{[['', '全部'], ...Object.entries(dashboardTypes)].map(([id, label]) => <button key={id} aria-pressed={eventType === id} onClick={() => onEventType(id)}>{label}</button>)}</div>
       {highlights.length ? <div className="company-timeline-scroll" ref={track} tabIndex={0} aria-label="横向重大动作时间线"><ol className="company-timeline" style={{ '--event-count': highlights.length }}>{highlights.map(action => <TimelineCard key={action.id} action={action}/>)}</ol></div> : <p className="company-dashboard-empty">当前范围暂无重大动作。</p>}
       </div>}
