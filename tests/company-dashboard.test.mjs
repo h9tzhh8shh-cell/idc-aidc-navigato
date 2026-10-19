@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import data from '../public/assets/catalog.json' with { type: 'json' };
-import { companyRange, companyDashboardActions, companyHighlights, companyFinancialAt } from '../src/domain/company-dashboard.js';
+import { companyRange, companyDashboardActions, companyHighlights, companyFinancialAt, companyMediaRange, companyMediaReports } from '../src/domain/company-dashboard.js';
 import { readQuery, writeQuery, normalizeFilters } from '../src/catalog.js';
 
 const range = companyRange('2026','2026-10-19');
@@ -59,4 +59,36 @@ test('company, time and event filters roundtrip while original research conditio
   assert.deepEqual(restored.filters,filters);
   assert.deepEqual(readQuery(restored.navigation.returnQuery).filters,filters);
   assert.equal(readQuery('?company=sinnet&companyRange=invalid').navigation.companyRange,undefined);
+});
+
+test('media uses three calendar months, clamping month ends and spanning years', () => {
+  assert.deepEqual(companyMediaRange('2026-10-19'), { start:'2026-07-19', end:'2026-10-19' });
+  assert.deepEqual(companyMediaRange('2026-05-31'), { start:'2026-02-28', end:'2026-05-31' });
+  assert.deepEqual(companyMediaRange('2024-05-31'), { start:'2024-02-29', end:'2024-05-31' });
+  assert.deepEqual(companyMediaRange('2026-01-01'), { start:'2025-10-01', end:'2026-01-01' });
+});
+
+test('media includes older-than-21-day independent coverage, excludes unverified, unrelated and duplicate records', () => {
+  const item = { id:'media', sourceId:'press', companyIds:['sinnet'], kind:'news', visibility:'active',
+    publishedAt:'2026-08-01', verifiedAt:'2026-10-19', verificationStatus:'verified', contentScope:'full', url:'https://news.example/article' };
+  const records = [
+    item, { ...item, id:'newest', publishedAt:'2026-10-19', url:'https://news.example/new' },
+    { ...item, id:'boundary', publishedAt:'2026-07-19', url:'https://news.example/boundary' },
+    { ...item, id:'before', publishedAt:'2026-07-18' }, { ...item, id:'future', publishedAt:'2026-10-20' },
+    { ...item, id:'unknown', publishedAt:null }, { ...item, id:'wrong-company', companyIds:['sinnet-similar'] },
+    { ...item, id:'company-release', sourceId:'company' }, { ...item, id:'disclosure', kind:'disclosure' },
+    { ...item, id:'snippet', contentScope:'search-snippet' }, { ...item, id:'unverified', verificationStatus:'unverified' },
+    { ...item, id:'archived', visibility:'archived' }, { ...item, id:'duplicate', duplicateOf:'media' },
+    { ...item, id:'same-link', url:'https://news.example/article?utm_source=share#section' },
+  ];
+  const fixture = { reports:records, sources:[{id:'press',sourceType:'media'},{id:'company',sourceType:'company'}] };
+  assert.deepEqual(companyMediaReports(fixture,'sinnet',companyMediaRange('2026-10-19')).map(r=>r.id), ['newest','media','boundary']);
+  assert.equal(fixture.reports[0].id,'media');
+});
+
+test('media tab survives company research URL and browser-history state restoration', () => {
+  const filters = normalizeFilters({ q:'液冷',scope:'domestic' });
+  const navigation = { company:'sinnet', companyTab:'media', companyRange:'30', eventType:'project' };
+  assert.deepEqual(readQuery(writeQuery(filters,'sources',null,navigation)).navigation,navigation);
+  assert.equal(readQuery('?company=sinnet&companyTab=invalid').navigation.companyTab,undefined);
 });

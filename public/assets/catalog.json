@@ -4069,6 +4069,366 @@
       "subcategoryIds": [
         "securities-regulation"
       ]
+    },
+    {
+      "id": "tidenews",
+      "name": "潮新闻",
+      "organization": "潮新闻",
+      "sourceType": "media",
+      "entryUrl": "https://tidenews.com.cn/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "listed-companies"
+      ],
+      "purpose": "数据中心、算力服务与上市公司业务报道",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "companyIds": [],
+      "verificationNote": "2026-10-19通过AnySearch读取所收录文章正文及署名，记录见相关媒体报道_本地验收_2026-10-19/sinnet-tide.txt。",
+      "mediaType": "行业与财经媒体",
+      "shortName": "潮新闻",
+      "discoveryType": "open"
+    },
+    {
+      "id": "ofweek-cloud",
+      "name": "OFweek云计算",
+      "organization": "OFweek云计算",
+      "sourceType": "media",
+      "entryUrl": "https://cloud.ofweek.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "listed-companies"
+      ],
+      "purpose": "数据中心、算力服务与上市公司业务报道",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "companyIds": [],
+      "verificationNote": "2026-10-19通过AnySearch读取所收录文章正文及署名，记录见相关媒体报道_本地验收_2026-10-19/sinnet-ofweek.txt。",
+      "mediaType": "行业与财经媒体",
+      "shortName": "OFweek云计算",
+      "discoveryType": "open"
+    },
+    {
+      "id": "chinadaily-cn",
+      "name": "中国日报网",
+      "organization": "中国日报网",
+      "sourceType": "media",
+      "entryUrl": "https://cn.chinadaily.com.cn/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "listed-companies"
+      ],
+      "purpose": "数据中心、算力服务与上市公司业务报道",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "companyIds": [],
+      "verificationNote": "2026-10-19通过AnySearch读取所收录文章正文及署名，记录见相关媒体报道_本地验收_2026-10-19/vnet-chinadaily.txt。",
+      "mediaType": "行业与财经媒体",
+      "shortName": "中国日报网",
+      "discoveryType": "open"
+    },
+    {
+      "id": "dostor",
+      "name": "存储在线",
+      "organization": "存储在线",
+      "sourceType": "media",
+      "entryUrl": "https://www.dostor.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "listed-companies"
+      ],
+      "purpose": "数据中心、算力服务与上市公司业务报道",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "companyIds": [],
+      "verificationNote": "2026-10-19通过AnySearch读取所收录文章正文及署名，记录见相关媒体报道_本地验收_2026-10-19/gds-dostor.txt。",
+      "mediaType": "行业与财经媒体",
+      "shortName": "存储在线",
+      "discoveryType": "open"
+    },
+    {
+      "id": "caiwennews",
+      "name": "财闻网",
+      "organization": "财闻网",
+      "sourceType": "media",
+      "entryUrl": "https://www.caiwennews.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "listed-companies"
+      ],
+      "purpose": "数据中心、算力服务与上市公司经营报道",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "companyIds": [],
+      "verificationNote": "2026-10-19通过AnySearch读取所收录文章正文并核对发布机构和日期；证据：相关媒体报道_复核发布_2026-10-19/a/xingyun-caiwen-1016.txt。",
+      "mediaType": "财经媒体",
+      "shortName": "财闻网",
+      "discoveryType": "open"
+    },
+    {
+      "id": "guandian",
+      "name": "观点网",
+      "organization": "观点网",
+      "sourceType": "media",
+      "entryUrl": "https://www.guandian.cn/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "listed-companies"
+      ],
+      "purpose": "数据中心、算力服务与上市公司经营报道",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "companyIds": [],
+      "verificationNote": "2026-10-19通过AnySearch读取所收录文章正文并核对发布机构和日期；证据：相关媒体报道_复核发布_2026-10-19/b/vnet-zhongwei-retry.txt。",
+      "mediaType": "财经媒体",
+      "shortName": "观点网",
+      "discoveryType": "open"
+    },
+    {
+      "id": "pedaily",
+      "name": "投资界",
+      "organization": "投资界",
+      "sourceType": "media",
+      "entryUrl": "https://www.pedaily.cn/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "listed-companies"
+      ],
+      "purpose": "数据中心、算力服务与上市公司经营报道",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "companyIds": [],
+      "verificationNote": "2026-10-19通过AnySearch读取所收录文章正文并核对发布机构和日期；证据：相关媒体报道_复核发布_2026-10-19/b/gds-langfang-pedaily.txt。",
+      "mediaType": "财经媒体",
+      "shortName": "投资界",
+      "discoveryType": "open"
+    },
+    {
+      "id": "sina-finance",
+      "name": "新浪财经",
+      "organization": "新浪财经",
+      "sourceType": "media",
+      "entryUrl": "https://finance.sina.com.cn/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "listed-companies"
+      ],
+      "purpose": "数据中心、算力服务与上市公司经营报道",
+      "questions": [
+        "企业项目、订单与交付有哪些变化？"
+      ],
+      "metrics": [
+        "发布时间",
+        "项目容量",
+        "合同金额",
+        "经营进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "行业报道"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "companyIds": [],
+      "verificationNote": "2026-10-19通过AnySearch读取所收录文章正文并核对发布机构和日期；证据：相关媒体报道_复核发布_2026-10-19/b/hec-sina-cjnews.txt。",
+      "mediaType": "财经媒体",
+      "shortName": "新浪财经",
+      "discoveryType": "open"
     }
   ],
   "reports": [
@@ -11550,6 +11910,671 @@
       "visibility": "active",
       "tags": [],
       "relatedLinks": []
+    },
+    {
+      "id": "media-sinnet-tide-20261008",
+      "sourceId": "tidenews",
+      "title": "追投12.65亿，光环新网加码北方智算",
+      "url": "https://tidenews.com.cn/tmh_news.html?id=6ac782f67e97d40001019d5e",
+      "originalUrl": "https://tidenews.com.cn/tmh_news.html?id=6ac782f67e97d40001019d5e",
+      "originalPublisher": "不慌实验室 · 潮新闻",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "publishedAt": "2026-10-08",
+      "dataPeriod": null,
+      "summary": "围绕和林格尔项目拟扩容，文章分析智算投入、客户上架与交付节奏。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已核对原文标题、发布日期、署名与公司关系；摘要为简要转述。证据：相关媒体报道_本地验收_2026-10-19/sinnet-tide.txt。",
+      "judgmentTypes": [
+        "opinion"
+      ],
+      "authorship": {
+        "type": "contributed",
+        "author": "章启明"
+      }
+    },
+    {
+      "id": "media-sinnet-expansion-20260924",
+      "sourceId": "stcn-industry",
+      "title": "光环新网拟追加12.65亿元，扩容和林格尔智算中心",
+      "url": "https://www.stcn.com/article/detail/4199029.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4199029.html",
+      "originalPublisher": "证券时报 · 严翠",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "publishedAt": "2026-09-24",
+      "dataPeriod": null,
+      "summary": "报道项目拟追加投资后总投资约25亿元、IT负载提升至90—120MW，并介绍分期建设安排。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已核对原文标题、发布日期、署名与公司关系；摘要为简要转述。证据：相关媒体报道_本地验收_2026-10-19/sinnet-stcn.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "严翠"
+      }
+    },
+    {
+      "id": "media-sinnet-hengqin-20260920",
+      "sourceId": "stcn-industry",
+      "title": "光环新网投资成立算力服务公司",
+      "url": "https://www.stcn.com/article/detail/4192007.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4192007.html",
+      "originalPublisher": "人民财讯 · 证券时报网",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "publishedAt": "2026-09-20",
+      "dataPeriod": null,
+      "summary": "报道光环新网全资持有的广东横琴算力服务公司成立，经营范围涵盖数据处理、存储及系统集成。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已核对原文标题、发布日期、署名与公司关系；摘要为简要转述。证据：相关媒体报道_本地验收_2026-10-19/sinnet-subsidiary-retry.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "人民财讯"
+      }
+    },
+    {
+      "id": "media-sinnet-capacity-20260916",
+      "sourceId": "stcn-industry",
+      "title": "光环新网已投产机柜约9.2万个",
+      "url": "https://www.stcn.com/article/detail/4186818.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4186818.html",
+      "originalPublisher": "人民财讯 · 许擎天梅",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "publishedAt": "2026-09-16",
+      "dataPeriod": null,
+      "summary": "转述公司互动平台答复：2025年以来新增投产3.6万台机柜，新交付机柜上架率正在爬坡。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已核对原文标题、发布日期、署名与公司关系；摘要为简要转述。证据：相关媒体报道_本地验收_2026-10-19/web-source-checks.md。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "许擎天梅"
+      }
+    },
+    {
+      "id": "media-sinnet-ofweek-20260827",
+      "sourceId": "ofweek-cloud",
+      "title": "光环新网半年报：机柜扩张与利润变化",
+      "url": "https://cloud.ofweek.com/news/2026-08/ART-178807-12003-30700359.html",
+      "originalUrl": "https://cloud.ofweek.com/news/2026-08/ART-178807-12003-30700359.html",
+      "originalPublisher": "睿思网 · OFweek",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "publishedAt": "2026-08-27",
+      "dataPeriod": null,
+      "summary": "从半年报出发，文章讨论新机柜投放、成本增加及IDC与云计算业务变化。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已核对原文标题、发布日期、署名与公司关系；摘要为简要转述。证据：相关媒体报道_本地验收_2026-10-19/sinnet-ofweek.txt。",
+      "judgmentTypes": [
+        "opinion"
+      ],
+      "authorship": {
+        "type": "contributed",
+        "author": "睿思网"
+      }
+    },
+    {
+      "id": "media-xingyun-sales-20260929",
+      "sourceId": "stcn-industry",
+      "title": "行云科技下属公司签署算力服务器销售合同",
+      "url": "https://www.stcn.com/article/detail/4202949.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4202949.html",
+      "originalPublisher": "人民财讯 · 许擎天梅",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "xingyun"
+      ],
+      "publishedAt": "2026-09-29",
+      "dataPeriod": null,
+      "summary": "报道新加坡孙公司与VG客户约5.73亿元订单，以及深圳行云与VF客户约2.39亿元服务器销售合同。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已核对原文标题、发布日期、署名与公司关系；摘要为简要转述。证据：相关媒体报道_本地验收_2026-10-19/web-source-checks.md。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "许擎天梅"
+      }
+    },
+    {
+      "id": "media-vnet-catl-20260820",
+      "sourceId": "chinadaily-cn",
+      "title": "世纪互联与宁德时代签署战略合作协议",
+      "url": "https://cn.chinadaily.com.cn/a/202608/20/WS6a86b20ba3105d3d7a27c03a.html",
+      "originalUrl": "https://cn.chinadaily.com.cn/a/202608/20/WS6a86b20ba3105d3d7a27c03a.html",
+      "originalPublisher": "中国日报网",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "vnet"
+      ],
+      "publishedAt": "2026-08-20",
+      "dataPeriod": null,
+      "summary": "报道双方8月18日签约，围绕数据中心与能源融合推进算电协同合作。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已核对原文标题、发布日期、署名与公司关系；摘要为简要转述。证据：相关媒体报道_本地验收_2026-10-19/vnet-chinadaily.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "中国日报网"
+      }
+    },
+    {
+      "id": "media-sharetronic-incentive-20260930",
+      "sourceId": "stcn-industry",
+      "title": "协创数据推出股权激励，布局算力业务长期投入",
+      "url": "https://www.stcn.com/article/detail/4203564.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4203564.html",
+      "originalPublisher": "证券时报网 · CIS",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "sharetronic"
+      ],
+      "publishedAt": "2026-09-30",
+      "dataPeriod": null,
+      "summary": "围绕限制性股票激励草案，文章梳理核心团队激励、融资租赁与算力业务扩张安排。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已核对原文标题、发布日期、署名与公司关系；摘要为简要转述。证据：相关媒体报道_本地验收_2026-10-19/sharetronic-stcn.txt。",
+      "judgmentTypes": [
+        "opinion"
+      ],
+      "authorship": {
+        "type": "contributed",
+        "author": "CIS"
+      }
+    },
+    {
+      "id": "media-gds-q2-20260814",
+      "sourceId": "dostor",
+      "title": "万国数据第二季度业绩与国内AI基础设施投入计划",
+      "url": "https://www.dostor.com/p/100808.html",
+      "originalUrl": "https://www.dostor.com/p/100808.html",
+      "originalPublisher": "存储在线",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "gds"
+      ],
+      "publishedAt": "2026-08-14",
+      "dataPeriod": null,
+      "summary": "转发公司季度业绩内容：第二季度净收入30.88亿元，并介绍未来三年300亿至500亿元国内投资计划。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已核对原文标题、发布日期、署名与公司关系；摘要为简要转述。证据：相关媒体报道_本地验收_2026-10-19/gds-dostor.txt；发布日期见gds-dostor.html。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "authorship": {
+        "type": "repost",
+        "author": "崔欢欢"
+      }
+    },
+    {
+      "id": "media-hec-buyback-20261010",
+      "sourceId": "wabei",
+      "title": "东阳光拟斥资6亿至12亿元回购股份",
+      "url": "https://www.wabei.cn/Home/News/365949",
+      "originalUrl": "https://www.wabei.cn/Home/News/365949",
+      "originalPublisher": "挖贝网 · 王辉",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "hec"
+      ],
+      "publishedAt": "2026-10-10",
+      "dataPeriod": null,
+      "summary": "报道董事会通过回购方案，回购价格上限47.74元/股，拟用于员工持股计划或股权激励。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已核对原文标题、发布日期、署名与公司关系；摘要为简要转述。证据：相关媒体报道_本地验收_2026-10-19/hec-wabei.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "王辉"
+      }
+    },
+    {
+      "id": "media-xingyun-vb-revised-20261013",
+      "sourceId": "stcn-industry",
+      "title": "行云科技与VB客户重签算力协议，总金额调至33.57亿元",
+      "url": "https://www.stcn.com/article/detail/4213688.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4213688.html",
+      "originalPublisher": "证券时报网",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "xingyun"
+      ],
+      "publishedAt": "2026-10-13",
+      "dataPeriod": null,
+      "summary": "深圳行云与VB客户重签协议，服务期限不变，总金额升至33.57亿元；剩余216个算力单元调整固定服务费与固定Token收入分成。报道同时梳理7月底扩容与10月此次调价的区别。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已读取媒体正文并核对日期及公司关系。证据：相关媒体报道_复核发布_2026-10-19/a/xingyun-stcn-1013.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "叶玲珍"
+      }
+    },
+    {
+      "id": "media-xingyun-xiaoshan-20261016",
+      "sourceId": "caiwennews",
+      "title": "行云科技拟在萧山设第二总部及AI服务器智造基地",
+      "url": "https://www.caiwennews.com/article/1654965.shtml",
+      "originalUrl": "https://www.caiwennews.com/article/1654965.shtml",
+      "originalPublisher": "财闻",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "xingyun"
+      ],
+      "publishedAt": "2026-10-16",
+      "dataPeriod": null,
+      "summary": "报道公司与萧山经开区国资合作升级，拟设第二总部及AI服务器智造基地，计划2026年10月底前落地第二总部、预计2027年投产智造基地。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已读取媒体正文并核对日期及公司关系。证据：相关媒体报道_复核发布_2026-10-19/a/xingyun-caiwen-1016.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "未署名快讯"
+      }
+    },
+    {
+      "id": "media-sharetronic-ncp-20261016",
+      "sourceId": "stcn-industry",
+      "title": "协创数据回应设备供应：子公司已取得英伟达NCP云合作伙伴认证",
+      "url": "https://www.stcn.com/article/detail/4222042.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4222042.html",
+      "originalPublisher": "人民财讯 · 证券时报网",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "sharetronic"
+      ],
+      "publishedAt": "2026-10-16",
+      "dataPeriod": null,
+      "summary": "公司在互动平台回应称，已与多家国内头部服务器供应商建立合作，子公司取得NCP云合作伙伴认证，高端算力设备采购渠道总体保持畅通。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已读取媒体正文并核对日期及公司关系。证据：相关媒体报道_复核发布_2026-10-19/a/sharetronic-stcn-1016.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "朱雨蒙"
+      }
+    },
+    {
+      "id": "media-sharetronic-npo-20261014",
+      "sourceId": "stcn-industry",
+      "title": "协创数据子公司光为科技参与提出NPO通用技术标准",
+      "url": "https://www.stcn.com/article/detail/4217586.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4217586.html",
+      "originalPublisher": "证券时报网 · CIS",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "sharetronic"
+      ],
+      "publishedAt": "2026-10-14",
+      "dataPeriod": null,
+      "summary": "报道光为科技与浪潮电子信息联合提出的NPO光互联技术报告由OCTC发布，面向AI集群与超节点互连，并介绍光模块方案和集群应用。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已读取媒体正文并核对日期及公司关系。证据：相关媒体报道_复核发布_2026-10-19/a/sharetronic-npo-1014.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "authorship": {
+        "type": "contributed",
+        "author": "CIS"
+      }
+    },
+    {
+      "id": "media-sharetronic-fullstack-20261015",
+      "sourceId": "stcn-industry",
+      "title": "协创数据全栈算力布局：集群、光互联与存储协同",
+      "url": "https://www.stcn.com/article/detail/4219274.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4219274.html",
+      "originalPublisher": "证券时报网 · CIS",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "sharetronic"
+      ],
+      "publishedAt": "2026-10-15",
+      "dataPeriod": null,
+      "summary": "文章从算力集群、光互联、存储和FCloud等平台梳理协创的业务布局，讨论中长期合同与建设交付的衔接，侧重由设备资源向平台服务延伸的经营路径。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已读取媒体正文并核对日期及公司关系。证据：相关媒体报道_复核发布_2026-10-19/a/sharetronic-stcn-analysis.txt。",
+      "judgmentTypes": [
+        "opinion"
+      ],
+      "authorship": {
+        "type": "contributed",
+        "author": "CIS"
+      }
+    },
+    {
+      "id": "media-sinnet-financing-analysis-20260928",
+      "sourceId": "guandian",
+      "title": "光环新网和林格尔扩容：投资加码与上架节奏",
+      "url": "https://www.guandian.cn/article/20260928/607950.html",
+      "originalUrl": "https://www.guandian.cn/article/20260928/607950.html",
+      "originalPublisher": "观点网 · 产业科技连线",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "publishedAt": "2026-09-28",
+      "dataPeriod": null,
+      "summary": "观点网梳理和林格尔扩容后的机柜、供电及融资安排，并结合新机柜上架、固定成本和其他在建项目讨论资金投入与收入释放节奏。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已读取媒体正文并核对日期及公司关系。证据：相关媒体报道_复核发布_2026-10-19/a/sinnet-guandian.txt。",
+      "judgmentTypes": [
+        "opinion"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "林钟纯"
+      }
+    },
+    {
+      "id": "media-vnet-zhongwei-20261012",
+      "sourceId": "guandian",
+      "title": "世纪互联签约中卫GW级AIDC项目，土地规模2000亩",
+      "url": "https://www.guandian.cn/article/20261012/611822.html",
+      "originalUrl": "https://www.guandian.cn/article/20261012/611822.html",
+      "originalPublisher": "观点网",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "vnet"
+      ],
+      "publishedAt": "2026-10-12",
+      "dataPeriod": null,
+      "summary": "10月11日，世纪互联与中卫市政府、中核汇能宁夏新能源签署战略合作框架协议，拟推进GW级AIDC与储能融合，项目土地规模2000亩。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已读取媒体正文并核对日期及公司关系。证据：相关媒体报道_复核发布_2026-10-19/b/vnet-zhongwei-retry.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "authorship": {
+        "type": "brief",
+        "author": "未署名快讯"
+      }
+    },
+    {
+      "id": "media-gds-langfang-20260916",
+      "sourceId": "pedaily",
+      "title": "万国数据廊坊两大数据中心项目启动实施",
+      "url": "https://news.pedaily.cn/20260916/138937.shtml",
+      "originalUrl": "https://news.pedaily.cn/20260916/138937.shtml",
+      "originalPublisher": "投资界",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "gds"
+      ],
+      "publishedAt": "2026-09-16",
+      "dataPeriod": null,
+      "summary": "在9月11日至13日中国算力大会期间，万国数据两大廊坊项目启动实施。报道同时介绍其安次、香河集群的高密供电、液冷与绿色运营安排。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已读取媒体正文并核对日期及公司关系。证据：相关媒体报道_复核发布_2026-10-19/b/gds-langfang-pedaily.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "authorship": {
+        "type": "repost",
+        "author": "网络"
+      }
+    },
+    {
+      "id": "media-hec-cjtimes-analysis-20261008",
+      "sourceId": "sina-finance",
+      "title": "东阳光加码算力布局：股东增持与产业协同观察",
+      "url": "https://finance.sina.com.cn/roll/2026-10-08/doc-iniunezm7700893.shtml",
+      "originalUrl": "https://finance.sina.com.cn/roll/2026-10-08/doc-iniunezm7700893.shtml",
+      "originalPublisher": "长江商报 · 新浪财经",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "hec"
+      ],
+      "publishedAt": "2026-10-08",
+      "dataPeriod": null,
+      "summary": "长江商报结合股东增持与回购提议，分析东阳光由材料、液冷延伸至AIDC和算力服务的路径，并梳理拟收购东数一号剩余70%股权及算力服务订单的业务衔接。",
+      "stage": null,
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-19",
+      "verificationNote": "已读取媒体正文并核对日期及公司关系。证据：相关媒体报道_复核发布_2026-10-19/b/hec-sina-cjnews.txt。",
+      "judgmentTypes": [
+        "opinion"
+      ],
+      "authorship": {
+        "type": "journalist",
+        "author": "沈右荣"
+      }
     }
   ],
   "labelMaps": {

@@ -48,9 +48,10 @@ test('C11/C31: fixed cutoff and batch identity survive rich URL and old URL reta
  assert.equal(readQuery('?dateWindow=7&asOf=2026-10-08').filters.dateWindow,'7');
 });
 test('C12: document time does not filter or roll back company current events',()=>{
- const latest=companyEvents(data,'hec',{scope:'domestic'});
- assert.deepEqual(companyEvents(data,'hec',{scope:'domestic',...frozen}),latest);
- assert.equal(companyReports(data,sources,'hec',{scope:'domestic',...frozen}).length,0);
+ const snapshot=baseline, snapshotSources=decorateSources(snapshot); // Freeze the original zero-document scenario as the live library grows.
+ const latest=companyEvents(snapshot,'hec',{scope:'domestic'});
+ assert.deepEqual(companyEvents(snapshot,'hec',{scope:'domestic',...frozen}),latest);
+ assert.equal(companyReports(snapshot,snapshotSources,'hec',{scope:'domestic',...frozen}).length,0);
 });
 test('C06/C07/C17: historical CATL cooperation stays separate from shareholder transfer',()=>{
  const id='vnet-catl-cooperation-20260818',record=data.reports.find(r=>r.id===id);

@@ -32,3 +32,29 @@ export function companyHighlights(actions, limit = 8) {
 export function companyFinancialAt(data, companyId, date) {
   return latestFinancial({ reports: data.reports.filter(report => report.publishedAt && report.publishedAt <= date && (!report.financial || report.financial.period.end <= date)) }, companyId).report;
 }
+
+export function companyMediaRange(today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Shanghai' })) {
+  const [year, month, day] = today.split('-').map(Number);
+  const start = new Date(Date.UTC(year, month - 4, 1));
+  const lastDay = new Date(Date.UTC(start.getUTCFullYear(), start.getUTCMonth() + 1, 0)).getUTCDate();
+  start.setUTCDate(Math.min(day, lastDay));
+  return { start: start.toISOString().slice(0, 10), end: today };
+}
+
+export function companyMediaReports(data, companyId, range = companyMediaRange()) {
+  const sources = new Map(data.sources.map(source => [source.id, source]));
+  const seen = new Set();
+  return data.reports.filter(report => report.companyIds?.includes(companyId) && report.kind === 'news' &&
+    sources.get(report.sourceId)?.sourceType === 'media' && report.visibility === 'active' && !report.duplicateOf &&
+    report.publishedAt >= range.start && report.publishedAt <= range.end && report.verifiedAt &&
+    ['verified', 'partial'].includes(report.verificationStatus) && ['full', 'partial', 'abstract'].includes(report.contentScope))
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || a.id.localeCompare(b.id))
+    .filter(report => {
+      const url = new URL(report.originalUrl || report.url);
+      url.hash = '';
+      for (const key of [...url.searchParams.keys()]) if (key.startsWith('utm_')) url.searchParams.delete(key);
+      if (seen.has(url.href)) return false;
+      seen.add(url.href);
+      return true;
+    });
+}

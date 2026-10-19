@@ -325,6 +325,7 @@ export function writeQuery(filters, view = 'sources', selectedId = null, navigat
   }
   for (const key of ['company', 'event']) if (navigation[key] && /^[a-z0-9][a-z0-9-]{0,100}$/.test(navigation[key])) params.set(key, navigation[key]);
   if (['90','30','2026-h1'].includes(navigation.companyRange)) params.set('companyRange', navigation.companyRange);
+  if (navigation.companyTab === 'media') params.set('companyTab', 'media');
   if (navigation.listedMode === 'sources') params.set('listedMode', 'sources');
   if (['acquisition','capital','contract','risk','project','technology'].includes(navigation.eventType)) params.set('eventType',navigation.eventType);
   if (navigation.returnQuery && navigation.returnQuery.length < 4000) params.set('return',navigation.returnQuery);
@@ -358,6 +359,7 @@ export function readQuery(search = '') {
     state.navigation = {};
     for (const key of ['company', 'event']) if (params.has(key)) state.navigation[key] = /^[a-z0-9][a-z0-9-]{0,100}$/.test(params.get(key)) ? params.get(key) : 'invalid-record';
     if (['2026','90','30','2026-h1'].includes(params.get('companyRange'))) state.navigation.companyRange=params.get('companyRange');
+    if (params.get('companyTab') === 'media') state.navigation.companyTab = 'media';
     if (params.get('listedMode') === 'sources') state.navigation.listedMode = 'sources';
     if (['acquisition','capital','contract','risk','project','technology'].includes(params.get('eventType'))) state.navigation.eventType=params.get('eventType');
     if (params.get('return') && params.get('return').length < 4000) state.navigation.returnQuery=params.get('return');
