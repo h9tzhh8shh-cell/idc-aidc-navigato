@@ -1,0 +1,793 @@
+{
+  "requestedDate": "2026-10-20",
+  "periodStart": "2026-10-12",
+  "periodEnd": "2026-10-18",
+  "generatedAt": "2026-10-20T09:27:49+08:00",
+  "reportIds": [
+    "athub-services-plan-20261017",
+    "litong-operations-20261015",
+    "media-xingyun-vb-revised-20261013",
+    "media-vnet-zhongwei-20261012",
+    "wmedia-malaysia-approved-20261015",
+    "wmedia-dayone-billings-20261014",
+    "dcd-cmc-lotte-20261016",
+    "wmedia-pldt-reit-delay-20261015",
+    "dcd-pure-power-20261016",
+    "dcd-nscale-delivery-20261016",
+    "dcd-digico-lease-20261015",
+    "mofcom-ai-export-20261016",
+    "hkex-rmh-discipline-20261013",
+    "sfc-greentech-despatch-20261013",
+    "shanghai-green-compute-plan-20261013",
+    "dcd-greece-energy-draft-20261015",
+    "antara-indonesia-team-20261013",
+    "szse-supervision-20261016",
+    "cls-tianyang-regulatory-20261018",
+    "dck-nerc-load-standards-20261015",
+    "eastmoney-shenhao-purchase-20261016",
+    "media-xingyun-xiaoshan-20261016",
+    "wmedia-sm-pdg-acquisition-20261012",
+    "cs-kingkey-cooperation-20261018",
+    "wmedia-naver-fpt-ai-20261016",
+    "wabei-xiangjiang-services-20261014",
+    "cls-compute-investment-20261016",
+    "wmedia-pdg-johor-financing-20261015",
+    "cls-sugon-cluster-20261018",
+    "dcd-salience-optical-20261016",
+    "stcn-liquid-industry-20261014",
+    "aep-google-fuelcells-20261014",
+    "media-sharetronic-npo-20261014",
+    "media-sharetronic-ncp-20261016"
+  ],
+  "backgroundReportIds": [
+    "mas-sic-takeovers-code-20260616"
+  ],
+  "sections": [
+    {
+      "id": "summary",
+      "items": [
+        {
+          "title": "国内同行扩张同时体现为服务合同、价格调整和园区签约",
+          "reportIds": [
+            "athub-services-plan-20261017",
+            "litong-operations-20261015",
+            "media-xingyun-vb-revised-20261013",
+            "media-vnet-zhongwei-20261012"
+          ],
+          "fact": "数据港拟采购五年算力服务；利通披露新增租赁订单已交付；行云重签VB客户协议，总额调至33.57亿元；世纪互联签约中卫GW级AIDC项目。",
+          "significance": "国内同行正沿长期服务、存量合同定价和新增资源布局推进，经营进展的比较需要覆盖不同阶段。",
+          "businessImpact": "围绕客户付款、设备部署、电力及冷却、验收起租四条线比较项目，优先匹配可落地的客户需求。"
+        },
+        {
+          "title": "东南亚建设继续推进，获批与计费之间仍有明显距离",
+          "reportIds": [
+            "wmedia-malaysia-approved-20261015",
+            "wmedia-dayone-billings-20261014",
+            "dcd-cmc-lotte-20261016",
+            "wmedia-pldt-reit-delay-20261015"
+          ],
+          "fact": "马来西亚披露27个获批项目中仅1个运营；DayOne披露计费容量超过1GW；CMC与Lotte签署越南合作备忘录。菲律宾PLDT将Vitro REIT上市推迟至2027年。",
+          "significance": "同一市场同时存在规模运营和前期规划，新增投资总额难以直接反映可服务客户的容量。",
+          "businessImpact": "区域机会筛选按供电、许可、客户签约、验收计费四个节点推进，并寻找有客户渠道的本地伙伴。资产退出时间也应纳入区域项目资金测算。"
+        },
+        {
+          "title": "海外交付和能源约束决定合同变现速度",
+          "reportIds": [
+            "dcd-pure-power-20261016",
+            "dcd-nscale-delivery-20261016",
+            "dcd-digico-lease-20261015"
+          ],
+          "fact": "伦敦Pure DC推进通电，挪威Nscale项目存在整体延后，悉尼DigiCo签约容量计划分期交付。",
+          "significance": "长期租约与收入之间仍隔着电力接入、调试和客户验收。",
+          "businessImpact": "新项目投资测算应同时测算延期成本和分期起租安排，把送电与客户验收写进交付计划。"
+        },
+        {
+          "title": "跨境技术与交易治理需要前置纳入方案",
+          "reportIds": [
+            "mofcom-ai-export-20261016",
+            "hkex-rmh-discipline-20261013",
+            "sfc-greentech-despatch-20261013"
+          ],
+          "fact": "国内部分AI技术出口启动临时登记；港交所公布治理处罚；香港部分要约进入寄发文件阶段。",
+          "significance": "跨境技术合作、投资付款及要约文件各有不同的适用条件和时间要求。",
+          "businessImpact": "境外项目先确认实际输出的技术与权利；投资审批、关联方核查和收购文件准备应与商务谈判同步。"
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "items": [
+        {
+          "title": "国内监管新规：AI技术出口临时登记已经启动",
+          "reportIds": [
+            "mofcom-ai-export-20261016"
+          ],
+          "fact": "商务部、科技部10月16日发布第48号公告。拟增列的AI相关技术共23项，征求意见至11月15日；附件所列技术出口自公告日起办理登记，已开始但尚未完成的出口亦纳入。",
+          "significance": "目录修订仍在征求意见，临时登记要求已开始实施，两者时间节点不同。",
+          "businessImpact": "对境外授权、技术转让或技术控制权转移的合作逐项核对附件，预留登记与资料准备时间。"
+        },
+        {
+          "title": "国内能效规划与海外绿电草案影响项目成本",
+          "reportIds": [
+            "shanghai-green-compute-plan-20261013",
+            "dcd-greece-energy-draft-20261015"
+          ],
+          "fact": "上海新规划提出新建算力设施能源利用效率不超过1.2，支持液冷等集成应用。希腊草案提出60%可再生电力和每MW20万欧元并网担保，征求意见至10月24日。",
+          "significance": "能效、用能采购和并网资金要求会改变选址及建设成本。",
+          "businessImpact": "国内项目将能效目标分解到冷却与供配电设计；希腊项目关注草案后续版本及担保资金占用。"
+        },
+        {
+          "title": "东南亚：投资批准需衔接电力、水和许可",
+          "reportIds": [
+            "wmedia-malaysia-approved-20261015",
+            "antara-indonesia-team-20261013"
+          ],
+          "fact": "马来西亚截至7月批准27个项目，估计投资2259.7亿林吉特，1个运营、其余在建，项目须满足至少30%本地内容要求。印尼拟设国家团队协调电、水与项目许可。",
+          "significance": "集中批准的项目可能同时争取能源、设备和施工资源。",
+          "businessImpact": "重点核对实际可用电力、本地采购比例、环境评估和建设许可，再排定项目建设与客户交付节奏。"
+        },
+        {
+          "title": "交易所最新监管：董事会监督与重大事项披露",
+          "reportIds": [
+            "hkex-rmh-discipline-20261013",
+            "szse-supervision-20261016"
+          ],
+          "fact": "港交所10月13日处分RMH及六名前董事，涉及投资监督、供股披露及关联服务预付款。深交所10月12—16日对114起异常交易采取自律监管措施，并核查6起重大事项。",
+          "significance": "新业务扩张、关联采购和融资安排同时涉及审批、资金使用及披露责任。",
+          "businessImpact": "项目提交审批时同步列明关联关系、付款条件、证据留存与披露责任人；监督责任随授权持续落实。"
+        },
+        {
+          "title": "香港收购实务：Greentech部分要约进入文件寄发阶段",
+          "reportIds": [
+            "sfc-greentech-despatch-20261013"
+          ],
+          "fact": "10月13日要约文件寄发，拟收购1990万股。文件列示10月27日前寄发受要约文件，11月10日16时为首个接纳截止时间（香港时间）。",
+          "significance": "个案展示收购守则第8.4条下回应文件与要约期限如何衔接。",
+          "businessImpact": "筹划香港交易时倒排文件编制、融资及股东回应安排，并跟踪延期或修订公告。"
+        },
+        {
+          "title": "新加坡收购规则：沿用现行修订，关注交易保护安排",
+          "reportIds": [
+            "mas-sic-takeovers-code-20260616"
+          ],
+          "fact": "本周核查MAS／SIC公开目录，未见收购守则新的修订公告。现行版本于6月16日公布、7月16日生效，涉及交易保护及协议安排时间表。",
+          "significance": "既有条款仍影响并购谈判的费用安排和实施进度。",
+          "businessImpact": "设计交易保护及协议安排时核对现行条文，持续跟踪SIC解释与个案决定。",
+          "context": "background"
+        },
+        {
+          "title": "算力采购披露监管：天阳科技收到深交所监管函",
+          "reportIds": [
+            "cls-tianyang-regulatory-20261018"
+          ],
+          "fact": "财联社10月18日报道，深交所10月17日就GPU采购信息发布不准确、不完整向天阳科技及董秘发出监管函，涉及设备用途及经营影响说明。",
+          "significance": "算力交易披露需同时说明产品用途、合同履约条件及与经营的实际关系。",
+          "businessImpact": "重大采购发布前核对设备型号、交易义务与正式披露渠道，避免市场传播口径与合同事实脱节。"
+        },
+        {
+          "title": "北美计算负荷标准进入后续审批",
+          "reportIds": [
+            "dck-nerc-load-standards-20261015"
+          ],
+          "fact": "NERC计算负荷可靠性标准通过相关方表决，仍待董事会及FERC审批。草案覆盖至少50MW、接入电压至少100kV的计算负荷，涉及模型、运行数据与通信等。",
+          "significance": "大型数据中心接网和运行配合要求正被细化，可能增加前期设计及数据准备工作。",
+          "businessImpact": "海外项目提前确认接入研究、监测和通信配置，并跟踪最终文本及生效安排。"
+        }
+      ]
+    },
+    {
+      "id": "companies",
+      "items": [
+        {
+          "title": "数据港与申昊：长期服务采购和设备投入两种路径",
+          "reportIds": [
+            "athub-services-plan-20261017",
+            "eastmoney-shenhao-purchase-20261016"
+          ],
+          "fact": "数据港拟采购不超过10亿元、60个月的服务，最低850P（FP16），待股东会审议及正式签约。申昊智算签订8.8125亿元含税设备采购合同，含原厂价格变动传导条款。",
+          "significance": "同行扩张采用不同资产与合同结构，影响资本投入、现金流和交付责任。",
+          "businessImpact": "围绕客户确认的设备与算力需求提供机房、电力、冷却和运维配套，比较服务采购与设备投入的资金占用。"
+        },
+        {
+          "title": "行云与世纪互联：合同定价调整及国内资源布局",
+          "reportIds": [
+            "media-xingyun-vb-revised-20261013",
+            "media-vnet-zhongwei-20261012",
+            "media-xingyun-xiaoshan-20261016"
+          ],
+          "fact": "行云与VB客户重签算力协议，总金额升至33.57亿元，剩余216个单元调整固定服务费和Token收入分成；另拟在萧山设第二总部及服务器智造基地。世纪互联签约中卫GW级AIDC项目，涉及约2000亩土地。",
+          "significance": "存量客户收费安排与新增园区资源同步推进，体现同行对长期服务及交付能力的投入。",
+          "businessImpact": "合同评价应比较固定收入、分成和验收条件；园区项目跟踪供地、接电、建设分期及锚定客户。"
+        },
+        {
+          "title": "东南亚：计费扩张、存量收购和本地合作并行",
+          "reportIds": [
+            "wmedia-dayone-billings-20261014",
+            "wmedia-sm-pdg-acquisition-20261012",
+            "dcd-cmc-lotte-20261016"
+          ],
+          "fact": "DayOne披露计费容量超过1GW、客户预订2.3GW及另有1.1GW预留；SM+签署收购PDG印尼5个运营数据中心的最终协议；CMC与Lotte签署越南合作备忘录。",
+          "significance": "成熟资产收购与本地渠道合作，成为新建项目之外的区域进入方式。",
+          "businessImpact": "筛选运营伙伴时核对真实计费、存量客户和交割条件，并比较收购存量资产与新建项目的交付周期。"
+        },
+        {
+          "title": "国内跨行业合作增加：京基智农布局算力基础设施",
+          "reportIds": [
+            "cs-kingkey-cooperation-20261018"
+          ],
+          "fact": "京基智农与APEX AI签署战略合作，覆盖基础设施、供应链、运营及市场拓展，后续按实际需求推进项目。",
+          "significance": "产业场景与技术运营伙伴结合，有可能形成新的基础设施客户。",
+          "businessImpact": "先跟踪选址、电力和客户合同，再判断机房配套、工程与运维服务机会。"
+        },
+        {
+          "title": "Naver Cloud与FPT合作面向亚太企业AI需求",
+          "reportIds": [
+            "wmedia-naver-fpt-ai-20261016"
+          ],
+          "fact": "双方签署合作备忘录，拟结合FPT AI Factory、Naver模型及云能力，推进技术开发、企业AI服务和工程交流。",
+          "significance": "区域企业客户渠道与算力平台结合，可能带动本地部署及持续运营需求。",
+          "businessImpact": "跟踪具体企业项目、部署地区及机柜功率，寻找机房、网络与运维配套机会。"
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "items": [
+        {
+          "title": "租赁经营：长协交付与持续服务分别观察",
+          "reportIds": [
+            "litong-operations-20261015",
+            "wabei-xiangjiang-services-20261014"
+          ],
+          "fact": "利通披露三季度新增租赁订单已交付，存量长期订单正常执行，长期战略客户通常采用协议期固定价。香江云瀚签署五年算力技术服务合同，预计1.5816亿元，按月收取服务费。",
+          "significance": "租赁、技术支持及运维服务的收费方式不同，影响收入稳定性和客户黏性。",
+          "businessImpact": "同口径比较机房租金、能源成本、运维费用和回款周期，核对合同中的调价、服务边界与违约安排。"
+        },
+        {
+          "title": "投资规模与计费容量采用各自统计口径",
+          "reportIds": [
+            "cls-compute-investment-20261016",
+            "wmedia-dayone-billings-20261014"
+          ],
+          "fact": "CINNO·IC Research经财联社披露，第三季度中国智能算力中心产业投资约7288亿元、同比增长34.4%；DayOne披露计费容量超过1GW。",
+          "significance": "投资额反映资金投入，计费容量反映服务启动，两项指标回答不同的经营问题。",
+          "businessImpact": "建立投资、建成、签约、计费分列的项目表，后续按同一口径持续比较。"
+        },
+        {
+          "title": "悉尼长期合同采用分期交付和起租",
+          "reportIds": [
+            "dcd-digico-lease-20261015"
+          ],
+          "fact": "DigiCo签署71MW十五年租约，其中20MW为原已签约容量重新分配；扩建首批10MW预计2027财年第四季度末通电并贡献收入，其余按客户需求在2028财年交付。",
+          "significance": "合同容量中的重新分配与净新增应分别核算，收入形成依赖分期交付。",
+          "businessImpact": "按实际新增MW、投入时间和计费节点安排建设资金，评估分期交付对空置与现金流的改善。"
+        },
+        {
+          "title": "东南亚融资：园区贷款筹划与REIT退出窗口分化",
+          "reportIds": [
+            "wmedia-pdg-johor-financing-20261015",
+            "wmedia-pldt-reit-delay-20261015"
+          ],
+          "fact": "PDG据报寻求最高12亿美元、期限三年的贷款，拟用于柔佛198.8MW园区及再融资；PLDT因市场条件和利率上升，将包含8处、共24MW资产的Vitro REIT上市推迟至2027年。",
+          "significance": "融资落实与资产退出时点会影响建设资金及资本回收，单看规划容量无法判断扩张能力。",
+          "businessImpact": "项目财务测算同步列出提款条件、利息、客户起租和退出时间，评估延期下的资金缺口。"
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "items": [
+        {
+          "title": "国产大集群与光交换发展提高基础设施协同要求",
+          "reportIds": [
+            "cls-sugon-cluster-20261018",
+            "dcd-salience-optical-20261016"
+          ],
+          "fact": "国产十万卡AI超集群展示超算与智算融合应用；Salience Labs获1.25亿美元融资推进光交换技术，AMD Ventures与Intel Capital参投。",
+          "significance": "计算与网络架构演进会改变机柜功率、布线、冷却和运维方式。",
+          "businessImpact": "按客户最终设备方案校核承重、供配电、冷却接口与网络路由，提前开展联合设计和验收测试。"
+        },
+        {
+          "title": "冷却与能源配套走向长期交付安排",
+          "reportIds": [
+            "stcn-liquid-industry-20261014",
+            "aep-google-fuelcells-20261014",
+            "dcd-pure-power-20261016"
+          ],
+          "fact": "国内报道显示液冷方舱运行及部件持续交付；AEP依据与谷歌的20年购电协议，计划约40亿美元建设702MW燃料电池项目、2028年底全面运营；Pure DC推进液冷园区通电。",
+          "significance": "高密度负载使冷却与供电从采购配套变成影响建设进度及长期运营成本的核心环节。",
+          "businessImpact": "评估设备交期、能源合同和冷却运行费用，明确性能测试、维护责任与备件方案。"
+        },
+        {
+          "title": "协创数据光互联布局：NPO标准与设备供应配合",
+          "reportIds": [
+            "media-sharetronic-npo-20261014",
+            "media-sharetronic-ncp-20261016"
+          ],
+          "fact": "协创数据子公司光为科技参与提出NPO通用技术标准；公司另回应子公司已取得英伟达NCP云合作伙伴认证，并说明服务器供应合作安排。",
+          "significance": "集群网络和供应链配套与算力交付同步推进，项目性能取决于设备及互联方案共同落地。",
+          "businessImpact": "机房适配应以客户确认的网络、功率与冷却规格为准，跟踪设备到货及联合验收。"
+        }
+      ]
+    },
+    {
+      "id": "deep-dive",
+      "items": [
+        {
+          "title": "国内同行扩张：长期采购承诺如何转成可计费服务",
+          "reportIds": [
+            "athub-services-plan-20261017",
+            "litong-operations-20261015",
+            "eastmoney-shenhao-purchase-20261016",
+            "media-xingyun-vb-revised-20261013"
+          ],
+          "fact": "数据港进入五年服务采购计划阶段，申昊智算签署设备采购合同，利通已有新增订单交付。行云VB合同则调整固定服务费与收入分成，展示存量合同经营模式的变化。",
+          "significance": "三家公司处于采购、投入和交付的不同环节，提供了比较业务兑现路径的具体样本。",
+          "businessImpact": "公司应围绕已确定客户的部署需求提供基础设施，并把电力、冷却和运维费用纳入与客户的合同安排。",
+          "background": "国内算力建设推进，运营商开始组合机房、设备和持续服务，长期投入与客户需求之间的衔接愈发重要。",
+          "analysis": "更有参考价值的是验收后的计费与回款，而非采购金额本身。五年采购需要有匹配的客户期限、最低用量或可转售安排；设备采购中的调价条款需要在预算和报价中同步处理。涉及收入分成的协议还需将固定与浮动收入分别测算，核对实际结算和客户使用量。",
+          "action": "获取客户租期、首批设备到场日期、验收条件和付款节奏，形成月度资金计划。"
+        },
+        {
+          "title": "东南亚机会筛选：以投运条件和客户基础判断进入时点",
+          "reportIds": [
+            "wmedia-malaysia-approved-20261015",
+            "wmedia-dayone-billings-20261014",
+            "antara-indonesia-team-20261013",
+            "dcd-cmc-lotte-20261016"
+          ],
+          "fact": "马来西亚批准项目多数仍在建；DayOne已有规模计费；印尼推进资源协调；越南出现本地运营商与韩国客户渠道合作。",
+          "significance": "区域市场在增长，但不同项目的资源和客户准备程度差异很大。",
+          "businessImpact": "优先选择能落实电力、许可、锚定客户及本地运维的伙伴，分期推进建设。",
+          "background": "东南亚市场吸引持续资本与客户进入，电力接入、水资源和许可成为具体项目落地的重要条件。",
+          "analysis": "市场进入机会更可能来自已具备资源、但需要交付与运维能力的项目。仅有投资批准或合作备忘录的项目应继续跟踪客户与能源条件，成熟运营项目可用于核对当地价格和服务水平。",
+          "action": "针对目标国家建立项目资源与客户清单，逐项确认接电容量、许可状态、本地采购及客户上线时间。"
+        },
+        {
+          "title": "海外交付：合同价值需要电力和调试兑现",
+          "reportIds": [
+            "dcd-nscale-delivery-20261016",
+            "dcd-pure-power-20261016",
+            "dcd-digico-lease-20261015"
+          ],
+          "fact": "Nscale挪威项目整体延后；DCD补充消息称火灾与已修复漏液未造成客户中断。Pure DC完成变压器安装并计划送电，DigiCo将扩建按客户需求分批交付。",
+          "significance": "单一施工节点或设备事故无法独立说明全部合同履约结果，需要与送电、验收和客户安排合并判断。",
+          "businessImpact": "在项目合同中明确送电前提、测试程序、分期移交与延期责任，测算资金占用。",
+          "background": "大容量园区建设周期与客户设备部署节奏相互制约，融资成本在起租前已经发生。",
+          "analysis": "分期交付有利于让资本投入与已确定需求匹配。关键在于各期是否具备独立运行和计费条件，以及延误是否会触发客户减量或合同调整。",
+          "action": "用电力接入、机电联调、客户验收、起租四个节点更新项目排期，逐月核对建设和回款计划。"
+        }
+      ]
+    },
+    {
+      "id": "strategy",
+      "items": [
+        {
+          "title": "把商业需求落实到机房资源与交付计划",
+          "reportIds": [
+            "athub-services-plan-20261017",
+            "litong-operations-20261015"
+          ],
+          "analysis": "国内同行的长期服务采购与新增交付表明，客户对连续供给和运维的需求正在形成具体合同。",
+          "action": "对每个目标客户核实付款主体、设备配置、所需电力及冷却、计划上线日期；据此确定分期资源与报价。"
+        },
+        {
+          "title": "海外布局优先评估资源和合作方",
+          "reportIds": [
+            "wmedia-malaysia-approved-20261015",
+            "dcd-cmc-lotte-20261016",
+            "dcd-pure-power-20261016",
+            "wmedia-pdg-johor-financing-20261015",
+            "wmedia-pldt-reit-delay-20261015"
+          ],
+          "analysis": "地区投资热度与项目可交付状态存在差异，本地渠道、接电条件及运营能力会影响进入成本。",
+          "action": "以实际接电承诺、许可、客户合同和运维能力对项目排序；对有条件的项目先开展工程和商业尽调。将融资期限、利息和REIT退出延后纳入现金流情景。"
+        },
+        {
+          "title": "跨境与投资治理纳入商务方案",
+          "reportIds": [
+            "mofcom-ai-export-20261016",
+            "hkex-rmh-discipline-20261013",
+            "sfc-greentech-despatch-20261013"
+          ],
+          "analysis": "技术出口登记、付款监督和要约文件期限会影响合作结构与交易推进速度。",
+          "action": "在项目评审中明确技术与权利输出、关联方、付款条件和文件期限，安排商务、工程、财务与法务共同确认。"
+        }
+      ]
+    },
+    {
+      "id": "follow-up",
+      "items": [
+        {
+          "title": "国内同行正式合同与三季报",
+          "reportIds": [
+            "athub-services-plan-20261017",
+            "litong-operations-20261015",
+            "eastmoney-shenhao-purchase-20261016",
+            "media-xingyun-vb-revised-20261013",
+            "media-vnet-zhongwei-20261012"
+          ],
+          "analysis": "采购、交付和回款的实际进度将影响后续设备与机房需求。",
+          "action": "核查数据港股东会与供应商确定、申昊分批交付、利通客户起租；新正式财报发布后更新同期间收入和净利润。核查行云调价后的结算，以及世纪互联中卫项目接电与建设分期。"
+        },
+        {
+          "title": "东南亚项目供电及投运",
+          "reportIds": [
+            "wmedia-malaysia-approved-20261015",
+            "antara-indonesia-team-20261013",
+            "dcd-cmc-lotte-20261016"
+          ],
+          "analysis": "获批项目集中增加可能放大接电、许可及本地施工资源约束。",
+          "action": "核实目标项目接电容量、环境手续、客户预租和本地采购条件，跟踪CMC与Lotte具体项目公布。"
+        },
+        {
+          "title": "能源与冷却交付节点",
+          "reportIds": [
+            "dcd-pure-power-20261016",
+            "dcd-nscale-delivery-20261016",
+            "stcn-liquid-industry-20261014"
+          ],
+          "analysis": "供电和联合调试直接关系客户是否按期部署。",
+          "action": "跟踪Pure DC本月送电、Nscale剩余容量交付，以及液冷供应商项目验收与运行数据。"
+        },
+        {
+          "title": "国内技术出口与海外用能规则",
+          "reportIds": [
+            "mofcom-ai-export-20261016",
+            "dcd-greece-energy-draft-20261015"
+          ],
+          "analysis": "技术合作和用能成本可能受到新增程序及最终规则影响。",
+          "action": "关注希腊10月24日征求意见截止及国内11月15日反馈期限；核对在谈项目涉及的具体技术清单和资金条件。"
+        },
+        {
+          "title": "香港要约文件与交易所案例",
+          "reportIds": [
+            "sfc-greentech-despatch-20261013",
+            "hkex-rmh-discipline-20261013",
+            "szse-supervision-20261016",
+            "cls-tianyang-regulatory-20261018"
+          ],
+          "analysis": "文件回应、投资审批和重大事项披露是并购及合作推进的实际约束。",
+          "action": "跟踪Greentech10月27日受要约文件及后续时间表；继续检查香港SFC、新加坡MAS／SIC及交易所发布的规则与处分。将天阳科技采购披露案例用于核对重大项目发布流程。"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "reportId": "athub-services-plan-20261017",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "mofcom-ai-export-20261016",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "szse-supervision-20261016",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "litong-operations-20261015",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "aep-google-fuelcells-20261014",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "hkex-rmh-discipline-20261013",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "sfc-greentech-despatch-20261013",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "shanghai-green-compute-plan-20261013",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "cls-sugon-cluster-20261018",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "cls-tianyang-regulatory-20261018",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "cs-kingkey-cooperation-20261018",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "cls-ai-supply-delivery-20261016",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "cls-compute-investment-20261016",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "cls-guangku-outlook-20261016",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "cs-vcsel-expansion-20261016",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "dcd-cmc-lotte-20261016",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "dcd-nscale-delivery-20261016",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "dcd-pure-power-20261016",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "dcd-salience-optical-20261016",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "eastmoney-shenhao-purchase-20261016",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "media-sharetronic-ncp-20261016",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "media-xingyun-xiaoshan-20261016",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "wmedia-naver-fpt-ai-20261016",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "yicai-energy-compute-20261016",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "21jingji-ai-financing-20261015",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "cs-guanghong-server-orders-20261015",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "cs-newhope-purchase-plan-20261015",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "dcd-digico-lease-20261015",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "dcd-greece-energy-draft-20261015",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "dcd-seoul-icn11-20261015",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "dcd-uob-aws-20261015",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "dck-construction-cost-20261015",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "dck-nerc-load-standards-20261015",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "eastmoney-ai-earnings-20261015",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "media-sharetronic-fullstack-20261015",
+      "selected": false,
+      "reason": "已收录于资料库，本期优先采用直接关系客户、交付、经营和监管的信息。"
+    },
+    {
+      "reportId": "wmedia-malaysia-approved-20261015",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "wmedia-pdg-johor-financing-20261015",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "wmedia-pldt-reit-delay-20261015",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "yicai-deepseek-service-20261015",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "yicai-ling31-open-20261015",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "cls-amd-inference-20261014",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "cls-guangxi-token-20261014",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "cls-microsoft-expansion-20261014",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "dck-brazil-regional-20261014",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "dck-us-powered-land-20261014",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "media-sharetronic-npo-20261014",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "stcn-liquid-industry-20261014",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "stcn-litong-distribution-20261014",
+      "selected": false,
+      "reason": "优先使用10月15日公司业绩说明会披露。"
+    },
+    {
+      "reportId": "stcn-rental-contracts-20261014",
+      "selected": false,
+      "reason": "租赁经营采用利通公司披露与具体服务合同，减少重复论点。"
+    },
+    {
+      "reportId": "wabei-xiangjiang-services-20261014",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "wmedia-ctrls-bihar-20261014",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "wmedia-dayone-billings-20261014",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "wmedia-philippines-pax-20261014",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "antara-indonesia-team-20261013",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "eastmoney-range-increase-20261013",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "media-xingyun-vb-revised-20261013",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "open-cs-infini-20261013",
+      "selected": false,
+      "reason": "保留于行业资料；本期重点放在项目交付与经营合同。"
+    },
+    {
+      "reportId": "open-oregon-permit-20261013",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "wabei-hongxin-chips-20261013",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "wabei-tianyang-gpu-purchase-20261013",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "wmedia-dayone-loan-20261013",
+      "selected": false,
+      "reason": "同一融资主题采用10月14日更新规模与计费容量的报道。"
+    },
+    {
+      "reportId": "36kr-ixin-supernode-20261012",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "cls-ai-financing-risk-20261012",
+      "selected": false,
+      "reason": "已保留于行业资料库；本期选取与客户、供电、交付及监管关联更直接的信息，避免同类论点堆叠。"
+    },
+    {
+      "reportId": "media-vnet-zhongwei-20261012",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    },
+    {
+      "reportId": "wmedia-dayone-bond-talks-20261012",
+      "selected": false,
+      "reason": "采用已公布的融资与经营进展，债券商谈继续跟踪。"
+    },
+    {
+      "reportId": "wmedia-sm-pdg-acquisition-20261012",
+      "selected": true,
+      "reason": "用于本期具体事实、比较或业务分析。"
+    }
+  ],
+  "coverageNotes": {
+    "domestic": "国内同行合同、园区、液冷、光互联及监管披露。",
+    "sea": "马来西亚、印尼、越南和菲律宾；新加坡现行收购规则单列背景。",
+    "global": "英国、挪威、澳大利亚、美国、希腊及北美计算负荷标准。"
+  }
+}

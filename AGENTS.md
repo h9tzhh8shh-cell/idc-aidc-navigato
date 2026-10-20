@@ -4,6 +4,8 @@ This file provides guidance to AI Agents when working with code in this reposito
 
 ## Active research navigator (2026-10-05)
 
+For industry-information updates, first read `docs/行业信息更新规则.md` (current user-confirmed rules, organized by board). Verified material contracts must also update the corresponding company timeline and retain one event across later fulfillment milestones. As authorized on 2026-10-20, an unqualified request to update information includes deployment after validation; explicit local-only or review restrictions override that default. Keep this rules file synchronized with confirmed user feedback.
+
 The production entry is now `src/main.jsx`, mounting the React workspace in `src/App.jsx`. `src/components.jsx`, `src/catalog.js`, and `src/styles.css` implement its detail panels, filters, URL state, and layout. `public/assets/catalog.json` remains the canonical data file; the active interface imports it during the build. Run `pnpm validate`, `pnpm test`, and `pnpm build` before deployment. Cloudflare Pages builds `main` to `dist`. The Vue/Homer code below remains as upstream history and does not power the current entry.
 
 ## Development Commands

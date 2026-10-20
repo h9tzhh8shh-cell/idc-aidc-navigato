@@ -37,6 +37,23 @@ test('unknown dates, future nodes, unverified sources and lookalike companies ca
   event.milestones[0]=original;
   assert.equal(companyDashboardActions(fixture,'sinnet-lookalike',range).length,0);
 });
+
+test('Sharetronic material cloud-service contract links the article and official disclosure to one timeline action', () => {
+  const official=data.reports.find(r=>r.id==='sharetronic-cloud-contract-20261019');
+  const media=data.reports.find(r=>r.id==='cls-sharetronic-cloud-20261020');
+  assert.equal(official.eventId,'sharetronic-cloud-services-20261019');
+  assert.equal(media.eventId,official.eventId);
+  const actions=companyDashboardActions(data,'sharetronic',range,'contract');
+  const action=actions.find(item=>item.id===official.eventId);
+  assert.ok(action);
+  assert.equal(action.date,'2026-10-19');
+  assert.match(action.title,/披露.*374\.90亿元/);
+  assert.equal(action.url,official.url);
+  assert.equal(action.nodes.length,1);
+  assert.equal(action.nodes[0].primaryEvidenceReportId,official.id);
+  assert.ok(companyHighlights(actions).some(item=>item.id===action.id));
+  assert.ok(!companyDashboardActions(data,'sharetronic',{start:'2026-01-01',end:'2026-10-18'}).some(item=>item.id===action.id));
+});
 test('historical cutoff never leaks a later financial disclosure', () => {
   assert.equal(companyFinancialAt(data,'sinnet','2026-10-19').id,'sinnet-2026-h1');
   assert.equal(companyFinancialAt(data,'sinnet','2026-06-30').id,'sinnet-2026-q1');

@@ -2,20 +2,106 @@
   "reportId": "smm-h100-observation-20261009",
   "sourceUrl": "https://aidc.smm.cn/price",
   "sourceCadence": "工作日11:30前",
-  "evidence": "2026-10-19人工核对SMM公开页面基准价两页及零售价，四组均价、区间未变，报价日期10月16日；原站显示0.00%但未列比较日期。证据：行业更新部署_2026-10-19/smm-base-page1.txt、smm-base-page2.txt、smm-retail.txt及截图。",
+  "evidence": "2026-10-20人工读取SMM公开报价表：四组报价日期10月19日；4090全国整机短期均价2.29元/卡·时、区间1.37—3.95，原站涨幅8.53%。其余三组均价及区间未变。比较采用本地保留并已核的10月16日同口径报价，非成交量加权价格。证据：行业信息更新_本地_2026-10-20/smm-base-page1.txt、smm-base-page2.txt、smm-retail.txt及smm-source.png；原10月16日证据沿用行业更新部署_2026-10-19。",
   "groups": [
     {
-      "model": "H100 80G", "type": "基准价", "scale": [13, 16],
+      "model": "H100 80G",
+      "type": "基准价",
+      "scale": [
+        13,
+        16
+      ],
       "quotes": [
-        { "label": "整机 · 长三角 · 包月", "productCode": "SMM-GPU-CC-005", "mean": 14.32, "low": 13.54, "high": 15.10, "unit": "元/卡·时", "quoteDate": "2026-10-16", "checkedAt": "2026-10-19T01:24:40.613Z", "sourceUrl": "https://aidc.smm.cn/price", "sourceChange": { "percent": 0, "label": "0.00%" }, "comparison": null },
-        { "label": "整机 · 西部（青海、甘肃、宁夏、内蒙古等） · 包月", "productCode": "SMM-GPU-CC-019", "mean": 14.06, "low": 13.54, "high": 14.58, "unit": "元/卡·时", "quoteDate": "2026-10-16", "checkedAt": "2026-10-19T01:24:40.613Z", "sourceUrl": "https://aidc.smm.cn/price", "sourceChange": { "percent": 0, "label": "0.00%" }, "comparison": null }
+        {
+          "label": "整机 · 长三角 · 包月",
+          "productCode": "SMM-GPU-CC-005",
+          "mean": 14.32,
+          "low": 13.54,
+          "high": 15.1,
+          "unit": "元/卡·时",
+          "quoteDate": "2026-10-19",
+          "checkedAt": "2026-10-20T01:14:25.557Z",
+          "sourceUrl": "https://aidc.smm.cn/price",
+          "sourceChange": {
+            "percent": 0.0,
+            "label": "0.00%"
+          },
+          "comparison": {
+            "date": "2026-10-16",
+            "basis": "已核同口径均价",
+            "percent": 0.0
+          }
+        },
+        {
+          "label": "整机 · 西部（青海、甘肃、宁夏、内蒙古等） · 包月",
+          "productCode": "SMM-GPU-CC-019",
+          "mean": 14.06,
+          "low": 13.54,
+          "high": 14.58,
+          "unit": "元/卡·时",
+          "quoteDate": "2026-10-19",
+          "checkedAt": "2026-10-20T01:14:25.557Z",
+          "sourceUrl": "https://aidc.smm.cn/price",
+          "sourceChange": {
+            "percent": 0.0,
+            "label": "0.00%"
+          },
+          "comparison": {
+            "date": "2026-10-16",
+            "basis": "已核同口径均价",
+            "percent": 0.0
+          }
+        }
       ]
     },
     {
-      "model": "4090 24G", "type": "零售价", "scale": [1, 4],
+      "model": "4090 24G",
+      "type": "零售价",
+      "scale": [
+        1,
+        4
+      ],
       "quotes": [
-        { "label": "单卡 · 全国 · 短期", "productCode": "SMM-GPU-CC-020", "mean": 1.89, "low": 1.38, "high": 2.29, "unit": "元/卡·时", "quoteDate": "2026-10-16", "checkedAt": "2026-10-19T01:24:40.613Z", "sourceUrl": "https://aidc.smm.cn/price", "sourceChange": { "percent": 0, "label": "0.00%" }, "comparison": null },
-        { "label": "整机 · 全国 · 短期", "productCode": "SMM-GPU-CC-021", "mean": 2.11, "low": 1.37, "high": 3.95, "unit": "元/卡·时", "quoteDate": "2026-10-16", "checkedAt": "2026-10-19T01:24:40.613Z", "sourceUrl": "https://aidc.smm.cn/price", "sourceChange": { "percent": 0, "label": "0.00%" }, "comparison": null }
+        {
+          "label": "单卡 · 全国 · 短期",
+          "productCode": "SMM-GPU-CC-020",
+          "mean": 1.89,
+          "low": 1.38,
+          "high": 2.29,
+          "unit": "元/卡·时",
+          "quoteDate": "2026-10-19",
+          "checkedAt": "2026-10-20T01:14:25.557Z",
+          "sourceUrl": "https://aidc.smm.cn/price",
+          "sourceChange": {
+            "percent": 0.0,
+            "label": "0.00%"
+          },
+          "comparison": {
+            "date": "2026-10-16",
+            "basis": "已核同口径均价",
+            "percent": 0.0
+          }
+        },
+        {
+          "label": "整机 · 全国 · 短期",
+          "productCode": "SMM-GPU-CC-021",
+          "mean": 2.29,
+          "low": 1.37,
+          "high": 3.95,
+          "unit": "元/卡·时",
+          "quoteDate": "2026-10-19",
+          "checkedAt": "2026-10-20T01:14:25.557Z",
+          "sourceUrl": "https://aidc.smm.cn/price",
+          "sourceChange": {
+            "percent": 8.53,
+            "label": "+8.53%"
+          },
+          "comparison": {
+            "date": "2026-10-16",
+            "basis": "已核同口径均价",
+            "percent": 8.53
+          }
+        }
       ]
     }
   ]

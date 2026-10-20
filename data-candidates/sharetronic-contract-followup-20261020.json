@@ -1,0 +1,147 @@
+{
+  "maintainedAt": "2026-10-20",
+  "reports": [
+    {
+      "id": "sharetronic-cloud-contract-20261019",
+      "eventId": "sharetronic-cloud-services-20261019",
+      "intelligence": {
+        "importance": 10,
+        "overview": "五年服务合同把设备投入、机房交付和持续运营连接起来，验收时间直接决定计费起点。 机房、电力与冷却资源应与分批订单匹配，资金计划应覆盖采购至验收和回款之间的占用。",
+        "followupId": "sharetronic-cloud-contract-20261019-followup",
+        "followup": "每轮更新跟踪本协议的资金及设备采购、机房电力与冷却配套、分批交付验货、客户验收、起租计费、相关收入与现金回款，并核对延期、减量、调价、续期或解除等合同变化；新增事实接入同一事项。"
+      }
+    },
+    {
+      "id": "cls-sharetronic-cloud-20261020",
+      "eventId": "sharetronic-cloud-services-20261019",
+      "intelligence": {
+        "importance": 10,
+        "overview": "国内同行从服务器采购走向长期服务合同，客户验收能力与现金回收成为经营比较重点。 评估同类业务时，应同步比较设备投资、电力及冷却配套、验收标准和客户付款周期。",
+        "followupId": "cls-sharetronic-cloud-20261020-followup",
+        "followup": "每轮更新跟踪本协议的资金及设备采购、机房电力与冷却配套、分批交付验货、客户验收、起租计费、相关收入与现金回款，并核对延期、减量、调价、续期或解除等合同变化；新增事实接入同一事项。"
+      }
+    }
+  ],
+  "events": [
+    {
+      "event": {
+        "id": "sharetronic-cloud-services-20261019",
+        "title": "协创智算五年算力云服务协议",
+        "type": "contract",
+        "priority": 100,
+        "companyIds": [
+          "sharetronic"
+        ],
+        "participants": [
+          {
+            "companyId": "sharetronic",
+            "role": "上市公司；全资子公司协创智算为服务提供方"
+          },
+          {
+            "name": "客户公司",
+            "role": "算力云服务采购方"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "relatedEventIds": [],
+        "currentSummary": "协创智算披露与客户签署不超过374.90亿元（含税）的算力云服务协议，协议已生效。订单一般自最终验收合格且客户出具报告次日起服务60个月，按月结算；后续跟踪设备投入、交付验收、计费及回款。",
+        "uncertainties": [],
+        "milestones": [],
+        "basisMilestoneIds": [
+          "contract-disclosed"
+        ],
+        "latestVerifiedMilestoneId": "contract-disclosed",
+        "review": {
+          "lastAttemptAt": "2026-10-20",
+          "result": "progress",
+          "note": "每轮更新跟踪本协议的资金及设备采购、机房电力与冷却配套、分批交付验货、客户验收、起租计费、相关收入与现金回款，并核对延期、减量、调价、续期或解除等合同变化；新增事实接入同一事项。",
+          "checks": []
+        }
+      },
+      "nodes": [
+        {
+          "id": "contract-disclosed",
+          "title": "披露不超374.90亿元算力云服务协议",
+          "summary": "协创智算披露与客户签署不超过374.90亿元（含税）的算力云服务协议，协议已生效。订单一般自最终验收合格且客户出具报告次日起服务60个月，按月结算；后续跟踪设备投入、交付验收、计费及回款。",
+          "occurredAt": "2026-10-19",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "sharetronic-cloud-contract-20261019",
+          "evidenceRefs": [
+            {
+              "reportId": "sharetronic-cloud-contract-20261019",
+              "locator": "2026-153号公告第1—4页；2026-10-19为公开披露日，签约表述为近日。",
+              "role": "主证据"
+            },
+            {
+              "reportId": "cls-sharetronic-cloud-20261020",
+              "locator": "2026-10-20记者报道，梳理合同生效、交付验收与计费条件。",
+              "role": "媒体报道"
+            }
+          ]
+        }
+      ],
+      "review": {
+        "lastAttemptAt": "2026-10-20",
+        "result": "progress",
+        "note": "每轮更新跟踪本协议的资金及设备采购、机房电力与冷却配套、分批交付验货、客户验收、起租计费、相关收入与现金回款，并核对延期、减量、调价、续期或解除等合同变化；新增事实接入同一事项。",
+        "checks": [
+          {
+            "id": "sharetronic-cloud-services-20261020-check",
+            "channel": "协创数据2026-153号合同公告",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-10-19/1225610425.PDF",
+            "attemptedAt": "2026-10-20",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复核已保存公告第1—4页及关键页截图，补录10月19日披露动作；实际签约表述为近日，不将披露日改写为签约日。后续跟踪资金设备、机房配套、交付验收、计费收入及回款。"
+          }
+        ]
+      }
+    }
+  ],
+  "companyReviews": [
+    {
+      "companyId": "sharetronic",
+      "review": {
+        "lastAttemptAt": "2026-10-20",
+        "result": "progress",
+        "note": "补录重大算力服务合同，纳入同一事项的履约跟踪。",
+        "checks": [
+          {
+            "id": "sharetronic-company-contract-20261020-check",
+            "channel": "协创数据2026-153号合同公告",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-10-19/1225610425.PDF",
+            "attemptedAt": "2026-10-20",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复核已保存公告第1—4页及关键页截图，补录10月19日披露动作；实际签约表述为近日，不将披露日改写为签约日。后续跟踪资金设备、机房配套、交付验收、计费收入及回款。"
+          }
+        ]
+      }
+    }
+  ],
+  "changeBatch": {
+    "batchId": "sharetronic-contract-followup-20261020",
+    "recordedAt": "2026-10-20T15:19:11+08:00",
+    "periodStart": "2026-10-19",
+    "scope": "协创重大合同补录及原文、媒体与时间线关联",
+    "summary": "新增1项协创智算重大合同及10月19日披露节点，关联既有公告和媒体报道；按同一事项跟踪后续履约，不新增新闻。",
+    "checks": [
+      {
+        "id": "sharetronic-cloud-services-20261020-check",
+        "channel": "协创数据2026-153号合同公告",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-10-19/1225610425.PDF",
+        "attemptedAt": "2026-10-20",
+        "result": "progress",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "复核已保存公告第1—4页及关键页截图，补录10月19日披露动作；实际签约表述为近日，不将披露日改写为签约日。后续跟踪资金设备、机房配套、交付验收、计费收入及回款。"
+      }
+    ]
+  }
+}
