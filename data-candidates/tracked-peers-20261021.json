@@ -1,0 +1,1602 @@
+{
+  "maintainedAt": "2026-10-21",
+  "companies": [
+    {
+      "id": "hongjing",
+      "name": "宏景科技",
+      "legalName": "宏景科技股份有限公司",
+      "aliases": [
+        "GloryView",
+        "GloryView Technology Co.,Ltd."
+      ],
+      "securities": [
+        {
+          "exchange": "深交所",
+          "code": "301396"
+        }
+      ],
+      "role": "reference",
+      "identityNote": "2026-10-21：核对巨潮2026年半年报PDF第1、8、9页，确认上市主体、证券代码及英文名称；官网搜索入口与财报联系域名一致。用户本轮明确纳入固定追踪。",
+      "identityUrls": [
+        "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525638.PDF",
+        "https://www.gloryview.com/"
+      ],
+      "researchScope": "domestic",
+      "researchScopeNote": "已核中国上市主体及算力服务业务披露。",
+      "discoveryProfile": {
+        "website": "https://www.gloryview.com/",
+        "businessIdentity": "算力设备集成、算力运营服务与智慧城市解决方案",
+        "financialNote": "财务栏按最新正式财报展示。",
+        "wordmark": "宏景科技"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "hongjing-disclosures",
+      "name": "宏景科技公司公告与财报",
+      "organization": "宏景科技",
+      "sourceType": "company",
+      "entryUrl": "https://www.gloryview.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "listed-companies",
+        "industry",
+        "rental-prices"
+      ],
+      "purpose": "宏景科技算力业务、融资及正式财务披露",
+      "questions": [
+        "营业收入及归母净利润如何变化？"
+      ],
+      "metrics": [
+        "报告期",
+        "营业收入",
+        "归母净利润"
+      ],
+      "aliases": [],
+      "tags": [
+        "财务报告"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "随新闻及公司公告更新。",
+      "access": "free",
+      "accessNote": "公开网页阅读。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "companyIds": [
+        "hongjing"
+      ],
+      "verificationNote": "2026-10-21：读取巨潮上市公司原始公告和半年报，核对301396、财务原表与重大动作。"
+    },
+    {
+      "id": "time-weekly",
+      "name": "时代周报",
+      "organization": "时代周报",
+      "sourceType": "media",
+      "entryUrl": "https://www.time-weekly.com/",
+      "entryType": "机构首页",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "industry",
+        "rental-prices"
+      ],
+      "purpose": "核对同行公司经营、融资与供应链报道",
+      "questions": [
+        "本次已核材料记载了哪些行业变化？"
+      ],
+      "metrics": [
+        "发布日期",
+        "当前进展"
+      ],
+      "aliases": [],
+      "tags": [
+        "财经媒体"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "本次只核样例与身份，不推定固定发布节奏。",
+      "access": "free",
+      "accessNote": "本轮所读公开页面可访问。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "companyIds": [],
+      "verificationNote": "2026-10-21：读取袁佳薇署名的宏景科技采访报道，核对媒体身份与原文日期。",
+      "mediaType": "财经媒体",
+      "shortName": "时代周报",
+      "discoveryType": "open"
+    }
+  ],
+  "reports": [
+    {
+      "id": "aofei-data-center-abs-20260817",
+      "sourceId": "aofei-disclosures",
+      "title": "奥飞数据17.955亿元绿色数据中心持有型ABS设立并完成交割",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-17/1225478069.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-17/1225478069.PDF",
+      "originalPublisher": "广东奥飞数据科技股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "aofei"
+      ],
+      "publishedAt": "2026-08-17",
+      "dataPeriod": null,
+      "summary": "天津盘古云泰数据中心为底层资产的持有型不动产资产支持专项计划，于8月11日设立，实际认购金额17.955亿元；截至8月17日披露时，公司已完成底层资产所属项目公司交割。",
+      "stage": "专项计划设立、资产交割完成",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21核对巨潮原始文件；PDF第1—2页，设立日期、募集金额及交割。证据：固定同行扩充_2026-10-21，对应PDF和逐页提取文本。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "eventId": "aofei-tianjin-data-center-abs"
+    },
+    {
+      "id": "aofei-project-delivery-ir-20260915",
+      "sourceId": "aofei-disclosures",
+      "title": "奥飞数据披露固安第八栋、无锡首期已交付及怀来建设进展",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-15/1225565905.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-09-15/1225565905.PDF",
+      "originalPublisher": "广东奥飞数据科技股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "aofei"
+      ],
+      "publishedAt": "2026-09-15",
+      "dataPeriod": null,
+      "summary": "公司在9月15日说明会披露：上半年固安第八栋、无锡首期均已交付，怀来规划1.5万个机柜，土建总体完成。截至6月底，自建自营数据中心折合标准机柜超过8.6万个，运营规模约382MW。",
+      "stage": "项目交付、怀来土建总体完成",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21核对巨潮原始文件；PDF第1—2页，问答1。证据：固定同行扩充_2026-10-21，对应PDF和逐页提取文本。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "eventId": "aofei-2026-project-deliveries"
+    },
+    {
+      "id": "athub-scientific-procurement-20260604",
+      "sourceId": "athub-disclosures",
+      "title": "数据港拟采购不超过8亿元AI4S科学计算服务",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-06-04/1225349759.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-06-04/1225349759.PDF",
+      "originalPublisher": "上海数据港股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "athub"
+      ],
+      "publishedAt": "2026-06-04",
+      "dataPeriod": null,
+      "summary": "董事会通过不超过8亿元的科学计算设备（非GPU）算力服务采购计划，服务期自验收开通后60个月，按月计费。公司披露已中标区域科学计算平台项目，投标报价4亿元、服务期2年；采购供应商及正式合同尚待确定。",
+      "stage": "董事会通过采购计划",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21核对巨潮原始文件；PDF第1—5页，采购内容、金额、服务期限及下游项目。证据：固定同行扩充_2026-10-21，对应PDF和逐页提取文本。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "eventId": "athub-ai4s-services-procurement"
+    },
+    {
+      "id": "athub-services-plan-original-20261017",
+      "sourceId": "athub-disclosures",
+      "title": "数据港拟采购10亿元算力服务：850P、验收后服务五年",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-17/1225609339.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-10-17/1225609339.PDF",
+      "originalPublisher": "上海数据港股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "athub"
+      ],
+      "publishedAt": "2026-10-17",
+      "dataPeriod": null,
+      "summary": "董事会通过不超过10亿元含税算力服务采购计划，集群总算力不低于850P（FP16），服务期为验收开通后60个月，按月计费。该计划仍需股东会审议，供应商及正式采购合同尚未确定。",
+      "stage": "董事会通过、待股东会审议",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21核对巨潮原始文件；PDF第1—4页，采购概况、技术要求及主要条款。证据：固定同行扩充_2026-10-21，对应PDF和逐页提取文本。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "eventId": "athub-gpu-services-procurement-2026"
+    },
+    {
+      "id": "hongjing-jv-plan-20260714",
+      "sourceId": "hongjing-disclosures",
+      "title": "宏景科技拟控股设立算力服务合资公司元动智启",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-07-14/1225424639.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-14/1225424639.PDF",
+      "originalPublisher": "宏景科技股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "hongjing"
+      ],
+      "publishedAt": "2026-07-14",
+      "dataPeriod": null,
+      "summary": "7月14日董事会通过合资设立方案：元动智启注册资本1000万元，宏景科技认缴510万元、持股51%，围绕算力服务与创新业务布局，纳入合并报表。",
+      "stage": "董事会通过设立方案",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21核对巨潮原始文件；PDF第1、3、5页，出资、股权及业务目的。证据：固定同行扩充_2026-10-21，对应PDF和逐页提取文本。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "eventId": "hongjing-yuandong-jv"
+    },
+    {
+      "id": "hongjing-jv-registration-20260722",
+      "sourceId": "hongjing-disclosures",
+      "title": "宏景科技控股合资公司元动智启完成工商登记",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-07-22/1225436695.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-07-22/1225436695.PDF",
+      "originalPublisher": "宏景科技股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "hongjing"
+      ],
+      "publishedAt": "2026-07-22",
+      "dataPeriod": null,
+      "summary": "深圳元动智启科技有限公司于7月20日成立，并完成工商注册登记、取得营业执照。注册资本1000万元，宏景科技认缴510万元、持股51%，该主体用于拓展算力服务与创新业务。",
+      "stage": "工商登记完成",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21核对巨潮原始文件；PDF第1—2页，成立日期、注册资本及业务范围。证据：固定同行扩充_2026-10-21，对应PDF和逐页提取文本。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "eventId": "hongjing-yuandong-jv"
+    },
+    {
+      "id": "hongjing-credit-guarantee-20260829",
+      "sourceId": "hongjing-disclosures",
+      "title": "宏景科技为算力子公司宏景纵横新增30亿元银行担保",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525642.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525642.PDF",
+      "originalPublisher": "宏景科技股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "hongjing"
+      ],
+      "publishedAt": "2026-08-29",
+      "dataPeriod": null,
+      "summary": "宏景科技披露已与广发银行广州从化支行签订最高额保证合同，为控股子公司宏景纵横提供不超过30亿元连带责任保证。担保范围包含主合同债务本金、利息等，保证期为主债务到期后三年。",
+      "stage": "保证合同已签署",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21核对巨潮原始文件；PDF第1—2页，保证合同主体、债权金额和保证期限。证据：固定同行扩充_2026-10-21，对应PDF和逐页提取文本。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "eventId": "hongjing-guangfa-credit-guarantee"
+    },
+    {
+      "id": "range-overseas-build-ir-20260830",
+      "sourceId": "range-disclosures",
+      "title": "润泽科技披露香港、印尼巴淡岛数据中心在建及交付计划",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-30/1225535400.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-30/1225535400.PDF",
+      "originalPublisher": "润泽智算科技集团股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国",
+        "中国香港",
+        "印尼"
+      ],
+      "companyIds": [
+        "range"
+      ],
+      "publishedAt": "2026-08-30",
+      "dataPeriod": null,
+      "summary": "润泽科技在8月28日业绩交流会上披露，香港及印尼巴淡岛两大节点正推进基建施工，海外中短期合计规划600MW。公司预计印尼项目于2026年、香港项目于2028年开始交付，并已外派300人以上团队开展海外IDC运维。",
+      "stage": "基建施工推进、分期交付计划",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "partial",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21核对巨潮原始文件；PDF第2—5页，会议日期及出海拓展。证据：固定同行扩充_2026-10-21，对应PDF和逐页提取文本。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "eventId": "range-overseas-data-centers-2026"
+    },
+    {
+      "id": "range-ai-fund-commitment-20260915",
+      "sourceId": "range-disclosures",
+      "title": "润泽科技签署合伙协议，认缴10亿元投资AI创投基金",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-15/1225565696.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-09-15/1225565696.PDF",
+      "originalPublisher": "润泽智算科技集团股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "range"
+      ],
+      "publishedAt": "2026-09-15",
+      "dataPeriod": null,
+      "summary": "润泽科技作为有限合伙人签署厦门时代深远创投基金合伙协议，以自有资金认缴10亿元，占基金认缴总额的20.4081%。基金主要投向人工智能、具身智能、科技应用及前沿科技。",
+      "stage": "签署合伙协议、认缴出资",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21核对巨潮原始文件；PDF第1—6页，投资金额、比例、协议及投资方向。证据：固定同行扩充_2026-10-21，对应PDF和逐页提取文本。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "eventId": "range-shidai-shenyuan-ai-fund"
+    },
+    {
+      "id": "range-ai-fund-filed-20261012",
+      "sourceId": "range-disclosures",
+      "title": "润泽科技认缴10亿元的时代深远基金完成私募备案",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-12/1225601646.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-10-12/1225601646.PDF",
+      "originalPublisher": "润泽智算科技集团股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "range"
+      ],
+      "publishedAt": "2026-10-12",
+      "dataPeriod": null,
+      "summary": "厦门时代深远创投基金于10月9日完成中国证券投资基金业协会备案，编码SGG884。润泽科技认缴10亿元、占20.4081%，基金主要投资人工智能、具身智能等领域。",
+      "stage": "基金备案完成",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21核对巨潮原始文件；PDF第1—2页，认缴比例、备案日期及编码。证据：固定同行扩充_2026-10-21，对应PDF和逐页提取文本。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "eventId": "range-shidai-shenyuan-ai-fund"
+    },
+    {
+      "id": "range-aidc-credit-plan-20260915",
+      "sourceId": "range-disclosures",
+      "title": "润泽科技董事会通过新增不超500亿元授信申请计划",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-15/1225564142.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-09-15/1225564142.PDF",
+      "originalPublisher": "润泽智算科技集团股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "range"
+      ],
+      "publishedAt": "2026-09-15",
+      "dataPeriod": null,
+      "summary": "9月14日董事会通过新增授信申请计划，公司及合并范围内子公司拟向金融机构申请新增不超过500亿元额度，以支持AIDC业务投入。形式包括项目贷款、融资租赁等，申请额度有效期至2026年底。",
+      "stage": "董事会通过、待股东会审议",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21核对巨潮原始文件；PDF第1—2页，审批日期、额度、用途和期限。证据：固定同行扩充_2026-10-21，对应PDF和逐页提取文本。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "eventId": "range-2026-aidc-credit-application"
+    },
+    {
+      "id": "range-aidc-credit-shareholders-20260930",
+      "sourceId": "range-disclosures",
+      "title": "润泽科技股东会通过新增授信额度申请",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-30/1225590472.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-09-30/1225590472.PDF",
+      "originalPublisher": "润泽智算科技集团股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "range"
+      ],
+      "publishedAt": "2026-09-30",
+      "dataPeriod": null,
+      "summary": "9月30日临时股东会审议通过2026年度新增授信额度申请及新增对外担保额度议案。新增不超500亿元授信申请用于支持公司及子公司经营，具体融资仍需与金融机构签署协议。",
+      "stage": "股东会审议通过授信申请",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21核对巨潮原始文件；PDF第1—3页，会议日期及第一项议案。证据：固定同行扩充_2026-10-21，对应PDF和逐页提取文本。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "eventId": "range-2026-aidc-credit-application"
+    },
+    {
+      "id": "hongjing-2026-h1",
+      "sourceId": "hongjing-disclosures",
+      "title": "宏景科技2026年半年度报告",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525638.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525638.PDF",
+      "originalPublisher": "宏景科技股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "hongjing"
+      ],
+      "publishedAt": "2026-08-29",
+      "dataPeriod": "2026年半年报｜1—6月累计",
+      "summary": "2026年1—6月营业收入18.43亿元，同比增长156.43%；归母净利润1.37亿元，同比增长127.43%。",
+      "stage": "2026年半年报披露",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "partial",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21核对巨潮原始文件；PDF第1、8、9页，发行人身份与主要会计数据；财务表已渲染核对。证据：固定同行扩充_2026-10-21，对应PDF和逐页提取文本。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "financial": {
+        "companyId": "hongjing",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年半年报｜1—6月累计",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 1843260974.24,
+          "priorValue": 718807640.86,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "reported",
+            "percent": 156.43,
+            "note": "报告披露同比；原值复算一致。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": 137094320.29,
+          "priorValue": 60280419.24,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "归属于上市公司股东",
+          "change": {
+            "basis": "reported",
+            "percent": 127.43,
+            "note": "报告披露同比；原值复算一致。"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525638.PDF",
+          "locator": "PDF第9页，主要会计数据；2026年1—6月与上年同期，人民币元。"
+        },
+        "limitations": "公司合并报表，2026年1—6月累计。"
+      }
+    },
+    {
+      "id": "athub-ascend-supernode-20260921",
+      "evidenceLevel": "official-body",
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。 2026-10-21：补核官方原文，关联固定公司重大动作。",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-21",
+      "eventId": "athub-beijing-ascend-cluster"
+    },
+    {
+      "id": "athub-services-plan-20261017",
+      "relatedLinks": [
+        {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-17/1225609339.PDF",
+          "publisher": "上海数据港股份有限公司",
+          "role": "巨潮指定披露原件",
+          "publishedAt": "2026-10-17"
+        }
+      ],
+      "verificationNote": "2026-10-19核对公开原文、日期与事件阶段；证据：行业更新部署_2026-10-19/cn-athub-services.txt。 2026-10-21：补核官方原文，关联固定公司重大动作。",
+      "verifiedAt": "2026-10-19",
+      "lastCheckAttemptAt": "2026-10-21",
+      "eventId": "athub-gpu-services-procurement-2026"
+    },
+    {
+      "id": "10jqka-aofei-capacity-20260916",
+      "eventId": "aofei-2026-project-deliveries",
+      "relatedLinks": [
+        {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-09-15/1225565905.PDF",
+          "publisher": "广东奥飞数据科技股份有限公司",
+          "role": "公司业绩说明会原始记录",
+          "publishedAt": "2026-09-15"
+        }
+      ],
+      "verificationNote": "2026-10-15：AnySearch读取正文、发布日期与署名；原始提取结果保存于V1_行业更新_2026-10-15/evidence。 2026-10-21：补核官方原文，关联固定公司重大动作。",
+      "verifiedAt": "2026-10-15",
+      "lastCheckAttemptAt": "2026-10-21"
+    },
+    {
+      "id": "stcn-athub-compute-purchase-20261016",
+      "sourceId": "stcn-industry",
+      "title": "数据港拟采购不超10亿元算力服务",
+      "url": "https://www.stcn.com/article/detail/4223071.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4223071.html",
+      "originalPublisher": "证券时报·人民财讯",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "athub"
+      ],
+      "publishedAt": "2026-10-16",
+      "dataPeriod": null,
+      "summary": "人民财讯报道数据港拟采购不超过10亿元算力服务；正式采购合同尚未签署，主营业务仍为IDC。后续核对供应商、股东会及服务验收开通安排。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21读取公开正文、署名及发布时间；证据：固定同行扩充_2026-10-21/media-*.txt及公开原网页提取。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "赖少华"
+      },
+      "eventId": "athub-gpu-services-procurement-2026"
+    },
+    {
+      "id": "stcn-range-ai-fund-20260915",
+      "sourceId": "stcn-industry",
+      "title": "润泽科技拟认缴10亿元参与AI创投基金",
+      "url": "https://www.stcn.com/article/detail/4186394.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4186394.html",
+      "originalPublisher": "证券时报·人民财讯",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "range"
+      ],
+      "publishedAt": "2026-09-15",
+      "dataPeriod": null,
+      "summary": "人民财讯报道，润泽科技拟认缴10亿元参与厦门时代深远创投基金，占20.4081%；投资方向包括人工智能、具身智能及前沿科技。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21读取公开正文、署名及发布时间；证据：固定同行扩充_2026-10-21/media-*.txt及公开原网页提取。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "任丽珺"
+      },
+      "eventId": "range-shidai-shenyuan-ai-fund"
+    },
+    {
+      "id": "cls-range-aidc-credit-20260914",
+      "sourceId": "cls-industry",
+      "title": "润泽科技拟新增不超500亿元授信，支持AIDC投入",
+      "url": "https://www.cls.cn/detail/2482661",
+      "originalUrl": "https://www.cls.cn/detail/2482661",
+      "originalPublisher": "财联社",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "range"
+      ],
+      "publishedAt": "2026-09-14",
+      "dataPeriod": null,
+      "summary": "财联社盘后公告集锦报道，润泽科技拟申请新增不超500亿元授信，持续加大AIDC投入；额度覆盖项目贷款、融资租赁等方式，具体融资协议另行协商。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "partial",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21读取公开正文、署名及发布时间；证据：固定同行扩充_2026-10-21/media-*.txt及公开原网页提取。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体报道",
+      "authorship": {
+        "type": "brief",
+        "author": "财联社"
+      },
+      "eventId": "range-2026-aidc-credit-application"
+    },
+    {
+      "id": "timeweekly-hongjing-compute-financing-20261008",
+      "sourceId": "time-weekly",
+      "title": "宏景科技回应设备采购问题，报道追踪算力扩张融资",
+      "url": "https://www.time-weekly.com/post/333355",
+      "originalUrl": "https://www.time-weekly.com/post/333355",
+      "originalPublisher": "时代周报",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "hongjing"
+      ],
+      "publishedAt": "2026-10-08",
+      "dataPeriod": null,
+      "summary": "时代周报采访宏景科技并梳理其算力设备融资安排。公司回应称按客户需求采购软硬件、通过合规渠道经营；报道同时分析融资租赁对扩张及偿债的影响。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21读取公开正文、署名及发布时间；证据：固定同行扩充_2026-10-21/media-*.txt及公开原网页提取。",
+      "judgmentTypes": [
+        "fact",
+        "opinion"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "袁佳薇"
+      }
+    },
+    {
+      "id": "csj-aofei-halfyear-20260731",
+      "sourceId": "eastmoney-news",
+      "title": "奥飞数据半年收入14.69亿元、归母净利润1.97亿元",
+      "url": "https://finance.eastmoney.com/a/202607313828732842.html",
+      "originalUrl": "https://finance.eastmoney.com/a/202607313828732842.html",
+      "originalPublisher": "中国证券报·中证网（东方财富转载）",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "aofei"
+      ],
+      "publishedAt": "2026-07-31",
+      "dataPeriod": null,
+      "summary": "中国证券报报道奥飞数据上半年收入14.69亿元，同比增长27.95%；归母净利润1.97亿元，同比增长123.64%；经营活动现金流净额8.52亿元，同比增长88.90%。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-21",
+      "lastCheckAttemptAt": "2026-10-21",
+      "verificationNote": "2026-10-21读取公开正文、署名及发布时间；证据：固定同行扩充_2026-10-21/media-*.txt及公开原网页提取。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体报道",
+      "authorship": {
+        "type": "repost",
+        "author": "沈楠"
+      }
+    }
+  ],
+  "events": [
+    {
+      "event": {
+        "id": "aofei-tianjin-data-center-abs",
+        "title": "17.955亿元数据中心ABS设立",
+        "type": "capital",
+        "companyIds": [
+          "aofei"
+        ],
+        "relatedEventIds": [],
+        "participants": [
+          {
+            "companyId": "aofei",
+            "role": "事项披露及实施主体"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "priority": 94,
+        "currentSummary": "天津盘古云泰数据中心为底层资产的持有型不动产资产支持专项计划，于8月11日设立，实际认购金额17.955亿元；截至8月17日披露时，公司已完成底层资产所属项目公司交割。",
+        "latestVerifiedMilestoneId": "established",
+        "basisMilestoneIds": [
+          "established"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "established",
+            "title": "17.955亿元数据中心ABS设立",
+            "occurredAt": "2026-08-11",
+            "summary": "天津盘古云泰数据中心为底层资产的持有型不动产资产支持专项计划，于8月11日设立，实际认购金额17.955亿元；截至8月17日披露时，公司已完成底层资产所属项目公司交割。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "aofei-data-center-abs-20260817",
+            "evidenceRefs": [
+              {
+                "reportId": "aofei-data-center-abs-20260817",
+                "locator": "PDF第1—2页，设立、募集与截至披露时交割情况",
+                "role": "上市公司原始依据"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-21",
+          "result": "progress",
+          "note": "本轮原始公告补核；后续在同一事项下持续记录进展。",
+          "checks": [
+            {
+              "id": "aofei-tianjin-data-center-abs-review-20261021",
+              "channel": "巨潮及上市公司原始披露",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-17/1225478069.PDF",
+              "attemptedAt": "2026-10-21",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取原始材料，核对主体、真实日期、金额、阶段及前后关系。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "event": {
+        "id": "aofei-2026-project-deliveries",
+        "title": "披露固安、无锡交付与怀来建设进展",
+        "type": "project",
+        "companyIds": [
+          "aofei"
+        ],
+        "relatedEventIds": [],
+        "participants": [
+          {
+            "companyId": "aofei",
+            "role": "事项披露及实施主体"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "priority": 95,
+        "currentSummary": "公司在9月15日说明会披露：上半年固安第八栋、无锡首期均已交付，怀来规划1.5万个机柜，土建总体完成。截至6月底，自建自营数据中心折合标准机柜超过8.6万个，运营规模约382MW。",
+        "latestVerifiedMilestoneId": "disclosed",
+        "basisMilestoneIds": [
+          "disclosed"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "disclosed",
+            "title": "披露固安、无锡交付与怀来建设进展",
+            "occurredAt": "2026-09-15",
+            "summary": "公司在9月15日说明会披露：上半年固安第八栋、无锡首期均已交付，怀来规划1.5万个机柜，土建总体完成。截至6月底，自建自营数据中心折合标准机柜超过8.6万个，运营规模约382MW。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "aofei-project-delivery-ir-20260915",
+            "evidenceRefs": [
+              {
+                "reportId": "aofei-project-delivery-ir-20260915",
+                "locator": "PDF第1—2页，问题1答复",
+                "role": "上市公司原始依据"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-21",
+          "result": "progress",
+          "note": "本轮原始公告补核；后续在同一事项下持续记录进展。",
+          "checks": [
+            {
+              "id": "aofei-2026-project-deliveries-review-20261021",
+              "channel": "巨潮及上市公司原始披露",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-09-15/1225565905.PDF",
+              "attemptedAt": "2026-10-21",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取原始材料，核对主体、真实日期、金额、阶段及前后关系。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "event": {
+        "id": "athub-ai4s-services-procurement",
+        "title": "披露拟8亿元采购AI4S服务",
+        "type": "contract",
+        "companyIds": [
+          "athub"
+        ],
+        "relatedEventIds": [],
+        "participants": [
+          {
+            "companyId": "athub",
+            "role": "事项披露及实施主体"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "priority": 96,
+        "currentSummary": "董事会通过不超过8亿元的科学计算设备（非GPU）算力服务采购计划，服务期自验收开通后60个月，按月计费。公司披露已中标区域科学计算平台项目，投标报价4亿元、服务期2年；采购供应商及正式合同尚待确定。",
+        "latestVerifiedMilestoneId": "disclosed",
+        "basisMilestoneIds": [
+          "disclosed"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "disclosed",
+            "title": "披露拟8亿元采购AI4S服务",
+            "occurredAt": "2026-06-04",
+            "summary": "董事会通过不超过8亿元的科学计算设备（非GPU）算力服务采购计划，服务期自验收开通后60个月，按月计费。公司披露已中标区域科学计算平台项目，投标报价4亿元、服务期2年；采购供应商及正式合同尚待确定。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "athub-scientific-procurement-20260604",
+            "evidenceRefs": [
+              {
+                "reportId": "athub-scientific-procurement-20260604",
+                "locator": "PDF第2—5页",
+                "role": "上市公司原始依据"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-21",
+          "result": "progress",
+          "note": "本轮原始公告补核；后续在同一事项下持续记录进展。",
+          "checks": [
+            {
+              "id": "athub-ai4s-services-procurement-review-20261021",
+              "channel": "巨潮及上市公司原始披露",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-06-04/1225349759.PDF",
+              "attemptedAt": "2026-10-21",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取原始材料，核对主体、真实日期、金额、阶段及前后关系。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "event": {
+        "id": "athub-gpu-services-procurement-2026",
+        "title": "披露拟10亿元采购850P算力服务",
+        "type": "contract",
+        "companyIds": [
+          "athub"
+        ],
+        "relatedEventIds": [],
+        "participants": [
+          {
+            "companyId": "athub",
+            "role": "事项披露及实施主体"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "priority": 98,
+        "currentSummary": "董事会通过不超过10亿元含税算力服务采购计划，集群总算力不低于850P（FP16），服务期为验收开通后60个月，按月计费。该计划仍需股东会审议，供应商及正式采购合同尚未确定。",
+        "latestVerifiedMilestoneId": "disclosed",
+        "basisMilestoneIds": [
+          "disclosed"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "disclosed",
+            "title": "披露拟10亿元采购850P算力服务",
+            "occurredAt": "2026-10-17",
+            "summary": "董事会通过不超过10亿元含税算力服务采购计划，集群总算力不低于850P（FP16），服务期为验收开通后60个月，按月计费。该计划仍需股东会审议，供应商及正式采购合同尚未确定。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "athub-services-plan-original-20261017",
+            "evidenceRefs": [
+              {
+                "reportId": "athub-services-plan-original-20261017",
+                "locator": "PDF第1—4页",
+                "role": "上市公司原始依据"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-21",
+          "result": "progress",
+          "note": "本轮原始公告补核；后续在同一事项下持续记录进展。",
+          "checks": [
+            {
+              "id": "athub-gpu-services-procurement-2026-review-20261021",
+              "channel": "巨潮及上市公司原始披露",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-10-17/1225609339.PDF",
+              "attemptedAt": "2026-10-21",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取原始材料，核对主体、真实日期、金额、阶段及前后关系。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "event": {
+        "id": "athub-beijing-ascend-cluster",
+        "title": "北京1号中心昇腾集群点亮投用",
+        "type": "technology",
+        "companyIds": [
+          "athub"
+        ],
+        "relatedEventIds": [],
+        "participants": [
+          {
+            "companyId": "athub",
+            "role": "事项披露及实施主体"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "priority": 95,
+        "currentSummary": "数据港宣布与华为合作的昇腾910C超节点集群落地投用，全部部署在北京1号算力中心。数据港提供算力交付、机房保障与运维，清昴智能将启用集群开展AI训练和推理业务。",
+        "latestVerifiedMilestoneId": "disclosed",
+        "basisMilestoneIds": [
+          "disclosed"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "disclosed",
+            "title": "北京1号中心昇腾集群点亮投用",
+            "occurredAt": "2026-09-20",
+            "summary": "数据港宣布与华为合作的昇腾910C超节点集群落地投用，全部部署在北京1号算力中心。数据港提供算力交付、机房保障与运维，清昴智能将启用集群开展AI训练和推理业务。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "athub-ascend-supernode-20260921",
+            "evidenceRefs": [
+              {
+                "reportId": "athub-ascend-supernode-20260921",
+                "locator": "公司新闻正文：昇腾910C超节点集群正式点亮",
+                "role": "上市公司原始依据"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-21",
+          "result": "progress",
+          "note": "本轮原始公告补核；后续在同一事项下持续记录进展。",
+          "checks": [
+            {
+              "id": "athub-beijing-ascend-cluster-review-20261021",
+              "channel": "巨潮及上市公司原始披露",
+              "url": "https://www.athub.com/index/Lists/show/catid/22/id/1341.html",
+              "attemptedAt": "2026-10-21",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取原始材料，核对主体、真实日期、金额、阶段及前后关系。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "event": {
+        "id": "hongjing-yuandong-jv",
+        "title": "控股算力服务合资公司元动智启成立",
+        "type": "acquisition",
+        "companyIds": [
+          "hongjing"
+        ],
+        "relatedEventIds": [],
+        "participants": [
+          {
+            "companyId": "hongjing",
+            "role": "事项披露及实施主体"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "priority": 80,
+        "currentSummary": "深圳元动智启科技有限公司于7月20日成立，并完成工商注册登记、取得营业执照。注册资本1000万元，宏景科技认缴510万元、持股51%，该主体用于拓展算力服务与创新业务。",
+        "latestVerifiedMilestoneId": "registered",
+        "basisMilestoneIds": [
+          "approved",
+          "registered"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "approved",
+            "title": "董事会通过元动智启设立方案",
+            "occurredAt": "2026-07-14",
+            "summary": "7月14日董事会通过合资设立方案：元动智启注册资本1000万元，宏景科技认缴510万元、持股51%，围绕算力服务与创新业务布局，纳入合并报表。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "hongjing-jv-plan-20260714",
+            "evidenceRefs": [
+              {
+                "reportId": "hongjing-jv-plan-20260714",
+                "locator": "PDF第1、3、5页",
+                "role": "上市公司原始依据"
+              }
+            ]
+          },
+          {
+            "id": "registered",
+            "title": "控股算力服务合资公司元动智启成立",
+            "occurredAt": "2026-07-20",
+            "summary": "深圳元动智启科技有限公司于7月20日成立，并完成工商注册登记、取得营业执照。注册资本1000万元，宏景科技认缴510万元、持股51%，该主体用于拓展算力服务与创新业务。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "hongjing-jv-registration-20260722",
+            "evidenceRefs": [
+              {
+                "reportId": "hongjing-jv-registration-20260722",
+                "locator": "PDF第1页，成立日期及登记信息",
+                "role": "上市公司原始依据"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-21",
+          "result": "progress",
+          "note": "本轮原始公告补核；后续在同一事项下持续记录进展。",
+          "checks": [
+            {
+              "id": "hongjing-yuandong-jv-review-20261021",
+              "channel": "巨潮及上市公司原始披露",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-07-22/1225436695.PDF",
+              "attemptedAt": "2026-10-21",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取原始材料，核对主体、真实日期、金额、阶段及前后关系。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "event": {
+        "id": "hongjing-guangfa-credit-guarantee",
+        "title": "披露为宏景纵横签署30亿元保证合同",
+        "type": "capital",
+        "companyIds": [
+          "hongjing"
+        ],
+        "relatedEventIds": [],
+        "participants": [
+          {
+            "companyId": "hongjing",
+            "role": "事项披露及实施主体"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "priority": 96,
+        "currentSummary": "宏景科技披露已与广发银行广州从化支行签订最高额保证合同，为控股子公司宏景纵横提供不超过30亿元连带责任保证。担保范围包含主合同债务本金、利息等，保证期为主债务到期后三年。",
+        "latestVerifiedMilestoneId": "disclosed",
+        "basisMilestoneIds": [
+          "disclosed"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "disclosed",
+            "title": "披露为宏景纵横签署30亿元保证合同",
+            "occurredAt": "2026-08-29",
+            "summary": "宏景科技披露已与广发银行广州从化支行签订最高额保证合同，为控股子公司宏景纵横提供不超过30亿元连带责任保证。担保范围包含主合同债务本金、利息等，保证期为主债务到期后三年。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "hongjing-credit-guarantee-20260829",
+            "evidenceRefs": [
+              {
+                "reportId": "hongjing-credit-guarantee-20260829",
+                "locator": "PDF第1—2页",
+                "role": "上市公司原始依据"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-21",
+          "result": "progress",
+          "note": "本轮原始公告补核；后续在同一事项下持续记录进展。",
+          "checks": [
+            {
+              "id": "hongjing-guangfa-credit-guarantee-review-20261021",
+              "channel": "巨潮及上市公司原始披露",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525642.PDF",
+              "attemptedAt": "2026-10-21",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取原始材料，核对主体、真实日期、金额、阶段及前后关系。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "event": {
+        "id": "range-overseas-data-centers-2026",
+        "title": "披露香港、巴淡岛在建项目与交付计划",
+        "type": "project",
+        "companyIds": [
+          "range"
+        ],
+        "relatedEventIds": [],
+        "participants": [
+          {
+            "companyId": "range",
+            "role": "事项披露及实施主体"
+          }
+        ],
+        "regions": [
+          "中国",
+          "中国香港",
+          "印尼"
+        ],
+        "visibility": "active",
+        "priority": 95,
+        "currentSummary": "润泽科技在8月28日业绩交流会上披露，香港及印尼巴淡岛两大节点正推进基建施工，海外中短期合计规划600MW。公司预计印尼项目于2026年、香港项目于2028年开始交付，并已外派300人以上团队开展海外IDC运维。",
+        "latestVerifiedMilestoneId": "disclosed",
+        "basisMilestoneIds": [
+          "disclosed"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "disclosed",
+            "title": "披露香港、巴淡岛在建项目与交付计划",
+            "occurredAt": "2026-08-28",
+            "summary": "润泽科技在8月28日业绩交流会上披露，香港及印尼巴淡岛两大节点正推进基建施工，海外中短期合计规划600MW。公司预计印尼项目于2026年、香港项目于2028年开始交付，并已外派300人以上团队开展海外IDC运维。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "range-overseas-build-ir-20260830",
+            "evidenceRefs": [
+              {
+                "reportId": "range-overseas-build-ir-20260830",
+                "locator": "PDF第2—5页，8月28日会议日期和出海拓展",
+                "role": "上市公司原始依据"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-21",
+          "result": "progress",
+          "note": "本轮原始公告补核；后续在同一事项下持续记录进展。",
+          "checks": [
+            {
+              "id": "range-overseas-data-centers-2026-review-20261021",
+              "channel": "巨潮及上市公司原始披露",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-08-30/1225535400.PDF",
+              "attemptedAt": "2026-10-21",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取原始材料，核对主体、真实日期、金额、阶段及前后关系。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "event": {
+        "id": "range-shidai-shenyuan-ai-fund",
+        "title": "认缴10亿元的AI基金完成备案",
+        "type": "acquisition",
+        "companyIds": [
+          "range"
+        ],
+        "relatedEventIds": [],
+        "participants": [
+          {
+            "companyId": "range",
+            "role": "事项披露及实施主体"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "priority": 88,
+        "currentSummary": "厦门时代深远创投基金于10月9日完成中国证券投资基金业协会备案，编码SGG884。润泽科技认缴10亿元、占20.4081%，基金主要投资人工智能、具身智能等领域。",
+        "latestVerifiedMilestoneId": "filed",
+        "basisMilestoneIds": [
+          "agreement",
+          "filed"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "agreement",
+            "title": "签署10亿元AI创投基金认缴协议",
+            "occurredAt": "2026-09-15",
+            "summary": "润泽科技作为有限合伙人签署厦门时代深远创投基金合伙协议，以自有资金认缴10亿元，占基金认缴总额的20.4081%。基金主要投向人工智能、具身智能、科技应用及前沿科技。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "range-ai-fund-commitment-20260915",
+            "evidenceRefs": [
+              {
+                "reportId": "range-ai-fund-commitment-20260915",
+                "locator": "PDF第1页及投资方向",
+                "role": "上市公司原始依据"
+              }
+            ]
+          },
+          {
+            "id": "filed",
+            "title": "认缴10亿元的AI基金完成备案",
+            "occurredAt": "2026-10-09",
+            "summary": "厦门时代深远创投基金于10月9日完成中国证券投资基金业协会备案，编码SGG884。润泽科技认缴10亿元、占20.4081%，基金主要投资人工智能、具身智能等领域。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "range-ai-fund-filed-20261012",
+            "evidenceRefs": [
+              {
+                "reportId": "range-ai-fund-filed-20261012",
+                "locator": "PDF第1—2页，备案日期2026-10-09",
+                "role": "上市公司原始依据"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-21",
+          "result": "progress",
+          "note": "本轮原始公告补核；后续在同一事项下持续记录进展。",
+          "checks": [
+            {
+              "id": "range-shidai-shenyuan-ai-fund-review-20261021",
+              "channel": "巨潮及上市公司原始披露",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-10-12/1225601646.PDF",
+              "attemptedAt": "2026-10-21",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取原始材料，核对主体、真实日期、金额、阶段及前后关系。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "event": {
+        "id": "range-2026-aidc-credit-application",
+        "title": "股东会通过不超500亿元新增授信申请",
+        "type": "capital",
+        "companyIds": [
+          "range"
+        ],
+        "relatedEventIds": [],
+        "participants": [
+          {
+            "companyId": "range",
+            "role": "事项披露及实施主体"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "priority": 97,
+        "currentSummary": "9月30日临时股东会审议通过2026年度新增授信额度申请及新增对外担保额度议案。新增不超500亿元授信申请用于支持公司及子公司经营，具体融资仍需与金融机构签署协议。",
+        "latestVerifiedMilestoneId": "shareholders-approved",
+        "basisMilestoneIds": [
+          "board-approved",
+          "shareholders-approved"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "board-approved",
+            "title": "董事会通过不超500亿元授信申请",
+            "occurredAt": "2026-09-14",
+            "summary": "9月14日董事会通过新增授信申请计划，公司及合并范围内子公司拟向金融机构申请新增不超过500亿元额度，以支持AIDC业务投入。形式包括项目贷款、融资租赁等，申请额度有效期至2026年底。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "range-aidc-credit-plan-20260915",
+            "evidenceRefs": [
+              {
+                "reportId": "range-aidc-credit-plan-20260915",
+                "locator": "PDF第1—2页，9月14日董事会通过",
+                "role": "上市公司原始依据"
+              }
+            ]
+          },
+          {
+            "id": "shareholders-approved",
+            "title": "股东会通过不超500亿元新增授信申请",
+            "occurredAt": "2026-09-30",
+            "summary": "9月30日临时股东会审议通过2026年度新增授信额度申请及新增对外担保额度议案。新增不超500亿元授信申请用于支持公司及子公司经营，具体融资仍需与金融机构签署协议。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "range-aidc-credit-shareholders-20260930",
+            "evidenceRefs": [
+              {
+                "reportId": "range-aidc-credit-shareholders-20260930",
+                "locator": "PDF第1—3页，第一项议案；金额见9月15日原公告",
+                "role": "上市公司原始依据"
+              },
+              {
+                "reportId": "range-aidc-credit-plan-20260915",
+                "locator": "PDF第1—2页，新增授信申请额度及用途",
+                "role": "额度及用途原始依据"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-21",
+          "result": "progress",
+          "note": "本轮原始公告补核；后续在同一事项下持续记录进展。",
+          "checks": [
+            {
+              "id": "range-2026-aidc-credit-application-review-20261021",
+              "channel": "巨潮及上市公司原始披露",
+              "url": "https://static.cninfo.com.cn/finalpage/2026-09-30/1225590472.PDF",
+              "attemptedAt": "2026-10-21",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取原始材料，核对主体、真实日期、金额、阶段及前后关系。"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "companyReviews": [
+    {
+      "companyId": "aofei",
+      "review": {
+        "lastAttemptAt": "2026-10-21",
+        "result": "partial",
+        "note": "2026-10-21核查巨潮2026年目录及选定重大披露，补入奥飞数据重大动作。最新已核正式财报为2026年半年报；目录、PDF及媒体检索证据保存于固定同行扩充_2026-10-21。",
+        "checks": [
+          {
+            "id": "aofei-tracking-expansion-20261021",
+            "channel": "巨潮上市公司公告与财经媒体",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300738",
+            "attemptedAt": "2026-10-21",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "2026-10-21核查巨潮2026年目录及选定重大披露，补入奥飞数据重大动作。最新已核正式财报为2026年半年报；目录、PDF及媒体检索证据保存于固定同行扩充_2026-10-21。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "athub",
+      "review": {
+        "lastAttemptAt": "2026-10-21",
+        "result": "partial",
+        "note": "2026-10-21核查巨潮2026年目录及选定重大披露，补入数据港重大动作。最新已核正式财报为2026年半年报；目录、PDF及媒体检索证据保存于固定同行扩充_2026-10-21。",
+        "checks": [
+          {
+            "id": "athub-tracking-expansion-20261021",
+            "channel": "巨潮上市公司公告与财经媒体",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603881",
+            "attemptedAt": "2026-10-21",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "2026-10-21核查巨潮2026年目录及选定重大披露，补入数据港重大动作。最新已核正式财报为2026年半年报；目录、PDF及媒体检索证据保存于固定同行扩充_2026-10-21。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "hongjing",
+      "review": {
+        "lastAttemptAt": "2026-10-21",
+        "result": "partial",
+        "note": "2026-10-21核查巨潮2026年目录及选定重大披露，补入宏景科技重大动作。最新已核正式财报为2026年半年报；目录、PDF及媒体检索证据保存于固定同行扩充_2026-10-21。",
+        "checks": [
+          {
+            "id": "hongjing-tracking-expansion-20261021",
+            "channel": "巨潮上市公司公告与财经媒体",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=301396",
+            "attemptedAt": "2026-10-21",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "2026-10-21核查巨潮2026年目录及选定重大披露，补入宏景科技重大动作。最新已核正式财报为2026年半年报；目录、PDF及媒体检索证据保存于固定同行扩充_2026-10-21。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "range",
+      "review": {
+        "lastAttemptAt": "2026-10-21",
+        "result": "partial",
+        "note": "2026-10-21核查巨潮2026年目录及选定重大披露，补入润泽科技重大动作。最新已核正式财报为2026年半年报；目录、PDF及媒体检索证据保存于固定同行扩充_2026-10-21。",
+        "checks": [
+          {
+            "id": "range-tracking-expansion-20261021",
+            "channel": "巨潮上市公司公告与财经媒体",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300442",
+            "attemptedAt": "2026-10-21",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "2026-10-21核查巨潮2026年目录及选定重大披露，补入润泽科技重大动作。最新已核正式财报为2026年半年报；目录、PDF及媒体检索证据保存于固定同行扩充_2026-10-21。"
+          }
+        ]
+      }
+    }
+  ],
+  "changeBatch": {
+    "batchId": "tracked-peers-20261021",
+    "recordedAt": "2026-10-21T12:19:11+08:00",
+    "scope": "四家固定同行扩充与官方重大动作核查",
+    "summary": "按用户确认增加奥飞数据、数据港、宏景科技、润泽科技为固定追踪公司，补核官方重大动作、最新财报及近三个月财经报道。",
+    "periodStart": "2026-07-21",
+    "notes": {
+      "aofei": "用户2026-10-21明确纳入固定追踪；保留原公司ID和原有资料。",
+      "athub": "用户2026-10-21明确纳入固定追踪；保留原公司ID和原有资料。",
+      "hongjing": "用户2026-10-21明确纳入固定追踪；保留原公司ID和原有资料。",
+      "range": "用户2026-10-21明确纳入固定追踪；保留原公司ID和原有资料。"
+    },
+    "checks": []
+  }
+}

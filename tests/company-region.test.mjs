@@ -7,7 +7,7 @@ const sources=decorateSources(data);
 
 test('R01: SEA company rows exclude domestic-only companies while retaining evidenced SEA activity',()=>{
  const groups=companyGroups(data,{scope:'sea'});
- assert.deepEqual(groups[0].items.map(c=>c.id),['sinnet','xingyun']);
+ assert.deepEqual(groups[0].items.map(c=>c.id),['sinnet','xingyun','range']);
  assert.equal(groups[1].items.length,0);
  assert.ok(ids({scope:'sea'}).includes('bdx'));
  assert.ok(!ids({scope:'sea'}).includes('vnet'));

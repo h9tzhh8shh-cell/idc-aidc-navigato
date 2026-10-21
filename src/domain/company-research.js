@@ -5,7 +5,7 @@ export function companyRegistry(data) {
 }
 
 export function trackedCompanies(data) {
-  return ['sinnet', 'xingyun', 'vnet', 'sharetronic', 'gds', 'hec']
+  return ['sinnet', 'xingyun', 'vnet', 'sharetronic', 'gds', 'hec', 'aofei', 'athub', 'hongjing', 'range']
     .map(id => companyRegistry(data).find(company => company.id === id)).filter(Boolean);
 }
 

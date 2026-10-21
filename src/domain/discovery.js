@@ -153,7 +153,8 @@ export function validateDiscovery(data) {
     if (!['companyIds', 'reportIds', 'highlightReportIds'].every(key => Array.isArray(batch[key]) && unique(batch[key]))) { fail('发现引用无效或重复'); continue; }
     for (const id of batch.companyIds) {
       const company = data.companies.find(c => c.id === id);
-      if (!company || company.role !== 'reference' || seenCompanies.has(id)) fail(`非首次参考企业 ${id}`);
+      // An originally discovered reference may later join the user-confirmed tracked roster.
+      if (!company || !['reference', 'core'].includes(company.role) || seenCompanies.has(id)) fail(`非首次参考企业 ${id}`);
       if (!company?.discoveryProfile?.website?.startsWith('https://') || !company?.discoveryProfile?.businessIdentity || !company?.discoveryProfile?.financialNote) fail(`企业展示依据不完整 ${id}`);
       seenCompanies.add(id);
     }

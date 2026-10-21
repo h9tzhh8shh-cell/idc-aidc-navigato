@@ -4,8 +4,8 @@ import data from '../public/assets/catalog.json' with { type: 'json' };
 import { decorateSources, filterReports, getSeaReports, getSourcePreview } from '../src/catalog.js';
 
 const sources = decorateSources(data);
-test('A22/A23: confirmed six core issuers and three operator brands retain legal identities', () => {
-  assert.deepEqual(data.companies.filter(company => company.role === 'core').map(company => company.id).sort(), ['gds', 'hec', 'sharetronic', 'sinnet', 'vnet', 'xingyun']);
+test('A22/A23: confirmed ten core issuers and three operator brands retain legal identities', () => {
+  assert.deepEqual(data.companies.filter(company => company.role === 'core').map(company => company.id).sort(), ['aofei', 'athub', 'gds', 'hec', 'hongjing', 'range', 'sharetronic', 'sinnet', 'vnet', 'xingyun']);
   for (const id of ['sinnet', 'xingyun', 'vnet', 'sharetronic', 'gds', 'hec', 'china-mobile', 'china-telecom', 'china-unicom-h']) {
     assert.ok(data.sources.some(source => source.companyIds?.includes(id)), id);
     assert.ok(data.reports.some(report => report.visibility === 'active' && report.companyIds.includes(id)), id);

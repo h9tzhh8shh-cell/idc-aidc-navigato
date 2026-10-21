@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { IconArrowLeft, IconArrowRight, IconChevronRight, IconGripHorizontal, IconBuildingFactory2, IconUsers, IconArrowsExchange, IconCpu, IconBuildingBank, IconShieldCheck, IconDatabase, IconChartBar } from '@tabler/icons-react';
+import { IconArrowLeft, IconArrowRight, IconGripHorizontal, IconBuildingFactory2, IconUsers, IconArrowsExchange, IconCpu, IconBuildingBank, IconShieldCheck, IconDatabase, IconChartBar } from '@tabler/icons-react';
 import { OutLink, SourceLogo } from './components.jsx';
 import { FinancialChange } from './financial-components.jsx';
 import { amount } from './domain/financial.js';
@@ -10,15 +10,6 @@ import './company-dashboard.css';
 
 const eventIcons = { project: IconBuildingFactory2, contract: IconUsers, acquisition: IconArrowsExchange, technology: IconCpu, capital: IconBuildingBank, risk: IconShieldCheck };
 const securityName = company => company.securities.map(s => ['SZSE','深交所'].includes(s.exchange) ? `${s.code}.SZ` : ['SSE','上交所'].includes(s.exchange) ? `${s.code}.SH` : `${s.exchange}:${s.code}`).join(' / ');
-
-function ActionList({ actions }) {
-  return <ol className="company-action-list">{actions.map((action, index) => <li key={action.id} data-action-id={action.id} data-type={action.type}>
-    <span className="company-action-number" aria-hidden="true">{index + 1}</span>
-    <div><h4><OutLink href={action.url}>{action.title}</OutLink></h4><time dateTime={action.date}>{action.date}</time></div>
-    <p>{action.summary}</p>
-    <OutLink className="company-action-source" href={action.url}>原文</OutLink>
-  </li>)}</ol>;
-}
 
 function TimelineCard({ action }) {
   const Icon = eventIcons[action.type];
@@ -99,7 +90,6 @@ export function CompanyDashboard({ data, sources, companyId, eventId, rangeKey =
   const mediaReports = companyMediaReports(data, companyId, mediaRange);
   const readingMedia = companyTab === 'media';
   const actions = companyDashboardActions(data, companyId, range, eventType);
-  const history = companyDashboardActions(data, companyId, { start: '2025-01-01', end: '2025-12-31' }, eventType);
   const highlights = showAll ? actions : companyHighlights(actions);
   const financial = companyFinancialAt(data, companyId, range.end);
   const source = sources.find(source => source.sourceType === 'company' && source.companyIds?.includes(companyId));
@@ -141,6 +131,5 @@ export function CompanyDashboard({ data, sources, companyId, eventId, rangeKey =
       {highlights.length ? <div className="company-timeline-scroll" ref={track} tabIndex={0} aria-label="横向重大动作时间线"><ol className="company-timeline" style={{ '--event-count': highlights.length }}>{highlights.map(action => <TimelineCard key={action.id} action={action}/>)}</ol></div> : <p className="company-dashboard-empty">当前范围暂无重大动作。</p>}
       </div>}
     </section>
-    <details className="company-history" key={`${companyId}-${eventType}`}><summary><IconChevronRight size={18} aria-hidden="true"/>2025年关键动作<span>{history.length} 项</span></summary>{history.length ? <ActionList actions={history}/> : <p className="company-dashboard-empty">暂无已收录关键动作。</p>}</details>
   </section>;
 }
