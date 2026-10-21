@@ -45,7 +45,7 @@ test('F04: concrete NEA power policy remains admissible',()=>{
  assert.deepEqual(validateCatalog(d),[]);
 });
 test('F06–F10/F17–F18: concrete NDA additions, all five media and six core companies have financial evidence',()=>{
- assert.equal(data.reports.filter(r=>r.id.startsWith('nda-')&&r.publishedAt>='2026-09-01').length,3);
+ assert.equal(data.reports.filter(r=>r.id.startsWith('nda-')&&r.publishedAt>='2026-09-01'&&r.publishedAt<='2026-10-12').length,3);
  for(const sourceId of ['nbd-industry','cls-industry','jiemian-industry','thepaper-industry','36kr-industry']){
   const originalIds=new Set(data.changeBatches.find(b=>b.batchId==='phase4-content-20261012').changes.filter(c=>c.objectType==='report'&&c.kinds.includes('new-record')).map(c=>c.objectId));
   const reports=data.reports.filter(r=>r.sourceId===sourceId&&originalIds.has(r.id));assert.ok(reports.length);

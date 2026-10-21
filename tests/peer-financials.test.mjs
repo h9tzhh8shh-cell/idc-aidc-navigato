@@ -34,7 +34,7 @@ test('PF02 all seven listed discoveries have actual H1 financials with dated ori
     range:[3745694047.05,2496223080.63,1203446677.80,882122065.03,'2026-08-28'],
   };
   for(const [id,values] of Object.entries(expected)){
-    const {report}=latestFinancial(current,id),f=report.financial;
+    const report=current.reports.find(r=>r.id===`${id}-2026-h1`),f=report.financial;
     assert.deepEqual([f.revenue.value,f.revenue.priorValue,f.profit.value,f.profit.priorValue,report.publishedAt],values,id);
     assert.equal(f.statementBasis,'actual-results');assert.equal(f.period.type,'half-year');
     assert.equal(f.period.start,'2026-01-01');assert.equal(f.period.end,'2026-06-30');
@@ -48,7 +48,7 @@ test('PF02 all seven listed discoveries have actual H1 financials with dated ori
 });
 
 test('PF03 losses remain negative and private companies are not assigned guessed financials',()=>{
-  const capital=latestFinancial(current,'capitalonline').report.financial.profit;
+  const capital=current.reports.find(r=>r.id==='capitalonline-2026-h1').financial.profit;
   const nexwise=latestFinancial(current,'nexwise').report.financial.profit;
   assert.equal(amount(capital),'-3,218.50万元人民币');assert.equal(changeText(capital),'亏损收窄');
   assert.equal(amount(nexwise),'-326.10万元人民币');assert.equal(changeText(nexwise),'由盈转亏');
