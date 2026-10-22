@@ -14,7 +14,7 @@ export function Highlight({ text = '', query = '' }) {
   return String(text).split(new RegExp(`(${words.join('|')})`, 'ig')).map((s, i) => i % 2 ? <mark key={i}>{s}</mark> : s);
 }
 export function SourceLogo({ source, large = false }) {
-  return <span className={`source-logo ${large ? 'large' : ''} ${['ornn-gpu', 'hec-disclosures', 'mysteel-computing', 'nea-electricity'].includes(source.id) ? 'dark' : ''}`}>{logos[source.id] ? <img src={logos[source.id]} alt={`${source.organization} 标识`} /> : <IconBuilding size={large ? 34 : 27} stroke={1.5} aria-hidden="true" />}</span>;
+  return <span className={`source-logo ${large ? 'large' : ''} ${['ornn-gpu', 'hec-disclosures', 'mysteel-computing', 'nea-electricity', 'athub-news', 'athub-disclosures', 'xingyun-disclosures'].includes(source.id) ? 'dark' : ''}`}>{logos[source.id] ? <img src={logos[source.id]} alt={`${source.organization} 标识`} /> : <IconBuilding size={large ? 34 : 27} stroke={1.5} aria-hidden="true" />}</span>;
 }
 export function OutLink({ href, children, className = '' }) {
   return <a className={className} href={href} target="_blank" rel="noopener noreferrer">{children}<IconArrowUpRight size={17} stroke={1.8} aria-hidden="true" /><span className="sr-only">（在新标签页打开）</span></a>;

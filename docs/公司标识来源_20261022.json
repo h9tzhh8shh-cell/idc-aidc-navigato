@@ -1,0 +1,71 @@
+[
+  {
+    "company": "奥飞数据",
+    "sourceIds": [
+      "aofei-disclosures"
+    ],
+    "officialPage": "https://www.ofidc.com/",
+    "originalAssetUrl": "https://prob41931-pic24.websiteonline.cn/upload/vl3b.png",
+    "asset": "aofei-disclosures-official.png",
+    "method": "官网首页实际img引用；原始PNG不改动；图中文字奥飞数据和证券代码300738",
+    "sha256": "f9d6531d3358f268aa62bbd2e016030ecc92c0576ac5c6e038134e0bef6590af",
+    "bytes": 42961,
+    "dimensions": [
+      959,
+      360
+    ],
+    "localAsset": "/assets/source-logos/aofei-disclosures-official.png"
+  },
+  {
+    "company": "数据港",
+    "sourceIds": [
+      "athub-news",
+      "athub-disclosures"
+    ],
+    "officialPage": "https://www.athub.com/",
+    "originalAssetUrl": "https://www.athub.com/uploads/images/20190624/1561342763969195.png",
+    "asset": "athub-disclosures-official.png",
+    "method": "官网header.logo实际img引用；橙色图案与白色数据港文字，原始PNG不改动",
+    "sha256": "f539dae81ff0602e78bbc910fd3289d49d2ef34652c8f060ec1ea480f0130ca7",
+    "bytes": 3801,
+    "dimensions": [
+      180,
+      28
+    ],
+    "localAsset": "/assets/source-logos/athub-disclosures-official.png"
+  },
+  {
+    "company": "宏景科技",
+    "sourceIds": [
+      "hongjing-disclosures"
+    ],
+    "officialPage": "https://static.cninfo.com.cn/finalpage/2022-11-08/1215045105.PDF",
+    "originalAssetUrl": null,
+    "asset": "hongjing-disclosures-official.png",
+    "method": "巨潮发行人正式招股说明书封面嵌入Image16原始PNG，红蓝企业图案与GLORYVIEW TECH.，未裁剪或重绘。宏景算力云业务logo不采用。",
+    "sha256": "27c14d8e9f2b45351b9d0251cc69e34e585a710d1c2a5359a13024553111908f",
+    "bytes": 21751,
+    "dimensions": [
+      461,
+      345
+    ],
+    "localAsset": "/assets/source-logos/hongjing-disclosures-official.png"
+  },
+  {
+    "company": "润泽科技",
+    "sourceIds": [
+      "range-disclosures"
+    ],
+    "officialPage": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225521959.PDF",
+    "originalAssetUrl": null,
+    "asset": "range-disclosures-official.jpg",
+    "method": "巨潮2026年半年度报告封面嵌入IM24原始JPG，红色R图案，未裁剪或重绘。官网发展有限公司全称组合不采用。",
+    "sha256": "d35926b1e7756b6a8489969bd061fd981727e96dc04cefc7a45c9fdcc61290b4",
+    "bytes": 29198,
+    "dimensions": [
+      681,
+      681
+    ],
+    "localAsset": "/assets/source-logos/range-disclosures-official.jpg"
+  }
+]

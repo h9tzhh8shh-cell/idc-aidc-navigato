@@ -2,7 +2,7 @@
   "reportId": "smm-h100-observation-20261009",
   "sourceUrl": "https://aidc.smm.cn/price",
   "sourceCadence": "工作日11:30前",
-  "evidence": "2026-10-21人工核对SMM公开页面及页面内报价表：四组均为2026-10-20报价；4090全国单卡1.90元/卡·时，较10月19日1.89上涨0.53%，其他三组均价不变。证据：行业信息更新_2026-10-21/smm-price.txt、smm-decoded.html、smm-observations.json。",
+  "evidence": "2026-10-22人工核对SMM免费公开页面：最新四组报价日期均为2026-10-21；4090整机全国短期均价1.95元/卡·时，较10月20日2.29下降14.85%，区间1.48—3.60；其余三组均价持平。证据：行业信息更新_2026-10-22/smm-public.html、smm-cards.json、smm-observations.json。",
   "groups": [
     {
       "model": "H100 80G",
@@ -19,15 +19,15 @@
           "low": 13.54,
           "high": 15.1,
           "unit": "元/卡·时",
-          "quoteDate": "2026-10-20",
-          "checkedAt": "2026-10-21T01:08:32.550588+00:00",
+          "quoteDate": "2026-10-21",
+          "checkedAt": "2026-10-22T09:04:52+08:00",
           "sourceUrl": "https://aidc.smm.cn/price",
           "sourceChange": {
             "percent": 0.0,
             "label": "0.00%"
           },
           "comparison": {
-            "date": "2026-10-19",
+            "date": "2026-10-20",
             "basis": "已核同口径均价",
             "percent": 0.0
           }
@@ -39,15 +39,15 @@
           "low": 13.54,
           "high": 14.58,
           "unit": "元/卡·时",
-          "quoteDate": "2026-10-20",
-          "checkedAt": "2026-10-21T01:08:32.550588+00:00",
+          "quoteDate": "2026-10-21",
+          "checkedAt": "2026-10-22T09:04:52+08:00",
           "sourceUrl": "https://aidc.smm.cn/price",
           "sourceChange": {
             "percent": 0.0,
             "label": "0.00%"
           },
           "comparison": {
-            "date": "2026-10-19",
+            "date": "2026-10-20",
             "basis": "已核同口径均价",
             "percent": 0.0
           }
@@ -69,37 +69,37 @@
           "low": 1.38,
           "high": 2.29,
           "unit": "元/卡·时",
-          "quoteDate": "2026-10-20",
-          "checkedAt": "2026-10-21T01:08:32.550588+00:00",
-          "sourceUrl": "https://aidc.smm.cn/price",
-          "sourceChange": {
-            "percent": 0.53,
-            "label": "0.53%"
-          },
-          "comparison": {
-            "date": "2026-10-19",
-            "basis": "已核同口径均价",
-            "percent": 0.53
-          }
-        },
-        {
-          "label": "整机 · 全国 · 短期",
-          "productCode": "SMM-GPU-CC-021",
-          "mean": 2.29,
-          "low": 1.37,
-          "high": 3.95,
-          "unit": "元/卡·时",
-          "quoteDate": "2026-10-20",
-          "checkedAt": "2026-10-21T01:08:32.550588+00:00",
+          "quoteDate": "2026-10-21",
+          "checkedAt": "2026-10-22T09:04:52+08:00",
           "sourceUrl": "https://aidc.smm.cn/price",
           "sourceChange": {
             "percent": 0.0,
             "label": "0.00%"
           },
           "comparison": {
-            "date": "2026-10-19",
+            "date": "2026-10-20",
             "basis": "已核同口径均价",
             "percent": 0.0
+          }
+        },
+        {
+          "label": "整机 · 全国 · 短期",
+          "productCode": "SMM-GPU-CC-021",
+          "mean": 1.95,
+          "low": 1.48,
+          "high": 3.6,
+          "unit": "元/卡·时",
+          "quoteDate": "2026-10-21",
+          "checkedAt": "2026-10-22T09:04:52+08:00",
+          "sourceUrl": "https://aidc.smm.cn/price",
+          "sourceChange": {
+            "percent": -14.85,
+            "label": "-14.85%"
+          },
+          "comparison": {
+            "date": "2026-10-20",
+            "basis": "已核同口径均价",
+            "percent": -14.85
           }
         }
       ]

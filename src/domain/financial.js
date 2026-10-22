@@ -12,14 +12,20 @@ export function validateFinancial(f, report, today) {
   if (!['verified','pending'].includes(f.status)) fail('status 无效');
   text(f.limitations,'limitations');
   const p=f.period;
-  if (keys(p,['label','start','end','type','priorStart','priorEnd'],'period')) {
+  if (keys(p,['label','start','end','type','priorStart','priorEnd','basis'],'period')) {
     text(p.label,'period.label');
     if (!['quarter','half-year','nine-months','annual'].includes(p.type)) fail('period.type 无效');
     if (!day(p.start)||!day(p.end)||p.start>p.end||p.end>today) fail('报告期日期无效');
     const months={quarter:3,'half-year':6,'nine-months':9,annual:12}[p.type];
-    if (months&&day(p.start)&&day(p.end)) { const end=new Date(p.start);end.setUTCMonth(end.getUTCMonth()+months);end.setUTCDate(end.getUTCDate()-1);if(end.toISOString().slice(0,10)!==p.end)fail('单季/累计/全年与期间不一致'); }
+    const fiscalQuarter=p.basis==='13-weeks';
+    if(p.basis!==undefined&&!fiscalQuarter)fail('period.basis 无效');
+    const days=(start,end)=>(Date.parse(end)-Date.parse(start))/86400000+1;
+    if(fiscalQuarter) {
+      if(p.type!=='quarter'||days(p.start,p.end)!==91)fail('财政季度须为连续13周');
+      if(f.status==='verified'&&(days(p.priorStart,p.priorEnd)!==91||![364,371].includes(days(p.priorStart,p.start)-1)))fail('必须使用可比的上年13周财政季度');
+    } else if (months&&day(p.start)&&day(p.end)) { const end=new Date(p.start);end.setUTCMonth(end.getUTCMonth()+months);end.setUTCDate(end.getUTCDate()-1);if(end.toISOString().slice(0,10)!==p.end)fail('单季/累计/全年与期间不一致'); }
     if (report.publishedAt && p.end > report.publishedAt) fail('实际业绩不得早于报告期结束披露');
-    if (f.status==='verified' && (!day(p.priorStart)||!day(p.priorEnd)||Number(p.start?.slice(0,4))-Number(p.priorStart?.slice(0,4))!==1||p.start?.slice(4)!==p.priorStart?.slice(4)||Number(p.end?.slice(0,4))-Number(p.priorEnd?.slice(0,4))!==1||p.end?.slice(4)!==p.priorEnd?.slice(4))) fail('必须使用同口径上年同期');
+    if (f.status==='verified' && (!day(p.priorStart)||!day(p.priorEnd)||(!fiscalQuarter&&(Number(p.start?.slice(0,4))-Number(p.priorStart?.slice(0,4))!==1||p.start?.slice(4)!==p.priorStart?.slice(4)||Number(p.end?.slice(0,4))-Number(p.priorEnd?.slice(0,4))!==1||p.end?.slice(4)!==p.priorEnd?.slice(4))))) fail('必须使用同口径上年同期');
   }
   if (keys(f.evidence,['url','locator'],'evidence')) {
     try { if(new URL(f.evidence.url).protocol!=='https:') fail('依据必须为 HTTPS'); } catch { fail('依据 URL 无效'); }
