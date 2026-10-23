@@ -1,0 +1,4129 @@
+{
+  "maintainedAt": "2026-10-23",
+  "companies": [],
+  "sources": [
+    {
+      "id": "sinnet-disclosures",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "读取IR目录及信息披露栏目、2026半年报摘要正文；目录显示2026-09-01。摘要第4—5页可核中国项目和马来西亚前期筹划，未推定开工。\n2026-10-12：优先核查巨潮发行人目录及正式附件。原官网栏目继续保留为入口，不把季度栏目改成全部动态。巨潮2026-09-13至10-12目录共6条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。 2026-10-23同行专项核查：巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。"
+    },
+    {
+      "id": "xingyun-disclosures",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "官网300209信息披露链接指向巨潮 orgId=9900018896；半年报页面 /disclosure/7 明示2026-07-31并提供原PDF；已读主体和算力业务相关章节。\n2026-10-12：优先核查巨潮发行人目录及正式附件。原官网栏目继续保留为入口，不把季度栏目改成全部动态。巨潮2026-09-13至10-12目录共19条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。 2026-10-23同行专项核查：读取10月23日三季报第8页，确认VE合同已完成交付并起租；VF/VG交付验收为原已核事实。诉讼原件属于有棵树科技证照印章返还，非算力合同纠纷。另读取9月4日VD合同及10月12日萧山框架原件，补足时间线并核实SA首批采购已交付。"
+    },
+    {
+      "id": "hec-disclosures",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "从2026半年报公司网址hec-al.com进入官网，再经具体公告页面“公司公告”进入/sys-nr/?g=40并读到列表。已核600673主体，非集团/药业主体。\n2026-10-12：优先核查巨潮发行人目录及正式附件。原官网栏目继续保留为入口，不把季度栏目改成全部动态。巨潮2026-09-13至10-12目录共24条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。 2026-10-23同行专项核查：读取10月23日三季报第7页整体算力履约、收入与客户收款，以及季度担保原件第6—7页融资租赁担保；数字为整体业务口径，不分摊到A/B/C单项合同。"
+    },
+    {
+      "id": "gds-news",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "从已有季度栏目导航进入News Releases；最新可见为8月13日Q2公告，页面另列资本事项。Q2已存，不在新来源重复复制。 2026-10-22：读取万国数据中文官网新闻目录及9月14日廊坊项目、10月20日绿电原文，作为同一公司官方新闻补充。 2026-10-23同行专项核查：重新读取中文官网新闻目录，最新可见10月20日绿电文章已入库；廊坊原文仍为9月14日，不因搜索日期串位而重录。"
+    },
+    {
+      "id": "vnet-news",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "从已有季度栏目官方导航进入新闻列表并阅读2026-09-21股份转让交割公告；该来源与vnet-quarterly为不同官方栏目。 2026-10-23同行专项核查：读取官网英文新闻目录及中文定向检索；中文检索最新重大项目仍为10月12日中卫合作，未确认新建设或交割事实。"
+    },
+    {
+      "id": "hkcd-industry",
+      "name": "香港商报：算力与数据中心相关报道",
+      "organization": "香港商报",
+      "sourceType": "media",
+      "categoryIds": [
+        "industry",
+        "rental-prices",
+        "listed-companies"
+      ],
+      "regions": [
+        "中国香港",
+        "中国"
+      ],
+      "entryUrl": "https://www.hkcd.com.hk/hkcdweb/column/cj.html",
+      "entryType": "栏目",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "admissionStatus": "正式可用",
+      "access": "free",
+      "accessNote": "免费公开报道。",
+      "purpose": "跟踪香港及内地算力、数据中心经营与投融资报道。",
+      "verificationNote": "2026-10-23读取香港商报原文浦江中国完成新股配售，核对发布时间2026-10-22 11:56:12、募集金额与算力租赁资金用途。证据：行业信息更新_2026-10-23/domestic/hk-allotment.txt。",
+      "lastCheckAttemptAt": "2026-10-23",
+      "frequency": "irregular",
+      "frequencyNote": "随相关报道发布。",
+      "questions": [
+        "香港算力与数据中心企业的经营及投融资有何变化？"
+      ],
+      "metrics": [
+        "原文发布日期",
+        "合同及募资金额",
+        "实际业务阶段"
+      ],
+      "tags": [
+        "财经媒体",
+        "香港"
+      ],
+      "caveats": [],
+      "aliases": [
+        "香港商報"
+      ],
+      "companyIds": [],
+      "methodologyUrl": null,
+      "featured": false,
+      "visibility": "active",
+      "subcategoryIds": [
+        "market-supply-demand",
+        "rental-demand-contracts"
+      ]
+    },
+    {
+      "id": "csrc-regulations",
+      "name": "中国证监会监管规则",
+      "organization": "中国证券监督管理委员会",
+      "sourceType": "government",
+      "entryUrl": "https://www.csrc.gov.cn/csrc/zwxx/index.shtml",
+      "entryType": "栏目",
+      "regions": [
+        "中国"
+      ],
+      "categoryIds": [
+        "regulation"
+      ],
+      "purpose": "核对证券转让、并购、信息披露与行政处罚规则。",
+      "questions": [
+        "上市公司股权交易需要遵循哪些披露和转让要求？"
+      ],
+      "metrics": [
+        "发布日期",
+        "生效日",
+        "适用主体"
+      ],
+      "aliases": [
+        "证监会",
+        "CSRC"
+      ],
+      "tags": [
+        "证券监管"
+      ],
+      "frequency": "irregular",
+      "frequencyNote": "按监管文件及解释发布。",
+      "access": "free",
+      "accessNote": "官网公开规则、附件和答记者问。",
+      "methodologyUrl": null,
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "companyIds": [],
+      "verificationNote": "2026-10-23读取官网第12号公告及有关部门负责人答记者问全文，核对发文日、公开发布日与未来施行日。"
+    },
+    {
+      "id": "dcd-southeast-asia",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "wmedia-sea",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "stcn-industry",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "yicai-industry",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "nbd-industry",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "cls-industry",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "jiemian-industry",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "thepaper-industry",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "36kr-industry",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "oregon-capital-chronicle",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "china-securities-journal",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "thehubnews",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "wabei",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "eastmoney-news",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "21jingji",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "10jqka-news",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "data-center-knowledge",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "antara-news",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "tidenews",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "ofweek-cloud",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "chinadaily-cn",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "dostor",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "caiwennews",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "guandian",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "pedaily",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "sina-finance",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "time-weekly",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "cnstock-news",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "nda-capacity",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "sfc-takeovers",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "mas-sic-takeovers",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "sse-regulation",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "szse-regulation",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "hkex-regulation",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "gds-quarterly",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "vnet-quarterly",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "tnb-quarterly",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "singtel-nxera-results",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "dayone-news",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "sttgdc-news",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "sharetronic-disclosures",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "china-mobile-ir",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "china-telecom-ir",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "china-unicom-ir",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "athub-news",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "litong-disclosures",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "aep-releases",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "aofei-disclosures",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "athub-disclosures",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "capitalonline-disclosures",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "hongxin-disclosures",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "nexwise-disclosures",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "range-disclosures",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "hongjing-disclosures",
+      "lastCheckAttemptAt": "2026-10-23"
+    },
+    {
+      "id": "intel-investor-results",
+      "lastCheckAttemptAt": "2026-10-23"
+    }
+  ],
+  "reports": [
+    {
+      "id": "sinnet-luchen-cooperation-20261020",
+      "sourceId": "sinnet-disclosures",
+      "title": "光环新网与潞晨科技合作推进Token工厂及国产芯片适配",
+      "url": "https://www.sinnet.com.cn/news/1855.html",
+      "originalUrl": "https://www.sinnet.com.cn/news/1855.html",
+      "originalPublisher": "北京光环新网科技股份有限公司",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "sinnet"
+      ],
+      "publishedAt": "2026-10-20",
+      "dataPeriod": null,
+      "summary": "光环新网与潞晨科技于10月16日签署战略合作协议，围绕Token工厂、国产智算芯片适配及联合解决方案开展合作，并与光环云共同推进大模型推理、训练与微调服务。",
+      "stage": "战略合作协议已签署",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取官方原件/官网正文，核对发布日、实际阶段及金额。证据：行业信息更新_2026-10-23/peers/对应全文与PDF。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "intelligence": {
+        "importance": 8,
+        "overview": "光环新网与潞晨科技于10月16日签署战略合作协议，围绕Token工厂、国产智算芯片适配及联合解决方案开展合作，并与光环云共同推进大模型推理、训练与微调服务。",
+        "followupId": "sinnet-luchen-cooperation-20261020-followup",
+        "followup": "持续核对合同履约、项目实施及资金回收。"
+      },
+      "eventId": "sinnet-luchen-token-cooperation-2026"
+    },
+    {
+      "id": "hec-ai-financing-guarantees-20261023",
+      "sourceId": "hec-disclosures",
+      "title": "东阳光披露算力子公司融资租赁及履约担保进展",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617274.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617274.PDF",
+      "originalPublisher": "广东东阳光科技控股股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "hec"
+      ],
+      "publishedAt": "2026-10-23",
+      "dataPeriod": null,
+      "summary": "东阳光季度担保公告列示：东阳光云智算担保余额89.6007亿元；云智算二号对芯鑫融资租赁担保余额32.256亿元。公司同时为算力服务采购合同全部义务提供履约担保。",
+      "stage": "已提供担保",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取官方原件/官网正文，核对发布日、实际阶段及金额。证据：行业信息更新_2026-10-23/peers/对应全文与PDF。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "intelligence": {
+        "importance": 8,
+        "overview": "东阳光季度担保公告列示：东阳光云智算担保余额89.6007亿元；云智算二号对芯鑫融资租赁担保余额32.256亿元。公司同时为算力服务采购合同全部义务提供履约担保。",
+        "followupId": "hec-ai-financing-guarantees-20261023-followup",
+        "followup": "持续核对合同履约、项目实施及资金回收。"
+      },
+      "eventId": "hec-ai-compute-fulfilment-2026"
+    },
+    {
+      "id": "xingyun-vd-rental-20260904",
+      "sourceId": "xingyun-disclosures",
+      "title": "行云科技披露VD客户9.216亿元五年算力租赁合同",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-09-04/1225546772.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-09-04/1225546772.PDF",
+      "originalPublisher": "行云科技股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "xingyun"
+      ],
+      "publishedAt": "2026-09-04",
+      "dataPeriod": null,
+      "summary": "行云科技向VD客户提供五年算力资源租赁，含税总额9.216亿元，60个月单价及总价锁定。合同约定锁单并足额收到保证金后60个自然日完成采购、部署与交付；9月4日披露时正在采购。",
+      "stage": "已签约、推进采购",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取官方原件/官网正文，核对发布日、实际阶段及金额。证据：行业信息更新_2026-10-23/peers/对应全文与PDF。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "intelligence": {
+        "importance": 9,
+        "overview": "行云科技向VD客户提供五年算力资源租赁，含税总额9.216亿元，60个月单价及总价锁定。合同约定锁单并足额收到保证金后60个自然日完成采购、部署与交付；9月4日披露时正在采购。",
+        "followupId": "xingyun-vd-rental-20260904-followup",
+        "followup": "持续核对合同履约、项目实施及资金回收。"
+      },
+      "eventId": "xingyun-vd-compute-rental"
+    },
+    {
+      "id": "xingyun-xiaoshan-framework-20261012",
+      "sourceId": "xingyun-disclosures",
+      "title": "行云科技升级萧山战略框架，新增第二总部及AI服务器智造基地",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-12/1225601981.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-10-12/1225601981.PDF",
+      "originalPublisher": "行云科技股份有限公司",
+      "kind": "disclosure",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "xingyun"
+      ],
+      "publishedAt": "2026-10-12",
+      "dataPeriod": null,
+      "summary": "行云科技与萧山经开国控升级战略框架，新增第二总部及AI服务器整机智造基地；第二总部计划10月底落地，基地预计2027年投产。供应链合作年累计上限150亿元，另设独立信用证年累计上限100亿元，具体业务经审批及另签协议执行。",
+      "stage": "框架已签署，项目筹划推进",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取官方原件/官网正文，核对发布日、实际阶段及金额。证据：行业信息更新_2026-10-23/peers/对应全文与PDF。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "evidenceLevel": "official-body",
+      "intelligence": {
+        "importance": 8,
+        "overview": "行云科技与萧山经开国控升级战略框架，新增第二总部及AI服务器整机智造基地；第二总部计划10月底落地，基地预计2027年投产。供应链合作年累计上限150亿元，另设独立信用证年累计上限100亿元，具体业务经审批及另签协议执行。",
+        "followupId": "xingyun-xiaoshan-framework-20261012-followup",
+        "followup": "持续核对合同履约、项目实施及资金回收。"
+      },
+      "eventId": "xingyun-xiaoshan-industrial-cooperation"
+    },
+    {
+      "id": "media-xingyun-xiaoshan-20261016",
+      "eventId": "xingyun-xiaoshan-industrial-cooperation",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "已读取媒体正文并核对日期及公司关系。证据：相关媒体报道_复核发布_2026-10-19/a/xingyun-caiwen-1016.txt。 2026-10-23补核10月12日官方框架原件及10月23日三季报第8页，关联同一重大动作。",
+      "relatedLinks": [
+        {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-12/1225601981.PDF",
+          "label": "上市公司框架原文",
+          "publisher": "行云科技股份有限公司",
+          "role": "原始披露"
+        }
+      ]
+    },
+    {
+      "id": "xingyun-2026-q3",
+      "sourceId": "xingyun-disclosures",
+      "title": "行云科技三季报：收入11.75亿元，服务器交付推动扭亏为盈",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225615735.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225615735.PDF",
+      "originalPublisher": "行云科技股份有限公司",
+      "kind": "disclosure",
+      "publishedAt": "2026-10-23",
+      "publishedAtBeijing": "2026-10-23",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "xingyun"
+      ],
+      "dataPeriod": "2026年三季报｜1—9月累计",
+      "summary": "行云科技2026年1—9月收入11.75亿元，同比增长1896.66%；归母净利润2.69亿元，上年同期亏损0.72亿元。服务器贸易自8月实现规模化交付，湘树云8.7168亿元五年算力服务合同已交付起租。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "partial",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取正式三季报原件第2—4、8、10—11页，核对本期及同期的累计收入、归母利润、单位和经营说明；主要财务表及利润表已渲染复核。本条采用巨潮正式披露目录2026-10-23的发布日期；该公司22日晚已有媒体报道，披露日不作为实际交付日期。 巨潮原件SHA256：63e273479b041122be73b7dec1a28cbfe7b7592a3fb94e2d286385087efcc818。证据：行业信息更新_2026-10-23/finance。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "2026年三季报"
+      ],
+      "evidenceLevel": "official-body",
+      "stage": "正式三季报披露",
+      "financial": {
+        "companyId": "xingyun",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年三季报｜1—9月累计",
+          "start": "2026-01-01",
+          "end": "2026-09-30",
+          "type": "nine-months",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-09-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 1175069390.58,
+          "priorValue": 58851812.72,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "reported",
+            "percent": 1896.66,
+            "note": "主要财务数据及同口径累计利润表原值。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": 269136125.22,
+          "priorValue": -72323036.58,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "归属于上市公司股东",
+          "change": {
+            "basis": "amount",
+            "percent": null,
+            "note": "本期与上年同期同主体金额；亏损及盈亏转换按金额表达。"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225615735.PDF",
+          "locator": "第2—4、8、10—11页"
+        },
+        "limitations": "2026年三季报｜1—9月累计，公司合并报表。",
+        "operatingChange": "服务器贸易自8月规模化交付；用于支持算力租赁的服务器投入增加，湘树云VE合同已完成交付并起租。"
+      },
+      "intelligence": {
+        "importance": 9,
+        "overview": "服务器销售确认与租赁起租同时推进，需分开跟踪一次性交付收入、持续服务收入和设备资金投入。",
+        "followupId": "xingyun-2026-q3-followup",
+        "followup": "核对VE合同实际计费和回款、VF及VG服务器交付的确认收入，以及新增服务器采购和融资。"
+      },
+      "eventId": "xingyun-ve-compute-rental"
+    },
+    {
+      "id": "hec-2026-q3",
+      "sourceId": "hec-disclosures",
+      "title": "东阳光三季报：算力相关收入6.92亿元，已收客户相关款117.62亿元",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617273.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617273.PDF",
+      "originalPublisher": "广东东阳光科技控股股份有限公司",
+      "kind": "disclosure",
+      "publishedAt": "2026-10-23",
+      "publishedAtBeijing": "2026-10-23",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "hec"
+      ],
+      "dataPeriod": "2026年三季报｜1—9月累计",
+      "summary": "东阳光2026年1—9月收入146.72亿元、归母净利润6.38亿元，分别同比增长33.74%、下降29.57%。算力相关收入约6.92亿元；订单项下服务器等资产196.53亿元，已收客户相关款117.62亿元。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "partial",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取正式三季报原件第2—4、7—8、11—12页，核对本期及同期的累计收入、归母利润、单位和经营说明；主要财务表及利润表已渲染复核。本条采用巨潮正式披露目录2026-10-23的发布日期；该公司22日晚已有媒体报道，披露日不作为实际交付日期。 报告落款为2026-10-23。 巨潮原件SHA256：742da4306265365f0b845691ca2bb5bd3b77607ad0cb68f00d0e1d2c712fdf0f。证据：行业信息更新_2026-10-23/finance。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "2026年三季报"
+      ],
+      "evidenceLevel": "official-body",
+      "stage": "正式三季报披露",
+      "financial": {
+        "companyId": "hec",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年三季报｜1—9月累计",
+          "start": "2026-01-01",
+          "end": "2026-09-30",
+          "type": "nine-months",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-09-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 14672183975.9,
+          "priorValue": 10970290011.48,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "reported",
+            "percent": 33.74,
+            "note": "主要财务数据及同口径累计利润表原值。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": 637750272.6,
+          "priorValue": 905500756.13,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "归属于上市公司股东",
+          "change": {
+            "basis": "reported",
+            "percent": -29.57,
+            "note": "主要财务数据及累计利润表原值、归属与同比。"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617273.PDF",
+          "locator": "第2—4、7—8、11—12页"
+        },
+        "limitations": "2026年三季报｜1—9月累计，公司合并报表。",
+        "operatingChange": "算力相关业务收入约6.92亿元；截至9月末订单项下高性能服务器等资产196.53亿元、已收客户相关款117.62亿元。"
+      },
+      "intelligence": {
+        "importance": 9,
+        "overview": "算力长单已形成收入与客户款项，但归母利润受股权激励和公允价值变动影响；交付、资产投入与后续收入转化需连续核对。",
+        "followupId": "hec-2026-q3-followup",
+        "followup": "持续跟踪分批交付、起租和收入转化，并分别取得各合同对应的验收、计费及收款资料。"
+      },
+      "eventId": "hec-ai-compute-fulfilment-2026"
+    },
+    {
+      "id": "range-2026-q3",
+      "sourceId": "range-disclosures",
+      "title": "润泽科技三季报：AIDC带动收入增长42.45%，扣非净利增长32.97%",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617368.PDF",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617368.PDF",
+      "originalPublisher": "润泽智算科技集团股份有限公司",
+      "kind": "disclosure",
+      "publishedAt": "2026-10-23",
+      "publishedAtBeijing": "2026-10-23",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "range"
+      ],
+      "dataPeriod": "2026年三季报｜1—9月累计",
+      "summary": "润泽科技2026年1—9月收入56.66亿元，同比增长42.45%；归母净利润18.03亿元，同比下降61.68%，主要因上年REIT股权处置收益高基数。扣非净利17.99亿元，增长32.97%；算力设备投资及香港、印尼算力中心土地投入增加。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "partial",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取正式三季报原件第2—4、9—10页，核对本期及同期的累计收入、归母利润、单位和经营说明；主要财务表及利润表已渲染复核。本条采用巨潮正式披露目录2026-10-23的发布日期；该公司22日晚已有媒体报道，披露日不作为实际交付日期。 报告落款为2026-10-22。 巨潮原件SHA256：1547128ba7695b52d79c62f6eb49f886bfacecb801a47322da0943209ba376aa。证据：行业信息更新_2026-10-23/finance。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "2026年三季报"
+      ],
+      "evidenceLevel": "official-body",
+      "stage": "正式三季报披露",
+      "financial": {
+        "companyId": "range",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年三季报｜1—9月累计",
+          "start": "2026-01-01",
+          "end": "2026-09-30",
+          "type": "nine-months",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-09-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 5665584178.44,
+          "priorValue": 3977176152.28,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "reported",
+            "percent": 42.45,
+            "note": "主要财务数据及同口径累计利润表原值。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": 1802528508.85,
+          "priorValue": 4703767641.87,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "归属于上市公司股东",
+          "change": {
+            "basis": "reported",
+            "percent": -61.68,
+            "note": "主要财务数据及累计利润表原值、归属与同比。"
+          }
+        },
+        "evidence": {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617368.PDF",
+          "locator": "第2—4、9—10页"
+        },
+        "limitations": "2026年三季报｜1—9月累计，公司合并报表。",
+        "operatingChange": "AIDC拓展带动收入及销售回款增加；归母净利下降主要因上年REIT处置收益，扣非净利增长32.97%。"
+      },
+      "intelligence": {
+        "importance": 9,
+        "overview": "运营增长与非经常性投资收益需要分别阅读，算力设备投入扩大，香港及印尼新增土地使用权形成海外建设线索。",
+        "followupId": "range-2026-q3-followup",
+        "followup": "追踪算力设备上线、香港和印尼项目建设、电力落实，以及资本开支与融资成本。"
+      }
+    },
+    {
+      "id": "china-telecom-2026-q3",
+      "sourceId": "china-telecom-ir",
+      "title": "中国电信三季报：智能收入462亿元，继续推进Token经营与算力网",
+      "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1022/2026102201267_c.pdf",
+      "originalUrl": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1022/2026102201267_c.pdf",
+      "originalPublisher": "中国电信股份有限公司",
+      "kind": "disclosure",
+      "publishedAt": "2026-10-22",
+      "publishedAtBeijing": "2026-10-22",
+      "primaryCategoryId": "listed-companies",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "china-telecom"
+      ],
+      "dataPeriod": "2026年三季报｜1—9月累计",
+      "summary": "中国电信2026年1—9月收入3801.00亿元，同比下降3.59%；归母净利润262.07亿元，同比下降14.84%。智能收入462亿元，包含算力、平台、数据、模型及智能应用；公司继续建设算力网并升级TokenHub。",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "partial",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取正式三季报原件巨潮同件第1、6、8—9页；港交所PDF第2、7、9—10页，核对本期及同期的累计收入、归母利润、单位和经营说明；主要财务表及利润表已渲染复核。港交所原文于2026-10-22公开，巨潮同件于23日发布；报告落款22日，原文发布日期采用港交所22日。 巨潮原件SHA256：40cce3e288c83f82f80229823768989ac3242b1a5c287a9d135968aecdca3324。证据：行业信息更新_2026-10-23/finance。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "2026年三季报"
+      ],
+      "evidenceLevel": "official-body",
+      "stage": "正式三季报披露",
+      "financial": {
+        "companyId": "china-telecom",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年三季报｜1—9月累计",
+          "start": "2026-01-01",
+          "end": "2026-09-30",
+          "type": "nine-months",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-09-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 380099809550.08,
+          "priorValue": 394269976324.05,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "reported",
+            "percent": -3.59,
+            "note": "主要财务数据及同口径累计利润表原值。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": 26207460755.24,
+          "priorValue": 30773321357.4,
+          "currency": "CNY",
+          "unit": "元",
+          "attribution": "归属于上市公司股东",
+          "change": {
+            "basis": "reported",
+            "percent": -14.84,
+            "note": "主要财务数据及累计利润表原值、归属与同比。"
+          }
+        },
+        "evidence": {
+          "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1022/2026102201267_c.pdf",
+          "locator": "巨潮同件第1、6、8—9页；港交所PDF第2、7、9—10页"
+        },
+        "limitations": "2026年三季报｜1—9月累计，公司合并报表。",
+        "operatingChange": "智能收入462亿元，涵盖算力、平台、数据、模型及智能应用；公司推动Token经营和算力网建设。"
+      },
+      "intelligence": {
+        "importance": 8,
+        "overview": "运营商以算力网与平台服务拓展智能收入；462亿元为多类智能业务合计，项目研究需继续拆分供给、客户与计费。",
+        "followupId": "china-telecom-2026-q3-followup",
+        "followup": "核对后续云、算力及Token业务的单列收入、服务规模及资本开支，不用智能收入代替纯算力租赁收入。"
+      },
+      "relatedLinks": [
+        {
+          "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617197.PDF",
+          "publisher": "中国电信股份有限公司",
+          "role": "巨潮23日发布同件",
+          "publishedAt": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "id": "dayone-sec-f1-20261005",
+      "financial": {
+        "companyId": "dayone",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年半年财务报表｜1—6月累计（F-1披露）",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 512024,
+          "priorValue": 151500,
+          "currency": "USD",
+          "unit": "千元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "calculated",
+            "percent": 237.97,
+            "note": "主要财务数据及同口径累计利润表原值。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": -81886,
+          "priorValue": -13527,
+          "currency": "USD",
+          "unit": "千元",
+          "attribution": "DayOne普通股股东应占",
+          "change": {
+            "basis": "amount",
+            "percent": null,
+            "note": "本期与上年同期同主体金额；亏损及盈亏转换按金额表达。"
+          }
+        },
+        "evidence": {
+          "url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+          "locator": "SEC F-1第14页及F-3：截至2026、2025年6月30日六个月，单位千美元；净亏损取普通股股东应占。"
+        },
+        "limitations": "2026年半年财务报表｜1—6月累计（F-1披露），公司合并报表。",
+        "operatingChange": "2026年上半年收入增长，普通股股东应占亏损扩大。"
+      },
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "已读取 SEC 官方 F-1 封面、Our Footprint 分市场表及容量定义；封面显示 2026-10-05 申报。数值为发行人披露，未作现场独立验证；全球总量含东南亚以外市场，签约与 Reservations 不相加当作投运。 2026-10-23经免费网页工具读取同份SEC F-1第14页及F-3财务表，补充半年收入及普通股股东应占亏损的同期金额；原发布日期和verifiedAt保持。AnySearch提取和直接下载本轮失败，网页正文读取成功。"
+    },
+    {
+      "id": "china-unicom-h-2026-interim-release",
+      "financial": {
+        "companyId": "china-unicom-h",
+        "status": "verified",
+        "statementBasis": "actual-results",
+        "period": {
+          "label": "2026年中期业绩｜1—6月累计",
+          "start": "2026-01-01",
+          "end": "2026-06-30",
+          "type": "half-year",
+          "priorStart": "2025-01-01",
+          "priorEnd": "2025-06-30"
+        },
+        "revenue": {
+          "label": "营业收入",
+          "value": 201364,
+          "priorValue": 200202,
+          "currency": "CNY",
+          "unit": "百万元",
+          "attribution": "公司合并报表",
+          "change": {
+            "basis": "reported",
+            "percent": 0.6,
+            "note": "主要财务数据及同口径累计利润表原值。"
+          }
+        },
+        "profit": {
+          "label": "归母净利润",
+          "value": 9468,
+          "priorValue": 14484,
+          "currency": "CNY",
+          "unit": "百万元",
+          "attribution": "中国联通香港上市主体权益持有人应占",
+          "change": {
+            "basis": "reported",
+            "percent": -34.6,
+            "note": "主要财务数据及累计利润表原值、归属与同比。"
+          }
+        },
+        "evidence": {
+          "url": "https://doc.irasia.com/listco/hk/chinaunicom/interim/2026/int.pdf",
+          "locator": "2026中期业绩公告第8页：截至6月30日六个月简明综合损益表，人民币百万元；第1页披露同比。"
+        },
+        "limitations": "2026年中期业绩｜1—6月累计，公司合并报表。",
+        "operatingChange": "算力收入419亿元，涵盖IDC、计算服务、数智应用及云智服务。"
+      },
+      "relatedLinks": [
+        {
+          "url": "https://doc.irasia.com/listco/hk/chinaunicom/interim/2026/int.pdf",
+          "publisher": "中国联合网络通信（香港）股份有限公司",
+          "role": "同期间正式中期业绩公告财务原表",
+          "publishedAt": "2026-08-18"
+        }
+      ],
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "从官网2026-08-18中期业绩新闻稿进入4页PDF，取得部分经营正文；末轮复读两次返回工具内部错误，全文阅读范围未能完整复核，按部分正文保留。官网首页明确A股公司数据可能不同；本条只关联香港上市主体0762。 2026-10-23另读取香港主体0762的正式中期业绩公告第1、8页，补收入、权益持有人应占利润及同期数；原新闻稿发布日期和verifiedAt保持。公告PDF SHA256：43fb3007c905dab233bfda7f9a9d523c90df391729d436824871cd7ccff338db。"
+    },
+    {
+      "id": "cls-cn-ai-supply-chain-orders-20261023",
+      "sourceId": "cls-industry",
+      "title": "国产算力上游披露订单与扩产进度，CW激光器新产能拟年底起释放",
+      "originalTitle": "科技股调整，高增长逻辑还在吗？科创板龙头公司发声：订单饱满、景气向上",
+      "url": "https://www.cls.cn/detail/2512952",
+      "originalUrl": "https://www.cls.cn/detail/2512952",
+      "originalPublisher": "科创板日报",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-23",
+      "publishedAtBeijing": "2026-10-23",
+      "dataPeriod": null,
+      "summary": "科创板日报采访多家企业：源杰科技数据中心CW激光器需求旺盛，约12.51亿元二期项目已完成土建及部分洁净室，首批设备拟近期调试，计划2026年底至2027年初逐步释放产能；联讯仪器称800G、1.6T光模块核心测试仪器交付有序；海光信息称在手订单充足、新一代CPU与DCU按计划研发。",
+      "stage": "企业披露订单、在建产能与研发进度",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23逐篇读取原文正文，核对发布者、日期、主体与实际阶段。证据：行业信息更新_2026-10-23/domestic/cls-backlog.html；cls-backlog-direct.txt。",
+      "judgmentTypes": [
+        "fact",
+        "opinion"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "科创板日报记者 曾乐"
+      },
+      "intelligence": {
+        "importance": 8,
+        "overview": "光互联、算力芯片与测试设备需求继续传导至上游扩产。对AIDC项目，供应商订单与新增产能的释放时间关系到服务器和高速网络交付周期。",
+        "followupId": "cls-cn-ai-supply-chain-orders-20261023-followup",
+        "followup": "跟踪CW激光器二期设备调试及量产、1.6T光模块测试设备供货、国产CPU与DCU整机适配。"
+      }
+    },
+    {
+      "id": "cls-hbm-memory-supply-view-20261023",
+      "sourceId": "cls-industry",
+      "title": "黄仁勋预计2029年内存过剩可能性不大，HBM与低功耗内存需求受关注",
+      "originalTitle": "内存市场将从“芯荒”变“红海”？黄仁勋发声：2029年过剩可能性不大",
+      "url": "https://www.cls.cn/detail/2512925",
+      "originalUrl": "https://www.cls.cn/detail/2512925",
+      "originalPublisher": "财联社",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "全球"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-23",
+      "publishedAtBeijing": "2026-10-23",
+      "dataPeriod": null,
+      "summary": "财联社报道黄仁勋在柏林GTC期间表示，2029年出现内存供应过剩的可能性不大，HBM仍将持续应用，英伟达将继续在数据中心使用低功耗内存。该说法回应市场对新增产能和需求持续性的分歧，属于企业高管对未来供需的判断。",
+      "stage": "企业高管供需判断",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23逐篇读取原文正文，核对发布者、日期、主体与实际阶段。证据：行业信息更新_2026-10-23/domestic/cls-memory.html；cls-memory-direct.txt。",
+      "judgmentTypes": [
+        "opinion"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "卞纯"
+      },
+      "intelligence": {
+        "importance": 7,
+        "overview": "内存和HBM的供应、价格会影响AI服务器采购成本与交付周期。新增产能与需求演变需要按规格、季度分别核对。",
+        "followupId": "cls-hbm-memory-supply-view-20261023-followup",
+        "followup": "跟踪HBM与服务器内存实际交期、同规格价格、原厂扩产及GPU平台的内存配置变化。"
+      }
+    },
+    {
+      "id": "cls-openai-financing-uae-compute-talks-20261023",
+      "sourceId": "cls-industry",
+      "title": "OpenAI据报洽谈300亿美元融资，并谈判阿联酋额外算力供给",
+      "originalTitle": "AI巨头上市前竞速：OpenAI即将完成300亿美元融资，算力加码！",
+      "url": "https://www.cls.cn/detail/2512933",
+      "originalUrl": "https://www.cls.cn/detail/2512933",
+      "originalPublisher": "财联社",
+      "kind": "news",
+      "primaryCategoryId": "rental-prices",
+      "primarySubcategoryId": "rental-demand-contracts",
+      "regions": [
+        "美国",
+        "阿联酋"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-23",
+      "publishedAtBeijing": "2026-10-23",
+      "dataPeriod": null,
+      "summary": "财联社援引知情人士报道，OpenAI正洽谈最高300亿美元融资，拟议投前估值1.25万亿美元，由阿联酋投资者与Coatue联合领投，公司计划下周结束前签约；同时谈判从阿联酋获取额外算力的配套商业协议。最终融资规模及算力协议仍在商讨。",
+      "stage": "融资与配套算力协议谈判",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23逐篇读取原文正文，核对发布者、日期、主体与实际阶段。证据：行业信息更新_2026-10-23/domestic/cls-openai.html；cls-openai-direct.txt。",
+      "judgmentTypes": [
+        "fact",
+        "opinion"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "黄君芝"
+      },
+      "intelligence": {
+        "importance": 8,
+        "overview": "资金承诺与算力供给同步谈判，显示大型模型客户扩张依赖融资和基础设施安排共同落实。供应方需跟踪合同签署、预付款、项目电力和交付节点。",
+        "followupId": "cls-openai-financing-uae-compute-talks-20261023-followup",
+        "followup": "跟踪融资最终签约与规模、算力协议对手方、机房地区、容量、服务期限及起租条件。"
+      }
+    },
+    {
+      "id": "stcn-compute-operators-q3-comparison-20261022",
+      "sourceId": "stcn-industry",
+      "title": "算力运营三季报观察：东阳光披露算力收入及收款，润泽与行云经营分化",
+      "originalTitle": "算力租赁产业链多家上市公司披露三季报 行业整体商业化兑现进度超预期",
+      "url": "https://www.stcn.com/article/detail/4236125.html",
+      "originalUrl": "https://www.stcn.com/article/detail/4236125.html",
+      "originalPublisher": "证券时报网",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [
+        "hec",
+        "range",
+        "xingyun"
+      ],
+      "publishedAt": "2026-10-22",
+      "publishedAtBeijing": "2026-10-22",
+      "dataPeriod": null,
+      "summary": "证券时报梳理三季报：东阳光前三季算力相关业务收入约6.92亿元，截至9月末算力订单项下服务器等相关资产196.53亿元、已收款117.62亿元；润泽收入56.66亿元增长42.45%，归母净利18.03亿元下降61.68%，受上年REIT收益高基数影响；行云收入11.75亿元、归母净利2.69亿元。",
+      "stage": "三季报及算力业务经营披露",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23逐篇读取原文正文，核对发布者、日期、主体与实际阶段。证据：行业信息更新_2026-10-23/domestic/stcn-commercial.txt。",
+      "judgmentTypes": [
+        "fact",
+        "opinion"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "尹靖霏"
+      },
+      "intelligence": {
+        "importance": 9,
+        "overview": "比较算力运营商应将合并收入、算力收入、设备资产、预收款与已确认利润分别观察。REIT收益及服务器贸易可明显影响表观增速与业务结构。",
+        "followupId": "stcn-compute-operators-q3-comparison-20261022-followup",
+        "followup": "核对各公司三季报原表，跟踪服务器投入、已收款性质、分批交付验收与实际计费收入。"
+      }
+    },
+    {
+      "id": "cls-neocloud-capital-constraint-view-20261022",
+      "sourceId": "cls-industry",
+      "title": "黄仁勋称营运资金制约新型云服务商扩张，欧洲电力配置仍是关键",
+      "originalTitle": "黄仁勋：AI算力需求极其旺盛 但资本短缺制约“新云”扩张",
+      "url": "https://www.cls.cn/detail/2512629",
+      "originalUrl": "https://www.cls.cn/detail/2512629",
+      "originalPublisher": "财联社",
+      "kind": "news",
+      "primaryCategoryId": "rental-prices",
+      "primarySubcategoryId": "rental-demand-contracts",
+      "regions": [
+        "全球",
+        "欧洲"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-22",
+      "publishedAtBeijing": "2026-10-22",
+      "dataPeriod": null,
+      "summary": "黄仁勋在柏林GTC表示，新型云服务商的算力需求旺盛，增长受营运资金不足制约，并强调欧洲电力和本地基础设施建设的重要性。财联社同时讨论算力租赁商举债扩张、投资回收周期与融资市场变化。",
+      "stage": "企业高管经营与融资观点",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23逐篇读取原文正文，核对发布者、日期、主体与实际阶段。证据：行业信息更新_2026-10-23/domestic/cls-neocloud.html；cls-neocloud-direct.txt。",
+      "judgmentTypes": [
+        "opinion"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "牛占林"
+      },
+      "intelligence": {
+        "importance": 8,
+        "overview": "算力租赁的扩张速度取决于资金、设备与可交付电力共同到位。业务评估需要把客户承诺、融资期限和回款节奏放在同一现金流模型中。",
+        "followupId": "cls-neocloud-capital-constraint-view-20261022-followup",
+        "followup": "跟踪主要算力租赁商融资成本、授信提款、设备付款、长期客户合同和实际回款。"
+      }
+    },
+    {
+      "id": "hkcd-pujiang-token-placement-completed-20261022",
+      "sourceId": "hkcd-industry",
+      "title": "浦江中国完成约1.3亿港元配售，拟用于租赁算力及Token平台运营",
+      "originalTitle": "浦江中國完成新股配售 募資總額達1.3億港元",
+      "url": "https://www.hkcd.com.hk/hkcdweb/content/2026/10/22/content_8781215.html",
+      "originalUrl": "https://www.hkcd.com.hk/hkcdweb/content/2026/10/22/content_8781215.html",
+      "originalPublisher": "香港商报网",
+      "kind": "news",
+      "primaryCategoryId": "rental-prices",
+      "primarySubcategoryId": "rental-demand-contracts",
+      "regions": [
+        "中国香港",
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-22",
+      "publishedAtBeijing": "2026-10-22",
+      "dataPeriod": null,
+      "summary": "香港商报报道，浦江中国于10月21日完成3300万股新股配售，每股4港元，募资总额约1.3亿港元。其TokenVerse及上海词元万相开展AI Token业务，配售净额拟主要用于租赁算力、技术架构研发、调用平台迭代与客户拓展。",
+      "stage": "新股配售已完成、算力资源投入拟推进",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23逐篇读取原文正文，核对发布者、日期、主体与实际阶段。证据：行业信息更新_2026-10-23/domestic/hk-allotment.txt。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "财经媒体报道",
+      "authorship": {
+        "type": "brief",
+        "author": "未署名"
+      },
+      "intelligence": {
+        "importance": 7,
+        "overview": "Token服务商通过股权融资采购租赁算力，可能形成GPU资源和平台服务需求。需要核对募集资金实际使用、客户合同及资源交付后形成的经营收入。",
+        "followupId": "hkcd-pujiang-token-placement-completed-20261022-followup",
+        "followup": "回查港交所配售公告，跟踪算力租赁合同、资源供应商、Token业务收入与资金支出。"
+      }
+    },
+    {
+      "id": "dcd-google-voltus-1gw-vpp-20261022",
+      "sourceId": "dcd-southeast-asia",
+      "title": "Google与Voltus扩大虚拟电厂合作，聚合1GW灵活负荷支持电网",
+      "originalTitle": "Google signs 1GW virtual power plant deal with Voltus",
+      "url": "https://www.datacenterdynamics.com/en/news/google-signs-1gw-virtual-power-plant-deal-with-voltus/",
+      "originalUrl": "https://www.datacenterdynamics.com/en/news/google-signs-1gw-virtual-power-plant-deal-with-voltus/",
+      "originalPublisher": "Data Center Dynamics",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "power-resources",
+      "regions": [
+        "美国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-22",
+      "dataPeriod": null,
+      "summary": "Google将与Voltus的合作扩展至PJM地区1GW虚拟电厂，聚合企业及家庭的电池、温控和工业资产，在电力高峰时调节用电、释放电网可用容量，并向参与用户提供经济回报。合作延续双方此前100MW安排。",
+      "stage": "虚拟电厂合作扩大至1GW灵活资源",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取AnySearch提取原文，逐篇核对日期、主体、金额容量与实际业务阶段；证据：行业信息更新_2026-10-23/global-google-vpp.txt。原文标示2026-10-22，未提供可确认的北京时间。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "Zachary Skidmore"
+      },
+      "intelligence": {
+        "importance": 9,
+        "overview": "需求响应可成为数据中心获得可用电网容量的配套路径。运营商可比较柔性负荷、储能及峰时调度的成本、接入条件和服务约束。",
+        "followupId": "dcd-google-voltus-1gw-vpp-20261022-followup",
+        "followup": "跟踪1GW资源的接入与认证、调度义务、参与方收益、数据中心并网安排及实际释放容量。"
+      },
+      "dailyDateUncertain": true
+    },
+    {
+      "id": "dcd-nebius-oxagon-50mw-20261022",
+      "sourceId": "dcd-southeast-asia",
+      "title": "Nebius签约成为Oxagon园区客户，初期拟承接最高50MW",
+      "originalTitle": "Nebius signs on for 50MW at Neom's Oxagon data center in Saudi Arabia",
+      "url": "https://www.datacenterdynamics.com/en/news/nebius-signs-on-for-50mw-at-neoms-oxagon-data-center-in-saudi-arabia/",
+      "originalUrl": "https://www.datacenterdynamics.com/en/news/nebius-signs-on-for-50mw-at-neoms-oxagon-data-center-in-saudi-arabia/",
+      "originalPublisher": "Data Center Dynamics",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "沙特阿拉伯"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-22",
+      "dataPeriod": null,
+      "summary": "Humain与DataVolt于10月21日同Nebius签署协议，Nebius拟成为沙特Oxagon园区主要客户，初期承接最高50MW，占当前在建100MW的一半。相关容量预计2027年第四季度分期上线，用于部署英伟达计算基础设施。",
+      "stage": "客户协议已签署、容量在建及分期待交付",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取AnySearch提取原文，逐篇核对日期、主体、金额容量与实际业务阶段；证据：行业信息更新_2026-10-23/global-nebius-50mw.txt。原文标示2026-10-22，未提供可确认的北京时间。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "Georgia Butler"
+      },
+      "intelligence": {
+        "importance": 9,
+        "overview": "在建园区通过主要客户协议推进商业化，可为建设和融资提供需求基础。项目收益仍取决于分期电力、设施交付与客户起租节奏。",
+        "followupId": "dcd-nebius-oxagon-50mw-20261022-followup",
+        "followup": "跟踪协议对应的正式租赁条件、电力落实、2027年第四季度分批交付、设备部署及起租。"
+      },
+      "dailyDateUncertain": true
+    },
+    {
+      "id": "dcd-crusoe-polar-dra02-40mw-20261022",
+      "sourceId": "dcd-southeast-asia",
+      "title": "Crusoe与Polar在挪威推进第二座40MW机房，既有12MW已运营",
+      "originalTitle": "Crusoe signs on for Polar DC's upcoming 40MW data center in Norway",
+      "url": "https://www.datacenterdynamics.com/en/news/crusoe-signs-on-for-polar-dcs-upcoming-40mw-data-center-in-norway/",
+      "originalUrl": "https://www.datacenterdynamics.com/en/news/crusoe-signs-on-for-polar-dcs-upcoming-40mw-data-center-in-norway/",
+      "originalPublisher": "Data Center Dynamics",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "regions": [
+        "挪威"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-22",
+      "dataPeriod": null,
+      "summary": "Crusoe与Polar DC扩大挪威Tørdal园区合作，拟推进第二座40MW DRA02机房，计划承载包括英伟达Vera Rubin NVL72在内的AI基础设施。双方既有DRA01机房的12MW IT容量已投入运营；DRA02具体建设时间尚未公布。",
+      "stage": "二期40MW合作推进、既有12MW投运",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取AnySearch提取原文，逐篇核对日期、主体、金额容量与实际业务阶段；证据：行业信息更新_2026-10-23/global-crusoe-norway.txt。原文标示2026-10-22，未提供可确认的北京时间。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "Georgia Butler"
+      },
+      "intelligence": {
+        "importance": 8,
+        "overview": "已运营一期向二期扩容延伸，体现云服务商按实际交付经验扩大合作。水电供应、高密度设施与新GPU平台适配将共同影响欧洲算力交付成本。",
+        "followupId": "dcd-crusoe-polar-dra02-40mw-20261022-followup",
+        "followup": "跟踪DRA02开工及交付计划、Vera Rubin系统部署、电力与液冷能力，以及客户服务上线。"
+      },
+      "dailyDateUncertain": true
+    },
+    {
+      "id": "dcd-infineon-nvidia-800v-gan-20261022",
+      "sourceId": "dcd-southeast-asia",
+      "title": "英飞凌与英伟达合作研发800VDC机柜GaN电源转换技术",
+      "originalTitle": "Infineon and Nvidia to develop gallium nitride power conversion tech for 800VDC data center racks",
+      "url": "https://www.datacenterdynamics.com/en/news/infineon-and-nvidia-to-develop-gallium-nitride-power-conversion-tech-for-800vdc-data-center-racks/",
+      "originalUrl": "https://www.datacenterdynamics.com/en/news/infineon-and-nvidia-to-develop-gallium-nitride-power-conversion-tech-for-800vdc-data-center-racks/",
+      "originalPublisher": "Data Center Dynamics",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "facility-technology",
+      "regions": [
+        "德国",
+        "全球"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-22",
+      "dataPeriod": null,
+      "summary": "英飞凌与英伟达扩大800VDC架构合作，重点研发高压中间总线转换器，将800V转换至50V、12V或6V供后级使用。英飞凌称GaN方案可降低转换损耗并提高功率密度，支持更高密度AI机柜；800VDC将与现有交流及低压直流架构并行发展。",
+      "stage": "电源转换技术联合研发",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取AnySearch提取原文，逐篇核对日期、主体、金额容量与实际业务阶段；证据：行业信息更新_2026-10-23/global-infineon-800v.txt。原文标示2026-10-22，未提供可确认的北京时间。",
+      "judgmentTypes": [
+        "fact",
+        "opinion"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "Zachary Skidmore"
+      },
+      "intelligence": {
+        "importance": 8,
+        "overview": "高功率机柜推动供配电链条向高压直流和多级转换演进，将影响机柜接口、维护方式与设备采购。新建AIDC需提前核对平台兼容及设施改造要求。",
+        "followupId": "dcd-infineon-nvidia-800v-gan-20261022-followup",
+        "followup": "跟踪转换器样品、量产和整柜验证，核对效率、热管理、热插拔及不同电压架构的适配。"
+      },
+      "dailyDateUncertain": true
+    },
+    {
+      "id": "dcd-soluna-applied-dorothy3-jv-20261022",
+      "sourceId": "dcd-southeast-asia",
+      "title": "Soluna与Applied签署50MW数据中心合资协议，租赁意向待落实",
+      "originalTitle": "Soluna and Applied Digital to build 50MW data center in Texas",
+      "url": "https://www.datacenterdynamics.com/en/news/soluna-and-applied-digital-to-build-50mw-data-center-in-texas/",
+      "originalUrl": "https://www.datacenterdynamics.com/en/news/soluna-and-applied-digital-to-build-50mw-data-center-in-texas/",
+      "originalPublisher": "Data Center Dynamics",
+      "kind": "news",
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "project-delivery",
+      "regions": [
+        "美国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-22",
+      "dataPeriod": null,
+      "summary": "Soluna与Applied Digital签署正式协议，拟在得州Dorothy 3建设50MW关键IT负荷数据中心；Applied拟持股51%，Soluna49%，分别提供资金及土地、电力相关资产。交易预计年底前在税收减免等条件满足后交割。ChronoScale已签署非约束性承租意向书。",
+      "stage": "正式合资协议已签、待条件交割；承租为非约束意向",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取AnySearch提取原文，逐篇核对日期、主体、金额容量与实际业务阶段；证据：行业信息更新_2026-10-23/global-soluna-applied.txt。原文标示2026-10-22，未提供可确认的北京时间。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "Dan Swinhoe"
+      },
+      "intelligence": {
+        "importance": 9,
+        "overview": "电力与土地资源方结合开发资本推进项目，有助于衔接能源供给和AI托管需求。项目融资判断需同步核对合资出资、审批及承租协议的落实程度。",
+        "followupId": "dcd-soluna-applied-dorothy3-jv-20261022-followup",
+        "followup": "跟踪合资交割、税收减免批准、资金出资、ChronoScale正式租约及50MW建设时间表。"
+      },
+      "dailyDateUncertain": true
+    },
+    {
+      "id": "dcd-arbol-dc-moratorium-insurance-20261022",
+      "sourceId": "dcd-southeast-asia",
+      "title": "Arbol推出数据中心暂停建设风险保险，覆盖特定政府停建措施",
+      "originalTitle": "Arbol launches moratorium risk insurance coverage",
+      "url": "https://www.datacenterdynamics.com/en/news/arbol-launches-moratorium-risk-insurance-coverage/",
+      "originalUrl": "https://www.datacenterdynamics.com/en/news/arbol-launches-moratorium-risk-insurance-coverage/",
+      "originalPublisher": "Data Center Dynamics",
+      "kind": "news",
+      "primaryCategoryId": "regulation",
+      "primarySubcategoryId": "project-compliance",
+      "regions": [
+        "美国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-22",
+      "dataPeriod": null,
+      "summary": "保险商Arbol推出数据中心暂停建设风险保险产品。按其介绍，受保政府措施生效并导致数据中心建设暂停、持续超过约定等待期时，可触发赔付。该产品将部分政府措施引发的开发中断风险纳入保险安排。",
+      "stage": "保险产品推出",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取AnySearch提取原文，逐篇核对日期、主体、金额容量与实际业务阶段；证据：行业信息更新_2026-10-23/global-arbol-insurance.txt。原文标示2026-10-22，未提供可确认的北京时间。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "Barney Dixon"
+      },
+      "intelligence": {
+        "importance": 7,
+        "overview": "社区和审批因素已影响数据中心开发进度，保险安排可成为项目融资及风险分配工具。保障范围、等待期和赔偿限额将影响实际价值。",
+        "followupId": "dcd-arbol-dc-moratorium-insurance-20261022-followup",
+        "followup": "跟踪产品适用地区、承保条件、等待期、保障限额和项目融资方对该保险的接受情况。"
+      },
+      "dailyDateUncertain": true
+    },
+    {
+      "id": "wmedia-dayone-ipo-options-20261022",
+      "sourceId": "wmedia-sea",
+      "title": "DayOne据报评估推迟或缩小美国IPO，仍在接洽投资者",
+      "originalTitle": "Could market volatility affect DayOne’s IPO?",
+      "url": "https://w.media/could-market-volatility-affect-dayones-ipo/",
+      "originalUrl": "https://w.media/could-market-volatility-affect-dayones-ipo/",
+      "originalPublisher": "w.media",
+      "kind": "news",
+      "primaryCategoryId": "listed-companies",
+      "primarySubcategoryId": null,
+      "regions": [
+        "新加坡",
+        "美国"
+      ],
+      "companyIds": [
+        "dayone"
+      ],
+      "publishedAt": "2026-10-22",
+      "dataPeriod": null,
+      "summary": "w.media援引彭博消息称，DayOne正评估市场波动下推迟美国IPO或缩小发行规模，原考虑募资约50亿美元，另一方案为25亿至30亿美元。公司仍接洽潜在投资者，10月初已提交F-1注册文件，发行规模和价格尚待确定。",
+      "stage": "IPO方案评估与投资者接洽",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取AnySearch提取原文，逐篇核对日期、主体、金额容量与实际业务阶段；证据：行业信息更新_2026-10-23/sea-dayone-ipo.txt。原文标明GMT+8。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "Conor McNevin"
+      },
+      "intelligence": {
+        "importance": 8,
+        "overview": "数据中心企业的股权融资窗口变化，会影响建设资本来源和扩张节奏。投资判断应将融资落实、客户合同和项目交付能力共同观察。",
+        "followupId": "wmedia-dayone-ipo-options-20261022-followup",
+        "followup": "跟踪DayOne正式公告、F-1修订、最终发行条款及建设资本的替代融资安排。"
+      },
+      "publishedAtBeijing": "2026-10-22"
+    },
+    {
+      "id": "wmedia-thailand-dc-framework-draft-20261021",
+      "sourceId": "wmedia-sea",
+      "title": "泰国推进数据中心监管框架拟稿，土地分类与社区安全要求待定",
+      "originalTitle": "Thailand moves to finalise data center rules amid trillion baht investment pipeline",
+      "url": "https://w.media/thailand-moves-to-finalise-data-center-rules-amid-trillion-baht-investment-pipeline/",
+      "originalUrl": "https://w.media/thailand-moves-to-finalise-data-center-rules-amid-trillion-baht-investment-pipeline/",
+      "originalPublisher": "w.media",
+      "kind": "news",
+      "primaryCategoryId": "regulation",
+      "primarySubcategoryId": "project-compliance",
+      "regions": [
+        "泰国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-21",
+      "dataPeriod": null,
+      "summary": "w.media报道，泰国正协调数据中心土地及工业分类、供电供水、通信和社区安全标准，框架草案预计2027年第一季度形成。主管部门同时开发TH-DC Dashboard汇总项目及基础设施需求；按储油量设置安全距离的建议仍在审议。",
+      "stage": "监管框架拟稿、相关要求审议中",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取AnySearch提取原文，逐篇核对日期、主体、金额容量与实际业务阶段；证据：行业信息更新_2026-10-23/sea-thailand-rules.txt。原文标明GMT+8。",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "sourceNature": "行业媒体报道",
+      "authorship": {
+        "type": "journalist",
+        "author": "Conor McNevin"
+      },
+      "intelligence": {
+        "importance": 8,
+        "overview": "设施分类及公共资源接入要求将影响选址、审批和建设排期。进入泰国市场时，需在地块与供电安排中预留规则调整及许可衔接的空间。",
+        "followupId": "wmedia-thailand-dc-framework-draft-20261021-followup",
+        "followup": "跟踪2027年第一季度草案、设施分类、储油安全距离、电力许可和既有项目适用安排。"
+      },
+      "publishedAtBeijing": "2026-10-21"
+    },
+    {
+      "id": "csrc-securities-transfer-penalties-20261019",
+      "sourceId": "csrc-regulations",
+      "title": "证监会发布违规转让证券处罚规则，12月1日起施行",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7665427/content.shtml",
+      "originalUrl": "https://www.csrc.gov.cn/csrc/c100028/c7665427/content.shtml",
+      "originalPublisher": "中国证券监督管理委员会",
+      "kind": "regulation",
+      "primaryCategoryId": "regulation",
+      "regions": [
+        "中国"
+      ],
+      "companyIds": [],
+      "publishedAt": "2026-10-19",
+      "publishedAtBeijing": "2026-10-19",
+      "dataPeriod": null,
+      "summary": "证监会10月19日发布《违规转让证券案件行政处罚实施规则》，自12月1日起施行。规则细分限制转让期、持有及卖出时间、数量与披露、收购中未按规定暂停交易等四类行为，统一处罚裁量；构成两个独立违法行为的违规转让与信息披露问题分别认定处罚。",
+      "stage": "规则已发布，12月1日施行",
+      "documentStatus": "published",
+      "effectiveAt": "2026-12-01",
+      "jurisdiction": "中国内地",
+      "visibility": "active",
+      "access": "free",
+      "contentScope": "full",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-10-23",
+      "lastCheckAttemptAt": "2026-10-23",
+      "verificationNote": "2026-10-23读取官方答记者问全文（原文明确10月19日公开发布）及第12号公告页面。公告发文日期10月16日，公开发布与解读日期10月19日，故不将该规则计入10月12—18日周报。附件法规全文未逐条阅读，此记录所指文献为完整答记者问。证据：行业信息更新_2026-10-23/csrc-transfer-notice.txt、csrc-transfer-explanation.txt。",
+      "relatedLinks": [
+        {
+          "url": "https://www.csrc.gov.cn/csrc/c101954/c7665433/content.shtml",
+          "publisher": "中国证券监督管理委员会",
+          "role": "第12号公告：发文10月16日，12月1日施行"
+        }
+      ],
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [],
+      "intelligence": {
+        "importance": 8,
+        "overview": "股权交易与产业并购的合规安排会影响交易日程、交割及管理责任。应联动核对持有期、暂停交易和披露节点，并识别实际交易主体与一致行动安排。",
+        "followupId": "csrc-securities-transfer-penalties-20261019-followup",
+        "followup": "结合12月1日施行安排复核股权交易流程、披露计划及后续执法案例。"
+      }
+    }
+  ],
+  "companyReviews": [
+    {
+      "companyId": "sinnet",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。 2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "sinnet-peer-review-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300383",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。"
+          },
+          {
+            "id": "finance-20261023-sinnet-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.sinnet.com.cn/IR.html",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-1.txt。"
+          },
+          {
+            "id": "finance-20261023-sinnet-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "no-new",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回0条/总计0条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-sinnet.json。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "xingyun",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "progress",
+        "note": "读取10月23日三季报第8页，确认VE合同已完成交付并起租；VF/VG交付验收为原已核事实。诉讼原件属于有棵树科技证照印章返还，非算力合同纠纷。另读取9月4日VD合同及10月12日萧山框架原件，补足时间线并核实SA首批采购已交付。 2026-10-23财务专项：行云科技三季报：收入11.75亿元，服务器交付推动扭亏为盈；最新实际数据采用2026年1—9月累计。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "xingyun-peer-review-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300209",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取10月23日三季报第8页，确认VE合同已完成交付并起租；VF/VG交付验收为原已核事实。诉讼原件属于有棵树科技证照印章返还，非算力合同纠纷。另读取9月4日VD合同及10月12日萧山框架原件，补足时间线并核实SA首批采购已交付。"
+          },
+          {
+            "id": "finance-20261023-xingyun-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.xingyuntech.com.cn/",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-1.txt。"
+          },
+          {
+            "id": "finance-20261023-xingyun-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "progress",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回3条/总计3条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-xingyun.json。"
+          },
+          {
+            "id": "finance-20261023-xingyun-statement",
+            "channel": "正式财报原件及原表核对",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225615735.PDF",
+            "attemptedAt": "2026-10-23",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "2026-10-23读取正式三季报原件第2—4、8、10—11页，核对本期及同期的累计收入、归母利润、单位和经营说明；主要财务表及利润表已渲染复核。本条采用巨潮正式披露目录2026-10-23的发布日期；该公司22日晚已有媒体报道，披露日不作为实际交付日期。 巨潮原件SHA256：63e273479b041122be73b7dec1a28cbfe7b7592a3fb94e2d286385087efcc818。证据：行业信息更新_2026-10-23/finance。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "vnet",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "读取官网英文新闻目录及中文定向检索；中文检索最新重大项目仍为10月12日中卫合作，未确认新建设或交割事实。 2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "vnet-peer-review-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.vnet.com/news.html",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取官网英文新闻目录及中文定向检索；中文检索最新重大项目仍为10月12日中卫合作，未确认新建设或交割事实。"
+          },
+          {
+            "id": "finance-20261023-vnet-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://ir.vnet.com/financial-information/quarterly-results",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-1.txt。"
+          },
+          {
+            "id": "finance-20261023-vnet-ir-blocked",
+            "channel": "官方IR正文提取尝试",
+            "url": "https://ir.vnet.com/financial-information/quarterly-results",
+            "attemptedAt": "2026-10-23",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "AnySearch正文提取失败，原指标保留；未把未取得原文解释成没有新财报。证据：vnet-ir.txt。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "sharetronic",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。 2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "sharetronic-peer-review-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300857",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          },
+          {
+            "id": "finance-20261023-sharetronic-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.sharetronic.com/",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-2.txt。"
+          },
+          {
+            "id": "finance-20261023-sharetronic-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "no-new",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回0条/总计0条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-sharetronic.json。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "gds",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "重新读取中文官网新闻目录，最新可见10月20日绿电文章已入库；廊坊原文仍为9月14日，不因搜索日期串位而重录。 2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "gds-peer-review-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.gds-services.com/zh_cn/news_19.html",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "重新读取中文官网新闻目录，最新可见10月20日绿电文章已入库；廊坊原文仍为9月14日，不因搜索日期串位而重录。"
+          },
+          {
+            "id": "finance-20261023-gds-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://investors.gds-services.com/financial-information/quarterly-results",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-1.txt。"
+          },
+          {
+            "id": "finance-20261023-gds-ir-blocked",
+            "channel": "官方IR正文提取尝试",
+            "url": "https://investors.gds-services.com/financial-information/quarterly-results",
+            "attemptedAt": "2026-10-23",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "AnySearch正文提取失败，原指标保留；未把未取得原文解释成没有新财报。证据：gds-ir.txt。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "hec",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "progress",
+        "note": "读取10月23日三季报第7页整体算力履约、收入与客户收款，以及季度担保原件第6—7页融资租赁担保；数字为整体业务口径，不分摊到A/B/C单项合同。 2026-10-23财务专项：东阳光三季报：算力相关收入6.92亿元，已收客户相关款117.62亿元；最新实际数据采用2026年1—9月累计。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "hec-peer-review-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=600673",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取10月23日三季报第7页整体算力履约、收入与客户收款，以及季度担保原件第6—7页融资租赁担保；数字为整体业务口径，不分摊到A/B/C单项合同。"
+          },
+          {
+            "id": "finance-20261023-hec-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.hec-al.com/sys-nr/?g=40",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-2.txt。"
+          },
+          {
+            "id": "finance-20261023-hec-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "progress",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回2条/总计2条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-hec.json。"
+          },
+          {
+            "id": "finance-20261023-hec-statement",
+            "channel": "正式财报原件及原表核对",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617273.PDF",
+            "attemptedAt": "2026-10-23",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "2026-10-23读取正式三季报原件第2—4、7—8、11—12页，核对本期及同期的累计收入、归母利润、单位和经营说明；主要财务表及利润表已渲染复核。本条采用巨潮正式披露目录2026-10-23的发布日期；该公司22日晚已有媒体报道，披露日不作为实际交付日期。 报告落款为2026-10-23。 巨潮原件SHA256：742da4306265365f0b845691ca2bb5bd3b77607ad0cb68f00d0e1d2c712fdf0f。证据：行业信息更新_2026-10-23/finance。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "aofei",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。 2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "aofei-peer-review-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300738",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          },
+          {
+            "id": "finance-20261023-aofei-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.ofidc.com/",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-2.txt。"
+          },
+          {
+            "id": "finance-20261023-aofei-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "no-new",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回0条/总计0条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-aofei.json。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "athub",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。 2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "athub-peer-review-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603881",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          },
+          {
+            "id": "finance-20261023-athub-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.athub.com/index/Lists/index/catid/22.html",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-2.txt。"
+          },
+          {
+            "id": "finance-20261023-athub-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "no-new",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回0条/总计0条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-athub.json。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "hongjing",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。 2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "hongjing-peer-review-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=301396",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          },
+          {
+            "id": "finance-20261023-hongjing-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.gloryview.com/",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-3.txt。"
+          },
+          {
+            "id": "finance-20261023-hongjing-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "no-new",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回0条/总计0条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-hongjing.json。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "range",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "progress",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。 2026-10-23财务专项：润泽科技三季报：AIDC带动收入增长42.45%，扣非净利增长32.97%；最新实际数据采用2026年1—9月累计。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "range-peer-review-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300442",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          },
+          {
+            "id": "finance-20261023-range-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.rangeidc.com/",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-3.txt。"
+          },
+          {
+            "id": "finance-20261023-range-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "progress",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回9条/总计9条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-range.json。"
+          },
+          {
+            "id": "finance-20261023-range-statement",
+            "channel": "正式财报原件及原表核对",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617368.PDF",
+            "attemptedAt": "2026-10-23",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "2026-10-23读取正式三季报原件第2—4、9—10页，核对本期及同期的累计收入、归母利润、单位和经营说明；主要财务表及利润表已渲染复核。本条采用巨潮正式披露目录2026-10-23的发布日期；该公司22日晚已有媒体报道，披露日不作为实际交付日期。 报告落款为2026-10-22。 巨潮原件SHA256：1547128ba7695b52d79c62f6eb49f886bfacecb801a47322da0943209ba376aa。证据：行业信息更新_2026-10-23/finance。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "singtel",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-singtel-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.singtel.com/about-us/investor-relations/financial-results",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-3.txt。"
+          },
+          {
+            "id": "finance-20261023-singtel-ir",
+            "channel": "官方IR目录正文",
+            "url": "https://www.singtel.com/about-us/investor-relations/financial-results",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "官方目录当前2026/27第一季度业务更新；未取得可替换本期数据的新版。 目录读取不等于完整跨渠道核查。证据：singtel-ir.txt。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "dayone",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "progress",
+        "note": "2026-10-23财务专项：为已收录原资料补最新已取得的半年财务原表，原发布日期及verifiedAt保持；不计今日新闻。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-dayone-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://dayonedc.com/news",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-3.txt。"
+          },
+          {
+            "id": "finance-20261023-dayone-statement",
+            "channel": "已收录同期间官方财务原表",
+            "url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+            "attemptedAt": "2026-10-23",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "已读取 SEC 官方 F-1 封面、Our Footprint 分市场表及容量定义；封面显示 2026-10-05 申报。数值为发行人披露，未作现场独立验证；全球总量含东南亚以外市场，签约与 Reservations 不相加当作投运。 2026-10-23经免费网页工具读取同份SEC F-1第14页及F-3财务表，补充半年收入及普通股股东应占亏损的同期金额；原发布日期和verifiedAt保持。AnySearch提取和直接下载本轮失败，网页正文读取成功。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "tnb",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-tnb-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.tnb.com.my/suppliers-investors-media-relations/financial-info",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-4.txt。"
+          },
+          {
+            "id": "finance-20261023-tnb-ir",
+            "channel": "官方IR目录正文",
+            "url": "https://www.tnb.com.my/suppliers-investors-media-relations/financial-info",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "官方目录当前2QFY2026，保留昨日已核半年实际业绩。 目录读取不等于完整跨渠道核查。证据：tnb-ir.txt。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "sttgdc",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 检索结果存在同名企业或没有对应发行人的正式财务原表，未采入相似主体数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-sttgdc-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.sttgdc.com/newsroom",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-4.txt。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "globe",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 检索结果存在同名企业或没有对应发行人的正式财务原表，未采入相似主体数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-globe-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-4.txt。"
+          },
+          {
+            "id": "finance-20261023-globe-ir-blocked",
+            "channel": "官方IR正文提取尝试",
+            "url": "https://www.globe.com.ph/about-us/investor-relations",
+            "attemptedAt": "2026-10-23",
+            "result": "blocked",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "AnySearch正文提取失败，原指标保留；未把未取得原文解释成没有新财报。证据：globe-ir.txt。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "bdx",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 检索结果存在同名企业或没有对应发行人的正式财务原表，未采入相似主体数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-bdx-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-4.txt。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "stavian",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 检索结果存在同名企业或没有对应发行人的正式财务原表，未采入相似主体数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-stavian-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-5.txt。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "china-mobile",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-china-mobile-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.chinamobileltd.com/",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-5.txt。"
+          },
+          {
+            "id": "finance-20261023-china-mobile-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "no-new",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回0条/总计0条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-china-mobile.json。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "china-telecom",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "progress",
+        "note": "2026-10-23财务专项：中国电信三季报：智能收入462亿元，继续推进Token经营与算力网；最新实际数据采用2026年1—9月累计。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-china-telecom-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.chinatelecom-h.com/sc/media/press.php",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-5.txt。"
+          },
+          {
+            "id": "finance-20261023-china-telecom-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "progress",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回4条/总计4条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-china-telecom.json。"
+          },
+          {
+            "id": "finance-20261023-china-telecom-ir",
+            "channel": "官方IR目录正文",
+            "url": "https://www.chinatelecom-h.com/en/ir/reports.php",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "官网报告目录显示中期报告，本轮同时从巨潮和港交所取得正式三季报。 目录读取不等于完整跨渠道核查。证据：telecom-ir.txt。"
+          },
+          {
+            "id": "finance-20261023-china-telecom-statement",
+            "channel": "正式财报原件及原表核对",
+            "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1022/2026102201267_c.pdf",
+            "attemptedAt": "2026-10-23",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "2026-10-23读取正式三季报原件巨潮同件第1、6、8—9页；港交所PDF第2、7、9—10页，核对本期及同期的累计收入、归母利润、单位和经营说明；主要财务表及利润表已渲染复核。港交所原文于2026-10-22公开，巨潮同件于23日发布；报告落款22日，原文发布日期采用港交所22日。 巨潮原件SHA256：40cce3e288c83f82f80229823768989ac3242b1a5c287a9d135968aecdca3324。证据：行业信息更新_2026-10-23/finance。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "china-unicom-h",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "progress",
+        "note": "2026-10-23财务专项：为已收录原资料补最新已取得的半年财务原表，原发布日期及verifiedAt保持；不计今日新闻。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-china-unicom-h-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.chinaunicom.com.hk/sc/media/press.php",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-5.txt。"
+          },
+          {
+            "id": "finance-20261023-china-unicom-h-ir",
+            "channel": "官方IR目录正文",
+            "url": "https://www.chinaunicom.com.hk/en/ir/calendar.php",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "官网日历列9M2026财务及运营指标发布时间为10月29日；最新已取得正式业绩为2026中期。 目录读取不等于完整跨渠道核查。证据：unicom-ir.txt。"
+          },
+          {
+            "id": "finance-20261023-china-unicom-h-statement",
+            "channel": "已收录同期间官方财务原表",
+            "url": "https://doc.irasia.com/listco/hk/chinaunicom/interim/2026/int.pdf",
+            "attemptedAt": "2026-10-23",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "从官网2026-08-18中期业绩新闻稿进入4页PDF，取得部分经营正文；末轮复读两次返回工具内部错误，全文阅读范围未能完整复核，按部分正文保留。官网首页明确A股公司数据可能不同；本条只关联香港上市主体0762。 2026-10-23另读取香港主体0762的正式中期业绩公告第1、8页，补收入、权益持有人应占利润及同期数；原新闻稿发布日期和verifiedAt保持。公告PDF SHA256：43fb3007c905dab233bfda7f9a9d523c90df391729d436824871cd7ccff338db。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "oulu-tong",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-oulu-tong-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-6.txt。"
+          },
+          {
+            "id": "finance-20261023-oulu-tong-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "no-new",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回0条/总计0条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-oulu-tong.json。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "intel",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-intel-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-6.txt。"
+          },
+          {
+            "id": "finance-20261023-intel-ir",
+            "channel": "官方IR目录正文",
+            "url": "https://www.intc.com/news-events/press-releases",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "官方目录及发布安排原文明确第三季度业绩定于10月29日美股收市后公布；本轮保留Q2的13周期间。 目录读取不等于完整跨渠道核查。证据：intel-ir.txt。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "infinigence-ai",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 检索结果存在同名企业或没有对应发行人的正式财务原表，未采入相似主体数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-infinigence-ai-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-6.txt。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "konst-group",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 检索结果存在同名企业或没有对应发行人的正式财务原表，未采入相似主体数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-konst-group-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-6.txt。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "capitalonline",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-capitalonline-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.capitalonline.net/",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-7.txt。"
+          },
+          {
+            "id": "finance-20261023-capitalonline-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "no-new",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回0条/总计0条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-capitalonline.json。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "hongxin",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-hongxin-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.hon-flex.com/",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-7.txt。"
+          },
+          {
+            "id": "finance-20261023-hongxin-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "no-new",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回11条/总计11条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-hongxin.json。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "litong",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-litong-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.lettall.com/",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-7.txt。"
+          },
+          {
+            "id": "finance-20261023-litong-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "no-new",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回1条/总计1条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-litong.json。"
+          }
+        ]
+      }
+    },
+    {
+      "companyId": "nexwise",
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "2026-10-23财务专项：本轮未取得可替换现有指标的新版正式财报；保留原已核数据。 证据：行业信息更新_2026-10-23/finance/company-financial-checks.json。",
+        "checks": [
+          {
+            "id": "finance-20261023-nexwise-search",
+            "channel": "AnySearch免费财报检索",
+            "url": "https://www.nexwise.com.cn/",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "按当前公司名称查询2026最新正式财报；检索含相似主体与旧期结果，未以摘要替代正式原表。证据：financial-search-7.txt。"
+          },
+          {
+            "id": "finance-20261023-nexwise-cninfo",
+            "channel": "巨潮资讯官方披露目录（本轮财报专项）",
+            "url": "https://www.cninfo.com.cn/new/disclosure",
+            "attemptedAt": "2026-10-23",
+            "result": "no-new",
+            "checkedFrom": "2026-10-22",
+            "checkedThrough": "2026-10-23",
+            "note": "按证券代码与orgId读取2026-10-22至23日，截至09:13；返回0条/总计0条，页容量30。仅核该目录当前已发布记录；新版正式三季报原件另读。证据：cninfo-nexwise.json。"
+          }
+        ]
+      }
+    }
+  ],
+  "events": [
+    {
+      "event": {
+        "id": "sinnet-luchen-token-cooperation-2026",
+        "title": "与潞晨科技签署AI基础设施战略合作",
+        "type": "contract",
+        "companyIds": [
+          "sinnet"
+        ],
+        "relatedEventIds": [],
+        "participants": [
+          {
+            "companyId": "sinnet",
+            "role": "事项披露主体"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "priority": 88,
+        "currentSummary": "光环新网与潞晨科技于10月16日签署战略合作协议，围绕Token工厂、国产智算芯片适配及联合解决方案开展合作，并与光环云共同推进大模型推理、训练与微调服务。",
+        "latestVerifiedMilestoneId": "disclosed",
+        "basisMilestoneIds": [
+          "disclosed"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "disclosed",
+            "title": "与潞晨科技签署战略合作协议",
+            "occurredAt": "2026-10-16",
+            "summary": "光环新网与潞晨科技于10月16日签署战略合作协议，围绕Token工厂、国产智算芯片适配及联合解决方案开展合作，并与光环云共同推进大模型推理、训练与微调服务。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "sinnet-luchen-cooperation-20261020",
+            "evidenceRefs": [
+              {
+                "reportId": "sinnet-luchen-cooperation-20261020",
+                "locator": "公司原文日期2026-10-20；首段签署日2026-10-16",
+                "role": "上市公司原始披露"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-23",
+          "result": "progress",
+          "note": "已读取官方原文，按实际日期和业务阶段补入同一公司时间线。",
+          "checks": [
+            {
+              "id": "sinnet-luchen-token-cooperation-2026-verified-20261023",
+              "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+              "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300383",
+              "attemptedAt": "2026-10-23",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取官方原文，按实际日期和业务阶段补入同一公司时间线。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "event": {
+        "id": "hec-ai-compute-fulfilment-2026",
+        "title": "披露算力业务整体交付、收入与客户收款",
+        "type": "contract",
+        "companyIds": [
+          "hec"
+        ],
+        "relatedEventIds": [
+          "hec-cloud-compute-client-a-2026",
+          "hec-cloud-compute-client-b-2026",
+          "hec-cloud-compute-client-c-2026"
+        ],
+        "participants": [
+          {
+            "companyId": "hec",
+            "role": "事项披露主体"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "priority": 99,
+        "currentSummary": "2026年1—9月算力相关业务收入约6.92亿元；截至9月末，算力服务订单项下服务器等相关资产196.53亿元，累计已收客户相关款项117.62亿元。公司披露长单持续交付，并为云智算主体的融资租赁及客户合同提供担保。",
+        "latestVerifiedMilestoneId": "disclosed",
+        "basisMilestoneIds": [
+          "disclosed"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "disclosed",
+            "title": "披露算力收入6.92亿元及累计客户收款117.62亿元",
+            "occurredAt": "2026-10-23",
+            "summary": "2026年1—9月算力相关业务收入约6.92亿元；截至9月末，算力服务订单项下服务器等相关资产196.53亿元，累计已收客户相关款项117.62亿元。公司披露长单持续交付，并为云智算主体的融资租赁及客户合同提供担保。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "hec-2026-q3",
+            "evidenceRefs": [
+              {
+                "reportId": "hec-2026-q3",
+                "locator": "PDF第7页：AI算力服务业务；统计期截至2026-09-30",
+                "role": "上市公司原始披露"
+              },
+              {
+                "reportId": "hec-ai-financing-guarantees-20261023",
+                "locator": "PDF第6—7页：云智算及云智算二号融资担保；第8页履约担保",
+                "role": "融资及履约安排补充"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-23",
+          "result": "progress",
+          "note": "已读取官方原文，按实际日期和业务阶段补入同一公司时间线。",
+          "checks": [
+            {
+              "id": "hec-ai-compute-fulfilment-2026-verified-20261023",
+              "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+              "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=600673",
+              "attemptedAt": "2026-10-23",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取官方原文，按实际日期和业务阶段补入同一公司时间线。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "event": {
+        "id": "xingyun-vd-compute-rental",
+        "title": "VD客户9.216亿元五年算力租赁合同",
+        "type": "contract",
+        "companyIds": [
+          "xingyun"
+        ],
+        "relatedEventIds": [],
+        "participants": [
+          {
+            "companyId": "xingyun",
+            "role": "事项披露主体"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "priority": 93,
+        "currentSummary": "行云科技向VD客户提供五年算力资源租赁，含税总额9.216亿元，60个月单价及总价锁定。合同约定锁单并足额收到保证金后60个自然日完成采购、部署与交付；9月4日披露时正在采购。",
+        "latestVerifiedMilestoneId": "disclosed",
+        "basisMilestoneIds": [
+          "disclosed"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "disclosed",
+            "title": "披露VD客户9.216亿元算力租赁合同",
+            "occurredAt": "2026-09-04",
+            "summary": "行云科技向VD客户提供五年算力资源租赁，含税总额9.216亿元，60个月单价及总价锁定。合同约定锁单并足额收到保证金后60个自然日完成采购、部署与交付；9月4日披露时正在采购。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "xingyun-vd-rental-20260904",
+            "evidenceRefs": [
+              {
+                "reportId": "xingyun-vd-rental-20260904",
+                "locator": "PDF第1—3页：签署、固定价格与60日交付条件",
+                "role": "上市公司原始披露"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-23",
+          "result": "progress",
+          "note": "已读取官方原文，按实际日期和业务阶段补入同一公司时间线。",
+          "checks": [
+            {
+              "id": "xingyun-vd-compute-rental-verified-20261023",
+              "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+              "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300209",
+              "attemptedAt": "2026-10-23",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取官方原文，按实际日期和业务阶段补入同一公司时间线。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "event": {
+        "id": "xingyun-xiaoshan-industrial-cooperation",
+        "title": "萧山合作升级，新增第二总部与AI服务器智造基地",
+        "type": "contract",
+        "companyIds": [
+          "xingyun"
+        ],
+        "relatedEventIds": [],
+        "participants": [
+          {
+            "companyId": "xingyun",
+            "role": "事项披露主体"
+          }
+        ],
+        "regions": [
+          "中国"
+        ],
+        "visibility": "active",
+        "priority": 89,
+        "currentSummary": "行云科技与萧山经开国控升级战略框架，新增第二总部及AI服务器整机智造基地；第二总部计划10月底落地，基地预计2027年投产。供应链合作年累计上限150亿元，另设独立信用证年累计上限100亿元，具体业务经审批及另签协议执行。",
+        "latestVerifiedMilestoneId": "disclosed",
+        "basisMilestoneIds": [
+          "disclosed"
+        ],
+        "uncertainties": [],
+        "milestones": [
+          {
+            "id": "disclosed",
+            "title": "升级萧山战略合作框架",
+            "occurredAt": "2026-10-12",
+            "summary": "行云科技与萧山经开国控升级战略框架，新增第二总部及AI服务器整机智造基地；第二总部计划10月底落地，基地预计2027年投产。供应链合作年累计上限150亿元，另设独立信用证年累计上限100亿元，具体业务经审批及另签协议执行。",
+            "isProgress": true,
+            "verificationLevel": "official-body",
+            "primaryEvidenceReportId": "xingyun-xiaoshan-framework-20261012",
+            "evidenceRefs": [
+              {
+                "reportId": "xingyun-xiaoshan-framework-20261012",
+                "locator": "PDF第1—3页；Q3第8页确认10月12日签署",
+                "role": "上市公司原始披露"
+              },
+              {
+                "reportId": "xingyun-2026-q3",
+                "locator": "PDF第8页其他重要事项第8项",
+                "role": "签署日期补充"
+              }
+            ]
+          }
+        ],
+        "review": {
+          "lastAttemptAt": "2026-10-23",
+          "result": "progress",
+          "note": "已读取官方原文，按实际日期和业务阶段补入同一公司时间线。",
+          "checks": [
+            {
+              "id": "xingyun-xiaoshan-industrial-cooperation-verified-20261023",
+              "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+              "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300209",
+              "attemptedAt": "2026-10-23",
+              "result": "progress",
+              "checkedFrom": null,
+              "checkedThrough": null,
+              "note": "已读取官方原文，按实际日期和业务阶段补入同一公司时间线。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "event": {
+        "id": "vnet-strategic-investment-2026"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "读取官网英文新闻目录及中文定向检索；中文检索最新重大项目仍为10月12日中卫合作，未确认新建设或交割事实。",
+        "checks": [
+          {
+            "id": "vnet-strategic-investment-2026-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.vnet.com/news.html",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取官网英文新闻目录及中文定向检索；中文检索最新重大项目仍为10月12日中卫合作，未确认新建设或交割事实。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "hec-chindata-platform-acquisition"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "读取10月23日三季报第7页整体算力履约、收入与客户收款，以及季度担保原件第6—7页融资租赁担保；数字为整体业务口径，不分摊到A/B/C单项合同。",
+        "checks": [
+          {
+            "id": "hec-chindata-platform-acquisition-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=600673",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取10月23日三季报第7页整体算力履约、收入与客户收款，以及季度担保原件第6—7页融资租赁担保；数字为整体业务口径，不分摊到A/B/C单项合同。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "hec-chindata-listed-reorganization"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "读取10月23日三季报第7页整体算力履约、收入与客户收款，以及季度担保原件第6—7页融资租赁担保；数字为整体业务口径，不分摊到A/B/C单项合同。",
+        "checks": [
+          {
+            "id": "hec-chindata-listed-reorganization-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=600673",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取10月23日三季报第7页整体算力履约、收入与客户收款，以及季度担保原件第6—7页融资租赁担保；数字为整体业务口径，不分摊到A/B/C单项合同。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "xingyun-vf-server-sale"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "读取10月23日三季报第8页，确认VE合同已完成交付并起租；VF/VG交付验收为原已核事实。诉讼原件属于有棵树科技证照印章返还，非算力合同纠纷。另读取9月4日VD合同及10月12日萧山框架原件，补足时间线并核实SA首批采购已交付。",
+        "checks": [
+          {
+            "id": "xingyun-vf-server-sale-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300209",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取10月23日三季报第8页，确认VE合同已完成交付并起租；VF/VG交付验收为原已核事实。诉讼原件属于有棵树科技证照印章返还，非算力合同纠纷。另读取9月4日VD合同及10月12日萧山框架原件，补足时间线并核实SA首批采购已交付。"
+          }
+        ]
+      },
+      "nodeEvidence": [
+        {
+          "id": "disclosure",
+          "evidenceRefs": [
+            {
+              "reportId": "xingyun-2026-q3",
+              "locator": "PDF第8页其他重要事项第6—7项：VF/VG已交付验收",
+              "role": "正式季报后续复核"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "xingyun-ve-compute-rental"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "progress",
+        "note": "读取Q3第8页确认已交付并起租；未单列实际交付与起租日，使用本次披露日，不将预计日改成实际完成日。",
+        "checks": [
+          {
+            "id": "xingyun-ve-compute-rental-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300209",
+            "attemptedAt": "2026-10-23",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取Q3第8页确认已交付并起租；未单列实际交付与起租日，使用本次披露日，不将预计日改成实际完成日。"
+          }
+        ]
+      },
+      "nodes": [
+        {
+          "id": "delivery-rent-disclosed",
+          "title": "披露VE客户合同已交付并起租",
+          "occurredAt": "2026-10-23",
+          "summary": "三季报披露，湘树云与VE客户的五年智算租赁合同已完成交付并起租，含税总额87,168万元（8.7168亿元）。",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "xingyun-2026-q3",
+          "evidenceRefs": [
+            {
+              "reportId": "xingyun-2026-q3",
+              "locator": "PDF第8页其他重要事项第5项：已完成交付并起租",
+              "role": "上市公司原始披露"
+            }
+          ]
+        }
+      ],
+      "current": {
+        "reason": "progress",
+        "currentSummary": "三季报披露，湘树云与VE客户的五年智算租赁合同已完成交付并起租，含税总额87,168万元（8.7168亿元）。",
+        "latestVerifiedMilestoneId": "delivery-rent-disclosed",
+        "basisMilestoneIds": [
+          "disclosure",
+          "delivery-rent-disclosed"
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "event": {
+        "id": "xingyun-sa-compute-procurement"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "progress",
+        "note": "官方框架原件核实首批32套采购已交付；43套为另签采购，不能据此认定均已交付。历史进展补核，不作为10月23日发生。",
+        "checks": [
+          {
+            "id": "xingyun-sa-compute-procurement-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-10-12/1225601981.PDF",
+            "attemptedAt": "2026-10-23",
+            "result": "progress",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "官方框架原件核实首批32套采购已交付；43套为另签采购，不能据此认定均已交付。历史进展补核，不作为10月23日发生。"
+          }
+        ]
+      },
+      "nodes": [
+        {
+          "id": "first32-delivered",
+          "title": "披露SA首批32套算力服务已交付",
+          "occurredAt": "2026-10-12",
+          "summary": "10月12日框架进展公告披露，SA供应商首批32套GPU算力服务、含税2.9957亿元采购合同已交付完毕；另签43套合计4.531398亿元、服务期五年的合同。128套采购框架中已签约75套。",
+          "isProgress": true,
+          "verificationLevel": "official-body",
+          "primaryEvidenceReportId": "xingyun-xiaoshan-framework-20261012",
+          "evidenceRefs": [
+            {
+              "reportId": "xingyun-xiaoshan-framework-20261012",
+              "locator": "PDF第4—5页最近三年框架协议表：首批2.9957亿元采购已交付",
+              "role": "上市公司原始披露"
+            }
+          ]
+        }
+      ],
+      "current": {
+        "reason": "progress",
+        "currentSummary": "10月12日框架进展公告披露，SA供应商首批32套GPU算力服务、含税2.9957亿元采购合同已交付完毕；另签43套合计4.531398亿元、服务期五年的合同。128套采购框架中已签约75套。",
+        "latestVerifiedMilestoneId": "first32-delivered",
+        "basisMilestoneIds": [
+          "disclosure",
+          "first32-delivered"
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "event": {
+        "id": "vnet-catl-cooperation-20260818"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "读取官网英文新闻目录及中文定向检索；中文检索最新重大项目仍为10月12日中卫合作，未确认新建设或交割事实。",
+        "checks": [
+          {
+            "id": "vnet-catl-cooperation-20260818-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.vnet.com/news.html",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取官网英文新闻目录及中文定向检索；中文检索最新重大项目仍为10月12日中卫合作，未确认新建设或交割事实。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "sinnet-cloud-greenland-jv"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。",
+        "checks": [
+          {
+            "id": "sinnet-cloud-greenland-jv-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300383",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "sinnet-cloud-panacea-acquisition"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。",
+        "checks": [
+          {
+            "id": "sinnet-cloud-panacea-acquisition-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300383",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "sinnet-cloud-panacea-sme"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。",
+        "checks": [
+          {
+            "id": "sinnet-cloud-panacea-sme-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300383",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "sinnet-cloud-ziphub"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。",
+        "checks": [
+          {
+            "id": "sinnet-cloud-ziphub-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300383",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "sinnet-cloud-orbix"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。",
+        "checks": [
+          {
+            "id": "sinnet-cloud-orbix-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300383",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "sinnet-horinger-expansion"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。",
+        "checks": [
+          {
+            "id": "sinnet-horinger-expansion-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300383",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "sinnet-unicom-inner-mongolia"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。",
+        "checks": [
+          {
+            "id": "sinnet-unicom-inner-mongolia-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300383",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "sharetronic-lease-20260921-action"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。",
+        "checks": [
+          {
+            "id": "sharetronic-lease-20260921-action-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300857",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "sharetronic-issue-accepted-20260916-action"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。",
+        "checks": [
+          {
+            "id": "sharetronic-issue-accepted-20260916-action-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300857",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "xingyun-vg-sale-20260930-action"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "读取10月23日三季报第8页，确认VE合同已完成交付并起租；VF/VG交付验收为原已核事实。诉讼原件属于有棵树科技证照印章返还，非算力合同纠纷。另读取9月4日VD合同及10月12日萧山框架原件，补足时间线并核实SA首批采购已交付。",
+        "checks": [
+          {
+            "id": "xingyun-vg-sale-20260930-action-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300209",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取10月23日三季报第8页，确认VE合同已完成交付并起租；VF/VG交付验收为原已核事实。诉讼原件属于有棵树科技证照印章返还，非算力合同纠纷。另读取9月4日VD合同及10月12日萧山框架原件，补足时间线并核实SA首批采购已交付。"
+          }
+        ]
+      },
+      "nodeEvidence": [
+        {
+          "id": "disclosed",
+          "evidenceRefs": [
+            {
+              "reportId": "xingyun-2026-q3",
+              "locator": "PDF第8页其他重要事项第6—7项：VF/VG已交付验收",
+              "role": "正式季报后续复核"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "event": {
+        "id": "hec-buyback-20261010-action"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "读取10月23日三季报第7页整体算力履约、收入与客户收款，以及季度担保原件第6—7页融资租赁担保；数字为整体业务口径，不分摊到A/B/C单项合同。",
+        "checks": [
+          {
+            "id": "hec-buyback-20261010-action-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=600673",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取10月23日三季报第7页整体算力履约、收入与客户收款，以及季度担保原件第6—7页融资租赁担保；数字为整体业务口径，不分摊到A/B/C单项合同。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "sharetronic-cloud-services-20261019"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。",
+        "checks": [
+          {
+            "id": "sharetronic-cloud-services-20261019-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300857",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "xingyun-vb-compute-services"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "读取10月23日三季报第8页，确认VE合同已完成交付并起租；VF/VG交付验收为原已核事实。诉讼原件属于有棵树科技证照印章返还，非算力合同纠纷。另读取9月4日VD合同及10月12日萧山框架原件，补足时间线并核实SA首批采购已交付。",
+        "checks": [
+          {
+            "id": "xingyun-vb-compute-services-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300209",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取10月23日三季报第8页，确认VE合同已完成交付并起租；VF/VG交付验收为原已核事实。诉讼原件属于有棵树科技证照印章返还，非算力合同纠纷。另读取9月4日VD合同及10月12日萧山框架原件，补足时间线并核实SA首批采购已交付。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "vnet-zhongwei-aidc-2026"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "读取官网英文新闻目录及中文定向检索；中文检索最新重大项目仍为10月12日中卫合作，未确认新建设或交割事实。",
+        "checks": [
+          {
+            "id": "vnet-zhongwei-aidc-2026-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.vnet.com/news.html",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "读取官网英文新闻目录及中文定向检索；中文检索最新重大项目仍为10月12日中卫合作，未确认新建设或交割事实。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "aofei-tianjin-data-center-abs"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。",
+        "checks": [
+          {
+            "id": "aofei-tianjin-data-center-abs-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300738",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "aofei-2026-project-deliveries"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。",
+        "checks": [
+          {
+            "id": "aofei-2026-project-deliveries-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300738",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "athub-ai4s-services-procurement"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。",
+        "checks": [
+          {
+            "id": "athub-ai4s-services-procurement-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603881",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "athub-gpu-services-procurement-2026"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。",
+        "checks": [
+          {
+            "id": "athub-gpu-services-procurement-2026-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603881",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "athub-beijing-ascend-cluster"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。",
+        "checks": [
+          {
+            "id": "athub-beijing-ascend-cluster-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=603881",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "hongjing-yuandong-jv"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。",
+        "checks": [
+          {
+            "id": "hongjing-yuandong-jv-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=301396",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "hongjing-guangfa-credit-guarantee"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。",
+        "checks": [
+          {
+            "id": "hongjing-guangfa-credit-guarantee-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=301396",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "range-overseas-data-centers-2026"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。",
+        "checks": [
+          {
+            "id": "range-overseas-data-centers-2026-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300442",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "range-shidai-shenyuan-ai-fund"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。",
+        "checks": [
+          {
+            "id": "range-shidai-shenyuan-ai-fund-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300442",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "range-2026-aidc-credit-application"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。",
+        "checks": [
+          {
+            "id": "range-2026-aidc-credit-application-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300442",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "复查22—23日巨潮目录及公司定向免费检索；未取得改变既有合同交付、验收、计费或回款阶段的新证据。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "sinnet-kexin-server-finance-lease"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。",
+        "checks": [
+          {
+            "id": "sinnet-kexin-server-finance-lease-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300383",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "sinnet-hengqin-data-center-financing"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。",
+        "checks": [
+          {
+            "id": "sinnet-hengqin-data-center-financing-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.cninfo.com.cn/new/disclosure/stock?stockCode=300383",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "gds-langfang-data-center-expansion-2026"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "重新读取中文官网新闻目录，最新可见10月20日绿电文章已入库；廊坊原文仍为9月14日，不因搜索日期串位而重录。",
+        "checks": [
+          {
+            "id": "gds-langfang-data-center-expansion-2026-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://www.gds-services.com/zh_cn/news_19.html",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "重新读取中文官网新闻目录，最新可见10月20日绿电文章已入库；廊坊原文仍为9月14日，不因搜索日期串位而重录。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "hec-cloud-compute-client-a-2026"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "三季报披露公司整体算力订单交付、相关收入与客户收款，未细分此单合同；保持本合同当前阶段，整体履约另建汇总关联事项。",
+        "checks": [
+          {
+            "id": "hec-cloud-compute-client-a-2026-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617273.PDF",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "三季报披露公司整体算力订单交付、相关收入与客户收款，未细分此单合同；保持本合同当前阶段，整体履约另建汇总关联事项。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "hec-cloud-compute-client-b-2026"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "三季报披露公司整体算力订单交付、相关收入与客户收款，未细分此单合同；保持本合同当前阶段，整体履约另建汇总关联事项。",
+        "checks": [
+          {
+            "id": "hec-cloud-compute-client-b-2026-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617273.PDF",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "三季报披露公司整体算力订单交付、相关收入与客户收款，未细分此单合同；保持本合同当前阶段，整体履约另建汇总关联事项。"
+          }
+        ]
+      }
+    },
+    {
+      "event": {
+        "id": "hec-cloud-compute-client-c-2026"
+      },
+      "review": {
+        "lastAttemptAt": "2026-10-23",
+        "result": "partial",
+        "note": "三季报披露公司整体算力订单交付、相关收入与客户收款，未细分此单合同；保持本合同当前阶段，整体履约另建汇总关联事项。",
+        "checks": [
+          {
+            "id": "hec-cloud-compute-client-c-2026-recheck-20261023",
+            "channel": "巨潮公告、公司官网与免费AnySearch定向检索",
+            "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617273.PDF",
+            "attemptedAt": "2026-10-23",
+            "result": "partial",
+            "checkedFrom": null,
+            "checkedThrough": null,
+            "note": "三季报披露公司整体算力订单交付、相关收入与客户收款，未细分此单合同；保持本合同当前阶段，整体履约另建汇总关联事项。"
+          }
+        ]
+      }
+    }
+  ],
+  "changeBatch": {
+    "batchId": "discovery-20261023",
+    "recordedAt": "2026-10-23T09:14:41+08:00",
+    "scope": "国内、东南亚与全球行业更新；固定同行履约、最新财报、监管与SMM核对",
+    "periodStart": "2026-10-23",
+    "summary": "新收录23篇资料、4项重大动作；2个既有事项追加交付进展，更新三家固定同行及电信财报、两家既有财务字段；更新10月23日日报及上一完整周周报，核对10月22日SMM报价。",
+    "checks": [
+      {
+        "id": "research-20261023-dcd-southeast-asia",
+        "channel": "DCD 东南亚数据中心新闻",
+        "url": "https://www.datacenterdynamics.com/en/news/?term=south-east-asia",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-1.txt、weekly-media-1.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-wmedia-sea",
+        "channel": "w.media 东南亚",
+        "url": "https://w.media/category/markets/apac/sea/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-1.txt、weekly-media-1.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-stcn-industry",
+        "channel": "证券时报 IDC/AIDC 相关报道",
+        "url": "https://www.stcn.com/article/list/cj.html",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-1.txt、weekly-media-1.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-yicai-industry",
+        "channel": "第一财经 IDC/AIDC 相关报道",
+        "url": "https://www.yicai.com/news/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-1.txt、weekly-media-1.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-nbd-industry",
+        "channel": "每日经济新闻 IDC/AIDC 相关报道",
+        "url": "https://www.nbd.com.cn/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-2.txt、weekly-media-2.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-cls-industry",
+        "channel": "财联社 IDC/AIDC 相关报道",
+        "url": "https://www.cls.cn/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-2.txt、weekly-media-2.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-jiemian-industry",
+        "channel": "界面新闻 IDC/AIDC 相关报道",
+        "url": "https://www.jiemian.com/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-2.txt、weekly-media-2.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-thepaper-industry",
+        "channel": "澎湃新闻 IDC/AIDC 相关报道",
+        "url": "https://www.thepaper.cn/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-2.txt、weekly-media-2.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-36kr-industry",
+        "channel": "36氪 IDC/AIDC 相关报道",
+        "url": "https://www.36kr.com/newsflashes",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-3.txt、weekly-media-3.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-oregon-capital-chronicle",
+        "channel": "Oregon Capital Chronicle",
+        "url": "https://oregoncapitalchronicle.com/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-3.txt、weekly-media-3.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-china-securities-journal",
+        "channel": "中国证券报·中证网",
+        "url": "https://www.cs.com.cn/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-3.txt、weekly-media-3.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-thehubnews",
+        "channel": "新头条 TheHubNews",
+        "url": "https://www.thehubnews.net/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-3.txt、weekly-media-3.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-wabei",
+        "channel": "挖贝网",
+        "url": "https://www.wabei.cn/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-4.txt、weekly-media-4.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-eastmoney-news",
+        "channel": "东方财富",
+        "url": "https://finance.eastmoney.com/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-4.txt、weekly-media-4.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-21jingji",
+        "channel": "21世纪经济报道",
+        "url": "https://www.21jingji.com/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-4.txt、weekly-media-4.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-10jqka-news",
+        "channel": "同花顺财经",
+        "url": "https://news.10jqka.com.cn/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-4.txt、weekly-media-4.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-data-center-knowledge",
+        "channel": "Data Center Knowledge",
+        "url": "https://www.datacenterknowledge.com/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-5.txt、weekly-media-5.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-antara-news",
+        "channel": "ANTARA 印尼安塔拉通讯社",
+        "url": "https://en.antaranews.com/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-5.txt、weekly-media-5.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-tidenews",
+        "channel": "潮新闻",
+        "url": "https://tidenews.com.cn/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-5.txt、weekly-media-5.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-ofweek-cloud",
+        "channel": "OFweek云计算",
+        "url": "https://cloud.ofweek.com/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-5.txt、weekly-media-5.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-chinadaily-cn",
+        "channel": "中国日报网",
+        "url": "https://cn.chinadaily.com.cn/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-6.txt、weekly-media-6.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-dostor",
+        "channel": "存储在线",
+        "url": "https://www.dostor.com/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-6.txt、weekly-media-6.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-caiwennews",
+        "channel": "财闻网",
+        "url": "https://www.caiwennews.com/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-6.txt、weekly-media-6.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-guandian",
+        "channel": "观点网",
+        "url": "https://www.guandian.cn/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-6.txt、weekly-media-6.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-pedaily",
+        "channel": "投资界",
+        "url": "https://www.pedaily.cn/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-7.txt、weekly-media-7.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-sina-finance",
+        "channel": "新浪财经",
+        "url": "https://finance.sina.com.cn/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-7.txt、weekly-media-7.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-time-weekly",
+        "channel": "时代周报",
+        "url": "https://www.time-weekly.com/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-7.txt、weekly-media-7.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-cnstock-news",
+        "channel": "上海证券报",
+        "url": "https://www.cnstock.com/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "完成来源定向检索，已核原文另列。证据：行业信息更新_2026-10-23/media-7.txt、weekly-media-7.txt及相应正文文件。"
+      },
+      {
+        "id": "research-20261023-nda-capacity",
+        "channel": "国家数据局：算力建设与阶段性披露",
+        "url": "https://www.nda.gov.cn/sjj/swdt/list/index_pc_1.html",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "独立检索10月12—18日周报资料并读取公开目录；未取得的原件不作为新增规则。证据：weekly-regulation-*.txt、home-nda-capacity.txt。"
+      },
+      {
+        "id": "research-20261023-sfc-takeovers",
+        "channel": "香港证监会：收购及合并监管",
+        "url": "https://www.sfc.hk/en/Regulatory-functions/Corporates/Takeovers-and-mergers/Transaction-announcements-and-documents",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "独立检索10月12—18日周报资料并读取公开目录；未取得的原件不作为新增规则。证据：weekly-regulation-*.txt、home-sfc-takeovers.txt。"
+      },
+      {
+        "id": "research-20261023-mas-sic-takeovers",
+        "channel": "新加坡 MAS／SIC：收购及合并守则",
+        "url": "https://www.mas.gov.sg/securities-industry-council",
+        "attemptedAt": "2026-10-23",
+        "result": "blocked",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "独立检索10月12—18日周报资料并读取公开目录；未取得的原件不作为新增规则。证据：weekly-regulation-*.txt、home-mas-sic-takeovers.txt。"
+      },
+      {
+        "id": "research-20261023-sse-regulation",
+        "channel": "上交所：监管与相关规则",
+        "url": "https://www.sse.com.cn/disclosure/credibility/supervision/inquiries/",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "独立检索10月12—18日周报资料并读取公开目录；未取得的原件不作为新增规则。证据：weekly-regulation-*.txt、home-sse-regulation.txt。"
+      },
+      {
+        "id": "research-20261023-szse-regulation",
+        "channel": "深交所：监管与相关规则",
+        "url": "https://www.szse.cn/disclosure/supervision/inquire/index.html",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "独立检索10月12—18日周报资料并读取公开目录；未取得的原件不作为新增规则。证据：weekly-regulation-*.txt、home-szse-regulation.txt。"
+      },
+      {
+        "id": "research-20261023-hkex-regulation",
+        "channel": "港交所：监管通讯与上市规则",
+        "url": "https://www.hkex.com.hk/News/Regulatory-Announcements?sc_lang=zh-HK",
+        "attemptedAt": "2026-10-23",
+        "result": "partial",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "独立检索10月12—18日周报资料并读取公开目录；未取得的原件不作为新增规则。证据：weekly-regulation-*.txt、home-hkex-regulation.txt。"
+      },
+      {
+        "id": "research-20261023-csrc-regulations",
+        "channel": "证监会规则及解释",
+        "url": "https://www.csrc.gov.cn/csrc/c100028/c7665427/content.shtml",
+        "attemptedAt": "2026-10-23",
+        "result": "progress",
+        "checkedFrom": null,
+        "checkedThrough": null,
+        "note": "已读第12号公告及答记者问；发文日10月16日、公开发布10月19日、生效12月1日分别保留。"
+      }
+    ]
+  },
+  "discovery": {
+    "generatedAt": "2026-10-23T09:14:41+08:00",
+    "weekPolicy": "previous-complete",
+    "note": "全媒体增量检索；同行重大合同按原事项跟进实际交付、起租、投入和收款。",
+    "highlightReportIds": [
+      "hec-2026-q3",
+      "xingyun-2026-q3",
+      "range-2026-q3"
+    ],
+    "issueRequests": [
+      {
+        "kind": "daily",
+        "date": "2026-10-23"
+      }
+    ]
+  }
+}
