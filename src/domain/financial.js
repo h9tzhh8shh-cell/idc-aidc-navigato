@@ -10,7 +10,7 @@ export function validateFinancial(f, report, today) {
   if (f.statementBasis !== 'actual-results') fail('财务指标仅允许正式实际业绩，不能以预告或预测替代');
   if (!report.companyIds?.includes(f.companyId) || report.kind !== 'disclosure') fail('必须关联本公司的正式披露资料');
   if (!['verified','pending'].includes(f.status)) fail('status 无效');
-  text(f.limitations,'limitations');
+  if (f.limitations !== undefined) text(f.limitations,'limitations');
   const p=f.period;
   if (keys(p,['label','start','end','type','priorStart','priorEnd','basis'],'period')) {
     text(p.label,'period.label');

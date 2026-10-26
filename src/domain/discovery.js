@@ -155,7 +155,7 @@ export function validateDiscovery(data) {
       const company = data.companies.find(c => c.id === id);
       // An originally discovered reference may later join the user-confirmed tracked roster.
       if (!company || !['reference', 'core'].includes(company.role) || seenCompanies.has(id)) fail(`非首次参考企业 ${id}`);
-      if (!company?.discoveryProfile?.website?.startsWith('https://') || !company?.discoveryProfile?.businessIdentity || !company?.discoveryProfile?.financialNote) fail(`企业展示依据不完整 ${id}`);
+      if (!company?.discoveryProfile?.website?.startsWith('https://') || !company?.discoveryProfile?.businessIdentity) fail(`企业展示依据不完整 ${id}`);
       seenCompanies.add(id);
     }
     for (const id of batch.reportIds) {

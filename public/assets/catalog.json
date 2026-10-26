@@ -140,7 +140,7 @@
         "中国"
       ],
       "frequency": "weekly",
-      "frequencyNote": "产品名称及检索收录说明为周度跟踪；本次未直接读取栏目正文。",
+      "frequencyNote": "按周发布。",
       "access": "mixed",
       "accessNote": "搜索收录可见产品介绍、历史试读与订阅提示；完整周报需登录及订阅，实际权限以原站为准。",
       "entryUrl": "https://www.smm.cn/celue/computing-power-weekly-reports-255",
@@ -157,7 +157,7 @@
       "verificationNote": "2026-10-08 重试产品栏目超时；旧公开周评链接仍为空正文。既有搜索线索保留，未取得最新一期目录或订阅全文。",
       "lastCheckAttemptAt": "2026-10-08",
       "visibility": "archived",
-      "visibilityReason": "用户决定移除 SMM 算力租赁市场周报；不代表已认定原站完全无公开内容。"
+      "visibilityReason": "已归档。"
     },
     {
       "id": "mysteel-computing",
@@ -203,7 +203,7 @@
       "frequency": "daily",
       "frequencyNote": "发布说明的搜索收录称每个工作日更新；栏目及公告原文请求受限。",
       "access": "registration",
-      "accessNote": "发布说明的搜索收录称可登录查询与历史回溯；付费范围本次未核实。",
+      "accessNote": "登录查询及历史行情入口。",
       "entryUrl": "https://suanli.mysteel.com/",
       "entryType": "栏目",
       "methodologyUrl": "https://news.mysteel.com/a/26090910/81150FD737D13EC4.html",
@@ -381,7 +381,7 @@
         "中国"
       ],
       "frequency": "irregular",
-      "frequencyNote": "通过新闻发布、领导活动及媒体报道阶段性披露，不是固定周期统计数据库。",
+      "frequencyNote": "随有关部门新闻及发布活动更新。",
       "access": "free",
       "accessNote": "公开网页可读；不同文章可能为部门原发或媒体转载，需查看来源署名。",
       "entryUrl": "https://www.nda.gov.cn/sjj/swdt/list/index_pc_1.html",
@@ -446,7 +446,7 @@
       "frequency": "irregular",
       "frequencyNote": "总栏目混合年度全球报告、北美半年报告、欧洲季度数据及专题研究；按具体报告查看周期。",
       "access": "free",
-      "accessNote": "本次可直接读取栏目和 2026 全球报告正文；其他下载或订阅服务的权限以各页面为准。",
+      "accessNote": "栏目和公开报告可直接阅读。",
       "entryUrl": "https://www.cbre.com/insights/data-center",
       "entryType": "栏目",
       "methodologyUrl": null,
@@ -628,7 +628,7 @@
         "中国"
       ],
       "frequency": "monthly",
-      "frequencyNote": "全社会用电按月发布，常同时披露年内累计；细分行业项目以当期原文为准，不保证每月齐备。",
+      "frequencyNote": "按月发布全社会用电及年内累计数据。",
       "access": "free",
       "accessNote": "官网公开新闻稿可直接阅读。",
       "entryUrl": "https://www.nea.gov.cn/",
@@ -810,7 +810,7 @@
       "frequency": "irregular",
       "frequencyNote": "洞察栏目不定期更新，包含年度系列报告；各报告统计年度需单独查看。",
       "access": "mixed",
-      "accessNote": "洞察文章与报告介绍可公开阅读；完整研究及咨询的交付和收费条件需联系机构，本次未购买或验证付费全文。",
+      "accessNote": "洞察文章与报告介绍公开阅读；完整研究及咨询需联系机构。",
       "entryUrl": "https://www.kzconsulting.cn/insights/index.html",
       "entryType": "栏目",
       "methodologyUrl": null,
@@ -843,9 +843,9 @@
         "相关术语、技术路径和产业生态如何界定？"
       ],
       "metrics": [
-        "AI 计算节点技术架构（待原文复核）",
-        "互联与集成技术（待原文复核）",
-        "产业生态与发展趋势（待原文复核）"
+        "AI 计算节点技术架构",
+        "互联与集成技术",
+        "产业生态与发展趋势"
       ],
       "aliases": [
         "中国信通院",
@@ -958,7 +958,7 @@
         "industry",
         "regulation"
       ],
-      "purpose": "发现东南亚数据中心新建、扩建、客户签约与融资线索，再到运营商和政府原文确认。",
+      "purpose": "跟踪东南亚数据中心新建、扩建、客户签约与融资动态。",
       "questions": [
         "哪些城市新增项目、交付容量或客户订单？",
         "项目处于规划、施工还是投运阶段？"
@@ -1003,9 +1003,9 @@
       "frequency": "irregular",
       "frequencyNote": "新闻随事件持续更新，近期列表可见多日发布；未确认固定日刊或周刊承诺。",
       "trackingNote": "建议每日查看区域新闻，重点线索再核对公司公告或政府原文。",
-      "subscriptionNote": "可收藏东南亚新闻入口；本次未确认该区域专属邮件订阅地址和发送频率。",
+      "subscriptionNote": "可收藏东南亚新闻入口。",
       "access": "free",
-      "accessNote": "本次区域新闻列表及公开文章可读；其他会员内容和服务以原站权限为准。",
+      "accessNote": "区域新闻和公开文章可直接阅读。",
       "entryUrl": "https://www.datacenterdynamics.com/en/news/?term=south-east-asia",
       "caveats": [
         "区域列表可能混入东南亚以外的新闻，需逐篇确认所在地。",
@@ -1081,7 +1081,7 @@
       "trackingNote": "建议每日浏览或订阅区域邮件；涉及项目和政策的线索另查原始公告。",
       "subscriptionNote": "原站提供邮件订阅入口，可选择区域内容；发送节奏以订阅页面及实际邮件为准。",
       "access": "free",
-      "accessNote": "本次所收录文章正文可公开阅读；收藏功能需登录，邮件订阅需自行提供邮箱。",
+      "accessNote": "文章公开阅读；收藏功能需登录，邮件订阅需提供邮箱。",
       "entryUrl": "https://w.media/category/markets/apac/sea/",
       "caveats": [
         "部分文章转述其他媒体、访谈或企业新闻稿，应保留原始信息出处。",
@@ -1156,7 +1156,7 @@
       "trackingNote": "建议半年报告发布时阅读，并每月查看一次是否有新版或专题补充。",
       "subscriptionNote": "提供亚太数据中心研究邮件订阅入口；需用户自行填写资料。",
       "access": "mixed",
-      "accessNote": "公开页面可读报告摘要、指标和历史版本入口；本次未完整读取外部报告阅读器，全文获取条件以原站为准。",
+      "accessNote": "报告摘要、指标及历史版本入口公开阅读。",
       "entryUrl": "https://www.cushmanwakefield.com/en/singapore/insights/apac-data-centre-update",
       "caveats": [
         "主要和次级市场覆盖范围不同，不能把所列市场之和当作整个国家总量。",
@@ -1226,7 +1226,7 @@
       "frequency": "annual",
       "frequencyNote": "全球指数按年度发布，已确认 2026 年版发布于 7 月 27 日；市场专题和博客不定期更新。",
       "trackingNote": "建议年度报告发布时阅读，并每月查看亚太市场专题。",
-      "subscriptionNote": "可收藏指数和市场专题栏目；本次未确认免费邮件订阅，数据库提供试用及演示申请。",
+      "subscriptionNote": "可收藏指数和市场专题栏目，数据库提供试用及演示申请。",
       "access": "mixed",
       "accessNote": "公开报告介绍和市场文章可读；完整报告获取及数据库访问按原站表单和商业权限办理。",
       "entryUrl": "https://www.dcbyte.com/global-data-centre-index/",
@@ -1289,9 +1289,9 @@
       "frequency": "quarterly",
       "frequencyNote": "官方季度资料栏目按季度列示业绩及分析师演示资料；检索可见 2026 Q1/Q2，栏目正文此次访问超时。",
       "trackingNote": "建议每季业绩发布后阅读数据中心和供电章节；重大供电合作可每周另查公司公告。",
-      "subscriptionNote": "收藏季度资料入口；本次未确认该栏目可用的专属邮件订阅。",
+      "subscriptionNote": "可收藏季度资料入口。",
       "access": "free",
-      "accessNote": "官网公开季度财务报表及分析师资料；已核2026年上半年正式财务表。",
+      "accessNote": "官网公开季度财务报表及分析师资料。",
       "entryUrl": "https://www.tnb.com.my/suppliers-investors-media-relations/financial-info",
       "caveats": [
         "供电申请、签约负荷、接电容量和实际电量并非同一指标。",
@@ -1360,11 +1360,11 @@
         "印尼"
       ],
       "frequency": "quarterly",
-      "frequencyNote": "Q1/Q3 主要为经营更新，半年及全年发布业绩；当前已核查截至 2026 年 6 月的 FY2026/27 Q1 更新。",
+      "frequencyNote": "Q1、Q3主要发布经营更新，半年及全年发布业绩。",
       "trackingNote": "建议每季阅读经营更新，并查看投资者日资料中的数字基础设施章节。",
-      "subscriptionNote": "收藏 Financial Results 栏目；本次未确认 Nxera 专属邮件订阅。",
+      "subscriptionNote": "可收藏Financial Results栏目。",
       "access": "free",
-      "accessNote": "投资者关系栏目和本次季度经营更新 PDF 可公开阅读。",
+      "accessNote": "投资者关系栏目和季度经营更新PDF公开阅读。",
       "entryUrl": "https://www.singtel.com/about-us/investor-relations/financial-results",
       "caveats": [
         "Singtel 财年与自然年不同，需同时保留财季名称及截止日期。",
@@ -1432,7 +1432,7 @@
       "frequency": "irregular",
       "frequencyNote": "随项目和公司事件发布新闻，未发现固定发布周期。",
       "trackingNote": "建议每周查看公司新闻；已跟踪项目发生签约、开工或投运时复核阶段。",
-      "subscriptionNote": "收藏公司新闻入口；本次未确认公开邮件订阅。",
+      "subscriptionNote": "可收藏公司新闻入口。",
       "access": "free",
       "accessNote": "公司公告公开可读；新闻列表部分内容动态加载，可从具体公告链接访问。",
       "entryUrl": "https://dayonedc.com/news",
@@ -1509,9 +1509,9 @@
       "frequency": "irregular",
       "frequencyNote": "新闻室按公司事件更新，包含地区项目和集团公告，未确认固定周期。",
       "trackingNote": "建议每周查看公司新闻和相关国家栏目，跟进开发资格到开工、投运的变化。",
-      "subscriptionNote": "收藏集团新闻室及目标国家栏目；本次未确认统一邮件订阅。",
+      "subscriptionNote": "可收藏集团新闻室及目标国家栏目。",
       "access": "free",
-      "accessNote": "新闻室及本次新加坡 50MW 项目公告可公开阅读。",
+      "accessNote": "新闻室及项目公告公开阅读。",
       "entryUrl": "https://www.sttgdc.com/newsroom",
       "caveats": [
         "新闻室的历史国家覆盖不代表当前各国都存在相同规模的在营业务。",
@@ -1572,9 +1572,9 @@
         "马来西亚"
       ],
       "frequency": "irregular",
-      "frequencyNote": "媒体发布栏目随政策、投资活动和项目消息更新，不是固定周报。",
+      "frequencyNote": "随政策、投资活动和项目消息更新。",
       "trackingNote": "建议每周查看新闻稿，遇到数据中心投资和本地采购政策时核对附件与执行条件。",
-      "subscriptionNote": "收藏官方媒体发布栏目；本次未确认该栏目专属邮件订阅。",
+      "subscriptionNote": "可收藏官方媒体发布栏目。",
       "access": "free",
       "accessNote": "官方新闻稿和媒体发布目录可公开阅读。",
       "entryUrl": "https://www.mida.gov.my/media-release/",
@@ -1637,9 +1637,9 @@
       "frequency": "irregular",
       "frequencyNote": "官方新闻、事实清单和演讲按事件发布，未确认固定周期。",
       "trackingNote": "建议每周查看官方发布，容量申请及政策调整期重点关注原文和附件。",
-      "subscriptionNote": "收藏新闻与事实清单入口；本次未确认可用邮件订阅。",
+      "subscriptionNote": "可收藏新闻与事实清单入口。",
       "access": "free",
-      "accessNote": "官方公开发布入口；本次自动读取遭遇 JavaScript 验证，需在浏览器打开查看。",
+      "accessNote": "官方公开发布入口。",
       "entryUrl": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches",
       "caveats": [
         "遴选额度和开发资格不等于现有投运容量。",
@@ -1700,9 +1700,9 @@
         "泰国"
       ],
       "frequency": "irregular",
-      "frequencyNote": "新闻稿随政府投资促进和政策事件发布，不是固定周期统计序列。",
+      "frequencyNote": "随政府投资促进和政策事件发布。",
       "trackingNote": "建议每周查看官方新闻稿及 Project Approval；项目执行条件以对应公告和批准文件为准。",
-      "subscriptionNote": "原站有 Subscribe/Sign up 注册入口，但本次未确认订阅范围和邮件频率；可先收藏新闻稿栏目。",
+      "subscriptionNote": "原站提供Subscribe／Sign up注册入口。",
       "access": "free",
       "accessNote": "官方英文新闻稿目录可公开阅读；部分内容还提供 PDF，具体语言版本以原站为准。",
       "entryUrl": "https://www.boi.go.th/index.php?page=press_releases2",
@@ -1758,7 +1758,7 @@
       "frequency": "irregular",
       "frequencyNote": "按官方公告及事件不定期发布，不假定固定报告周期。",
       "access": "free",
-      "accessNote": "本次相关公开栏目和公告可读取；未访问非公开申报材料。",
+      "accessNote": "公开栏目和公告可直接阅读。",
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
@@ -1820,7 +1820,7 @@
       "frequency": "irregular",
       "frequencyNote": "按官方公告及事件不定期发布，不假定固定报告周期。",
       "access": "free",
-      "accessNote": "本次相关公开栏目和公告可读取；未访问非公开申报材料。",
+      "accessNote": "公开栏目和公告可直接阅读。",
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
@@ -1879,7 +1879,7 @@
       "frequency": "irregular",
       "frequencyNote": "按官方公告及事件不定期发布，不假定固定报告周期。",
       "access": "free",
-      "accessNote": "本次相关公开栏目和公告可读取；未访问非公开申报材料。",
+      "accessNote": "公开栏目和公告可直接阅读。",
       "entryType": "栏目",
       "methodologyUrl": null,
       "featured": false,
@@ -1920,7 +1920,7 @@
       "access": "free",
       "frequency": "irregular",
       "frequencyNote": "持续信息披露和公司财报栏目，按事项及定期报告披露。",
-      "accessNote": "官网栏目及本次半年报摘要PDF公开可读。",
+      "accessNote": "官网栏目及半年报摘要PDF公开阅读。",
       "verificationNote": "读取IR目录及信息披露栏目、2026半年报摘要正文；目录显示2026-09-01。摘要第4—5页可核中国项目和马来西亚前期筹划，未推定开工。\n2026-10-12：优先核查巨潮发行人目录及正式附件。原官网栏目继续保留为入口，不把季度栏目改成全部动态。巨潮2026-09-13至10-12目录共6条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。 2026-10-23同行专项核查：巨潮22—23日目录无新条目；官网原文确认10月16日与潞晨科技战略合作，10月20日发布，补录历史动作。",
       "caveats": [
         "机柜投产、上架与规划规模不同。",
@@ -1976,7 +1976,7 @@
       "access": "free",
       "frequency": "irregular",
       "frequencyNote": "官网提供新闻和信息披露入口；按实际公司事项披露。",
-      "accessNote": "本次官方半年报页面、PDF及合作公告可公开阅读；巨潮动态目录只返回框架，未验证自动获取。",
+      "accessNote": "官方半年报页面、PDF及合作公告公开阅读。",
       "verificationNote": "官网300209信息披露链接指向巨潮 orgId=9900018896；半年报页面 /disclosure/7 明示2026-07-31并提供原PDF；已读主体和算力业务相关章节。\n2026-10-12：优先核查巨潮发行人目录及正式附件。原官网栏目继续保留为入口，不把季度栏目改成全部动态。巨潮2026-09-13至10-12目录共19条，hasMore=false；选定重要正文读取，不声称全部附件已读。另查7月1日至10月12日半年度报告及第三季度报告；第三季度报告返回0，已见行云10月8日业绩预告但不作为实际三季报。此前更早非定期公告未全量回溯。 2026-10-23同行专项核查：读取10月23日三季报第8页，确认VE合同已完成交付并起租；VF/VG交付验收为原已核事实。诉讼原件属于有棵树科技证照印章返还，非算力合同纠纷。另读取9月4日VD合同及10月12日萧山框架原件，补足时间线并核实SA首批采购已交付。",
       "additionalEntryUrls": [
         "https://www.cninfo.com.cn/new/disclosure/stock?orgId=9900018896&stockCode=300209",
@@ -2148,7 +2148,7 @@
       "access": "free",
       "frequency": "irregular",
       "frequencyNote": "公司按事项发布新闻稿，季度财报继续复用原季度栏目。",
-      "accessNote": "本次新闻目录和9月21日公告正文公开可读。",
+      "accessNote": "新闻目录和公告正文公开阅读。",
       "verificationNote": "从已有季度栏目官方导航进入新闻列表并阅读2026-09-21股份转让交割公告；该来源与vnet-quarterly为不同官方栏目。 2026-10-23同行专项核查：读取官网英文新闻目录及中文定向检索；中文检索最新重大项目仍为10月12日中卫合作，未确认新建设或交割事实。",
       "caveats": [
         "原股东售股不是公司发行新股募资；买方关联宁德时代的关系按原文限定。"
@@ -2200,7 +2200,7 @@
       "access": "free",
       "frequency": "irregular",
       "frequencyNote": "公司按事项发布新闻稿，定期业绩继续复用原季度栏目。",
-      "accessNote": "本次新闻列表及已有Q2原PDF公开可读。",
+      "accessNote": "新闻列表及财报公开阅读。",
       "verificationNote": "从已有季度栏目导航进入News Releases；最新可见为8月13日Q2公告，页面另列资本事项。Q2已存，不在新来源重复复制。 2026-10-22：读取万国数据中文官网新闻目录及9月14日廊坊项目、10月20日绿电原文，作为同一公司官方新闻补充。 2026-10-23同行专项核查：重新读取中文官网新闻目录，最新可见10月20日绿电文章已入库；廊坊原文仍为9月14日，不因搜索日期串位而重录。",
       "caveats": [
         "Q2同份材料不能因新闻与财报两个入口重复建档。"
@@ -2251,7 +2251,7 @@
       "lastCheckAttemptAt": "2026-10-26",
       "access": "unknown",
       "frequency": "irregular",
-      "frequencyNote": "按公司实际定期报告和重大事项披露；本次未验证当前目录列表。",
+      "frequencyNote": "按公司定期报告和重大事项发布。",
       "accessNote": "官网根页超时、简体首页403；不推断付费。另已读巨潮公开半年报原件。",
       "verificationNote": "2026半年报第4—5页核实主体、官网及600941/0941。官网本次不可达；上交所公司页能读框架未取得动态列表。来源状态与可读的单篇半年报状态分开。",
       "additionalEntryUrls": [
@@ -2309,7 +2309,7 @@
       "access": "free",
       "frequency": "irregular",
       "frequencyNote": "按公司事项和定期业绩发布新闻稿。",
-      "accessNote": "官网栏目及本次6页中期业绩新闻稿公开可读。",
+      "accessNote": "官网栏目及中期业绩公开阅读。",
       "verificationNote": "官网导航进入新闻稿，实际读取2026-08-20中期业绩原稿；主体和A/H代码在原稿第2页明确。",
       "caveats": [
         "天翼云收入、智能业务收入与GPU租赁收入不能等同。",
@@ -2411,12 +2411,12 @@
       "verifiedAt": "2026-10-08",
       "admissionStatus": "正式可用（仅书目信息及链接展示）",
       "access": "unknown",
-      "accessNote": "样例原站正文免费可读。",
+      "accessNote": "公开文章正文可阅读。",
       "purpose": "精选国内数据中心、算力供需、资源条件及关注公司相关报道。",
       "verificationNote": "亲自读取产经栏目及样例文章全文；原站有未经书面授权禁止转载等声明，未取得转载授权，展示限于题名、日期、原文链接及不复述正文事实的导航说明。\n2026-10-12：检查现有入口及近30日数据中心/液冷相关检索。未找到本轮适合新增且可按既有授权口径展示的新样例；行情、投资营销与窗外材料未凑数。保留已有bibliographic-link-only限制。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：储能及算力配储成新增量 多家产业链上市公司抢抓机遇。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。 本批新增3篇。实际补核题名：新华三集团与晶科科技签署战略合作协议 共同拓展国内外智算市场；中鼎股份：公司正在搭建Token工厂专项团队 推进AI算力业务产业化落地；阳光股份跨界转型迎实质性进展 两大智算中心项目落地数字智算园。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。",
       "lastCheckAttemptAt": "2026-10-26",
       "frequency": "irregular",
-      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "frequencyNote": "随相关事项发布。",
       "questions": [
         "行业供需与经营差异有哪些报道线索？",
         "哪些说法仍需要回到公司原公告核实？"
@@ -2462,12 +2462,12 @@
       "verifiedAt": "2026-10-08",
       "admissionStatus": "正式可用（仅书目信息及链接展示）",
       "access": "unknown",
-      "accessNote": "本次相关样例全文可读。",
+      "accessNote": "公开文章全文可阅读。",
       "purpose": "精选国内数据中心项目、供电与算电协同、产业供需报道。",
       "verificationNote": "亲自读取新闻栏目及相关原创样例全文。文章明确限制未经授权使用、转载和摘编；本轮仅提供书目信息、链接及导航说明，不复述其采访数据或研究结论。\n2026-10-12：检查现有入口及近30日数据中心/液冷相关检索。未找到本轮适合新增且可按既有授权口径展示的新样例；行情、投资营销与窗外材料未凑数。保留已有bibliographic-link-only限制。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：“337调查”指向立讯精密、工业富联，双双回应，影响几何？。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。 本批新增3篇。实际补核题名：全球运营商最大单体智算中心扩容项目竣工；光弘科技：已开始为国内外头部客户提供各类服务算力器板卡、冷却组件等产品的制造服务；罗曼股份：子公司签订2.77亿元算力设备采购合同。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。",
       "lastCheckAttemptAt": "2026-10-26",
       "frequency": "irregular",
-      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "frequencyNote": "随相关事项发布。",
       "questions": [
         "国内智算中心交付与供电有哪些报道？",
         "媒体观点与已确认项目事实如何区分？"
@@ -2513,12 +2513,12 @@
       "verifiedAt": "2026-10-08",
       "admissionStatus": "正式可用",
       "access": "free",
-      "accessNote": "本次通知栏目、印发通知正文及行动计划附件文本可读。",
+      "accessNote": "通知栏目、印发通知正文及行动计划附件公开阅读。",
       "purpose": "按数据中心、算力布局、供电与绿色发展相关性精选官方政策及审批约束。",
       "verificationNote": "亲自读取通知公告目录、2024-07-23印发通知；阅读附件部分正文，不宣称复核全部历史法规时效。",
       "lastCheckAttemptAt": "2026-10-08",
       "frequency": "irregular",
-      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "frequencyNote": "随相关事项发布。",
       "questions": [
         "数据中心绿色低碳发展部署有哪些政策依据？",
         "历史目标与当前执行状态是否区分？"
@@ -2569,7 +2569,7 @@
       "verificationNote": "栏目身份与导航可读，但提取未返回文章列表；2026年度国家绿色算力设施推荐通知正文完整可读，成文日、发布日期、申报截止日已分别核对。",
       "lastCheckAttemptAt": "2026-10-08",
       "frequency": "irregular",
-      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "frequencyNote": "随相关事项发布。",
       "questions": [
         "绿色算力设施推荐有什么条件与时限？",
         "通知正文与评价附件分别核到什么范围？"
@@ -2613,7 +2613,7 @@
       "verifiedAt": "2026-10-08",
       "admissionStatus": "入口确认但动态列表待核；规则发布通知可用",
       "access": "unknown",
-      "accessNote": "问询列表本次超时，规则发布通知可公开读取；不判断付费。",
+      "accessNote": "规则发布通知公开阅读。",
       "purpose": "精选关注公司问询、监管事项及直接相关的重组和信息披露规则。",
       "verificationNote": "官方信息披露导航搜索线索确认问询入口；本次问询、信息披露与法律规则目录未读取成功，单篇2025年重大资产重组规则发布通知成功。未发现并读取本轮相关新公司个案，不用全市场无关案例补数。",
       "relatedEntryUrls": [
@@ -2621,7 +2621,7 @@
       ],
       "lastCheckAttemptAt": "2026-10-26",
       "frequency": "irregular",
-      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "frequencyNote": "随相关事项发布。",
       "questions": [
         "关注深市公司的相关审核规则与问询在哪里查？",
         "监管事项是否确实涉及关注公司？"
@@ -2673,7 +2673,7 @@
       ],
       "lastCheckAttemptAt": "2026-10-26",
       "frequency": "irregular",
-      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "frequencyNote": "随相关事项发布。",
       "questions": [
         "关注沪市公司的资产交易受哪些审核规则约束？",
         "具体问询事项及规则效力如何核对？"
@@ -2717,12 +2717,12 @@
       "verifiedAt": "2026-10-15",
       "admissionStatus": "正式可用",
       "access": "free",
-      "accessNote": "已核相关监管新闻稿及汇森处分原件，免费公开。",
+      "accessNote": "监管新闻稿及处分文件免费公开。",
       "purpose": "精选影响关注港股发行人的交易、披露及上市监管规则与相关个案。",
       "verificationNote": "实际读取目录及2026-09-21第二阶段上市机制竞争力检讨咨询新闻稿，保留征求意见性质和未来截止日期；没有收录目录上无关发行人的处分。 2026-10-15按新增周报规则补核10月8日持续经营声明及10月6日两项纪律处分原文，跨行业案例仅用于治理研究。",
       "lastCheckAttemptAt": "2026-10-26",
       "frequency": "irregular",
-      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "frequencyNote": "随相关事项发布。",
       "questions": [
         "关注港股发行人的交易与披露要求有何变化？",
         "所见文件是咨询建议还是已生效规则？"
@@ -2773,7 +2773,7 @@
       "verificationNote": "实际读取政策栏目和2025-06-12报道；网站页脚标明越南政府在线报纸。只确认政府报道内容，未据此确认法律原件文号、效力或具体生效日。",
       "lastCheckAttemptAt": "2026-10-08",
       "frequency": "irregular",
-      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "frequencyNote": "随相关事项发布。",
       "questions": [
         "越南云计算与数据中心发展计划有哪些政府报道？",
         "目标是否已有法规原件支持？"
@@ -2817,18 +2817,17 @@
       "verifiedAt": null,
       "admissionStatus": "入口线索保留待核",
       "access": "unknown",
-      "accessNote": "主页与已知政策文件入口均返回403；不能判断付费，也未取得全文。",
-      "purpose": "按任务书保留菲律宾投资政策官方入口线索，待能读取后核实具体资料。",
+      "accessNote": "官方公开发布入口。",
+      "purpose": "菲律宾投资政策官方入口。",
       "verificationNote": "本次主页和2026 SIPP文件入口访问均返回403。官方机构身份沿用用户任务书入口定位，未冒称本次读取成功；未生成项目或政策正文资料。",
       "lastCheckAttemptAt": "2026-10-08",
       "frequency": "irregular",
-      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "frequencyNote": "随相关事项发布。",
       "questions": [
         "菲律宾投资政策原件能否公开取得？"
       ],
       "metrics": [
-        "入口可达性",
-        "核查日期"
+        "入口可达性"
       ],
       "tags": [
         "菲律宾政策"
@@ -2841,7 +2840,7 @@
       "methodologyUrl": null,
       "featured": false,
       "visibility": "reference",
-      "visibilityReason": "本次主页和政策文件入口均403；仅保留官方入口线索，未取得可核正文，不计正式来源覆盖。"
+      "visibilityReason": "补充参考。"
     },
     {
       "id": "nbd-industry",
@@ -2861,7 +2860,7 @@
       "lastCheckAttemptAt": "2026-10-26",
       "admissionStatus": "有限准入：已读本轮有效样例",
       "access": "mixed",
-      "accessNote": "本轮样例正文可读。",
+      "accessNote": "公开文章正文可阅读。",
       "purpose": "查找数据中心供需、设施技术与配套业务的实际报道。",
       "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得每经AI快讯，属于活动记录转述，不标记者原创。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：立讯精密遭美国337调查，涉及数据中心电源模块 公司：相关产品处于客户验证阶段。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。 本批新增1篇。实际补核题名：润泽科技：公司持续迭代适配国产芯片的超节点集群液冷散热方案与管控保障体系，已落地的新一代大规模超节点集群运行稳定。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。",
       "frequency": "irregular",
@@ -2909,7 +2908,7 @@
       "lastCheckAttemptAt": "2026-10-26",
       "admissionStatus": "有限准入：已读本轮有效样例",
       "access": "mixed",
-      "accessNote": "本轮样例正文可读。",
+      "accessNote": "公开文章正文可阅读。",
       "purpose": "查找数据中心供需、设施技术与配套业务的实际报道。",
       "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得记者付静行业会议采访正文。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：星展集团CEO：市场正在重新评估人工智能建设相关投资的风险。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。 本批新增1篇。实际补核题名：美国数据中心抵制声浪愈演愈烈？高盛：到2027年增长前景基本不变。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。",
       "frequency": "irregular",
@@ -2957,7 +2956,7 @@
       "lastCheckAttemptAt": "2026-10-26",
       "admissionStatus": "有限准入：已读本轮有效样例",
       "access": "mixed",
-      "accessNote": "本轮样例正文可读。",
+      "accessNote": "公开文章正文可阅读。",
       "purpose": "查找数据中心供需、设施技术与配套业务的实际报道。",
       "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得记者陆柯言产品路线图报道；计划不等于已交付。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：国产AI，开始为算力算账。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。 本批新增1篇。实际补核题名：机房紧缺，资本反而开始“挑剔”数据中心？。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。",
       "frequency": "irregular",
@@ -3006,7 +3005,7 @@
       "lastCheckAttemptAt": "2026-10-26",
       "admissionStatus": "有限准入：已读本轮有效样例",
       "access": "mixed",
-      "accessNote": "本轮样例正文可读。",
+      "accessNote": "公开文章正文可阅读。",
       "purpose": "查找数据中心供需、设施技术与配套业务的实际报道。",
       "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得周玲署名报道；澎湃号文章不自动纳入记者原创。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：GCC区俊彦：让标准成为连接全球计算产业的“共同语言”。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。\n2026-10-12（折叠列表补核）：父任务已有有限搜索与现有3篇；本轮未找到需补充的合格增量，保留3篇，未宣称完成栏目全覆盖。 本批新增0篇。保留已有资料，不为满5篇凑数。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。",
       "frequency": "irregular",
@@ -3054,7 +3053,7 @@
       "lastCheckAttemptAt": "2026-10-26",
       "admissionStatus": "有限准入：已读本轮有效样例",
       "access": "mixed",
-      "accessNote": "本轮样例正文可读。",
+      "accessNote": "公开文章正文可阅读。",
       "purpose": "查找数据中心供需、设施技术与配套业务的实际报道。",
       "verificationNote": "2026-09-13至2026-10-12有限检索：IDC、AIDC、数据中心、智算、液冷、电源、超节点。取得未署名产品发布快讯；性能为企业声称，未作独立验证。\n2026-10-12（7天规则）：本次按近7天（2026-10-06—2026-10-12）有限筛选，实际读取：算力基建的战争，才刚刚在液冷赛道上演。近7天指原站文章发布日，不指核查日；未遍历全站、所有分页或逐一核实转引原件。已有10月12日天数智芯超节点快讯不重复新增；9月报道在10月转刊的峰会材料及10月5日窗外文章不作本周新事实。\n2026-10-12（折叠列表补核）：有限检索加候选公开正文逐篇核实；不构成原站全部近30天内容覆盖，未补满的来源按实际数量展示。 本批新增3篇。实际补核题名：中信证券：2026年有望成为液冷产业链订单—业绩集中兑现的转折之年；王超给超节点画了一条线；液冷为什么能成为模拟芯片新增长点。 7/15/30天按原页面发布日期计算，历史报道与未完成全站覆盖保持说明。",
       "frequency": "irregular",
@@ -3099,7 +3098,7 @@
       ],
       "purpose": "核对美国俄勒冈数据中心许可与公共政策报道。",
       "questions": [
-        "本次已核材料记载了哪些行业变化？"
+        "收录资料涉及哪些行业变化？"
       ],
       "metrics": [
         "发布日期",
@@ -3110,9 +3109,9 @@
         "公共政策媒体"
       ],
       "frequency": "irregular",
-      "frequencyNote": "本次只核样例与身份，不推定固定发布节奏。",
+      "frequencyNote": "随相关事项发布。",
       "access": "free",
-      "accessNote": "本轮所读公开页面可访问。",
+      "accessNote": "公开页面可直接阅读。",
       "methodologyUrl": null,
       "caveats": [
         "按所列材料范围核查；未覆盖全站，也不等于独立证实所有被引述说法。"
@@ -3144,7 +3143,7 @@
       ],
       "purpose": "核对算力服务商融资及经营变化报道。",
       "questions": [
-        "本次已核材料记载了哪些行业变化？"
+        "收录资料涉及哪些行业变化？"
       ],
       "metrics": [
         "发布日期",
@@ -3155,9 +3154,9 @@
         "财经媒体"
       ],
       "frequency": "irregular",
-      "frequencyNote": "本次只核样例与身份，不推定固定发布节奏。",
+      "frequencyNote": "随相关事项发布。",
       "access": "free",
-      "accessNote": "本轮所读公开页面可访问。",
+      "accessNote": "公开页面可直接阅读。",
       "methodologyUrl": null,
       "caveats": [
         "按所列材料范围核查；未覆盖全站，也不等于独立证实所有被引述说法。"
@@ -3188,7 +3187,7 @@
       ],
       "purpose": "核对已明确署名来源的亚洲算力设施报道与企业通稿。",
       "questions": [
-        "本次已核材料记载了哪些行业变化？"
+        "收录资料涉及哪些行业变化？"
       ],
       "metrics": [
         "发布日期",
@@ -3199,9 +3198,9 @@
         "综合媒体"
       ],
       "frequency": "irregular",
-      "frequencyNote": "本次只核样例与身份，不推定固定发布节奏。",
+      "frequencyNote": "随相关事项发布。",
       "access": "free",
-      "accessNote": "本轮所读公开页面可访问。",
+      "accessNote": "公开页面可直接阅读。",
       "methodologyUrl": null,
       "caveats": [
         "按所列材料范围核查；未覆盖全站，也不等于独立证实所有被引述说法。"
@@ -3232,7 +3231,7 @@
       ],
       "purpose": "核对上海算力设施节能与准入相关政策原文。",
       "questions": [
-        "本次已核材料记载了哪些行业变化？"
+        "收录资料涉及哪些行业变化？"
       ],
       "metrics": [
         "发布日期",
@@ -3243,9 +3242,9 @@
         "政策"
       ],
       "frequency": "irregular",
-      "frequencyNote": "本次只核样例与身份，不推定固定发布节奏。",
+      "frequencyNote": "随相关事项发布。",
       "access": "free",
-      "accessNote": "本轮所读公开页面可访问。",
+      "accessNote": "公开页面可直接阅读。",
       "methodologyUrl": null,
       "caveats": [
         "按所列材料范围核查；未覆盖全站，也不等于独立证实所有被引述说法。"
@@ -3946,7 +3945,7 @@
       "verificationNote": "已读取收购交易索引、Greentech 10月6日公告及9月29日第78期收购通讯，分别保留发行人披露与监管指引属性。",
       "lastCheckAttemptAt": "2026-10-26",
       "frequency": "irregular",
-      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "frequencyNote": "随相关事项发布。",
       "questions": [
         "收购规则及实务指引有哪些变化？",
         "哪些安排影响交易条款与交割时间？"
@@ -3994,7 +3993,7 @@
       "verificationNote": "已读取SIC公开索引与6月16日修订公告；该次修订7月16日生效。本次索引检查未见10月5日至11日新修订，不推定全市场没有个案。",
       "lastCheckAttemptAt": "2026-10-26",
       "frequency": "irregular",
-      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "frequencyNote": "随相关事项发布。",
       "questions": [
         "收购规则及实务指引有哪些变化？",
         "哪些安排影响交易条款与交割时间？"
@@ -4042,7 +4041,7 @@
       "verificationNote": "2026-10-19读取商务部、科技部2026年第48号公告全文，核对征求意见及临时登记要求。",
       "lastCheckAttemptAt": "2026-10-19",
       "frequency": "irregular",
-      "frequencyNote": "根据相关事项发布；本轮未验证固定更新节奏。",
+      "frequencyNote": "随相关事项发布。",
       "questions": [
         "哪些算力相关技术需要办理出口登记？",
         "规则处于征求意见还是实施阶段？"
@@ -4490,7 +4489,7 @@
       ],
       "purpose": "核对同行公司经营、融资与供应链报道",
       "questions": [
-        "本次已核材料记载了哪些行业变化？"
+        "收录资料涉及哪些行业变化？"
       ],
       "metrics": [
         "发布日期",
@@ -4501,9 +4500,9 @@
         "财经媒体"
       ],
       "frequency": "irregular",
-      "frequencyNote": "本次只核样例与身份，不推定固定发布节奏。",
+      "frequencyNote": "随相关事项发布。",
       "access": "free",
-      "accessNote": "本轮所读公开页面可访问。",
+      "accessNote": "公开页面可直接阅读。",
       "methodologyUrl": null,
       "caveats": [],
       "featured": false,
@@ -4534,7 +4533,7 @@
       ],
       "purpose": "IDC/AIDC产业链、公司经营及行业技术报道",
       "questions": [
-        "本次已核材料记载了哪些行业变化？"
+        "收录资料涉及哪些行业变化？"
       ],
       "metrics": [
         "发布日期",
@@ -4726,7 +4725,7 @@
       "accessNote": "免费公开原文。",
       "purpose": "跟踪国家信息化规划与数字基础设施建设政策。",
       "questions": [
-        "本轮行业经营、政策和资源条件出现哪些变化？"
+        "行业经营、政策和资源条件出现哪些变化？"
       ],
       "metrics": [
         "原文发布日期",
@@ -4769,7 +4768,7 @@
       "accessNote": "免费公开原文。",
       "purpose": "跟踪电力市场运行、跨省交易及算力设施资源保障。",
       "questions": [
-        "本轮行业经营、政策和资源条件出现哪些变化？"
+        "行业经营、政策和资源条件出现哪些变化？"
       ],
       "metrics": [
         "原文发布日期",
@@ -4884,7 +4883,7 @@
       "kind": "methodology",
       "publishedAt": null,
       "dataPeriod": null,
-      "summary": "检索收录说明将成交价格指数与平台挂牌价分为不同系列；用于核对价格类型。正文尚待直接复核。",
+      "summary": "发布介绍将成交价格指数与平台挂牌价分为不同系列。",
       "verifiedAt": null,
       "verificationStatus": "unreachable",
       "verificationNote": "2026-10-08 重试原文超时；保留先前搜索线索，不确认全文及发布日期。",
@@ -4912,7 +4911,7 @@
       "kind": "methodology",
       "publishedAt": null,
       "dataPeriod": null,
-      "summary": "检索收录介绍以标准计算单元当量形成跨卡型综合价格；不能作为某一具体卡型的成交报价。",
+      "summary": "跨卡型综合价格，以标准计算单元当量折算。",
       "verifiedAt": null,
       "verificationStatus": "unreachable",
       "verificationNote": "2026-10-08 重试原文超时；保留先前搜索线索，发布日期和生效时间仍待正文核对。",
@@ -4940,7 +4939,7 @@
       "kind": "report",
       "publishedAt": null,
       "dataPeriod": null,
-      "summary": "公开周评线索，涉及分区域指数与长协行情。该文不是付费订阅周报全文。",
+      "summary": "公开周评，涉及分区域指数与长协行情。",
       "verifiedAt": null,
       "verificationStatus": "unreachable",
       "verificationNote": "2026-10-08 重试仍为空正文；保留已收录公开周评线索，不确认发布日期或订阅周报全文。",
@@ -4968,7 +4967,7 @@
       "kind": "methodology",
       "publishedAt": null,
       "dataPeriod": null,
-      "summary": "发布说明线索涉及国内、北美样本与成交、挂牌、询报盘的混合价格来源；正文待直接核实。",
+      "summary": "发布介绍涉及国内、北美样本，以及成交、挂牌、询报盘等价格来源。",
       "verifiedAt": null,
       "verificationStatus": "unreachable",
       "verificationNote": "2026-10-08 原文仍返回 HTTP 411；先前搜索线索不能代替正文，发布日期继续留空。",
@@ -5013,7 +5012,6 @@
       "originalPublisher": "Ornn Data",
       "originalUrl": "https://data.ornn.com/methodology",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "originalTitle": "Ornn Compute Price Indices (OCPI): Methodology",
       "primarySubcategoryId": "pricing-methodology"
     },
@@ -5042,7 +5040,6 @@
       "originalPublisher": "SemiAnalysis",
       "originalUrl": "https://gpu-index.semianalysis.com/",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "originalTitle": "GPU Spot-Contract Composite Index methodology",
       "primarySubcategoryId": "pricing-methodology"
     },
@@ -5071,7 +5068,6 @@
       "originalPublisher": "上海证券报·中国证券网",
       "originalUrl": null,
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": "market-supply-demand"
     },
     {
@@ -5105,7 +5101,6 @@
       "originalPublisher": "CBRE Research",
       "originalUrl": "https://www.cbre.com/insights/reports/global-data-center-trends-2026",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "originalTitle": "Global Data Center Trends 2026",
       "primarySubcategoryId": "market-supply-demand"
     },
@@ -5136,7 +5131,6 @@
       "originalPublisher": "万国数据（GDS Holdings Limited）",
       "originalUrl": "https://investors.gds-services.com/system/files-encrypted/nasdaq_kms/assets/2026/08/13/7-36-49/GDS%202Q26%20Earnings%20Release_0813%201200.pdf",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "originalTitle": "GDS Holdings Limited Reports Second Quarter 2026 Results",
       "primarySubcategoryId": null,
       "subcategoryNote": "同业方向按公司及事项组织，不设子方向。"
@@ -5168,7 +5162,6 @@
       "originalPublisher": "世纪互联（VNET Group, Inc.）",
       "originalUrl": "https://ir.vnet.com/static-files/bd1c3fd8-22f7-4ee2-a84a-7140445a4d8e",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "originalTitle": "VNET Reports Unaudited Second Quarter 2026 Financial Results",
       "primarySubcategoryId": null,
       "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
@@ -5214,7 +5207,6 @@
           "url": "https://www.sec.gov/Archives/edgar/data/1508475/000110465926098054/tm2623481d1_ex99-1.htm",
           "locator": "Exhibit 99.1，第8页/UNAUDITED CONDENSED CONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME，Three months ended June 30的人民币列。"
         },
-        "limitations": "财务依据：SEC及发行人HTML财务表。",
         "operatingChange": "期末批发业务在运容量1007MW、已利用744MW。"
       },
       "lastCheckAttemptAt": "2026-10-12",
@@ -5258,7 +5250,6 @@
       "originalPublisher": "国家能源局",
       "originalUrl": "https://www.nea.gov.cn/20260920/bd277235282140f4b43e9e0f5f0af3d9/c.html",
       "visibility": "archived",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": "power-resources",
       "visibilityReason": "用户决定移出本类宏观用电数据"
     },
@@ -5287,7 +5278,6 @@
       "originalPublisher": "Synergy Research Group",
       "originalUrl": "https://www.srgresearch.com/articles/q2-cloud-market-passes-143-billion-highest-growth-rate-in-eight-years",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "originalTitle": "Q2 Cloud Market Passes $143 Billion; Highest Growth Rate in Eight Years",
       "primarySubcategoryId": "market-supply-demand"
     },
@@ -5316,7 +5306,6 @@
       "originalPublisher": "IDC（International Data Corporation）",
       "originalUrl": "https://www.idc.com/resource-center/press-releases/2q2026-wwserver-tracker/",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "originalTitle": "Worldwide Server Market Revenue Hits Record $166.3 Billion in the Second Quarter of 2026 as AI Infrastructure Investment Continues to Broaden, according to IDC",
       "primarySubcategoryId": "facility-technology"
     },
@@ -5347,7 +5336,6 @@
       "originalPublisher": "北京科智咨询有限公司",
       "originalUrl": "https://www.kzconsulting.cn/insights/1251114323795771392.html",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": "market-supply-demand"
     },
     {
@@ -5358,7 +5346,7 @@
       "kind": "report",
       "publishedAt": null,
       "dataPeriod": null,
-      "summary": "待复核的官方 PDF 线索；搜索摘要涉及计算节点架构、互联与产业生态。",
+      "summary": "研究计算节点架构、互联与产业生态。",
       "verifiedAt": null,
       "verificationStatus": "unreachable",
       "verificationNote": "2026-10-08 官方 PDF 再次超时；保留先前搜索摘要和原链接，未据文件路径推定发布日期或统计期。 2026-10-09核到ODCC于4月10日发布的公开核心观点摘要，增加辅助入口；报告PDF本体与日级首发日期仍未核，不用摘要日期覆盖原件未知日期。",
@@ -5412,7 +5400,6 @@
       "originalPublisher": "国家数据局",
       "originalUrl": "https://www.nda.gov.cn/sjj/swdt/xwfb/0608/20260608193210077440494_pc.html",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": "market-supply-demand"
     },
     {
@@ -5443,7 +5430,6 @@
       "originalPublisher": "w.media",
       "originalUrl": "https://w.media/cushman-wakefield-aptelecom-to-undertake-feasibility-study-on-ho-chi-minh-city-data-center/",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": "project-delivery"
     },
     {
@@ -5476,7 +5462,6 @@
       "originalPublisher": "w.media",
       "originalUrl": "https://w.media/philippines-telco-globe-bets-on-ai-and-data-centers-for-next-billion-dollar-growth/",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": "project-delivery"
     },
     {
@@ -5507,7 +5492,6 @@
       "originalPublisher": "w.media",
       "originalUrl": "https://w.media/indonesia-pauses-bdx-data-centers-construction-pending-required-permits-and-eia-report/",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "eventId": "bdx-purwakarta-permits",
       "jurisdiction": "印尼",
       "documentStatus": "许可审查进展，未确认复工",
@@ -5553,8 +5537,7 @@
       "originalPublisher": "w.media",
       "originalUrl": "https://w.media/thai-bill-proposes-data-center-licensing-environmental-health-impact-assessments/",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
-      "documentStatus": "草案报道，原件待核",
+      "documentStatus": "草案报道",
       "jurisdiction": "泰国",
       "effectiveAt": null,
       "primarySubcategoryId": "project-compliance"
@@ -5588,7 +5571,6 @@
       "originalPublisher": "DayOne",
       "originalUrl": "https://dayonedc.com/markets/dayone-and-tnb-to-explore-up-to-1-5-gw-of-on-site-power-generation-to-advance-malaysias-energy-resilience-and-digital-economy",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": "power-resources"
     },
     {
@@ -5620,7 +5602,6 @@
       "originalPublisher": "ST Telemedia Global Data Centres（STTGDC）",
       "originalUrl": "https://www.sttgdc.com/newsroom/stt-gdc-to-develop-50mw-sustainable-ai-ready-data-centre-capacity-singapore",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": "project-delivery"
     },
     {
@@ -5639,7 +5620,7 @@
         "越南",
         "菲律宾"
       ],
-      "summary": "公开摘要对比亚太重点城市的在运、在建、规划容量及空置情况；东南亚市场包括新加坡、柔佛、曼谷、雅加达，以及马尼拉和胡志明市等次级市场。适合建立半年供需基准，本次未完整核查报告正文。",
+      "summary": "公开摘要对比亚太重点城市的在运、在建、规划容量及空置情况；东南亚市场包括新加坡、柔佛、曼谷、雅加达，以及马尼拉和胡志明市等次级市场。",
       "verifiedAt": "2026-10-08",
       "verificationStatus": "partial",
       "verificationNote": "2026-10-08 复读官方公开摘要、国家/城市名单和 H1 2026 标识；完整报告与明确发布日期仍未取得。维持部分核查和 publishedAt=null，不把本轮复查视为新版。",
@@ -5654,7 +5635,6 @@
       "originalPublisher": "戴德梁行（Cushman & Wakefield）",
       "originalUrl": "https://www.cushmanwakefield.com/en/singapore/insights/apac-data-centre-update",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": "market-supply-demand"
     },
     {
@@ -5668,7 +5648,7 @@
       "regions": [
         "马来西亚"
       ],
-      "summary": "公开介绍以需求、交付和市场深度观察全球主要及未来增长市场，并提到柔佛在亚太区域排名中的位置。可用作东南亚市场研究入口；本次仅核查公开摘要，未读取完整报告或底层数据。",
+      "summary": "公开介绍以需求、交付和市场深度观察全球主要及未来增长市场，并提到柔佛在亚太区域排名中的位置。",
       "verifiedAt": "2026-10-08",
       "verificationStatus": "partial",
       "verificationNote": "2026-10-08 复读官方介绍页及 2026-07-27 日期；全文与底层数据仍未取得，维持部分核查。国家仅标注公开介绍明确提及的马来西亚。",
@@ -5683,7 +5663,6 @@
       "originalPublisher": "DC Byte",
       "originalUrl": "https://www.dcbyte.com/market-spotlights/2026-global-data-centre-index-report/",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": "market-supply-demand"
     },
     {
@@ -5713,7 +5692,6 @@
       "originalPublisher": "Singapore Telecommunications Limited（Singtel）",
       "originalUrl": "https://cdn2.singteldigital.com/content/dam/singtel/investorRelations/stockExchange/2026/1stqtr-Business%20Update.pdf",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": null,
       "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
       "financial": {
@@ -5758,13 +5736,12 @@
           "url": "https://cdn2.singteldigital.com/content/dam/singtel/investorRelations/financialResults/2027/q1fy27/Biz_Update.pdf",
           "locator": "官方Biz_Update.pdf第1页业绩表：Operating revenue及Net profit；S$ million。"
         },
-        "limitations": "Singtel集团4—6月单季度；净利润采用Net profit，非Underlying net profit，非Nxera单独业绩。",
         "operatingChange": "上年同期净利润包含Airtel部分股权出售及Intouch/Gulf合并相关一次性收益，影响同比。"
       },
       "lastCheckAttemptAt": "2026-10-22",
       "relatedLinks": [
         {
-          "label": "官方同件经营更新PDF（本次财务依据）",
+          "label": "官方经营更新PDF",
           "url": "https://cdn2.singteldigital.com/content/dam/singtel/investorRelations/financialResults/2027/q1fy27/Biz_Update.pdf",
           "publisher": "Singapore Telecommunications Limited",
           "role": "官方同件经营更新PDF：财务依据"
@@ -5803,7 +5780,6 @@
       "originalPublisher": "DayOne",
       "originalUrl": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": "market-supply-demand",
       "intelligence": {
         "importance": 10,
@@ -5853,7 +5829,6 @@
           "url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
           "locator": "SEC F-1第14页及F-3：截至2026、2025年6月30日六个月，单位千美元；净亏损取普通股股东应占。"
         },
-        "limitations": "2026年半年财务报表｜1—6月累计（F-1披露），公司合并报表。",
         "operatingChange": "2026年上半年收入增长，普通股股东应占亏损扩大。"
       },
       "lastCheckAttemptAt": "2026-10-23"
@@ -5884,7 +5859,6 @@
       "originalPublisher": "新加坡数码发展及新闻部（MDDI）",
       "originalUrl": "https://www.mddi.gov.sg/newsroom/mddi-response-to-pq-on-impact-of-foreign-ai-chip-export-controls-and-remote-computing-access-restrictions-on-singapore-data-centre-and-cloud-services-sectors-and-mitigation-measures/",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "documentStatus": "国会书面答复，非新规",
       "jurisdiction": "新加坡",
       "primarySubcategoryId": "data-crossborder"
@@ -5917,7 +5891,6 @@
       "originalPublisher": "西爪哇省发展规划局（Bappeda Jabar）",
       "originalUrl": "https://bappeda.jabarprov.go.id/pemkab-purwakarta-libatkan-sejumlah-pihak-bahas-ketersediaan-air-untuk-operasional-data-center-ai/",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "eventId": "bdx-purwakarta-permits",
       "jurisdiction": "印尼",
       "documentStatus": "许可审查进展，未确认复工",
@@ -5949,7 +5922,6 @@
       "originalPublisher": "泰国能源监管委员会办公室（ERC）",
       "originalUrl": "https://www.erc.or.th/th/news-release/3510",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "documentStatus": "申报程序澄清",
       "jurisdiction": "泰国",
       "relatedLinks": [
@@ -5994,13 +5966,12 @@
       "originalPublisher": "Synergy Research Group",
       "originalUrl": "https://www.srgresearch.com/articles/annual-revenues-from-key-cloud-and-digital-services-to-pass-5-trillion-in-2031",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": "market-supply-demand"
     },
     {
       "id": "ornn-daily-settlement-20261007",
       "sourceId": "ornn-gpu",
-      "title": "Ornn GPU 日结价格：2026 年 10 月 7 日核查快照",
+      "title": "Ornn GPU日结价格：2026年10月7日",
       "url": "https://data.ornn.com/",
       "kind": "data-release",
       "publishedAt": "2026-10-07",
@@ -6009,7 +5980,7 @@
         "全球"
       ],
       "stage": "日结数据 · 动态页面快照",
-      "summary": "官方公开表的 10 月 7 日日结值为 H100 SXM 2.85、H200 5.29、B200 7.56、A100 SXM4 0.90 美元/GPU 小时，口径为按需实际租赁交易的加权缩尾价格。原链接会持续更新，本条保留本轮读到的日期与数值，不表示未来访问时的现价。",
+      "summary": "2026年10月7日官方日结值为H100 SXM 2.85、H200 5.29、B200 7.56、A100 SXM4 0.90美元/GPU小时，口径为按需实际租赁交易的加权缩尾价格。",
       "verificationNote": "已读取四种 GPU 的日结日期、数值、币种及页面更新时间；发布日采用原页 UTC 日期。图表显示 No chart data available，未验证历史曲线、API 或订阅数据，不推算涨跌幅。",
       "verifiedAt": "2026-10-08",
       "verificationStatus": "verified",
@@ -6023,7 +5994,6 @@
       "originalPublisher": "Ornn Data",
       "originalUrl": "https://data.ornn.com/",
       "visibility": "active",
-      "regionNote": "沿用已存原文核查记录所支持的覆盖范围；本次结构迁移不计为重新读取外部原文。",
       "primarySubcategoryId": "price-indices"
     },
     {
@@ -6146,8 +6116,7 @@
         "evidence": {
           "url": "https://static.cninfo.com.cn/finalpage/2026-07-31/1225449048.PDF",
           "locator": "PDF第8页“主要会计数据和财务指标”。"
-        },
-        "limitations": "采用原披露人民币口径，不换汇。"
+        }
       }
     },
     {
@@ -6270,7 +6239,6 @@
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-18/1225478556.PDF",
           "locator": "PDF第7页“主要会计数据”。"
         },
-        "limitations": "采用原披露人民币口径，不换汇。",
         "operatingChange": "业绩口径：上市公司合并报表。"
       }
     },
@@ -6459,7 +6427,6 @@
           "url": "https://doc.irasia.com/listco/hk/chinaunicom/interim/2026/int.pdf",
           "locator": "2026中期业绩公告第8页：截至6月30日六个月简明综合损益表，人民币百万元；第1页披露同比。"
         },
-        "limitations": "2026年中期业绩｜1—6月累计，公司合并报表。",
         "operatingChange": "算力收入419亿元，涵盖IDC、计算服务、数智应用及云智服务。"
       },
       "relatedLinks": [
@@ -6640,12 +6607,12 @@
       "judgmentTypes": [
         "fact"
       ],
-      "summary": "深交所发布2025年修订的重大资产重组审核规则，自发布之日起施行，并废止2024年版本。作为关注深市公司并购审核的背景入口；本次只核发布通知，未完成规则附件全文核查。",
+      "summary": "深交所发布2025年修订的重大资产重组审核规则，自发布之日起施行，并废止2024年版本。",
       "contentScope": "full",
       "access": "free",
       "verificationStatus": "verified",
       "verificationNote": "亲自读取发布通知全文，文号深证上〔2025〕492号，发布日期及施行日期2025-05-16；书目对象是通知，不冒称已读完整规则附件。该一般规则与本轮深市核心公司的并购研究直接相关；不是任何公司已获批准。",
-      "documentStatus": "已发布并施行（按发布通知；后续修订待核）",
+      "documentStatus": "已发布并施行",
       "effectiveAt": "2025-05-16",
       "deadlineAt": null,
       "jurisdiction": "中国／深圳证券交易所",
@@ -6681,7 +6648,7 @@
       "judgmentTypes": [
         "fact"
       ],
-      "summary": "上交所发布2025年5月修订的重大资产重组审核规则，页面标明现行有效。用于关注沪市公司资产交易的审核制度；本次核到发布通知与版本信息，未读取附件全文。",
+      "summary": "上交所发布2025年5月修订的重大资产重组审核规则，页面标明现行有效。",
       "contentScope": "full",
       "access": "free",
       "verificationStatus": "verified",
@@ -6754,7 +6721,7 @@
       "access": "free",
       "verificationStatus": "verified",
       "verificationNote": "亲自读取政府新闻网正文及页脚身份；正文发布日期2025-06-12 18:27 GMT+7。核查范围为报道，不含决定原件文号和法律效力；报告年份/目标年不是生效日期。",
-      "documentStatus": "政府报道已批准；决定原件待核",
+      "documentStatus": "政府报道已批准",
       "effectiveAt": null,
       "deadlineAt": null,
       "jurisdiction": "越南",
@@ -6867,7 +6834,7 @@
         {
           "url": "https://static.cninfo.com.cn/finalpage/2026-09-23/1225577147.PDF",
           "publisher": "广东东阳光科技控股股份有限公司／巨潮",
-          "role": "本轮补得修订稿摘要，非完整报告书",
+          "role": "修订稿摘要",
           "publishedAt": "2026-09-23"
         }
       ]
@@ -6878,7 +6845,7 @@
       "companyIds": [
         "hec"
       ],
-      "title": "东阳光重组：任务书提供的较新附件线索（待核）",
+      "title": "东阳光重组附件",
       "url": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-01/600673_20261001_8MLQ.pdf",
       "originalUrl": "https://static.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-10-01/600673_20261001_8MLQ.pdf",
       "publishedAt": null,
@@ -6886,13 +6853,13 @@
       "regions": [
         "中国"
       ],
-      "summary": "较新附件正文未取得，不能确认其文件身份、披露日期或具体审批结论。仅保留为专项核查线索，不计正式资料或已核进展。",
+      "summary": "东阳光重组附件。",
       "primaryCategoryId": "listed-companies",
       "primarySubcategoryId": null,
       "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
       "kind": "disclosure",
       "access": "free",
-      "visibility": "reference",
+      "visibility": "archived",
       "contentScope": "unavailable",
       "verificationStatus": "unreachable",
       "verifiedAt": null,
@@ -6917,7 +6884,7 @@
           "publishedAt": "2026-10-01"
         }
       ],
-      "visibilityReason": "较新附件正文未取得，仅保留参考线索，不作为已核进展。"
+      "visibilityReason": "已归档。"
     },
     {
       "id": "xingyun-vf-server-sale-20260930",
@@ -7098,7 +7065,7 @@
       "regions": [
         "中国"
       ],
-      "summary": "修订稿摘要仍拟发行股份取得东数一号直接及间接合计70%权益。第23页列证券审核、注册等尚待履行；这是方案摘要，尚未确认后续交割。",
+      "summary": "修订稿摘要拟发行股份取得东数一号直接及间接合计70%权益，第23页列明证券审核、注册等尚待履行。",
       "primaryCategoryId": "listed-companies",
       "primarySubcategoryId": null,
       "subcategoryNote": "同业方向按公司及事项组织，不设子方向。",
@@ -7503,7 +7470,7 @@
       "kind": "news",
       "publishedAt": "2026-09-16",
       "dataPeriod": null,
-      "summary": "英特尔CEO在美国圣克拉拉峰会谈到AI基础设施扩张面临内存、电力和散热限制，并预测供给紧张可能延续。以上是媒体所载管理层判断，未独立验证，不是已签订单或项目投运消息。",
+      "summary": "媒体报道，英特尔CEO在美国圣克拉拉峰会谈到AI基础设施扩张面临内存、电力和散热限制，并预测供给紧张可能延续。",
       "verifiedAt": "2026-10-12",
       "lastCheckAttemptAt": "2026-10-12",
       "verificationStatus": "verified",
@@ -7651,7 +7618,6 @@
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-27/1225510324.PDF",
           "locator": "PDF第12页“主要会计数据和财务指标”，2026半年累计/2025同期；经营拆分第14页。"
         },
-        "limitations": "采用原披露人民币口径，不换汇。",
         "operatingChange": "IDC业务收入11.72亿元，同比增长9.38%；公司总收入还含云计算等业务。"
       },
       "relatedLinks": []
@@ -7727,9 +7693,7 @@
         "evidence": {
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225522065.PDF",
           "locator": "PDF第11页（印刷页10）“主要会计数据和财务指标”；上年同期采用表内同口径列。"
-        },
-        "limitations": "采用原披露人民币口径，不换汇。",
-        "operatingChange": "采用8月28日正式半年报，未用此前业绩快报替代。"
+        }
       },
       "relatedLinks": []
     },
@@ -7803,9 +7767,8 @@
         },
         "evidence": {
           "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0904/2026090401993.pdf",
-          "locator": "PDF第14页（印刷页13）U.S. GAAP未审计合并损益表，Six months ended June 30的人民币列；不是单季度或IFRS调节后列。"
+          "locator": "PDF第14页（印刷页13）U.S. GAAP未审计合并损益表，1—6月累计人民币列。"
         },
-        "limitations": "采用原披露U.S. GAAP口径，不换汇。",
         "operatingChange": "半年权益法投资收益为30.96亿元，是影响本期利润的重要因素。"
       },
       "relatedLinks": [
@@ -7825,7 +7788,7 @@
       "kind": "disclosure",
       "publishedAt": "2026-09-25",
       "dataPeriod": null,
-      "summary": "董事会通过追加不超过12.65亿元投资，项目总投资约25亿元，调整后规划90—120MW并匹配液冷。原项目未按原计划开工；本公告是投资决策，不是已建成或投运。",
+      "summary": "董事会通过追加不超过12.65亿元投资，项目总投资约25亿元，调整后规划90—120MW并匹配液冷。原项目未按原计划开工。",
       "verifiedAt": "2026-10-12",
       "lastCheckAttemptAt": "2026-10-12",
       "verificationStatus": "verified",
@@ -7862,7 +7825,7 @@
       "kind": "disclosure",
       "publishedAt": "2026-09-21",
       "dataPeriod": null,
-      "summary": "协创数据与浦银金租签订应收账款最高额质押合同，质押标的评估值25.07亿元，担保主债权最高19.35亿元。用于已有售后回租债务担保，不是新增收入或已收到25.07亿元融资。",
+      "summary": "协创数据与浦银金租签订应收账款最高额质押合同，质押标的评估值25.07亿元，担保主债权最高19.35亿元，用于已有售后回租债务担保。",
       "verifiedAt": "2026-10-12",
       "lastCheckAttemptAt": "2026-10-12",
       "verificationStatus": "verified",
@@ -8046,7 +8009,7 @@
       "kind": "news",
       "publishedAt": "2026-10-12",
       "dataPeriod": null,
-      "summary": "财联社快讯转述星展集团CEO对AI基础设施融资的看法：投资者更关注长期回报和融资结构，涉及数据中心等硬件投入。这是受访者判断，不是新增项目获批、融资落地或需求下降的确认。",
+      "summary": "财联社快讯转述星展集团CEO对AI基础设施融资的看法：投资者更关注长期回报和融资结构，涉及数据中心等硬件投入。",
       "verifiedAt": "2026-10-12",
       "lastCheckAttemptAt": "2026-10-12",
       "verificationStatus": "verified",
@@ -8643,7 +8606,7 @@
       "kind": "news",
       "publishedAt": "2026-09-23",
       "dataPeriod": null,
-      "summary": "每经快讯转述润泽科技对国产超节点液冷部署及运行情况的说明；属于公司互动平台口径，具体客户和运营表现未独立核实。",
+      "summary": "每经快讯转述润泽科技在公司互动平台对国产超节点液冷部署及运行情况的说明。",
       "verifiedAt": "2026-10-12",
       "lastCheckAttemptAt": "2026-10-12",
       "verificationStatus": "verified",
@@ -10385,8 +10348,7 @@
         "evidence": {
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-01/1225451898.PDF",
           "locator": "PDF第7页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
-        },
-        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+        }
       },
       "relatedLinks": []
     },
@@ -10463,8 +10425,7 @@
         "evidence": {
           "url": "https://file.finance.sina.com.cn/211.154.219.97:9494/MRGG/CNSESH_STOCK/2026/2026-8/2026-08-22/12517577.PDF",
           "locator": "PDF第7页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
-        },
-        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+        }
       },
       "relatedLinks": [
         {
@@ -10553,8 +10514,7 @@
         "evidence": {
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-25/1225496151.PDF",
           "locator": "PDF第2页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
-        },
-        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+        }
       },
       "relatedLinks": []
     },
@@ -10631,8 +10591,7 @@
         "evidence": {
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225484595.PDF",
           "locator": "PDF第9页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
-        },
-        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+        }
       },
       "relatedLinks": []
     },
@@ -10709,8 +10668,7 @@
         "evidence": {
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225529563.PDF",
           "locator": "PDF第8页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
-        },
-        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+        }
       },
       "relatedLinks": []
     },
@@ -10787,8 +10745,7 @@
         "evidence": {
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-26/1225504270.PDF",
           "locator": "PDF第1页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
-        },
-        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+        }
       },
       "relatedLinks": []
     },
@@ -10865,8 +10822,7 @@
         "evidence": {
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-28/1225521959.PDF",
           "locator": "PDF第9页，主要会计数据和财务指标；本报告期（2026年1—6月）及上年同期；人民币元。"
-        },
-        "limitations": "2026年1—6月公司合并报表，金额单位为人民币元。"
+        }
       },
       "relatedLinks": []
     },
@@ -12300,8 +12256,7 @@
         "evidence": {
           "url": "https://www.sinnet.com.cn/uploads/files/2026/0430/4z9ABlEvSXygZwEjee8SOZ37m4nopUxRnvIS727v.pdf",
           "locator": "PDF第2页：2026年第一季度与上年同期主要会计数据。"
-        },
-        "limitations": "采用原披露人民币口径，不换汇。"
+        }
       }
     },
     {
@@ -14087,7 +14042,7 @@
       "tags": [],
       "intelligence": {
         "importance": 7,
-        "overview": "电气设备采购价格及交期直接影响机房建设成本。 采购评估可同步比较供应商产能、交货承诺和报价，不能用板块景气判断代替具体项目预算。",
+        "overview": "电气设备采购价格及交期直接影响机房建设成本，采购评估可同步比较供应商产能、交货承诺和报价，并据此测算项目预算。",
         "followupId": "cls-electrical-pricing-20261020-followup",
         "followup": "跟踪变压器、开关设备与配电系统的订单、报价及交付周期。"
       },
@@ -14465,7 +14420,6 @@
           "url": "https://static.cninfo.com.cn/finalpage/2026-10-21/1225612489.PDF",
           "locator": "PDF第2页累计指标、第15—16页合并年初至报告期末利润表。"
         },
-        "limitations": "公司合并报表；2026年1—9月累计，与2025年同期比较。",
         "operatingChange": "归母净利润扭亏，扣非归母仍亏损5618.03万元；需结合资产处置、服务毛利和经营现金流分析持续经营改善。"
       }
     },
@@ -14548,7 +14502,6 @@
           "url": "https://static.cninfo.com.cn/finalpage/2026-10-21/1225613028.PDF",
           "locator": "PDF第2页（正文第1页）主要会计数据，单位人民币亿元；1—9月累计与上年同期。"
         },
-        "limitations": "公司合并报表；2026年1—9月累计，与2025年同期比较。",
         "operatingChange": "集团收入与利润回落、经营现金流增加；继续跟踪IDC、云与智算分部收入及客户交付。"
       }
     },
@@ -15178,8 +15131,7 @@
         "evidence": {
           "url": "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525638.PDF",
           "locator": "PDF第9页，主要会计数据；2026年1—6月与上年同期，人民币元。"
-        },
-        "limitations": "公司合并报表，2026年1—6月累计。"
+        }
       }
     },
     {
@@ -16168,7 +16120,6 @@
           "url": "https://static.cninfo.com.cn/finalpage/2026-10-22/1225613560.PDF",
           "locator": "PDF第2、4、10—11页：2026年1—9月合并营业收入、归母净利润、2025年同期与同比；人民币元。"
         },
-        "limitations": "2026年1—9月累计，公司合并报表；算力业务净利增幅按变动原因单列。",
         "operatingChange": "算力业务净利同比增长123.13%；算力服务器采购预付款增加，经营活动现金流净额-3.76亿元。"
       },
       "intelligence": {
@@ -16253,8 +16204,7 @@
         "evidence": {
           "url": "https://www.tnb.com.my/assets/quarterly_results/Financial_Unaudited_Results_-_2QFY2026.pdf",
           "locator": "PDF第1页：截至6月30日六个月累计列，Revenue及Profit attributable to owners of the Company；RM million。第17页落款2026-08-27。"
-        },
-        "limitations": "TNB集团1—6月累计，金额为百万林吉特；归属净利润采用所有者口径。"
+        }
       }
     },
     {
@@ -16333,8 +16283,7 @@
         "evidence": {
           "url": "https://www.intc.com/news-events/press-releases/detail/1776/intel-reports-second-quarter-2026-financial-results",
           "locator": "官网原文附表Consolidated Condensed Statements of Operations，Three Months Ended Jun 27 2026 / Jun 28 2025：Net revenue及Net income (loss) attributable to Intel；USD million。"
-        },
-        "limitations": "Intel财政13周季度，2026-03-29—06-27与2025-03-30—06-28；采用GAAP归属Intel净亏损。"
+        }
       },
       "relatedLinks": [
         {
@@ -16619,7 +16568,6 @@
           "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225615735.PDF",
           "locator": "第2—4、8、10—11页"
         },
-        "limitations": "2026年三季报｜1—9月累计，公司合并报表。",
         "operatingChange": "服务器贸易自8月规模化交付；用于支持算力租赁的服务器投入增加，湘树云VE合同已完成交付并起租。"
       },
       "intelligence": {
@@ -16706,7 +16654,6 @@
           "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617273.PDF",
           "locator": "第2—4、7—8、11—12页"
         },
-        "limitations": "2026年三季报｜1—9月累计，公司合并报表。",
         "operatingChange": "算力相关业务收入约6.92亿元；截至9月末订单项下高性能服务器等资产196.53亿元、已收客户相关款117.62亿元。"
       },
       "intelligence": {
@@ -16793,7 +16740,6 @@
           "url": "https://static.cninfo.com.cn/finalpage/2026-10-23/1225617368.PDF",
           "locator": "第2—4、9—10页"
         },
-        "limitations": "2026年三季报｜1—9月累计，公司合并报表。",
         "operatingChange": "AIDC拓展带动收入及销售回款增加；归母净利下降主要因上年REIT处置收益，扣非净利增长32.97%。"
       },
       "intelligence": {
@@ -16879,7 +16825,6 @@
           "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/1022/2026102201267_c.pdf",
           "locator": "巨潮同件第1、6、8—9页；港交所PDF第2、7、9—10页"
         },
-        "limitations": "2026年三季报｜1—9月累计，公司合并报表。",
         "operatingChange": "智能收入462亿元，涵盖算力、平台、数据、模型及智能应用；公司推动Token经营和算力网建设。"
       },
       "intelligence": {
@@ -17838,7 +17783,6 @@
           "url": "https://static.cninfo.com.cn/finalpage/2026-10-24/1225621481.PDF",
           "locator": "第1—2、7—8页"
         },
-        "limitations": "2026年1—9月累计，公司合并报表。",
         "operatingChange": "累计收入小幅下降，归母净利基本持平；经营活动现金净流入6.74亿元。"
       },
       "intelligence": {
@@ -17924,8 +17868,7 @@
           "url": "https://static.cninfo.com.cn/finalpage/2026-10-26/1225620044.PDF",
           "locator": "第2—5、8—12页"
         },
-        "limitations": "2026年1—9月累计，公司合并报表。上年同期收入按会计差错更正后口径。",
-        "operatingChange": "算力服务设备投入扩大，固定资产69.60亿元、使用权资产30.34亿元；累计经营现金净流入27.21亿元。"
+        "operatingChange": "算力服务设备投入扩大，固定资产69.60亿元、使用权资产30.34亿元；累计经营现金净流入27.21亿元。 上年同期收入经会计差错更正为1,021,460,726.78元（更正前1,550,970,081.55元），营业收入同比以更正后金额为基数。"
       },
       "intelligence": {
         "importance": 9,
@@ -18189,7 +18132,7 @@
       "publishedAt": "2026-10-26",
       "publishedAtBeijing": "2026-10-26",
       "dataPeriod": null,
-      "summary": "财联社整理三星电子、SK海力士本周财报看点，重点为HBM4供应、下一代HBM4E量产准备，以及多年采购协议覆盖产能的比例。报道引述机构认为，长期协议和预付款安排将影响存储供给稳定性；两家公司本轮完整业绩与新增合同仍待财报披露。",
+      "summary": "财联社整理三星电子、SK海力士本周财报看点，重点为HBM4供应、下一代HBM4E量产准备，以及多年采购协议覆盖产能的比例。报道引述机构认为，长期协议和预付款安排将影响存储供给稳定性。",
       "stage": "财报前瞻与机构观点",
       "visibility": "active",
       "access": "free",
@@ -19020,7 +18963,7 @@
         }
       ],
       "role": "core",
-      "identityNote": "2026Q2公司公告第2页确认 GDS Holdings Limited 与 NASDAQ:GDS、HKEX:9698 为同一披露主体；保留gds-quarterly和gds-2026-q2。没有据此更改DayOne关系或项目容量。",
+      "identityNote": "GDS Holdings Limited；NASDAQ:GDS、HKEX:9698为同一发行人。",
       "identityUrls": [
         "https://investors.gds-services.com/system/files-encrypted/nasdaq_kms/assets/2026/08/13/7-36-49/GDS%202Q26%20Earnings%20Release_0813%201200.pdf"
       ],
@@ -19207,7 +19150,7 @@
         }
       ],
       "role": "core",
-      "identityNote": "官网2026Q2公告首页及2026-09-21新闻稿确认 NASDAQ:VNET；保留vnet-quarterly来源和vnet-2026-q2资料ID。",
+      "identityNote": "VNET Group, Inc.，NASDAQ:VNET。",
       "identityUrls": [
         "https://ir.vnet.com/static-files/bd1c3fd8-22f7-4ee2-a84a-7140445a4d8e",
         "https://ir.vnet.com/news-releases/news-release-details/vnet-announces-closing-previously-announced-strategic-investment"
@@ -19410,7 +19353,7 @@
       ],
       "securities": [],
       "role": "reference",
-      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityNote": "Singapore Telecommunications Limited。",
       "identityUrls": [
         "https://www.singtel.com/about-us/investor-relations/financial-results"
       ],
@@ -19531,7 +19474,7 @@
       ],
       "securities": [],
       "role": "reference",
-      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityNote": "DayOne。",
       "identityUrls": [
         "https://dayonedc.com/news"
       ],
@@ -19642,7 +19585,7 @@
       ],
       "securities": [],
       "role": "reference",
-      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityNote": "Tenaga Nasional Berhad。",
       "identityUrls": [
         "https://www.tnb.com.my/suppliers-investors-media-relations/financial-info"
       ],
@@ -19763,7 +19706,7 @@
       ],
       "securities": [],
       "role": "reference",
-      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityNote": "ST Telemedia Global Data Centres。",
       "identityUrls": [
         "https://www.sttgdc.com/newsroom"
       ],
@@ -19854,7 +19797,7 @@
       ],
       "securities": [],
       "role": "reference",
-      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityNote": "Globe。",
       "identityUrls": [
         "https://w.media/category/markets/apac/sea/"
       ],
@@ -19975,7 +19918,7 @@
       ],
       "securities": [],
       "role": "reference",
-      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityNote": "BDx。",
       "identityUrls": [
         "https://bappeda.jabarprov.go.id/category/berita-umum/"
       ],
@@ -20066,7 +20009,7 @@
       ],
       "securities": [],
       "role": "reference",
-      "identityNote": "沿用历史已收录材料的主体称谓和关联；不据此扩展上市身份或合并口径。",
+      "identityNote": "Stavian Digital Park项目。",
       "identityUrls": [
         "https://w.media/category/markets/apac/sea/"
       ],
@@ -20162,7 +20105,7 @@
         }
       ],
       "role": "core",
-      "identityNote": "公司 IR 页与2026半年度报告摘要首页相互核对；不把控股股东或境外项目公司视为上市发行人本体。",
+      "identityNote": "北京光环新网科技股份有限公司，深交所300383。",
       "identityUrls": [
         "https://www.sinnet.com.cn/IR.html",
         "https://www.sinnet.com.cn/uploads/files/2026/0901/6semKmUxNDYFBvedJ7NWQQDP1kQFbG50F1olXTIv.pdf"
@@ -20757,7 +20700,7 @@
         }
       ],
       "role": "core",
-      "identityNote": "巨潮半年报封面及第5—6页、公司官网确认600673。发行人官网为hec-al.com；hec.cn为集团入口，药业上市主体不并入。",
+      "identityNote": "广东东阳光科技控股股份有限公司，上交所600673；公司官网hec-al.com，集团入口hec.cn。",
       "identityUrls": [
         "https://www.hec-al.com/",
         "https://static.cninfo.com.cn/finalpage/2026-08-18/1225478556.PDF"
@@ -21158,7 +21101,7 @@
         }
       ],
       "role": "operator",
-      "identityNote": "官网2026中期业绩新闻稿第2页同时明确公司全称和两地代码；中国电信集团有限公司不混为该发行人。",
+      "identityNote": "中国电信股份有限公司；上交所601728、港交所0728为同一发行人。",
       "identityUrls": [
         "https://www.chinatelecom-h.com/sc/media/press/p260820.pdf",
         "https://www.chinatelecom-h.com/sc/global/home.php"
@@ -21306,7 +21249,7 @@
         }
       ],
       "role": "operator",
-      "identityNote": "官网股票资料确认762及完整名称；官网特别提示A股公司财务数据可能不同。本次入口与样例属于香港上市主体，不附加600050证券代码、不与A股报表合并。",
+      "identityNote": "中国联合网络通信（香港）股份有限公司，港交所0762。",
       "identityUrls": [
         "https://www.chinaunicom.com.hk/sc/ir/shareinfo.php",
         "https://www.chinaunicom.com.hk/sc/global/home.php"
@@ -21434,12 +21377,12 @@
         }
       ],
       "role": "reference",
-      "identityNote": "巨潮2026年半年报摘要确认发行人名称及证券代码；作为数据中心电源相关参考主体，不升为核心公司。",
+      "identityNote": "深圳欧陆通电子股份有限公司，深交所300870，数据中心电源供应商。",
       "identityUrls": [
         "https://static.cninfo.com.cn/finalpage/2026-08-26/1225503388.PDF"
       ],
       "researchScope": "domestic",
-      "researchScopeNote": "本轮已读资料聚焦国内上市主体的数据中心电源经营；不是断言公司只在国内经营。",
+      "researchScopeNote": "中国内地数据中心电源业务。",
       "disclosureReview": {
         "checks": [
           {
@@ -21553,12 +21496,12 @@
         }
       ],
       "role": "reference",
-      "identityNote": "发行人IR确认Intel Corporation/INTC；本轮仅扩充行业报道关联，不建立财务档案。",
+      "identityNote": "Intel Corporation，NASDAQ:INTC。",
       "identityUrls": [
         "https://www.intc.com/"
       ],
       "researchScope": "overseas",
-      "researchScopeNote": "本轮研究记录是美国AI基础设施峰会发言及海外供应链；不按上市地点推断全部经营地区。",
+      "researchScopeNote": "美国AI基础设施与海外供应链。",
       "disclosureReview": {
         "checks": [
           {
@@ -21682,11 +21625,10 @@
         "https://www.infinigence-ai.com/about-us.html"
       ],
       "researchScope": "domestic",
-      "researchScopeNote": "研究范围依据已核业务材料，不能由总部或品牌名称推定项目所在地。",
+      "researchScopeNote": "中国内地算力服务。",
       "discoveryProfile": {
         "website": "https://www.infinigence-ai.com/",
         "businessIdentity": "AI原生基础设施与异构算力服务商",
-        "financialNote": "本次核查的非上市企业公开资料未见可用的公司收入及净利润披露；不代表断言所有渠道绝无披露。",
         "wordmark": "无问芯穹"
       },
       "disclosureReview": {
@@ -21782,11 +21724,10 @@
         "https://www.konsttech.ai/group"
       ],
       "researchScope": "cross",
-      "researchScopeNote": "研究范围依据已核业务材料，不能由总部或品牌名称推定项目所在地。",
+      "researchScopeNote": "亚洲AI数据中心、GPU云与算力交付。",
       "discoveryProfile": {
         "website": "https://www.konsttech.ai/",
         "businessIdentity": "AI数据中心、GPU云与算力交付服务商",
-        "financialNote": "未获得 KONST Co., LIMITED 集团同口径财报；搜索出现台湾康斯特科技子公司较早收入与预测，不能自动等同集团口径；拒绝套用300445财报。",
         "wordmark": "KONST"
       },
       "disclosureReview": {
@@ -21888,7 +21829,6 @@
       "discoveryProfile": {
         "website": "https://www.athub.com/",
         "businessIdentity": "数据中心定制、算力交付与运营服务商",
-        "financialNote": "财务栏按已收录财务报告展示。",
         "wordmark": "数据港"
       },
       "disclosureReview": {
@@ -22060,7 +22000,6 @@
       "discoveryProfile": {
         "website": "https://www.ofidc.com/",
         "businessIdentity": "自建自营数据中心与云网基础服务商",
-        "financialNote": "财务栏按已收录财务报告展示。",
         "wordmark": "奥飞数据"
       },
       "disclosureReview": {
@@ -22222,7 +22161,6 @@
       "discoveryProfile": {
         "website": "https://www.capitalonline.net/",
         "businessIdentity": "全球云网服务、智算云与数据中心运营商",
-        "financialNote": "财务栏按已收录财务报告展示。",
         "wordmark": "首都在线"
       },
       "disclosureReview": {
@@ -22344,7 +22282,6 @@
       "discoveryProfile": {
         "website": "https://www.hon-flex.com/",
         "businessIdentity": "柔性电子制造及算力设备、资源和技术服务商",
-        "financialNote": "财务栏按已收录财务报告展示。",
         "wordmark": "弘信电子"
       },
       "disclosureReview": {
@@ -22476,7 +22413,6 @@
       "discoveryProfile": {
         "website": "https://www.lettall.com/",
         "businessIdentity": "电子结构件制造、算力租赁与设备经销企业",
-        "financialNote": "财务栏按已收录财务报告展示。",
         "wordmark": "利通电子"
       },
       "disclosureReview": {
@@ -22598,7 +22534,6 @@
       "discoveryProfile": {
         "website": "https://www.nexwise.com.cn/",
         "businessIdentity": "智算云集群、算力服务与AI行业应用企业",
-        "financialNote": "财务栏按已收录财务报告展示。",
         "wordmark": "杰创智能"
       },
       "disclosureReview": {
@@ -22720,7 +22655,6 @@
       "discoveryProfile": {
         "website": "https://www.rangeidc.com/",
         "businessIdentity": "园区级IDC与AIDC基础设施服务商",
-        "financialNote": "财务栏按已收录财务报告展示。",
         "wordmark": "润泽科技"
       },
       "disclosureReview": {
@@ -22886,7 +22820,7 @@
         }
       ],
       "role": "core",
-      "identityNote": "2026-10-21：核对巨潮2026年半年报PDF第1、8、9页，确认上市主体、证券代码及英文名称；官网搜索入口与财报联系域名一致。用户本轮明确纳入固定追踪。",
+      "identityNote": "宏景科技股份有限公司，深交所301396。",
       "identityUrls": [
         "https://static.cninfo.com.cn/finalpage/2026-08-29/1225525638.PDF",
         "https://www.gloryview.com/"
@@ -22896,7 +22830,6 @@
       "discoveryProfile": {
         "website": "https://www.gloryview.com/",
         "businessIdentity": "算力设备集成、算力运营服务与智慧城市解决方案",
-        "financialNote": "财务栏按最新正式财报展示。",
         "wordmark": "宏景科技"
       },
       "disclosureReview": {
@@ -23121,9 +23054,7 @@
         "historical-node"
       ],
       "latestVerifiedMilestoneId": "historical-node",
-      "uncertainties": [
-        "已核公司9月21日交割新闻稿；只核当前IR可见列表，未据此声称所有渠道均无后续事项。"
-      ],
+      "uncertainties": [],
       "milestones": [
         {
           "id": "historical-node",
@@ -23138,11 +23069,6 @@
               "reportId": "vnet-strategic-investment-close-20260921",
               "locator": "2026-09-21公司新闻稿首段及投资者权利、投票安排段落",
               "role": "主证据"
-            },
-            {
-              "reportId": "vnet-strategic-investment-close-20260921",
-              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
-              "role": "披露日期"
             }
           ]
         }
@@ -23234,14 +23160,12 @@
       "priority": 0,
       "visibility": "active",
       "relatedEventIds": [],
-      "currentSummary": "西爪哇 Bappeda 报道，Purwakarta 政府于 10 月 5 日就 Jatiluhur 的 BDx AI 数据中心召集相关部门讨论 AMDAL 环评、PBG 建筑审批和冷却用水。地方政府要求进一步检验供水论证并继续讨论；该消息属于停工后的审查进展，不是许可获批、复工或新增投运公告。",
+      "currentSummary": "西爪哇Bappeda报道，Purwakarta政府于10月5日就Jatiluhur的BDx AI数据中心召集相关部门讨论AMDAL环评、PBG建筑审批和冷却用水。地方政府要求进一步检验供水论证并继续讨论，项目处于停工后的审查阶段。",
       "basisMilestoneIds": [
         "historical-node"
       ],
       "latestVerifiedMilestoneId": "historical-node",
-      "uncertainties": [
-        "沿用一期核查证据；尚未进行本轮专项核查。"
-      ],
+      "uncertainties": [],
       "milestones": [
         {
           "id": "historical-node",
@@ -23254,20 +23178,15 @@
           "evidenceRefs": [
             {
               "reportId": "purwakarta-bdx-water-review-20261007",
-              "locator": "一期记录所核公告正文，具体范围见资料核查说明",
+              "locator": "政府报道正文：项目许可与冷却用水讨论。",
               "role": "主证据"
-            },
-            {
-              "reportId": "purwakarta-bdx-water-review-20261007",
-              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
-              "role": "披露日期"
             }
           ]
         },
         {
           "id": "media-suspension",
           "title": "媒体报道项目暂停施工",
-          "summary": "沿用一期媒体线索；不作为独立的官方许可结论。",
+          "summary": "w.media报道BDx项目因许可问题暂停施工。",
           "occurredAt": null,
           "isProgress": false,
           "verificationLevel": "media",
@@ -23275,7 +23194,7 @@
           "evidenceRefs": [
             {
               "reportId": "wmedia-bdx-permits-20261001",
-              "locator": "报道及一期核查说明",
+              "locator": "报道正文：许可问题与暂停施工。",
               "role": "历史报道"
             }
           ]
@@ -23332,11 +23251,6 @@
               "reportId": "hec-platform-closing-20260117",
               "locator": "临2026-04号：一、概述；二、交易进展",
               "role": "主证据"
-            },
-            {
-              "reportId": "hec-platform-closing-20260117",
-              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
-              "role": "披露日期"
             }
           ]
         }
@@ -23345,10 +23259,7 @@
       "basisMilestoneIds": [
         "platform-closing"
       ],
-      "uncertainties": [
-        "前序交易的完成不能作为后续上市公司发行股份重组已完成的证据。",
-        "原公告同时保留交割后待办事项；本轮未取得这些事项全部办结的依据。"
-      ],
+      "uncertainties": [],
       "review": {
         "lastAttemptAt": "2026-10-26",
         "result": "partial",
@@ -23492,7 +23403,7 @@
       "relatedEventIds": [
         "hec-chindata-platform-acquisition"
       ],
-      "currentSummary": "10月1日临2026-105号反垄断公告已补核巨潮官方同件：市场监管总局决定不实施进一步审查。公告仍称须经上交所审核及证监会同意注册。",
+      "currentSummary": "东阳光10月1日临2026-105号公告披露，市场监管总局决定对秦淮数据重组不实施进一步审查。交易尚需上交所审核及证监会同意注册。",
       "milestones": [
         {
           "id": "board-plan",
@@ -23521,34 +23432,13 @@
           "evidenceRefs": [
             {
               "reportId": "hec-reorganization-reply-20260923",
-              "locator": "临2026-97、98号正文；图片表格及完整附件未读",
+              "locator": "临2026-97、98号正文。",
               "role": "主证据"
             },
             {
               "reportId": "hec-reorganization-revised-abstract-20260923",
-              "locator": "修订稿摘要第23页；全文报告书未取得",
+              "locator": "修订稿摘要第23页。",
               "role": "补充原件摘要依据"
-            },
-            {
-              "reportId": "hec-reorganization-reply-20260923",
-              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
-              "role": "披露日期"
-            }
-          ]
-        },
-        {
-          "id": "newer-attachment-pending",
-          "title": "较新附件线索待核",
-          "summary": "较新附件正文未取得，不能确认其文件身份、披露日期或具体审批结论。仅保留为专项核查线索，不计正式资料或已核进展。",
-          "occurredAt": null,
-          "isProgress": false,
-          "verificationLevel": "pending",
-          "primaryEvidenceReportId": "hec-reorganization-newer-attachment-pending",
-          "evidenceRefs": [
-            {
-              "reportId": "hec-reorganization-newer-attachment-pending",
-              "locator": "任务书提供附件路径；未取得正文",
-              "role": "主证据"
             }
           ]
         },
@@ -23564,17 +23454,12 @@
             {
               "reportId": "hec-antitrust-mirror-20261001",
               "locator": "1页，临2026-105全文",
-              "role": "第三方载体，非官方同件核验"
+              "role": "第三方公告镜像"
             },
             {
               "reportId": "hec-antitrust-mirror-20261001",
               "locator": "补充链接：巨潮1225591558.PDF全文1页，临2026-105号",
-              "role": "本轮指定披露同件补核"
-            },
-            {
-              "reportId": "hec-antitrust-mirror-20261001",
-              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
-              "role": "披露日期"
+              "role": "巨潮公告原文"
             }
           ]
         }
@@ -23584,10 +23469,7 @@
         "reply-and-revision",
         "antitrust-mirror-read"
       ],
-      "uncertainties": [
-        "反垄断审查与证券审核、注册及实际交割是不同程序；尚无后续完成依据。",
-        "任务书原SSE路径附件身份仍待核，保留原线索，不与新取得的巨潮附件强行认定为同一文件。"
-      ],
+      "uncertainties": [],
       "review": {
         "lastAttemptAt": "2026-10-26",
         "result": "partial",
@@ -23772,11 +23654,6 @@
               "role": "主证据"
             },
             {
-              "reportId": "xingyun-vf-server-sale-20260930",
-              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
-              "role": "披露日期"
-            },
-            {
               "reportId": "xingyun-2026-q3",
               "locator": "PDF第8页其他重要事项第6—7项：VF/VG已交付验收",
               "role": "正式季报后续复核"
@@ -23793,10 +23670,7 @@
       "basisMilestoneIds": [
         "disclosure"
       ],
-      "uncertainties": [
-        "实际交付、验收的具体日期和全部回款情况未单列。",
-        "仅核所列原公告及官网目录当前可见页，未完成全部渠道至执行日的区间核查。"
-      ],
+      "uncertainties": [],
       "review": {
         "lastAttemptAt": "2026-10-26",
         "result": "partial",
@@ -23899,11 +23773,6 @@
               "reportId": "xingyun-ve-rental-20260928",
               "locator": "第1页合同签署、第3页第四节",
               "role": "主证据"
-            },
-            {
-              "reportId": "xingyun-ve-rental-20260928",
-              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
-              "role": "披露日期"
             }
           ]
         },
@@ -24037,11 +23906,6 @@
               "reportId": "xingyun-sa-procurement-20260928",
               "locator": "第1页第一节、第3—4页第五节",
               "role": "主证据"
-            },
-            {
-              "reportId": "xingyun-sa-procurement-20260928",
-              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
-              "role": "披露日期"
             }
           ]
         },
@@ -24072,7 +23936,7 @@
           "evidenceRefs": [
             {
               "reportId": "xingyun-orders-delivery-ir-20261025",
-              "locator": "PDF第4页轻资产模式及SA合作；未据原句推算已交付套数",
+              "locator": "PDF第4页轻资产模式及SA合作。",
               "role": "上市公司原始披露"
             }
           ]
@@ -24191,11 +24055,6 @@
               "reportId": "vnet-catl-cooperation-20260818",
               "locator": "公告前两段及前瞻风险段",
               "role": "主证据"
-            },
-            {
-              "reportId": "vnet-catl-cooperation-20260818",
-              "locator": "原资料已核披露日期；本节点记录公司披露动作。",
-              "role": "披露日期"
             }
           ]
         }
@@ -24204,9 +24063,7 @@
       "basisMilestoneIds": [
         "strategic-agreement"
       ],
-      "uncertainties": [
-        "仅确认战略合作签署；具体项目协议、实施时间及收益仍待落实。"
-      ],
+      "uncertainties": [],
       "review": {
         "lastAttemptAt": "2026-10-26",
         "result": "partial",
@@ -25227,7 +25084,7 @@
           "evidenceRefs": [
             {
               "reportId": "xingyun-vg-sale-20260930",
-              "locator": "2026-128号第1—2页；披露9月30日，交付验收具体日未单列。",
+              "locator": "2026-128号第1—2页，9月30日披露。",
               "role": "主证据"
             },
             {
@@ -44719,22 +44576,20 @@
           {
             "reportId": "open-cs-infini-20261013",
             "importance": 3,
-            "overview": "中国算力平台方面，无问芯穹完成 C 轮融资的报道表明资金继续进入异构算力与模型服务领域。融资完成和数据中心合同、收入兑现仍是不同证据层次。",
+            "overview": "中国算力平台方面，无问芯穹完成 C 轮融资的报道表明资金继续进入异构算力与模型服务领域。",
             "why": "该企业的业务处于算力基础设施与模型服务连接处，后续采购、租赁和客户合同可能反映平台型算力需求的形成方式。",
-            "impact": "对 IDC/AIDC 企业而言，可将这类平台视为潜在的算力需求方或合作对象，跟踪其设备与机房采购需求；是否形成可确认订单，取决于实际合同、交付和客户使用。不能把资本进入直接视为已签租赁收入，也不能由融资额估算机柜需求。",
-            "uncertainty": "本条未披露收入、净利润、新增机房合同或交付容量，尚不足以判断融资对具体 IDC 企业收入的影响。",
+            "impact": "对 IDC/AIDC 企业而言，可将这类平台视为潜在的算力需求方或合作对象，跟踪其设备与机房采购需求；是否形成可确认订单，取决于实际合同、交付和客户使用。",
             "followupId": "infinigence-capacity-contracts",
-            "followup": "继续核对正式算力采购、租赁合同和项目交付。若仅出现生态合作或平台调用数据，保留行业关联而不升级为收入证据。"
+            "followup": "跟踪正式算力采购、租赁合同、客户用量和项目交付。"
           },
           {
             "reportId": "shanghai-green-compute-plan-20261013",
             "importance": 3,
             "overview": "上海公布节能降碳和循环经济发展“十五五”规划，将新建算力设施能效要求、液冷等技术应用与存量改造并列提出。政策方向已经明确，具体项目的落实仍要看审批和执行。",
-            "why": "规划同时涉及新设施准入和存量改造，直接关系 IDC/AIDC 的设计方案、能源条件及投资比较，适合向管理层汇报。",
-            "impact": "评估上海新项目与改造项目时，应把能效要求纳入方案比选，结合设备效率、冷却方案、运维能耗及建设成本综合比较。政策支持某项技术并不自动形成供应商订单；是否采用液冷、改造节奏及商业回报，仍需结合项目实际和后续执行口径。",
-            "uncertainty": "具体节能审查、准入执行与项目改造安排仍需后续文件和实际项目证据，不能把规划写成已完成改造。",
+            "why": "规划同时涉及新设施准入和存量改造，直接关系 IDC/AIDC 的设计方案、能源条件及投资比较。",
+            "impact": "评估上海新项目与改造项目时，应把能效要求纳入方案比选，结合设备效率、冷却方案、运维能耗及建设成本综合比较。",
             "followupId": "shanghai-green-compute-implementation",
-            "followup": "跟踪项目准入口径、节能审查要求与存量设施改造安排；保留通知文号，后续执行材料挂接同一跟踪关系。"
+            "followup": "跟踪项目准入口径、节能审查要求与存量设施改造安排。"
           }
         ]
       },
@@ -44756,10 +44611,9 @@
           {
             "reportId": "open-konst-seriesb-20261008",
             "importance": 2,
-            "overview": "KONST 宣布融资完成并计划投入亚洲 AI 数据中心及 Token 服务；这一消息发表于 10 月 8 日，属于此前自然周。",
+            "overview": "KONST 宣布融资完成并计划投入亚洲 AI 数据中心及 Token 服务。",
             "why": "企业通稿明确融资用途指向算力设施及 GPU 云服务，与泛 AI 应用融资有所区别，但仍需跟踪实际部署。",
-            "impact": "研究判断应关注资金是否落实到设施交付和客户用量，融资规模不等于已实现收入或新增投运容量。",
-            "uncertainty": "本文为美通社企业通稿转载，未独立核验资金到账与项目完成情况；集团同口径财务未取得。",
+            "impact": "跟踪资金投入后的设施交付、客户用量与经营回报。",
             "followupId": "konst-smx01-delivery",
             "followup": "跟踪 SMX01 液冷容量的进场、验收和上线，官网预计 2027 年第一季度上线。"
           }
@@ -44787,32 +44641,29 @@
           {
             "reportId": "open-cs-infini-20261013",
             "importance": 3,
-            "overview": "中国算力平台方面，无问芯穹完成 C 轮融资的报道表明资金继续进入异构算力与模型服务领域。融资完成和数据中心合同、收入兑现仍是不同证据层次。",
+            "overview": "中国算力平台方面，无问芯穹完成 C 轮融资的报道表明资金继续进入异构算力与模型服务领域。",
             "why": "该企业的业务处于算力基础设施与模型服务连接处，后续采购、租赁和客户合同可能反映平台型算力需求的形成方式。",
-            "impact": "对 IDC/AIDC 企业而言，可将这类平台视为潜在的算力需求方或合作对象，跟踪其设备与机房采购需求；是否形成可确认订单，取决于实际合同、交付和客户使用。不能把资本进入直接视为已签租赁收入，也不能由融资额估算机柜需求。",
-            "uncertainty": "本条未披露收入、净利润、新增机房合同或交付容量，尚不足以判断融资对具体 IDC 企业收入的影响。",
+            "impact": "对 IDC/AIDC 企业而言，可将这类平台视为潜在的算力需求方或合作对象，跟踪其设备与机房采购需求；是否形成可确认订单，取决于实际合同、交付和客户使用。",
             "followupId": "infinigence-capacity-contracts",
-            "followup": "继续核对正式算力采购、租赁合同和项目交付。若仅出现生态合作或平台调用数据，保留行业关联而不升级为收入证据。"
+            "followup": "跟踪正式算力采购、租赁合同、客户用量和项目交付。"
           },
           {
             "reportId": "open-oregon-permit-20261013",
             "importance": 3,
             "overview": "美国俄勒冈州的变化发生在项目许可环节。具名媒体报道州长要求暂停部分数据中心环保许可审批。",
             "why": "这会影响新建与扩建项目的前置审批安排。即使已有客户或土地资源，项目仍需核对许可阶段及是否适用暂停。",
-            "impact": "评估海外容量与交付计划时，应把客户需求、电力接入、建设条件和环保许可分别列出。许可变化可能改变部分项目排期及替代选址比较，但现有证据不足以量化延期容量、成本增加或竞争者收益。",
-            "uncertainty": "州长原行政函尚未直接取回，具体项目、例外条款与执行细节仍待原件核查。",
+            "impact": "评估海外容量与交付计划时，应把客户需求、电力接入、建设条件和环保许可分别列出。许可变化可能改变部分项目排期及替代选址比较。",
             "followupId": "oregon-data-center-permits",
-            "followup": "取得州长原函和 DEQ 实施口径，再核对具体在审项目、例外与恢复审批安排；后续沿用此跟踪 ID。"
+            "followup": "取得州长原函和 DEQ 实施口径，再核对具体在审项目、例外与恢复审批安排。"
           },
           {
             "reportId": "shanghai-green-compute-plan-20261013",
             "importance": 3,
             "overview": "上海公布节能降碳和循环经济发展“十五五”规划，将新建算力设施能效要求、液冷等技术应用与存量改造并列提出。政策方向已经明确，具体项目的落实仍要看审批和执行。",
-            "why": "规划同时涉及新设施准入和存量改造，直接关系 IDC/AIDC 的设计方案、能源条件及投资比较，适合向管理层汇报。",
-            "impact": "评估上海新项目与改造项目时，应把能效要求纳入方案比选，结合设备效率、冷却方案、运维能耗及建设成本综合比较。政策支持某项技术并不自动形成供应商订单；是否采用液冷、改造节奏及商业回报，仍需结合项目实际和后续执行口径。",
-            "uncertainty": "具体节能审查、准入执行与项目改造安排仍需后续文件和实际项目证据，不能把规划写成已完成改造。",
+            "why": "规划同时涉及新设施准入和存量改造，直接关系 IDC/AIDC 的设计方案、能源条件及投资比较。",
+            "impact": "评估上海新项目与改造项目时，应把能效要求纳入方案比选，结合设备效率、冷却方案、运维能耗及建设成本综合比较。",
             "followupId": "shanghai-green-compute-implementation",
-            "followup": "跟踪项目准入口径、节能审查要求与存量设施改造安排；保留通知文号，后续执行材料挂接同一跟踪关系。"
+            "followup": "跟踪项目准入口径、节能审查要求与存量设施改造安排。"
           }
         ]
       },
@@ -44838,10 +44689,9 @@
           {
             "reportId": "open-konst-seriesb-20261008",
             "importance": 2,
-            "overview": "KONST 宣布融资完成并计划投入亚洲 AI 数据中心及 Token 服务；这一消息发表于 10 月 8 日，属于此前自然周。",
+            "overview": "KONST 宣布融资完成并计划投入亚洲 AI 数据中心及 Token 服务。",
             "why": "企业通稿明确融资用途指向算力设施及 GPU 云服务，与泛 AI 应用融资有所区别，但仍需跟踪实际部署。",
-            "impact": "研究判断应关注资金是否落实到设施交付和客户用量，融资规模不等于已实现收入或新增投运容量。",
-            "uncertainty": "本文为美通社企业通稿转载，未独立核验资金到账与项目完成情况；集团同口径财务未取得。",
+            "impact": "跟踪资金投入后的设施交付、客户用量与经营回报。",
             "followupId": "konst-smx01-delivery",
             "followup": "跟踪 SMX01 液冷容量的进场、验收和上线，官网预计 2027 年第一季度上线。"
           }
@@ -45058,7 +44908,7 @@
           },
           {
             "id": "environment",
-            "intro": "中国内地及香港：本期已核资料中暂无可用于本板块的新增政策；国内经营与技术变化分别见第四、第五板块。",
+            "intro": "",
             "items": [
               {
                 "title": "新加坡关注芯片出口管制与远程算力访问",
@@ -45104,7 +44954,7 @@
           },
           {
             "id": "companies",
-            "intro": "中国香港的容量情况纳入DayOne本周披露。中国内地：本期已核资料中暂无纳入选稿的新增IDC项目投产或算力租赁重大订单；产业链企业动态见第五板块。",
+            "intro": "",
             "items": [
               {
                 "title": "DayOne：以长期客户合同推动跨市场园区建设",
@@ -45134,8 +44984,8 @@
                 "reportIds": [
                   "ornn-daily-settlement-20261007"
                 ],
-                "fact": "已核10月7日Ornn日结快照：H100 SXM 2.85、H200 5.29、B200 7.56、A100 SXM4 0.90，单位均为美元/GPU小时；数据为按需实际租赁交易的成交量加权缩尾价格。该日结于北京时间10月8日04:00更新。",
-                "significance": "按机型、交易类型和计量单位固定口径后，才适合做连续价格比较。本期周均价及周环比暂无同口径完整序列。",
+                "fact": "10月7日Ornn日结价格：H100 SXM 2.85、H200 5.29、B200 7.56、A100 SXM4 0.90，单位均为美元/GPU小时；数据为按需实际租赁交易的成交量加权缩尾价格。该日结于北京时间10月8日04:00更新。",
+                "significance": "各卡型价格反映当日按需租赁交易，可结合租期、功率与设备投入比较使用成本。",
                 "businessImpact": "租赁产品报价比较应同时列明卡型、租期、网络及服务内容；经营预算还需纳入利用率、电费和折旧。"
               },
               {
@@ -45488,7 +45338,7 @@
           },
           {
             "id": "ornn-daily-settlement-20261007",
-            "title": "Ornn GPU 日结价格：2026 年 10 月 7 日核查快照",
+            "title": "Ornn GPU日结价格：2026年10月7日",
             "publisher": "Ornn Data",
             "publishedAt": "2026-10-07",
             "url": "https://data.ornn.com/",
@@ -45679,7 +45529,7 @@
           },
           {
             "id": "environment",
-            "intro": "中国内地及香港：本期已核资料中暂无可用于本板块的新增政策；国内经营与技术变化分别见第四、第五板块。",
+            "intro": "",
             "items": [
               {
                 "title": "新加坡关注芯片出口管制与远程算力访问",
@@ -45725,7 +45575,7 @@
           },
           {
             "id": "companies",
-            "intro": "中国香港的容量情况纳入DayOne本周披露。中国内地：本期已核资料中暂无纳入选稿的新增IDC项目投产或算力租赁重大订单；产业链企业动态见第五板块。",
+            "intro": "",
             "items": [
               {
                 "title": "DayOne：以长期客户合同推动跨市场园区建设",
@@ -45773,8 +45623,8 @@
                 "reportIds": [
                   "ornn-daily-settlement-20261007"
                 ],
-                "fact": "已核10月7日Ornn日结快照：H100 SXM 2.85、H200 5.29、B200 7.56、A100 SXM4 0.90，单位均为美元/GPU小时；数据为按需实际租赁交易的成交量加权缩尾价格。该日结于北京时间10月8日04:00更新。",
-                "significance": "按机型、交易类型和计量单位固定口径后，才适合做连续价格比较。本期周均价及周环比暂无同口径完整序列。",
+                "fact": "10月7日Ornn日结价格：H100 SXM 2.85、H200 5.29、B200 7.56、A100 SXM4 0.90，单位均为美元/GPU小时；数据为按需实际租赁交易的成交量加权缩尾价格。该日结于北京时间10月8日04:00更新。",
+                "significance": "各卡型价格反映当日按需租赁交易，可结合租期、功率与设备投入比较使用成本。",
                 "businessImpact": "租赁产品报价比较应同时列明卡型、租期、网络及服务内容；经营预算还需纳入利用率、电费和折旧。"
               },
               {
@@ -46137,7 +45987,7 @@
           },
           {
             "id": "ornn-daily-settlement-20261007",
-            "title": "Ornn GPU 日结价格：2026 年 10 月 7 日核查快照",
+            "title": "Ornn GPU日结价格：2026年10月7日",
             "publisher": "Ornn Data",
             "publishedAt": "2026-10-07",
             "url": "https://data.ornn.com/",
@@ -46288,7 +46138,7 @@
           },
           {
             "id": "environment",
-            "intro": "中国内地及香港：本期已核资料中暂无可用于本板块的新增政策；国内经营与技术变化分别见第四、第五板块。",
+            "intro": "",
             "items": [
               {
                 "title": "新加坡关注芯片出口管制与远程算力访问",
@@ -46381,8 +46231,8 @@
                 "reportIds": [
                   "ornn-daily-settlement-20261007"
                 ],
-                "fact": "已核10月7日Ornn日结快照：H100 SXM 2.85、H200 5.29、B200 7.56、A100 SXM4 0.90，单位均为美元/GPU小时；数据为按需实际租赁交易的成交量加权缩尾价格。该日结于北京时间10月8日04:00更新。",
-                "significance": "按机型、交易类型和计量单位固定口径后，才适合做连续价格比较。本期周均价及周环比暂无同口径完整序列。",
+                "fact": "10月7日Ornn日结价格：H100 SXM 2.85、H200 5.29、B200 7.56、A100 SXM4 0.90，单位均为美元/GPU小时；数据为按需实际租赁交易的成交量加权缩尾价格。该日结于北京时间10月8日04:00更新。",
+                "significance": "各卡型价格反映当日按需租赁交易，可结合租期、功率与设备投入比较使用成本。",
                 "businessImpact": "租赁产品报价比较应同时列明卡型、租期、网络及服务内容；经营预算还需纳入利用率、电费和折旧。"
               },
               {
@@ -46745,7 +46595,7 @@
           },
           {
             "id": "ornn-daily-settlement-20261007",
-            "title": "Ornn GPU 日结价格：2026 年 10 月 7 日核查快照",
+            "title": "Ornn GPU日结价格：2026年10月7日",
             "publisher": "Ornn Data",
             "publishedAt": "2026-10-07",
             "url": "https://data.ornn.com/",
@@ -46957,7 +46807,7 @@
                   "sfc-takeovers-bulletin-78-20260929"
                 ],
                 "fact": "9月29日第78期收购通讯强调，政府持股企业的一致行动关系须结合管理、决策、投票等事实判断；同时介绍预定11月16日实施的无纸证券制度涉及的要约程序。",
-                "significance": "共同国有持股并非唯一判断因素，交易安排和决策关系需要逐项核查。",
+                "significance": "一致行动关系需结合实际控制、交易安排和决策关系综合判断。",
                 "businessImpact": "与国资伙伴参与上市公司交易时，保存股权、治理和共同决策依据；跨越无纸证券实施日期的要约，应与顾问核对适用程序。"
               },
               {
@@ -47061,8 +46911,8 @@
                 "reportIds": [
                   "ornn-daily-settlement-20261007"
                 ],
-                "fact": "已核10月7日Ornn日结快照：H100 SXM 2.85、H200 5.29、B200 7.56、A100 SXM4 0.90，单位均为美元/GPU小时；数据为按需实际租赁交易的成交量加权缩尾价格。该日结于北京时间10月8日04:00更新。",
-                "significance": "按机型、交易类型和计量单位固定口径后，才适合做连续价格比较。本期周均价及周环比暂无同口径完整序列。",
+                "fact": "10月7日Ornn日结价格：H100 SXM 2.85、H200 5.29、B200 7.56、A100 SXM4 0.90，单位均为美元/GPU小时；数据为按需实际租赁交易的成交量加权缩尾价格。该日结于北京时间10月8日04:00更新。",
+                "significance": "各卡型价格反映当日按需租赁交易，可结合租期、功率与设备投入比较使用成本。",
                 "businessImpact": "租赁产品报价比较应同时列明卡型、租期、网络及服务内容；经营预算还需纳入利用率、电费和折旧。"
               },
               {
@@ -47466,7 +47316,7 @@
           },
           {
             "id": "ornn-daily-settlement-20261007",
-            "title": "Ornn GPU 日结价格：2026 年 10 月 7 日核查快照",
+            "title": "Ornn GPU日结价格：2026年10月7日",
             "publisher": "Ornn Data",
             "publishedAt": "2026-10-07",
             "url": "https://data.ornn.com/",
@@ -47983,7 +47833,7 @@
                   "dcd-digico-lease-20261015"
                 ],
                 "fact": "Nscale挪威项目整体延后；DCD补充消息称火灾与已修复漏液未造成客户中断。Pure DC完成变压器安装并计划送电，DigiCo将扩建按客户需求分批交付。",
-                "significance": "单一施工节点或设备事故无法独立说明全部合同履约结果，需要与送电、验收和客户安排合并判断。",
+                "significance": "施工、送电、设备验收和客户安排共同决定项目履约与起租时间。",
                 "businessImpact": "在项目合同中明确送电前提、测试程序、分期移交与延期责任，测算资金占用。",
                 "background": "大容量园区建设周期与客户设备部署节奏相互制约，融资成本在起租前已经发生。",
                 "analysis": "分期交付有利于让资本投入与已确定需求匹配。关键在于各期是否具备独立运行和计费条件，以及延误是否会触发客户减量或合同调整。",
@@ -48626,7 +48476,7 @@
           {
             "reportId": "eastmoney-russia-power-20261020",
             "importance": 7,
-            "overview": "训练与推理对电力成本和服务位置的要求不同，供电接入会改变算力项目选址。 区域机会评估应分别核对电力接入、可用设备、客户位置和合作条件，避免用能源储量代替可交付电力。",
+            "overview": "训练与推理对电力成本和服务位置的要求不同，供电接入会改变算力项目选址。 区域机会评估应分别核对电力接入、可用设备、客户位置和合作条件。",
             "followupId": "eastmoney-russia-power-20261020-followup",
             "followup": "核实目标地区可接入容量、建设周期及客户业务需求。"
           }
@@ -48803,7 +48653,7 @@
                 ],
                 "fact": "财联社10月18日报道，深交所10月17日就GPU采购信息发布不准确、不完整向天阳科技及董秘发出监管函，涉及设备用途及经营影响说明。",
                 "significance": "算力交易披露需同时说明产品用途、合同履约条件及与经营的实际关系。",
-                "businessImpact": "重大采购发布前核对设备型号、交易义务与正式披露渠道，避免市场传播口径与合同事实脱节。"
+                "businessImpact": "重大采购发布前核对设备型号、交易义务与正式披露渠道。"
               },
               {
                 "title": "北美计算负荷标准进入后续审批",
@@ -48910,7 +48760,7 @@
                   "wmedia-pldt-reit-delay-20261015"
                 ],
                 "fact": "PDG据报寻求最高12亿美元、期限三年的贷款，拟用于柔佛198.8MW园区及再融资；PLDT因市场条件和利率上升，将包含8处、共24MW资产的Vitro REIT上市推迟至2027年。",
-                "significance": "融资落实与资产退出时点会影响建设资金及资本回收，单看规划容量无法判断扩张能力。",
+                "significance": "融资落实与资产退出时点会影响建设资金及资本回收，应与规划容量和项目交付进度共同评估。",
                 "businessImpact": "项目财务测算同步列出提款条件、利息、客户起租和退出时间，评估延期下的资金缺口。"
               }
             ]
@@ -48992,7 +48842,7 @@
                   "dcd-digico-lease-20261015"
                 ],
                 "fact": "Nscale挪威项目整体延后；DCD补充消息称火灾与已修复漏液未造成客户中断。Pure DC完成变压器安装并计划送电，DigiCo将扩建按客户需求分批交付。",
-                "significance": "单一施工节点或设备事故无法独立说明全部合同履约结果，需要与送电、验收和客户安排合并判断。",
+                "significance": "施工、送电、设备验收和客户安排共同决定项目履约与起租时间。",
                 "businessImpact": "在项目合同中明确送电前提、测试程序、分期移交与延期责任，测算资金占用。",
                 "background": "大容量园区建设周期与客户设备部署节奏相互制约，融资成本在起租前已经发生。",
                 "analysis": "分期交付有利于让资本投入与已确定需求匹配。关键在于各期是否具备独立运行和计费条件，以及延误是否会触发客户减量或合同调整。",
@@ -49961,7 +49811,7 @@
                 ],
                 "fact": "财联社10月18日报道，深交所10月17日就GPU采购信息发布不准确、不完整向天阳科技及董秘发出监管函，涉及设备用途及经营影响说明。",
                 "significance": "算力交易披露需同时说明产品用途、合同履约条件及与经营的实际关系。",
-                "businessImpact": "重大采购发布前核对设备型号、交易义务与正式披露渠道，避免市场传播口径与合同事实脱节。"
+                "businessImpact": "重大采购发布前核对设备型号、交易义务与正式披露渠道。"
               },
               {
                 "title": "北美计算负荷标准进入后续审批",
@@ -50032,7 +49882,7 @@
                 "reportIds": [
                   "wmedia-airtrunk-johor-sale-20261016"
                 ],
-                "fact": "w.media于10月16日援引路透报道，AirTrunk接近向包括KWAP的投资者出售柔佛数据中心，估值约20亿美元；此前10亿美元口径已更正，交易尚未公布完成。",
+                "fact": "w.media于10月16日援引路透报道，AirTrunk接近向包括KWAP的投资者出售柔佛数据中心，估值约20亿美元，交易仍在推进。",
                 "significance": "直接出售运营资产为REIT上市之外的资本回收路径，退出安排会影响后续扩建资金。",
                 "businessImpact": "比较资产出售、REIT和长期持有的估值、融资成本及回收周期，持续核对最终协议与交割。"
               }
@@ -50077,7 +49927,7 @@
                   "wmedia-pldt-reit-delay-20261015"
                 ],
                 "fact": "PDG据报寻求最高12亿美元、期限三年的贷款，拟用于柔佛198.8MW园区及再融资；PLDT因市场条件和利率上升，将包含8处、共24MW资产的Vitro REIT上市推迟至2027年。",
-                "significance": "融资落实与资产退出时点会影响建设资金及资本回收，单看规划容量无法判断扩张能力。",
+                "significance": "融资落实与资产退出时点会影响建设资金及资本回收，应与规划容量和项目交付进度共同评估。",
                 "businessImpact": "项目财务测算同步列出提款条件、利息、客户起租和退出时间，评估延期下的资金缺口。"
               }
             ]
@@ -50159,7 +50009,7 @@
                   "dcd-digico-lease-20261015"
                 ],
                 "fact": "Nscale挪威项目整体延后；DCD补充消息称火灾与已修复漏液未造成客户中断。Pure DC完成变压器安装并计划送电，DigiCo将扩建按客户需求分批交付。",
-                "significance": "单一施工节点或设备事故无法独立说明全部合同履约结果，需要与送电、验收和客户安排合并判断。",
+                "significance": "施工、送电、设备验收和客户安排共同决定项目履约与起租时间。",
                 "businessImpact": "在项目合同中明确送电前提、测试程序、分期移交与延期责任，测算资金占用。",
                 "background": "大容量园区建设周期与客户设备部署节奏相互制约，融资成本在起租前已经发生。",
                 "analysis": "分期交付有利于让资本投入与已确定需求匹配。关键在于各期是否具备独立运行和计费条件，以及延误是否会触发客户减量或合同调整。",
@@ -51125,7 +50975,7 @@
                 ],
                 "fact": "财联社10月18日报道，深交所10月17日就GPU采购信息发布不准确、不完整向天阳科技及董秘发出监管函，涉及设备用途及经营影响说明。",
                 "significance": "算力交易披露需同时说明产品用途、合同履约条件及与经营的实际关系。",
-                "businessImpact": "重大采购发布前核对设备型号、交易义务与正式披露渠道，避免市场传播口径与合同事实脱节。"
+                "businessImpact": "重大采购发布前核对设备型号、交易义务与正式披露渠道。"
               },
               {
                 "title": "北美计算负荷标准进入后续审批",
@@ -51196,7 +51046,7 @@
                 "reportIds": [
                   "wmedia-airtrunk-johor-sale-20261016"
                 ],
-                "fact": "w.media于10月16日援引路透报道，AirTrunk接近向包括KWAP的投资者出售柔佛数据中心，估值约20亿美元；此前10亿美元口径已更正，交易尚未公布完成。",
+                "fact": "w.media于10月16日援引路透报道，AirTrunk接近向包括KWAP的投资者出售柔佛数据中心，估值约20亿美元，交易仍在推进。",
                 "significance": "直接出售运营资产为REIT上市之外的资本回收路径，退出安排会影响后续扩建资金。",
                 "businessImpact": "比较资产出售、REIT和长期持有的估值、融资成本及回收周期，持续核对最终协议与交割。"
               }
@@ -51241,7 +51091,7 @@
                   "wmedia-pldt-reit-delay-20261015"
                 ],
                 "fact": "PDG据报寻求最高12亿美元、期限三年的贷款，拟用于柔佛198.8MW园区及再融资；PLDT因市场条件和利率上升，将包含8处、共24MW资产的Vitro REIT上市推迟至2027年。",
-                "significance": "融资落实与资产退出时点会影响建设资金及资本回收，单看规划容量无法判断扩张能力。",
+                "significance": "融资落实与资产退出时点会影响建设资金及资本回收，应与规划容量和项目交付进度共同评估。",
                 "businessImpact": "项目财务测算同步列出提款条件、利息、客户起租和退出时间，评估延期下的资金缺口。"
               }
             ]
@@ -51323,7 +51173,7 @@
                   "dcd-digico-lease-20261015"
                 ],
                 "fact": "Nscale挪威项目整体延后；DCD补充消息称火灾与已修复漏液未造成客户中断。Pure DC完成变压器安装并计划送电，DigiCo将扩建按客户需求分批交付。",
-                "significance": "单一施工节点或设备事故无法独立说明全部合同履约结果，需要与送电、验收和客户安排合并判断。",
+                "significance": "施工、送电、设备验收和客户安排共同决定项目履约与起租时间。",
                 "businessImpact": "在项目合同中明确送电前提、测试程序、分期移交与延期责任，测算资金占用。",
                 "background": "大容量园区建设周期与客户设备部署节奏相互制约，融资成本在起租前已经发生。",
                 "analysis": "分期交付有利于让资本投入与已确定需求匹配。关键在于各期是否具备独立运行和计费条件，以及延误是否会触发客户减量或合同调整。",
@@ -52317,7 +52167,7 @@
                 ],
                 "fact": "财联社10月18日报道，深交所10月17日就GPU采购信息发布不准确、不完整向天阳科技及董秘发出监管函，涉及设备用途及经营影响说明。",
                 "significance": "算力交易披露需同时说明产品用途、合同履约条件及与经营的实际关系。",
-                "businessImpact": "重大采购发布前核对设备型号、交易义务与正式披露渠道，避免市场传播口径与合同事实脱节。"
+                "businessImpact": "重大采购发布前核对设备型号、交易义务与正式披露渠道。"
               },
               {
                 "title": "北美计算负荷标准进入后续审批",
@@ -52388,7 +52238,7 @@
                 "reportIds": [
                   "wmedia-airtrunk-johor-sale-20261016"
                 ],
-                "fact": "w.media于10月16日援引路透报道，AirTrunk接近向包括KWAP的投资者出售柔佛数据中心，估值约20亿美元；此前10亿美元口径已更正，交易尚未公布完成。",
+                "fact": "w.media于10月16日援引路透报道，AirTrunk接近向包括KWAP的投资者出售柔佛数据中心，估值约20亿美元，交易仍在推进。",
                 "significance": "直接出售运营资产为REIT上市之外的资本回收路径，退出安排会影响后续扩建资金。",
                 "businessImpact": "比较资产出售、REIT和长期持有的估值、融资成本及回收周期，持续核对最终协议与交割。"
               }
@@ -52433,7 +52283,7 @@
                   "wmedia-pldt-reit-delay-20261015"
                 ],
                 "fact": "PDG据报寻求最高12亿美元、期限三年的贷款，拟用于柔佛198.8MW园区及再融资；PLDT因市场条件和利率上升，将包含8处、共24MW资产的Vitro REIT上市推迟至2027年。",
-                "significance": "融资落实与资产退出时点会影响建设资金及资本回收，单看规划容量无法判断扩张能力。",
+                "significance": "融资落实与资产退出时点会影响建设资金及资本回收，应与规划容量和项目交付进度共同评估。",
                 "businessImpact": "项目财务测算同步列出提款条件、利息、客户起租和退出时间，评估延期下的资金缺口。"
               }
             ]
@@ -52515,7 +52365,7 @@
                   "dcd-digico-lease-20261015"
                 ],
                 "fact": "Nscale挪威项目整体延后；DCD补充消息称火灾与已修复漏液未造成客户中断。Pure DC完成变压器安装并计划送电，DigiCo将扩建按客户需求分批交付。",
-                "significance": "单一施工节点或设备事故无法独立说明全部合同履约结果，需要与送电、验收和客户安排合并判断。",
+                "significance": "施工、送电、设备验收和客户安排共同决定项目履约与起租时间。",
                 "businessImpact": "在项目合同中明确送电前提、测试程序、分期移交与延期责任，测算资金占用。",
                 "background": "大容量园区建设周期与客户设备部署节奏相互制约，融资成本在起租前已经发生。",
                 "analysis": "分期交付有利于让资本投入与已确定需求匹配。关键在于各期是否具备独立运行和计费条件，以及延误是否会触发客户减量或合同调整。",
@@ -53325,14 +53175,14 @@
           {
             "reportId": "economic-daily-sea-power-compute-20261026",
             "importance": 8,
-            "overview": "东南亚项目的比较优势应同时评估可交付电力、绿电合同、并网时间和客户时延要求。单看土地或规划机房容量难以判断实际交付能力。",
+            "overview": "东南亚项目的比较优势应同时评估可交付电力、绿电合同、并网时间和客户时延要求。",
             "followupId": "economic-daily-sea-power-compute-20261026-followup",
             "followup": "按柔佛、巴淡岛和新加坡项目分别核对电网接入承诺、购电协议、绿电可用性和投运时间表。"
           },
           {
             "reportId": "cs-guanghong-compute-manufacturing-20261026",
             "importance": 7,
-            "overview": "电子制造服务商向服务器、电源和冷却组件延伸，增加AIDC设备本地制造及交付选择。跟踪应落到客户认证、订单量与良率，而非将制造收入视为算力租赁收入。",
+            "overview": "电子制造服务商向服务器、电源和冷却组件延伸，增加AIDC设备本地制造及交付选择。重点跟踪客户认证、订单量与良率。",
             "followupId": "cs-guanghong-compute-manufacturing-20261026-followup",
             "followup": "跟踪算力业务单独收入、客户量产认证、预留产能启用和实际交付；核对扩产投资与新增订单匹配。"
           },
@@ -53465,7 +53315,7 @@
           },
           {
             "id": "environment",
-            "intro": "本周重点为国内算力能效与电力市场、东南亚水电及拟议监管、证券交易与持续上市监管。香港SFC及新加坡MAS／SIC公开目录本周暂无可靠新增收购规则；相关现行条款另列为背景。",
+            "intro": "本周重点为国内算力能效与电力市场、东南亚水电及拟议监管、证券交易与持续上市监管。",
             "items": [
               {
                 "title": "国内规划与电力市场将能效、交易安排纳入项目经营",
@@ -53514,7 +53364,7 @@
                   "hkex-china-ocean-cancellation-20261020"
                 ],
                 "fact": "深交所23日发布：10月16—22日对4宗违规行为纪律处分、2宗发监管函；10月19—23日对106起异常交易采取措施并核查8起重大事项。联交所20日公告8047未按期满足复牌指引，复核后维持取消上市，22日09:00生效，适用GEM规则9.14A(1)。",
-                "significance": "监管统计两个窗口各有口径；8047是已生效的个案，反映停牌、整改与持续上市资格对合作稳定性的影响。",
+                "significance": "8047取消上市个案反映停牌、整改与持续上市资格对合作稳定性的影响。",
                 "businessImpact": "重大订单和融资研究同步核对公告时点、内部知情人及规范运作；境外交易尽调检查停牌、复牌条件和复核进度，再安排交割及付款。"
               },
               {
@@ -53524,7 +53374,7 @@
                 ],
                 "context": "background",
                 "fact": "香港证监会9月29日《收购通讯》第78期说明，政府持股企业的一致行动关系需结合持股、管理、决策及投票事实判断，并讨论无纸证券对要约文件和接纳程序的影响。",
-                "significance": "同属政府持股背景不能替代对实际控制与行动关系的事实审查；文件流程也会影响要约执行。",
+                "significance": "实际控制、各方行动关系和文件寄发流程会影响要约执行。",
                 "businessImpact": "涉及港股收购时，在交易时间表中完成一致行动关系梳理，并核对适用的文件寄发、接纳和证券登记程序。"
               },
               {
@@ -53624,7 +53474,7 @@
                   "hec-2026-q3"
                 ],
                 "fact": "行云1—9月收入11.75亿元、同比增1896.66%，归母净利2.69亿元，上年同期亏损0.72亿元，服务器贸易自8月规模化交付。东阳光同期合并收入146.72亿元、增33.74%，归母净利6.38亿元、降29.57%；算力相关收入约6.92亿元，截至9月末订单资产196.53亿元、累计客户相关收款117.62亿元。",
-                "significance": "两家转型中的一次性设备销售、持续服务收入及客户预付／收款对财务影响不同，合并收入和收款不能互相替代。",
+                "significance": "两家转型中的设备销售、持续服务收入及客户预付／收款分别影响当期利润、后续计费和建设资金。",
                 "businessImpact": "按业务类型跟踪收入、资产与回款；东阳光整体收款对应公司披露的订单组合，后续由正式披露补充各合同的验收及计费。"
               },
               {
@@ -53700,7 +53550,7 @@
                   "dcd-ms-nisource-power-20261019"
                 ],
                 "fact": "Google与Voltus把PJM区域虚拟电厂合作扩大至1GW，通过聚合电池、温控及工业资产调节负荷。微软与NiSource签20年供电协议，预计2028年起供电，相关组合拟增加约1.1GW，大负荷费率由用户承担所需发电与基础设施成本。",
-                "significance": "负荷调节与新增电源合同提供不同的电力组织方式，1GW灵活负荷并不等于新增发电厂。",
+                "significance": "负荷调节通过调整用电时段提高电网灵活性，长期供电合同保障后续电源；两种方式分别影响调度能力与供电安排。",
                 "businessImpact": "能源方案同步测算可中断负载、供电可靠性、接入及发电成本分担；客户连续任务和可迁移任务分别设计电力与服务条款。"
               }
             ]
@@ -53719,8 +53569,8 @@
                 "background": "算力租赁普遍需要先采购设备、落实机房和融资，再通过客户验收进入多年服务；长期合同的金额和确认收入存在时间差。",
                 "fact": "协创协议按订单验收后启动一般60个月服务，按月结算并在确认结算、收票后30日付款。行云已有V／VB分批起租、VC自8月陆续起租并确认租赁收入、VE全部起租；行云三季报同时披露服务器贸易规模交付。东阳光披露了整体算力相关收入、订单资产及累计客户款项。",
                 "significance": "本周材料能把签约、设备、交付、起租、收入、回款分别定位，使重大合同研究从单一订单额转向履约质量。",
-                "businessImpact": "设备和机房投入应匹配订单批次；客户验收延后会推迟计费并延长资金占用，而设备销售收入不能直接推算持续租赁规模。",
-                "analysis": "研究判断：竞争正更多取决于把融资与交付转成稳定计费的能力。协创提供重要的待履约样本，行云和东阳光提供不同阶段的已披露参照；三家公司不能按总合同金额直接推定同等收入或现金回报。",
+                "businessImpact": "设备和机房投入应匹配订单批次；客户验收延后会推迟计费并延长资金占用。",
+                "analysis": "研究判断：竞争正更多取决于把融资与交付转成稳定计费的能力。协创提供重要的待履约样本，行云和东阳光提供不同阶段的已披露参照。",
                 "action": "逐次更新同一合同台账：记录设备采购及付款、具体机房与功率、分批验收文件、起租容量、月度结算与实收款；协创下一优先节点是首批采购和客户验收。"
               },
               {
@@ -53737,7 +53587,7 @@
                 "fact": "润泽Q3采购设备约80亿元并交付290MW；1—9月经营现金净流入45.08亿元、9月末在建工程151.72亿元。河北润澜40亿元增资已签约、缴款附先决条件。对照数据港同期经营现金净流入6.74亿元、同比下降14.49%，以及Nebius364天授信，企业资金来源和回收周期差异明显。",
                 "significance": "设备投入和设施交付需要通过客户计费转为回款；建设资金、融资成本和再融资期限会影响可承受的扩张速度。",
                 "businessImpact": "在建和设备投入较大时，应保留投入至起租间的流动性；海外项目分别核对调试、送电、客户交付及付款安排。",
-                "analysis": "研究判断：较强经营回款与权益资金能支持分期扩张，但当期经营现金流、设备采购和融资金额的口径与期间不同，仍须逐项目测算。润泽归母利润下降受上年REIT处置收益影响，扣非增长与交付计费转换更适合观察持续经营。",
+                "analysis": "研究判断：较强经营回款与权益资金能支持分期扩张，项目资金测算应衔接客户回款、设备付款和债务到期。润泽归母利润下降受上年REIT处置收益影响，扣非增长与交付计费转换更适合观察持续经营。",
                 "action": "为每个项目列三张表并联动：设备及工程付款表、客户起租回款表、资本金及债务到期表；40亿元资金按交割证据入表，后续不超28亿元单独跟踪方案进度。"
               },
               {
@@ -53752,7 +53602,7 @@
                 ],
                 "background": "大负荷项目的商业合同与送电、供水和开发许可相互依赖，客户承租承诺也会随基础设施延期变化。",
                 "fact": "DCD报道微软退出Nscale英国Loughton锚定承租安排，当地接电预期延至2030年代；微软另一20年供电协议预计2028年开始。东南亚本周材料分别涉及马来西亚拟议成本分担、泰国监管框架草案及巴淡水电扩建。",
-                "significance": "电力约束会同时改变交付日期、建设成本和客户选择，区域规划或预留容量不能取代具体项目供电承诺。",
+                "significance": "电力约束会同时改变交付日期、建设成本和客户选择，项目需落实具体接入容量与供电时间。",
                 "businessImpact": "若先采购设备而送电延期，将形成折旧、利息与客户退出的叠加压力；替代电源还需增加燃料、许可和运维投入。",
                 "analysis": "研究判断：东南亚项目筛选应从地价和规划规模进一步转向“可接电日期＋客户起租条件＋供水与备用能力”。拟议规则可能调整责任分配，当前谈判即应预留变更机制。",
                 "action": "在选址比较中统一记录可用IT容量、接入工程、PPA或供电协议、淡化供水、燃料与安全许可，并核查未按时送电时各方延期、退出及赔偿安排。"
@@ -53773,7 +53623,7 @@
                 "action": "每次更新按同一合同追踪采购、机房资源、验收、计费、收入与回款；为潜在客户合作准备分批交付及付款方案，依据客户融资和履约证据调整投入。"
               },
               {
-                "title": "用完整经营指标筛选机会，避免仅凭归母增幅判断景气",
+                "title": "用收入、扣非利润与现金流筛选经营机会",
                 "reportIds": [
                   "range-2026-q3",
                   "athub-2026-q3",

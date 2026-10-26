@@ -111,6 +111,7 @@ test('F21–F24: overseas is explicit, global/unknown not inverse-China; dual-re
  assert.equal(r('sinnet-2026-h1-summary').publishedAt,null);
 });
 test('F25/F26: official supplementation upgrades existing node without another identity',()=>{
+ const data=phase4,r=id=>data.reports.find(r=>r.id===id); // Test the original supplementation before the later removal of an empty clue.
  const a=baseline.events.find(e=>e.id==='hec-chindata-listed-reorganization'),b=data.events.find(e=>e.id===a.id);
  assert.equal(b.milestones.length,a.milestones.length);assert.equal(b.latestVerifiedMilestoneId,'antitrust-mirror-read');
  assert.ok(isVerifiedMilestone(b.milestones.find(n=>n.id===b.latestVerifiedMilestoneId),data.reports));

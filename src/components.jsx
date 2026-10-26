@@ -5,7 +5,7 @@ import logos from './logos.json';
 import { FinancialPreview } from './financial-components.jsx';
 import { SmmPricePreview, smmPriceReportId } from './smm-prices.jsx';
 import { evidenceUrl, getReportMatchReason, getSourcePreviewSelection, getSourceReports, TOPICS, sortReportsByDate } from './catalog.js';
-import { contentScopeLabels, judgmentLabels } from './domain/catalog.js';
+import { judgmentLabels } from './domain/catalog.js';
 const labels = data.labelMaps;
 
 export function Highlight({ text = '', query = '' }) {
@@ -40,11 +40,11 @@ export function SourceDetail({ source, showReference = false, onClose }) {
   const dialog = useRef(null);
   useEffect(() => { dialog.current.showModal(); }, []);
   const related = getSourceReports(source, { scope: 'all', showReference });
-  const historical = sortReportsByDate(source.relatedReports.filter(report => report.visibility === 'archived' || report.duplicateOf));
+  const historical = sortReportsByDate(source.relatedReports.filter(report => report.contentScope !== 'unavailable' && (report.visibility === 'archived' || report.duplicateOf)));
   return <dialog className="detail-dialog" ref={dialog} onKeyDown={trapDialogFocus} onCancel={onClose} onClick={e => { if (e.target === dialog.current) { const r = dialog.current.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right) onClose(); } }} aria-labelledby="detail-title">
     <div className="detail-header"><span>来源详情</span><button className="icon-button" aria-label="关闭来源详情" onClick={onClose} autoFocus><IconX size={21} /></button></div>
     <div className="detail-content"><div className="detail-identity"><SourceLogo source={source} large /><div><h2 id="detail-title">{source.name}</h2><p>{new URL(source.entryUrl).hostname}</p><p>{source.organization} · {source.sourceType === 'company' ? '企业官方来源' : labels.sourceType[source.sourceType]}</p></div></div>
-      {source.visibility !== 'active' && <section className="caution"><h3>{source.visibility === 'archived' ? '已归档 · 不计入有效来源' : '补充参考 · 内容仍待核'}</h3><p>{source.visibilityReason}</p></section>}
+      {source.visibility !== 'active' && <section className="caution"><h3>{source.visibility === 'archived' ? '已归档' : '补充参考'}</h3><p>{source.visibilityReason}</p></section>}
       <div className="detail-actions"><OutLink href={source.entryUrl} className="button primary">访问原站</OutLink>{source.methodologyUrl && <OutLink href={source.methodologyUrl} className="text-link">方法说明</OutLink>}</div>
       <dl className="detail-facts"><div><dt>覆盖地区</dt><dd>{source.regions.join(' / ')}</dd></div><div><dt>更新频率</dt><dd>{labels.frequency[source.frequency]}</dd></div><div><dt>获取条件</dt><dd>{labels.access[source.access]}</dd></div></dl>
       <section><h3>适合研究什么</h3><ul>{source.questions.map(q => <li key={q}>{q}</li>)}</ul></section>
@@ -52,7 +52,7 @@ export function SourceDetail({ source, showReference = false, onClose }) {
       {!!source.companyIds?.length && <section><h3>关联公司与主体</h3>{source.companyIds.map(id => source.companyLookup[id]).filter(Boolean).map(company => <div className="company-identity" key={company.id}><strong>{company.name} · {company.role === 'core' ? '核心公司' : company.role === 'operator' ? '运营商' : '参考公司'}</strong><p>{company.legalName}</p><p>{company.securities.map(security => `${security.exchange}:${security.code}`).join(' / ') || '未按上市证券标注'}</p><p>{company.identityNote}</p>{company.identityUrls.map((url, index) => <OutLink key={url} href={url} className="text-link">主体依据 {index + 1}</OutLink>)}</div>)}</section>}
       <details className="detail-disclosure"><summary>完整来源说明<IconChevronDown size={17} /></summary><p>{source.purpose}</p><h4>更新频率说明</h4><p>{source.frequencyNote}</p><h4>获取条件说明</h4><p>{source.accessNote}</p>{source.trackingNote && <><h4>建议跟踪方式</h4><p>{source.trackingNote}</p></>}{source.subscriptionNote && <p>{source.subscriptionNote}</p>}{source.subscriptionUrl && <OutLink href={source.subscriptionUrl} className="text-link">订阅入口</OutLink>}<h4>检索别名</h4><p>{source.aliases.join('、')}</p></details>
       <details className="detail-disclosure"><summary>已收录资料（{related.length}）{showReference && ' · 含补充参考'}<IconChevronDown size={17} /></summary>{related.length ? related.map(report => <ReportRow key={report.id} report={report} source={source} />) : <p>暂未收录可展示的具体资料，可前往原站查看。</p>}</details>
-      {!!historical.length && <details className="detail-disclosure"><summary>历史归档与合并记录（{historical.length}）<IconChevronDown size={17} /></summary>{historical.map(report => <article className="related-report" key={report.id}><OutLink href={report.url} className="text-link">{report.title}</OutLink><p>{report.visibilityReason || `已合并至 ${report.duplicateOf}`}</p><p>发布日期：{report.publishedAt || '未知 / 待核查'}；历史成功核查：{report.verifiedAt || '暂无记录'}。</p></article>)}</details>}
+      {!!historical.length && <details className="detail-disclosure"><summary>历史归档与合并记录（{historical.length}）<IconChevronDown size={17} /></summary>{historical.map(report => <article className="related-report" key={report.id}><OutLink href={report.url} className="text-link">{report.title}</OutLink><p>{report.visibilityReason || `已合并至 ${report.duplicateOf}`}</p>{report.publishedAt && <p>发布日期：{report.publishedAt}</p>}</article>)}</details>}
     </div>
   </dialog>;
 }
@@ -73,7 +73,7 @@ export function ReportRow({ report, source, query = '', onSource, filters = {}, 
 function ReportRegion({ report, filters }) {
   const singleCountry = filters.regions?.length === 1 && report.regions.length === 1 && filters.regions[0] === report.regions[0];
   if (singleCountry || (filters.scope === 'domestic' && report.regions.length === 1 && report.regions[0] === '中国')) return null;
-  return <span> · {report.regions.join(' / ') || '地区待核'}</span>;
+  return report.regions.length > 0 ? <span> · {report.regions.join(' / ')}</span> : null;
 }
 
 function ReadingLimit({ report }) {
@@ -87,8 +87,7 @@ function ReportDetails({ report }) {
     <p>{TOPICS.find(topic => topic.id === report.primaryCategoryId)?.label} · {labels.kind[report.kind]}</p>
     <ReportEvidence report={report} />{report.authorship && <p>作者身份：{{journalist:"媒体记者",brief:"未署名快讯",repost:"转载",platform:"平台作者",contributed:"机构供稿",sponsored:"商业推广"}[report.authorship.type]} · {report.authorship.author}</p>}
     {report.dataPeriod && <p>数据所属期：{report.dataPeriod}</p>}
-    <p>资料地区：{report.regions.join(' / ') || '未明确 / 待核'}</p>{report.regionNote && <p>地区依据：{report.regionNote}</p>}
-    {report.relatedSubcategoryNote && <p>{report.relatedSubcategoryNote}</p>}
+    {report.regions.length > 0 && <p>资料地区：{report.regions.join(' / ')}</p>}
     {!!report.tags?.length && <p>主题标签：{report.tags.join('、')}</p>}
     {report.originalUrl && report.originalUrl !== report.url && <OutLink href={report.originalUrl} className="text-link">原始文件</OutLink>}
     {report.relatedLinks?.map(link => <p key={link.url}><OutLink href={link.url} className="text-link">{link.role} · {link.publisher}</OutLink>{link.publishedAt && ` · ${link.publishedAt}`}</p>)}
@@ -97,7 +96,7 @@ function ReportDetails({ report }) {
 
 function ReportEvidence({ report }) {
   const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Shanghai' });
-  return <div className="report-evidence"><p>取得范围：{contentScopeLabels[report.contentScope]} · {labels.access[report.access]}{report.judgmentTypes.length > 0 && ` · ${report.judgmentTypes.map(type => judgmentLabels[type]).join(' / ')}`}</p>{report.documentStatus && <p>文件状态：{report.documentStatus}{report.jurisdiction && ` · 适用法域：${report.jurisdiction}`}</p>}{report.effectiveAt && <p>{report.effectiveAt > today ? '将于' : '文件载明生效日：'}{report.effectiveAt}{report.effectiveAt > today ? '生效' : ''}</p>}{report.deadlineAt && <p>截止日期：{report.deadlineAt}</p>}</div>;
+  return <div className="report-evidence">{report.judgmentTypes.length > 0 && <p>{report.judgmentTypes.map(type => judgmentLabels[type]).join(' / ')}</p>}{(report.documentStatus || report.jurisdiction) && <p>{report.documentStatus && `文件状态：${report.documentStatus}`}{report.jurisdiction && `${report.documentStatus ? ' · ' : ''}适用法域：${report.jurisdiction}`}</p>}{report.effectiveAt && <p>{report.effectiveAt > today ? '将于' : '文件载明生效日：'}{report.effectiveAt}{report.effectiveAt > today ? '生效' : ''}</p>}{report.deadlineAt && <p>截止日期：{report.deadlineAt}</p>}</div>;
 }
 
 function CompactSummary({ report, query }) {
