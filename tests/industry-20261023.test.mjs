@@ -36,7 +36,7 @@ test('daily merges HEC same-event disclosures and weekly keeps its full week wit
   assert.ok(daily.reportIds.includes('hec-2026-q3'));
   assert.ok(!daily.reportIds.includes('hec-ai-financing-guarantees-20261023'));
   for(const id of daily.reportIds)assert.equal(data.reports.find(r=>r.id===id).publishedAt,'2026-10-23');
-  const weekly=data.discovery.issues.filter(i=>i.kind==='weekly').at(-1);
+  const weekly=data.discovery.issues.find(i=>i.kind==='weekly'&&i.generatedAt.startsWith('2026-10-23'));
   assert.equal(weekly.periodStart,'2026-10-12');assert.equal(weekly.periodEnd,'2026-10-18');
   assert.ok(weekly.reportIds.includes('xingyun-xiaoshan-framework-20261012'));
   assert.ok(!weekly.reportIds.includes('media-xingyun-xiaoshan-20261016'));

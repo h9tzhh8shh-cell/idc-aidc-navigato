@@ -11,7 +11,7 @@ test('October 22 daily uses actual current-day publications while overseas backf
   const overseas=data.reports.find(r=>r.id==='cls-neocloud-rental-pricing-view-20261021');
   assert.equal(overseas.publishedAt,'2026-10-21');
   assert.ok(!daily.reportIds.includes(overseas.id));
-  const weekly=data.discovery.issues.filter(i=>i.kind==='weekly').at(-1);
+  const weekly=data.discovery.issues.find(i=>i.kind==='weekly'&&i.generatedAt.startsWith('2026-10-22'));
   assert.equal(weekly.periodStart,'2026-10-12');assert.equal(weekly.periodEnd,'2026-10-18');
 });
 test('financial updates retain original periods and signed loss comparisons',()=>{
