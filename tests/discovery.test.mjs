@@ -14,6 +14,15 @@ import {readQuery,writeQuery,filterReports,decorateSources,getSourcePreviewSelec
 const data=mergeDiscoveryBatch(baseline,input);
 const batch=discoveryBatch(data),sources=decorateSources(data),time=input.discovery.generatedAt;
 const issue=(kind,date,d=data)=>generateIssue(d,{kind,date,generatedAt:time,weekPolicy:'containing'});
+
+test('daily selection uses the verified Beijing publication day across midnight',()=>{
+ const d=structuredClone(data),generatedAt='2026-10-27T09:00:00+08:00';
+ d.discovery.batches.push({batchId:'beijing-midnight',cutoffAt:generatedAt,companyIds:[],reportIds:[],highlightReportIds:[]});
+ d.reports.push({...d.reports.find(r=>qualifiedReport(r,'2026-10-14')),id:'overnight-official-results',kind:'disclosure',
+  publishedAt:'2026-10-26',publishedAtBeijing:'2026-10-27',verifiedAt:'2026-10-27',dailyDateUncertain:false});
+ assert.deepEqual(generateIssue(d,{kind:'daily',date:'2026-10-27',generatedAt}).reportIds,['overnight-official-results']);
+ assert.throws(()=>generateIssue(d,{kind:'daily',date:'2026-10-26',generatedAt}),/暂无合格资料/);
+});
 test('V01 reviewed input reproduces the canonical candidate and replays unchanged',()=>{
  assert.deepEqual(mergeDiscoveryBatch(baseline,input),data);
  assert.deepEqual(mergeDiscoveryBatch(data,input),data);

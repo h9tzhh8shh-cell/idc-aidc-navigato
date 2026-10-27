@@ -27,7 +27,7 @@ test('every added peer has original-source actions, financial values and current
     const actions=companyDashboardActions(data,id,range);
     assert.ok(actions.length,id);
     for(const action of actions){
-      assert.ok(action.url.startsWith('https://static.cninfo.com.cn/')||action.url.startsWith('https://www.athub.com/'),action.url);
+      assert.ok(action.url.startsWith('https://static.cninfo.com.cn/')||action.url.startsWith('https://www.athub.com/')||action.url.startsWith('https://www.shanghai.gov.cn/'),action.url);
       for(const node of action.nodes)assert.equal(node.report.evidenceLevel,'official-body');
     }
     const financial=companyFinancialAt(data,id,range.end);

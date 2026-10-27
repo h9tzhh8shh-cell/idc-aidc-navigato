@@ -108,13 +108,14 @@ export function generateIssue(data, { kind, date = beijingTimestamp().slice(0, 1
     issue.references = weeklyReferences(issue, data);
     return issue;
   }
+  const issueDay = report => kind === 'daily' ? weeklyDay(report) : report.publishedAt;
   const candidates = data.reports.filter(report => qualifiedReport(report, cutoffDay) &&
     ['news', 'disclosure', 'policy', 'regulation'].includes(report.kind) &&
-    report.publishedAt >= periodStart && report.publishedAt <= periodEnd &&
+    issueDay(report) >= periodStart && issueDay(report) <= periodEnd &&
     // An unknown source timezone must not become a supposedly exact Beijing daily date.
     (kind !== 'daily' || !report.dailyDateUncertain));
   const seen = new Set();
-  const reports = candidates.sort((a, b) => (b.intelligence?.importance || 0) - (a.intelligence?.importance || 0) || b.publishedAt.localeCompare(a.publishedAt) || a.id.localeCompare(b.id))
+  const reports = candidates.sort((a, b) => (b.intelligence?.importance || 0) - (a.intelligence?.importance || 0) || issueDay(b).localeCompare(issueDay(a)) || a.id.localeCompare(b.id))
     .filter(report => { const key = report.eventId || report.originalUrl || report.url; if (seen.has(key)) return false; seen.add(key); return true; })
     .slice(0, kind === 'daily' ? 8 : 5);
   if (!reports.length) throw new Error('该日期范围暂无合格资料，未生成空白报告；最近一期保持不变。');
