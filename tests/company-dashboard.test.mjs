@@ -14,7 +14,8 @@ test('company time ranges use inclusive calendar dates and a fixed 2026 default'
 });
 test('Sinnet uses actual board day and groups release and launch into one event', () => {
   const actions=companyDashboardActions(data,'sinnet',range);
-  assert.equal(actions.length,7);
+  assert.equal(actions.length,8);
+  assert.equal(actions.find(a=>a.id==='sinnet-gree-gean-jv-20260104').date,'2026-01-04');
   assert.equal(actions.find(a=>a.id==='sinnet-luchen-token-cooperation-2026').date,'2026-10-16');
   assert.equal(actions.find(a=>a.id==='sinnet-horinger-expansion').date,'2026-09-24');
   const sme=actions.find(a=>a.id==='sinnet-cloud-panacea-sme');

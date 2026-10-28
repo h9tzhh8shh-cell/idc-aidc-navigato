@@ -12,11 +12,13 @@ test('PF01 reviewed financial import is reproducible and preserves previous reco
   const imported=mergeBatch(before,input);
   assert.deepEqual(mergeBatch(imported,input),imported);
   for(const key of ['sources','reports'])for(const record of input[key]){
-    const {lastCheckAttemptAt:currentCheck,...actual}=current[key].find(x=>x.id===record.id);
-    const {lastCheckAttemptAt:importedCheck,...expected}=structuredClone(imported[key].find(x=>x.id===record.id));
+    const {lastCheckAttemptAt:currentCheck,verifiedAt:currentVerified,verificationNote:currentNote,...actual}=current[key].find(x=>x.id===record.id);
+    const {lastCheckAttemptAt:importedCheck,verifiedAt:importedVerified,verificationNote:importedNote,...expected}=structuredClone(imported[key].find(x=>x.id===record.id));
     // The October 26 copy revision removes this legacy display-only field.
     if(key==='reports')delete expected.financial.limitations;
     assert.deepEqual(actual,expected);assert.ok(currentCheck>=importedCheck);
+    assert.ok(currentVerified>=importedVerified);
+    assert.ok(currentNote.startsWith(importedNote));
   }
   assert.deepEqual(mergeBatch(current,input),current);
   assert.deepEqual(validateCatalog(current),[]);
