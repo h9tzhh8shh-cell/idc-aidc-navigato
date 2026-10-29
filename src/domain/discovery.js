@@ -110,7 +110,7 @@ export function generateIssue(data, { kind, date = beijingTimestamp().slice(0, 1
   }
   const issueDay = report => kind === 'daily' ? weeklyDay(report) : report.publishedAt;
   const candidates = data.reports.filter(report => qualifiedReport(report, cutoffDay) &&
-    ['news', 'disclosure', 'policy', 'regulation'].includes(report.kind) &&
+    ['news', 'disclosure', 'policy', 'regulation', 'data-release'].includes(report.kind) &&
     issueDay(report) >= periodStart && issueDay(report) <= periodEnd &&
     // An unknown source timezone must not become a supposedly exact Beijing daily date.
     (kind !== 'daily' || !report.dailyDateUncertain));
