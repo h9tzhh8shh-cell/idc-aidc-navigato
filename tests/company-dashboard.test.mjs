@@ -61,6 +61,21 @@ test('historical cutoff never leaks a later financial disclosure', () => {
   assert.equal(companyFinancialAt(data,'sinnet','2026-06-30').id,'sinnet-2026-q1');
   assert.equal(companyFinancialAt(data,'sinnet','2026-01-01'),undefined);
 });
+
+test('dated official disclosure nodes appear without inventing an occurrence date', () => {
+  const event=data.events.find(e=>e.id==='aofei-tianjin-data-center-abs');
+  const node=event.milestones.find(n=>n.id==='q3-financial-impact-20261030');
+  assert.equal(node.occurredAt,null);
+  const actions=companyDashboardActions(data,'aofei',{start:'2026-01-01',end:'2026-10-30'});
+  const action=actions.find(a=>a.id===event.id);
+  assert.equal(action.date,'2026-10-30');
+  assert.equal(action.title,node.title);
+  assert.ok(action.nodes.some(n=>n.id===node.id));
+  assert.equal(node.occurredAt,null);
+  const previous=companyDashboardActions(data,'aofei',{start:'2026-01-01',end:'2026-10-29'}).find(a=>a.id===event.id);
+  assert.equal(previous.date,'2026-08-11');
+  assert.ok(!previous.nodes.some(n=>n.id===node.id));
+});
 test('highlights select eight important independent actions, sort by date, and never pad', () => {
   const actions=Array.from({length:10},(_,i)=>({id:String(i),priority:i,date:`2026-01-${String(10-i).padStart(2,'0')}`}));
   const result=companyHighlights(actions);

@@ -12,8 +12,8 @@ test('PF01 reviewed financial import is reproducible and preserves previous reco
   const imported=mergeBatch(before,input);
   assert.deepEqual(mergeBatch(imported,input),imported);
   for(const key of ['sources','reports'])for(const record of input[key]){
-    const {lastCheckAttemptAt:currentCheck,verifiedAt:currentVerified,verificationNote:currentNote,...actual}=current[key].find(x=>x.id===record.id);
-    const {lastCheckAttemptAt:importedCheck,verifiedAt:importedVerified,verificationNote:importedNote,...expected}=structuredClone(imported[key].find(x=>x.id===record.id));
+    const {lastCheckAttemptAt:currentCheck,verifiedAt:currentVerified,verificationNote:currentNote,verificationStatus:currentStatus,...actual}=current[key].find(x=>x.id===record.id);
+    const {lastCheckAttemptAt:importedCheck,verifiedAt:importedVerified,verificationNote:importedNote,verificationStatus:importedStatus,...expected}=structuredClone(imported[key].find(x=>x.id===record.id));
     // The October 26 copy revision removes this legacy display-only field.
     if(key==='reports')delete expected.financial.limitations;
     assert.deepEqual(actual,expected);assert.ok(currentCheck>=importedCheck);
@@ -53,7 +53,7 @@ test('PF02 all seven listed discoveries have actual H1 financials with dated ori
 
 test('PF03 losses remain negative and private companies are not assigned guessed financials',()=>{
   const capital=current.reports.find(r=>r.id==='capitalonline-2026-h1').financial.profit;
-  const nexwise=latestFinancial(current,'nexwise').report.financial.profit;
+  const nexwise=current.reports.find(r=>r.id==='nexwise-2026-h1').financial.profit;
   assert.equal(amount(capital),'-3,218.50万元人民币');assert.equal(changeText(capital),'亏损收窄');
   assert.equal(amount(nexwise),'-326.10万元人民币');assert.equal(changeText(nexwise),'由盈转亏');
   for(const metric of [capital,nexwise]){assert.equal(metric.change.basis,'amount');assert.equal(metric.change.percent,null);}

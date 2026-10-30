@@ -11,14 +11,18 @@ export function companyRange(value = '2026', today = new Date().toLocaleDateStri
 }
 
 export function companyDashboardActions(data, companyId, range, type = '') {
+  const timelineDate = node => {
+    const report = data.reports.find(report => report.id === node.primaryEvidenceReportId);
+    return node.occurredAt || (node.title.startsWith('披露') ? report?.publishedAtBeijing || report?.publishedAt : null);
+  };
   return (data.events || []).filter(event => event.visibility === 'active' && event.companyIds.includes(companyId) && (!type || event.type === type)).flatMap(event => {
     // Dates come from evidence. Disclosure-only actions explicitly say 披露 in their titles.
-    const nodes = event.milestones.filter(node => node.occurredAt && node.occurredAt >= range.start && node.occurredAt <= range.end && isVerifiedMilestone(node, data.reports))
-      .sort((a, b) => a.occurredAt.localeCompare(b.occurredAt) || a.id.localeCompare(b.id));
+    const nodes = event.milestones.filter(node => timelineDate(node) && timelineDate(node) >= range.start && timelineDate(node) <= range.end && isVerifiedMilestone(node, data.reports))
+      .sort((a, b) => timelineDate(a).localeCompare(timelineDate(b)) || a.id.localeCompare(b.id));
     const latest = nodes.at(-1);
     if (!latest) return [];
     const report = data.reports.find(report => report.id === latest.primaryEvidenceReportId);
-    return [{ id: event.id, type: event.type, priority: event.priority, date: latest.occurredAt, title: latest.title, summary: latest.summary,
+    return [{ id: event.id, type: event.type, priority: event.priority, date: timelineDate(latest), title: latest.title, summary: latest.summary,
       url: report.originalUrl || report.url, publisher: report.originalPublisher || data.sources.find(source => source.id === report.sourceId)?.organization,
       nodes: nodes.map(node => ({ ...node, report: data.reports.find(report => report.id === node.primaryEvidenceReportId) })) }];
   }).sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));

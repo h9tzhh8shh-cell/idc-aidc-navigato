@@ -19,7 +19,7 @@ test('financial updates retain original periods and signed loss comparisons',()=
   assert.equal(hongxin.period.type,'nine-months');
   assert.equal(hongxin.revenue.value,5500911392.75);
   assert.equal(hongxin.profit.value,216548137.81);
-  const intel=latestFinancial(data,'intel').report.financial;
+  const intel=data.reports.find(r=>r.id==='intel-2026-q2').financial;
   assert.equal(intel.period.basis,'13-weeks');assert.equal(intel.period.end,'2026-06-27');
   assert.equal(intel.profit.value,-11033);assert.equal(intel.profit.priorValue,-2918);
 });
