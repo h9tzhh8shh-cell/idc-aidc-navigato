@@ -2,7 +2,7 @@
   "reportId": "smm-h100-observation-20261009",
   "sourceUrl": "https://aidc.smm.cn/price",
   "sourceCadence": "工作日11:30前",
-  "evidence": "2026-11-04人工核对SMM免费公开页面，四组报价日期2026-11-03，较11月2日同口径均价，4090单卡下降7.29%、整机下降7.86%，两组H100持平。证据：行业信息更新_2026-11-04/smm-public.html、smm-cards.json、smm-observations.json。",
+  "evidence": "2026-11-05人工核对SMM免费公开页面，四组报价日期2026-11-04；较11月3日同口径均价，长三角H100整机上涨3.07%，其余三组持平。证据：行业信息更新_2026-11-05/smm-public.html、smm-cards.json、smm-observations.json。",
   "groups": [
     {
       "model": "H100 80G",
@@ -15,21 +15,21 @@
         {
           "label": "整机 · 长三角 · 包月",
           "productCode": "SMM-GPU-CC-005",
-          "mean": 14.32,
+          "mean": 14.76,
           "low": 13.54,
-          "high": 15.1,
+          "high": 15.97,
           "unit": "元/卡·时",
-          "quoteDate": "2026-11-03",
-          "checkedAt": "2026-11-04T09:22:13+08:00",
+          "quoteDate": "2026-11-04",
+          "checkedAt": "2026-11-05T09:01:45+08:00",
           "sourceUrl": "https://aidc.smm.cn/price",
           "sourceChange": {
-            "percent": 0.0,
-            "label": "0.00%"
+            "percent": 3.07,
+            "label": "3.07%"
           },
           "comparison": {
-            "date": "2026-11-02",
+            "date": "2026-11-03",
             "basis": "同口径均价",
-            "percent": 0.0
+            "percent": 3.07
           }
         },
         {
@@ -39,15 +39,15 @@
           "low": 13.54,
           "high": 14.58,
           "unit": "元/卡·时",
-          "quoteDate": "2026-11-03",
-          "checkedAt": "2026-11-04T09:22:13+08:00",
+          "quoteDate": "2026-11-04",
+          "checkedAt": "2026-11-05T09:01:45+08:00",
           "sourceUrl": "https://aidc.smm.cn/price",
           "sourceChange": {
             "percent": 0.0,
             "label": "0.00%"
           },
           "comparison": {
-            "date": "2026-11-02",
+            "date": "2026-11-03",
             "basis": "同口径均价",
             "percent": 0.0
           }
@@ -69,17 +69,17 @@
           "low": 1.31,
           "high": 2.3,
           "unit": "元/卡·时",
-          "quoteDate": "2026-11-03",
-          "checkedAt": "2026-11-04T09:22:13+08:00",
+          "quoteDate": "2026-11-04",
+          "checkedAt": "2026-11-05T09:01:45+08:00",
           "sourceUrl": "https://aidc.smm.cn/price",
           "sourceChange": {
-            "percent": -7.29,
-            "label": "-7.29%"
+            "percent": 0.0,
+            "label": "0.00%"
           },
           "comparison": {
-            "date": "2026-11-02",
+            "date": "2026-11-03",
             "basis": "同口径均价",
-            "percent": -7.29
+            "percent": 0.0
           }
         },
         {
@@ -89,17 +89,17 @@
           "low": 0.45,
           "high": 2.65,
           "unit": "元/卡·时",
-          "quoteDate": "2026-11-03",
-          "checkedAt": "2026-11-04T09:22:13+08:00",
+          "quoteDate": "2026-11-04",
+          "checkedAt": "2026-11-05T09:01:45+08:00",
           "sourceUrl": "https://aidc.smm.cn/price",
           "sourceChange": {
-            "percent": -7.86,
-            "label": "-7.86%"
+            "percent": 0.0,
+            "label": "0.00%"
           },
           "comparison": {
-            "date": "2026-11-02",
+            "date": "2026-11-03",
             "basis": "同口径均价",
-            "percent": -7.86
+            "percent": 0.0
           }
         }
       ]

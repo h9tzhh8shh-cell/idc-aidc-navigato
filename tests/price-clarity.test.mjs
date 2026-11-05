@@ -43,15 +43,15 @@ test('北京时间跨日后当天报价自动变为历史快照',()=>{
 test('四组人工核对报价各自保存报价日、核对时间及来源证据',()=>{
   const quotes=prices.groups.flatMap(group=>group.quotes);
   assert.equal(quotes.length,4);
-  assert.deepEqual(quotes.map(item=>[item.mean,item.low,item.high]),[[14.32,13.54,15.1],[14.06,13.54,14.58],[1.78,1.31,2.3],[2.11,0.45,2.65]]);
+  assert.deepEqual(quotes.map(item=>[item.mean,item.low,item.high]),[[14.76,13.54,15.97],[14.06,13.54,14.58],[1.78,1.31,2.3],[2.11,0.45,2.65]]);
   for(const item of quotes) {
-    const percent=item.productCode==='SMM-GPU-CC-020'?-7.29:item.productCode==='SMM-GPU-CC-021'?-7.86:0;
-    assert.equal(item.quoteDate,'2026-11-03');
-    assert.match(item.checkedAt,/^2026-11-04T/);
+    const percent=item.productCode==='SMM-GPU-CC-005'?3.07:0;
+    assert.equal(item.quoteDate,'2026-11-04');
+    assert.match(item.checkedAt,/^2026-11-05T/);
     assert.equal(item.sourceChange.percent,percent);
-    assert.deepEqual(item.comparison,{date:'2026-11-02',basis:'同口径均价',percent});
+    assert.deepEqual(item.comparison,{date:'2026-11-03',basis:'同口径均价',percent});
     assert.equal(item.sourceUrl,'https://aidc.smm.cn/price');
     assert.equal(item.unit,'元/卡·时');
-    assert.deepEqual(priceQuoteState(item,'2026-11-04T02:30:00Z').comparison,item.comparison);
+    assert.deepEqual(priceQuoteState(item,'2026-11-05T02:30:00Z').comparison,item.comparison);
   }
 });
