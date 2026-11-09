@@ -1,0 +1,378 @@
+{
+  "maintainedAt": "2026-11-09",
+  "sources": [
+    {
+      "id": "csindex-ai-market",
+      "name": "中证指数 · A 股人工智能与大盘行情",
+      "organization": "中证指数有限公司",
+      "sourceType": "research",
+      "entryUrl": "https://www.csindex.com.cn/#/indices/family/detail?indexCode=930713",
+      "methodologyUrl": "https://oss-ch.csindex.com.cn/static/html/csindex/public/uploads/indices/detail/files/zh_CN/930713factsheet.pdf",
+      "purpose": "跟踪中证人工智能主题指数与沪深300的收盘及相对走势。",
+      "questions": [
+        "AI主题指数的反弹是否伴随持续的相对走强？"
+      ],
+      "metrics": [
+        "指数收盘点位",
+        "区间涨跌幅",
+        "成分证券成交额"
+      ],
+      "aliases": [
+        "930713",
+        "000300"
+      ],
+      "verificationNote": "2026-11-09读取中证指数两组官方历史日线。原始响应及计算见本轮index目录。",
+      "categoryIds": [
+        "industry"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "frequency": "daily",
+      "frequencyNote": "按A股交易日提供收盘数据。",
+      "access": "free",
+      "accessNote": "公开历史日线。",
+      "tags": [
+        "AI股票行情"
+      ],
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-11-09",
+      "lastCheckAttemptAt": "2026-11-09"
+    },
+    {
+      "id": "tencent-a-share-daily",
+      "name": "腾讯财经 · A 股历史日线",
+      "organization": "腾讯财经",
+      "sourceType": "commercial",
+      "entryUrl": "https://gu.qq.com/",
+      "methodologyUrl": null,
+      "purpose": "跟踪固定IDC/AIDC同行及代表性算力硬件公司的股票表现。",
+      "questions": [
+        "行情是否扩展到固定同行及算力硬件公司？"
+      ],
+      "metrics": [
+        "前复权日收盘价",
+        "上涨家数",
+        "成交量"
+      ],
+      "aliases": [
+        "A股日线",
+        "前复权行情"
+      ],
+      "verificationNote": "2026-11-09取得8只固定同行与3只光模块样本的前复权日线，见本轮breadth目录。",
+      "categoryIds": [
+        "industry"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "frequency": "daily",
+      "frequencyNote": "按A股交易日提供收盘数据。",
+      "access": "free",
+      "accessNote": "公开历史日线。",
+      "tags": [
+        "AI股票行情"
+      ],
+      "caveats": [],
+      "featured": false,
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-11-09",
+      "lastCheckAttemptAt": "2026-11-09"
+    }
+  ],
+  "reports": [
+    {
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "companyIds": [],
+      "regions": [
+        "中国"
+      ],
+      "access": "free",
+      "contentScope": "full",
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-11-09",
+      "lastCheckAttemptAt": "2026-11-09",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "AI股票行情"
+      ],
+      "id": "csindex-ai-theme-week-20261106",
+      "sourceId": "csindex-ai-market",
+      "kind": "data-release",
+      "publishedAt": "2026-11-06",
+      "title": "中证人工智能主题指数周涨1.80%，11月6日回落3.90%",
+      "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=930713&startDate=20261008&endDate=20261106",
+      "originalPublisher": "中证指数有限公司",
+      "summary": "中证人工智能主题指数（930713）由10月30日收盘4577.18点升至11月6日4659.68点，周涨1.80%，同期沪深300涨1.73%。11月3日收4471.04点，至11月5日收4848.68点，两日反弹8.45%，11月6日回落3.90%，同期沪深300跌1.44%。",
+      "dataPeriod": "2026年11月2日至6日交易周，以10月30日收盘为周收益基准。",
+      "evidenceLevel": "official-body",
+      "documentVersion": "close-2026-11-06",
+      "relatedLinks": [
+        {
+          "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=000300&startDate=20261008&endDate=20261106",
+          "publisher": "中证指数有限公司",
+          "role": "沪深300同口径日线",
+          "publishedAt": "2026-11-06"
+        }
+      ],
+      "verificationNote": "两份官方日线的原始响应、SHA256及计算见本轮index目录。",
+      "originalUrl": "https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=930713&startDate=20261008&endDate=20261106",
+      "publishedAtBeijing": "2026-11-06"
+    },
+    {
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "companyIds": [
+        "hec",
+        "athub",
+        "xingyun",
+        "sinnet",
+        "range",
+        "aofei",
+        "sharetronic",
+        "hongjing"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "access": "free",
+      "contentScope": "full",
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-11-09",
+      "lastCheckAttemptAt": "2026-11-09",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "AI股票行情"
+      ],
+      "id": "tencent-aidc-peer-prices-20261106",
+      "sourceId": "tencent-a-share-daily",
+      "kind": "data-release",
+      "publishedAt": "2026-11-06",
+      "title": "固定A股算力与IDC同行八股周内多数上涨，周五全数回落",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz300442%2Cday%2C2026-10-30%2C2026-11-07%2C20%2Cqfq",
+      "originalPublisher": "腾讯财经",
+      "summary": "固定A股同行8只中7只周涨，周五8只下跌，8只成交量低于周四。光模块样本中际旭创周跌18.99%、新易盛周跌12.19%、天孚通信周跌17.57%。",
+      "dataPeriod": "10月30日至11月6日前复权收盘，11月6日成交量与11月5日比较。",
+      "documentVersion": "aidc-sample-close-2026-11-06",
+      "relatedLinks": [
+        {
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh600673%2Cday%2C2026-10-30%2C2026-11-07%2C20%2Cqfq",
+          "publisher": "腾讯财经",
+          "role": "东阳光日线",
+          "publishedAt": "2026-11-06"
+        },
+        {
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh603881%2Cday%2C2026-10-30%2C2026-11-07%2C20%2Cqfq",
+          "publisher": "腾讯财经",
+          "role": "数据港日线",
+          "publishedAt": "2026-11-06"
+        },
+        {
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz300209%2Cday%2C2026-10-30%2C2026-11-07%2C20%2Cqfq",
+          "publisher": "腾讯财经",
+          "role": "行云科技日线",
+          "publishedAt": "2026-11-06"
+        },
+        {
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz300383%2Cday%2C2026-10-30%2C2026-11-07%2C20%2Cqfq",
+          "publisher": "腾讯财经",
+          "role": "光环新网日线",
+          "publishedAt": "2026-11-06"
+        },
+        {
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz300738%2Cday%2C2026-10-30%2C2026-11-07%2C20%2Cqfq",
+          "publisher": "腾讯财经",
+          "role": "奥飞数据日线",
+          "publishedAt": "2026-11-06"
+        },
+        {
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz300857%2Cday%2C2026-10-30%2C2026-11-07%2C20%2Cqfq",
+          "publisher": "腾讯财经",
+          "role": "协创数据日线",
+          "publishedAt": "2026-11-06"
+        },
+        {
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz301396%2Cday%2C2026-10-30%2C2026-11-07%2C20%2Cqfq",
+          "publisher": "腾讯财经",
+          "role": "宏景科技日线",
+          "publishedAt": "2026-11-06"
+        },
+        {
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz300308%2Cday%2C2026-10-30%2C2026-11-07%2C20%2Cqfq",
+          "publisher": "腾讯财经",
+          "role": "中际旭创日线",
+          "publishedAt": "2026-11-06"
+        },
+        {
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz300502%2Cday%2C2026-10-30%2C2026-11-07%2C20%2Cqfq",
+          "publisher": "腾讯财经",
+          "role": "新易盛日线",
+          "publishedAt": "2026-11-06"
+        },
+        {
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz300394%2Cday%2C2026-10-30%2C2026-11-07%2C20%2Cqfq",
+          "publisher": "腾讯财经",
+          "role": "天孚通信日线",
+          "publishedAt": "2026-11-06"
+        },
+        {
+          "url": "https://www.cls.cn/detail/2527541",
+          "publisher": "财联社",
+          "role": "11月6日收盘复盘",
+          "publishedAt": "2026-11-06"
+        }
+      ],
+      "verificationNote": "8只固定A股同行、3只光模块代表样本及前复权收盘计算见本轮breadth/tencent-daily.json。",
+      "originalUrl": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz300442%2Cday%2C2026-10-30%2C2026-11-07%2C20%2Cqfq",
+      "publishedAtBeijing": "2026-11-06"
+    },
+    {
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "companyIds": [
+        "range",
+        "hongjing"
+      ],
+      "regions": [
+        "中国"
+      ],
+      "access": "free",
+      "contentScope": "full",
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-11-09",
+      "lastCheckAttemptAt": "2026-11-09",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "AI股票行情"
+      ],
+      "id": "cls-aidc-stock-rotation-20261105",
+      "sourceId": "cls-industry",
+      "kind": "news",
+      "publishedAt": "2026-11-05",
+      "title": "财联社收评：算力租赁走强，光通信硬件分化",
+      "url": "https://www.cls.cn/detail/2526309",
+      "originalPublisher": "财联社",
+      "dataPeriod": "2026年11月5日A股收盘复盘。",
+      "summary": "财联社记录青云科技涨停，优刻得、润泽科技及宏景科技等算力租赁股反弹，同日部分光模块股回落。",
+      "authorship": {
+        "type": "journalist",
+        "author": "金皓明"
+      },
+      "sourceNature": "媒体原创收盘复盘",
+      "verificationNote": "已阅读财联社11月5日原创收盘复盘，区分算力租赁与光通信硬件。",
+      "originalUrl": "https://www.cls.cn/detail/2526309",
+      "publishedAtBeijing": "2026-11-05"
+    },
+    {
+      "primaryCategoryId": "industry",
+      "primarySubcategoryId": "market-supply-demand",
+      "companyIds": [],
+      "regions": [
+        "中国"
+      ],
+      "access": "free",
+      "contentScope": "full",
+      "visibility": "active",
+      "verificationStatus": "verified",
+      "verifiedAt": "2026-11-09",
+      "lastCheckAttemptAt": "2026-11-09",
+      "judgmentTypes": [
+        "fact"
+      ],
+      "tags": [
+        "AI股票行情"
+      ],
+      "id": "runjian-stock-abnormal-20261107",
+      "sourceId": "china-securities-journal",
+      "kind": "disclosure",
+      "publishedAt": "2026-11-07",
+      "title": "润建股份披露股票异常波动及AI相关业务收入占比情况",
+      "url": "https://static.cninfo.com.cn/finalpage/2026-11-07/1225662444.PDF",
+      "originalPublisher": "润建股份有限公司",
+      "dataPeriod": "2026年11月5日至6日交易异常波动。",
+      "summary": "润建股份公告，11月5日和6日收盘价格涨幅偏离值累计超过20%。公司披露AI、算力及词元业务占总营收比重仍较低，前期披露的销售服务合同预计对2026年整体经营业绩影响有限。",
+      "evidenceLevel": "official-body",
+      "stage": "公司已披露股票交易异常波动公告",
+      "relatedLinks": [
+        {
+          "url": "https://epaper.cs.com.cn/zgzqb/html/2026-11/07/nw.D110000zgzqb_20261107_2-B013.htm",
+          "publisher": "中国证券报",
+          "role": "指定披露报刊公告",
+          "publishedAt": "2026-11-07"
+        }
+      ],
+      "verificationNote": "核读巨潮披露的润建股份公告2026-093，事件日期为11月5日至6日，公告日为11月7日。",
+      "originalUrl": "https://static.cninfo.com.cn/finalpage/2026-11-07/1225662444.PDF",
+      "publishedAtBeijing": "2026-11-07"
+    }
+  ],
+  "changeBatch": {
+    "batchId": "discovery-20261109-ai-market",
+    "recordedAt": "2026-11-09T11:00:50+08:00",
+    "scope": "本期周报补订：中证AI主题、沪深300、固定A股同行及光模块样本",
+    "summary": "补录4篇AI股市行情与披露资料，更新11月2日至8日周报的市场表现及趋势判断。",
+    "periodStart": "2026-11-02",
+    "checks": [
+      {
+        "id": "csindex-ai-theme-week-20261106-check",
+        "channel": "中证指数有限公司",
+        "url": "https://www.csindex.com.cn/csindex-home/perf/index-perf?indexCode=930713&startDate=20261008&endDate=20261106",
+        "attemptedAt": "2026-11-09",
+        "result": "progress",
+        "checkedFrom": "2026-11-06",
+        "checkedThrough": "2026-11-06",
+        "note": "两份官方日线的原始响应、SHA256及计算见本轮index目录。"
+      },
+      {
+        "id": "tencent-aidc-peer-prices-20261106-check",
+        "channel": "腾讯财经",
+        "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz300442%2Cday%2C2026-10-30%2C2026-11-07%2C20%2Cqfq",
+        "attemptedAt": "2026-11-09",
+        "result": "progress",
+        "checkedFrom": "2026-11-06",
+        "checkedThrough": "2026-11-06",
+        "note": "8只固定A股同行、3只光模块代表样本及前复权收盘计算见本轮breadth/tencent-daily.json。"
+      },
+      {
+        "id": "cls-aidc-stock-rotation-20261105-check",
+        "channel": "财联社",
+        "url": "https://www.cls.cn/detail/2526309",
+        "attemptedAt": "2026-11-09",
+        "result": "progress",
+        "checkedFrom": "2026-11-05",
+        "checkedThrough": "2026-11-05",
+        "note": "已阅读财联社11月5日原创收盘复盘，区分算力租赁与光通信硬件。"
+      },
+      {
+        "id": "runjian-stock-abnormal-20261107-check",
+        "channel": "润建股份有限公司",
+        "url": "https://static.cninfo.com.cn/finalpage/2026-11-07/1225662444.PDF",
+        "attemptedAt": "2026-11-09",
+        "result": "progress",
+        "checkedFrom": "2026-11-07",
+        "checkedThrough": "2026-11-07",
+        "note": "核读巨潮披露的润建股份公告2026-093，事件日期为11月5日至6日，公告日为11月7日。"
+      }
+    ]
+  },
+  "discovery": {
+    "generatedAt": "2026-11-09T11:00:50+08:00",
+    "weekPolicy": "previous-complete",
+    "issueRequests": [],
+    "note": "补订当周A股AI行情、固定同行样本与经营兑现观察。"
+  }
+}

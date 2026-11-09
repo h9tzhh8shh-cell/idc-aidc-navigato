@@ -1,0 +1,1121 @@
+{
+  "requestedDate": "2026-11-09",
+  "periodStart": "2026-11-02",
+  "periodEnd": "2026-11-08",
+  "generatedAt": "2026-11-09T11:00:51+08:00",
+  "reportIds": [
+    "china-mobile-2027-compute-plan-20261106",
+    "dahua-mobile-supernode-award-20261103",
+    "nexwise-h1-compute-contract-20261106",
+    "xingyun-token-delivery-ir-20261105",
+    "sharetronic-joint-finance-lease-20261105",
+    "equinix-sg6-opening-20261106",
+    "wmedia-google-malaysia-15bn-20261105",
+    "microsoft-sea3-johor-cloud-update-20261105",
+    "dayone-kempas-water-phase2-20261105",
+    "iren-q1-fy27-delivery-20261105",
+    "terawulf-q3-hpc-operations-20261106",
+    "nda-data-market-infrastructure-20261103",
+    "heli-beijing-ai-finance-20261105",
+    "beijing-green-compute-applications-20261106",
+    "csrc-buyback-policy-20261102",
+    "hunan-liu-hailong-insider-trading-20261103",
+    "hkex-carbon-neutral-disciplinary-20261103",
+    "sgx-ipo-prospectus-review-20261103",
+    "sse-hk-stock-connect-risk-20261106",
+    "sound-global-buyout-update-20261102",
+    "mm2-restructuring-whitewash-update-20261105",
+    "dcd-us-local-data-center-votes-20261104",
+    "nexwise-ir-token-paid-20261103",
+    "capitalonline-huailai-credit-approved-20261106",
+    "capitalonline-chenrong-investor-20261107",
+    "wmedia-pdg-johor-green-loan-20261104",
+    "wmedia-sunway-two-data-centre-awards-20261106",
+    "wmedia-haoyang-thailand-financing-20261106",
+    "google-wyoming-yicai-20261106",
+    "amazon-somervell-nuclear-campus-20261105",
+    "terawulf-google-credit-fluor-20261104",
+    "smm-gpu-benchmark-20261106",
+    "ornn-daily-settlement-20261107",
+    "ucloud-operations-cs-interview-20261106",
+    "wuzhen-supercompute-utilization-20261105",
+    "wuxi-huishan-compute-mix-20261104",
+    "dcd-digital-realty-q3-leasing-20261102",
+    "dcd-ntt-jkt2a-open-20261103",
+    "wmedia-smx01-ready-service-20261102",
+    "telkom-neutradc-cikarang-occupied-20261103",
+    "c114-operator-aidc-tenders-october-20261104",
+    "dcd-envision-800v-live-20261102",
+    "zte-oex-supernode-20261105",
+    "dcd-amd-q3-datacenter-growth-20261104",
+    "dcd-chemours-two-phase-fluids-20261105",
+    "bloom-ntt-900mw-onsite-power-20261105",
+    "wmedia-google-malaysia-water-20261102",
+    "aidc-reits-operation-interview-20261106",
+    "csindex-ai-theme-week-20261106",
+    "tencent-aidc-peer-prices-20261106",
+    "cls-aidc-stock-rotation-20261105",
+    "runjian-stock-abnormal-20261107"
+  ],
+  "backgroundReportIds": [
+    "sfc-takeovers-bulletin-78-20260929",
+    "mas-sic-takeovers-code-20260616"
+  ],
+  "sections": [
+    {
+      "id": "summary",
+      "items": [
+        {
+          "title": "A股AI板块阶段反弹，趋势反转仍待确认",
+          "reportIds": [
+            "csindex-ai-theme-week-20261106",
+            "tencent-aidc-peer-prices-20261106"
+          ],
+          "fact": "AI主题指数周涨1.80%，沪深300周涨1.73%；AI指数周五跌3.90%，固定A股同行8只同日均回落。",
+          "significance": "板块周涨幅接近大盘，周末前回落显示反弹的持续性仍需观察。",
+          "businessImpact": "管理层可将股价相对强弱用于观察融资和估值预期，并结合项目验收、计费及回款判断经营兑现。"
+        },
+        {
+          "title": "运营商披露下一年采购和算力投资计划",
+          "reportIds": [
+            "china-mobile-2027-compute-plan-20261106",
+            "dahua-mobile-supernode-award-20261103"
+          ],
+          "fact": "中国移动预计2027年采购总额5000亿元以上，算力投资1000亿元以上。同期超节点集采公告披露华启智慧4096卡份额、预计金额约26.3亿元。",
+          "significance": "年度投资意向和具体招标给出了需求规模与交付节奏两个观察点。",
+          "businessImpact": "关注后续采购计划拆分、正式合同与服务器交付窗口。"
+        },
+        {
+          "title": "算力订单扩张，交付与计费条款进入竞争核心",
+          "reportIds": [
+            "nexwise-h1-compute-contract-20261106",
+            "xingyun-token-delivery-ir-20261105",
+            "sharetronic-joint-finance-lease-20261105"
+          ],
+          "fact": "杰创公告算力技术服务合同含税暂定49.152亿元，分批订单服务期各60个月。行云披露首批Token算力单元交付验收。协创签署57.2亿元服务器直租合同。",
+          "significance": "签约、设备融资和验收分别是不同经营环节。",
+          "businessImpact": "按项目逐月跟踪设备到货、验收、起租或计费及回款，有助识别资金先行占用。"
+        },
+        {
+          "title": "新加坡落地高密度机房，马来西亚继续扩展云与水务配套",
+          "reportIds": [
+            "equinix-sg6-opening-20261106",
+            "wmedia-google-malaysia-15bn-20261105",
+            "microsoft-sea3-johor-cloud-update-20261105",
+            "dayone-kempas-water-phase2-20261105"
+          ],
+          "fact": "Equinix新加坡SG6开业，首期约1550柜。Google披露马来西亚后续投资计划，微软更新柔佛SEA3待上线安排，DayOne推进柔佛水处理厂二期。",
+          "significance": "运营、在建和规划容量在不同园区同时推进，冷却水和供电是配套约束。",
+          "businessImpact": "潜在选址应把资源接入和分期可交付量列为尽调重点。"
+        },
+        {
+          "title": "海外算力运营商披露实际收入及下一批交付进度",
+          "reportIds": [
+            "iren-q1-fy27-delivery-20261105",
+            "terawulf-q3-hpc-operations-20261106"
+          ],
+          "fact": "IREN第一财季AI云收入2亿美元，Horizon 1已交付微软。TeraWulf三季度HPC租赁收入约6299万美元，Lake Mariner已运行102MW。",
+          "significance": "收入、已运行容量和下阶段建设分别披露，使交付和商业化可跟踪。",
+          "businessImpact": "评估客户需求时，优先核对已交付与已计费口径，并跟踪建设及验收计划。"
+        }
+      ]
+    },
+    {
+      "id": "environment",
+      "items": [
+        {
+          "title": "AI指数周内先涨后回落，算力租赁与光模块走势分化",
+          "reportIds": [
+            "csindex-ai-theme-week-20261106",
+            "tencent-aidc-peer-prices-20261106",
+            "cls-aidc-stock-rotation-20261105",
+            "runjian-stock-abnormal-20261107"
+          ],
+          "fact": "中证人工智能主题指数（930713）由10月30日收盘4577.18点升至11月6日4659.68点，周涨1.80%，同期沪深300涨1.73%。11月3日收4471.04点，至11月5日收4848.68点，两日反弹8.45%，11月6日回落3.90%，同期沪深300跌1.44%。固定A股同行8只中7只周涨，周五8只下跌，8只成交量低于周四。光模块样本中际旭创周跌18.99%、新易盛周跌12.19%、天孚通信周跌17.57%。",
+          "significance": "11月5日算力租赁股走强时，光模块股已出现分化。润建股份随后披露交易异常波动，同时说明AI、算力和词元业务占营收比重仍较低。",
+          "businessImpact": "同行与硬件股走势分开观察，有助于判断资本市场对租赁订单、设备需求和融资成本的不同预期。"
+        },
+        {
+          "title": "全国一体化数据市场继续推进",
+          "reportIds": [
+            "nda-data-market-infrastructure-20261103",
+            "heli-beijing-ai-finance-20261105"
+          ],
+          "fact": "国家数据局提出加快制定全国一体化数据市场文件，推进数据基础设施互联互通和运营模式试点。北京调研提出加强人工智能和算力网金融支持。",
+          "significance": "数据流通制度、算力调度和融资支持正在不同层面推进。",
+          "businessImpact": "跟踪正式规则、试点主体、授信条件和可结算服务。"
+        },
+        {
+          "title": "北京征集绿色算力设施项目",
+          "reportIds": [
+            "beijing-green-compute-applications-20261106"
+          ],
+          "fact": "北京发布2026年度国家绿色算力设施征集通知，申报截止11月16日。",
+          "significance": "本地项目开始面对具体的征集和评估要求。",
+          "businessImpact": "项目团队可据原文检查适用范围、材料及申报期限。"
+        },
+        {
+          "title": "回购再贷款转为长期安排，护盘式回购规则拟调整",
+          "reportIds": [
+            "csrc-buyback-policy-20261102"
+          ],
+          "fact": "证监会答记者问披露，人民银行已宣布将股票回购增持再贷款转为长期制度性安排，再贷款利率降至1%。证监会拟将股价破发列入可实施护盘式回购的条件，拟取消开盘、收盘集合竞价阶段的申报限制，并研究超募资金和回购专项基金安排。《上市公司股份回购规则》尚待修订。",
+          "significance": "再贷款资金成本下降与股份回购规则调整处于不同程序阶段。",
+          "businessImpact": "企业回购的可用资金需按实际贷款协议、提款条件与董事会方案确定。"
+        },
+        {
+          "title": "董事会换届内幕交易被处罚",
+          "reportIds": [
+            "hunan-liu-hailong-insider-trading-20261103"
+          ],
+          "fact": "湖南证监局认定，刘海龙在有棵树提前进行董事会换届的内幕信息敏感期内，控制他人账户买入39.03万股，公告后全部卖出，获利367,053.10元。监管局决定没收上述违法所得，并对刘海龙罚款150万元。",
+          "significance": "提前换届等控制权相关事项也可能形成内幕信息。",
+          "businessImpact": "重大事项知情人登记、信息隔离与证券账户交易管理需要同步。"
+        },
+        {
+          "title": "港交所处分涉及估值与交易披露失误",
+          "reportIds": [
+            "hkex-carbon-neutral-disciplinary-20261103"
+          ],
+          "fact": "港交所谴责中国碳中和发展集团及7名现任或前任董事。公司截至2023年12月31日的第二份中期业绩及报告高估碳信用资产5870万港元，并相应高估公允价值收益、低估亏损。另两笔交易分别为3380万元人民币服务预付款和3000万港元收购，未及时履行披露义务。两名董事须接受23小时培训，其余5名董事须接受17小时培训。",
+          "significance": "新型资产估值、财报审查和重大预付款披露同时受到监管。",
+          "businessImpact": "建设新业务时应明确估值依据和交易审批披露程序，董事需要关注异常损益变化。"
+        },
+        {
+          "title": "新加坡IPO招股书审查入口确定整合",
+          "reportIds": [
+            "sgx-ipo-prospectus-review-20261103"
+          ],
+          "fact": "新加坡交易所监管公司公告，主板及全球上市板规则修订自2027年1月4日起生效。新加坡金融管理局将把相关上市申请的招股书审查职能委托给SGX RegCo。申请人将通过该机构电子平台一并提交招股书和上市申请。MAS保留招股书披露豁免的决定权，并继续监督受托监管职责。",
+          "significance": "已发布的职能调整将于2027年1月4日生效，MAS保留监督和披露豁免决定权。",
+          "businessImpact": "计划赴新加坡上市的基础设施企业需按新流程安排上市申请及招股书材料。"
+        },
+        {
+          "title": "港股通风险揭示对接无纸证券制度",
+          "reportIds": [
+            "sse-hk-stock-connect-risk-20261106"
+          ],
+          "fact": "上交所与中国结算修订港股通交易风险揭示书必备条款，配合香港11月16日起实施无纸证券市场制度，调整证券派发及半日交易日交收的风险提示。证券公司须更新揭示书，向现有投资者提示变化并留存告知记录；半日交易日交收的实施时间以后续香港结算通告为准。",
+          "significance": "11月6日发布的通知明确11月16日起施行，半日交收启动时间另候通告。",
+          "businessImpact": "相关跨境证券及公司行动流程应更新风险告知与留存记录。"
+        },
+        {
+          "title": "香港收购个案：桑德国际继续月度更新",
+          "reportIds": [
+            "sound-global-buyout-update-20261102"
+          ],
+          "fact": "桑德国际依香港收购守则第3.7条公布月度更新，称买断要约状态及时间安排没有重大进展。公告回顾，法院2025年5月判令温先生按每股2.98港元向少数股东提出买断要约，并按汇丰最优惠利率加1%计付相关利息。公司将继续按月公告后续。",
+          "significance": "本周是依第3.7条履行持续披露，2.98港元定价来自2025年法院判决。",
+          "businessImpact": "交易安排应分别跟踪法院裁定、要约实施、付款和交割节点。"
+        },
+        {
+          "title": "新加坡个案：债权人批准后仍有法院及清洗豁免程序",
+          "reportIds": [
+            "mm2-restructuring-whitewash-update-20261105"
+          ],
+          "fact": "mm2 Asia公布，11月4日公司及子公司债权人会议通过重组方案，将向法院申请批准。相关配售拟募集约1500万新元，同时安排债转股；完成仍须法院、股东和相关机构批准。SIC于9月18日给予的强制全面要约豁免，以独立股东投票通过清洗豁免议案等为条件。",
+          "significance": "本周进展为债权人表决；SIC附条件豁免来自9月18日。",
+          "businessImpact": "涉及配售、债转股和控制权变动时，各类审批与独立股东表决需要在交割前衔接。"
+        },
+        {
+          "title": "政府持股企业一致行动及无纸证券程序",
+          "reportIds": [
+            "sfc-takeovers-bulletin-78-20260929"
+          ],
+          "fact": "通讯说明政府持股企业的一致行动关系须结合持股、管理、决策及投票等事实判断，并讨论无纸证券制度对要约文件和接纳程序的影响。此项为现行实务背景，发布日期为9月29日。",
+          "significance": "9月29日通讯提供现行收购实务指引。",
+          "businessImpact": "判断国资相关收购结构时，应结合持股、管理、决策和投票事实评估一致行动关系。",
+          "context": "background"
+        },
+        {
+          "title": "新加坡收购守则交易保护及期限",
+          "reportIds": [
+            "mas-sic-takeovers-code-20260616"
+          ],
+          "fact": "6月16日公布、7月16日生效的修订涵盖交易保护、协议安排、要约声明与阻挠行动：分手费总额不得超过受要约公司价值的1%，协议安排批准会议须在公告6个月内举行。",
+          "significance": "6月16日公布、7月16日生效的修订继续适用。",
+          "businessImpact": "交易文件应核对分手费、排他安排、表态时限及协议安排会议期限。",
+          "context": "background"
+        },
+        {
+          "title": "美国部分地方通过数据中心开发限制相关投票",
+          "reportIds": [
+            "dcd-us-local-data-center-votes-20261104"
+          ],
+          "fact": "DCD汇总俄亥俄州、缅因州部分地方投票。涉及耗电门槛、公投要求或一定期限的暂停措施，各地程序分别推进。",
+          "significance": "土地、电力和用水门槛会影响当地新增容量的审批路径。",
+          "businessImpact": "跨区域项目应逐一确认法域、适用门槛、生效时间与既有审批状态。"
+        }
+      ]
+    },
+    {
+      "id": "companies",
+      "items": [
+        {
+          "title": "杰创签署分批交付的算力技术服务合同",
+          "reportIds": [
+            "nexwise-h1-compute-contract-20261106",
+            "nexwise-ir-token-paid-20261103"
+          ],
+          "fact": "杰创披露含税暂定49.152亿元的新合同。各批服务期60个月，数量及浮动价格以订单为准，按月结算。公司另披露前三季度AI与云计算收入4.61亿元，Token工厂已有付费使用。",
+          "significance": "新合同的交付和计费取决于分批订单，既有业务数据提供当期经营参照。",
+          "businessImpact": "按批次核对设备交付、客户核验和应收回款。"
+        },
+        {
+          "title": "行云披露Token算力单元验收及分成进展",
+          "reportIds": [
+            "xingyun-token-delivery-ir-20261105"
+          ],
+          "fact": "行云首批Token算力单元完成交付验收，MaaS完成内部测试。VB重签合同设置并上调单位固定Token分成。",
+          "significance": "单位分成和验收推进为经营跟踪提供了更具体的计量点。",
+          "businessImpact": "关注分成适用项目、账单、结算周期和实际收入。"
+        },
+        {
+          "title": "协创融资租赁与首都在线项目资金安排",
+          "reportIds": [
+            "sharetronic-joint-finance-lease-20261105",
+            "capitalonline-huailai-credit-approved-20261106",
+            "capitalonline-chenrong-investor-20261107"
+          ],
+          "fact": "协创签署57.2亿元服务器联合直租合同，期限66个月。首都在线怀来8.15亿元新增授信担保额度获股东会通过，甘肃宸融另签外部1亿元增资协议，计划将90%用于算力硬件采购。附回售条款的投资按金融负债处理，协议约定首都在线在2027年8月底前追加出资恢复过半持股。",
+          "significance": "租赁、授信担保和附回售条款的增资分别形成支付、担保与后续出资安排。",
+          "businessImpact": "分别跟踪直租起算、授信提款及增资交割，不同项目单列资金台账。"
+        },
+        {
+          "title": "马来西亚云区域和园区工程分期扩展",
+          "reportIds": [
+            "wmedia-google-malaysia-15bn-20261105",
+            "microsoft-sea3-johor-cloud-update-20261105",
+            "wmedia-pdg-johor-green-loan-20261104",
+            "wmedia-sunway-two-data-centre-awards-20261106"
+          ],
+          "fact": "Google拟于2027—2028年在马来西亚投入150亿美元，首座Elmina园区已运营。微软柔佛SEA3待上线。PDG获约13亿美元绿色融资，Sunway在雪兰莪及柔佛获两项工程。",
+          "significance": "云服务、园区扩建融资和工程订单分别反映建设阶段。",
+          "businessImpact": "以可用区上线、园区交付和配套设施为节点跟踪地区供给。"
+        },
+        {
+          "title": "新加坡SG6开业，泰国项目融资推进",
+          "reportIds": [
+            "equinix-sg6-opening-20261106",
+            "wmedia-haoyang-thailand-financing-20261106"
+          ],
+          "fact": "Equinix启用新加坡SG6，全部建成后最多20MW。w.media援引企业披露，Haoyang泰国项目获得5.9亿美元七年期建设贷款，拟于2027年分期交付。",
+          "significance": "新加坡进入运营阶段，泰国样本进入建设资金落实阶段。",
+          "businessImpact": "按项目分别跟踪可交付容量、首期验收和托管起租。"
+        },
+        {
+          "title": "美国园区披露供电、融资和EPC安排",
+          "reportIds": [
+            "google-wyoming-yicai-20261106",
+            "amazon-somervell-nuclear-campus-20261105",
+            "terawulf-google-credit-fluor-20261104"
+          ],
+          "fact": "Google披露怀俄明170亿美元投资计划和配套电力安排。亚马逊披露Somervell已开展场地准备，计划通过专线直购邻近核电。TeraWulf披露取得Google信用支持并签署三栋机房EPC协议。",
+          "significance": "选址、融资信用和施工交付同步进入项目条款。",
+          "businessImpact": "核对许可、建设批次、融资条件和实际投运时点。"
+        }
+      ]
+    },
+    {
+      "id": "operations",
+      "items": [
+        {
+          "title": "国内西部H100报价上行，海外卡型走势分化",
+          "reportIds": [
+            "smm-gpu-benchmark-20261106",
+            "ornn-daily-settlement-20261107"
+          ],
+          "fact": "SMM 11月6日西部H100整机包月基准均价14.84元每卡时，较11月5日升5.55%，其余三组持平。Ornn 11月7日H100日结3.10美元每GPU小时，日降5.49%，B200为9.88美元，日升3.67%。",
+          "significance": "国内报价与海外成交指数使用不同市场、交付条件和结算日。",
+          "businessImpact": "采购比较应先按地区、卡型、租期及计量口径分组，持续保存同组时间序列。"
+        },
+        {
+          "title": "国内利用率样本显示客户、负载与交付差异",
+          "reportIds": [
+            "ucloud-operations-cs-interview-20261106",
+            "wuzhen-supercompute-utilization-20261105",
+            "wuxi-huishan-compute-mix-20261104"
+          ],
+          "fact": "优刻得称青浦利用率提升。乌镇超算运营负责人称整体利用率约80%。无锡惠山一期2000卡满载，运营方称约六成用户已付费。",
+          "significance": "园区利用率、满载与付费客户分别反映不同经营维度。",
+          "businessImpact": "以可售卡时、实际计费和付费客户分别建立监控，优先识别可持续负载。"
+        },
+        {
+          "title": "海外AI云收入与运行容量进入财务披露",
+          "reportIds": [
+            "iren-q1-fy27-delivery-20261105",
+            "terawulf-q3-hpc-operations-20261106",
+            "dcd-digital-realty-q3-leasing-20261102"
+          ],
+          "fact": "IREN本季AI云收入2亿美元，包含服务和租赁。TeraWulf第三季HPC租赁收入约6299万美元。Digital Realty披露已签未起租年化租金储备按项目100%权益口径约25亿美元，按公司权益口径约18亿美元。",
+          "significance": "当期收入、合同储备和运行容量分别影响经营兑现与未来供给。",
+          "businessImpact": "用当期收入和已计费容量跟踪现状，再用交付计划与已签储备判断增量。"
+        },
+        {
+          "title": "雅加达多个高密度设施进入可服务阶段",
+          "reportIds": [
+            "dcd-ntt-jkt2a-open-20261103",
+            "wmedia-smx01-ready-service-20261102",
+            "telkom-neutradc-cikarang-occupied-20261103"
+          ],
+          "fact": "NTT DATA启用雅加达12MW JKT2A并推出园区互联。SMX01的21MW设施达到可服务状态。Telkom披露芝卡朗21.5MW容量在第四季全面运行。",
+          "significance": "开业、可服务状态和实际运行是不同容量口径。",
+          "businessImpact": "持续核对客户进驻、实际运行和新增电力可用量。"
+        },
+        {
+          "title": "运营商10月工程招标形成基础设施需求样本",
+          "reportIds": [
+            "c114-operator-aidc-tenders-october-20261104"
+          ],
+          "fact": "C114按单项预算不低于100万元统计三家运营商10月AIDC基建招标，39项合计约40.2亿元，范围包括供电、制冷及机房配套。",
+          "significance": "工程侧采购在服务器采购之外形成设备和施工需求。",
+          "businessImpact": "用项目编号、采购类别与开标日期跟踪进度，保留统计样本边界。"
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "items": [
+        {
+          "title": "800V直流供电进入真实负载运行",
+          "reportIds": [
+            "dcd-envision-800v-live-20261102"
+          ],
+          "fact": "远景披露乌兰察布Galaxy园区800V直流系统已带实际AI负载运行，结合固态变压器和储能应对负载波动。",
+          "significance": "更高机柜功率促使供配电架构和储能联合设计。",
+          "businessImpact": "评估设备成熟度时应观察带载时长、故障切换和扩容条件。"
+        },
+        {
+          "title": "超节点方案扩展柜内互联与外置缓存",
+          "reportIds": [
+            "zte-oex-supernode-20261105",
+            "dcd-amd-q3-datacenter-growth-20261104"
+          ],
+          "fact": "中兴展示单柜128卡OEX超节点和以DPU为中心的KV缓存方案。AMD三季度数据中心分部收入85亿美元，同比增97%。",
+          "significance": "整机互联、缓存和计算芯片共同影响高密度算力的交付配置。",
+          "businessImpact": "区分厂商展示、批量采购和项目投产，逐项验证互联、冷却和运维。"
+        },
+        {
+          "title": "冷却与现场供电进入设备选型",
+          "reportIds": [
+            "dcd-chemours-two-phase-fluids-20261105",
+            "bloom-ntt-900mw-onsite-power-20261105"
+          ],
+          "fact": "Chemours推出面向两相冷板与浸没冷却的介电流体。NTT DATA与Bloom签署合计900MW现场供电协议，首批计划自2027年发货。",
+          "significance": "两类方案分别影响机柜散热和园区供电交期。",
+          "businessImpact": "评估现场验证、供应交期、耗材维护及分期扩展条件。"
+        }
+      ]
+    },
+    {
+      "id": "deep-dive",
+      "items": [
+        {
+          "title": "算力合同如何穿过交付与计费链条",
+          "reportIds": [
+            "nexwise-h1-compute-contract-20261106",
+            "xingyun-token-delivery-ir-20261105",
+            "sharetronic-joint-finance-lease-20261105"
+          ],
+          "fact": "杰创合同分批执行，行云首批Token算力单元已验收，协创设备直租和质押协议已签。",
+          "significance": "交付验收和付款条件决定资金投入与计费间隔。",
+          "businessImpact": "项目测算应按批次确认设备成本、验收期限、服务费和资金占用。",
+          "background": "长期算力服务依赖服务器、机房和客户需求按批次协调。",
+          "analysis": "从首批订单开始建立现金流台账，以客户签收及验收文件为交付证据，并用账单与收款补齐下一阶段。"
+        },
+        {
+          "title": "柔佛和新加坡怎样把水与能效写进交付",
+          "reportIds": [
+            "equinix-sg6-opening-20261106",
+            "dayone-kempas-water-phase2-20261105",
+            "wmedia-google-malaysia-water-20261102",
+            "microsoft-sea3-johor-cloud-update-20261105"
+          ],
+          "fact": "SG6已开业，使用新生水和雨水回收并设置服务器能效要求。DayOne一期已运营，二期预计2027年三季度投运。Google拟投入共享供水设施，微软SEA3计划采用闭式循环和风冷冷水机组。",
+          "significance": "冷却方式、供水水权及水处理工程共同决定可用容量。",
+          "businessImpact": "项目可把用水来源和分期设备负荷纳入同一交付清单。",
+          "background": "高密度园区扩容需要兼顾供电、冷却水可用量和审批约束。",
+          "analysis": "按实际工况核算新增水需求，分别核实一期运营数据和远期工程条件，再评估扩建的可交付时点。"
+        },
+        {
+          "title": "已运行、在建与合同收入储备的界线",
+          "reportIds": [
+            "iren-q1-fy27-delivery-20261105",
+            "terawulf-q3-hpc-operations-20261106",
+            "terawulf-google-credit-fluor-20261104"
+          ],
+          "fact": "IREN披露Horizon 1已交付和后续设计时程变化。TeraWulf报告102MW运行、336MW在建，并披露Justified的融资信用支持与EPC。",
+          "significance": "设计变更、资金落实和工程采购可能改变起租日期。",
+          "businessImpact": "跨项目比较应保留报告期、客户及容量分母，核实收入和现金流来源。",
+          "background": "算力基础设施需要先投入建设，再按各项目条件转入运营。",
+          "analysis": "把资本投入与已签租约分别建模，依据验收、起租和账单滚动修正预期。"
+        }
+      ]
+    },
+    {
+      "id": "strategy",
+      "items": [
+        {
+          "title": "当前定性为阶段反弹，反转看相对强弱和经营兑现",
+          "reportIds": [
+            "csindex-ai-theme-week-20261106",
+            "tencent-aidc-peer-prices-20261106",
+            "runjian-stock-abnormal-20261107",
+            "nexwise-h1-compute-contract-20261106"
+          ],
+          "analysis": "截至11月6日，AI主题指数收于4659.68点，低于当日20个交易日收盘均值4941.42点。以10月9日收盘为基准，至11月6日收盘，AI指数跌15.41%，沪深300跌6.09%。短期基准情形是反弹后继续分化。杰创等公司的合同需按批核验和结算，经营改善看后续执行。",
+          "action": "若指数持续站上本轮反弹收盘高点4848.68点和随交易日更新的20日均线，同时相对沪深300走强、上涨扩展至多数固定同行与硬件样本，反转判断才更有依据。若指数收盘跌破本周最低收盘4471.04点且相对表现继续转弱，按反弹退潮跟踪。以订单、交付、验收、计费和回款评估经营兑现。"
+        },
+        {
+          "title": "将合同金额拆到可兑现批次",
+          "reportIds": [
+            "nexwise-h1-compute-contract-20261106",
+            "xingyun-token-delivery-ir-20261105",
+            "iren-q1-fy27-delivery-20261105"
+          ],
+          "analysis": "长协在设备交付、验收和月结之间存在多个时间点。",
+          "action": "用订单和验收文件更新在手项目，记录每批成本、计费、应收与回款。"
+        },
+        {
+          "title": "优先核实资源接入与工程交期",
+          "reportIds": [
+            "equinix-sg6-opening-20261106",
+            "dayone-kempas-water-phase2-20261105",
+            "amazon-somervell-nuclear-campus-20261105",
+            "dcd-envision-800v-live-20261102"
+          ],
+          "analysis": "园区扩容需要同时完成供配电、冷却和客户接入。",
+          "action": "对备选机房建立电、水、许可及交付承诺的可核清单。"
+        },
+        {
+          "title": "分别管理设备报价和运营利用率",
+          "reportIds": [
+            "smm-gpu-benchmark-20261106",
+            "ornn-daily-settlement-20261107",
+            "ucloud-operations-cs-interview-20261106"
+          ],
+          "analysis": "价格指标和利用率样本各自反映供需的一部分。",
+          "action": "在相同机型、租期和地区做可比报价，再结合真实计费卡时安排资源。"
+        },
+        {
+          "title": "把政策与合规阶段纳入投资评审",
+          "reportIds": [
+            "nda-data-market-infrastructure-20261103",
+            "sgx-ipo-prospectus-review-20261103",
+            "dcd-us-local-data-center-votes-20261104"
+          ],
+          "analysis": "交易所规则和项目审批按不同主体、法域和日期适用。",
+          "action": "项目立项和融资前分别核对已生效规则、征求意见和个案安排。"
+        },
+        {
+          "title": "用运营现金流评估资产证券化条件",
+          "reportIds": [
+            "aidc-reits-operation-interview-20261106",
+            "terawulf-q3-hpc-operations-20261106"
+          ],
+          "analysis": "财联社受访者认为稳定算力消纳和现金流是讨论证券化的前提。运营披露可辅助区分已运行容量和建设投入。",
+          "action": "按资产权属、计费、回款、租约期限与客户集中度建立项目底表。"
+        }
+      ]
+    },
+    {
+      "id": "follow-up",
+      "items": [
+        {
+          "title": "复查AI指数高低点、同行扩散和订单兑现",
+          "reportIds": [
+            "csindex-ai-theme-week-20261106",
+            "tencent-aidc-peer-prices-20261106",
+            "nexwise-h1-compute-contract-20261106"
+          ],
+          "analysis": "指数和同行在周五普遍回落，后续收盘、成交和上涨覆盖可验证反弹是否延续。",
+          "action": "用中证官方收盘日线复查反弹高低点、20日均线及对沪深300的相对强弱；用相同前复权口径更新8只同行上涨家数和成交量，并在公告中跟踪订单执行至计费和回款。"
+        },
+        {
+          "title": "追踪杰创分批订单和行云Token结算",
+          "reportIds": [
+            "nexwise-h1-compute-contract-20261106",
+            "xingyun-token-delivery-ir-20261105"
+          ],
+          "analysis": "首批验收与后续订单将决定服务启动节奏。",
+          "action": "查阅公司公告和投资者交流中的交付、验收、账单与回款节点。"
+        },
+        {
+          "title": "核实运营商采购拆分及落地",
+          "reportIds": [
+            "china-mobile-2027-compute-plan-20261106",
+            "dahua-mobile-supernode-award-20261103"
+          ],
+          "analysis": "投资计划需要进一步落实到招标、订单和供货。",
+          "action": "持续查看招标公告、正式合同、采购类别及交货要求。"
+        },
+        {
+          "title": "跟进柔佛水务、新加坡容量与SEA3上线",
+          "reportIds": [
+            "dayone-kempas-water-phase2-20261105",
+            "equinix-sg6-opening-20261106",
+            "microsoft-sea3-johor-cloud-update-20261105"
+          ],
+          "analysis": "区域供给取决于分期投运和水电接入。",
+          "action": "追踪运营商和监管部门公布的可用区、扩建批次及用水安排。"
+        },
+        {
+          "title": "跟进海外已签容量的起租",
+          "reportIds": [
+            "iren-q1-fy27-delivery-20261105",
+            "terawulf-q3-hpc-operations-20261106"
+          ],
+          "analysis": "设计变更和分期施工会影响下一批收入节奏。",
+          "action": "复核Horizon 2—4、Lake Mariner CB-4和CB-5的交付与实际计费。"
+        }
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "reportId": "baosight-maanshan-meeting-materials-20261107",
+      "selected": false,
+      "reason": "本周材料供11月13日会议审议，拟建项目仍处于内部决策程序。"
+    },
+    {
+      "reportId": "capitalonline-buyback-approved-20261107",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "capitalonline-chenrong-investor-20261107",
+      "selected": true,
+      "reason": "用于协创融资租赁与首都在线项目资金安排，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "hec-shareholder-pledge-20261107",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "hongxin-buyback-loan-commitment-20261107",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "runjian-stock-abnormal-20261107",
+      "selected": true,
+      "reason": "用于补订AI板块行情、横向比较或经营兑现证据。"
+    },
+    {
+      "reportId": "beijing-green-compute-applications-20261106",
+      "selected": true,
+      "reason": "用于北京征集绿色算力设施项目，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "capitalonline-huailai-credit-approved-20261106",
+      "selected": true,
+      "reason": "用于协创融资租赁与首都在线项目资金安排，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "equinix-sg6-opening-20261106",
+      "selected": true,
+      "reason": "用于新加坡落地高密度机房，马来西亚继续扩展云与水务配套，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "hongxin-anliantong-guarantee-20261106",
+      "selected": false,
+      "reason": "本项是授信增信或企业综合授信披露。本期比较具体项目资金用途、设备租赁及合同交付。"
+    },
+    {
+      "reportId": "iren-q1-fy27-delivery-20261105",
+      "selected": true,
+      "reason": "用于海外算力运营商披露实际收入及下一批交付进度，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "nexwise-h1-compute-contract-20261106",
+      "selected": true,
+      "reason": "用于算力订单扩张，交付与计费条款进入竞争核心，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "sse-hk-stock-connect-risk-20261106",
+      "selected": true,
+      "reason": "用于港股通风险揭示对接无纸证券制度，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "terawulf-q3-hpc-operations-20261106",
+      "selected": true,
+      "reason": "用于海外算力运营商披露实际收入及下一批交付进度，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "amazon-somervell-nuclear-campus-20261105",
+      "selected": true,
+      "reason": "用于美国园区披露供电、融资和EPC安排，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "bloom-ntt-900mw-onsite-power-20261105",
+      "selected": true,
+      "reason": "用于冷却与现场供电进入设备选型，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "dayone-kempas-water-phase2-20261105",
+      "selected": true,
+      "reason": "用于新加坡落地高密度机房，马来西亚继续扩展云与水务配套，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "hec-shareholders-increase-progress-20261105",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "microsoft-sea3-johor-cloud-update-20261105",
+      "selected": true,
+      "reason": "用于新加坡落地高密度机房，马来西亚继续扩展云与水务配套，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "mm2-restructuring-whitewash-update-20261105",
+      "selected": true,
+      "reason": "用于新加坡个案：债权人批准后仍有法院及清洗豁免程序，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "nexwise-buyback-loan-commitment-20261105",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "oulu-genoli-supplemental-pledge-20261105",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "sharetronic-joint-finance-lease-20261105",
+      "selected": true,
+      "reason": "用于算力订单扩张，交付与计费条款进入竞争核心，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "xingyun-ceb-credit-20261105",
+      "selected": false,
+      "reason": "本项是授信增信或企业综合授信披露。本期比较具体项目资金用途、设备租赁及合同交付。"
+    },
+    {
+      "reportId": "xingyun-shareholder-resolution-appeal-20261105",
+      "selected": false,
+      "reason": "董事选举诉讼属于治理进展，本期经营主线为项目交付和资金落实。"
+    },
+    {
+      "reportId": "xingyun-token-delivery-ir-20261105",
+      "selected": true,
+      "reason": "用于算力订单扩张，交付与计费条款进入竞争核心，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "hec-buyback-progress-20261104",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "sharetronic-anhui-esun-guarantee-20261104",
+      "selected": false,
+      "reason": "本项是授信增信或企业综合授信披露。本期比较具体项目资金用途、设备租赁及合同交付。"
+    },
+    {
+      "reportId": "terawulf-google-credit-fluor-20261104",
+      "selected": true,
+      "reason": "用于美国园区披露供电、融资和EPC安排，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "yoozoo-gpu-purchase-20261104",
+      "selected": false,
+      "reason": "GPU采购已签并约定分批提货，本期算力合同比较侧重实际验收和按批计费机制。"
+    },
+    {
+      "reportId": "aofei-buyback-loan-commitment-20261103",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "aofei-second-buyback-board-20261103",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "dahua-mobile-supernode-award-20261103",
+      "selected": true,
+      "reason": "用于运营商披露下一年采购和算力投资计划，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "hkex-carbon-neutral-disciplinary-20261103",
+      "selected": true,
+      "reason": "用于港交所处分涉及估值与交易披露失误，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "hongxin-buyback-approved-20261103",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "hunan-liu-hailong-insider-trading-20261103",
+      "selected": true,
+      "reason": "用于董事会换届内幕交易被处罚，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "maixinlin-server-deposit-delay-20261103",
+      "selected": false,
+      "reason": "服务器采购延期属于单一企业执行问题。本期用IREN客户设计变更展开交付敏感性分析。"
+    },
+    {
+      "reportId": "nda-data-market-infrastructure-20261103",
+      "selected": true,
+      "reason": "用于全国一体化数据市场继续推进，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "nexwise-ir-token-paid-20261103",
+      "selected": true,
+      "reason": "用于杰创签署分批交付的算力技术服务合同，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "sgx-ipo-prospectus-review-20261103",
+      "selected": true,
+      "reason": "用于新加坡IPO招股书审查入口确定整合，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "sharetronic-financing-ir-20261103",
+      "selected": false,
+      "reason": "公开交流说明融资模式，本期选用同企业57.2亿元直租原件展开资金用途及履约跟踪。"
+    },
+    {
+      "reportId": "telkom-neutradc-cikarang-occupied-20261103",
+      "selected": true,
+      "reason": "用于雅加达多个高密度设施进入可服务阶段，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "xingyun-buyback-preparation-ir-20261103",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "csrc-buyback-policy-20261102",
+      "selected": true,
+      "reason": "用于回购再贷款转为长期安排，护盘式回购规则拟调整，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "hongxin-buyback-proposal-20261102",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "luxshare-optical-cooling-ir-20261102",
+      "selected": false,
+      "reason": "部件量产与定点事项保留在资料库，本期技术章节聚焦柜内整机互联、带载直流和制冷方案。"
+    },
+    {
+      "reportId": "nexwise-buyback-approved-20261102",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "sharetronic-controlling-shareholder-increase-20261102",
+      "selected": false,
+      "reason": "此项反映股东资金或股份安排。本期同行章节优先采用算力合同、交付与项目融资。"
+    },
+    {
+      "reportId": "sound-global-buyout-update-20261102",
+      "selected": true,
+      "reason": "用于香港收购个案：桑德国际继续月度更新，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "ciie-aidc-modular-cooling-20261107",
+      "selected": false,
+      "reason": "该稿以展会展示和企业采访为主。本期液冷采用设施开业及明确发布的介电流体案例。"
+    },
+    {
+      "reportId": "ornn-daily-settlement-20261107",
+      "selected": true,
+      "reason": "用于国内西部H100报价上行，海外卡型走势分化，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "aidc-reits-operation-interview-20261106",
+      "selected": true,
+      "reason": "用于用运营现金流评估资产证券化条件，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "china-mobile-2027-compute-plan-20261106",
+      "selected": true,
+      "reason": "用于运营商披露下一年采购和算力投资计划，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "china-mobile-bits-dispatch-20261106",
+      "selected": false,
+      "reason": "算力网平台发布与年度投资安排来自同一时期的运营商交流。本期重点采用采购与投资计划以及已披露的具体集采。"
+    },
+    {
+      "reportId": "csindex-ai-theme-week-20261106",
+      "selected": true,
+      "reason": "用于补订AI板块行情、横向比较或经营兑现证据。"
+    },
+    {
+      "reportId": "google-wyoming-yicai-20261106",
+      "selected": true,
+      "reason": "用于美国园区披露供电、融资和EPC安排，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "sharetronic-cloud-contract-response-20261106",
+      "selected": false,
+      "reason": "问答更新交付节奏口径，具体进展继续沿原合同跟踪。本期重点选择可核验的融资租赁合同和其他公司已验收节点。"
+    },
+    {
+      "reportId": "smm-gpu-benchmark-20261106",
+      "selected": true,
+      "reason": "用于国内西部H100报价上行，海外卡型走势分化，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "tencent-aidc-peer-prices-20261106",
+      "selected": true,
+      "reason": "用于补订AI板块行情、横向比较或经营兑现证据。"
+    },
+    {
+      "reportId": "ucloud-operations-cs-interview-20261106",
+      "selected": true,
+      "reason": "用于国内利用率样本显示客户、负载与交付差异，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "wmedia-haoyang-thailand-financing-20261106",
+      "selected": true,
+      "reason": "用于新加坡SG6开业，泰国项目融资推进，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "wmedia-sunway-two-data-centre-awards-20261106",
+      "selected": true,
+      "reason": "用于马来西亚云区域和园区工程分期扩展，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "agent-server-cpu-demand-scenario-20261105",
+      "selected": false,
+      "reason": "机构测算以Agent情景假设为基础，本期技术部分优先采用已运行供电和已发布设备方案。"
+    },
+    {
+      "reportId": "cls-aidc-stock-rotation-20261105",
+      "selected": true,
+      "reason": "用于补订AI板块行情、横向比较或经营兑现证据。"
+    },
+    {
+      "reportId": "dcd-boe-speculative-dc-lending-20261105",
+      "selected": false,
+      "reason": "媒体报道监管机构了解无租户项目贷款风险，周报以有明确文本和适用范围的监管事项为主。"
+    },
+    {
+      "reportId": "dcd-chemours-two-phase-fluids-20261105",
+      "selected": true,
+      "reason": "用于冷却与现场供电进入设备选型，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "dcd-ms-nscale-texas-option-20261105",
+      "selected": false,
+      "reason": "媒体消息涉及未行使选择权，本期用IREN与TeraWulf正式披露比较已交付及在建容量。"
+    },
+    {
+      "reportId": "heli-beijing-ai-finance-20261105",
+      "selected": true,
+      "reason": "用于全国一体化数据市场继续推进，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "mobile-moma-open-plans-20261105",
+      "selected": false,
+      "reason": "平台开放或结算设施披露体现服务方向，本期聚焦已付费业务、订单和验收。"
+    },
+    {
+      "reportId": "sinnet-aisteria-cooperation-response-20261105",
+      "selected": false,
+      "reason": "公司澄清未开展合作，本期同行章节选取已经签署或推进的经营事项。"
+    },
+    {
+      "reportId": "wmedia-google-malaysia-15bn-20261105",
+      "selected": true,
+      "reason": "用于新加坡落地高密度机房，马来西亚继续扩展云与水务配套，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "wmedia-nextdc-stake-m3-delay-20261105",
+      "selected": false,
+      "reason": "股权寻购安排和澳洲接电延期作为后续观察，本期海外运营对照采用IREN和TeraWulf原件。"
+    },
+    {
+      "reportId": "wuzhen-supercompute-utilization-20261105",
+      "selected": true,
+      "reason": "用于国内利用率样本显示客户、负载与交付差异，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "zhejiang-data-token-platform-20261105",
+      "selected": false,
+      "reason": "平台开放或结算设施披露体现服务方向，本期聚焦已付费业务、订单和验收。"
+    },
+    {
+      "reportId": "zte-oex-supernode-20261105",
+      "selected": true,
+      "reason": "用于超节点方案扩展柜内互联与外置缓存，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "c114-operator-aidc-tenders-october-20261104",
+      "selected": true,
+      "reason": "用于运营商10月工程招标形成基础设施需求样本，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "dcd-amd-q3-datacenter-growth-20261104",
+      "selected": true,
+      "reason": "用于超节点方案扩展柜内互联与外置缓存，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "dcd-nvidia-overseas-client-mix-20261104",
+      "selected": false,
+      "reason": "媒体转述海外客户结构要求，正式适用条件仍待明确。本期保留可核项目和正式条款。"
+    },
+    {
+      "reportId": "dcd-sambanova-supermicro-sn50-20261104",
+      "selected": false,
+      "reason": "初步芯片采用计划仍处于方案阶段，本期选用已带载供电和明确设备展示。"
+    },
+    {
+      "reportId": "dcd-us-local-data-center-votes-20261104",
+      "selected": true,
+      "reason": "用于美国部分地方通过数据中心开发限制相关投票，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "ornn-daily-settlement-20261104",
+      "selected": false,
+      "reason": "本期价格章节采用更接近期末的11月7日同系列日结，保留前期样本用于时间序列。"
+    },
+    {
+      "reportId": "secdaily-xingyun-token-sharing-20261104",
+      "selected": false,
+      "reason": "有关Token分成的媒体采访已由本期行云正式交流原件覆盖，周报采用该原件。"
+    },
+    {
+      "reportId": "wmedia-pdg-johor-green-loan-20261104",
+      "selected": true,
+      "reason": "用于马来西亚云区域和园区工程分期扩展，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "wmedia-perak-ai-feasibility-20261104",
+      "selected": false,
+      "reason": "霹雳项目处于初步可行性研究，本期区域样本优先覆盖融资、工程及开业。"
+    },
+    {
+      "reportId": "wuxi-huishan-compute-mix-20261104",
+      "selected": true,
+      "reason": "用于国内利用率样本显示客户、负载与交付差异，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "yoozoo-gpu-funding-analysis-20261104",
+      "selected": false,
+      "reason": "该文分析游族同一GPU采购事项，资料库保留解读，周报按具体项目阶段比较。"
+    },
+    {
+      "reportId": "zhejiang-mobile-flexible-power-20261104",
+      "selected": false,
+      "reason": "算力潮汐调度为方案构想，本期以远景实际带载案例讨论供配电。"
+    },
+    {
+      "reportId": "antara-indonesia-power-export-pricing-20261102",
+      "selected": false,
+      "reason": "部长就电力出口提出原则性要求，本期印尼项目部分以实际可服务容量和运行披露为主。"
+    },
+    {
+      "reportId": "cls-anthropic-compute-commitments-20261103",
+      "selected": false,
+      "reason": "采购及租赁承诺横跨多个协议和时点，本期用项目级租赁、交付及已确认收入展开。"
+    },
+    {
+      "reportId": "cnstock-tencent-cloud-efficiency-20261103",
+      "selected": false,
+      "reason": "访谈覆盖云基础设施与算力效率，本期国内运营段选取具体园区利用率与付费样本。"
+    },
+    {
+      "reportId": "dcd-crc-bloom-power-mou-20261103",
+      "selected": false,
+      "reason": "加州燃料电池事项仍处于备忘录评估阶段，本期采用明确签署的NTT供电协议和发货安排。"
+    },
+    {
+      "reportId": "dcd-ntt-jkt2a-open-20261103",
+      "selected": true,
+      "reason": "用于雅加达多个高密度设施进入可服务阶段，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "dcd-openai-grid-protectors-20261103",
+      "selected": false,
+      "reason": "灵活负荷计划针对未来园区，本期供电案例聚焦带载系统、已签供应及明确接入安排。"
+    },
+    {
+      "reportId": "gongji-distributed-compute-financing-20261103",
+      "selected": false,
+      "reason": "融资用于技术与业务扩张，本期分别选取真实带载、设备方案和客户交付。"
+    },
+    {
+      "reportId": "moxchip-sparse-inference-financing-20261103",
+      "selected": false,
+      "reason": "融资用于技术与业务扩张，本期分别选取真实带载、设备方案和客户交付。"
+    },
+    {
+      "reportId": "ornn-daily-settlement-20261103",
+      "selected": false,
+      "reason": "本期价格章节采用更接近期末的11月7日同系列日结，保留前期样本用于时间序列。"
+    },
+    {
+      "reportId": "shaoguan-compute-industry-network-20261103",
+      "selected": false,
+      "reason": "文章以区域产业布局与跨境探索为主，本期采用已投运和已披露运营数据的项目对照。"
+    },
+    {
+      "reportId": "wmedia-northern-solar-cress-loas-20261103",
+      "selected": false,
+      "reason": "授标函处于供电合作早期，本期园区配套选用已启动水厂扩建及明确接电方案。"
+    },
+    {
+      "reportId": "dcd-digital-realty-q3-leasing-20261102",
+      "selected": true,
+      "reason": "用于海外AI云收入与运行容量进入财务披露，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "dcd-envision-800v-live-20261102",
+      "selected": true,
+      "reason": "用于800V直流供电进入真实负载运行，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "dcd-gev-backlog-20261102",
+      "selected": false,
+      "reason": "公司订单储备覆盖多类客户和设备，本期选用数据中心专门供电采购及交期。"
+    },
+    {
+      "reportId": "dcd-prometheus-casper-exit-20261102",
+      "selected": false,
+      "reason": "该退出事项属于单一项目进展，本期美国政策段覆盖多地审批限制并对比有明确配套的项目。"
+    },
+    {
+      "reportId": "dck-liquid-cooling-retrofits-20261102",
+      "selected": false,
+      "reason": "存量改造为技术分析，本期采用已开业的SG6和新推出的两相冷却材料。"
+    },
+    {
+      "reportId": "ornn-daily-settlement-20261102",
+      "selected": false,
+      "reason": "本期价格章节采用更接近期末的11月7日同系列日结，保留前期样本用于时间序列。"
+    },
+    {
+      "reportId": "wmedia-google-malaysia-water-20261102",
+      "selected": true,
+      "reason": "用于柔佛和新加坡怎样把水与能效写进交付，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "wmedia-smx01-ready-service-20261102",
+      "selected": true,
+      "reason": "用于雅加达多个高密度设施进入可服务阶段，采用该资料所载事实或口径。"
+    },
+    {
+      "reportId": "wmedia-sttgdc-loan-talks-20261102",
+      "selected": false,
+      "reason": "银团贷款处于洽谈阶段，本期区域融资案例采用已宣布取得融资的PDG及Haoyang。"
+    },
+    {
+      "reportId": "xingyun-volcano-framework-20261102",
+      "selected": false,
+      "reason": "框架协议提供合作方向，本期采用该公司的首批Token验收和分成进展。"
+    }
+  ],
+  "coverageNotes": {
+    "domestic": "覆盖运营商采购、公司订单及验收、金融支持与监管、项目利用率和基础设施供给。",
+    "sea": "覆盖新加坡、马来西亚、泰国及印尼的机房容量、云区域、工程、融资及水务。",
+    "global": "覆盖美国项目交付与实际经营、英国和美国监管线索的取舍及全球设备与价格。"
+  }
+}
