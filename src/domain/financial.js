@@ -38,7 +38,7 @@ export function validateFinancial(f, report, today) {
     const m=f[key];if(!keys(m,['label','value','priorValue','currency','unit','attribution','change'],'metric'))continue;
     for(const k of ['label','attribution'])text(m[k],key+'.'+k);
     if(!number(m.value)||!number(m.priorValue))fail(`${key} 原值和上期值须为有限数字，未知不能填零`);
-    if(!units[m.unit]||!['CNY','USD','HKD','SGD','MYR','EUR'].includes(m.currency))fail(`${key} 币种或单位无效`);
+    if(!units[m.unit]||!['CNY','USD','HKD','SGD','MYR','EUR','PHP'].includes(m.currency))fail(`${key} 币种或单位无效`);
     if(key==='revenue'&&(m.value<0||m.priorValue<0))fail('营业收入不得为负');
     const c=m.change;if(!keys(c,['basis','percent','note'],'change'))continue;
     if(!['reported','calculated','amount'].includes(c.basis))fail('同比依据无效');text(c.note,'change.note');
@@ -50,7 +50,7 @@ export function validateFinancial(f, report, today) {
   return errors;
 }
 export function amount(metric,value=metric.value) {
-  const raw=value*units[metric.unit], currency={CNY:'人民币',USD:'美元',HKD:'港元',SGD:'新加坡元',MYR:'林吉特',EUR:'欧元'}[metric.currency];
+  const raw=value*units[metric.unit], currency={CNY:'人民币',USD:'美元',HKD:'港元',SGD:'新加坡元',MYR:'林吉特',EUR:'欧元',PHP:'菲律宾比索'}[metric.currency];
   return `${(Math.abs(raw)>=1e8?raw/1e8:raw/1e4).toLocaleString('zh-CN',{minimumFractionDigits:2,maximumFractionDigits:2})}${Math.abs(raw)>=1e8?'亿':'万'}${metric.currency==='CNY'?'元人民币':currency}`;
 }
 export function changeText(m) {
