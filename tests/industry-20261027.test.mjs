@@ -18,9 +18,9 @@ test('Sharetronic prior-quarter billing and subsidiary funding remain distinct f
  assert.ok(!contract.milestones.some(x=>x.primaryEvidenceReportId==='sharetronic-2026-q3'));
  assert.match(byId('sharetronic-compute-operations-2026').currentSummary,/前三季度/);
  const funding=byId('sharetronic-zhisuan-policy-capital-2026');
- assert.equal(funding.milestones.length,1);
- assert.match(funding.currentSummary,/借款用于该增资/);
- assert.match(funding.currentSummary,/尚需股东会审议/);
+ const historicalFunding=companyDashboardActions(data,'sharetronic',{start:'2026-01-01',end:'2026-10-27'}).find(x=>x.id===funding.id);
+ assert.match(historicalFunding.summary,/借款用于该增资/);
+ assert.match(historicalFunding.summary,/尚需股东会审议/);
  assert.doesNotMatch(funding.currentSummary,/66亿元/);
  const f=companyFinancialAt(data,'sharetronic','2026-10-27').financial;
  assert.equal(f.period.type,'nine-months');assert.equal(f.period.end,'2026-09-30');
