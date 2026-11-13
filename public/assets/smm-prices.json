@@ -2,7 +2,7 @@
   "reportId": "smm-h100-observation-20261009",
   "sourceUrl": "https://aidc.smm.cn/price",
   "sourceCadence": "工作日11:30前",
-  "evidence": "2026-11-12读取SMM免费公开页面，页面实际报价日11月11日，四组均价及区间与11月10日同口径快照一致。证据：行业信息更新_2026-11-12/market/smm.html及market-attempts.json。",
+  "evidence": "2026-11-13公开页报价日11月13日，按product_code逐条核长三角H100及两组4090；西部H100本次公开页未返回，保留11月11日已核值与原核对时间；与已存11月11日同口径报价比较。原页market/smm.html。",
   "groups": [
     {
       "model": "H100 80G",
@@ -19,15 +19,15 @@
           "low": 13.54,
           "high": 15.97,
           "unit": "元/卡·时",
-          "quoteDate": "2026-11-11",
-          "checkedAt": "2026-11-12T09:32:07+08:00",
+          "quoteDate": "2026-11-13",
+          "checkedAt": "2026-11-13T15:44:23+08:00",
           "sourceUrl": "https://aidc.smm.cn/price",
           "sourceChange": {
             "percent": 0.0,
             "label": "0.00%"
           },
           "comparison": {
-            "date": "2026-11-10",
+            "date": "2026-11-11",
             "basis": "同口径均价",
             "percent": 0.0
           }
@@ -69,15 +69,15 @@
           "low": 1.31,
           "high": 2.3,
           "unit": "元/卡·时",
-          "quoteDate": "2026-11-11",
-          "checkedAt": "2026-11-12T09:32:07+08:00",
+          "quoteDate": "2026-11-13",
+          "checkedAt": "2026-11-13T15:44:23+08:00",
           "sourceUrl": "https://aidc.smm.cn/price",
           "sourceChange": {
             "percent": 0.0,
             "label": "0.00%"
           },
           "comparison": {
-            "date": "2026-11-10",
+            "date": "2026-11-11",
             "basis": "同口径均价",
             "percent": 0.0
           }
@@ -89,15 +89,15 @@
           "low": 0.45,
           "high": 2.65,
           "unit": "元/卡·时",
-          "quoteDate": "2026-11-11",
-          "checkedAt": "2026-11-12T09:32:07+08:00",
+          "quoteDate": "2026-11-13",
+          "checkedAt": "2026-11-13T15:44:23+08:00",
           "sourceUrl": "https://aidc.smm.cn/price",
           "sourceChange": {
             "percent": 0.0,
             "label": "0.00%"
           },
           "comparison": {
-            "date": "2026-11-10",
+            "date": "2026-11-11",
             "basis": "同口径均价",
             "percent": 0.0
           }
