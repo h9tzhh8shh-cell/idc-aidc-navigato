@@ -47,12 +47,12 @@ test('四组人工核对报价各自保存报价日、核对时间及来源证�
   for(const item of quotes) {
     const percent=0;
     const retained=item.productCode==='SMM-GPU-CC-019';
-    assert.equal(item.quoteDate,retained?'2026-11-11':'2026-11-13');
-    assert.match(item.checkedAt,retained?/^2026-11-12T/:/^2026-11-13T/);
+    assert.equal(item.quoteDate,retained?'2026-11-11':'2026-11-16');
+    assert.match(item.checkedAt,retained?/^2026-11-12T/:/^2026-11-17T/);
     assert.equal(item.sourceChange.percent,percent);
-    assert.deepEqual(item.comparison,{date:retained?'2026-11-10':'2026-11-11',basis:'同口径均价',percent});
+    assert.deepEqual(item.comparison,{date:retained?'2026-11-10':'2026-11-13',basis:'同口径均价',percent});
     assert.equal(item.sourceUrl,'https://aidc.smm.cn/price');
     assert.equal(item.unit,'元/卡·时');
-    assert.deepEqual(priceQuoteState(item,'2026-11-13T08:00:00Z').comparison,item.comparison);
+    assert.deepEqual(priceQuoteState(item,'2026-11-17T01:00:00Z').comparison,item.comparison);
   }
 });
