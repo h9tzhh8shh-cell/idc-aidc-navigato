@@ -1,0 +1,201 @@
+[
+  {
+    "sourceId": "oregon-capital-chronicle",
+    "sourcePage": "https://oregoncapitalchronicle.com/",
+    "assetUrl": "https://www.google.com/s2/favicons?domain=oregoncapitalchronicle.com&sz=128",
+    "local": "/assets/source-logos/oregon-capital-chronicle.png",
+    "sha256": "a87e52b57e47440904fd4e697f596ec34928e9fd14bfd7e69e2357e4ed0f4fc4",
+    "note": "站点图标缓存；与州议会留存材料中黄底OCC标记核对。",
+    "reference": "https://olis.oregonlegislature.gov/liz/2025R1/Downloads/PublicTestimonyDocument/128098"
+  },
+  {
+    "sourceId": "china-securities-journal",
+    "sourcePage": "https://www.cs.com.cn/",
+    "assetUrl": "https://www.cs.com.cn/static/image/csj-cs-logo.png",
+    "local": "/assets/source-logos/china-securities-journal.png",
+    "sha256": "4eaef843bbecf9723cba12b6077acc298521439d421429d04fd40c77862ef434",
+    "note": "取中证网官方联合报头左侧的中国证券报标识。"
+  },
+  {
+    "sourceId": "thehubnews",
+    "sourcePage": "https://www.thehubnews.net/",
+    "assetUrl": "https://www.thehubnews.net/wp-content/uploads/2020/03/LOGO-270X90.png",
+    "local": "/assets/source-logos/thehubnews.png",
+    "sha256": "c89bbd320882f00b2564b514d59d6d43c4dcc0c625fa70832dd03d7ef536c781"
+  },
+  {
+    "sourceId": "wabei",
+    "sourcePage": "https://www.wabei.cn/",
+    "assetUrl": "https://files.wabei.cn/web/img/content/logo.png",
+    "local": "/assets/source-logos/wabei.png",
+    "sha256": "4bb0a5277595baecd4356f862f0d1d394fdaca7a2f7dbb2f0ac56efe94ee77fe"
+  },
+  {
+    "sourceId": "eastmoney-news",
+    "sourcePage": "https://finance.eastmoney.com/",
+    "assetUrl": "https://finance.eastmoney.com/emresource/main/images/logo.gif",
+    "local": "/assets/source-logos/eastmoney-news.png",
+    "sha256": "b2b900fff84a91fb6d9fbf833ccce1377b1671401293af887a8cd83a8aa6ef08"
+  },
+  {
+    "sourceId": "21jingji",
+    "sourcePage": "https://www.21jingji.com/",
+    "assetUrl": "https://static.21jingji.com/web_fed/images/logo_21app.png",
+    "local": "/assets/source-logos/21jingji.png",
+    "sha256": "5977dcdc2912adef5231d8c22642dcb4fd52244f0bef99932c9ce196f84fba15"
+  },
+  {
+    "sourceId": "10jqka-news",
+    "sourcePage": "https://news.10jqka.com.cn/",
+    "assetUrl": "https://news.10jqka.com.cn/favicon.ico",
+    "local": "/assets/source-logos/10jqka-news.png",
+    "sha256": "d8b3317f08f899dd2ef47b0b81bc57eed9df5e651bad75cdcff5e67c4b71095b"
+  },
+  {
+    "sourceId": "data-center-knowledge",
+    "sourcePage": "https://www.datacenterknowledge.com/",
+    "assetUrl": "https://eu-images.contentstack.com/v3/assets/blt8eb3cdfc1fce5194/bltbf422dfbeeb2c7e7/65def9f2125e10040a304c7f/Logo_-_Data_Center_Knowledge@2x.png?width=476&auto=webp&quality=80&disable=upscale",
+    "local": "/assets/source-logos/data-center-knowledge.png",
+    "sha256": "4c9d8049f3a9cbf9aa69ce8285b09dedbce2e7a8f55131be5eab344ef6dd8ea3"
+  },
+  {
+    "sourceId": "antara-news",
+    "sourcePage": "https://en.antaranews.com/",
+    "assetUrl": "https://en.antaranews.com/assets/img/favicon/android-icon-192x192.png",
+    "local": "/assets/source-logos/antara-news.png",
+    "sha256": "8c6082222f320902d8d329c27450ef77c696116ce94efca10bf53d38a0aa10e5"
+  },
+  {
+    "sourceId": "tidenews",
+    "sourcePage": "https://tidenews.com.cn/",
+    "assetUrl": "https://tidenews.com.cn/favicon.ico",
+    "local": "/assets/source-logos/tidenews.png",
+    "sha256": "4204755b56828bc89ae4d84e80ece4d40a20b4d21cfbd6553091cb32ddd0e639"
+  },
+  {
+    "sourceId": "ofweek-cloud",
+    "sourcePage": "https://cloud.ofweek.com/",
+    "assetUrl": "https://images.ofweek.com/cloud/images/logo.png",
+    "local": "/assets/source-logos/ofweek-cloud.png",
+    "sha256": "7de492fe7966290f9c254c17525d966b8376b0c50ac6aead140594bb58898890"
+  },
+  {
+    "sourceId": "chinadaily-cn",
+    "sourcePage": "https://cn.chinadaily.com.cn/",
+    "assetUrl": "https://cn.chinadaily.com.cn/image/2025/logo_cntop.png",
+    "local": "/assets/source-logos/chinadaily-cn.png",
+    "sha256": "d99fb6eae417847bf5ad052a00ab83e79a7114fad3b6e7866ddff887149510d9"
+  },
+  {
+    "sourceId": "dostor",
+    "sourcePage": "https://www.dostor.com/",
+    "assetUrl": "https://www.dostor.com/favicon.ico",
+    "local": "/assets/source-logos/dostor.png",
+    "sha256": "19de900a161dbf80ac89843303b2941332aea4d85d8ad0df00195808cd9b795a"
+  },
+  {
+    "sourceId": "caiwennews",
+    "sourcePage": "https://www.caiwennews.com/",
+    "assetUrl": "https://www.caiwennews.com/favicon.ico",
+    "local": "/assets/source-logos/caiwennews.png",
+    "sha256": "4d1035828a472a6d437f4e4caeaf2bd7080dec60acad0fce4edaacabb8139366"
+  },
+  {
+    "sourceId": "guandian",
+    "sourcePage": "https://www.guandian.cn/",
+    "assetUrl": "https://www.guandian.cn/statics/index2022/img/footer_logo.png",
+    "local": "/assets/source-logos/guandian.png",
+    "sha256": "4083756a1bff349a42327a99549019c61fb60b668bf526aaea1e70b4562be2d7"
+  },
+  {
+    "sourceId": "pedaily",
+    "sourcePage": "https://www.pedaily.cn/",
+    "assetUrl": "https://static.pedaily.cn/app/pedaily/favicon.ico",
+    "local": "/assets/source-logos/pedaily.png",
+    "sha256": "55ed4dd86ebd5ec1fed81ebc90180f32b8d84fbe385fdc0186305cf96fe5881e"
+  },
+  {
+    "sourceId": "sina-finance",
+    "sourcePage": "https://finance.sina.com.cn/",
+    "assetUrl": "https://n0.sinaimg.cn/finance/c30320b4/20251210/logo.png",
+    "local": "/assets/source-logos/sina-finance.png",
+    "sha256": "1db13ed4330a73c6b8ace28fe9e9e14248c80cb64b48be38c2932c53ad3c1eae"
+  },
+  {
+    "sourceId": "time-weekly",
+    "sourcePage": "https://www.time-weekly.com/",
+    "assetUrl": "https://www.time-weekly.com/img/logo1.png",
+    "local": "/assets/source-logos/time-weekly.png",
+    "sha256": "8881405334d7655c1aa66ea8f54f8921c70fb992a52cc54d254663a10ccfdebc"
+  },
+  {
+    "sourceId": "cnstock-news",
+    "sourcePage": "https://www.cnstock.com/",
+    "assetUrl": "https://www.cnstock.com/_next/static/media/logo_284x48_shzqbzgzqw@2x.c59f5133.png",
+    "local": "/assets/source-logos/cnstock-news.png",
+    "sha256": "7d01fe7aea6dff38e01a2949b4628eb067c55d71d475e7f2b140d450ab371d3c"
+  },
+  {
+    "sourceId": "hkcd-industry",
+    "sourcePage": "https://www.hkcd.com.hk/hkcdweb/column/cj.html",
+    "assetUrl": "https://www.hkcd.com.hk/hkcdweb/images2023/newLogo.png",
+    "local": "/assets/source-logos/hkcd-industry.png",
+    "sha256": "2c948634534ff4fc52f1861257c5f00466c1a51ec211db27313e98f504c8a284"
+  },
+  {
+    "sourceId": "c114-telecom",
+    "sourcePage": "https://www.c114.com.cn/",
+    "assetUrl": "https://www.c114.com.cn/images/18/logo2.png",
+    "local": "/assets/source-logos/c114-telecom.png",
+    "sha256": "e43e264a6a34b8318c829aaba95875d5a7722a585104bc9ee0fd0f649a086d08"
+  },
+  {
+    "sourceId": "crn-asia-news",
+    "sourcePage": "https://www.crnasia.com/",
+    "assetUrl": "https://www.crnasia.com/icons/favicon/apple-touch-icon.png",
+    "local": "/assets/source-logos/crn-asia-news.png",
+    "sha256": "3b1182fac3eee6e19d9e0b2be0d758debb0b92beb88446bcc5c29f942640b267"
+  },
+  {
+    "sourceId": "nation-thailand-policy",
+    "sourcePage": "https://www.nationthailand.com/news/policy",
+    "assetUrl": "https://media.nationthailand.com/images/3.0/logo-white.png",
+    "local": "/assets/source-logos/nation-thailand-policy.png",
+    "sha256": "36b85795112c5a0837046ec9f9155f9f57a1e6aad1b4ed6debf125f1c5f880fd"
+  },
+  {
+    "sourceId": "vnexpress-international",
+    "sourcePage": "https://e.vnexpress.net/",
+    "assetUrl": "https://scdn.vnecdn.net/english/i/v69/logos/72x72.png",
+    "local": "/assets/source-logos/vnexpress-international.png",
+    "sha256": "8b439aac56bdc4923956ed035fb9a130ff06b0750947648ca6f08d3ac9205192"
+  },
+  {
+    "sourceId": "edgeprop-malaysia-news",
+    "sourcePage": "https://www.edgeprop.my/news",
+    "assetUrl": "https://www.edgeprop.my/favicon.ico?favicon.a88f99b8.ico",
+    "local": "/assets/source-logos/edgeprop-malaysia-news.png",
+    "sha256": "088929ef60bc735821011ad3b1c66db69898388d6f2f275a9158f7546d7aa951"
+  },
+  {
+    "sourceId": "cfi-company-filings",
+    "sourcePage": "https://www.cfi.net.cn/",
+    "assetUrl": "https://www.cfi.net.cn/favicon.ico",
+    "local": "/assets/source-logos/cfi-company-filings.png",
+    "sha256": "b530c75a3aef9dbfefa8487d7e65eaa8d937f12cefc9b27faf4927922b80a5d7"
+  },
+  {
+    "sourceId": "ithome-ai-infrastructure",
+    "sourcePage": "https://www.ithome.com/",
+    "assetUrl": "https://www.ithome.com/favicon.ico",
+    "local": "/assets/source-logos/ithome-ai-infrastructure.png",
+    "sha256": "80395e8948b5e7c8c263c3c3ceb440e07fdbf2a141b396052dcd7266e0aa1668"
+  },
+  {
+    "sourceId": "nanfang-plus-media",
+    "sourcePage": "https://www.nfnews.com/",
+    "assetUrl": "https://static.nfnews.com/common/assets/images/favicon.ico",
+    "local": "/assets/source-logos/nanfang-plus-media.png",
+    "sha256": "72fccff0136aee2b0f66eb18694019c324bd5ef51d02ac8494df609dab43525d"
+  }
+]

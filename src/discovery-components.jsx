@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { IconStarFilled, IconBuildingSkyscraper, IconNews, IconCalendar, IconChartBar, IconChevronRight, IconX } from '@tabler/icons-react';
-import { OutLink, Highlight, trapDialogFocus } from './components.jsx';
+import { OutLink, Highlight, SourceLogo, trapDialogFocus } from './components.jsx';
 import { TOPICS, filterReports } from './catalog.js';
 import { latestFinancial } from './domain/financial.js';
 import { FinancialAmounts } from './financial-components.jsx';
@@ -73,7 +73,7 @@ export function DiscoveryWorkspace({ data, sources, filters, navigation, onNavig
     </div> : <div className="discovery-article-list"><div className="discovery-table-head article-grid"><span>媒体来源</span><span>报道内容</span><span>地区与研究方向</span><span>操作</span></div>{reports.map(report => {
       const source = data.sources.find(item => item.id === report.sourceId);
       return <article className="discovery-article-row article-grid" key={report.id} data-report-id={report.id}>
-        <div className="discovery-identity"><TextIdentity name={source.shortName || source.organization} /><div><h3>{source.organization}</h3><span className="discovery-tag">{source.mediaType || (source.tags.includes('财经媒体') ? '财经媒体' : '行业媒体')}</span><p>开放发现媒体</p></div></div>
+        <div className="discovery-identity"><SourceLogo source={source} /><div><h3>{source.organization}</h3><span className="discovery-tag">{source.mediaType || (source.tags.includes('财经媒体') ? '财经媒体' : '行业媒体')}</span><p>开放发现媒体</p></div></div>
         <div className="discovery-article-copy"><div className="discovery-title-line">{report.isNew && <span className="discovery-new" aria-label="本次新增">NEW</span>}<button className="discovery-title" onClick={event => onReport(report, event)}><Highlight text={report.title} query={filters.q} /></button></div><p className="discovery-date">{report.publishedAt} · {report.originalPublisher}</p><p>{report.summary}</p>{report.sourceNature && <span className="discovery-stage">{report.sourceNature}</span>}</div>
         <div className="discovery-tags">{report.regions.map(region => <span className="discovery-tag" key={region}>{region}</span>)}<span className="discovery-tag">{TOPICS.find(topic => topic.id === report.primaryCategoryId)?.label}</span></div>
         <div className="discovery-row-actions"><OutLink href={report.url} className="button secondary">访问原文</OutLink><button className="button primary" onClick={event => onReport(report, event)}>查看详情</button></div>
