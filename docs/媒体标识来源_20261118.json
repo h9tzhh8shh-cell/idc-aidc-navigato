@@ -197,5 +197,13 @@
     "assetUrl": "https://static.nfnews.com/common/assets/images/favicon.ico",
     "local": "/assets/source-logos/nanfang-plus-media.png",
     "sha256": "72fccff0136aee2b0f66eb18694019c324bd5ef51d02ac8494df609dab43525d"
+  },
+  {
+    "sourceId": "chinanews-industry",
+    "sourcePage": "https://www.chinanews.com.cn/",
+    "assetUrl": "https://www.chinanews.com.cn/fileftp/2025/07/2025-07-17/U947P4T47D55580F24532DT20250717134135.png",
+    "local": "/assets/source-logos/chinanews-industry.png",
+    "sha256": "02badc509b4d63208dd8959363b3e6868920f5c735309845bcaf9be37760aea7",
+    "note": "2026年11月19日核对首页站头，图片替代文字为中国新闻网。"
   }
 ]

@@ -32,7 +32,7 @@ test('official financing actions reach the timeline without manufacturing Sharet
     assert.match(action.url,/static\.cninfo\.com\.cn/);
   }
   const tracked=data.events.find(e=>e.id==='sharetronic-cloud-services-20261019');
-  assert.equal(tracked.milestones.length,1);
+  assert.deepEqual(tracked.milestones.filter(n=>n.occurredAt<=range.end).map(n=>n.id),['contract-disclosed']);
   assert.equal(tracked.milestones[0].occurredAt,'2026-10-19');
   assert.ok(tracked.milestones[0].evidenceRefs.some(ref=>ref.reportId==='caiwen-sharetronic-delivery-revenue-20261021'));
 });

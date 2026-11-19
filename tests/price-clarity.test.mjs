@@ -44,20 +44,20 @@ test('四组人工核对报价各自保存报价日、核对时间及来源证�
   const quotes=prices.groups.flatMap(group=>group.quotes);
   assert.equal(quotes.length,4);
   const expected=[
-    ['SMM-GPU-CC-005',14.76,13.54,15.97,0,'2026-11-16',0],
-    ['SMM-GPU-CC-019',15.19,14.58,15.80,0,'2026-11-11',2.36],
-    ['SMM-GPU-CC-020',1.92,1.38,2.29,7.87,'2026-11-16',7.87],
-    ['SMM-GPU-CC-021',2.11,0.45,2.65,0,'2026-11-16',0],
+    ['SMM-GPU-CC-005',14.76,13.54,15.97,0,'2026-11-17',0],
+    ['SMM-GPU-CC-019',15.19,14.58,15.80,0,'2026-11-17',0],
+    ['SMM-GPU-CC-020',1.78,1.31,2.30,-7.29,'2026-11-17',-7.29],
+    ['SMM-GPU-CC-021',2.11,0.45,2.65,0,'2026-11-17',0],
   ];
   for(const [index,item] of quotes.entries()) {
     const [code,mean,low,high,sourcePercent,date,percent]=expected[index];
     assert.deepEqual([item.productCode,item.mean,item.low,item.high],[code,mean,low,high]);
-    assert.equal(item.quoteDate,'2026-11-17');
-    assert.match(item.checkedAt,/^2026-11-18T/);
+    assert.equal(item.quoteDate,'2026-11-18');
+    assert.match(item.checkedAt,/^2026-11-19T/);
     assert.equal(item.sourceChange.percent,sourcePercent);
     assert.deepEqual(item.comparison,{date,basis:'同口径均价',percent});
     assert.equal(item.sourceUrl,'https://aidc.smm.cn/price');
     assert.equal(item.unit,'元/卡·时');
-    assert.deepEqual(priceQuoteState(item,'2026-11-18T02:00:00Z').comparison,item.comparison);
+    assert.deepEqual(priceQuoteState(item,'2026-11-19T02:00:00Z').comparison,item.comparison);
   }
 });

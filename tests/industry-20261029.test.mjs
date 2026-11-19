@@ -16,7 +16,7 @@ test('October 29 financial and project updates keep cumulative periods and contr
  assert.equal(actions('2026-10-28').find(a=>a.id==='sinnet-horinger-expansion').date,'2026-09-24');
  assert.equal(actions('2026-10-29').find(a=>a.id==='sinnet-horinger-expansion').date,'2026-10-29');
  const contract=data.events.find(e=>e.id==='sharetronic-cloud-services-20261019');
- assert.deepEqual(contract.milestones.map(n=>n.id),['contract-disclosed']);
+ assert.deepEqual(contract.milestones.filter(n=>n.occurredAt<='2026-10-29').map(n=>n.id),['contract-disclosed']);
  assert.ok(contract.milestones[0].evidenceRefs.some(ref=>ref.reportId==='sharetronic-ir-20261028'));
  for(const id of ['sharetronic-compute-financing-model-2026','sharetronic-tokenshare-platform-2026']){
   const event=data.events.find(e=>e.id===id);

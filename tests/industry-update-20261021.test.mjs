@@ -34,8 +34,7 @@ test('verified existing company stories reach timelines without adding a false S
   const vnet=companyDashboardActions(data,'vnet',range,'project').find(e=>e.id==='vnet-zhongwei-aidc-2026');
   assert.ok(vnet);assert.equal(vnet.date,'2026-10-11');
   const event=data.events.find(e=>e.id==='sharetronic-cloud-services-20261019');
-  assert.equal(event.milestones.length,1);
-  assert.equal(event.latestVerifiedMilestoneId,'contract-disclosed');
+  assert.deepEqual(event.milestones.filter(n=>n.occurredAt<=range.end).map(n=>n.id),['contract-disclosed']);
   assert.ok(event.milestones[0].evidenceRefs.some(ref=>ref.reportId==='sharetronic-contract-legal-20261019'));
 });
 

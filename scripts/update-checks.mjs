@@ -4,6 +4,8 @@ import { access, mkdir, mkdtemp, open, readFile, realpath, rename, rm, rmdir, wr
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { mergeBatch } from './reviewed-batch.mjs';
+import { previousCompleteWeek, weeklyCandidates } from '../src/domain/discovery.js';
+import { isDeepStrictEqual } from 'node:util';
 
 const repo = fileURLToPath(new URL('../', import.meta.url));
 const catalog = join(repo, 'public/assets/catalog.json');
@@ -26,6 +28,31 @@ async function checkCandidate(input, baseline = catalog) {
 async function roundDirectory(path) {
   await mkdir(path, { recursive: true });
   return realpath(path);
+}
+
+async function weeklyDelta(baseline, preview) {
+  const [before, after] = await Promise.all([readJson(baseline), readJson(preview)]);
+  const { start: periodStart, end: periodEnd } = previousCompleteWeek(after.maintainedAt);
+  const period = { periodStart, periodEnd };
+  const history = before.discovery.issues.filter(issue => issue.kind === 'weekly' && !issue.partial &&
+    issue.periodStart === periodStart && issue.periodEnd === periodEnd)
+    .sort((a, b) => b.generatedAt.localeCompare(a.generatedAt))[0];
+  const current = weeklyCandidates(after, { ...period, cutoffDay: after.maintainedAt });
+  if (!history?.decisions || !history.backgroundReportIds || !history.cutoffAt) {
+    return { ...period, review: 'full', candidates: current.length };
+  }
+  const previous = weeklyCandidates(before, { ...period, cutoffDay: history.cutoffAt.slice(0, 10) });
+  const prior = new Map(previous.map(report => [report.id, report]));
+  if (!isDeepStrictEqual(new Set(history.decisions.map(item => item.reportId)), new Set(prior.keys()))) {
+    return { ...period, review: 'full', candidates: current.length };
+  }
+  const present = new Set(current.map(report => report.id));
+  const backgroundChanged = history.backgroundReportIds.filter(id =>
+    !isDeepStrictEqual(before.reports.find(report => report.id === id), after.reports.find(report => report.id === id)));
+  return { ...period, previousIssue: history.id, candidates: current.length,
+    added: current.filter(report => !prior.has(report.id)).map(report => report.id),
+    revised: current.filter(report => prior.has(report.id) && !isDeepStrictEqual(prior.get(report.id), report)).map(report => report.id),
+    removed: previous.filter(report => !present.has(report.id)).map(report => report.id), backgroundChanged };
 }
 
 async function preflight(path) {
@@ -100,10 +127,11 @@ try {
   let result;
   if (mode === 'preflight' && path) result = await preflight(path);
   else if (mode === 'candidate' && path) result = await checkCandidate(path, detail);
+  else if (mode === 'weekly-delta' && path && detail) result = { status: 'pass', ...await weeklyDelta(path, detail) };
   else if (mode === 'verify' && path && /^\d{4}-\d{2}-\d{2}$/.test(detail || '')) {
     result = await verify(path, detail);
   } else {
-    throw new Error('用法：update-checks.mjs preflight <本轮目录> | candidate <候选文件> [基线] | verify <本轮目录> <YYYY-MM-DD>');
+    throw new Error('用法：update-checks.mjs preflight <本轮目录> | candidate <候选文件> [基线] | weekly-delta <上版资料> <本轮预演> | verify <本轮目录> <YYYY-MM-DD>');
   }
   console.log(JSON.stringify(result));
   if (result.status !== 'pass') process.exitCode = 1;

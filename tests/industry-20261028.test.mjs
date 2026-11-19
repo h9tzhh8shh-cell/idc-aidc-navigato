@@ -12,7 +12,7 @@ test('new financing actions use disclosure dates without creating customer deliv
  const repurchase=actions('vnet','2026-10-27').find(a=>a.id==='vnet-2027-convertible-notes-repurchase-20261027');
  assert.ok(repurchase);assert.match(repurchase.summary,/7,?530万美元/);
  const contract=data.events.find(e=>e.id==='sharetronic-cloud-services-20261019');
- assert.deepEqual(contract.milestones.map(n=>n.id),['contract-disclosed']);
+ assert.deepEqual(contract.milestones.filter(n=>n.occurredAt<='2026-10-28').map(n=>n.id),['contract-disclosed']);
 });
 
 test('October 28 brief uses Beijing release dates and the weekly excludes current-week news',()=>{
